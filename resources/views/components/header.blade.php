@@ -170,7 +170,7 @@ $countryCode = '';
                                             </ul>
                                         </li>
                                         <li><a href="{{ url("#") }}">Courses</a></li>
-                                        <li><a href="{{ url("#") }}">TNEA 2023 Information</a></li>
+                                        <li><a href="{{ url("#") }}">TNEA {{ date('Y') }} Information</a></li>
                                         <li class="sub-dropdown">
                                             <a href="{{ url("#") }}">Admission Procedure</a>
                                             <ul class="submenu third-lvl base">
@@ -304,11 +304,11 @@ $countryCode = '';
                                 </li>
                                 --}}
                                 <li class="has-dropdown">
-                                    <a href="{{ url("#") }}">Circular</a>
+                                    <a class="nav-link" href="{{ url("#") }}">Circular</a>
                                     <ul class="submenu">
                                         <li><a href="{{ url("#") }}">Anna University Circular</a></li>
                                         <li><a href="{{ url("#") }}">UGC Guidelines</a></li>
-                                        <li><a href="{{ url("#") }}">Fees Reminder for the Academic Year 2024-25</a></li>
+                                        <li><a href="{{ url("#") }}">Fees Reminder for the Academic Year {{ date('Y') }} - {{ substr(date('Y') + 1, -2) }}</a></li>
                                     </ul>
                                 </li>
                             </ul>

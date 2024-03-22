@@ -39,7 +39,7 @@
 
 
 
-@include('components.mobile-nav')
+    @include('components.mobile-nav')
 
 
     {{-- Script Files --}}

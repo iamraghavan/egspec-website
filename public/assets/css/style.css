@@ -13,6 +13,13 @@
 ========================================*/
 /* Default  */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+
 :root {
     --rt-theme: #af005e;
     --rt-primary: #00176e;
@@ -51,8 +58,8 @@
     --f-black: 900;
     --translate: translate(-50%, -50%);
     --transition: all 0.4s ease;
-    --font-primary: "Inter", sans-serif;
-    --font-secondary: "Hind", sans-serif;
+    --font-primary: "Montserrat", sans-serif;
+    --font-secondary: "Poppins", sans-serif;
     --fontawesome: "fontawesome", sans-serif;
     --line-height-b1: 26px;
     --line-height-b2: 26px;
@@ -16210,7 +16217,7 @@ nav ul li a {
 }
 
 .main-nav-one ul li.has-dropdown {
-    margin-right: 25px;
+    margin-right: 10px;
     position: relative;
 }
 
@@ -16220,9 +16227,9 @@ nav ul li a {
 
 .main-nav-one ul li.has-dropdown a.nav-link {
     padding: 31px 15px;
-    color: #1F1F25;
-    font-size: 16px;
-    font-weight: 400;
+    color: #af005f;
+    font-size: 15px;
+    font-weight: 500;
 }
 
 .main-nav-one ul li.has-dropdown a::before {
@@ -17911,10 +17918,10 @@ nav ul li a {
     text-align: center;
 }
 
-.single-brand-logo a img {
+/* .single-brand-logo a img {
     filter: saturate(0.5) contrast(0.1);
     transition: var(--transition);
-}
+} */
 
 .single-brand-logo:hover a img {
     filter: saturate(1) contrast(1);

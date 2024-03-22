@@ -224,8 +224,7 @@
                     <ul class="submenu mm-collapse">
                         <li><a class="mobile-menu-link" href="{{ url("#") }}">Anna University Circular</a></li>
                         <li><a class="mobile-menu-link" href="{{ url("#") }}">UGC Guidelines</a></li>
-                        <li><a class="mobile-menu-link" href="{{ url("#") }}">Fees Reminder for the Academic Year
-                                2024-25</a></li>
+                        <li><a class="mobile-menu-link" href="{{ url("#") }}">Fees Reminder for the Academic Year {{ date('Y') }} - {{ substr(date('Y') + 1, -2) }}</a></li>
                     </ul>
                 </li>
             </ul>
