@@ -1,39 +1,34 @@
 @php
-use Illuminate\Http\Client\ConnectionException;
 use Illuminate\Support\Facades\Http;
 
+$country = 'Unknown';
+$countryCode = '';
+
 try {
-// Disable SSL verification (not recommended for production)
 $ipResponse = Http::timeout(10)->withoutVerifying()->get('https://api64.ipify.org/?format=json');
 $ipData = $ipResponse->json();
 
-// Extract the IP address from the response
-$ipAddress = $ipData['ip'];
+$ipAddress = $ipData['ip'] ?? null;
 
-// Make a request to the geoplugin API to get location information based on IP
-$locationResponse = Http::timeout(10)
-->withoutVerifying()
-->get("http://www.geoplugin.net/json.gp?ip={$ipAddress}");
+if ($ipAddress) {
+$locationResponse = Http::timeout(10)->withoutVerifying()->get("http://www.geoplugin.net/json.gp?ip={$ipAddress}");
 $locationData = $locationResponse->json();
 
-// Check if the 'geoplugin_countryName' key exists in the response
-$country = isset($locationData['geoplugin_countryName']) ? $locationData['geoplugin_countryName'] : 'Unknown';
-
-$countryCode = '';
+$country = $locationData['geoplugin_countryName'] ?? 'Unknown';
 
 $countriesResponse = Http::withoutVerifying()->get('https://restcountries.com/v3.1/all');
 $countriesData = $countriesResponse->json();
 
 foreach ($countriesData as $data) {
 if ($data['name']['common'] == $country) {
-$countryCode = strtolower($data['cca2']); // Get the country code
+$countryCode = strtolower($data['cca2']);
 break;
 }
 }
-} catch (ConnectionException $e) {
-// Handle connection timeout error
-$country = 'Unknown';
-$countryCode = '';
+}
+} catch (\Throwable $e) {
+// Log or handle the error as needed
+// You can leave it empty if you don't want to display errors to users
 }
 @endphp
 
@@ -46,7 +41,7 @@ $countryCode = '';
                         <div class="left-information">
                             <a href="mailto:someone@example.com" class="email"><i
                                     class="fa-light fa-envelope"></i>enquires@egspec.org</a>
-                            <a href="tel:+914365251114" class="email"><i class="fa-light fa-phone"></i>+91 4365 251 114</a>
+                            <a href="tel:04365251114" class="email"><i class="fa-light fa-phone"></i>04365 251 114</a>
                         </div>
                         <!-- right area -->
                         <div class="right-information">

@@ -12,165 +12,48 @@
         <div class="row justify-content-md-center">
             <div class="col-lg-12 col-md-11">
                 <div class="rts-brand-slider swiper swiper-data swiper-initialized swiper-horizontal swiper-pointer-events"
-                    data-swiper="{
-               &quot;slidesPerView&quot;:7,
-               &quot;loop&quot;: true,
-               &quot;autoplay&quot;:{
-               &quot;delay&quot;:&quot;3000&quot;
-               },
-               &quot;breakpoints&quot;:{
-               &quot;320&quot;:{
-               &quot;slidesPerView&quot;: 3,
-               &quot;centeredSlides&quot;: true
-               },
-               &quot;575&quot;:{
-               &quot;slidesPerView&quot;: 4,
-               &quot;centeredSlides&quot;: true
-               },
-               &quot;768&quot;:{
-               &quot;slidesPerView&quot;: 5,
-               &quot;centeredSlides&quot;: true
-               },
-               &quot;991&quot;:{
-               &quot;slidesPerView&quot;: 6,
-               &quot;centeredSlides&quot;: true
-               },
-               &quot;1201&quot;:{
-               &quot;slidesPerView&quot;: 7,
-               &quot;centeredSlides&quot;: true
-               }
-               }
-               }">
-                    <div class="swiper-wrapper" id="swiper-wrapper-51d10298ed27bd1034" aria-live="off"
-                        style="transition-duration: 0ms; transform: translate3d(-1105.71px, 0px, 0px);">
+                    data-swiper='{
+                        "slidesPerView":7,
+                        "loop": true,
+                        "autoplay": {
+                            "delay":"3000"
+                        },
+                        "breakpoints":{
+                            "320":{
+                                "slidesPerView": 3,
+                                "centeredSlides": true
+                            },
+                            "575":{
+                                "slidesPerView": 4,
+                                "centeredSlides": true
+                            },
+                            "768":{
+                                "slidesPerView": 5,
+                                "centeredSlides": true
+                            },
+                            "991":{
+                                "slidesPerView": 6,
+                                "centeredSlides": true
+                            },
+                            "1201":{
+                                "slidesPerView": 7,
+                                "centeredSlides": true
+                            }
+                        }
+                    }'>
 
+                    <div class="swiper-wrapper">
 
+                     @foreach($sliderImages as $sliderImage)
+                    <div class="swiper-slide" style="width: 154.286px; margin-right: 30px;">
+                        <div class="single-brand-logo">
+                            <a href="#">
+                                <img src="{{ asset($sliderImage->image_url) }}" alt="{{ $sliderImage->alt_tag }}">
+                            </a>
+                        </div>
+                    </div>
+                    @endforeach
 
-                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
-                            data-swiper-slide-index="3" role="group" aria-label="4 / 6"
-                            style="width: 154.286px; margin-right: 30px;">
-                            <div class="single-brand-logo">
-                                <a href="{{ url("#") }}">
-                                    <img src="{{ asset("/assets/images/Accredited/National_Board_of_Accreditation.svg") }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
-                            data-swiper-slide-index="4" role="group" aria-label="5 / 6"
-                            style="width: 154.286px; margin-right: 30px;">
-                            <div class="single-brand-logo">
-                                <a href="{{ url("#") }}">
-                                    <img src="{{ asset("/assets/images/Accredited/Anna_University_Logo.svg") }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="5" role="group"
-                            aria-label="6 / 6" style="width: 154.286px; margin-right: 30px;">
-                            <div class="single-brand-logo">
-                                <a href="{{ url("#") }}">
-                                    <img src="{{ asset("/assets/images/Accredited/NAAC_LOGO.png.svg") }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" data-swiper-slide-index="0" role="group" aria-label="1 / 6"
-                            style="width: 154.286px; margin-right: 30px;">
-                            <div class="single-brand-logo">
-                                <a href="{{ url("#") }}">
-                                    <img src="{{ asset("/assets/images/Accredited/Anna_University_Logo.svg") }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" data-swiper-slide-index="1" role="group" aria-label="2 / 6"
-                            style="width: 154.286px; margin-right: 30px;">
-                            <div class="single-brand-logo">
-                                <a href="{{ url("#") }}">
-                                    <img src="{{ asset("/assets/images/Accredited/National_Board_of_Accreditation.svg") }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="2" role="group"
-                            aria-label="3 / 6" style="width: 154.286px; margin-right: 30px;">
-                            <div class="single-brand-logo">
-                                <a href="{{ url("#") }}">
-                                    <img src="{{ asset("/assets/images/Accredited/NAAC_LOGO.png.svg") }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slide-active" data-swiper-slide-index="3" role="group"
-                            aria-label="4 / 6" style="width: 154.286px; margin-right: 30px;">
-                            <div class="single-brand-logo">
-                                <a href="{{ url("#") }}">
-                                    <img src="{{ asset("/assets/images/Accredited/National_Board_of_Accreditation.svg") }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slide-next" data-swiper-slide-index="4" role="group"
-                            aria-label="5 / 6" style="width: 154.286px; margin-right: 30px;">
-                            <div class="single-brand-logo">
-                                <a href="{{ url("#") }}">
-                                    <img src="{{ asset("/assets/images/Accredited/Anna_University_Logo.svg") }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide" data-swiper-slide-index="5" role="group" aria-label="6 / 6"
-                            style="width: 154.286px; margin-right: 30px;">
-                            <div class="single-brand-logo">
-                                <a href="{{ url("#") }}">
-                                    <img src="{{ asset("/assets/images/Accredited/NAAC_LOGO.png.svg") }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" role="group"
-                            aria-label="1 / 6" style="width: 154.286px; margin-right: 30px;">
-                            <div class="single-brand-logo">
-                                <a href="{{ url("#") }}">
-                                    <img src="{{ asset("/assets/images/Accredited/Anna_University_Logo.svg") }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1" role="group"
-                            aria-label="2 / 6" style="width: 154.286px; margin-right: 30px;">
-                            <div class="single-brand-logo">
-                                <a href="{{ url("#") }}">
-                                    <img src="{{ asset("/assets/images/Accredited/National_Board_of_Accreditation.svg") }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
-                            data-swiper-slide-index="2" role="group" aria-label="3 / 6"
-                            style="width: 154.286px; margin-right: 30px;">
-                            <div class="single-brand-logo">
-                                <a href="{{ url("#") }}">
-                                    <img src="{{ asset("/assets/images/Accredited/NAAC_LOGO.png.svg") }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
-                            data-swiper-slide-index="3" role="group" aria-label="4 / 6"
-                            style="width: 154.286px; margin-right: 30px;">
-                            <div class="single-brand-logo">
-                                <a href="{{ url("#") }}">
-                                    <img src="{{ asset("/assets/images/Accredited/National_Board_of_Accreditation.svg") }}}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
-                            data-swiper-slide-index="4" role="group" aria-label="5 / 6"
-                            style="width: 154.286px; margin-right: 30px;">
-                            <div class="single-brand-logo">
-                                <a href="{{ url("#") }}">
-                                    <img src="{{ asset("/assets/images/Accredited/Anna_University_Logo.svg") }}" alt="">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="5" role="group"
-                            aria-label="6 / 6" style="width: 154.286px; margin-right: 30px;">
-                            <div class="single-brand-logo">
-                                <a href="{{ url("#") }}">
-                                    <img src="{{ asset("/assets/images/Accredited/NAAC_LOGO.png.svg") }}" alt="">
-                                </a>
-                            </div>
-                        </div>
                     </div>
                     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
                 </div>
@@ -178,3 +61,13 @@
         </div>
     </div>
 </div>
+
+
+<style>
+/* Apply CSS only above tablet screens */
+@media (min-width: 768px) {
+.single-brand-logo > a > img {
+padding: 2rem !important;
+}
+}
+</style>

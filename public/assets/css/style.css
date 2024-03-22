@@ -18800,7 +18800,7 @@ nav ul li a {
 .rts-event-section-content .single-event {
     margin: 0;
     padding: 45px 40px;
-    background: #F5F5FF;
+    background: rgba(175, 0, 94, 0.1);
     display: flex;
     gap: 20px;
     align-items: center;
@@ -18894,7 +18894,7 @@ nav ul li a {
     top: 0;
     top: -50%;
     left: 0;
-    background: var(--rt-primary);
+    background: rgba(0, 23, 110, 1);
     z-index: -1;
     opacity: 0;
     transition: var(--transition);
@@ -23958,9 +23958,10 @@ nav ul li a {
 }
 
 .rts-footer-widget h6 {
-    text-decoration: underline;
-    color: var(--rt-white);
+
+    color: var(--rt-theme);
     margin-bottom: 25px;
+    text-transform: uppercase;
 }
 
 .rts-footer-widget .rts-contact-link a {
@@ -26025,6 +26026,15 @@ edit .quantity-edit button {
 .offcanvase__info--content--social .social__links {
     display: flex;
     gap: 10px;
+}
+
+
+.rts-footer-menu>ul>li {
+    color: #fff !important;
+}
+
+.rts-contact-link {
+    color: #fff !important;
 }
 
 /*# sourceMappingURL=../maps/style.css.map */

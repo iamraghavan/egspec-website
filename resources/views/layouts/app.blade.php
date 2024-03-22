@@ -41,6 +41,8 @@
 
     @include('components.mobile-nav')
 
+    @include('components.footer')
+
 
     {{-- Script Files --}}
 
