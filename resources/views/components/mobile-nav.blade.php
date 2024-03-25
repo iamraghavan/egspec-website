@@ -17,11 +17,8 @@
             <div class="offcanvase__info">
                 <div class="offcanvase__info--content">
                     <a href="{{ url("callto:+61485826710") }}"><span><i
-                                class="fa-sharp fa-light fa-phone"></i></span>+(61)
-                        485-826-710</a>
-                    <a href="{{ url("#") }}"><span><i class="fa-sharp fa-light fa-location-dot"></i></span>Yarra Park,
-                        Melbourne,
-                        Australia</a>
+                                class="fa-sharp fa-light fa-phone"></i></span>04356 251114</a>
+                    <a href="{{ url("#") }}"><span><i class="fa-sharp fa-light fa-location-dot"></i></span>{{$localAddress = env('LOCAL_ADDRESS');}}</a>
                     <div class="offcanvase__info--content--social">
                         <p class="title">Follow Us:</p>
                         <div class="social__links">
@@ -232,8 +229,7 @@
 
         <div class="rts-social-style-one pl--20 mt--40">
            <div class="offcanvase__info--content">
-                <a href="{{ url("callto:+61485826710") }}"><span><i class="fa-sharp fa-light fa-phone"></i></span>+(61)
-                    485-826-710</a>
+                <a href="{{ url("callto:+61485826710") }}"><span><i class="fa-sharp fa-light fa-phone"></i></span>04356 251114</a>
                 <a href="{{ url("#") }}"><span><i class="fa-sharp fa-light fa-location-dot"></i></span>{{$localAddress = env('LOCAL_ADDRESS');}}</a>
                 <div class="offcanvase__info--content--social">
                     <p class="title">Follow Us:</p>
