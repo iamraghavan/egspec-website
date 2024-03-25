@@ -199,7 +199,7 @@ align-items: center;
         <div class="row">
             <div class="rt-center">
                 <p style="font-weight: 600;" class="--p-xs">Copyright © 2006 - {{ date('Y') }} All Rights Reserved by
-                    <a href="https://egspgroup.in/" target="_blank">EGS Pillay Group of Institutions</a>
+                    <a href="https://egspgroup.in/" target="_blank">EGS Pillay Group of Institutions</a> | Developed By <a href=""> Raghavan Jeeva </a>
                 </p>
             </div>
         </div>

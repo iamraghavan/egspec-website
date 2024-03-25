@@ -103,21 +103,10 @@
                                             <a href="{{ url("#") }}">Departments</a>
                                             <ul class="submenu third-lvl base">
                                                 <li class="">
-                                                    <a href="{{ url("#") }}">B.E / B.Tech</a>
+                                                    <a href="{{ url("/academics/departments/bachelors") }}">B.E / B.Tech</a>
                                                     <ul class="submenu">
                                                         {{--
-                                                        <li><a href="{{ url("#") }}">Mechanical Engineering</a></li>
-                                                        <li><a href="{{ url("#") }}">Civil Engineering</a></li>
-                                                        <li><a href="{{ url("#") }}">Electrical and Electronics
-                                                                Engineering</a></li>
-                                                        <li><a href="{{ url("#") }}">Electronics and Communication
-                                                                Engineering</a></li>
-                                                        <li><a href="{{ url("#") }}">Computer Science and Engineering</a>
-                                                        </li>
-                                                        <li><a href="{{ url("#") }}">Information Technology</a></li>
-                                                        <li><a href="{{ url("#") }}">Biomedical Engineering</a></li>
-                                                        <li><a href="{{ url("#") }}">Computer Science & Business Systems
-                                                                Engineering</a></li>
+
                                                         --}}
                                                     </ul>
                                                 </li>

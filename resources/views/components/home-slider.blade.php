@@ -10,37 +10,34 @@
 
 <!-- Desktop Slider -->
 <div class="swiper-container desktop-slider">
-    <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <img src="assets/images/egspec-1.webp" alt="Desktop Slide 1">
-        </div>
 
-        <div class="swiper-slide">
-            <img src="assets/images/egspec-1.webp" alt="Desktop Slide 1">
-        </div>
+<div class="swiper-wrapper">
+    @foreach ($posterSlider as $a)
 
-        <div class="swiper-slide">
-            <img src="assets/images/egspec-1.webp" alt="Desktop Slide 1">
-        </div>
-        <!-- Add more slides as needed -->
+    <div class="swiper-slide">
+        <a href="{{$a->href_link}}" target="_blank" rel="noopener noreferrer">
+        <img src="{{asset($a->desktop_image_url)}}" alt="{{$a->alt_name}}">
+        </a>
     </div>
+
+    @endforeach
+</div>
+
+
 </div>
 
 <!-- Mobile Slider -->
 <div class="swiper-container mobile-slider">
     <div class="swiper-wrapper">
+        @foreach ($posterSlider as $a)
         <div class="swiper-slide">
-            <img src="assets/images/holi_sale_3.webp" alt="Mobile Slide 1">
+            <a href="{{$a->href_link}}" target="_blank" rel="noopener noreferrer">
+            <img src="{{$a->mobile_image_url}}" alt="{{$a->alt_name}}">
+            </a>
         </div>
+        @endforeach
 
-        <div class="swiper-slide">
-            <img src="assets/images/holi_sale_3.webp" alt="Mobile Slide 1">
-        </div>
 
-        <div class="swiper-slide">
-            <img src="assets/images/holi_sale_3.webp" alt="Mobile Slide 1">
-        </div>
-        <!-- Add more slides as needed -->
     </div>
 </div>
 
