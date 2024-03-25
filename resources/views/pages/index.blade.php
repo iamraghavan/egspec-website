@@ -11,7 +11,7 @@
         <div class="row justify-content-md-center">
             <div class="col-lg-5 col-xl-5 col-md-10">
                 <div class="rts-about-image">
-                    <img src="{{asset('/assets/images/web/about_img.avif')}}" alt="EGS Pillay Engineering College">
+                    <img src="{{asset('/assets/images/engineering_college.jpg')}}" alt="EGS Pillay Engineering College">
                 </div>
             </div>
             <div class="col-lg-7 col-xl-7 col-md-10">

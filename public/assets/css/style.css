@@ -16437,7 +16437,7 @@ nav ul li a {
     right: 0;
     font-weight: 400;
     top: 5px;
-    padding: 8px 13px;
+    padding: 3px 5px;
     color: #fff;
     background: var(--rt-theme) !important;
     pointer-events: none;

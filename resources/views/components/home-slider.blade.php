@@ -12,15 +12,15 @@
 <div class="swiper-container desktop-slider">
     <div class="swiper-wrapper">
         <div class="swiper-slide">
-            <img src="assets/images/holi_sale.webp" alt="Desktop Slide 1">
+            <img src="assets/images/egspec-1.webp" alt="Desktop Slide 1">
         </div>
 
         <div class="swiper-slide">
-            <img src="assets/images/holi_sale.webp" alt="Desktop Slide 1">
+            <img src="assets/images/egspec-1.webp" alt="Desktop Slide 1">
         </div>
 
         <div class="swiper-slide">
-            <img src="assets/images/holi_sale.webp" alt="Desktop Slide 1">
+            <img src="assets/images/egspec-1.webp" alt="Desktop Slide 1">
         </div>
         <!-- Add more slides as needed -->
     </div>
@@ -34,7 +34,7 @@
         </div>
 
         <div class="swiper-slide">
-            <img src="https://s3.ap-south-1.amazonaws.com/guvi-2.0/banner/Zen_class_banner_3_(1).png" alt="Mobile Slide 1">
+            <img src="assets/images/holi_sale_3.webp" alt="Mobile Slide 1">
         </div>
 
         <div class="swiper-slide">

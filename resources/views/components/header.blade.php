@@ -1,36 +1,4 @@
-@php
-use Illuminate\Support\Facades\Http;
 
-$country = 'Unknown';
-$countryCode = '';
-
-try {
-$ipResponse = Http::timeout(10)->withoutVerifying()->get('https://api64.ipify.org/?format=json');
-$ipData = $ipResponse->json();
-
-$ipAddress = $ipData['ip'] ?? null;
-
-if ($ipAddress) {
-$locationResponse = Http::timeout(10)->withoutVerifying()->get("http://www.geoplugin.net/json.gp?ip={$ipAddress}");
-$locationData = $locationResponse->json();
-
-$country = $locationData['geoplugin_countryName'] ?? 'Unknown';
-
-$countriesResponse = Http::withoutVerifying()->get('https://restcountries.com/v3.1/all');
-$countriesData = $countriesResponse->json();
-
-foreach ($countriesData as $data) {
-if ($data['name']['common'] == $country) {
-$countryCode = strtolower($data['cca2']);
-break;
-}
-}
-}
-} catch (\Throwable $e) {
-// Log or handle the error as needed
-// You can leave it empty if you don't want to display errors to users
-}
-@endphp
 
 <header id="rt-header" class="header-one header--sticky">
     <div class="header-top-one-wrapper hide-on-mobile rt-primary-bg">
@@ -47,22 +15,45 @@ break;
                         <div class="right-information">
                             <ul class="rts-dropdown-menu language-switch">
 
-                               @if ($countryCode)
-                                <div class="d-flex align-items-center" style="font-size: 15px !important;">
-                                    <img class="flag" src="https://flagcdn.com/{{ $countryCode }}.svg" alt="{{ $country }} Flag">
+<li class="has-child-menu">
+    <a href="#">
+        <span class="menu-item">Feedback</span>
+        <i class="fa-regular fa-chevron-down"></i>
+    </a>
+    <ul class="sub-menu">
+        <li>
+            <a href="#">
+                <span class="menu-item">Student Feedback</span>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <span class="menu-item">Staff Feedback</span>
+            </a>
+        </li>
 
-                                    <span class="" style="margin-left: 0.5rem">{{ $country }}</span>
-                                </div>
-                                @endif
+    </ul>
 
                             </ul>
                             <ul class="rts-dropdown-menu switcher-currency">
                                 <li class="has-child-menu">
                                     <a href="#">
-                                        <span class="menu-item">Login</span> | <span class="menu-item">Register</span>
-
+                                        <span class="menu-item">Register &amp; Login</span>
+                                        <i class="fa-regular fa-chevron-down"></i>
                                     </a>
+                                    <ul class="sub-menu">
+                                        <li>
+                                            <a href="#">
+                                                <span class="menu-item">Student Login</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span class="menu-item">Staff Login</span>
+                                            </a>
+                                        </li>
 
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
@@ -77,7 +68,7 @@ break;
                 <div class="header-one-wrapper">
                     <div class="left-side-header">
                         <a href="{{ url("/") }}" class="logo-area">
-                            <img class="logo" src="{{ asset("/assets/images/logo_tran.png") }}" alt="logo">
+                            <img class="logo big_screen" src="{{ asset("/assets/images/logo_tran.png") }}" alt="logo">
                         </a>
                     </div>
 
@@ -361,13 +352,12 @@ height: auto; /* Adjust height automatically */
 }
 }
 
-.flag {
-width: auto;
-height: 1.5rem;
-margin-left: 5px;
+/* For tablets and above */
+@media screen and (min-width: 768px) {
+/* Apply padding-right: 4rem; */
+.big_screen {
+padding-right: 4rem;
+}
 }
 
-.flex-align-center {
-align-items: center;
-}
 </style>

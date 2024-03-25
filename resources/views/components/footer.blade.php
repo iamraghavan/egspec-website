@@ -43,6 +43,40 @@ $footerLinks = [
 ];
 @endphp
 
+@php
+use Illuminate\Support\Facades\Http;
+
+$country = 'Unknown';
+$countryCode = '';
+
+try {
+$ipResponse = Http::timeout(10)->withoutVerifying()->get('https://api64.ipify.org/?format=json');
+$ipData = $ipResponse->json();
+
+$ipAddress = $ipData['ip'] ?? null;
+
+if ($ipAddress) {
+$locationResponse = Http::timeout(10)->withoutVerifying()->get("http://www.geoplugin.net/json.gp?ip={$ipAddress}");
+$locationData = $locationResponse->json();
+
+$country = $locationData['geoplugin_countryName'] ?? 'Unknown';
+
+$countriesResponse = Http::withoutVerifying()->get('https://restcountries.com/v3.1/all');
+$countriesData = $countriesResponse->json();
+
+foreach ($countriesData as $data) {
+if ($data['name']['common'] == $country) {
+$countryCode = strtolower($data['cca2']);
+break;
+}
+}
+}
+} catch (\Throwable $e) {
+// Log or handle the error as needed
+// You can leave it empty if you don't want to display errors to users
+}
+@endphp
+
 <style>
 .social-copyright ul {
 list-style: none;
@@ -67,6 +101,26 @@ font-size: 20px; /* Adjust icon size */
 /* Adjust individual icon styles as needed */
 .social-copyright ul li a:hover {
 color: #FF0000; /* Change icon color on hover */
+}
+
+.country-copyright {
+    margin-top : 3rem !important;
+}
+
+.country-copyright  > .x {
+    font-size: 17px !important;
+    text-transform: uppercase !important;
+}
+
+
+.flag {
+width: auto;
+height: 1.5rem;
+margin-left: 0px;
+}
+
+.flex-align-center {
+align-items: center;
 }
 </style>
 
@@ -95,6 +149,25 @@ color: #FF0000; /* Change icon color on hover */
                                         <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
                                         <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
                                     </ul>
+                                </div>
+
+                                <div class="country-copyright">
+
+                                       @if ($countryCode)
+                                    <div class="d-flex align-items-center x">
+                                        <img class="flag" src="https://flagcdn.com/{{ $countryCode }}.svg" alt="{{ $country }} Flag">
+
+                                        <span class="" style="margin-left: 0.5rem">{{ $country }}</span>
+                                    </div>
+                                    @else
+                                    <div class="d-flex align-items-center x">
+
+                                        <span margin-left: 0.5rem">Loading ...</span>
+
+                                    </div>
+
+                                    @endif
+
                                 </div>
 
                             </div>

@@ -83,26 +83,26 @@
                 <li class="has-droupdown">
                     <a href="{{ url("#") }}" class="main">Admissions</a>
                     <ul class="submenu mm-collapse">
-                        <li class="sub-dropdown">
+                        <li class="has-droupdown">
                             <a href="{{ url("#") }}">Information Brochure</a>
-                            <ul class="submenu third-lvl base">
+                            <ul class="submenu mm-collapse">
                                 <li><a class="mobile-menu-link" href="{{ url("#") }}">UG Broucher</a></li>
                                 <li><a class="mobile-menu-link" href="{{ url("#") }}">PG Broucher</a></li>
                             </ul>
                         </li>
                         <li><a class="mobile-menu-link" href="{{ url("#") }}">Courses</a></li>
                         <li><a class="mobile-menu-link" href="{{ url("#") }}">TNEA 2023 Information</a></li>
-                        <li class="sub-dropdown">
+                        <li class="has-droupdown">
                             <a href="{{ url("#") }}">Admission Procedure</a>
-                            <ul class="submenu third-lvl base">
+                            <ul class="submenu mm-collapse">
                                 <li><a class="mobile-menu-link" href="{{ url("#") }}">UG</a></li>
                                 <li><a class="mobile-menu-link" href="{{ url("#") }}">PG</a></li>
                                 <li><a class="mobile-menu-link" href="{{ url("#") }}">Lateral Entry</a></li>
                             </ul>
                         </li>
-                        <li class="sub-dropdown">
+                        <li class="has-droupdown">
                             <a href="{{ url("#") }}">Eligibility Criteria</a>
-                            <ul class="submenu third-lvl base">
+                            <ul class="submenu mm-collapse">
                                 <li><a class="mobile-menu-link" href="{{ url("#") }}">UG</a></li>
                                 <li><a class="mobile-menu-link" href="{{ url("#") }}">PG</a></li>
                                 <li><a class="mobile-menu-link" href="{{ url("#") }}">Lateral Entry</a></li>
