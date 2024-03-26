@@ -104,26 +104,13 @@
                                             <ul class="submenu third-lvl base">
                                                 <li class="">
                                                     <a href="{{ url("/academics/departments/bachelors") }}">B.E / B.Tech</a>
-                                                    <ul class="submenu">
-                                                        {{--
 
-                                                        --}}
-                                                    </ul>
                                                 </li>
                                                 <li class="">
-                                                    <a href="{{ url("#") }}">M.E / M.Tech</a>
-                                                    <ul class="submenu">
-                                                        {{--
-                                                        <li><a href="{{ url("#") }}">Manufacturing Engineering</a></li>
-                                                        <li><a href="{{ url("#") }}">Computer Science and Engineering</a>
-                                                        </li>
-                                                        <li><a href="{{ url("#") }}">Power Electronics and Drives</a></li>
-                                                        <li><a href="{{ url("#") }}">Communication Systems</a></li>
-                                                        <li><a href="{{ url("#") }}">Environmental Engineering</a></li>
-                                                        --}}
-                                                    </ul>
+                                                    <a href="{{ url("/academics/departments/masters") }}">M.E / M.Tech</a>
+
                                                 </li>
-                                                <li><a href="{{ url("#") }}">MCA</a></li>
+                                                <li><a href="{{ url("/academics/departments/mca") }}">MCA</a></li>
                                                 <li><a href="{{ url("#") }}">MBA</a></li>
                                                 <li><a href="{{ url("#") }}">Science & Humanities</a></li>
                                             </ul>

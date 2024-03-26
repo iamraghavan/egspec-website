@@ -4,11 +4,16 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Str;
 
 class CreateCoursesTable extends Migration
 {
     public function up()
     {
+
+
+
+
         Schema::create('courses', function (Blueprint $table) {
             $table->id();
             $table->string('course_name');
@@ -21,7 +26,6 @@ class CreateCoursesTable extends Migration
             $table->timestamps();
         });
 
-        // Insert initial course data
         DB::table('courses')->insert([
             [
                 'course_name' => 'Mechanical Engineering',
@@ -31,6 +35,17 @@ class CreateCoursesTable extends Migration
                 'description' => 'Description of Mechanical Engineering course.',
                 'featured_image' => 'url_to_mechanical_featured_image',
                 'course_id' => 'ME_EGSPEC01',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'course_name' => 'Artificial Intelligence & Data Science',
+                'image_url' => '/assets/images/department/bachelors/AIDS_EGSPEC032.avif',
+                'created_by' => 'raghavan_egspec',
+                'course_type' => 'bachelors',
+                'description' => 'Description of Artificial Intelligence & Data Science Department.',
+                'featured_image' => 'url_to_civil_featured_image',
+                'course_id' => 'AIDS_EGSPEC032',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],
@@ -110,6 +125,73 @@ class CreateCoursesTable extends Migration
                 'description' => 'Description of Computer Science & Business Systems Engineering course.',
                 'featured_image' => 'url_to_csbse_featured_image',
                 'course_id' => 'CSBSE_EGSPEC08',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+
+            [
+                'course_name' => 'Mechanical Engineering',
+                'image_url' => '/assets/images/department/bachelors/ME_EGSPEC01.jpg',
+                'created_by' => 'raghavan_egspec',
+                'course_type' => 'masters',
+                'description' => 'Description of Mechanical Engineering course.',
+                'featured_image' => 'url_to_featured_image',
+                'course_id' => 'MEM_EGSPEC01',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'course_name' => 'Manufacturing Engineering',
+                'image_url' => '/assets/images/department/masters/MF_EGSPEC01.jpg',
+                'created_by' => 'raghavan_egspec',
+                'course_type' => 'masters',
+                'description' => 'Description of Manufacturing Engineering course.',
+                'featured_image' => 'url_to_featured_image',
+                'course_id' => 'MF_EGSPEC01',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'course_name' => 'Computer Science and Engineering',
+                'image_url' => '/assets/images/department/bachelors/CSE_EGSPEC05.jpg',
+                'created_by' => 'raghavan_egspec',
+                'course_type' => 'masters',
+                'description' => 'Description of Computer Science and Engineering course.',
+                'featured_image' => 'url_to_featured_image',
+                'course_id' => 'CS_EGSPEC01',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'course_name' => 'Power Electronics and Drives',
+                'image_url' => '/assets/images/department/masters/PED_EGSPEC01.jpg',
+                'created_by' => 'raghavan_egspec',
+                'course_type' => 'masters',
+                'description' => 'Description of Power Electronics and Drives course.',
+                'featured_image' => 'url_to_featured_image',
+                'course_id' => 'PED_EGSPEC01',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'course_name' => 'Communication Systems',
+                'image_url' => '/assets/images/department/masters/CSYS_EGSPEC01.jpg',
+                'created_by' => 'raghavan_egspec',
+                'course_type' => 'masters',
+                'description' => 'Description of Communication Systems course.',
+                'featured_image' => 'url_to_featured_image',
+                'course_id' => 'CSYS_EGSPEC01',
+                'created_at' => now(),
+                'updated_at' => now(),
+            ],
+            [
+                'course_name' => 'Environmental Engineering',
+                'image_url' => '/assets/images/department/masters/ENV_EGSPEC01.jpg',
+                'created_by' => 'raghavan_egspec',
+                'course_type' => 'masters',
+                'description' => 'Description of Environmental Engineering course.',
+                'featured_image' => 'url_to_featured_image',
+                'course_id' => 'ENV_EGSPEC01',
                 'created_at' => now(),
                 'updated_at' => now(),
             ],

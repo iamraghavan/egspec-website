@@ -1,6 +1,11 @@
 @extends('layouts.app')
 @section('content')
 
+@include('components.breadcrumb', ['value_1' => '',
+'value_2' => 'Departments',
+'value_3' => 'Bachelors',
+'page_title' => 'Bachelor\'s in Engineering' ])
+
 <div class="rts-academic-area rts-section-padding">
     <div class="container">
         <div class="row">
@@ -18,7 +23,7 @@
                 <a href="{{url('')}}" target="_blank" rel="noopener noreferrer">
                     <div class="single-cat-item">
                         <div class="cat-thumb">
-                            <img src="{{$course->image_url}}" alt="{{$course->course_name}}">
+                            <img src="{{asset($course->image_url)}}" alt="{{$course->course_name}}">
                             <a href="{{url('')}}" class="cat-link-btn">{{$course->course_type}}</a>
                         </div>
                         <div class="cat-meta">
@@ -44,7 +49,7 @@
 </div>
 
 
-
+@include('components.cta')
 
 
 @endsection

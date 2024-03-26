@@ -23,4 +23,15 @@ class PagesController extends Controller
         $courses = Course::where('course_type', 'bachelors')->get();
         return view('pages.academics.bachelors', ['academics' => $courses]);
     }
+
+    public function department_masters()
+    {
+        $courses = Course::where('course_type', 'masters')->get();
+        return view('pages.academics.masters', ['academics' => $courses]);
+    }
+
+    public function department_mca()
+    {
+        return view('pages.academics.mca');
+    }
 }
