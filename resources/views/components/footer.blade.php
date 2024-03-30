@@ -10,7 +10,7 @@ $footerLinks = [
 'Pay Fees Online' => 'http://example.com/pay-fees',
 'IT Policy' => 'http://example.com/it-policy',
 'Careers' => 'http://example.com/careers',
-'FAQ' => 'http://example.com/faq'
+'FAQ' => 'http://example.com/faq',
 ],
 'Placement' => [
 'Industry Partnership' => 'http://example.com/industry-partnership',
@@ -19,7 +19,7 @@ $footerLinks = [
 'Training Cell' => 'http://example.com/training-cell',
 'Placement Team' => 'http://example.com/placement-team',
 'Placement Statistics' => 'http://example.com/placement-statistics',
-'Our Few of Recruiters' => 'http://example.com/our-recruiters'
+'Our Few of Recruiters' => 'http://example.com/our-recruiters',
 ],
 'Important Links' => [
 'AntiRagging' => 'http://example.com/antiragging',
@@ -31,15 +31,15 @@ $footerLinks = [
 'Blog & Articles' => 'http://example.com/blog',
 'Alumni' => 'http://example.com/alumni',
 'Gallery & Media' => 'http://example.com/gallery-media',
-'Social Media' => 'http://example.com/social-media'
+'Social Media' => 'http://example.com/social-media',
 ],
 'Feedback' => [
 'Feedback on Curriculum' => 'http://example.com/feedback-curriculum',
 'Students Feedbacks' => 'http://example.com/students-feedback',
 'Staff Feedback' => 'http://example.com/staff-feedback',
 'Grievance & Redressal' => 'http://example.com/grievance-redressal',
-'Admission' => 'http://example.com/admission'
-]
+'Admission' => 'http://example.com/admission',
+],
 ];
 @endphp
 
@@ -50,78 +50,89 @@ $country = 'Unknown';
 $countryCode = '';
 
 try {
-$ipResponse = Http::timeout(10)->withoutVerifying()->get('https://api64.ipify.org/?format=json');
-$ipData = $ipResponse->json();
+    // Get the user's IP address
+    $ipResponse = Http::timeout(10)->withoutVerifying()->get('https://api64.ipify.org/?format=json');
+    $ipData = $ipResponse->json();
+    $ipAddress = $ipData['ip'] ?? null;
 
-$ipAddress = $ipData['ip'] ?? null;
+    // Retrieve geolocation data based on the IP address
+    if ($ipAddress) {
+        $locationResponse = Http::timeout(10)->withoutVerifying()->get("http://www.geoplugin.net/json.gp?ip={$ipAddress}");
+        $locationData = $locationResponse->json();
+        $country = $locationData['geoplugin_countryName'] ?? 'Unknown';
+    }
 
-if ($ipAddress) {
-$locationResponse = Http::timeout(10)->withoutVerifying()->get("http://www.geoplugin.net/json.gp?ip={$ipAddress}");
-$locationData = $locationResponse->json();
+    // Retrieve country code from the geolocation data
+    if ($country !== 'Unknown') {
+        $countriesResponse = Http::withoutVerifying()->get('https://restcountries.com/v3.1/all');
+        $countriesData = $countriesResponse->json();
 
-$country = $locationData['geoplugin_countryName'] ?? 'Unknown';
-
-$countriesResponse = Http::withoutVerifying()->get('https://restcountries.com/v3.1/all');
-$countriesData = $countriesResponse->json();
-
-foreach ($countriesData as $data) {
-if ($data['name']['common'] == $country) {
-$countryCode = strtolower($data['cca2']);
-break;
-}
-}
-}
+        foreach ($countriesData as $data) {
+            if (isset($data['name']['common']) && $data['name']['common'] === $country) {
+                $countryCode = strtolower($data['cca2'] ?? '');
+                break;
+            }
+        }
+    }
 } catch (\Throwable $e) {
-// Log or handle the error as needed
-// You can leave it empty if you don't want to display errors to users
+    // Log or handle the error as needed
+    // You can leave it empty if you don't want to display errors to users
 }
 @endphp
 
+
+
+
 <style>
-.social-copyright ul {
-list-style: none;
-padding: 0;
-margin: 0;
-}
+    .social-copyright ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
 
-.social-copyright ul li {
-display: inline-block;
-margin-right: 10px; /* Adjust spacing between icons */
-}
+    .social-copyright ul li {
+        display: inline-block;
+        margin-right: 10px;
+        /* Adjust spacing between icons */
+    }
 
-.social-copyright ul li:last-child {
-margin-right: 0; /* Remove margin from the last icon */
-}
+    .social-copyright ul li:last-child {
+        margin-right: 0;
+        /* Remove margin from the last icon */
+    }
 
-.social-copyright ul li a {
-color: #fff; /* Set icon color */
-font-size: 20px; /* Adjust icon size */
-}
+    .social-copyright ul li a {
+        color: #fff;
+        /* Set icon color */
+        font-size: 20px;
+        /* Adjust icon size */
+    }
 
-/* Adjust individual icon styles as needed */
-.social-copyright ul li a:hover {
-color: #FF0000; /* Change icon color on hover */
-}
+    /* Adjust individual icon styles as needed */
+    .social-copyright ul li a:hover {
+        color: #FF0000;
+        /* Change icon color on hover */
+    }
 
-.country-copyright {
-    margin-top : 3rem !important;
-}
+    .country-copyright {
+        margin-top: 3rem !important;
+    }
 
-.country-copyright  > .x {
-    font-size: 17px !important;
-    text-transform: uppercase !important;
-}
+    .country-copyright>.x {
+        font-size: 17px !important;
+        text-transform: uppercase !important;
+    }
 
 
-.flag {
-width: auto;
-height: 1.5rem;
-margin-left: 0px;
-}
+    .flag {
+        width: auto;
+        height: 1.5rem;
+        margin-left: 0px;
+    }
 
-.flex-align-center {
-align-items: center;
-}
+    .flex-align-center {
+        align-items: center;
+    }
 </style>
 
 <footer class="rts-footer v_1 pt--100 pb--80">
@@ -133,7 +144,7 @@ align-items: center;
                     <div class="col-md-6 col-sm-6 col-lg-4">
                         <div class="rts-footer-widget w-320">
                             <a href="index.html" class="d-block rts-footer-logo mb--40">
-                                <img src="{{asset('/assets/images/logo-white.png')}}" alt="EGSPEC">
+                                <img src="{{ asset('/assets/images/logo-white.png') }}" alt="EGSPEC">
                             </a>
 
                             <div class="rts-contact-link">
@@ -153,16 +164,17 @@ align-items: center;
 
                                 <div class="country-copyright">
 
-                                       @if ($countryCode)
+                                    @if($countryCode)
                                     <div class="d-flex align-items-center x">
-                                        <img class="flag" src="https://flagcdn.com/{{ $countryCode }}.svg" alt="{{ $country }} Flag">
+                                        <img class="flag" src="https://flagcdn.com/{{ $countryCode }}.svg"
+                                            alt="{{ $country }} Flag">
 
                                         <span class="" style="margin-left: 0.5rem">{{ $country }}</span>
                                     </div>
                                     @else
                                     <div class="d-flex align-items-center x">
 
-                                        <span margin-left: 0.5rem">Loading ...</span>
+                                        <span style="margin-left: 0.5rem">Loading ...</span>
 
                                     </div>
 
@@ -198,8 +210,10 @@ align-items: center;
     <div class="container">
         <div class="row">
             <div class="rt-center">
-                <p style="font-weight: 600;" class="--p-xs">Copyright © 2006 - {{ date('Y') }} All Rights Reserved by
-                    <a href="https://egspgroup.in/" target="_blank">EGS Pillay Group of Institutions</a> | Developed By <a href=""> Raghavan Jeeva </a>
+                <p style="font-weight: 600;" class="--p-xs">Copyright © 2006 - {{ date('Y') }} All
+                    Rights Reserved by
+                    <a href="https://egspgroup.in/" target="_blank">EGS Pillay Group of Institutions</a> | Developed By
+                    <a href=""> Raghavan Jeeva </a>
                 </p>
             </div>
         </div>

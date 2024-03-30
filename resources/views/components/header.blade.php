@@ -111,12 +111,12 @@
 
                                                 </li>
                                                 <li><a href="{{ url("/academics/departments/mca") }}">MCA</a></li>
-                                                <li><a href="{{ url("#") }}">MBA</a></li>
-                                                <li><a href="{{ url("#") }}">Science & Humanities</a></li>
+                                                <li><a href="{{ url("/academics/departments/mba") }}">MBA</a></li>
+                                                <li><a href="{{ url("/academics/departments/science-humanities") }}">Science & Humanities</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="{{ url("#") }}">Industry Academic Partners</a></li>
-                                        <li><a href="{{ url("#") }}">Industry Certification Programmes</a></li>
+                                        <li><a href="{{ url("/academics/industry-academic-partnering") }}">Industry Academic Partners</a></li>
+                                        <li><a href="{{ url("/academics/industry-certification-programs") }}">Industry Certification Programmes</a></li>
                                         <li><a href="{{ url("#") }}">Industry Training Programmes</a></li>
                                         <li><a href="{{ url("#") }}">Advisory Board</a></li>
                                     </ul>

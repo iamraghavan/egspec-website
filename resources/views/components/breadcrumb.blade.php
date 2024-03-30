@@ -7,6 +7,7 @@
             <div class="col-12">
                 <div class="breadcrumb-content">
                     <ul class="breadcrumb">
+
                         @if($value_1)
                         <li style="color: #FFF;" class="breadcrumb-item">{{ $value_1 }}</li>
                         @endif
@@ -14,7 +15,11 @@
                         @if($value_2)
                         <li style="color: #FFF;" class="breadcrumb-item">{{ $value_2 }}</li>
                         @endif
+
+                        @if($value_3)
                         <li class="breadcrumb-item active" aria-current="page">{{ $value_3 }}</li>
+                        @endif
+
                     </ul>
                     <h2 class="section-title">{{$page_title}}</h2>
                 </div>
