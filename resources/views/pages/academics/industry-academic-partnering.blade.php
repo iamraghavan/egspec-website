@@ -67,7 +67,7 @@
 .iap {
 
     max-width: 100% !important;
-    height: 6rem;
+    height: 4rem;
     FONT-WEIGHT: 200;
     margin: 3rem;
 }

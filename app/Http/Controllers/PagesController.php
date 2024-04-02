@@ -6,6 +6,7 @@ use App\Models\SliderImage;
 use App\Models\PostSlider;
 use App\Models\IndustryAcademicPartnering;
 use App\Models\Course;
+use App\Models\Certification;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -54,6 +55,19 @@ class PagesController extends Controller
 
     public function industry_certification_programs()
     {
-        return view('pages.academics.industry-certification-programs');
+        $certifications = Certification::all();
+        return view('pages.academics.industry-certification-programs', ['certifications' => $certifications]);
+    }
+
+    public function industry_training_programs()
+    {
+        $training = Certification::all();
+        return view('pages.academics.industry-training-programs', ['training' => $training]);
+    }
+
+    public function advisory_board()
+    {
+
+        return view('pages.academics.advisory-board');
     }
 }

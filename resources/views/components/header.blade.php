@@ -117,8 +117,8 @@
                                         </li>
                                         <li><a href="{{ url("/academics/industry-academic-partnering") }}">Industry Academic Partners</a></li>
                                         <li><a href="{{ url("/academics/industry-certification-programs") }}">Industry Certification Programmes</a></li>
-                                        <li><a href="{{ url("#") }}">Industry Training Programmes</a></li>
-                                        <li><a href="{{ url("#") }}">Advisory Board</a></li>
+                                        <li><a href="{{ url("/academics/industry-training-programs") }}">Industry Training Programmes</a></li>
+                                        <li><a href="{{ url("/academics/advisory-board") }}">Advisory Board</a></li>
                                     </ul>
                                 </li>
                                 <li class="has-dropdown">

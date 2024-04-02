@@ -19,3 +19,5 @@ Route::get('/academics/departments/mba', [PagesController::class, 'department_mb
 Route::get('/academics/departments/science-humanities', [PagesController::class, 'department_science_humanities']);
 Route::get('/academics/industry-academic-partnering', [PagesController::class, 'industry_academic_partnering']);
 Route::get('/academics/industry-certification-programs', [PagesController::class, 'industry_certification_programs']);
+Route::get('/academics/industry-training-programs', [PagesController::class, 'industry_training_programs']);
+Route::get('/academics/advisory-board', [PagesController::class, 'advisory_board']);
