@@ -38,11 +38,44 @@
     @include('components.header')
 
 
+
+
+
+
     @yield('content')
 
 
 
     @include('components.mobile-nav')
+
+
+    @if(session('success'))
+<div class="position-fixed top-0 start-0 m-3" style="z-index: 9999;">
+    <div class="alert alert-success alert-dismissible fade show" role="alert">
+        {{ session('success') }}
+
+    </div>
+</div>
+@endif
+
+@if(session('error'))
+<div class="position-fixed top-0 start-0 m-3" style="z-index: 9999;">
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        {{ session('error') }}
+
+    </div>
+</div>
+@endif
+
+<script>
+    // Auto-close the alert after 5 seconds
+    window.setTimeout(function() {
+        $(".alert").fadeTo(500, 0).slideUp(500, function(){
+            $(this).remove();
+        });
+    }, 5000);
+</script>
+
 
     @include('components.footer')
 

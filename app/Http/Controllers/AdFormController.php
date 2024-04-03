@@ -69,7 +69,7 @@ class AdFormController extends Controller
 
             return redirect()->back()->with('success', 'Thank you for your inquiry our staff will contact you as soon !');
         } catch (\Exception $e) {
-            $a = $validatedData['whatsapp_number'];
+            $a = $validatedData['m_name'];
             return redirect()->back()->with('error', "Sorry $a, we are facing some issues. Please try again later.");
             // return response()->json(['error' => $e->getMessage()], 500);
         }
