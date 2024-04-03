@@ -49,6 +49,7 @@
 
     {{-- Script Files --}}
 
+
     <!-- jquery js -->
     <script src="{{ asset("/assets/js/vendor/jquery.min.js") }}"></script>
     <!-- bootstrap 5.0.2 -->

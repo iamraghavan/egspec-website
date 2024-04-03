@@ -54,6 +54,29 @@
   </div>
 </div>
 
+@if(session('success'))
+<div class="alert alert-success alert-dismissible fade show" role="alert">
+    {{ session('success') }}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+  </div>
+
+@endif
+
+
+@if(session('error'))
+<div class="alert alert-warning alert-dismissible fade show" role="alert">
+    {{ session('error') }}
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+  </div>
+
+@endif
+
+
+
 <script>
   document.addEventListener('DOMContentLoaded', function() {
     var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
@@ -64,6 +87,14 @@
       myModal.dispose(); // Dispose the modal after it's hidden
       modalElement.parentNode.removeChild(modalElement); // Remove the modal from the DOM
     });
+
+
+    @if(session('success') || session('error'))
+            setTimeout(function() {
+                myModal.hide(); // Close the modal after 4 seconds
+            },2000);
+        @endif
+
   });
 
   document.addEventListener("DOMContentLoaded", function() {
@@ -98,6 +129,9 @@
 });
 
 </script>
+
+
+
 
 
 

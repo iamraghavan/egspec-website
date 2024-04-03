@@ -15,12 +15,7 @@ class AdFormController extends Controller
 
     public function adsubmitForm(Request $request)
     {
-
-        // dd($request->all());
-
         $validatedData = $request->validate([
-
-
             'm_name' => 'required|string',
             'whatsapp_number' => 'required|string|min:10|max:12',
         ]);
@@ -34,7 +29,7 @@ class AdFormController extends Controller
             'integrated_number' => '917603809257',
             'content_type' => 'template',
             'payload' => [
-                'to' => $request->whatsapp_number,
+                'to' => $validatedData['whatsapp_number'],
                 'type' => 'template',
                 'template' => [
                     'name' => 'egspec_admission_message',
@@ -69,10 +64,14 @@ class AdFormController extends Controller
             ]);
 
             $result = $response->getBody()->getContents();
-            echo $result; // Output the result
+
+            // return response()->json(['success' => 'WhatsApp message sent successfully']);
+
+            return redirect()->back()->with('success', 'Thank you for your inquiry our staff will contact you as soon !');
         } catch (\Exception $e) {
-            echo $e->getMessage(); // Handle any exceptions
+            $a = $validatedData['whatsapp_number'];
+            return redirect()->back()->with('error', "Sorry $a, we are facing some issues. Please try again later.");
+            // return response()->json(['error' => $e->getMessage()], 500);
         }
-        return redirect()->back()->with('success', 'WhatsApp message sent successfully.');
     }
 }
