@@ -3,13 +3,15 @@
 use App\Http\Controllers\ApiController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\AdFormController;
+
+
+// Other Backend Operation Routes
+Route::post('/admission-submit-form', [AdFormController::class, 'adsubmitForm'])->name('adsubmitForm');
 
 
 Route::get('/', [PagesController::class, 'index']);
 
-use App\Http\Middleware\RequestInformationMiddleware;
-
-Route::get('/middleware', [RequestInformationMiddleware::class, 'handle']);
 
 // Route for Academics
 Route::get('/academics/departments/bachelors', [PagesController::class, 'department_bachelors']);

@@ -17,13 +17,17 @@
           </div>
           <!-- Input Form (Left Side) -->
           <div class="col-lg-6 mbo-temp">
-            <form>
+            <form action="{{ route('adsubmitForm') }}" method="POST">
+
+                @csrf
                 <div class="mb-3">
                   <label for="inputName" class="form-label">Name</label>
                   <input type="text" class="form-control" id="inputName"
        autocomplete="off" name="m_name" placeholder="Enter your name"
        oninput="this.value = this.value.toUpperCase().replace(/[^A-Z\s]/g, '')">
-
+       @error('name')
+       <div class="text-danger">{{ $message }}</div>
+   @enderror
 
                 </div>
                 <div class="mb-3">
@@ -32,7 +36,9 @@
        oninput="this.value = this.value.replace(/\D/g, '').substring(0, 12)"
        class="form-control" id="inputWhatsapp" placeholder="Enter WhatsApp Number"
        onclick="if(this.value.length === 0) this.value = '+91 '">
-
+       @error('whatsapp_number')
+       <div class="text-danger">{{ $message }}</div>
+   @enderror
                 </div>
                 <button type="submit" class="btn btn-primary mb-3">Submit</button>
                 <div class="mb-3 form-check">
