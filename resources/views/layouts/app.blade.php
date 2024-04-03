@@ -37,6 +37,7 @@
 
     @include('components.header')
 
+
     @yield('content')
 
 

@@ -5,6 +5,7 @@
 @include('components.logo-slider')
 
 
+
 <section class="rts-about v__1 rt-relative rts-section-padding">
 
     <div class="container">
@@ -418,6 +419,8 @@
 @include('components.testimonial')
 @include('components.cta')
 
+
+@include('components.admision-model')
 
 @endsection
 
