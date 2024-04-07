@@ -7,6 +7,7 @@ use App\Models\PostSlider;
 use App\Models\IndustryAcademicPartnering;
 use App\Models\Course;
 use App\Models\Certification;
+use App\Models\CoursesAndIntakes;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -18,6 +19,9 @@ class PagesController extends Controller
 
         return view('pages.index', ['sliderImages' => $sliderImages, 'posterSlider' => $posterSlider]);
     }
+
+
+    /* Academics */
 
     public function department_bachelors()
     {
@@ -69,5 +73,19 @@ class PagesController extends Controller
     {
 
         return view('pages.academics.advisory-board');
+    }
+
+
+    /* Admissions */
+
+    public function tnea()
+    {
+        return view('pages.admissions.tnea');
+    }
+
+    public function courses_intake()
+    {
+        $ci = CoursesAndIntakes::all();
+        return view('pages.admissions.courses-intake', ['ci' => $ci]);
     }
 }

@@ -6,14 +6,14 @@
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title text-white" id="exampleModalLabel">Adminssion {{ date('Y') }} - {{ substr(date('Y') + 1, -2) }}</h5>
+        <h5 class="modal-title text-white" id="exampleModalLabel">Adminssion {{ date('Y') }} - {{ date('Y') + 1 }}</h5>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
         <div class="row">
           <!-- Poster (Right Side) -->
           <div class="col-lg-6">
-            <img src="https://egspec.blob.core.windows.net/egspec-assets/holi_sale_3.webp" class="img-fluid" alt="Poster">
+            <img src="https://egspec.blob.core.windows.net/egspec-assets/egspec_model.jpg" class="img-fluid" alt="EGSPEC Adminssion {{ date('Y') }} - {{ date('Y') + 1 }}">
           </div>
           <!-- Input Form (Left Side) -->
           <div class="col-lg-6 mbo-temp">

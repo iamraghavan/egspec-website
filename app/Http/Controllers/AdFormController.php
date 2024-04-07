@@ -49,11 +49,21 @@ class AdFormController extends Controller
                                 ],
                             ],
                         ],
+                        [
+                            'type' => 'body',
+                            'parameters' => [
+                                [
+                                    'type' => 'text',
+                                    'text' => $validatedData['m_name'],
+                                ],
+                            ],
+                        ],
                     ],
                 ],
                 'messaging_product' => 'whatsapp',
             ],
         ];
+
 
         $client = new Client();
 
@@ -67,7 +77,9 @@ class AdFormController extends Controller
 
             // return response()->json(['success' => 'WhatsApp message sent successfully']);
 
-            return redirect()->back()->with('success', 'Thank you for your inquiry our staff will contact you as soon !');
+            $a = $validatedData['m_name'];
+
+            return redirect()->back()->with('success', " $a, Thank you for your inquiry our staff will contact you as soon !");
         } catch (\Exception $e) {
             $a = $validatedData['m_name'];
             return redirect()->back()->with('error', "Sorry $a, we are facing some issues. Please try again later.");

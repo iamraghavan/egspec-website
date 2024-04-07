@@ -23,3 +23,10 @@ Route::get('/academics/industry-academic-partnering', [PagesController::class, '
 Route::get('/academics/industry-certification-programs', [PagesController::class, 'industry_certification_programs']);
 Route::get('/academics/industry-training-programs', [PagesController::class, 'industry_training_programs']);
 Route::get('/academics/advisory-board', [PagesController::class, 'advisory_board']);
+
+
+
+// Route for Admissions
+
+Route::get('/admissions/tnea', [PagesController::class, 'tnea']);
+Route::get('/admissions/course-intake', [PagesController::class, 'courses_intake']);

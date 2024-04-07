@@ -131,8 +131,8 @@
                                                 <li><a href="{{ url("#") }}">PG Broucher</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="{{ url("#") }}">Courses</a></li>
-                                        <li><a href="{{ url("#") }}">TNEA {{ date('Y') }} Information</a></li>
+                                        <li><a href="{{ url("/admissions/course-intake") }}">Courses & Intake</a></li>
+                                        <li><a href="{{ url("/admissions/tnea") }}">TNEA {{ date('Y') -1 }} Information</a></li>
                                         <li class="sub-dropdown">
                                             <a href="{{ url("#") }}">Admission Procedure</a>
                                             <ul class="submenu third-lvl base">
@@ -141,21 +141,22 @@
                                                 <li><a href="{{ url("#") }}">Lateral Entry</a></li>
                                             </ul>
                                         </li>
-                                        <li class="sub-dropdown">
+                                        {{-- <li class="sub-dropdown">
                                             <a href="{{ url("#") }}">Eligibility Criteria</a>
                                             <ul class="submenu third-lvl base">
                                                 <li><a href="{{ url("#") }}">UG</a></li>
                                                 <li><a href="{{ url("#") }}">PG</a></li>
                                                 <li><a href="{{ url("#") }}">Lateral Entry</a></li>
                                             </ul>
-                                        </li>
-                                        <li><a href="{{ url("#") }}">Sports Quota Admission</a></li>
+                                        </li> --}}
+                                        <li><a href="{{ url("#") }}">Excess Fee Committee Circular</a></li>
+                                        {{-- <li><a href="{{ url("#") }}">Sports Quota Admission</a></li>
                                         <li class="sub-dropdown">
                                             <a href="{{ url("#") }}">Scholarships</a>
                                             <ul class="submenu third-lvl base">
                                                 <li><a href="{{ url("#") }}">Sports Quota Scholarship 2024</a></li>
                                             </ul>
-                                        </li>
+                                        </li> --}}
                                         <li><a href="{{ url("#") }}">Why Study Here</a></li>
                                         <li><a href="{{ url("#") }}">FAQ</a></li>
                                     </ul>

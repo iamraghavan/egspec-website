@@ -3,7 +3,7 @@
     <!-- inner menu area desktop start -->
     <div class="inner-main-wrapper-desk">
         <div class="thumbnail">
-            <img src="{{ asset(" /assets/images/logo_tran.png") }}" alt="studyhub-university">
+            <img src="{{ asset("/assets/images/logo_tran.png") }}" alt="EGSPEC">
         </div>
         <div class="inner-content">
 

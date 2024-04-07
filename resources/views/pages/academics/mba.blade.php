@@ -464,13 +464,18 @@
                         </div>
 
 
+                        @include('components.vertical-web-slider', ['pageSections' => 'mba'])
+
+
+
+
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 
 
 @include('components.cta')
