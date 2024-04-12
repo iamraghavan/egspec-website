@@ -30,3 +30,22 @@ Route::get('/academics/advisory-board', [PagesController::class, 'advisory_board
 
 Route::get('/admissions/tnea', [PagesController::class, 'tnea']);
 Route::get('/admissions/course-intake', [PagesController::class, 'courses_intake']);
+Route::get('/admissions/excess-fee-committee-circular', [PagesController::class, 'efcc']);
+Route::get('/admissions/complaint-committee', [PagesController::class, 'complaint_committee']);
+
+
+// Route for Facilities
+
+Route::get('/facilities/infrastructure', [PagesController::class, 'infrastructure']);
+Route::get('/facilities/indoor-stadium', [PagesController::class, 'indoor']);
+Route::get('/facilities/basketball-court', [PagesController::class, 'basketball_court']);
+Route::get('/facilities/laboratries', [PagesController::class, 'laboratries']);
+
+
+/*
+Laboratries |--> Computer Laboratory
+            |--> Mechnical Laboratory
+            |--> Civil Laboratory
+            |--> Electronics Laboratory
+            |--> Electrical Laboratory
+*/

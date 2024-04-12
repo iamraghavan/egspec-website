@@ -149,7 +149,7 @@
                                                 <li><a href="{{ url("#") }}">Lateral Entry</a></li>
                                             </ul>
                                         </li> --}}
-                                        <li><a href="{{ url("#") }}">Excess Fee Committee Circular</a></li>
+                                        <li><a href="{{ url("/admissions/excess-fee-committee-circular") }}">Excess Fee Committee Circular</a></li>
                                         {{-- <li><a href="{{ url("#") }}">Sports Quota Admission</a></li>
                                         <li class="sub-dropdown">
                                             <a href="{{ url("#") }}">Scholarships</a>
@@ -157,6 +157,7 @@
                                                 <li><a href="{{ url("#") }}">Sports Quota Scholarship 2024</a></li>
                                             </ul>
                                         </li> --}}
+                                        <li><a href="{{ url("/admissions/complaint-committee") }}">Complaint Committee</a></li>
                                         <li><a href="{{ url("#") }}">Why Study Here</a></li>
                                         <li><a href="{{ url("#") }}">FAQ</a></li>
                                     </ul>
@@ -164,10 +165,10 @@
                                 <li class="has-dropdown">
                                     <a class="nav-link" href="{{ url("#") }}">Facilities</a>
                                     <ul class="submenu">
-                                        <li><a href="{{ url("#") }}">Infrastructure</a></li>
-                                        <li><a href="{{ url("#") }}">Indoor Stadium</a></li>
-                                        <li><a href="{{ url("#") }}">Basketball Court</a></li>
-                                        <li><a href="{{ url("#") }}">Laboratries</a></li>
+                                        <li><a href="{{ url("/facilities/infrastructure") }}">Infrastructure</a></li>
+                                        <li><a href="{{ url("/facilities/indoor-stadium") }}">Indoor Stadium</a></li>
+                                        <li><a href="{{ url("/facilities/basketball-court") }}">Basketball Court</a></li>
+                                        <li><a href="{{ url("/facilities/laboratries") }}">Laboratries</a></li>
                                         <li><a href="{{ url("#") }}">Hostel</a></li>
                                         <li><a href="{{ url("#") }}">Library</a></li>
                                         <li><a href="{{ url("#") }}">Transport</a></li>

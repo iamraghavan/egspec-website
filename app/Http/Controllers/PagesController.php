@@ -8,6 +8,7 @@ use App\Models\IndustryAcademicPartnering;
 use App\Models\Course;
 use App\Models\Certification;
 use App\Models\CoursesAndIntakes;
+use App\Models\ComplaintCommittee;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -87,5 +88,40 @@ class PagesController extends Controller
     {
         $ci = CoursesAndIntakes::all();
         return view('pages.admissions.courses-intake', ['ci' => $ci]);
+    }
+
+    public function efcc()
+    {
+        return view('pages.admissions.efcc');
+    }
+
+    public function complaint_committee()
+    {
+        $cc = ComplaintCommittee::all();
+        return view('pages.admissions.complaint-committee', ['cc' => $cc]);
+    }
+
+
+    /* Facilities */
+
+    public function infrastructure()
+    {
+        return view('pages.facilities.infrastructure');
+    }
+
+    public function indoor()
+    {
+        return view('pages.facilities.indoor-stadium');
+    }
+
+    public function basketball_court()
+    {
+        return view('pages.facilities.basketball-court');
+    }
+
+    public function laboratries()
+    {
+
+        return view('pages.facilities.laboratries');
     }
 }

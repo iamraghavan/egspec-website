@@ -31,15 +31,14 @@
 
                 </div>
                 <div class="mb-3">
-                  <label for="inputWhatsapp" class="form-label">WhatsApp Number <i class="fa-brands fa-whatsapp"></i> </label>
-                  <input type="tel" name="whatsapp_number"
-       oninput="this.value = this.value.replace(/\D/g, '').substring(0, 12)"
-       class="form-control" id="inputWhatsapp" placeholder="Enter WhatsApp Number"
-       onclick="if(this.value.length === 0) this.value = '+91 '">
-       @error('whatsapp_number')
-       <div class="text-danger">{{ $message }}</div>
-   @enderror
+                    <label for="inputWhatsapp" class="form-label">WhatsApp Number <i class="fa-brands fa-whatsapp"></i></label>
+                    <input type="tel" name="whatsapp_number" class="form-control" id="inputWhatsapp" placeholder="Enter WhatsApp Number" maxlength="12" oninput="formatWhatsAppNumber(this)" onclick="if(this.value.length === 0) this.value = '91'">
+                    @error('whatsapp_number')
+                    <div class="text-danger">{{ $message }}</div>
+                    @enderror
                 </div>
+
+
                 <button type="submit" class="btn btn-primary mb-3">Submit</button>
                 <div class="mb-3 form-check">
                   <label class="form-check-label" for="termsCheck">
@@ -58,6 +57,7 @@
 
 
 <script>
+
   document.addEventListener('DOMContentLoaded', function() {
     var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
     myModal.show();

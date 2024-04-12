@@ -40,5 +40,5 @@
     </div>
 </div>
 
-
+@include('components.cta')
 @endsection
