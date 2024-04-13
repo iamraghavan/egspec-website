@@ -9,11 +9,11 @@
 ])
 
 
-<div class="rts-campus-section rts-section-padding pb-0 v_3">
+<div class="rts-campus-section rts-section-padding pb-0 v_3 pt--100 pb--80">
     <div class="container">
         <div class="row">
             <div class="rts-section rt-center mb--35">
-                <h3 class="rts-section-title animated fadeIn">The Research Enterprise</h3>
+                <h3 class="rts-section-title animated fadeIn">Laboratries</h3>
             </div>
         </div>
         <div class="row g-5">
@@ -22,46 +22,78 @@
                 <div class="single-item">
                     <div class="single-item__content">
                         <div class="single-item__image">
-                            <img src="assets/images/campus/12.jpg" alt="item-image">
+                            <img src="https://egspec.blob.core.windows.net/egspec-assets/laboratries/computer_laboratory.webp" alt="item-image">
                         </div>
                         <div class="single-item__meta">
-                            <h5 class="item-title"><a href="program-single.html">Interdisciplinary Research</a></h5>
-                            <p class="item-description">At the intersection of disciplines is where new ideas emerge and innovative research happens</p>
+                            <h5 class="item-title">
+                                <a href="{{url('/facilities/laboratries/computer-laboratory')}}">Computer Laboratory</a>
+                            </h5>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- single item end -->
-            <!-- single item -->
+
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="single-item">
                     <div class="single-item__content">
                         <div class="single-item__image">
-                            <img src="assets/images/campus/13.jpg" alt="item-image">
+                            <img src="{{ asset('assets/images/campus/12.jpg') }}" alt="item-image">
                         </div>
                         <div class="single-item__meta">
-                            <h5 class="item-title"><a href="program-single.html">Institutes, Labs &amp; Centers</a></h5>
-                            <p class="item-description">Fifteen independent labs, centers, and institutes engage faculty and students from university.</p>
+                            <h5 class="item-title">
+                                <a href="#">Civil Laboratory</a>
+                            </h5>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- single item end -->
-            <!-- single item -->
+
             <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="single-item">
                     <div class="single-item__content">
                         <div class="single-item__image">
-                            <img src="assets/images/campus/14.jpg" alt="item-image">
+                            <img src="{{ asset('assets/images/campus/12.jpg') }}" alt="item-image">
                         </div>
                         <div class="single-item__meta">
-                            <h5 class="item-title"><a href="program-single.html">Other Research Centers &amp; Labs</a></h5>
-                            <p class="item-description">Academic departments sponsor numerous other research centers and labs.</p>
+                            <h5 class="item-title">
+                                <a href="#">Electronics Laboratory</a>
+                            </h5>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- single item end -->
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-item">
+                    <div class="single-item__content">
+                        <div class="single-item__image">
+                            <img src="{{ asset('assets/images/campus/12.jpg') }}" alt="item-image">
+                        </div>
+                        <div class="single-item__meta">
+                            <h5 class="item-title">
+                                <a href="#">Electrical Laboratory</a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-item">
+                    <div class="single-item__content">
+                        <div class="single-item__image">
+                            <img src="{{ asset('assets/images/campus/12.jpg') }}" alt="item-image">
+                        </div>
+                        <div class="single-item__meta">
+                            <h5 class="item-title">
+                                <a href="#">Mechanical Laboratory</a>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
 </div>

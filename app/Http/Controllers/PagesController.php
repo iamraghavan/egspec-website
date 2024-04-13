@@ -124,4 +124,10 @@ class PagesController extends Controller
 
         return view('pages.facilities.laboratries');
     }
+
+    public function computer_laboratory()
+    {
+
+        return view('pages.facilities.laboratries.computer-laboratory');
+    }
 }

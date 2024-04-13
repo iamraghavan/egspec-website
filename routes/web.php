@@ -49,3 +49,5 @@ Laboratries |--> Computer Laboratory
             |--> Electronics Laboratory
             |--> Electrical Laboratory
 */
+
+Route::get('/facilities/laboratries/computer-laboratory', [PagesController::class, 'computer_laboratory']);
