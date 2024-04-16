@@ -41,7 +41,7 @@
                         </div>
                         <div class="single-item__meta">
                             <h5 class="item-title">
-                                <a href="#">Civil Laboratory</a>
+                                <a href="{{url('/facilities/laboratries/civil-laboratory')}}">Civil Laboratory</a>
                             </h5>
                         </div>
                     </div>

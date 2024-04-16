@@ -51,3 +51,4 @@ Laboratries |--> Computer Laboratory
 */
 
 Route::get('/facilities/laboratries/computer-laboratory', [PagesController::class, 'computer_laboratory']);
+Route::get('/facilities/laboratries/civil-laboratory', [PagesController::class, 'civil_laboratory']);
