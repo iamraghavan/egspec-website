@@ -5,7 +5,7 @@
     'value_1' => 'Facilities',
     'value_2' => 'Laboratries',
     'value_3' => '',
-    'page_title' => 'Civil Laboratory'
+    'page_title' => 'Electrical Laboratory'
 ])
 
 
@@ -18,7 +18,7 @@
                 <div class="program-description-area">
 
                     <div class="program-credit-area">
-                        <h3 class="rts-section-title animated fadeIn" >Department of Mechanical Engineering</h5>
+                        <h3 class="rts-section-title animated fadeIn" >Department of Electrical and Electronics Engineering</h5>
 
                         <div class="program-accordion my-5">
                             <div class="accordion" id="rts-accordion">
@@ -30,10 +30,8 @@
                                             <table class="table">
 
                                                 <tbody>
-
-
                                                     <tr>
-                                                        <td><a href="https://egspec.blob.core.windows.net/egspec-assets/laboratries/civil-laboratory.pdf" target="_blank" type="application/pdf" rel="alternate" media='print'> Department of Civil Engineering </a></td>
+                                                        <td><a href="https://egspec.blob.core.windows.net/egspec-assets/laboratries/electrical-laboratory.pdf" target="_blank" type="application/pdf" rel="alternate" media='print'> Department of Electrical and Electronics Engineering </a></td>
                                                         <td><i class="fa fa-file-pdf"></i> / PDF File</td>
                                                     </tr>
 
@@ -56,7 +54,7 @@
                 </div>
 
                 <div class="iframe-div">
-                    <iframe src=" https://drive.google.com/viewerng/viewer?embedded=true&url=https://egspec.blob.core.windows.net/egspec-assets/laboratries/civil-laboratory.pdf#toolbar=0&scrollbar=0
+                    <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&url=https://egspec.blob.core.windows.net/egspec-assets/laboratries/electrical-laboratory.pdf#toolbar=0&scrollbar=0
                     " frameborder="0" scrolling="auto" height="100%" width="100%" style="
                 height: 100rem !important;
             "></iframe>

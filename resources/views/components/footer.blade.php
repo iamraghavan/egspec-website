@@ -73,10 +73,13 @@ try {
                 break;
             }
         }
+    } else {
+        throw new Exception('Unable to retrieve country information');
     }
 } catch (\Throwable $e) {
     // Log or handle the error as needed
     // You can leave it empty if you don't want to display errors to users
+    $countryCode = null;
 }
 @endphp
 
@@ -165,20 +168,15 @@ try {
                                 <div class="country-copyright">
 
                                     @if($countryCode)
-                                    <div class="d-flex align-items-center x">
-                                        <img class="flag" src="https://flagcdn.com/{{ $countryCode }}.svg"
-                                            alt="{{ $country }} Flag">
-
-                                        <span class="" style="margin-left: 0.5rem">{{ $country }}</span>
-                                    </div>
-                                    @else
-                                    <div class="d-flex align-items-center x">
-
-                                        <span style="margin-left: 0.5rem">Loading ...</span>
-
-                                    </div>
-
-                                    @endif
+<div class="d-flex align-items-center x">
+    <img class="flag" src="https://flagcdn.com/{{ $countryCode }}.svg" alt="{{ $country }} Flag">
+    <span class="" style="margin-left: 0.5rem">{{ $country }}</span>
+</div>
+@else
+<div class="d-flex align-items-center x">
+    <span style="margin-left: 0.5rem">Sorry, unable to retrieve country information</span>
+</div>
+@endif
 
                                 </div>
 

@@ -56,7 +56,7 @@
                         </div>
                         <div class="single-item__meta">
                             <h5 class="item-title">
-                                <a href="#">Electronics Laboratory</a>
+                                <a href="{{url('/facilities/laboratries/electronics-laboratory')}}">Electronics Laboratory</a>
                             </h5>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                         </div>
                         <div class="single-item__meta">
                             <h5 class="item-title">
-                                <a href="#">Electrical Laboratory</a>
+                                <a href="{{url('/facilities/laboratries/electrical-laboratory')}}">Electrical Laboratory</a>
                             </h5>
                         </div>
                     </div>
@@ -86,7 +86,7 @@
                         </div>
                         <div class="single-item__meta">
                             <h5 class="item-title">
-                                <a href="#">Mechanical Laboratory</a>
+                                <a href="{{url('/facilities/laboratries/mechanical-laboratory')}}">Mechanical Laboratory</a>
                             </h5>
                         </div>
                     </div>

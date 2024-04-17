@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Models\SliderImage;
 use App\Models\PostSlider;
 use App\Models\IndustryAcademicPartnering;
@@ -9,6 +10,7 @@ use App\Models\Course;
 use App\Models\Certification;
 use App\Models\CoursesAndIntakes;
 use App\Models\ComplaintCommittee;
+use App\Models\Equipment;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -136,5 +138,23 @@ class PagesController extends Controller
     {
 
         return view('pages.facilities.laboratries.civil-laboratory');
+    }
+
+    public function electronics_laboratory()
+    {
+
+        return view('pages.facilities.laboratries.electronics-laboratory');
+    }
+
+    public function electrical_laboratory()
+    {
+
+        return view('pages.facilities.laboratries.electrical-laboratory');
+    }
+
+    public function mechanical_laboratory()
+    {
+        $equipment = Equipment::all();
+        return view('pages.facilities.laboratries.mechanical-laboratory', ['equipment' => $equipment]);
     }
 }

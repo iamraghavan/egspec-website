@@ -1,30 +1,31 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Jobs;
 
 use GuzzleHttp\Client;
-use Illuminate\Http\Request;
-use App\Models\WhatsAppMessage;
+use Illuminate\Bus\Queueable;
+use Illuminate\Contracts\Queue\ShouldQueue;
+use Illuminate\Foundation\Bus\Dispatchable;
+use Illuminate\Queue\InteractsWithQueue;
+use Illuminate\Queue\SerializesModels;
+use Illuminate\Support\Facades\Log;
 
-use Illuminate\Support\Facades\Http;
-
-
-class AdFormController extends Controller
+class SendWhatsAppMessage implements ShouldQueue
 {
+    use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
+    protected $name;
+    protected $whatsappNumber;
 
-    public function adsubmitForm(Request $request)
+    public function __construct($name, $whatsappNumber)
     {
-        $validatedData = $request->validate([
-            'm_name' => 'required|string',
-            'whatsapp_number' => 'required|string|min:10|max:12',
-        ]);
+        $this->name = $name;
+        $this->whatsappNumber = $whatsappNumber;
+    }
 
-        $message = WhatsAppMessage::create([
-            'name' => $validatedData['m_name'],
-            'whatsapp_number' => $validatedData['whatsapp_number'],
-        ]);
-
+    public function handle()
+    {
+        $client = new Client();
         $myHeaders = [
             'Content-Type' => 'application/json',
             'authkey' => '409648ACCWWwhe65ec22faP1',
@@ -34,7 +35,7 @@ class AdFormController extends Controller
             'integrated_number' => '917603809257',
             'content_type' => 'template',
             'payload' => [
-                'to' => $validatedData['whatsapp_number'],
+                'to' => $this->whatsappNumber,
                 'type' => 'template',
                 'template' => [
                     'name' => 'egspec_admission_message',
@@ -59,7 +60,7 @@ class AdFormController extends Controller
                             'parameters' => [
                                 [
                                     'type' => 'text',
-                                    'text' => $validatedData['m_name'],
+                                    'text' => $this->name,
                                 ],
                             ],
                         ],
@@ -69,9 +70,6 @@ class AdFormController extends Controller
             ],
         ];
 
-
-        $client = new Client();
-
         try {
             $response = $client->request('POST', 'https://api.msg91.com/api/v5/whatsapp/whatsapp-outbound-message/', [
                 'headers' => $myHeaders,
@@ -79,16 +77,11 @@ class AdFormController extends Controller
             ]);
 
             $result = $response->getBody()->getContents();
-
-            // return response()->json(['success' => 'WhatsApp message sent successfully']);
-
-            $a = $validatedData['m_name'];
-
-            return redirect()->back()->with('success', " $a, Thank you for your inquiry our staff will contact you as soon !");
+            // Log successful sending of WhatsApp message
+            Log::info("WhatsApp message sent successfully to {$this->whatsappNumber}");
         } catch (\Exception $e) {
-            $a = $validatedData['m_name'];
-            return redirect()->back()->with('error', "Sorry $a, we are facing some issues. Please try again later.");
-            // return response()->json(['error' => $e->getMessage()], 500);
+            // Log error if WhatsApp message sending fails
+            Log::error("Failed to send WhatsApp message to {$this->whatsappNumber}: {$e->getMessage()}");
         }
     }
 }
