@@ -20,10 +20,17 @@ class AdFormController extends Controller
             'whatsapp_number' => 'required|string|min:10|max:12',
         ]);
 
+        $existingMessage = WhatsAppMessage::where('whatsapp_number', $validatedData['whatsapp_number'])->first();
+        if ($existingMessage) {
+            return redirect()->back()->with(['error' => 'WhatsApp number already exists in the database.', 'link' => 'tel:+919942502245']);
+        }
+
+        // If the number is not found in the database, proceed to create and send the WhatsApp message
         $message = WhatsAppMessage::create([
             'name' => $validatedData['m_name'],
             'whatsapp_number' => $validatedData['whatsapp_number'],
         ]);
+
 
         $myHeaders = [
             'Content-Type' => 'application/json',

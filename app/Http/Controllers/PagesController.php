@@ -157,4 +157,10 @@ class PagesController extends Controller
         $equipment = Equipment::all();
         return view('pages.facilities.laboratries.mechanical-laboratory', ['equipment' => $equipment]);
     }
+
+    public function hostel()
+    {
+
+        return view('pages.facilities.hostel');
+    }
 }

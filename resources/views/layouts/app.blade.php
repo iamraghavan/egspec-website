@@ -56,7 +56,16 @@
 
     @include('components.mobile-nav')
 
-
+    @if(session('error'))
+    <script>
+        // Display the error message using Swal alert
+        Swal.fire({
+            icon: 'error',
+            title: 'Oops...',
+            html: '{{ session('error') }} <a href="{{ session('link') }}">Click here</a> to go back.',
+        });
+    </script>
+@endif
     @if(session('success'))
 <div class="position-fixed top-0 start-0 m-3" style="z-index: 9999;">
     <div class="alert alert-success alert-dismissible fade show" role="alert">
@@ -85,10 +94,19 @@
 </script>
 
 
+
     @include('components.footer')
 
 
     {{-- Script Files --}}
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/gh/iamraghavan/egsp-hrms@main/public/assets/js/sweet-alert/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/iamraghavan/egsp-hrms@main/public/assets/css/vendors/sweetalert2.css">
+
+
 
 
     <!-- jquery js -->

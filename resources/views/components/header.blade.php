@@ -169,7 +169,7 @@
                                         <li><a href="{{ url("/facilities/indoor-stadium") }}">Indoor Stadium</a></li>
                                         <li><a href="{{ url("/facilities/basketball-court") }}">Basketball Court</a></li>
                                         <li><a href="{{ url("/facilities/laboratries") }}">Laboratries</a></li>
-                                        <li><a href="{{ url("#") }}">Hostel</a></li>
+                                        <li><a href="{{ url("/facilities/hostel") }}">Hostel</a></li>
                                         <li><a href="{{ url("#") }}">Library</a></li>
                                         <li><a href="{{ url("#") }}">Transport</a></li>
                                         <li><a href="{{ url("#") }}">Cafeteria</a></li>
