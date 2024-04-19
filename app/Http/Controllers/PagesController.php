@@ -163,4 +163,11 @@ class PagesController extends Controller
 
         return view('pages.facilities.hostel');
     }
+
+
+    public function library()
+    {
+
+        return view('pages.facilities.library');
+    }
 }

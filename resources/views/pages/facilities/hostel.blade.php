@@ -26,24 +26,59 @@ Constructed in a calm and healthy location, the hostel for both boys and girls i
                 </div>
             </div>
         </div>
-
-    </div>
-</section>
-
-<section class="rts-campus-tour rts-section-padding">
-    <div class="container">
         <div class="row justify-content-center">
-            <h2 class="section-title h1 rt-center mb--50">Hostel Administration</h2>
+            <h4 class="section-title  rt-center mb--50 pt--100">Hostel Administration</h4>
 
             <div class="col-lg-8">
                 <div class="rts-video-section-text rt-center mx-3">
                     <p>The hostel administration is carried on by the Secretary with the assistance of Warden and Deputy Wardens. Residential Lecturers are available for guidance and Counseling. A separate mess is functioning inside the hostel providing quality and nutritious food – both Vegetarian and Non-Vegetarian.</p>
-                    {{-- <a href="campus-life.html" class="mt--15 about-btn rts-nbg-btn btn-arrow">Visit Campus <span><i class="fa-sharp fa-regular fa-arrow-right"></i></span></a> --}}
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center">
+            <h4 class="section-title  rt-center mb--50 pt--100">Hostel Admission
+            </h4>
+
+            <div class="col-lg-8">
+                <div class="rts-video-section-text rt-center mx-3">
+                    <p>The Application Form for hostel admission can be obtained from the hostel office. The applicant should meet the Warden with his / her Parent / Guardian and has to pay the hostel admission fees as prescribed by the hostel management. Parent / Guardian’s presence is compulsory at the time of hostel admission.</p>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center">
+            <h4 class="section-title  rt-center mb--50 pt--100">Hostel & Mess
+            </h4>
+
+            <div class="col-lg-8">
+                <div class="rts-video-section-text rt-center mx-3">
+                    <p>The college has well furnished hostels for boys & girls. Fine dining facilities, first aid facilities and recreations are provided separately for boys and girls. EGSPEC has 5 deputy wardens for the welfare of the students. Safe drinking water and nutritious foods (Veg as well as Non Veg) are provided. Every effort is being taken for the comfortable stay of the inmates and make them feel at home.</p>
+<br>
+<p>In order to have a good health care of the college staff and students, a Doctor has been appointed.</p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row justify-content-center">
+            <h4 class="section-title  rt-center mb--50 pt--100">Accommodations – Staff Quarters, Guest House:
+            </h4>
+
+            <div class="col-lg-8">
+                <div class="rts-video-section-text rt-center mx-3">
+                    <p>Faculty may stay with their family in the staff quarters. The Guest house is available for visitors.</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
+
+
 
 
 @include('components.cta')

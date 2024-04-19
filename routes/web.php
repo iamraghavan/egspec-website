@@ -57,3 +57,4 @@ Route::get('/facilities/laboratries/electrical-laboratory', [PagesController::cl
 Route::get('/facilities/laboratries/mechanical-laboratory', [PagesController::class, 'mechanical_laboratory']);
 
 Route::get('/facilities/hostel', [PagesController::class, 'hostel']);
+Route::get('/facilities/library', [PagesController::class, 'library']);
