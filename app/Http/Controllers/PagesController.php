@@ -11,6 +11,10 @@ use App\Models\Certification;
 use App\Models\CoursesAndIntakes;
 use App\Models\ComplaintCommittee;
 use App\Models\Equipment;
+use App\Models\NssAndRRC;
+use App\Models\Route;
+use App\Models\SportAthletesAndAchievements;
+use App\Models\SportData;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -169,5 +173,60 @@ class PagesController extends Controller
     {
 
         return view('pages.facilities.library');
+    }
+
+
+    public function transport()
+    {
+        $transport = Route::all();
+        return view('pages.facilities.transport', ['transport' => $transport]);
+    }
+
+
+    public function cafeteria()
+    {
+
+        return view('pages.facilities.cafeteria');
+    }
+
+
+    /* Activities */
+
+    public function sports()
+    {
+        $sportsData = SportData::all();
+        $A3 = SportAthletesAndAchievements::all();
+        return view('pages.activities.extra-curricular.sports', ['sportsData' => $sportsData, 'A3' => $A3]);
+    }
+
+    public function nss_and_red_ribbon_club()
+    {
+
+        $NssandRRC = NssAndRRC::all();
+        return view('pages.activities.extra-curricular.nss-and-red-ribbon-club', ['NssandRRC' => $NssandRRC]);
+    }
+
+    public function workshop()
+    {
+
+        return view('pages.activities.co-curricular.workshop');
+    }
+
+    public function symposium()
+    {
+
+        return view('pages.activities.co-curricular.symposium');
+    }
+
+    public function conference()
+    {
+
+        return view('pages.activities.co-curricular.conference');
+    }
+
+    public function entrepreneurship_development_cell()
+    {
+
+        return view('pages.activities.cells.entrepreneurship-development-cell');
     }
 }

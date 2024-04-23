@@ -18,12 +18,6 @@ class CreateEquipmentsTable extends Migration
             $table->unsignedBigInteger('category_id');
             $table->string('equipment_name', 255);
             $table->timestamps();
-
-            // Define foreign key constraint
-            $table->foreign('category_id')
-                ->references('category_id')
-                ->on('laboratory_categories')
-                ->onDelete('cascade'); // Cascade delete if category is deleted
         });
     }
 

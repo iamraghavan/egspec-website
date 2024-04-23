@@ -171,8 +171,8 @@
                                         <li><a href="{{ url("/facilities/laboratries") }}">Laboratries</a></li>
                                         <li><a href="{{ url("/facilities/hostel") }}">Hostel</a></li>
                                         <li><a href="{{ url("/facilities/library") }}">Library</a></li>
-                                        <li><a href="{{ url("#") }}">Transport</a></li>
-                                        <li><a href="{{ url("#") }}">Cafeteria</a></li>
+                                        <li><a href="{{ url("/facilities/transport") }}">Transport</a></li>
+                                        <li><a href="{{ url("/facilities/cafeteria") }}">Cafeteria</a></li>
                                     </ul>
                                 </li>
                                 <li class="has-dropdown">
@@ -181,22 +181,22 @@
                                         <li class="sub-dropdown">
                                             <a href="{{ url("#") }}">Extra-Curricular</a>
                                             <ul class="submenu third-lvl base">
-                                                <li><a href="{{ url("#") }}">Sports</a></li>
-                                                <li><a href="{{ url("#") }}">NSS & Red Ribbon Club</a></li>
+                                                <li><a href="{{ url("/activities/extra-curricular/sports") }}">Sports</a></li>
+                                                <li><a href="{{ url("/activities/extra-curricular/nss-and-red-ribbon-club") }}">NSS & Red Ribbon Club</a></li>
                                             </ul>
                                         </li>
                                         <li class="sub-dropdown">
                                             <a href="{{ url("#") }}">Co-Curricular</a>
                                             <ul class="submenu third-lvl base">
-                                                <li><a href="{{ url("#") }}">Workshop</a></li>
-                                                <li><a href="{{ url("#") }}">Symposium</a></li>
-                                                <li><a href="{{ url("#") }}">Conference</a></li>
+                                                <li><a href="{{ url("/activities/co-curricular/workshop") }}">Workshop</a></li>
+                                                <li><a href="{{ url("/activities/co-curricular/symposium") }}">Symposium</a></li>
+                                                <li><a href="{{ url("/activities/co-curricular/conference") }}">Conference</a></li>
                                             </ul>
                                         </li>
                                         <li class="sub-dropdown">
                                             <a href="{{ url("#") }}">Cells</a>
                                             <ul class="submenu third-lvl base">
-                                                <li><a href="{{ url("#") }}">Entrepreneurship Development Cell</a></li>
+                                                <li><a href="{{ url("/activities/cells/entrepreneurship-development-cell") }}">Entrepreneurship Development Cell</a></li>
                                                 <li><a href="{{ url("#") }}">Women Empowerment Cell</a></li>
                                                 <li><a href="{{ url("#") }}">Internal Complaints Committee</a></li>
                                                 <li><a href="{{ url("#") }}">Career Guidance Cell</a></li>

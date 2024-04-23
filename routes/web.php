@@ -58,3 +58,17 @@ Route::get('/facilities/laboratries/mechanical-laboratory', [PagesController::cl
 
 Route::get('/facilities/hostel', [PagesController::class, 'hostel']);
 Route::get('/facilities/library', [PagesController::class, 'library']);
+Route::get('/facilities/transport', [PagesController::class, 'transport']);
+Route::get('/facilities/cafeteria', [PagesController::class, 'cafeteria']);
+
+
+// Route for Activities
+
+Route::get('/activities/extra-curricular/sports', [PagesController::class, 'sports']);
+Route::get('/activities/extra-curricular/nss-and-red-ribbon-club', [PagesController::class, 'nss_and_red_ribbon_club']);
+
+Route::get('/activities/co-curricular/workshop', [PagesController::class, 'workshop']);
+Route::get('/activities/co-curricular/symposium', [PagesController::class, 'symposium']);
+Route::get('/activities/co-curricular/conference', [PagesController::class, 'conference']);
+
+Route::get('/activities/cells/entrepreneurship-development-cell', [PagesController::class, 'entrepreneurship_development_cell']);

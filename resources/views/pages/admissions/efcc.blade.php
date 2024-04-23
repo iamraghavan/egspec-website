@@ -18,7 +18,7 @@
                 <div class="program-description-area">
 
                     <div class="program-credit-area">
-                        <h3 class="rts-section-title animated fadeIn" >Excess Fee Committee Circular</h5>
+                        <h3 class="rts-section-title animated fadeIn" >Excess Fee Committee Circular</h3>
 
                         <div class="program-accordion my-5">
                             <div class="accordion" id="rts-accordion">
