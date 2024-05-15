@@ -92,18 +92,10 @@
                                 <div class="col-lg-12">
                                     <div class="single-information-box rt-secondary-bg big-box">
                                         <div class="single-info">
-                                            <h4 class="title">Innovation Scholarships</h4>
+                                            <h4 class="title">Special Mention</h4>
                                             <div class="single-info-content">
-                                                <div class="left-item">
-                                                    <p class="amount"><u>Amount:</u>$6,142per academic year</p>
-                                                    <u class="application">Application Process:</u>
-                                                    <p>Apply through the respective department.
-                                                    </p>
-                                                </div>
-                                                <div class="right-item">
-                                                    <u class="eligibility">Eligibility:</u>
-                                                    <p>Awarded to students with exceptional academic achievements.</p>
-                                                </div>
+                                                <p class="amount">
+                                                    E.G.S.P.E.C Entrepreneurship Development Cell is an associated member of National Entrepreneurship network (NEN) for the academic year 2014-2015. During the period our college 10 students got e-leader certificate for their outperformance on the EDC activities.
 
                                             </div>
 
@@ -112,187 +104,94 @@
                                 </div>
                             </div>
                         </div>
-                        <!-- second item -->
-                        <div class="repeating-content mt--50">
-                            <h5 class="title">Specialized Scholarships</h5>
-                            <div class="row g-5">
-                                <div class="col-lg-6">
-                                    <div class="single-information-box rt-primary-bg">
-                                        <div class="single-info">
-                                            <h4 class="title">Financial Excellence Scholarship</h4>
-                                            <p class="amount"><u>Amount:</u>$6,142per academic year</p>
-                                            <u class="eligibility">Eligibility:</u>
-                                            <p>Awarded to students with exceptional academic achievements.</p>
-                                            <u class="application">Application Process:</u>
-                                            <p>Automatically considered during
-                                                the admissions process.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <div class="single-information-box rt-theme-bg">
-                                        <div class="single-info">
-                                            <h4 class="title">Athletic Scholarships</h4>
-                                            <p class="amount"><u>Amount:</u>$6,142per academic year</p>
-                                            <u class="eligibility">Eligibility:</u>
-                                            <p>Awarded to students with exceptional academic achievements.</p>
-                                            <u class="application">Application Process:</u>
-                                            <p>Automatically considered during
-                                                the admissions process.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-lg-12">
-                                    <div class="single-information-box rt-secondary-bg big-box">
-                                        <div class="single-info">
-                                            <h4 class="title">[Diversity/Inclusion] Scholarship</h4>
-                                            <div class="single-info-content">
-                                                <div class="left-item">
-                                                    <p class="amount"><u>Amount:</u>$6,142per academic year</p>
-                                                    <u class="application">Application Process:</u>
-                                                    <p>Apply through the respective department.
-                                                    </p>
-                                                </div>
-                                                <div class="right-item">
-                                                    <u class="eligibility">Eligibility:</u>
-                                                    <p>Awarded to students with exceptional academic achievements.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="desc mt--40">
-                                For detailed information on eligibility criteria, application deadlines, and the application process for each scholarship, please visit our [Scholarships] page or contact the Studyhub University Financial Aid Office.
-                            </p>
-                        </div>
 
-                        <!-- scholarship requirement -->
-                        <!-- si = scholarship-information -->
-                        <div class="si">
-                            <h4 class="title">Scholarship Requirements at
-                                Studyhub University
-                            </h4>
-                            <p>
-                                At Studyhub University, we believe in recognizing and supporting exceptional talent and achievements. Our scholarship programs aim to provide financial assistance
-                            </p>
-                            <div class="si__list">
-                                <ul class="list-unstyled">
-                                    <li class="si__list--single">
-                                        Outstanding academic achievements.
-                                    </li>
-                                    <li class="si__list--single">
-                                        High school GPA of [3.4 GPA].
-                                    </li>
-                                    <li class="si__list--single">
-                                        Exceptional standardized test scores (SAT/ACT).
-                                    </li>
-                                    <li class="si__list--single">
-                                        Active involvement in extracurricular activities.
-                                    </li>
-                                    <li class="si__list--single">
-                                        Exceptional standardized test scores (SAT/ACT).
-                                    </li>
-                                    <li class="si__list--single">
-                                        Active involvement in extracurricular activities.
-                                    </li>
-                                    <li class="si__list--single">
-                                        Exceptional standardized test scores (SAT/ACT).
-                                    </li>
-                                    <li class="si__list--single">
-                                        Active involvement in extracurricular activities.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
 
-                        <!-- faq -->
-                        <div class="program-credit-area faq mt--50">
-                            <h4 class="title">Frequently Asked Questions (FAQ)</h4>
-                            <div class="program-accordion">
-                                <div class="accordion" id="rts-accordion">
-                                    <div class="accordion-item">
-                                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                            What are the admission requirements for Studyhub University?
-                                        </button>
-                                        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#rts-accordion">
-                                            <div class="accordion-body">
-                                                <p>
-                                                    Admission requirements vary by program. Please refer to the Admissions section on our website for detailed information or contact the Admissions Office for assistance.
-                                                </p>
+
+
+
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="admission-content-top">
+                                    <div class="application-deadline">
+
+                                        <div class="application-deadline__content">
+                                            <div class="application-deadline__content--table">
+                                                <table class="table table-striped">
+                                                    <thead class="table-theme" style="padding: 15px 20px; font-size: 18px; font-weight: 600; color: var(--rt-white); vertical-align: middle;">
+                                                        <tr>
+                                                            <th style="padding: 15px 20px;">Sl. No.</th>
+                                                            <th style="padding: 15px 20px;">E-Leader Name</th>
+                                                            <th style="padding: 15px 20px;">Designation / Function</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+
+                                                            <tr>
+                                                                <td>1</td>
+                                                                <td>Mr. C. Vignesh</td>
+                                                                <td>Chief Executive Officer</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>2</td>
+                                                                <td>Mr. P. Varatharajan</td>
+                                                                <td>Deputy CEO</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>3</td>
+                                                                <td>Mr. R. Rajkumar</td>
+                                                                <td>Vice President</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>4</td>
+                                                                <td>Ms. C.Akshaya</td>
+                                                                <td>Secretary</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>5</td>
+                                                                <td>Mr. B. Prathap</td>
+                                                                <td>Operations</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>6</td>
+                                                                <td>Ms. R.Renugadevi</td>
+                                                                <td>HR</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>7</td>
+                                                                <td>Ms. A. Priyadharshini</td>
+                                                                <td>Head – Finance</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>8</td>
+                                                                <td>Mr. R. Vimal Raj</td>
+                                                                <td>Head – Media & Marketing</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>9</td>
+                                                                <td>Mr. M. Udhayabalan</td>
+                                                                <td>Head – Program & Events</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>10</td>
+                                                                <td>Mr. K. Gangadharan</td>
+                                                                <td>Head – Impact & Reporting</td>
+                                                            </tr>
+
+
+
+                                                    </tbody>
+                                                </table>
                                             </div>
+
+
                                         </div>
                                     </div>
-                                    <div class="accordion-item">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            How do I apply for financial aid?
-                                        </button>
-                                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#rts-accordion">
-                                            <div class="accordion-body">
-                                                <p>
-                                                    Admission requirements vary by program. Please refer to the Admissions section on our website for detailed information or contact the Admissions Office for assistance.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                            How do I contact Studyhub University?
-                                        </button>
-                                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#rts-accordion">
-                                            <div class="accordion-body">
-                                                <p>Admission requirements vary by program. Please refer to the Admissions section on our website for detailed information or contact the Admissions Office for assistance.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-                                            Are online courses available?
-                                        </button>
-                                        <div id="collapsefour" class="accordion-collapse collapse" data-bs-parent="#rts-accordion">
-                                            <div class="accordion-body">
-                                                <p>Admission requirements vary by program. Please refer to the Admissions section on our website for detailed information or contact the Admissions Office for assistance.</p>
-                                            </div>
-                                        </div>
-                                    </div>
+
+
                                 </div>
                             </div>
                         </div>
 
-                        <!-- scholarship application -->
-                        <div class="scholarship-form">
-                            <h3 class="title animated fadeIn">Scholarship Application Form</h3>
-                            <div class="scholarship-form__application">
-                                <form action="#" class="apply-form">
-                                    <div class="single-input">
-                                        <input type="text" placeholder="First name">
-                                        <input type="text" placeholder="Last name">
-                                    </div>
-                                    <div class="single-input">
-                                        <input type="email" placeholder="Email Address">
-                                        <input type="tel" placeholder="Phone Number">
-                                    </div>
-                                    <div class="single-input">
-                                        <input type="text" id="datepicker" placeholder="dd/mm/yy" required="" class="hasDatepicker">
-                                        <select name="gender" id="gender">
-                                            <option value="*">Gender</option>
-                                            <option value="*">Male</option>
-                                            <option value="*">Female</option>
-                                        </select>
-                                    </div>
-                                    <div class="single-input">
-                                        <input type="text" placeholder="Country">
-                                        <input type="text" placeholder="Citizenship">
-                                    </div>
-                                    <div class="single-input">
-                                        <input type="text" placeholder="Current Collage">
-                                        <input type="text" placeholder="Current GPA">
-                                    </div>
-
-                                    <button type="submit" class="rts-theme-btn primary with-arrow">Submit Now <span><i class="fa-thin fa-arrow-right"></i></span></button>
-                                </form>
-                            </div>
-                        </div>
                     </div>
                 </div>
 
@@ -300,6 +199,13 @@
         </div>
     </div>
 </div>
+
+<div class="rts-page-content rts-section-padding">
+    <div class="container">
+
+    </div>
+</div>
+
 
 {{-- <div class="semister-fee pb--120 pb__md--80">
     <div class="container">

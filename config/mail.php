@@ -96,8 +96,8 @@ return [
     */
 
     'from' => [
-        'address' => env('MAIL_FROM_ADDRESS', 'hello@example.com'),
-        'name' => env('MAIL_FROM_NAME', 'Example'),
+        'address' => env('MAIL_FROM_ADDRESS', 'norply.web@egspec.org'),
+        'name' => env('MAIL_FROM_NAME', 'Raghavan Jeeva - EGS Pillay Engineering College'),
     ],
 
 ];
