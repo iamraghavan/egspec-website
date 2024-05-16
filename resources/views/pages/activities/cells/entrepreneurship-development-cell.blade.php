@@ -117,11 +117,11 @@
                                         <div class="application-deadline__content">
                                             <div class="application-deadline__content--table">
                                                 <table class="table table-striped">
-                                                    <thead class="table-theme" style="padding: 15px 20px; font-size: 18px; font-weight: 600; color: var(--rt-white); vertical-align: middle;">
+                                                    <thead class="table-theme">
                                                         <tr>
-                                                            <th style="padding: 15px 20px;">Sl. No.</th>
-                                                            <th style="padding: 15px 20px;">E-Leader Name</th>
-                                                            <th style="padding: 15px 20px;">Designation / Function</th>
+                                                            <td style="padding: 15px 20px;">S.No</td>
+                                                            <td style="padding: 15px 20px;">E - Leader Name</td>
+                                                            <td style="padding: 15px 20px;">Designation / Function</td>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
@@ -192,86 +192,125 @@
                             </div>
                         </div>
 
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="rts-page-content rts-section-padding">
-    <div class="container">
-
-    </div>
-</div>
 
 
-{{-- <div class="semister-fee pb--120 pb__md--80">
-    <div class="container">
-        <div class="row">
-            <div class="semister-fee__content">
-                <h5 class="rts-section-title">Athletes And Achievements</h5>
-                <p class="rt-regular"> <span style="color: var(--rt-theme);"> #egspian </span> Athletes And Achievements</p>
 
-                <div class="rts-fee-chart">
-                    <div class="rts-fee-chart__tab">
-                        <nav>
-                            <div class="nav nav-tabs" id="nav-tab2" role="tablist">
-                                @php $years = []; @endphp
-                                @foreach($NssandRRC as $b)
-                                    @unless(in_array($b->year, $years))
-                                        <button class="nav-link" id="a-{{$b->year}}-tab" data-bs-toggle="tab" data-bs-target="#a-{{$b->year}}" type="button" role="tab" aria-controls="a-{{ $b->year }}" aria-selected="true">{{ implode(' - ', explode('-', $b->year)) }}</button>
-                                        @php $years[] = $b->year; @endphp
-                                    @endunless
-                                @endforeach
+
+
+
+                        <div class="row">
+                            <div class="col-12">
+
+                                <div class="admission-content-top">
+                                    <div class="application-deadline">
+
+                                        <div class="application-deadline__content">
+                                            <div class="application-deadline__content--table">
+                                                <table class="table table-striped">
+
+                                                    <thead class="table-theme">
+                                                        <tr>
+                                                            <td>#</td>
+                                                            <td>Event Name</td>
+                                                            <td>Date</td>
+                                                            <td>Participant Details</td>
+                                                            <td>Venue</td>
+                                                            <td>Organizer Details</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        @php $index = 1; @endphp
+                                                        @foreach($events as $event)
+                                                        <tr>
+                                                            <td>{{ $index++ }}</td>
+                                                            <td>{{ $event->event_name }}</td>
+                                                            <td>{{ $event->date }}</td>
+                                                            <td>{{ $event->participant_details }}</td>
+                                                            <td>{{ $event->venue }}</td>
+                                                            <td>{{ $event->organizer_details }}</td>
+                                                        </tr>
+                                                        @endforeach
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+
+
+                                        </div>
+                                    </div>
+
+
+                                </div>
                             </div>
-                        </nav>
-                    </div>
-                    <div class="rts-fee-chart__content" id="nav-tabContent2">
-                        <div class="tab-content">
-                            @foreach($years as $key => $year)
-                                <div class="tab-pane fade @if($key === 0) show active @endif" id="a-{{ $year }}" role="tabpanel" aria-labelledby="a-{{ $year }}-tab">
-                                    <div class="program-credit-area">
-                                        <div class="program-accordion my-5">
-                                            <div class="accordion" id="rts-accordion">
-                                                <div class="accordion-item">
-                                                    <div>
-                                                        <div class="accordion-body-content">
-                                                            <table class="table">
-                                                                <tbody>
-                                                                    @foreach($NssandRRC as $b)
-                                                                        @if($b->year == $year)
-                                                                        <tr>
-                                                                            <td><a href="{{ $b->pdf_url }}" target="_blank" type="application/pdf" rel="alternate" media='print'> {{ $b->year }} </a></td>
-                                                                            <td><i class="fa fa-file-pdf"></i> / PDF File</td>
-                                                                        </tr>
-                                                                        @endif
-                                                                    @endforeach
-                                                                </tbody>
-                                                            </table>
-                                                        </div>
-                                                    </div>
+                        </div>
+
+
+
+                        <div class="repeating-content mt--50">
+                            <h5 class="title">Proposal</h5>
+                            <div class="row g-5">
+                                <div class="col-lg-6">
+                                    <div class="single-information-box rt-primary-bg">
+                                        <div class="single-info">
+                                            <h4 class="title">Proposal received:</h4>
+                                            <p>Received proposal for Conducting an Entrepreneurship Awareness camp (EAC)</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="single-information-box rt-theme-bg">
+                                        <div class="single-info">
+                                            <h4 class="title">Submitted Proposal:</h4>
+                                            <p>Submitted proposals to Development Policy Department - Non-Farm Sector for Rural Entrepreneurship Development Programme (REDP)/ Skill Development Programme (SDP).</p>
+                                            <p>Submitted proposals to NI-MSME-Hyderabad for Enrolling as Partner Institution of National Level Entrepreneurship Development Institutes (EDIs).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="repeating-content mt--50">
+                            <h5 class="title">Action Plan</h5>
+                            <div class="row g-5">
+                                <div class="col-lg-12">
+                                    <div class="single-information-box rt-info-bg big-box">
+
+                                        <div class="rts-event-details">
+                                            <div class="event-details__content--feature">
+                                                <div class="single-feature">
+                                                    <p class="feature-heading">Planned to promote minimum 20 students as an entrepreneur in every year.</p>
+                                                    <p class="feature-heading">Planned to get minimum of 2 grants from government and from other bodies on every year.</p>
+                                                    <p class="feature-heading">Planned to promote our college as an incubators centre in Nagapattinam region.</p>
+                                                    <p class="feature-heading">Planned to initiate MSME activities inside college campus.</p>
+                                                    <p class="feature-heading">Planned to bring students to various competition conducted all over the world for entrepreneurs.</p>
+                                                    <p class="feature-heading">Planned to organize seminars, workshops, contest for developing entrepreneurial skills on students.</p>
+                                                    <p class="feature-heading">Plan to start recycling activities inside college campus.</p>
+                                                    <p class="feature-heading">Promote students managing skills, Confidence and earning skills to a sufficient level to become a self entrepreneur.</p>
+
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="iframe-div">
-                                        @foreach($NssandRRC as $b)
-                                            @if($b->year == $year)
-                                            <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url={{ $b->pdf_url }}#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="height: 100rem !important;"></iframe>
-                                            @endif
-                                        @endforeach
+
                                     </div>
                                 </div>
-                            @endforeach
+
+                            </div>
                         </div>
+
+
+
                     </div>
                 </div>
+
             </div>
         </div>
     </div>
-</div> --}}
+</div>
+
+
+
+
+
 
 
 

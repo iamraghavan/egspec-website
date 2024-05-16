@@ -15,31 +15,44 @@ use App\Models\NssAndRRC;
 use App\Models\Route;
 use App\Models\SportAthletesAndAchievements;
 use App\Models\SportData;
+use App\Models\Event;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cache;
 
 class PagesController extends Controller
 {
     public function index()
     {
-        $sliderImages = SliderImage::where('department', 'general')->get();
-        $posterSlider = PostSlider::where('page_name', 'general')->get();
+        $sliderImages = Cache::remember('general_slider_images', 120, function () {
+            return SliderImage::where('department', 'general')->get();
+        });
 
-        return view('pages.index', ['sliderImages' => $sliderImages, 'posterSlider' => $posterSlider]);
+        $posterSlider = Cache::remember('general_poster_slider', 120, function () {
+            return PostSlider::where('page_name', 'general')->get();
+        });
+
+        return view('pages.index', compact('sliderImages', 'posterSlider'));
     }
+
 
 
     /* Academics */
 
     public function department_bachelors()
     {
+        $courses = Cache::remember('bachelors_courses', 120, function () {
+            return Course::where('course_type', 'bachelors')->get();
+        });
 
-        $courses = Course::where('course_type', 'bachelors')->get();
         return view('pages.academics.bachelors', ['academics' => $courses]);
     }
 
     public function department_masters()
     {
-        $courses = Course::where('course_type', 'masters')->get();
+        $courses = Cache::remember('masters_courses', 120, function () {
+            return Course::where('course_type', 'masters')->get();
+        });
+
         return view('pages.academics.masters', ['academics' => $courses]);
     }
 
@@ -60,22 +73,30 @@ class PagesController extends Controller
 
     public function industry_academic_partnering()
     {
-        $iap = IndustryAcademicPartnering::all();
+        $iap = Cache::remember('industry_academic_partnering', 120, function () {
+            return IndustryAcademicPartnering::all();
+        });
+
         return view('pages.academics.industry-academic-partnering', ['iap' => $iap]);
     }
 
     public function industry_certification_programs()
     {
-        $certifications = Certification::all();
+        $certifications = Cache::remember('industry_certification_programs', 120, function () {
+            return Certification::all();
+        });
+
         return view('pages.academics.industry-certification-programs', ['certifications' => $certifications]);
     }
 
     public function industry_training_programs()
     {
-        $training = Certification::all();
+        $training = Cache::remember('industry_training_programs', 120, function () {
+            return Certification::all();
+        });
+
         return view('pages.academics.industry-training-programs', ['training' => $training]);
     }
-
     public function advisory_board()
     {
 
@@ -90,21 +111,28 @@ class PagesController extends Controller
         return view('pages.admissions.tnea');
     }
 
-    public function courses_intake()
-    {
-        $ci = CoursesAndIntakes::all();
-        return view('pages.admissions.courses-intake', ['ci' => $ci]);
-    }
 
     public function efcc()
     {
         return view('pages.admissions.efcc');
     }
 
+    public function courses_intake()
+    {
+        $ci = Cache::remember('courses_intake', 120, function () {
+            return CoursesAndIntakes::all();
+        });
+
+        return view('pages.admissions.courses-intake', compact('ci'));
+    }
+
     public function complaint_committee()
     {
-        $cc = ComplaintCommittee::all();
-        return view('pages.admissions.complaint-committee', ['cc' => $cc]);
+        $cc = Cache::remember('complaint_committee', 120, function () {
+            return ComplaintCommittee::all();
+        });
+
+        return view('pages.admissions.complaint-committee', compact('cc'));
     }
 
 
@@ -156,11 +184,6 @@ class PagesController extends Controller
         return view('pages.facilities.laboratries.electrical-laboratory');
     }
 
-    public function mechanical_laboratory()
-    {
-        $equipment = Equipment::all();
-        return view('pages.facilities.laboratries.mechanical-laboratory', ['equipment' => $equipment]);
-    }
 
     public function hostel()
     {
@@ -175,10 +198,19 @@ class PagesController extends Controller
         return view('pages.facilities.library');
     }
 
+    public function mechanical_laboratory()
+    {
+        $equipment = Cache::remember('mechanical_laboratory_equipment', 120, function () {
+            return Equipment::all();
+        });
+        return view('pages.facilities.laboratries.mechanical-laboratory', ['equipment' => $equipment]);
+    }
 
     public function transport()
     {
-        $transport = Route::all();
+        $transport = Cache::remember('transport_routes', 120, function () {
+            return Route::all();
+        });
         return view('pages.facilities.transport', ['transport' => $transport]);
     }
 
@@ -194,8 +226,16 @@ class PagesController extends Controller
 
     public function sports()
     {
-        $sportsData = SportData::all();
-        $A3 = SportAthletesAndAchievements::all();
+
+        $sportsData = Cache::remember('sports_data', 120, function () {
+            return SportData::all();
+        });
+
+
+        $A3 = Cache::remember('athlete_achievements', 120, function () {
+            return SportAthletesAndAchievements::all();
+        });
+
         return view('pages.activities.extra-curricular.sports', ['sportsData' => $sportsData, 'A3' => $A3]);
     }
 
@@ -227,6 +267,10 @@ class PagesController extends Controller
     public function entrepreneurship_development_cell()
     {
 
-        return view('pages.activities.cells.entrepreneurship-development-cell');
+        $events = Cache::remember('events_data', 120, function () {
+            return Event::all();
+        });
+
+        return view('pages.activities.cells.entrepreneurship-development-cell', ['events' => $events]);
     }
 }
