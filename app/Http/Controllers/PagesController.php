@@ -16,6 +16,7 @@ use App\Models\Route;
 use App\Models\SportAthletesAndAchievements;
 use App\Models\SportData;
 use App\Models\Event;
+use App\Models\WomenEmpowermentCellMember;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 
@@ -272,5 +273,18 @@ class PagesController extends Controller
         });
 
         return view('pages.activities.cells.entrepreneurship-development-cell', ['events' => $events]);
+    }
+
+    public function women_empowerment_cell()
+    {
+        $wec = Cache::remember('wec_data', 120, function () {
+            return WomenEmpowermentCellMember::all();
+        });
+
+        $wec_slider = Cache::remember('wec_slider', 120, function () {
+            return PostSlider::where('page_name', 'wec')->get();
+        });
+
+        return view('pages.activities.cells.women-empowerment-cell', ['wec' => $wec, 'wec_slider' => $wec_slider]);
     }
 }

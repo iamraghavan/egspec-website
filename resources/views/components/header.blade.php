@@ -197,7 +197,7 @@
                                             <a href="{{ url("#") }}">Cells</a>
                                             <ul class="submenu third-lvl base">
                                                 <li><a href="{{ url("/activities/cells/entrepreneurship-development-cell") }}">Entrepreneurship Development Cell</a></li>
-                                                <li><a href="{{ url("#") }}">Women Empowerment Cell</a></li>
+                                                <li><a href="{{ url("/activities/cells/women-empowerment-cell") }}">Women Empowerment Cell</a></li>
                                                 <li><a href="{{ url("#") }}">Internal Complaints Committee</a></li>
                                                 <li><a href="{{ url("#") }}">Career Guidance Cell</a></li>
                                             </ul>

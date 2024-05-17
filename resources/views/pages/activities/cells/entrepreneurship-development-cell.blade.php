@@ -8,8 +8,28 @@
 ])
 
 
+@php
+    $actionPlans = [
+        'Planned to promote minimum 20 students as an entrepreneur in every year.',
+        'Planned to get minimum of 2 grants from government and from other bodies on every year.',
+        'Planned to promote our college as an incubators centre in Nagapattinam region.',
+        'Planned to initiate MSME activities inside college campus.',
+        'Planned to bring students to various competition conducted all over the world for entrepreneurs.',
+        'Planned to organize seminars, workshops, contest for developing entrepreneurial skills on students.',
+        'Plan to start recycling activities inside college campus.',
+        'Promote students managing skills, Confidence and earning skills to a sufficient level to become a self entrepreneur.'
+    ];
+@endphp
+
+
+
 <section class="rts-about-university pt--100 pb--80">
+
+
+
+
    <div class="container">
+
       <div class="row">
          <div class="rts-section">
             <div class="col-lg-4 col-md-3 col-sm-12 text-center">
@@ -273,21 +293,17 @@
                             <h5 class="title">Action Plan</h5>
                             <div class="row g-5">
                                 <div class="col-lg-12">
-                                    <div class="single-information-box rt-info-bg big-box">
+                                    <div style="background-color: #3eb75ec9 !important;" class="single-information-box rt-secondary-bg big-box">
 
                                         <div class="rts-event-details">
                                             <div class="event-details__content--feature">
+                                                @foreach($actionPlans as $plan)
                                                 <div class="single-feature">
-                                                    <p class="feature-heading">Planned to promote minimum 20 students as an entrepreneur in every year.</p>
-                                                    <p class="feature-heading">Planned to get minimum of 2 grants from government and from other bodies on every year.</p>
-                                                    <p class="feature-heading">Planned to promote our college as an incubators centre in Nagapattinam region.</p>
-                                                    <p class="feature-heading">Planned to initiate MSME activities inside college campus.</p>
-                                                    <p class="feature-heading">Planned to bring students to various competition conducted all over the world for entrepreneurs.</p>
-                                                    <p class="feature-heading">Planned to organize seminars, workshops, contest for developing entrepreneurial skills on students.</p>
-                                                    <p class="feature-heading">Plan to start recycling activities inside college campus.</p>
-                                                    <p class="feature-heading">Promote students managing skills, Confidence and earning skills to a sufficient level to become a self entrepreneur.</p>
+
+                                                        <p class="feature-heading">{{ $plan }}</p>
 
                                                 </div>
+                                                @endforeach
                                             </div>
                                         </div>
 
