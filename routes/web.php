@@ -73,3 +73,4 @@ Route::get('/activities/co-curricular/conference', [PagesController::class, 'con
 
 Route::get('/activities/cells/entrepreneurship-development-cell', [PagesController::class, 'entrepreneurship_development_cell']);
 Route::get('/activities/cells/women-empowerment-cell', [PagesController::class, 'women_empowerment_cell']);
+Route::get('/activities/cells/internal-complaints-committee', [PagesController::class, 'internal_complaints_committee']);

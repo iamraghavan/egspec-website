@@ -7,22 +7,6 @@
 'page_title' => 'Women Empowerment Cell'
 ])
 
-<style>
-    .student-rep-row {
-        background-color: #ddd8f9;
-
-    }
-
-
-
-.swiper-slide img {
-    width: 100%;
-    height: auto;
-}
-
-
-
-</style>
 
 
 <section class="rts-about-university pt--100 pb--80">
@@ -48,18 +32,29 @@
          </div>
       </div>
 
-
-      <div class="swiper-container desktop-slider">
-        <div class="swiper-wrapper">
+      <div class="carousel-frame">
+        <div class="carousel-slide">
             @foreach ($wec_slider as $index => $slide)
-                <div class="swiper-slide @if($index % 2 == 0) even @else odd @endif">
-                    <a href="{{ $slide->href_link }}" target="_blank" rel="noopener noreferrer">
-                        <img src="{{ asset($slide->desktop_image_url) }}" alt="{{ $slide->alt_name }}">
-                    </a>
-                </div>
-            @endforeach
+          <img src="{{ asset($slide->desktop_image_url) }}" alt="{{ $slide->alt_name }}" />
+          @endforeach
         </div>
-    </div>
+        <i class="carousel-prev fas fa-chevron-left"></i>
+        <i class="carousel-next fas fa-chevron-right"></i>
+        <ol class="carousel-dots">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ol>
+      </div>
+
+
+
+
+
+
 
 
 
@@ -142,6 +137,51 @@
 
             </div>
         </div>
+
+
+        <div class="program-description-area">
+
+            <div class="program-credit-area">
+                <h5 class=" animated fadeIn" >PDF File / View &amp; Download</h5>
+
+                <div class="program-accordion my-5">
+                    <div class="accordion" id="rts-accordion">
+
+                        <div class="accordion-item">
+
+                            <div>
+                                <div class="accordion-body-content">
+                                    <table class="table">
+
+                                        <tbody>
+                                            <tr>
+                                                <td><a href="https://egspec.blob.core.windows.net/egspec-assets/women-empowerment-cell/minutes-of-meeting-academic-year-2023-24-even-semester.pdf" target="_blank" type="application/pdf" rel="alternate" media='print'> MINUTES OF MEETING Academic Year : 2023-24 (Even Semester) </a></td>
+                                                <td><i class="fa fa-file-pdf"></i> / PDF File</td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td><a href="https://egspec.blob.core.windows.net/egspec-assets/women-empowerment-cell/womens-day-2024.pdf" target="_blank" type="application/pdf" rel="alternate" media='print'> Women's day 2024 </a></td>
+                                                <td><i class="fa fa-file-pdf"></i> / PDF File</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+
+
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
     </div>
 
    </div>
@@ -149,23 +189,6 @@
 </section>
 
 
-
-
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        // Initialize Swiper for desktop slider
-        var desktopSwiper = new Swiper('.desktop-slider', {
-            loop: true,
-            autoplay: {
-                delay: 5000,
-            },
-            effect: 'slide', // Set slide effect
-            slidesPerView: 1, // Show only one slide at a time
-            spaceBetween: 0, // No space between slides
-        });
-    });
-</script>
 
 
 

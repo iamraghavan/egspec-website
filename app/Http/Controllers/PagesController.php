@@ -287,4 +287,13 @@ class PagesController extends Controller
 
         return view('pages.activities.cells.women-empowerment-cell', ['wec' => $wec, 'wec_slider' => $wec_slider]);
     }
+
+    public function internal_complaints_committee()
+    {
+
+        $icc_slider = Cache::remember('icc_slider', 120, function () {
+            return PostSlider::where('page_name', 'icc')->get();
+        });
+        return view('pages.activities.cells.internal-complaints-committee', ['icc_slider' => $icc_slider]);
+    }
 }
