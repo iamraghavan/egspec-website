@@ -74,3 +74,17 @@ Route::get('/activities/co-curricular/conference', [PagesController::class, 'con
 Route::get('/activities/cells/entrepreneurship-development-cell', [PagesController::class, 'entrepreneurship_development_cell']);
 Route::get('/activities/cells/women-empowerment-cell', [PagesController::class, 'women_empowerment_cell']);
 Route::get('/activities/cells/internal-complaints-committee', [PagesController::class, 'internal_complaints_committee']);
+Route::get('/activities/cells/carrier-guidance', [PagesController::class, 'carrier_guidance']);
+
+Route::get('/activities/anti-ragging-committee', [PagesController::class, 'anti_ragging_committee']);
+
+Route::get('/activities/iso/coordinators', [PagesController::class, 'iso_coordinators']);
+Route::get('/activities/iso/iso-certificates', [PagesController::class, 'iso_certificates']);
+Route::get('/activities/iso/iso-manual', [PagesController::class, 'iso_manual']);
+
+Route::get('/activities/discipline-committee', [PagesController::class, 'discipline_committee']);
+
+
+// Route for Research
+
+Route::get('/research/research-and-development', [PagesController::class, 'research_and_development']);

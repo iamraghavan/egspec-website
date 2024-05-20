@@ -296,4 +296,46 @@ class PagesController extends Controller
         });
         return view('pages.activities.cells.internal-complaints-committee', ['icc_slider' => $icc_slider]);
     }
+
+
+    public function carrier_guidance()
+    {
+        return view('pages.activities.cells.carrier-guidance');
+    }
+
+    public function anti_ragging_committee()
+    {
+
+        return view('pages.activities.anti-ragging-committee');
+    }
+
+    public function iso_coordinators()
+    {
+
+        return view('pages.activities.iso.coordinators');
+    }
+
+    public function iso_certificates()
+    {
+
+        return view('pages.activities.iso.certificate');
+    }
+
+    public function iso_manual()
+    {
+        return view('pages.activities.iso.manual');
+    }
+
+    public function discipline_committee()
+    {
+        return view('pages.activities.discipline-committee');
+    }
+
+
+    /* Research */
+
+    public function research()
+    {
+        return view('pages.research.research-and-development');
+    }
 }

@@ -70,6 +70,16 @@
                                                 <td><a href="https://egspec.blob.core.windows.net/egspec-assets/internal-complaints-committee/ICC-DOCUMENT-2022-23-even-semester-.pdf" target="_blank" type="application/pdf" rel="alternate" media='print'> NAME OF THE INSTITUTE LEVEL COMMITTEE: ICC </a></td>
                                                 <td><i class="fa fa-file-pdf"></i> / PDF File</td>
                                             </tr>
+
+                                            <tr>
+                                                <td><a href="https://egspec.blob.core.windows.net/egspec-assets/internal-complaints-committee/dst-handbook.pdf" target="_blank" type="application/pdf" rel="alternate" media='print'> DST Handbook </a></td>
+                                                <td><i class="fa fa-file-pdf"></i> / PDF File</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><a href="https://egspec.blob.core.windows.net/egspec-assets/internal-complaints-committee/welcome-to-guidelines-icc.pdf" target="_blank" type="application/pdf" rel="alternate" media='print'> Welcome to GuideLines ICC </a></td>
+                                                <td><i class="fa fa-file-pdf"></i> / PDF File</td>
+                                            </tr>
                                         </tbody>
                                     </table>
 

@@ -199,7 +199,7 @@
                                                 <li><a href="{{ url("/activities/cells/entrepreneurship-development-cell") }}">Entrepreneurship Development Cell</a></li>
                                                 <li><a href="{{ url("/activities/cells/women-empowerment-cell") }}">Women Empowerment Cell</a></li>
                                                 <li><a href="{{ url("/activities/cells/internal-complaints-committee") }}">Internal Complaints Committee</a></li>
-                                                <li><a href="{{ url("#") }}">Career Guidance Cell</a></li>
+                                                <li><a href="{{ url("/activities/cells/carrier-guidance") }}">Career Guidance Cell</a></li>
                                             </ul>
                                         </li>
                                         <li class="sub-dropdown">
@@ -213,15 +213,16 @@
                                                 <li><a href="{{ url("#") }}">IEI</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="{{ url("#") }}">Anti Ragging Committee</a></li>
+                                        <li><a href="{{ url("/activities/anti-ragging-committee") }}">Anti Ragging Committee</a></li>
                                         <li class="sub-dropdown">
                                             <a href="{{ url("#") }}">ISO</a>
                                             <ul class="submenu third-lvl base">
-                                                <li><a href="{{ url("#") }}">Coordinators</a></li>
-                                                <li><a href="{{ url("#") }}">Certificate</a></li>
+                                                <li><a href="{{ url("/activities/iso/coordinators") }}">Coordinators</a></li>
+                                                <li><a href="{{ url("/activities/iso/iso-certificates") }}">Certificate</a></li>
+                                                <li><a href="{{ url("/activities/iso/iso-manual") }}">Manual</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="{{ url("#") }}">Discipline Committee</a></li>
+                                        <li><a href="{{ url("/activities/discipline-committee") }}">Discipline Committee</a></li>
                                     </ul>
                                 </li>
                                 <li class="has-dropdown">
@@ -240,7 +241,7 @@
                                 <li class="has-dropdown">
                                     <a class="nav-link" href="{{ url("#") }}">Research</a>
                                     <ul class="submenu">
-                                        <li><a href="{{ url("#") }}">Team Members</a></li>
+                                        <li><a href="{{ url("/research/research-and-development") }}">Team Members</a></li>
                                         <li><a href="{{ url("#") }}">Research Supervisor and Scholar</a></li>
                                         <li><a href="{{ url("#") }}">Publications</a></li>
                                         <li class="sub-dropdown">
