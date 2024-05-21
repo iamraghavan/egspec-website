@@ -334,8 +334,24 @@ class PagesController extends Controller
 
     /* Research */
 
-    public function research()
+    public function research_and_development()
     {
         return view('pages.research.research-and-development');
+    }
+
+    public function research_sasd()
+    {
+
+        return view('pages.research.research-supervisor');
+    }
+
+    public function publication_details()
+    {
+        return view('pages.research.publication-details');
+    }
+
+    public function patent_details()
+    {
+        return view('pages.research.patent-details');
     }
 }

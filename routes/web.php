@@ -88,3 +88,6 @@ Route::get('/activities/discipline-committee', [PagesController::class, 'discipl
 // Route for Research
 
 Route::get('/research/research-and-development', [PagesController::class, 'research_and_development']);
+Route::get('/research/research-supervisor-and-scholar-details', [PagesController::class, 'research_sasd']);
+Route::get('/research/publication-details', [PagesController::class, 'publication_details']);
+Route::get('/research/patent-details', [PagesController::class, 'patent_details']);

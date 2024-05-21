@@ -242,8 +242,8 @@
                                     <a class="nav-link" href="{{ url("#") }}">Research</a>
                                     <ul class="submenu">
                                         <li><a href="{{ url("/research/research-and-development") }}">Team Members</a></li>
-                                        <li><a href="{{ url("#") }}">Research Supervisor and Scholar</a></li>
-                                        <li><a href="{{ url("#") }}">Publications</a></li>
+                                        <li><a href="{{ url("/research/research-supervisor-and-scholar-details") }}">Research Supervisor and Scholar</a></li>
+                                        <li><a href="{{ url("/research/publication-details") }}">Publications</a></li>
                                         <li class="sub-dropdown">
                                             <a href="{{ url("#") }}">Projects</a>
                                             <ul class="submenu third-lvl base">
@@ -255,7 +255,7 @@
                                                 <li><a href="{{ url("#") }}">IT</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="{{ url("#") }}">Patents</a></li>
+                                        <li><a href="{{ url("/research/patent-details") }}">Patents</a></li>
                                         <li><a href="{{ url("#") }}">Copy Rights</a></li>
                                         <li><a href="{{ url("#") }}">R & D Policy</a></li>
                                     </ul>
