@@ -150,7 +150,7 @@ try {
                     <div class="col-md-6 col-sm-6 col-lg-4">
                         <div class="rts-footer-widget w-320">
                             <a href="index.html" class="d-block rts-footer-logo mb--40">
-                                <img src="{{ asset('/assets/images/logo-white.png') }}" alt="EGSPEC">
+                                <img src="{{ asset('/assets/images/logo-white.svg') }}" alt="EGSPEC">
                             </a>
 
                             <div class="rts-contact-link">
@@ -201,6 +201,41 @@ try {
                         </div>
                     </div>
                     @endforeach
+
+
+                    <div class="col-md-12 col-sm-6 col-lg-12">
+                        <div class="custom-footer-widget">
+                            <div class="custom-footer-menu">
+                                <ul class="custom-footer-list">
+                                    <li><a href="">RTI</a></li>
+                                    <li><a href="">IQAC</a></li>
+                                    <li><a href="">PMKK</a></li>
+                                    <li><a href="">PMKVY</a></li>
+                                    <li><a href="">AICTE</a></li>
+                                    <li><a href="">Mandatory Disclosure</a></li>
+                                    <li><a href="">NIRF Engineering Ranking</a></li>
+                                    <li><a href="">Accreditation Status</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-12 col-sm-6 col-lg-12">
+                        <div class="custom-footer-widget ser">
+                            <div class="custom-footer-menu">
+                                <ul class="custom-footer-list">
+                                    <li><a href="">Internal Complaints Committee</a></li>
+                                    <li><a href="">All AICTE Approval Documents</a></li>
+                                    <li><a href="">AICTE EGSPEC Video</a></li>
+                                    <li><a href="">Governing Body Meeting</a></li>
+                                    <li><a href="">Mandatory Disclosure</a></li>
+                                    <li><a href="">NIRF Engineering Ranking</a></li>
+                                    <li><a href="">Accreditation Status</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -220,3 +255,5 @@ try {
         </div>
     </div>
 </div>
+
+

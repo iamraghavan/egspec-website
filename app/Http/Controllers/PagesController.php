@@ -354,4 +354,14 @@ class PagesController extends Controller
     {
         return view('pages.research.patent-details');
     }
+
+    public function copyrights()
+    {
+        return view('pages.research.research-copyright');
+    }
+
+    public function r_and_d_policy()
+    {
+        return view('pages.research.r-and-d-policy');
+    }
 }

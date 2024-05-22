@@ -91,3 +91,5 @@ Route::get('/research/research-and-development', [PagesController::class, 'resea
 Route::get('/research/research-supervisor-and-scholar-details', [PagesController::class, 'research_sasd']);
 Route::get('/research/publication-details', [PagesController::class, 'publication_details']);
 Route::get('/research/patent-details', [PagesController::class, 'patent_details']);
+Route::get('/research/copyrights', [PagesController::class, 'copyrights']);
+Route::get('/research/r-and-d-policy', [PagesController::class, 'r_and_d_policy']);

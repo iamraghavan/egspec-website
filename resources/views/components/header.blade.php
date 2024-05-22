@@ -68,7 +68,7 @@
                 <div class="header-one-wrapper">
                     <div class="left-side-header">
                         <a href="{{ url("/") }}" class="logo-area">
-                            <img class="logo big_screen" src="{{ asset("/assets/images/logo_tran.png") }}" alt="logo">
+                            <img class="logo big_screen" src="{{ asset("/assets/images/logo_tran.svg") }}" alt="logo">
                         </a>
                     </div>
 
@@ -141,22 +141,9 @@
                                                 <li><a href="{{ url("#") }}">Lateral Entry</a></li>
                                             </ul>
                                         </li>
-                                        {{-- <li class="sub-dropdown">
-                                            <a href="{{ url("#") }}">Eligibility Criteria</a>
-                                            <ul class="submenu third-lvl base">
-                                                <li><a href="{{ url("#") }}">UG</a></li>
-                                                <li><a href="{{ url("#") }}">PG</a></li>
-                                                <li><a href="{{ url("#") }}">Lateral Entry</a></li>
-                                            </ul>
-                                        </li> --}}
+
                                         <li><a href="{{ url("/admissions/excess-fee-committee-circular") }}">Excess Fee Committee Circular</a></li>
-                                        {{-- <li><a href="{{ url("#") }}">Sports Quota Admission</a></li>
-                                        <li class="sub-dropdown">
-                                            <a href="{{ url("#") }}">Scholarships</a>
-                                            <ul class="submenu third-lvl base">
-                                                <li><a href="{{ url("#") }}">Sports Quota Scholarship 2024</a></li>
-                                            </ul>
-                                        </li> --}}
+
                                         <li><a href="{{ url("/admissions/complaint-committee") }}">Complaint Committee</a></li>
                                         <li><a href="{{ url("#") }}">Why Study Here</a></li>
                                         <li><a href="{{ url("#") }}">FAQ</a></li>
@@ -256,8 +243,8 @@
                                             </ul>
                                         </li>
                                         <li><a href="{{ url("/research/patent-details") }}">Patents</a></li>
-                                        <li><a href="{{ url("#") }}">Copy Rights</a></li>
-                                        <li><a href="{{ url("#") }}">R & D Policy</a></li>
+                                        <li><a href="{{ url("/research/copyrights") }}">Copy Rights</a></li>
+                                        <li><a href="{{ url("/research/r-and-d-policy") }}">R & D Policy</a></li>
                                     </ul>
                                 </li>
                                 {{--
