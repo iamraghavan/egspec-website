@@ -230,7 +230,7 @@ try {
                                     <li><a href="">Governing Body Meeting</a></li>
                                     <li><a href="">Mandatory Disclosure</a></li>
                                     <li><a href="">NIRF Engineering Ranking</a></li>
-                                    <li><a href="">Accreditation Status</a></li>
+
                                 </ul>
                             </div>
                         </div>

@@ -81,19 +81,20 @@
                                 <li class="has-dropdown">
                                     <a class="nav-link" href="{{ url("#") }}">About</a>
                                     <ul class="submenu">
-                                        <li><a href="{{ url("#") }}">Founder Chairperson’s Message</a></li>
-                                        <li><a href="{{ url("#") }}">Chairman’s Message</a></li>
-                                        <li><a href="{{ url("#") }}">Director’s Message</a></li>
-                                        <li><a href="{{ url("#") }}">Principal’s Message</a></li>
-                                        <li><a href="{{ url("#") }}">About the Group</a></li>
-                                        <li><a href="{{ url("#") }}">About the College</a></li>
-                                        <li><a href="{{ url("#") }}">Awards & Achievements</a></li>
-                                        <li><a href="{{ url("#") }}">Administration</a></li>
-                                        <li><a href="{{ url("#") }}">Tribute to Our Founder</a></li>
-                                        <li><a href="{{ url("#") }}">Objectives</a></li>
+                                        <li><a href="{{ url("/about/our-focus") }}">Our Focus</a></li>
+                                        <li><a href="{{ url("/about/vision-and-mission") }}">Vision & Mission</a></li>
+                                        <li><a href="{{ url("/about/history") }}">History</a></li>
+                                        <li><a href="{{ url("/about/message-from-the-founder-and-chairman") }}">Message From the Chairman</a></li>
+                                        <li><a href="{{ url("/about/message-from-the-secretary") }}">Message From the Secretary</a></li>
+                                        <li><a href="{{ url("/about/message-from-the-principal") }}">Message From the Principal</a></li>
+                                        <li><a href="{{ url("/about/adminstrative-organization") }}">Administrative Organization</a></li>
+                                        <li><a href="{{ url("#") }}">Organizational Chart</a></li>
+                                        <li><a href="{{ url("#") }}">Milestones</a></li>
+                                        <li><a href="{{ url("#") }}">HR Policy</a></li>
+                                        <li><a href="{{ url("#") }}">Audit Statement</a></li>
                                         <li><a href="{{ url("#") }}">Strategic Plan</a></li>
-                                        <li><a href="{{ url("#") }}">Affiliation & Approvals</a></li>
-                                        <li><a href="{{ url("#") }}">Core Values</a></li>
+                                        <li><a href="{{ url("#") }}">Strategic Plan Meeting Minutes</a></li>
+
                                     </ul>
                                 </li>
                                 <li class="has-dropdown">
@@ -215,8 +216,7 @@
                                 <li class="has-dropdown">
                                     <a class="nav-link" href="{{ url("#") }}">Placements</a>
                                     <ul class="submenu">
-                                        <li><a href="{{ url("#") }}">Industry Partnership & Corporate Affairs (Placement &
-                                                Training)</a></li>
+                                        <li><a href="{{ url("#") }}">Industry Partnership & Corporate Affairs (Placement & Training)</a></li>
                                         <li><a href="{{ url("#") }}">MoU</a></li>
                                         <li><a href="{{ url("#") }}">Recruiters</a></li>
                                         <li><a href="{{ url("#") }}">Training Cell</a></li>
@@ -243,8 +243,8 @@
                                             </ul>
                                         </li>
                                         <li><a href="{{ url("/research/patent-details") }}">Patents</a></li>
-                                        <li><a href="{{ url("/research/copyrights") }}">Copy Rights</a></li>
-                                        <li><a href="{{ url("/research/r-and-d-policy") }}">R & D Policy</a></li>
+                                        <li><a href="{{ url("/research/copyrights") }}">Copyrights</a></li>
+                                        <li><a href="{{ url("/research/r-and-d-policy") }}">R &amp; D Policy</a></li>
                                     </ul>
                                 </li>
                                 {{--

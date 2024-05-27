@@ -42,19 +42,20 @@
                 <li class="has-droupdown">
                     <a href="{{ url("#") }}" class="main">About</a>
                     <ul class="submenu mm-collapse">
-                        <li><a class="mobile-menu-link" href="{{ url("#") }}">Founder Chairperson’s Message</a></li>
-                        <li><a class="mobile-menu-link" href="{{ url("#") }}">Chairman’s Message</a></li>
-                        <li><a class="mobile-menu-link" href="{{ url("#") }}">Director’s Message</a></li>
-                        <li><a class="mobile-menu-link" href="{{ url("#") }}">Principal’s Message</a></li>
-                        <li><a class="mobile-menu-link" href="{{ url("#") }}">About the Group</a></li>
-                        <li><a class="mobile-menu-link" href="{{ url("#") }}">About the College</a></li>
-                        <li><a class="mobile-menu-link" href="{{ url("#") }}">Awards & Achievements</a></li>
-                        <li><a class="mobile-menu-link" href="{{ url("#") }}">Administration</a></li>
-                        <li><a class="mobile-menu-link" href="{{ url("#") }}">Tribute to Our Founder</a></li>
-                        <li><a class="mobile-menu-link" href="{{ url("#") }}">Objectives</a></li>
+                        <li><a class="mobile-menu-link" href="{{ url("/about/our-focus") }}">Our Focus</a></li>
+                        <li><a class="mobile-menu-link" href="{{ url("#") }}">Vision & Mission</a></li>
+                        <li><a class="mobile-menu-link" href="{{ url("#") }}">History</a></li>
+                        <li><a class="mobile-menu-link" href="{{ url("#") }}">Message From the Chairman</a></li>
+                        <li><a class="mobile-menu-link" href="{{ url("#") }}">Message From the Secretary</a></li>
+                        <li><a class="mobile-menu-link" href="{{ url("#") }}">Message From the Principal</a></li>
+                        <li><a class="mobile-menu-link" href="{{ url("#") }}">Administrative Organization</a></li>
+                        <li><a class="mobile-menu-link" href="{{ url("#") }}">Organizational Chart</a></li>
+                        <li><a class="mobile-menu-link" href="{{ url("#") }}">Milestones</a></li>
+                        <li><a class="mobile-menu-link" href="{{ url("#") }}">HR Policy</a></li>
+                        <li><a class="mobile-menu-link" href="{{ url("#") }}">Audit Statement</a></li>
                         <li><a class="mobile-menu-link" href="{{ url("#") }}">Strategic Plan</a></li>
-                        <li><a class="mobile-menu-link" href="{{ url("#") }}">Affiliation & Approvals</a></li>
-                        <li><a class="mobile-menu-link" href="{{ url("#") }}">Core Values</a></li>
+                        <li><a class="mobile-menu-link" href="{{ url("#") }}">Strategic Plan Meeting Minutes</a></li>
+
                     </ul>
                 </li>
                 <li class="has-droupdown">
@@ -195,9 +196,10 @@
                         <li><a class="mobile-menu-link" href="{{ url("#") }}">Team Members</a></li>
                         <li><a class="mobile-menu-link" href="{{ url("#") }}">Research Supervisor and Scholar</a></li>
                         <li><a class="mobile-menu-link" href="{{ url("#") }}">Publications</a></li>
-                        <li class="sub-dropdown">
+
+                        <li class="has-droupdown sa">
                             <a href="{{ url("#") }}">Projects</a>
-                            <ul class="submenu third-lvl base">
+                            <ul class="submenu mm-collapse s">
                                 <li><a class="mobile-menu-link" href="{{ url("#") }}">MECH</a></li>
                                 <li><a class="mobile-menu-link" href="{{ url("#") }}">CIVIL</a></li>
                                 <li><a class="mobile-menu-link" href="{{ url("#") }}">EEE</a></li>
@@ -206,6 +208,8 @@
                                 <li><a class="mobile-menu-link" href="{{ url("#") }}">IT</a></li>
                             </ul>
                         </li>
+
+
                         <li><a class="mobile-menu-link" href="{{ url("#") }}">Patents</a></li>
                         <li><a class="mobile-menu-link" href="{{ url("#") }}">Copy Rights</a></li>
                         <li><a class="mobile-menu-link" href="{{ url("#") }}">R & D Policy</a></li>

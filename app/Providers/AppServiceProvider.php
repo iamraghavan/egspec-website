@@ -20,6 +20,12 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+
+        Blade::directive('blob', function ($expression) {
+            return "<?php echo config('filesystems.disks.azure.url') . '/' . env('AZURE_STORAGE_CONTAINER') . '/' . ltrim($expression, '/'); ?>";
+        });
+
+
         Blade::directive('s3url', function ($path) {
             return "<?php echo config('filesystems.disks.s3.url') . '/' . ltrim($path, '/'); ?>";
         });

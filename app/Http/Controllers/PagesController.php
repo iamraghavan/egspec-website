@@ -364,4 +364,49 @@ class PagesController extends Controller
     {
         return view('pages.research.r-and-d-policy');
     }
+
+
+    /* About us */
+
+    public function our_focus()
+    {
+        return view('pages.about.our-focus');
+    }
+
+    public function vision_and_mission()
+    {
+
+        return view('pages.about.vision-and-mission');
+    }
+
+    public function history()
+    {
+
+        return view('pages.about.history');
+    }
+
+    public function message_from_the_founder_and_chairman()
+    {
+
+        return view('pages.about.message-from-the-founder-and-chairman');
+    }
+
+
+    public function message_from_the_secretary()
+    {
+
+        return view('pages.about.message-from-the-secretary');
+    }
+
+    public function message_from_the_principal()
+    {
+
+        return view('pages.about.message-from-the-principal');
+    }
+
+    public function adminstrative_organization()
+    {
+
+        return view('pages.about.adminstrative-organization');
+    }
 }

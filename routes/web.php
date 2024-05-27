@@ -93,3 +93,14 @@ Route::get('/research/publication-details', [PagesController::class, 'publicatio
 Route::get('/research/patent-details', [PagesController::class, 'patent_details']);
 Route::get('/research/copyrights', [PagesController::class, 'copyrights']);
 Route::get('/research/r-and-d-policy', [PagesController::class, 'r_and_d_policy']);
+
+
+// Route for About us
+
+Route::get('/about/our-focus', [PagesController::class, 'our_focus']);
+Route::get('/about/vision-and-mission', [PagesController::class, 'vision_and_mission']);
+Route::get('/about/history', [PagesController::class, 'history']);
+Route::get('/about/message-from-the-founder-and-chairman', [PagesController::class, 'message_from_the_founder_and_chairman']);
+Route::get('/about/message-from-the-secretary', [PagesController::class, 'message_from_the_secretary']);
+Route::get('/about/message-from-the-principal', [PagesController::class, 'message_from_the_principal']);
+Route::get('/about/adminstrative-organization', [PagesController::class, 'adminstrative_organization']);
