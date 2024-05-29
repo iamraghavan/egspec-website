@@ -88,12 +88,12 @@
                                         <li><a href="{{ url("/about/message-from-the-secretary") }}">Message From the Secretary</a></li>
                                         <li><a href="{{ url("/about/message-from-the-principal") }}">Message From the Principal</a></li>
                                         <li><a href="{{ url("/about/adminstrative-organization") }}">Administrative Organization</a></li>
-                                        <li><a href="{{ url("#") }}">Organizational Chart</a></li>
-                                        <li><a href="{{ url("#") }}">Milestones</a></li>
-                                        <li><a href="{{ url("#") }}">HR Policy</a></li>
-                                        <li><a href="{{ url("#") }}">Audit Statement</a></li>
-                                        <li><a href="{{ url("#") }}">Strategic Plan</a></li>
-                                        <li><a href="{{ url("#") }}">Strategic Plan Meeting Minutes</a></li>
+                                        <li><a href="{{ url("/about/organizational-chart") }}">Organizational Chart</a></li>
+                                        <li><a href="{{ url("/about/milestones") }}">Milestones</a></li>
+                                        <li><a href="{{ url("/about/hr-policy") }}">HR Policy</a></li>
+                                        <li><a href="{{ url("/about/audit-statement") }}">Audit Statement</a></li>
+                                        <li><a href="{{ url("/about/strategic-plan") }}">Strategic Plan</a></li>
+                                        <li><a href="{{ url("/about/strategic-plan-meeting-minutes") }}">Strategic Plan Meeting Minutes</a></li>
 
                                     </ul>
                                 </li>
@@ -217,10 +217,10 @@
                                     <a class="nav-link" href="{{ url("#") }}">Placements</a>
                                     <ul class="submenu">
                                         <li><a href="{{ url("#") }}">Industry Partnership & Corporate Affairs (Placement & Training)</a></li>
-                                        <li><a href="{{ url("#") }}">MoU</a></li>
+                                        <li><a href="{{ url("/placements/memorandum-of-understanding") }}">MoU</a></li>
                                         <li><a href="{{ url("#") }}">Recruiters</a></li>
                                         <li><a href="{{ url("#") }}">Training Cell</a></li>
-                                        <li><a href="{{ url("#") }}">Placement Team</a></li>
+                                        <li><a href="{{ url("/placements/placement-team") }}">Placement Team</a></li>
                                         <li><a href="{{ url("#") }}">Placement Statistics</a></li>
                                         <li><a href="{{ url("#") }}">Our Few Of Recruiters</a></li>
                                     </ul>

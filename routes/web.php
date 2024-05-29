@@ -104,3 +104,16 @@ Route::get('/about/message-from-the-founder-and-chairman', [PagesController::cla
 Route::get('/about/message-from-the-secretary', [PagesController::class, 'message_from_the_secretary']);
 Route::get('/about/message-from-the-principal', [PagesController::class, 'message_from_the_principal']);
 Route::get('/about/adminstrative-organization', [PagesController::class, 'adminstrative_organization']);
+Route::get('/about/organizational-chart', [PagesController::class, 'organizational_chart']);
+Route::get('/about/milestones', [PagesController::class, 'milestones']);
+Route::get('/about/hr-policy', [PagesController::class, 'hr_policy']);
+Route::get('/about/audit-statement', [PagesController::class, 'audit_statement']);
+Route::get('/about/strategic-plan', [PagesController::class, 'strategic_plan']);
+Route::get('/about/strategic-plan-meeting-minutes', [PagesController::class, 'strategic_plan_meeting_minutes']);
+
+
+
+// Route for Placements
+
+Route::get('/placements/memorandum-of-understanding', [PagesController::class, 'memorandum_of_understanding']);
+Route::get('/placements/placement-team', [PagesController::class, 'placement_team']);

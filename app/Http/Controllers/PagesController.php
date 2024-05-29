@@ -20,6 +20,7 @@ use App\Models\WomenEmpowermentCellMember;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 
+
 class PagesController extends Controller
 {
     public function index()
@@ -408,5 +409,57 @@ class PagesController extends Controller
     {
 
         return view('pages.about.adminstrative-organization');
+    }
+
+    public function organizational_chart()
+    {
+
+        return view('pages.about.organizational-chart');
+    }
+
+    public function milestones()
+    {
+
+        return view('pages.about.milestones');
+    }
+
+
+    public function hr_policy()
+    {
+
+        return view('pages.about.hr-policy');
+    }
+
+    public function audit_statement()
+    {
+
+        return view('pages.about.audit-statement');
+    }
+
+    public function strategic_plan()
+    {
+
+        return view('pages.about.strategic-plan');
+    }
+
+    public function strategic_plan_meeting_minutes()
+    {
+
+        return view('pages.about.strategic-plan-meeting-minutes');
+    }
+
+
+    /* Placement */
+
+    public function memorandum_of_understanding()
+    {
+
+        return view('pages.placement.memorandum-of-understanding');
+    }
+
+    public function placement_team()
+    {
+
+        return view('pages.placement.placement-team');
     }
 }

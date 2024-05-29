@@ -417,38 +417,234 @@
 <table class="table">
    <thead class="table-theme">
       <tr>
-         <td>S.No</td>
-         <td>Name</td>
-         <td>Designation</td>
+         <td>Convener:</td>
+         <td>Coordinator:</td>
+         <td>Member:</td>
+         <td>Girl Student Members:</td>
+         <td>Frequency of Meeting:</td>
       </tr>
    </thead>
    <tbody>
-      <tr>
-         <td>1.</td>
-         <td>Prof. J. Vanitha</td>
-         <td>Convener - Women Empowerment Cell</td>
-      </tr>
-      <tr>
-         <td>2.</td>
-         <td>One faculty member from all Dept.</td>
-         <td>Coordinator</td>
-      </tr>
-      <tr>
-         <td>3.</td>
-         <td>One lady advocate</td>
-         <td>Member</td>
-      </tr>
-      <tr>
-         <td>4.</td>
-         <td>Two Girl Student members</td>
-         <td>Girl Student Members</td>
-      </tr>
+     <tr>
+        <td>Prof. J. Vanitha ASP/(MCA)</td>
+        <td>One faculty member from all Dept.</td>
+        <td>One lady advocate</td>
+        <td>Two Girl Student members</td>
+        <td>Semester Once</td>
+     </tr>
    </tbody>
 </table>
 
                     </div>
                 </div>
             </div>
+
+            <div class="semister-fee__content mt-5">
+                <h5 class="rts-section-title">Anti-Ragging & Discipline Committee</h5>
+
+                <!-- tab item -->
+                <div class="rts-fee-chart">
+
+                    <div class="rts-fee-chart__content" >
+
+
+                        <table class="table">
+                            <thead class="table-theme">
+                               <tr>
+                                  <td>Convener:</td>
+                                  <td>Coordinator:</td>
+                                  <td>Member:</td>
+                                  <td>Frequency of Meeting:</td>
+                               </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                 <td>Prof. S. Krishnamohan Professor/Mech</td>
+                                 <td>One Faculty from each Department</td>
+                                 <td>Nagore Police Inspector, Tasildar, NGO Official, Parents, 2 Students, Non teaching staff</td>
+                                 <td>Semester Once</td>
+                              </tr>
+                            </tbody>
+                         </table>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="semister-fee__content mt-5">
+                <h5 class="rts-section-title">Prohibition of Alcoholism Cell</h5>
+
+                <!-- tab item -->
+                <div class="rts-fee-chart">
+
+                    <div class="rts-fee-chart__content" >
+
+
+                        <table class="table">
+                            <thead class="table-theme">
+                               <tr>
+                                  <td>Convener:</td>
+                                  <td>Coordinator:</td>
+                                  <td>Member:</td>
+                                  <td>Frequency of Meeting:</td>
+                               </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                 <td>Prof. G. Ganesan (EEE)</td>
+                                 <td>One Faculty from each Department</td>
+                                 <td>Parents, 2 Students, Faculty and Student Volunteers</td>
+                                 <td>Semester Once</td>
+                              </tr>
+                            </tbody>
+                         </table>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="semister-fee__content mt-5">
+                <h5 class="rts-section-title">Library</h5>
+
+                <!-- tab item -->
+                <div class="rts-fee-chart">
+
+                    <div class="rts-fee-chart__content" >
+
+
+                        <table class="table">
+                            <thead class="table-theme">
+                               <tr>
+                                  <td>Service</td>
+                                  <td>Availability</td>
+                               </tr>
+                            </thead>
+                            <tbody>
+                               <tr>
+                                  <td>Library services</td>
+                                  <td>Yes</td>
+                               </tr>
+                               <tr>
+                                  <td>Carpet area of library (in sqft)</td>
+                                  <td>10520 sqft</td>
+                               </tr>
+                               <tr>
+                                  <td>Reading space (in sqft)</td>
+                                  <td>1800 sqft</td>
+                               </tr>
+                               <tr>
+                                  <td>Number of seats in reading space</td>
+                                  <td>150</td>
+                               </tr>
+                               <tr>
+                                  <td>Number of users (issue book) per day</td>
+                                  <td>250</td>
+                               </tr>
+                               <tr>
+                                  <td>Number of users (reading space) per day</td>
+                                  <td>200</td>
+                               </tr>
+                               <tr>
+                                  <td>Timings</td>
+                                  <td>During working day, weekend : 8.00 am to 6.00 pm</td>
+                               </tr>
+                               <tr>
+                                  <td>Number of library staff</td>
+                                  <td>06</td>
+                               </tr>
+                               <tr>
+                                  <td>Number of library staff with degree in library</td>
+                                  <td>05</td>
+                               </tr>
+                               <tr>
+                                  <td>Bar code system availability (issue/return)</td>
+                                  <td>Yes</td>
+                               </tr>
+                               <tr>
+                                  <td>Library services (internet/intranet)</td>
+                                  <td>Yes</td>
+                               </tr>
+                               <tr>
+                                  <td>Library searching, indexing, news clipping</td>
+                                  <td>Yes</td>
+                               </tr>
+                               <tr>
+                                  <td>Digital Library Services</td>
+                                  <td>Yes</td>
+                               </tr>
+                            </tbody>
+                         </table>
+
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="semister-fee__content mt-5">
+                <h5 class="rts-section-title">Internet</h5>
+
+                <!-- tab item -->
+                <div class="rts-fee-chart">
+
+                    <div class="rts-fee-chart__content" >
+
+
+                        <table class="table">
+                            <thead class="table-theme">
+                               <tr>
+                                  <th>Service</th>
+                                  <th>Availability</th>
+                               </tr>
+                            </thead>
+                            <tbody>
+                               <tr>
+                                  <td>Internet Services</td>
+                                  <td>Yes, WiFi Campus</td>
+                               </tr>
+                               <tr>
+                                  <td>Name of the Internet Provider</td>
+                                  <td>RELIANCE JIO</td>
+                               </tr>
+                               <tr>
+                                  <td>Available bandwidth</td>
+                                  <td>100Mbps</td>
+                               </tr>
+                               <tr>
+                                  <td>Access Speed</td>
+                                  <td>Very Good</td>
+                               </tr>
+                               <tr>
+                                  <td>Availability of Internet in an Exclusive Lab</td>
+                                  <td>Yes</td>
+                               </tr>
+                               <tr>
+                                  <td>Availability in most computing labs</td>
+                                  <td>Yes</td>
+                               </tr>
+                               <tr>
+                                  <td>Availability in departments and other units</td>
+                                  <td>Yes (Hostels, Labs, Workshops and etc.)</td>
+                               </tr>
+                               <tr>
+                                  <td>Availability in Faculty rooms</td>
+                                  <td>Yes</td>
+                               </tr>
+                               <tr>
+                                  <td>Faculty/students</td>
+                                  <td>Yes, belongs to EGSPEC</td>
+                               </tr>
+                               <tr>
+                                  <td>Security/privacy to email/internet users</td>
+                                  <td>Yes, includes SOPHOS Firewall</td>
+                               </tr>
+                            </tbody>
+                         </table>
+                    </div>
+                </div>
+            </div>
+
 
 
 

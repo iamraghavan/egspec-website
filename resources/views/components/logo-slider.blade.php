@@ -48,7 +48,7 @@
                     <div class="swiper-slide" style="width: 154.286px; margin-right: 30px;">
                         <div class="single-brand-logo">
                             <a href="#">
-                                <img src="{{ asset($sliderImage->image_url) }}" alt="{{ $sliderImage->alt_tag }}">
+                                <img src="{{ asset($sliderImage->image_url) }}" alt="{{ $sliderImage->alt_tag }}" width="154" height="auto">
                             </a>
                         </div>
                     </div>

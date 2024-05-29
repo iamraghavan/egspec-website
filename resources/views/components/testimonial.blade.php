@@ -52,29 +52,28 @@ for students and teachers to acquire knowledge and a platform for success.",
 
 
                                     @foreach($testimonials as $testimonial)
-                                    <div class="swiper-slide" style="width: 630px;">
-                                        <div class="single-testimonial">
-                                            <div class="rt-between mb--50">
-                                                <div class="rt-icon">
-                                                    <img src="@s3url('quote.svg')" alt="quote icon">
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-text">{{ $testimonial['quote'] }}</p>
-                                            <div class="rt-testimonial-author mt--50">
-                                                <div class="rt-author-meta rt-flex rt-gap-20">
-                                                    <div class="rt-author-img">
-                                                        <img src="{{ asset($testimonial['profile_img'])}}" alt="author">
-                                                    </div>
-                                                    <div class="rt-author-info">
-                                                        <h5 class="mb-1">{{ $testimonial['author'] }}</h5>
-                                                        <p>{{ $testimonial['position'] }}</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    @endforeach
-
+            <div class="swiper-slide">
+                <div class="single-testimonial">
+                    <div class="rt-between mb--50">
+                        <div class="rt-icon">
+                            <img src="@s3url('quote.svg')" alt="quote icon">
+                        </div>
+                    </div>
+                    <p class="testimonial-text">{{ $testimonial['quote'] }}</p>
+                    <div class="rt-testimonial-author mt--50">
+                        <div class="rt-author-meta rt-flex rt-gap-20">
+                            <div class="rt-author-img">
+                                <img src="{{ asset($testimonial['profile_img']) }}" alt="author">
+                            </div>
+                            <div class="rt-author-info">
+                                <h5 class="mb-1">{{ $testimonial['author'] }}</h5>
+                                <p>{{ $testimonial['position'] }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @endforeach
 
 
 

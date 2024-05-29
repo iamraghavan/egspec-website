@@ -13,39 +13,33 @@
         <div class="row">
           <!-- Poster (Right Side) -->
           <div class="col-lg-6">
-            <img src="https://egspec.blob.core.windows.net/egspec-assets/egspec_model.jpg" class="img-fluid" alt="EGSPEC Adminssion {{ date('Y') }} - {{ date('Y') + 1 }}">
+            <img src="@blob('/egspec_model.webp')" class="img-fluid" alt="EGSPEC Adminssion {{ date('Y') }} - {{ date('Y') + 1 }}">
           </div>
           <!-- Input Form (Left Side) -->
           <div class="col-lg-6 mbo-temp">
             <form action="{{ route('adsubmitForm') }}" method="POST">
-
-                @csrf
-                <div class="mb-3">
-                  <label for="inputName" class="form-label">Name</label>
-                  <input type="text" class="form-control" id="inputName"
-       autocomplete="off" name="m_name" placeholder="Enter your name"
-       oninput="this.value = this.value.toUpperCase().replace(/[^A-Z\s]/g, '')">
-       @error('name')
-       <div class="text-danger">{{ $message }}</div>
-   @enderror
-
+              @csrf
+              <div class="mb-3">
+                <label for="inputName" class="form-label">Name</label>
+                <input type="text" class="form-control" id="inputName" autocomplete="off" name="m_name" placeholder="Enter your name" oninput="this.value = this.value.toUpperCase().replace(/[^A-Z\s]/g, '')">
+                @error('name')
+                <div class="text-danger">{{ $message }}</div>
+                @enderror
+              </div>
+              <div class="mb-3">
+                  <label for="inputWhatsapp" class="form-label">WhatsApp Number <i class="fa-brands fa-whatsapp"></i></label>
+                  <input type="tel" name="whatsapp_number" class="form-control" id="inputWhatsapp" placeholder="Enter WhatsApp Number" maxlength="12" oninput="formatWhatsAppNumber(this)" onclick="if(this.value.length === 0) this.value = '91'">
+                  @error('whatsapp_number')
+                  <div class="text-danger">{{ $message }}</div>
+                  @enderror
                 </div>
-                <div class="mb-3">
-                    <label for="inputWhatsapp" class="form-label">WhatsApp Number <i class="fa-brands fa-whatsapp"></i></label>
-                    <input type="tel" name="whatsapp_number" class="form-control" id="inputWhatsapp" placeholder="Enter WhatsApp Number" maxlength="12" oninput="formatWhatsAppNumber(this)" onclick="if(this.value.length === 0) this.value = '91'">
-                    @error('whatsapp_number')
-                    <div class="text-danger">{{ $message }}</div>
-                    @enderror
-                </div>
-
-
                 <button type="submit" class="btn btn-primary mb-3">Submit</button>
                 <div class="mb-3 form-check">
                   <label class="form-check-label" for="termsCheck">
                     By clicking Submit, I state that I have read and understood the <a href="#">Terms & Conditions</a>
                   </label>
                 </div>
-              </form>
+            </form>
           </div>
         </div>
       </div>
@@ -53,65 +47,90 @@
   </div>
 </div>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
+      myModal.show();
 
+      var modalElement = document.getElementById('exampleModal');
+      modalElement.addEventListener('hidden.bs.modal', function() {
+        myModal.dispose();
+        modalElement.parentNode.removeChild(modalElement);
+      });
 
+      @if(session('success') || session('error'))
+      setTimeout(function() {
+        myModal.hide();
+      }, 2000);
+
+      @endif
+
+      var form = document.querySelector('form');
+      var nameInput = document.getElementById('inputName');
+      var whatsappInput = document.getElementById('inputWhatsapp');
+
+      form.addEventListener('submit', function(event) {
+        nameInput.setCustomValidity('');
+        whatsappInput.setCustomValidity('');
+
+        if (!/^[a-zA-Z\s]+$/.test(nameInput.value.trim())) {
+          nameInput.setCustomValidity('');
+        }
+
+        var whatsappValue = whatsappInput.value.trim();
+        if (whatsappValue.length !== 10 || !/^\d+$/.test(whatsappValue)) {
+          whatsappInput.setCustomValidity('');
+        }
+
+        if (!form.checkValidity()) {
+          event.preventDefault();
+          alert('Please fix the errors in the form.');
+        }
+      });
+    });
+  </script>
 
 <script>
-
   document.addEventListener('DOMContentLoaded', function() {
     var myModal = new bootstrap.Modal(document.getElementById('exampleModal'));
     myModal.show();
 
     var modalElement = document.getElementById('exampleModal');
     modalElement.addEventListener('hidden.bs.modal', function() {
-      myModal.dispose(); // Dispose the modal after it's hidden
-      modalElement.parentNode.removeChild(modalElement); // Remove the modal from the DOM
+      myModal.dispose();
+      modalElement.parentNode.removeChild(modalElement);
     });
 
-
     @if(session('success') || session('error'))
-            setTimeout(function() {
-                myModal.hide(); // Close the modal after 4 seconds
-            },2000);
-        @endif
+    setTimeout(function() {
+      myModal.hide();
+    }, 2000);
+    @endif
 
-  });
-
-  document.addEventListener("DOMContentLoaded", function() {
     var form = document.querySelector('form');
     var nameInput = document.getElementById('inputName');
     var whatsappInput = document.getElementById('inputWhatsapp');
 
     form.addEventListener('submit', function(event) {
-        // Reset custom validation messages
-        nameInput.setCustomValidity('');
-        whatsappInput.setCustomValidity('');
+      nameInput.setCustomValidity('');
+      whatsappInput.setCustomValidity('');
 
-        // Validation for name input
-        if (!/^[a-zA-Z\s]+$/.test(nameInput.value.trim())) {
-            nameInput.setCustomValidity('Please enter a valid name');
-        }
+      if (!/^[a-zA-Z\s]+$/.test(nameInput.value.trim())) {
+        nameInput.setCustomValidity('Please enter a valid name');
+      }
 
-        // Validation for WhatsApp input
-        var whatsappValue = whatsappInput.value.trim();
-        if (whatsappValue.length !== 10 || !/^\d+$/.test(whatsappValue)) {
-            whatsappInput.setCustomValidity('Please enter a valid 10-digit phone number');
-        }
+      var whatsappValue = whatsappInput.value.trim();
+      if (whatsappValue.length !== 10 || !/^\d+$/.test(whatsappValue)) {
+        whatsappInput.setCustomValidity('Please enter a valid 10-digit phone number');
+      }
 
-        // Check if form is valid
-        if (!form.checkValidity()) {
-            // Prevent form submission
-            event.preventDefault();
-            // Show alert message for validation errors
-            alert('Please fix the errors in the form.');
-        }
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        alert('Please fix the errors in the form.');
+      }
     });
-});
-
+  });
 </script>
-
-
-
 
 
 
