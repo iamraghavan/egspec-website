@@ -137,7 +137,7 @@
     <script src="{{ asset("/assets/js/vendor/chroma.min.js") }}"></script>
     <script src="{{ asset("/assets/js/plugins/twinmax.js") }}"></script>
     <!-- dymanic Contact Form -->
-    <script src="{{ asset("/assets/js/plugins/contact.form.js") }}"></script>
+    {{-- <script src="{{ asset("/assets/js/plugins/contact.form.js") }}"></script> --}}
     <script src="{{ asset("/assets/js/plugins/nice-select.min.js") }}"></script>
     <!-- main Js -->
     <script src="{{ asset("/assets/js/main.js") }}"></script>

@@ -83,6 +83,9 @@ Route::get('/activities/iso/iso-certificates', [PagesController::class, 'iso_cer
 Route::get('/activities/iso/iso-manual', [PagesController::class, 'iso_manual']);
 
 Route::get('/activities/discipline-committee', [PagesController::class, 'discipline_committee']);
+Route::get('/activities/professional-bodies/ieee', [PagesController::class, 'ieee']);
+
+
 
 
 // Route for Research
@@ -117,3 +120,6 @@ Route::get('/about/strategic-plan-meeting-minutes', [PagesController::class, 'st
 
 Route::get('/placements/memorandum-of-understanding', [PagesController::class, 'memorandum_of_understanding']);
 Route::get('/placements/placement-team', [PagesController::class, 'placement_team']);
+Route::get('/placements/statistics', [PagesController::class, 'placement_statistics']);
+Route::get('/placement/our-top-recruiters', [PagesController::class, 'our_top_recruiters']);
+Route::get('/placement/placement-gallery', [PagesController::class, 'placement_gallery']);

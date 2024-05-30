@@ -5,7 +5,7 @@ $testimonials = [
 technical Education to the socio-economic background in Tamil Nadu. My appreciation
 to the Parents and Teachers for producing 31 Gold Medalists, 100% placement. Wish
 you all the Success.",
-'profile_img' => "assets/images/web/profile-1.png",
+'profile_img' => "assets/images/web/profile-1.webp",
 'author' => "Dr.Ganesan",
 'position' => "Registrar, Anna University"
 ],
@@ -13,7 +13,7 @@ you all the Success.",
 'quote' => "EGS Pillay Engineering College – Rural background college and produced
 students as highly talented and qualified in the social market. It is a talent pool
 for students and teachers to acquire knowledge and a platform for success.",
-'profile_img' => "assets/images/web/profile-2.png",
+'profile_img' => "assets/images/web/profile-2.webp",
 'author' => "Mr.M.Sivakumar",
 'position' => "CEO, ICTACT"
 ]
@@ -35,7 +35,7 @@ for students and teachers to acquire knowledge and a platform for success.",
                 <div class="rts-testimonial-box">
                     <div class="testimonial-item rt-flex">
                         <div class="testimonial-item-image">
-                            <img src="assets/images/web/1.jpg" alt="testimonial thumbnail">
+                            <img src="assets/images/web/1.webp" alt="testimonial thumbnail">
                             <a href="https://www.youtube.com/watch?v=FMcbgQWf52U" class="video-play popup-video">
                                 <img src="assets/images/icon/video-btn.svg" alt="video">
                             </a>

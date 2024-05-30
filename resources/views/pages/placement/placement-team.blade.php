@@ -175,7 +175,69 @@
 </section>
 
 
+<section class="rts-about-university pt--100 pb--80">
+    <div class="container">
+        <div class="row">
 
+
+
+            <div class="admission-content-top">
+
+                <div class="application-deadline mt-5">
+
+                        <h3 class="rts-section-title animated fadeIn">Placement Stastics Table</h3>
+
+                    <div class="application-deadline__content">
+                        <div class="application-deadline__content--table">
+                            <table class="table table-striped table-hover table-bordered">
+                                <thead class="table-theme">
+                                    <tr>
+                                        <th>Department</th>
+                                        <th>2019-20</th>
+                                        <th>2020-21</th>
+                                        <th>2021-22</th>
+                                        <th>2022-23</th>
+                                        <th>2023-24</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach($placementStatistics as $stat)
+                                    <tr>
+                                        <td>{{ $stat->department }}</td>
+                                        <td>{{ $stat->year_2019_20 ?? '-' }}</td>
+                                        <td>{{ $stat->year_2020_21 ?? '-' }}</td>
+                                        <td>{{ $stat->year_2021_22 ?? '-' }}</td>
+                                        <td>{{ $stat->year_2022_23 ?? '-' }}</td>
+                                        <td>{{ $stat->year_2023_24 ?? '-' }}</td>
+                                    </tr>
+                                    @endforeach
+                                </tbody>
+                            </table>
+
+
+
+
+                            </div>
+
+
+
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+</section>
 
 @include('components.cta')
 

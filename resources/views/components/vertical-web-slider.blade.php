@@ -47,29 +47,3 @@ $filteredAdsSliders = $filteredAdsSliders->get();
 
 
 
-
-
-<style>
-    .ad-container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-    }
-
-    .ad-content {
-        max-width: 300px; /* Adjust the maximum width of the ad container */
-        padding: 20px;
-        background-color: #f5f5f5; /* Background color of the ad container */
-        border: 1px solid #ddd; /* Border around the ad container */
-        border-radius: 8px; /* Border radius to round the corners of the ad container */
-    }
-
-    .ad-image {
-        max-width: 100%;
-        height: auto;
-        display: block;
-        margin: 0 auto; /* Center the image horizontally */
-    }
-
-    </style>

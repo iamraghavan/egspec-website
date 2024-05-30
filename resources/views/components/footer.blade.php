@@ -89,57 +89,6 @@ try {
 
 
 
-<style>
-    .social-copyright ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    .social-copyright ul li {
-        display: inline-block;
-        margin-right: 10px;
-        /* Adjust spacing between icons */
-    }
-
-    .social-copyright ul li:last-child {
-        margin-right: 0;
-        /* Remove margin from the last icon */
-    }
-
-    .social-copyright ul li a {
-        color: #fff;
-        /* Set icon color */
-        font-size: 20px;
-        /* Adjust icon size */
-    }
-
-    /* Adjust individual icon styles as needed */
-    .social-copyright ul li a:hover {
-        color: #FF0000;
-        /* Change icon color on hover */
-    }
-
-    .country-copyright {
-        margin-top: 3rem !important;
-    }
-
-    .country-copyright>.x {
-        font-size: 17px !important;
-        text-transform: uppercase !important;
-    }
-
-
-    .flag {
-        width: auto;
-        height: 1.5rem;
-        margin-left: 0px;
-    }
-
-    .flex-align-center {
-        align-items: center;
-    }
-</style>
 
 <footer class="rts-footer v_1 pt--100 pb--80">
     <div class="container">

@@ -16,6 +16,7 @@ use App\Models\Route;
 use App\Models\SportAthletesAndAchievements;
 use App\Models\SportData;
 use App\Models\Event;
+use App\Models\PlacementStatistic;
 use App\Models\WomenEmpowermentCellMember;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
@@ -332,6 +333,11 @@ class PagesController extends Controller
         return view('pages.activities.discipline-committee');
     }
 
+    public function ieee()
+    {
+        return view('pages.activities.professional-bodies.ieee');
+    }
+
 
     /* Research */
 
@@ -461,5 +467,27 @@ class PagesController extends Controller
     {
 
         return view('pages.placement.placement-team');
+    }
+
+    public function placement_statistics()
+    {
+        $placementStatistics = PlacementStatistic::all();
+
+        $posterSlider = Cache::remember('general_poster_slider', 120, function () {
+            return PostSlider::where('page_name', 'pls')->get();
+        });
+        return view('pages.placement.placement-statistics', compact('placementStatistics', 'posterSlider'));
+    }
+
+    public function our_top_recruiters()
+    {
+
+        return view('pages.placement.our-top-recruiters');
+    }
+
+    public function placement_gallery()
+    {
+
+        return view('pages.placement.placement-gallery');
     }
 }

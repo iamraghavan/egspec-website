@@ -12,7 +12,7 @@
         <div class="row justify-content-md-center">
             <div class="col-lg-5 col-xl-5 col-md-10">
                 <div class="rts-about-image">
-                    <img src="{{asset('/assets/images/engineering_college.jpg')}}" alt="EGS Pillay Engineering College">
+                    <img src="{{asset('/assets/images/engineering_college.webp')}}" alt="EGS Pillay Engineering College">
                 </div>
             </div>
             <div class="col-lg-7 col-xl-7 col-md-10">
@@ -420,7 +420,7 @@
 @include('components.cta')
 
 
-@include('components.admision-model')
+{{-- @include('components.admision-model') --}}
 
 
 

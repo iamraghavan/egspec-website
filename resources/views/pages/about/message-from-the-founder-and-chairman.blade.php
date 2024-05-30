@@ -36,7 +36,7 @@
         <div class="row g-5 justify-content-md-center justify-content-start">
             <div class="col-lg-12 col-xl-12 col-md-12">
                 <div class="rts-about-section">
-                    {{-- <img src="{{asset('/assets/images/engineering_college.jpg')}}" alt="About us - EGSPEC"> --}}
+                    {{-- <img src="{{asset('/assets/images/engineering_college.webp')}}" alt="About us - EGSPEC"> --}}
                 </div>
             </div>
 

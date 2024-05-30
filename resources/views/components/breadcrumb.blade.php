@@ -1,7 +1,7 @@
 <!-- breadcrumb.blade.php -->
 
 <section class="rts-breadcrumb breadcrumb-height breadcumb-bg"
-    style="background-image: url(/assets/images/web/rts-breadcrumb.jpg);">
+    style="background-image: url(/assets/images/web/rts-breadcrumb.webp);">
     <div class="container">
         <div class="row">
             <div class="col-12">

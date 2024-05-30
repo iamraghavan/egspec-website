@@ -193,7 +193,7 @@
                                         <li class="sub-dropdown">
                                             <a href="{{ url("#") }}">Professional Bodies</a>
                                             <ul class="submenu third-lvl base">
-                                                <li><a href="{{ url("#") }}">IEEE</a></li>
+                                                <li><a href="{{ url("/activities/professional-bodies/ieee") }}">IEEE</a></li>
                                                 <li><a href="{{ url("#") }}">ISTE</a></li>
                                                 <li><a href="{{ url("#") }}">ICTACT</a></li>
                                                 <li><a href="{{ url("#") }}">CSI</a></li>
@@ -218,11 +218,12 @@
                                     <ul class="submenu">
                                         <li><a href="{{ url("#") }}">Industry Partnership & Corporate Affairs (Placement & Training)</a></li>
                                         <li><a href="{{ url("/placements/memorandum-of-understanding") }}">MoU</a></li>
-                                        <li><a href="{{ url("#") }}">Recruiters</a></li>
-                                        <li><a href="{{ url("#") }}">Training Cell</a></li>
+                                        {{-- <li><a href="{{ url("#") }}">Recruiters</a></li>
+                                        <li><a href="{{ url("#") }}">Training Cell</a></li> --}}
                                         <li><a href="{{ url("/placements/placement-team") }}">Placement Team</a></li>
-                                        <li><a href="{{ url("#") }}">Placement Statistics</a></li>
-                                        <li><a href="{{ url("#") }}">Our Few Of Recruiters</a></li>
+                                        <li><a href="{{ url("/placements/statistics") }}">Placement Statistics</a></li>
+                                        <li><a href="{{ url("/placement/our-top-recruiters") }}">Our Few Of Recruiters</a></li>
+                                        <li><a href="{{ url("/placement/placement-gallery") }}">Placement Gallery</a></li>
                                     </ul>
                                 </li>
                                 <li class="has-dropdown">
@@ -287,43 +288,3 @@
     </div>
     </header>
 
-<style>
-
-    @media screen and (min-width: 992px) {
-    .header-right-area-one {
-    display: none;
-    }
-    }
-
-   @media only screen and (max-width: 991px) {
-.hide-on-mobile {
-display: none !important;
-}
-}
-
-
-/* Default logo styles for wide screens */
-.logo {
-width: 380px; /* Example width for wide screens */
-height: auto; /* Adjust height automatically */
-/* Add any other styles for wide screens */
-}
-
-/* Media query for mobile screens */
-@media only screen and (max-width: 767px) {
-.logo {
-width: 220px; /* Example width for mobile screens */
-height: auto; /* Adjust height automatically */
-/* Add any other styles for mobile screens */
-}
-}
-
-/* For tablets and above */
-@media screen and (min-width: 768px) {
-/* Apply padding-right: 4rem; */
-.big_screen {
-padding-right: 4rem;
-}
-}
-
-</style>
