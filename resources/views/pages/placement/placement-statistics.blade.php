@@ -10,7 +10,7 @@
 
 
 
-                @include('components.home-slider', ['posterSlider' => $posterSlider])
+                {{-- @include('components.home-slider', ['posterSlider' => $posterSlider]) --}}
 
 </div>
 
@@ -23,10 +23,10 @@
         <div class="rts-program-single-header">
             <div class="row g-3">
                 <div class="col-lg-6">
-                    <div class="chart" id="pie-chart"></div>
+                   <img src="https://skcet.ac.in/wp-content/uploads/2024/03/COMPANY-VISITED.jpg" alt="" srcset="">
                 </div>
                 <div class="col-lg-6">
-                    <div class="chart" id="bar-chart"></div>
+                    <img src="https://skcet.ac.in/wp-content/uploads/2024/03/MAX-SALARYLPA.jpg" alt="" srcset="">
                 </div>
             </div>
         </div>
@@ -81,126 +81,6 @@
 </section>
 
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        // Prepare data
-        const data = @json($placementStatistics);
-
-        // Aggregate data for pie chart (sum of all years for each department)
-        const aggregatedData = data.map(d => ({
-            department: d.department,
-            value: ['year_2019_20', 'year_2020_21', 'year_2021_22', 'year_2022_23', 'year_2023_24']
-                .map(year => d[year] || 0) // ensure null values are treated as 0
-                .reduce((acc, val) => acc + val, 0)
-        }));
-
-        // Data for bar chart (2023-24 placements)
-        const barData = data.map(d => ({
-            department: d.department,
-            value: d.year_2023_24 || 0 // ensure null values are treated as 0
-        }));
-
-        // Set up dimensions for pie chart
-        const pieWidth = 500;
-        const pieHeight = 500;
-        const pieMargin = 40;
-        const pieRadius = Math.min(pieWidth, pieHeight) / 2 - pieMargin;
-
-        // Append the svg object for pie chart
-        const pieSvg = d3.select("#pie-chart")
-            .append("svg")
-            .attr("width", pieWidth)
-            .attr("height", pieHeight)
-            .append("g")
-            .attr("transform", `translate(${pieWidth / 2},${pieHeight / 2})`);
-
-        // Generate the pie
-
-const years = ['year_2019_20', 'year_2020_21', 'year_2021_22', 'year_2022_23', 'year_2023_24'];
-
-const pieData = years.map(year => ({
-    year: year,
-    value: data.reduce((total, dept) => total + dept[year], 0)
-}));
-
-// Generate the pie
-const pie = d3.pie()
-    .value(d => d.value);
-
-
-        const pieDataReady = pie(aggregatedData);
-
-        // Shape helper to build arcs
-        const arcGenerator = d3.arc()
-            .innerRadius(0)
-            .outerRadius(pieRadius);
-
-        // Build the pie chart
-        pieSvg
-            .selectAll('path')
-            .data(pieDataReady)
-            .enter()
-            .append('path')
-            .attr('d', arcGenerator)
-            .attr('fill', (d, i) => d3.schemeCategory10[i])
-            .attr("stroke", "white")
-            .style("stroke-width", "2px")
-            .style("opacity", 0.7);
-
-        // Add labels
-        pieSvg
-            .selectAll('text')
-            .data(pieDataReady)
-            .enter()
-            .append('text')
-            .text(d => `${d.data.value}`)
-            .attr("transform", d => `translate(${arcGenerator.centroid(d)})`)
-            .style("text-anchor", "middle")
-            .style("font-size", 14)
-            .style("font-weight", "bold");
-
-        // Set up dimensions for bar chart
-        const barWidth = 500;
-        const barHeight = 500;
-        const barMargin = { top: 20, right: 30, bottom: 40, left: 50 };
-
-        const x = d3.scaleBand()
-            .range([barMargin.left, barWidth - barMargin.right])
-            .padding(0.1);
-
-        const y = d3.scaleLinear()
-            .range([barHeight - barMargin.bottom, barMargin.top]);
-
-        const barSvg = d3.select("#bar-chart")
-            .append("svg")
-            .attr("width", barWidth)
-            .attr("height", barHeight);
-
-        x.domain(barData.map(d => d.department));
-        y.domain([0, d3.max(barData, d => d.value)]).nice();
-
-        barSvg.append("g")
-            .attr("fill", "steelblue")
-            .selectAll("rect")
-            .data(barData)
-            .enter().append("rect")
-            .attr("x", d => x(d.department))
-            .attr("y", d => y(d.value))
-            .attr("height", d => y(0) - y(d.value))
-            .attr("width", x.bandwidth());
-
-        barSvg.append("g")
-            .attr("transform", `translate(0,${barHeight - barMargin.bottom})`)
-            .call(d3.axisBottom(x))
-            .selectAll("text")
-            .attr("transform", "rotate(-40)")
-            .style("text-anchor", "end");
-
-        barSvg.append("g")
-            .attr("transform", `translate(${barMargin.left},0)`)
-            .call(d3.axisLeft(y));
-    });
-</script>
 
 
 

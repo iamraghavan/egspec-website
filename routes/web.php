@@ -84,7 +84,10 @@ Route::get('/activities/iso/iso-manual', [PagesController::class, 'iso_manual'])
 
 Route::get('/activities/discipline-committee', [PagesController::class, 'discipline_committee']);
 Route::get('/activities/professional-bodies/ieee', [PagesController::class, 'ieee']);
-
+Route::get('/activities/professional-bodies/iste', [PagesController::class, 'iste']);
+Route::get('/activities/professional-bodies/ictact', [PagesController::class, 'ictact']);
+Route::get('/activities/professional-bodies/csi', [PagesController::class, 'csi']);
+Route::get('/activities/professional-bodies/iete', [PagesController::class, 'iete']);
 
 
 

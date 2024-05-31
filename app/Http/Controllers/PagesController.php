@@ -339,6 +339,26 @@ class PagesController extends Controller
     }
 
 
+    public function iste()
+    {
+
+        return view('pages.activities.professional-bodies.iste');
+    }
+
+    public function ictact()
+    {
+
+        return view('pages.activities.professional-bodies.ictact');
+    }
+
+
+    public function csi()
+    {
+
+        return view('pages.activities.professional-bodies.csi');
+    }
+
+
     /* Research */
 
     public function research_and_development()

@@ -194,10 +194,10 @@
                                             <a href="{{ url("#") }}">Professional Bodies</a>
                                             <ul class="submenu third-lvl base">
                                                 <li><a href="{{ url("/activities/professional-bodies/ieee") }}">IEEE</a></li>
-                                                <li><a href="{{ url("#") }}">ISTE</a></li>
-                                                <li><a href="{{ url("#") }}">ICTACT</a></li>
-                                                <li><a href="{{ url("#") }}">CSI</a></li>
-                                                <li><a href="{{ url("#") }}">IETE</a></li>
+                                                <li><a href="{{ url("/activities/professional-bodies/iste") }}">ISTE</a></li>
+                                                <li><a href="{{ url("/activities/professional-bodies/ictact") }}">ICTACT</a></li>
+                                                <li><a href="{{ url("/activities/professional-bodies/csi") }}">CSI</a></li>
+                                                <li><a href="{{ url("/activities/professional-bodies/iete") }}">IETE</a></li>
                                                 <li><a href="{{ url("#") }}">IEI</a></li>
                                             </ul>
                                         </li>
