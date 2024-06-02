@@ -38,6 +38,18 @@ class PagesController extends Controller
     }
 
 
+    public function rti()
+    {
+        return view('pages.right-to-information');
+    }
+
+
+    public function md()
+    {
+        return view('pages.mandatory-disclosure');
+    }
+
+
 
     /* Academics */
 
@@ -359,6 +371,20 @@ class PagesController extends Controller
     }
 
 
+    public function iete()
+    {
+
+        return view('pages.activities.professional-bodies.iete');
+    }
+
+
+    public function iei()
+    {
+        return view('pages.activities.professional-bodies.iei');
+    }
+
+
+
     /* Research */
 
     public function research_and_development()
@@ -392,6 +418,42 @@ class PagesController extends Controller
         return view('pages.research.r-and-d-policy');
     }
 
+    public function prj_mechanical_engineering()
+    {
+
+        return view('pages.research.projects.mechanical-engineering');
+    }
+
+    public function prj_civil_engineering()
+    {
+
+        return view('pages.research.projects.civil-engineering');
+    }
+
+    public function prj_electronics_and_communication_engineering()
+    {
+
+        return view('pages.research.projects.electronics-and-communication-engineering');
+    }
+
+    public function prj_computer_science_and_engineering()
+    {
+
+        return view('pages.research.projects.computer-science-and-engineering');
+    }
+
+    public function prj_information_technology()
+    {
+
+        return view('pages.research.projects.information-technology');
+    }
+
+
+    public function prj_electrical_and_electronics_engineering()
+    {
+
+        return view('pages.research.projects.electrical-and-electronics-engineering');
+    }
 
     /* About us */
 

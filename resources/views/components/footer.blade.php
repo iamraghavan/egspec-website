@@ -14,12 +14,11 @@ $footerLinks = [
 ],
 'Placement' => [
 'Industry Partnership' => 'http://example.com/industry-partnership',
-'MoU' => 'http://example.com/mou',
+'MoU' => url('/placements/memorandum-of-understanding'),
 'Recruiters' => 'http://example.com/recruiters',
 'Training Cell' => 'http://example.com/training-cell',
 'Placement Team' => 'http://example.com/placement-team',
 'Placement Statistics' => 'http://example.com/placement-statistics',
-'Our Few of Recruiters' => 'http://example.com/our-recruiters',
 ],
 'Important Links' => [
 'AntiRagging' => 'http://example.com/antiragging',
@@ -42,50 +41,6 @@ $footerLinks = [
 ],
 ];
 @endphp
-
-@php
-use Illuminate\Support\Facades\Http;
-
-$country = 'Unknown';
-$countryCode = '';
-
-try {
-    // Get the user's IP address
-    $ipResponse = Http::timeout(10)->withoutVerifying()->get('https://api64.ipify.org/?format=json');
-    $ipData = $ipResponse->json();
-    $ipAddress = $ipData['ip'] ?? null;
-
-    // Retrieve geolocation data based on the IP address
-    if ($ipAddress) {
-        $locationResponse = Http::timeout(10)->withoutVerifying()->get("http://www.geoplugin.net/json.gp?ip={$ipAddress}");
-        $locationData = $locationResponse->json();
-        $country = $locationData['geoplugin_countryName'] ?? 'Unknown';
-    }
-
-    // Retrieve country code from the geolocation data
-    if ($country !== 'Unknown') {
-        $countriesResponse = Http::withoutVerifying()->get('https://restcountries.com/v3.1/all');
-        $countriesData = $countriesResponse->json();
-
-        foreach ($countriesData as $data) {
-            if (isset($data['name']['common']) && $data['name']['common'] === $country) {
-                $countryCode = strtolower($data['cca2'] ?? '');
-                break;
-            }
-        }
-    } else {
-        throw new Exception('Unable to retrieve country information');
-    }
-} catch (\Throwable $e) {
-    // Log or handle the error as needed
-    // You can leave it empty if you don't want to display errors to users
-    $countryCode = null;
-}
-
-
-
-@endphp
-
 
 
 
@@ -117,20 +72,7 @@ try {
                                     </ul>
                                 </div>
 
-                                <div class="country-copyright">
 
-                                    @if($countryCode)
-<div class="d-flex align-items-center x">
-    <img class="flag" src="https://flagcdn.com/{{ $countryCode }}.svg" alt="{{ $country }} Flag">
-    <span class="" style="margin-left: 0.5rem">{{ $country }}</span>
-</div>
-@else
-<div class="d-flex align-items-center x">
-    <span style="margin-left: 0.5rem">Sorry, unable to retrieve country information</span>
-</div>
-@endif
-
-                                </div>
 
                             </div>
                         </div>
@@ -156,12 +98,12 @@ try {
                         <div class="custom-footer-widget">
                             <div class="custom-footer-menu">
                                 <ul class="custom-footer-list">
-                                    <li><a href="">RTI</a></li>
+                                    <li><a href="{{url('/right-to-information')}}">RTI</a></li>
                                     <li><a href="">IQAC</a></li>
                                     <li><a href="">PMKK</a></li>
                                     <li><a href="">PMKVY</a></li>
                                     <li><a href="">AICTE</a></li>
-                                    <li><a href="">Mandatory Disclosure</a></li>
+                                    <li><a href="{{url('/mandatory-disclosure')}}">Mandatory Disclosure</a></li>
                                     <li><a href="">NIRF Engineering Ranking</a></li>
                                     <li><a href="">Accreditation Status</a></li>
                                 </ul>

@@ -11,6 +11,9 @@ Route::post('/admission-submit-form', [AdFormController::class, 'adsubmitForm'])
 
 
 Route::get('/', [PagesController::class, 'index']);
+Route::get('/right-to-information', [PagesController::class, 'rti']);
+Route::get('/mandatory-disclosure', [PagesController::class, 'md']);
+
 
 
 // Route for Academics
@@ -88,6 +91,7 @@ Route::get('/activities/professional-bodies/iste', [PagesController::class, 'ist
 Route::get('/activities/professional-bodies/ictact', [PagesController::class, 'ictact']);
 Route::get('/activities/professional-bodies/csi', [PagesController::class, 'csi']);
 Route::get('/activities/professional-bodies/iete', [PagesController::class, 'iete']);
+Route::get('/activities/professional-bodies/iei', [PagesController::class, 'iei']);
 
 
 
@@ -100,6 +104,13 @@ Route::get('/research/patent-details', [PagesController::class, 'patent_details'
 Route::get('/research/copyrights', [PagesController::class, 'copyrights']);
 Route::get('/research/r-and-d-policy', [PagesController::class, 'r_and_d_policy']);
 
+
+Route::get('/research/projects/mechanical-engineering', [PagesController::class, 'prj_mechanical_engineering']);
+Route::get('/research/projects/civil-engineering', [PagesController::class, 'prj_civil_engineering']);
+Route::get('/research/projects/electronics-and-communication-engineering', [PagesController::class, 'prj_electronics_and_communication_engineering']);
+Route::get('/resources/projects/computer-science-and-engineering', [PagesController::class, 'prj_computer_science_and_engineering']);
+Route::get('/resources/projects/information-technology', [PagesController::class, 'prj_information_technology']);
+Route::get('/resources/projects/electrical-and-electronics-engineering', [PagesController::class, 'prj_electrical_and_electronics_engineering']);
 
 // Route for About us
 

@@ -198,7 +198,7 @@
                                                 <li><a href="{{ url("/activities/professional-bodies/ictact") }}">ICTACT</a></li>
                                                 <li><a href="{{ url("/activities/professional-bodies/csi") }}">CSI</a></li>
                                                 <li><a href="{{ url("/activities/professional-bodies/iete") }}">IETE</a></li>
-                                                <li><a href="{{ url("#") }}">IEI</a></li>
+                                                <li><a href="{{ url("/activities/professional-bodies/iei") }}">IEI</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="{{ url("/activities/anti-ragging-committee") }}">Anti Ragging Committee</a></li>
@@ -235,12 +235,12 @@
                                         <li class="sub-dropdown">
                                             <a href="{{ url("#") }}">Projects</a>
                                             <ul class="submenu third-lvl base">
-                                                <li><a href="{{ url("#") }}">MECH</a></li>
-                                                <li><a href="{{ url("#") }}">CIVIL</a></li>
-                                                <li><a href="{{ url("#") }}">EEE</a></li>
-                                                <li><a href="{{ url("#") }}">ECE</a></li>
-                                                <li><a href="{{ url("#") }}">CSE</a></li>
-                                                <li><a href="{{ url("#") }}">IT</a></li>
+                                                <li><a href="{{ url("/research/projects/mechanical-engineering") }}">MECH</a></li>
+                                                <li><a href="{{ url("/research/projects/civil-engineering") }}">CIVIL</a></li>
+                                                <li><a href="{{ url("/resources/projects/electrical-and-electronics-engineering") }}">EEE</a></li>
+                                                <li><a href="{{ url("/research/projects/electronics-and-communication-engineering") }}">ECE</a></li>
+                                                <li><a href="{{ url("/resources/projects/computer-science-and-engineering") }}">CSE</a></li>
+                                                <li><a href="{{ url("/resources/projects/information-technology") }}">IT</a></li>
                                             </ul>
                                         </li>
                                         <li><a href="{{ url("/research/patent-details") }}">Patents</a></li>
