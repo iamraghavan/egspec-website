@@ -56,7 +56,7 @@ for students and teachers to acquire knowledge and a platform for success.",
                 <div class="single-testimonial">
                     <div class="rt-between mb--50">
                         <div class="rt-icon">
-                            <img src="@s3url('quote.svg')" alt="quote icon">
+                            <img src="@blob('quote.webp')" alt="quote icon">
                         </div>
                     </div>
                     <p class="testimonial-text">{{ $testimonial['quote'] }}</p>

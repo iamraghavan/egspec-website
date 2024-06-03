@@ -33,7 +33,7 @@
 
                                                     <tbody>
                                                         <tr>
-                                                            <td><i class="fa fa-download"> </i><a href="@s3url('publication-details/r-and-d-policy.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'> R &amp; D Policy</a></td>
+                                                            <td><i class="fa fa-download"> </i><a href="@blob('publication-details/r-and-d-policy.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'> R &amp; D Policy</a></td>
                                                             <td><i class="fa fa-file-pdf"></i> / PDF File</td>
                                                         </tr>
 
@@ -58,7 +58,7 @@
                     </div>
 
                     <div class="iframe-div">
-                        <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=@s3url('publication-details/r-and-d-policy.pdf')#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="
+                        <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=@blob('publication-details/r-and-d-policy.pdf')#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="
                     height: 100rem !important;
                 "></iframe>
                     </div>

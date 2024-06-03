@@ -50,6 +50,30 @@ class PagesController extends Controller
     }
 
 
+    public function iqac_committe_members()
+    {
+        return view('pages.iqac.committe-members');
+    }
+
+    public function iqac_meeting_minutes()
+    {
+        return view('pages.iqac.iqac-meeting-minutes');
+    }
+
+
+
+    /* Skill Development Center */
+
+    public function sdc_pmkk()
+    {
+        return view('pages.skill-development-center.pradhan-mantri-kaushal-kendra');
+    }
+
+    public function sdc_pmkvy()
+    {
+        return view('pages.skill-development-center.pradhan-mantri-kaushal-vikas-yojana');
+    }
+
 
     /* Academics */
 

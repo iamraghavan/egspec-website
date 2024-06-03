@@ -4,7 +4,9 @@ use App\Http\Controllers\ApiController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\AdFormController;
+use App\Http\Controllers\PushNotificationController;
 
+Route::get('/send-notification', [PushNotificationController::class, 'sendPushNotification']);
 
 // Other Backend Operation Routes
 Route::post('/admission-submit-form', [AdFormController::class, 'adsubmitForm'])->name('adsubmitForm');
@@ -13,6 +15,15 @@ Route::post('/admission-submit-form', [AdFormController::class, 'adsubmitForm'])
 Route::get('/', [PagesController::class, 'index']);
 Route::get('/right-to-information', [PagesController::class, 'rti']);
 Route::get('/mandatory-disclosure', [PagesController::class, 'md']);
+
+// Skill Development Center
+
+Route::get('/skill-development-center/pradhan-mantri-kaushal-kendra', [PagesController::class, 'sdc_pmkk']);
+Route::get('/skill-development-center/pradhan-mantri-kaushal-vikas-yojana', [PagesController::class, 'sdc_pmkvy']);
+
+// iqac
+Route::get('/iqac/committe-members', [PagesController::class, 'iqac_committe_members']);
+Route::get('/iqac/meeting-minutes', [PagesController::class, 'iqac_meeting_minutes']);
 
 
 

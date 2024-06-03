@@ -47,7 +47,7 @@
 
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td><a href="@s3url('publication-details/21-22.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'> Publication Details ( 2021 - 2022 ) </a></td>
+                                                                        <td><a href="@blob('publication-details/21-22.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'> Publication Details ( 2021 - 2022 ) </a></td>
                                                                         <td><i class="fa fa-file-pdf"></i> / PDF File</td>
                                                                     </tr>
 
@@ -70,7 +70,7 @@
                                 </div>
 
                                 <div class="iframe-div">
-                                    <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=@s3url('publication-details/21-22.pdf')#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="
+                                    <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=@blob('publication-details/21-22.pdf')#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="
                                 height: 100rem !important;
                             "></iframe>
                                 </div>
@@ -94,7 +94,7 @@
 
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td><a href="@s3url('publication-details/20-21.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'> Publication Details ( 2020 - 2021 ) </a></td>
+                                                                        <td><a href="@blob('publication-details/20-21.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'> Publication Details ( 2020 - 2021 ) </a></td>
                                                                         <td><i class="fa fa-file-pdf"></i> / PDF File</td>
                                                                     </tr>
 
@@ -117,7 +117,7 @@
                                 </div>
 
                                 <div class="iframe-div">
-                                    <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=@s3url('publication-details/20-21.pdf')#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="
+                                    <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=@blob('publication-details/20-21.pdf')#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="
                                 height: 100rem !important;
                             "></iframe>
                                 </div>
@@ -140,7 +140,7 @@
 
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td><a href="@s3url('publication-details/19-20.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'> Publication Details ( 2019 - 2020 ) </a></td>
+                                                                        <td><a href="@blob('publication-details/19-20.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'> Publication Details ( 2019 - 2020 ) </a></td>
                                                                         <td><i class="fa fa-file-pdf"></i> / PDF File</td>
                                                                     </tr>
 
@@ -163,7 +163,7 @@
                                 </div>
 
                                 <div class="iframe-div">
-                                    <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=@s3url('publication-details/19-20.pdf')#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="
+                                    <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=@blob('publication-details/19-20.pdf')#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="
                                 height: 100rem !important;
                             "></iframe>
                                 </div>
@@ -186,7 +186,7 @@
 
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td><a href="@s3url('publication-details/18-19.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'> Publication Details ( 2018 - 2019 ) </a></td>
+                                                                        <td><a href="@blob('publication-details/18-19.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'> Publication Details ( 2018 - 2019 ) </a></td>
                                                                         <td><i class="fa fa-file-pdf"></i> / PDF File</td>
                                                                     </tr>
 
@@ -209,7 +209,7 @@
                                 </div>
 
                                 <div class="iframe-div">
-                                    <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=@s3url('publication-details/18-19.pdf')#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="
+                                    <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=@blob('publication-details/18-19.pdf')#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="
                                 height: 100rem !important;
                             "></iframe>
                                 </div>
@@ -232,7 +232,7 @@
 
                                                                 <tbody>
                                                                     <tr>
-                                                                        <td><a href="@s3url('publication-details/17-18.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'> Publication Details ( 2017 - 2018 ) </a></td>
+                                                                        <td><a href="@blob('publication-details/17-18.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'> Publication Details ( 2017 - 2018 ) </a></td>
                                                                         <td><i class="fa fa-file-pdf"></i> / PDF File</td>
                                                                     </tr>
 
@@ -255,7 +255,7 @@
                                 </div>
 
                                 <div class="iframe-div">
-                                    <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=@s3url('publication-details/17-18.pdf')#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="
+                                    <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=@blob('publication-details/17-18.pdf')#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="
                                 height: 100rem !important;
                             "></iframe>
                                 </div>

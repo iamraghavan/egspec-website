@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="rts-newsletter-box rt-relative"
-                    style="background-image: url(@s3url('cat_img.webp'));">
+                    style="background-image: url(@blob('cat_img.webp'));">
                     <div class="rts-newsletter-box-content">
                         <h4 class="newsletter-title rt-semi rt-white w-900 mb-0">Be part of our journey to empower aspiring engineers, scientists, and managers towards success!
                         </h4>
