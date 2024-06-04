@@ -4,9 +4,6 @@ use App\Http\Controllers\ApiController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\AdFormController;
-use App\Http\Controllers\PushNotificationController;
-
-Route::get('/send-notification', [PushNotificationController::class, 'sendPushNotification']);
 
 // Other Backend Operation Routes
 Route::post('/admission-submit-form', [AdFormController::class, 'adsubmitForm'])->name('adsubmitForm');
@@ -24,6 +21,18 @@ Route::get('/skill-development-center/pradhan-mantri-kaushal-vikas-yojana', [Pag
 // iqac
 Route::get('/iqac/committe-members', [PagesController::class, 'iqac_committe_members']);
 Route::get('/iqac/meeting-minutes', [PagesController::class, 'iqac_meeting_minutes']);
+
+// aicte
+Route::get('/affiliation/approved/aicte', [PagesController::class, 'aicte_approved']);
+
+// nirf
+Route::get('/national-institutional-ranking-framework', [PagesController::class, 'nirf']);
+
+// accreditation status
+Route::get('/affiliation/approved/accreditation-status', [PagesController::class, 'accreditation_status']);
+
+// AICTE EGSPEC Video
+Route::get('/affiliation/aicte-egspec-video', [PagesController::class, 'aicte_egspec_video']);
 
 
 

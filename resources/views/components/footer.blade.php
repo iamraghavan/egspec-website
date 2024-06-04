@@ -102,10 +102,10 @@ $footerLinks = [
                                     <li><a href="{{url('/iqac/committe-members')}}">IQAC</a></li>
                                     <li><a href="{{url('/skill-development-center/pradhan-mantri-kaushal-kendra')}}">PMKK</a></li>
                                     <li><a href="{{url('/skill-development-center/pradhan-mantri-kaushal-vikas-yojana')}}">PMKVY</a></li>
-                                    <li><a href="">AICTE</a></li>
+                                    <li><a href="{{url('/affiliation/approved/aicte')}}">AICTE</a></li>
                                     <li><a href="{{url('/mandatory-disclosure')}}">Mandatory Disclosure</a></li>
-                                    <li><a href="">NIRF Engineering Ranking</a></li>
-                                    <li><a href="">Accreditation Status</a></li>
+                                    <li><a href="{{url('/national-institutional-ranking-framework')}}">NIRF Engineering Ranking</a></li>
+                                    <li><a href="{{url('/affiliation/approved/accreditation-status')}}">Accreditation Status</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -115,9 +115,9 @@ $footerLinks = [
                         <div class="custom-footer-widget ser">
                             <div class="custom-footer-menu">
                                 <ul class="custom-footer-list">
-                                    <li><a href="">Internal Complaints Committee</a></li>
-                                    <li><a href="">All AICTE Approval Documents</a></li>
-                                    <li><a href="">AICTE EGSPEC Video</a></li>
+                                    <li><a href="{{url('/activities/cells/internal-complaints-committee')}}">Internal Complaints Committee</a></li>
+                                    <li><a href="https://firebasestorage.googleapis.com/v0/b/egspj-bumblebees.appspot.com/o/egspec-assets%2Fpdf%2FM_AiCTE_Approval.pdf?alt=media&token=20146981-a33f-4b95-bd49-3567ac5c207d" target="_blank" rel="noopener noreferrer">All AICTE Approval Documents</a></li>
+                                    <li><a href="{{url('/affiliation/aicte-egspec-video')}}">AICTE EGSPEC Video</a></li>
                                     <li><a href="">Governing Body Meeting</a></li>
                                     <li><a href="">Mandatory Disclosure</a></li>
                                     <li><a href="">NIRF Engineering Ranking</a></li>

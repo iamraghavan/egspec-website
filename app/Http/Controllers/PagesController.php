@@ -60,7 +60,15 @@ class PagesController extends Controller
         return view('pages.iqac.iqac-meeting-minutes');
     }
 
+    public function aicte_approved()
+    {
+        return view('pages.aicte');
+    }
 
+    public function nirf()
+    {
+        return view('pages.national-institutional-ranking-framework');
+    }
 
     /* Skill Development Center */
 
@@ -72,6 +80,16 @@ class PagesController extends Controller
     public function sdc_pmkvy()
     {
         return view('pages.skill-development-center.pradhan-mantri-kaushal-vikas-yojana');
+    }
+
+    public function accreditation_status()
+    {
+        return view('pages.accreditation-status');
+    }
+
+    public function aicte_egspec_video()
+    {
+        return view('pages.aicte-egspec-video');
     }
 
 
