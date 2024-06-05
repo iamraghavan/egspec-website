@@ -33,21 +33,7 @@
 
 
 <style>
-    .program-description-area {
-  position: relative;
-  width: 100%;
-  height: 0;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
-  overflow: hidden;
-}
-
-.program-description-area iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
+.program-description-area{position:relative;width:100%;height:0;padding-bottom:56.25%;overflow:hidden}.program-description-area iframe{position:absolute;top:0;left:0;width:100%;height:100%}
 </style>
 
 @include('components.cta')

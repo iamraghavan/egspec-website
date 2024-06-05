@@ -28,7 +28,9 @@
     <link rel="stylesheet" href="{{ asset("/assets/css/style.css") }}">
 
 
-
+<style>
+    .text-justify  { text-align: justify !important; }
+</style>
 
 </head>
 

@@ -34,18 +34,20 @@ Route::get('/affiliation/approved/accreditation-status', [PagesController::class
 // AICTE EGSPEC Video
 Route::get('/affiliation/aicte-egspec-video', [PagesController::class, 'aicte_egspec_video']);
 
+// Governing Body
+Route::get('/meeting-minutes/governing-body', [PagesController::class, 'governing_body']);
+
 
 
 // Route for Academics
 Route::get('/academics/departments/bachelors', [PagesController::class, 'department_bachelors']);
 Route::get('/academics/departments/masters', [PagesController::class, 'department_masters']);
-Route::get('/academics/departments/mca', [PagesController::class, 'department_mca']);
-Route::get('/academics/departments/mba', [PagesController::class, 'department_mba']);
-Route::get('/academics/departments/science-humanities', [PagesController::class, 'department_science_humanities']);
 Route::get('/academics/industry-academic-partnering', [PagesController::class, 'industry_academic_partnering']);
 Route::get('/academics/industry-certification-programs', [PagesController::class, 'industry_certification_programs']);
 Route::get('/academics/industry-training-programs', [PagesController::class, 'industry_training_programs']);
 Route::get('/academics/advisory-board', [PagesController::class, 'advisory_board']);
+
+
 
 
 
@@ -157,3 +159,20 @@ Route::get('/placements/placement-team', [PagesController::class, 'placement_tea
 Route::get('/placements/statistics', [PagesController::class, 'placement_statistics']);
 Route::get('/placement/our-top-recruiters', [PagesController::class, 'our_top_recruiters']);
 Route::get('/placement/placement-gallery', [PagesController::class, 'placement_gallery']);
+
+
+
+// Route for Academics -> Departments
+
+// Department -> Undergraduate -> Mechnical Engineering
+Route::get('/academics/departments/undergraduate/mechanical-engineering', [PagesController::class, 'ug_mechnical_engineering']);
+
+
+
+
+// Department -> Undergraduate -> Mechnical Engineering
+Route::get('/academics/departments/undergraduate/information-technology', [PagesController::class, 'ug_information_technology']);
+
+Route::get('/academics/departments/master-of-computer-applications', [PagesController::class, 'department_mca']);
+Route::get('/academics/departments/mba', [PagesController::class, 'department_mba']);
+Route::get('/academics/departments/science-humanities', [PagesController::class, 'department_science_humanities']);

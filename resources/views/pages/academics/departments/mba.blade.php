@@ -464,7 +464,7 @@
                         </div>
 
 
-                        @include('components.vertical-web-slider', ['pageSections' => 'mba'])
+
 
 
 

@@ -111,7 +111,7 @@
                                                     <a href="{{ url("/academics/departments/masters") }}">M.E / M.Tech</a>
 
                                                 </li>
-                                                <li><a href="{{ url("/academics/departments/mca") }}">MCA</a></li>
+                                                <li><a href="{{ url("/academics/departments/master-of-computer-applications") }}">MCA</a></li>
                                                 <li><a href="{{ url("/academics/departments/mba") }}">MBA</a></li>
                                                 <li><a href="{{ url("/academics/departments/science-humanities") }}">Science & Humanities</a></li>
                                             </ul>
@@ -216,7 +216,7 @@
                                 <li class="has-dropdown">
                                     <a class="nav-link" href="{{ url("#") }}">Placements</a>
                                     <ul class="submenu">
-                                        <li><a href="{{ url("#") }}">Industry Partnership & Corporate Affairs (Placement & Training)</a></li>
+                                        <li><a href="{{ url("/academics/industry-academic-partnering") }}">Industry Partnership & Corporate Affairs (Placement & Training)</a></li>
                                         <li><a href="{{ url("/placements/memorandum-of-understanding") }}">MoU</a></li>
                                         {{-- <li><a href="{{ url("#") }}">Recruiters</a></li>
                                         <li><a href="{{ url("#") }}">Training Cell</a></li> --}}

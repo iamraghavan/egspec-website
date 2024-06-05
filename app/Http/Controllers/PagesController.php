@@ -93,6 +93,12 @@ class PagesController extends Controller
     }
 
 
+    public function governing_body()
+    {
+        return view('pages.governing-body');
+    }
+
+
     /* Academics */
 
     public function department_bachelors()
@@ -115,17 +121,17 @@ class PagesController extends Controller
 
     public function department_mca()
     {
-        return view('pages.academics.mca');
+        return view('pages.academics.departments.mca');
     }
 
     public function department_mba()
     {
-        return view('pages.academics.mba');
+        return view('pages.academics.departments.mba');
     }
 
     public function department_science_humanities()
     {
-        return view('pages.academics.science-humanities');
+        return view('pages.academics.departments.science-humanities');
     }
 
     public function industry_academic_partnering()
@@ -613,5 +619,22 @@ class PagesController extends Controller
     {
 
         return view('pages.placement.placement-gallery');
+    }
+
+    // Department -> Undergraduate -> Mechnical Engineering
+
+    public function ug_mechnical_engineering()
+    {
+        return view('pages.academics.departments.undergraduate.mechanical-engineering.mechanical-engineering');
+    }
+
+
+
+
+    // Department -> Undergraduate -> Information Technology
+
+    public function ug_information_technology()
+    {
+        return view('pages.academics.departments.undergraduate.information-technology.information-technology');
     }
 }
