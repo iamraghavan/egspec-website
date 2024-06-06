@@ -210,7 +210,7 @@
                         </li>
 
 
-                        <li><a class="mobile-menu-link" href="{{ url("#") }}">Patents</a></li>
+                        <li><a class="mobile-menu-link" href="{{ url("#") }}">Industry Collabration</a></li>
                         <li><a class="mobile-menu-link" href="{{ url("#") }}">Copy Rights</a></li>
                         <li><a class="mobile-menu-link" href="{{ url("#") }}">R & D Policy</a></li>
                     </ul>

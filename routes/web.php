@@ -172,6 +172,13 @@ Route::get('/academics/departments/undergraduate/mechanical-engineering', [Pages
 
 // Department -> Undergraduate -> Mechnical Engineering
 Route::get('/academics/departments/undergraduate/information-technology', [PagesController::class, 'ug_information_technology']);
+Route::get('/academics/departments/undergraduate/information-technology/department-highlights', [PagesController::class, 'ug_information_technology_department_highlights']);
+Route::get('/academics/departments/undergraduate/information-technology/hods-desk', [PagesController::class, 'ug_information_technology_hods_desk']);
+Route::get('/academics/departments/undergraduate/information-technology/faculty-details', [PagesController::class, 'ug_information_technology_faculty_details']);
+Route::get('/academics/departments/undergraduate/information-technology/research-publications', [PagesController::class, 'ug_information_technology_research_publications']);
+Route::get('/academics/departments/undergraduate/information-technology/industry-collabration', [PagesController::class, 'ug_information_technology_industry_collabration']);
+
+
 
 Route::get('/academics/departments/master-of-computer-applications', [PagesController::class, 'department_mca']);
 Route::get('/academics/departments/mba', [PagesController::class, 'department_mba']);

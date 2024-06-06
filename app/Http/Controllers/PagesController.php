@@ -637,4 +637,29 @@ class PagesController extends Controller
     {
         return view('pages.academics.departments.undergraduate.information-technology.information-technology');
     }
+
+    public function ug_information_technology_department_highlights()
+    {
+        return view('pages.academics.departments.undergraduate.information-technology.department-highlights');
+    }
+
+    public function ug_information_technology_hods_desk()
+    {
+        return view('pages.academics.departments.undergraduate.information-technology.hods-desk');
+    }
+
+    public function ug_information_technology_faculty_details()
+    {
+        return view('pages.academics.departments.undergraduate.information-technology.faculty-details');
+    }
+
+    public function ug_information_technology_research_publications()
+    {
+        return view('pages.academics.departments.undergraduate.information-technology.research-publications');
+    }
+
+    public function ug_information_technology_industry_collabration()
+    {
+        return view('pages.academics.departments.undergraduate.information-technology.industry-collabration');
+    }
 }

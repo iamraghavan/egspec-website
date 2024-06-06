@@ -243,7 +243,7 @@
                                                 <li><a href="{{ url("/resources/projects/information-technology") }}">IT</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="{{ url("/research/patent-details") }}">Patents</a></li>
+                                        <li><a href="{{ url("/research/patent-details") }}">Industry Collabration</a></li>
                                         <li><a href="{{ url("/research/copyrights") }}">Copyrights</a></li>
                                         <li><a href="{{ url("/research/r-and-d-policy") }}">R &amp; D Policy</a></li>
                                     </ul>
