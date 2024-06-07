@@ -177,7 +177,11 @@ Route::get('/academics/departments/undergraduate/information-technology/hods-des
 Route::get('/academics/departments/undergraduate/information-technology/faculty-details', [PagesController::class, 'ug_information_technology_faculty_details']);
 Route::get('/academics/departments/undergraduate/information-technology/research-publications', [PagesController::class, 'ug_information_technology_research_publications']);
 Route::get('/academics/departments/undergraduate/information-technology/industry-collabration', [PagesController::class, 'ug_information_technology_industry_collabration']);
-
+Route::get('/academics/departments/undergraduate/information-technology/infrastructure', [PagesController::class, 'ug_information_technology_infrastructure']);
+Route::get('/academics/departments/undergraduate/information-technology/student-achievements', [PagesController::class, 'ug_information_technology_student_achievements']);
+Route::get('/academics/departments/undergraduate/information-technology/program-outcomes', [PagesController::class, 'ug_information_technology_program_outcomes']);
+Route::get('/academics/departments/undergraduate/information-technology/programme-educational-objectives', [PagesController::class, 'ug_information_technology_programme_educational_objectives']);
+Route::get('/academics/departments/undergraduate/information-technology/programme-specific-outcomes', [PagesController::class, 'ug_information_technology_programme_specific_outcomes']);
 
 
 Route::get('/academics/departments/master-of-computer-applications', [PagesController::class, 'department_mca']);

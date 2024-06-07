@@ -662,4 +662,30 @@ class PagesController extends Controller
     {
         return view('pages.academics.departments.undergraduate.information-technology.industry-collabration');
     }
+
+    public function ug_information_technology_infrastructure()
+    {
+        return view('pages.academics.departments.undergraduate.information-technology.infrastructure');
+    }
+
+    public function ug_information_technology_student_achievements()
+    {
+        return view('pages.academics.departments.undergraduate.information-technology.student-achievements');
+    }
+
+    public function ug_information_technology_program_outcomes()
+    {
+        return view('pages.academics.departments.undergraduate.information-technology.program-outcomes');
+    }
+
+    public function ug_information_technology_programme_educational_objectives()
+    {
+        return view('pages.academics.departments.undergraduate.information-technology.programme-educational-objectives');
+    }
+
+    public function ug_information_technology_programme_specific_outcomes()
+    {
+
+        return view('pages.academics.departments.undergraduate.information-technology.programme-specific-outcomes');
+    }
 }
