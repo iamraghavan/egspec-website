@@ -189,6 +189,31 @@ class PagesController extends Controller
         return view('pages.admissions.courses-intake', compact('ci'));
     }
 
+    public function why_study_here()
+    {
+        return view('pages.admissions.why-study-here');
+    }
+
+    public function faq()
+    {
+        return view('pages.admissions.faq');
+    }
+
+    public function admission_procedure_undergraduate()
+    {
+        return view('pages.admissions.admission-procedure.undergraduate');
+    }
+
+    public function admission_procedure_postgraduate()
+    {
+        return view('pages.admissions.admission-procedure.postgraduate');
+    }
+
+    public function admission_procedure_lateral_entry()
+    {
+        return view('pages.admissions.admission-procedure.lateral-entry');
+    }
+
     public function complaint_committee()
     {
         $cc = Cache::remember('complaint_committee', 120, function () {
@@ -687,5 +712,82 @@ class PagesController extends Controller
     {
 
         return view('pages.academics.departments.undergraduate.information-technology.programme-specific-outcomes');
+    }
+
+
+    // Department -> Undergraduate -> Biomedial Engineering
+
+    public function ug_biomedical_engineering()
+    {
+        return view('pages.academics.departments.undergraduate.biomedical-engineering.biomedical-engineering');
+    }
+
+    public function ug_biomedical_engineering_department_highlights()
+    {
+        return view('pages.academics.departments.undergraduate.biomedical-engineering.department-highlights');
+    }
+
+    public function ug_biomedical_engineering_hods_desk()
+    {
+        return view('pages.academics.departments.undergraduate.biomedical-engineering.hods-desk');
+    }
+
+    public function ug_biomedical_engineering_faculty_details()
+    {
+        return view('pages.academics.departments.undergraduate.biomedical-engineering.faculty-details');
+    }
+
+    public function ug_biomedical_engineering_research_publications()
+    {
+        return view('pages.academics.departments.undergraduate.biomedical-engineering.research-publications');
+    }
+
+
+    public function ug_biomedical_engineering_program_outcomes()
+    {
+        return view('pages.academics.departments.undergraduate.biomedical-engineering.program-outcomes');
+    }
+
+    public function ug_biomedical_engineering_programme_educational_objectives()
+    {
+        return view('pages.academics.departments.undergraduate.biomedical-engineering.programme-educational-objectives');
+    }
+
+    public function ug_biomedical_engineering_programme_specific_outcomes()
+    {
+        return view('pages.academics.departments.undergraduate.biomedical-engineering.programme-specific-outcomes');
+    }
+
+
+    // Department -> Undergraduate -> Electronics and Communication Engineering
+
+    public function ug_electronics_and_communication_engineering()
+    {
+        return view('pages.academics.departments.undergraduate.electronics-and-communication-engineering.electronics-and-communication-engineering');
+    }
+
+    public function ug_electronics_and_communication_engineering_department_highlights()
+    {
+        return view('pages.academics.departments.undergraduate.electronics-and-communication-engineering.department-highlights');
+    }
+
+    public function ug_electronics_and_communication_engineering_hods_desk()
+    {
+        return view('pages.academics.departments.undergraduate.electronics-and-communication-engineering.hods-desk');
+    }
+
+    public function ug_electronics_and_communication_engineering_faculty_details()
+    {
+        return view('pages.academics.departments.undergraduate.electronics-and-communication-engineering.faculty-details');
+    }
+
+    public function ug_electronics_and_communication_engineering_research_publications()
+    {
+        return view('pages.academics.departments.undergraduate.electronics-and-communication-engineering.research-publications');
+    }
+
+    public function ug_electronics_and_communication_engineering_program_outcomes()
+    {
+        return view('pages.academics.departments.undergraduate.electronics-and-communication-engineering.program-outcomes');
     }
 }

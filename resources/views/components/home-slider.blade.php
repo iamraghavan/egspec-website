@@ -1,10 +1,10 @@
 <!-- Desktop Slider -->
-<div class="swiper-container desktop-slider">
+<div class="swiper-container desktop-slider" style="width: 100%; height: 100%;">
     <div class="swiper-wrapper">
         @foreach ($posterSlider as $slide)
-        <div class="swiper-slide">
-            <a href="{{ $slide->href_link }}" target="_blank" rel="noopener noreferrer">
-                <img src="{{ asset($slide->desktop_image_url) }}" alt="{{ $slide->alt_name }}">
+        <div class="swiper-slide" style="width: 100%; height: 100%;">
+            <a href="{{ $slide->href_link }}" target="_blank" rel="noopener noreferrer" style="display: block; width: 100%; height: 100%;">
+                <img src="{{ asset($slide->desktop_image_url) }}" alt="{{ $slide->alt_name }}" style="width: 100%; height: 100%; object-fit: cover;">
             </a>
         </div>
         @endforeach
@@ -12,12 +12,12 @@
 </div>
 
 <!-- Mobile Slider -->
-<div class="swiper-container mobile-slider">
+<div class="swiper-container mobile-slider" style="width: 100%; height: 100%;">
     <div class="swiper-wrapper">
         @foreach ($posterSlider as $slide)
-        <div class="swiper-slide">
-            <a href="{{ $slide->href_link }}" target="_blank" rel="noopener noreferrer">
-                <img src="{{ $slide->mobile_image_url }}" alt="{{ $slide->alt_name }}">
+        <div class="swiper-slide" style="width: 100%; height: 100%;">
+            <a href="{{ $slide->href_link }}" target="_blank" rel="noopener noreferrer" style="display: block; width: 100%; height: 100%;">
+                <img src="{{ $slide->mobile_image_url }}" alt="{{ $slide->alt_name }}" style="width: 100%; height: 100%; object-fit: cover;">
             </a>
         </div>
         @endforeach
@@ -30,16 +30,20 @@
         var desktopSwiper = new Swiper('.desktop-slider', {
             loop: true,
             autoplay: {
-                delay: 5000,
+                delay: 3000,
             },
+            speed: 1000, // Speed of transition
+            effect: 'slide', // Use 'slide' effect for smooth animation
         });
 
         // Initialize Swiper for mobile slider
         var mobileSwiper = new Swiper('.mobile-slider', {
             loop: true,
             autoplay: {
-                delay: 5000,
+                delay: 3000,
             },
+            speed: 1000, // Speed of transition
+            effect: 'slide', // Use 'slide' effect for smooth animation
         });
 
         // Function to toggle slider visibility based on screen size

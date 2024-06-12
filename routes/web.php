@@ -50,13 +50,19 @@ Route::get('/academics/advisory-board', [PagesController::class, 'advisory_board
 
 
 
-
 // Route for Admissions
 
 Route::get('/admissions/tnea', [PagesController::class, 'tnea']);
 Route::get('/admissions/course-intake', [PagesController::class, 'courses_intake']);
 Route::get('/admissions/excess-fee-committee-circular', [PagesController::class, 'efcc']);
 Route::get('/admissions/complaint-committee', [PagesController::class, 'complaint_committee']);
+Route::get('/admissions/why-study-here', [PagesController::class, 'why_study_here']);
+Route::get('/admissions/faq', [PagesController::class, 'faq']);
+
+Route::get('/admission/admission-procedure/undergraduate', [PagesController::class, 'admission_procedure_undergraduate']);
+Route::get('/admission/admission-procedure/postgraduate', [PagesController::class, 'admission_procedure_postgraduate']);
+Route::get('/admission/admission-procedure/lateral-entry', [PagesController::class, 'admission_procedure_lateral_entry']);
+
 
 
 // Route for Facilities
@@ -182,6 +188,26 @@ Route::get('/academics/departments/undergraduate/information-technology/student-
 Route::get('/academics/departments/undergraduate/information-technology/program-outcomes', [PagesController::class, 'ug_information_technology_program_outcomes']);
 Route::get('/academics/departments/undergraduate/information-technology/programme-educational-objectives', [PagesController::class, 'ug_information_technology_programme_educational_objectives']);
 Route::get('/academics/departments/undergraduate/information-technology/programme-specific-outcomes', [PagesController::class, 'ug_information_technology_programme_specific_outcomes']);
+
+// Department -> Undergraduate -> Biomedical Engineering
+Route::get('/academics/departments/undergraduate/biomedical-engineering', [PagesController::class, 'ug_biomedical_engineering']);
+Route::get('/academics/departments/undergraduate/biomedical-engineering/department-highlights', [PagesController::class, 'ug_biomedical_engineering_department_highlights']);
+Route::get('/academics/departments/undergraduate/biomedical-engineering/hods-desk', [PagesController::class, 'ug_biomedical_engineering_hods_desk']);
+Route::get('/academics/departments/undergraduate/biomedical-engineering/faculty-details', [PagesController::class, 'ug_biomedical_engineering_faculty_details']);
+Route::get('/academics/departments/undergraduate/biomedical-engineering/research-publications', [PagesController::class, 'ug_biomedical_engineering_research_publications']);
+Route::get('/academics/departments/undergraduate/biomedical-engineering/program-outcomes', [PagesController::class, 'ug_biomedical_engineering_program_outcomes']);
+Route::get('/academics/departments/undergraduate/biomedical-engineering/programme-educational-objectives', [PagesController::class, 'ug_biomedical_engineering_programme_educational_objectives']);
+Route::get('/academics/departments/undergraduate/biomedical-engineering/programme-specific-outcomes', [PagesController::class, 'ug_biomedical_engineering_programme_specific_outcomes']);
+
+
+// Department -> Undergraduate -> Electronics and Communication Engineering
+Route::get('/academics/departments/undergraduate/electronics-and-communication-engineering', [PagesController::class, 'ug_electronics_and_communication_engineering']);
+Route::get('/academics/departments/undergraduate/electronics-and-communication-engineering/department-highlights', [PagesController::class, 'ug_electronics_and_communication_engineering_department_highlights']);
+Route::get('/academics/departments/undergraduate/electronics-and-communication-engineering/hods-desk', [PagesController::class, 'ug_electronics_and_communication_engineering_hods_desk']);
+Route::get('/academics/departments/undergraduate/electronics-and-communication-engineering/faculty-details', [PagesController::class, 'ug_electronics_and_communication_engineering_faculty_details']);
+Route::get('/academics/departments/undergraduate/electronics-and-communication-engineering/research-publications', [PagesController::class, 'ug_electronics_and_communication_engineering_research_publications']);
+Route::get('/academics/departments/undergraduate/electronics-and-communication-engineering/program-outcomes', [PagesController::class, 'ug_electronics_and_communication_engineering_program_outcomes']);
+
 
 
 Route::get('/academics/departments/master-of-computer-applications', [PagesController::class, 'department_mca']);

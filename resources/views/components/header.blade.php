@@ -137,17 +137,17 @@
                                         <li class="sub-dropdown">
                                             <a href="{{ url("#") }}">Admission Procedure</a>
                                             <ul class="submenu third-lvl base">
-                                                <li><a href="{{ url("#") }}">UG</a></li>
-                                                <li><a href="{{ url("#") }}">PG</a></li>
-                                                <li><a href="{{ url("#") }}">Lateral Entry</a></li>
+                                                <li><a href="{{ url("/admission/admission-procedure/undergraduate") }}">UG</a></li>
+                                                <li><a href="{{ url("/admission/admission-procedure/postgraduate") }}">PG</a></li>
+                                                <li><a href="{{ url("/admission/admission-procedure/lateral-entry") }}">Lateral Entry</a></li>
                                             </ul>
                                         </li>
 
                                         <li><a href="{{ url("/admissions/excess-fee-committee-circular") }}">Excess Fee Committee Circular</a></li>
 
                                         <li><a href="{{ url("/admissions/complaint-committee") }}">Complaint Committee</a></li>
-                                        <li><a href="{{ url("#") }}">Why Study Here</a></li>
-                                        <li><a href="{{ url("#") }}">FAQ</a></li>
+                                        <li><a href="{{ url("/admissions/why-study-here") }}">Why Study Here</a></li>
+                                        <li><a href="{{ url("/admissions/faq") }}">FAQ</a></li>
                                     </ul>
                                 </li>
                                 <li class="has-dropdown">
