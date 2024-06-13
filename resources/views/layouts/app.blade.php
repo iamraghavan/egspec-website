@@ -28,8 +28,13 @@
     <link rel="stylesheet" href="{{ asset("/assets/css/style.css") }}">
 
 
+
 <style>
     .text-justify  { text-align: justify !important; }
+    .iap{max-width:100%!important;height:4rem;font-weight:200;margin:3rem}.iap-h3{text-align:center!important;font-size:18px!important;margin:20px 0!important;color:#333!important}
+    html {
+            scroll-behavior: smooth; /* Enables smooth scrolling */
+        }
 </style>
 
 </head>
@@ -102,7 +107,7 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/iamraghavan/egsp-hrms@main/public/assets/css/vendors/sweetalert2.css">
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- Include jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

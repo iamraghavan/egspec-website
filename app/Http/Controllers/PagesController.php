@@ -612,39 +612,59 @@ class PagesController extends Controller
 
     /* Placement */
 
-    public function memorandum_of_understanding()
+
+    public function placement()
     {
-
-        return view('pages.placement.memorandum-of-understanding');
-    }
-
-    public function placement_team()
-    {
-
-        return view('pages.placement.placement-team');
-    }
-
-    public function placement_statistics()
-    {
-        $placementStatistics = PlacementStatistic::all();
-
-        $posterSlider = Cache::remember('general_poster_slider', 120, function () {
-            return PostSlider::where('page_name', 'pls')->get();
+        $iap = Cache::remember('industry_academic_partnering', 120, function () {
+            return IndustryAcademicPartnering::all();
         });
-        return view('pages.placement.placement-statistics', compact('placementStatistics', 'posterSlider'));
+
+        $placementStatistics = Cache::remember('placement_statistics', 120, function () {
+            return PlacementStatistic::all();
+        });
+
+        return view('pages.placement.placement-team', compact('placementStatistics', 'iap'));
     }
 
-    public function our_top_recruiters()
-    {
 
-        return view('pages.placement.our-top-recruiters');
-    }
+    // public function memorandum_of_understanding()
+    // {
 
-    public function placement_gallery()
-    {
+    //     return view('pages.placement.memorandum-of-understanding');
+    // }
 
-        return view('pages.placement.placement-gallery');
-    }
+    // public function placement_team()
+    // {
+    //     $placementStatistics = PlacementStatistic::all();
+
+    //     $posterSlider = Cache::remember('general_poster_slider', 120, function () {
+    //         return PostSlider::where('page_name', 'pls')->get();
+    //     });
+
+    //     return view('pages.placement.placement-team', compact('placementStatistics', 'posterSlider'));
+    // }
+
+    // public function placement_statistics()
+    // {
+    //     $placementStatistics = PlacementStatistic::all();
+
+    //     $posterSlider = Cache::remember('general_poster_slider', 120, function () {
+    //         return PostSlider::where('page_name', 'pls')->get();
+    //     });
+    //     return view('pages.placement.placement-statistics', compact('placementStatistics', 'posterSlider'));
+    // }
+
+    // public function our_top_recruiters()
+    // {
+
+    //     return view('pages.placement.our-top-recruiters');
+    // }
+
+    // public function placement_gallery()
+    // {
+
+    //     return view('pages.placement.placement-gallery');
+    // }
 
     // Department -> Undergraduate -> Mechnical Engineering
 
@@ -789,5 +809,15 @@ class PagesController extends Controller
     public function ug_electronics_and_communication_engineering_program_outcomes()
     {
         return view('pages.academics.departments.undergraduate.electronics-and-communication-engineering.program-outcomes');
+    }
+
+    public function ug_electronics_and_communication_engineering_programme_educational_objectives()
+    {
+        return view('pages.academics.departments.undergraduate.electronics-and-communication-engineering.programme-educational-objectives');
+    }
+
+    public function ug_electronics_and_communication_engineering_programme_specific_outcomes()
+    {
+        return view('pages.academics.departments.undergraduate.electronics-and-communication-engineering.programme-specific-outcomes');
     }
 }

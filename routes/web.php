@@ -160,11 +160,13 @@ Route::get('/about/strategic-plan-meeting-minutes', [PagesController::class, 'st
 
 // Route for Placements
 
-Route::get('/placements/memorandum-of-understanding', [PagesController::class, 'memorandum_of_understanding']);
-Route::get('/placements/placement-team', [PagesController::class, 'placement_team']);
-Route::get('/placements/statistics', [PagesController::class, 'placement_statistics']);
-Route::get('/placement/our-top-recruiters', [PagesController::class, 'our_top_recruiters']);
-Route::get('/placement/placement-gallery', [PagesController::class, 'placement_gallery']);
+Route::get('/placements', [PagesController::class, 'placement'])->name('placements');
+
+// Route::get('/placements/memorandum-of-understanding', [PagesController::class, 'memorandum_of_understanding']);
+// Route::get('/placements/placement-team', [PagesController::class, 'placement_team']);
+// Route::get('/placements/statistics', [PagesController::class, 'placement_statistics']);
+// Route::get('/placement/our-top-recruiters', [PagesController::class, 'our_top_recruiters']);
+// Route::get('/placement/placement-gallery', [PagesController::class, 'placement_gallery']);
 
 
 
@@ -207,7 +209,8 @@ Route::get('/academics/departments/undergraduate/electronics-and-communication-e
 Route::get('/academics/departments/undergraduate/electronics-and-communication-engineering/faculty-details', [PagesController::class, 'ug_electronics_and_communication_engineering_faculty_details']);
 Route::get('/academics/departments/undergraduate/electronics-and-communication-engineering/research-publications', [PagesController::class, 'ug_electronics_and_communication_engineering_research_publications']);
 Route::get('/academics/departments/undergraduate/electronics-and-communication-engineering/program-outcomes', [PagesController::class, 'ug_electronics_and_communication_engineering_program_outcomes']);
-
+Route::get('/academics/departments/undergraduate/electronics-and-communication-engineering/programme-educational-objectives', [PagesController::class, 'ug_electronics_and_communication_engineering_programme_educational_objectives']);
+Route::get('/academics/departments/undergraduate/electronics-and-communication-engineering/programme-specific-outcomes', [PagesController::class, 'ug_electronics_and_communication_engineering_programme_specific_outcomes']);
 
 
 Route::get('/academics/departments/master-of-computer-applications', [PagesController::class, 'department_mca']);

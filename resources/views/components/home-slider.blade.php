@@ -21,7 +21,7 @@
             </a>
         </div>
         @endforeach
-    </div>
+    </div>egspec\_raghavan\_web.webp
 </div>
 
 <script>
@@ -30,7 +30,7 @@
         var desktopSwiper = new Swiper('.desktop-slider', {
             loop: true,
             autoplay: {
-                delay: 3000,
+                delay: 7000,
             },
             speed: 1000, // Speed of transition
             effect: 'slide', // Use 'slide' effect for smooth animation
@@ -40,7 +40,7 @@
         var mobileSwiper = new Swiper('.mobile-slider', {
             loop: true,
             autoplay: {
-                delay: 3000,
+                delay: 7000,
             },
             speed: 1000, // Speed of transition
             effect: 'slide', // Use 'slide' effect for smooth animation

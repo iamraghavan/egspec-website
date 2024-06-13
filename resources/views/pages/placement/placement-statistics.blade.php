@@ -6,13 +6,6 @@
 'value_3' => '',
 'page_title' => 'Statistics' ])
 
-<div class="rts-program mt-5">
-
-
-
-                {{-- @include('components.home-slider', ['posterSlider' => $posterSlider]) --}}
-
-</div>
 
 
 

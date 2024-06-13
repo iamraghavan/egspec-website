@@ -216,14 +216,15 @@
                                 <li class="has-dropdown">
                                     <a class="nav-link" href="{{ url("#") }}">Placements</a>
                                     <ul class="submenu">
-                                        <li><a href="{{ url("/academics/industry-academic-partnering") }}">Industry Partnership & Corporate Affairs (Placement & Training)</a></li>
-                                        <li><a href="{{ url("/placements/memorandum-of-understanding") }}">MoU</a></li>
+                                        <li><a href="{{ url('/placements#placementTeam') }}">Placement Team</a></li>
+                                        <li><a href="{{ url('/placements#statistics') }}">Placement Statistics</a></li>
+                                        <li><a href="{{ url("/placements#industry-academic-partnering") }}">Industry Partnership & Corporate Affairs (Placement & Training)</a></li>
+                                        <li><a href="{{ url("/placements#memorandum-of-understanding") }}">MoU</a></li>
                                         {{-- <li><a href="{{ url("#") }}">Recruiters</a></li>
                                         <li><a href="{{ url("#") }}">Training Cell</a></li> --}}
-                                        <li><a href="{{ url("/placements/placement-team") }}">Placement Team</a></li>
-                                        <li><a href="{{ url("/placements/statistics") }}">Placement Statistics</a></li>
-                                        <li><a href="{{ url("/placement/our-top-recruiters") }}">Our Few Of Recruiters</a></li>
-                                        <li><a href="{{ url("/placement/placement-gallery") }}">Placement Gallery</a></li>
+
+                                        <li><a href="{{ url("/placements#our-top-recruiters") }}">Our Few Of Recruiters</a></li>
+                                        <li><a href="{{ url("/placements#placement-gallery") }}">Placement Gallery</a></li>
                                     </ul>
                                 </li>
                                 <li class="has-dropdown">
