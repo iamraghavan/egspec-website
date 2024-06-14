@@ -20,7 +20,11 @@
                             <div class="row">
                                 <div class="rts-section">
                                     <div class="col-lg-4 col-md-3 col-sm-12 text-center">
-                                        <img src="@blob('profile/dr-m-malathi.webp')" alt="egspec_dr_m_malathi" class="img-fluid rounded" style="max-width: 200px;">
+                                        <picture>
+                                            <source srcset="@blob('profile/dr-m-malathi.webp')" type="image/webp">
+                                            <img src="@blob('profile/dr-m-malathi.webp')" class="img-fluid rounded" alt="egspec_dr_m_malathi" style="max-width: 200px;">
+                                        </picture>
+
                                     </div>
                                     <div class="col-lg-8 col-md-9 col-sm-12">
                                         <div class="rts-section-description">

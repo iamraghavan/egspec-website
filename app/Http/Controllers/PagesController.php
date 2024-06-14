@@ -119,10 +119,7 @@ class PagesController extends Controller
         return view('pages.academics.masters', ['academics' => $courses]);
     }
 
-    public function department_mca()
-    {
-        return view('pages.academics.departments.mca');
-    }
+
 
     public function department_mba()
     {
@@ -819,5 +816,28 @@ class PagesController extends Controller
     public function ug_electronics_and_communication_engineering_programme_specific_outcomes()
     {
         return view('pages.academics.departments.undergraduate.electronics-and-communication-engineering.programme-specific-outcomes');
+    }
+
+
+    // Department -> Postgraduate -> Masters of Computer Applications
+
+    public function department_mca()
+    {
+        return view('pages.academics.departments.postgraduate.master-of-computer-applications.mca');
+    }
+
+    public function department_mca_department_highlights()
+    {
+        return view('pages.academics.departments.postgraduate.master-of-computer-applications.department-highlights');
+    }
+
+    public function department_mca_faculty_details()
+    {
+        return view('pages.academics.departments.postgraduate.master-of-computer-applications.faculty-details');
+    }
+
+    public function department_mca_hods_desk()
+    {
+        return view('pages.academics.departments.postgraduate.master-of-computer-applications.hods-desk');
     }
 }

@@ -176,8 +176,6 @@ Route::get('/placements', [PagesController::class, 'placement'])->name('placemen
 Route::get('/academics/departments/undergraduate/mechanical-engineering', [PagesController::class, 'ug_mechnical_engineering']);
 
 
-
-
 // Department -> Undergraduate -> Mechnical Engineering
 Route::get('/academics/departments/undergraduate/information-technology', [PagesController::class, 'ug_information_technology']);
 Route::get('/academics/departments/undergraduate/information-technology/department-highlights', [PagesController::class, 'ug_information_technology_department_highlights']);
@@ -213,6 +211,15 @@ Route::get('/academics/departments/undergraduate/electronics-and-communication-e
 Route::get('/academics/departments/undergraduate/electronics-and-communication-engineering/programme-specific-outcomes', [PagesController::class, 'ug_electronics_and_communication_engineering_programme_specific_outcomes']);
 
 
-Route::get('/academics/departments/master-of-computer-applications', [PagesController::class, 'department_mca']);
-Route::get('/academics/departments/mba', [PagesController::class, 'department_mba']);
+
+// Department -> Postgraduate -> Master of Computer Application
+
+Route::get('/academics/departments/postgraduate/master-of-computer-applications', [PagesController::class, 'department_mca']);
+Route::get('/academics/departments/postgraduate/master-of-computer-applications/department-highlights', [PagesController::class, 'department_mca_department_highlights']);
+Route::get('/academics/departments/postgraduate/master-of-computer-applications/hods-desk', [PagesController::class, 'department_mca_hods_desk']);
+Route::get('/academics/departments/postgraduate/master-of-computer-applications/faculty-details', [PagesController::class, 'department_mca_faculty_details']);
+
+
+
+Route::get('/academics/departments/postgraduate/master-of-business-administration', [PagesController::class, 'department_mba']);
 Route::get('/academics/departments/science-humanities', [PagesController::class, 'department_science_humanities']);

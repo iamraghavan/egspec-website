@@ -1,4 +1,4 @@
-<div class="program-info">
+<div class="program-info" style="background: var(--rt-secondary) !important;">
     <h5>Department Contact</h5>
     <p class="text-white">{{ $name }}</p>
     <div class="contact-info">

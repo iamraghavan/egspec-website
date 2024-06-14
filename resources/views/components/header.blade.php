@@ -109,10 +109,9 @@
                                                 </li>
                                                 <li class="">
                                                     <a href="{{ url("/academics/departments/masters") }}">M.E / M.Tech</a>
-
                                                 </li>
-                                                <li><a href="{{ url("/academics/departments/master-of-computer-applications") }}">MCA</a></li>
-                                                <li><a href="{{ url("/academics/departments/mba") }}">MBA</a></li>
+                                                <li><a href="{{ url("/academics/departments/postgraduate/master-of-computer-applications") }}">MCA</a></li>
+                                                <li><a href="{{ url("/academics/departments/postgraduate/master-of-business-administration") }}">MBA</a></li>
                                                 <li><a href="{{ url("/academics/departments/science-humanities") }}">Science & Humanities</a></li>
                                             </ul>
                                         </li>
