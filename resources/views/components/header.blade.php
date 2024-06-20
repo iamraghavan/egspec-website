@@ -132,7 +132,7 @@
                                             </ul>
                                         </li>
                                         <li><a href="{{ url("/admissions/course-intake") }}">Courses & Intake</a></li>
-                                        <li><a href="{{ url("/admissions/tnea") }}">TNEA {{ date('Y') -1 }} Information</a></li>
+                                        <li><a href="{{ url("/admissions/tnea") }}">TNEA {{ date('Y')}} - {{ date('Y') +1 }}</a></li>
                                         <li class="sub-dropdown">
                                             <a href="{{ url("#") }}">Admission Procedure</a>
                                             <ul class="submenu third-lvl base">

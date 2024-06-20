@@ -30,11 +30,7 @@
 
 
 <style>
-    .text-justify  { text-align: justify !important; }
-    .iap{max-width:100%!important;height:4rem;font-weight:200;margin:3rem}.iap-h3{text-align:center!important;font-size:18px!important;margin:20px 0!important;color:#333!important}
-    html {
-            scroll-behavior: smooth; /* Enables smooth scrolling */
-        }
+    .text-justify{text-align:justify!important}.iap{max-width:100%!important;height:4rem;font-weight:200;margin:3rem}.iap-h3{text-align:center!important;font-size:18px!important;margin:20px 0!important;color:#333!important}html{scroll-behavior:smooth}
 </style>
 
 </head>

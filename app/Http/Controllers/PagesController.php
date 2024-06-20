@@ -17,6 +17,7 @@ use App\Models\SportAthletesAndAchievements;
 use App\Models\SportData;
 use App\Models\Event;
 use App\Models\PlacementStatistic;
+use App\Models\StudentAchievement;
 use App\Models\WomenEmpowermentCellMember;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
@@ -839,5 +840,23 @@ class PagesController extends Controller
     public function department_mca_hods_desk()
     {
         return view('pages.academics.departments.postgraduate.master-of-computer-applications.hods-desk');
+    }
+
+    public function department_mca_research_publications()
+    {
+        return view('pages.academics.departments.postgraduate.master-of-computer-applications.research-publications');
+    }
+
+    public function department_mca_industry_collabration()
+    {
+        return view('pages.academics.departments.postgraduate.master-of-computer-applications.industry-collabration');
+    }
+
+    public function department_mca_student_achievements()
+    {
+        $st = Cache::remember('students_achivement', 120, function () {
+            return StudentAchievement::all();
+        });
+        return view('pages.academics.departments.postgraduate.master-of-computer-applications.student-achievements', ['st' => $st]);
     }
 }

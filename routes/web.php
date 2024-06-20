@@ -218,6 +218,9 @@ Route::get('/academics/departments/postgraduate/master-of-computer-applications'
 Route::get('/academics/departments/postgraduate/master-of-computer-applications/department-highlights', [PagesController::class, 'department_mca_department_highlights']);
 Route::get('/academics/departments/postgraduate/master-of-computer-applications/hods-desk', [PagesController::class, 'department_mca_hods_desk']);
 Route::get('/academics/departments/postgraduate/master-of-computer-applications/faculty-details', [PagesController::class, 'department_mca_faculty_details']);
+Route::get('/academics/departments/postgraduate/master-of-computer-applications/research-publications', [PagesController::class, 'department_mca_research_publications']);
+Route::get('/academics/departments/postgraduate/master-of-computer-applications/industry-collabration', [PagesController::class, 'department_mca_industry_collabration']);
+Route::get('/academics/departments/postgraduate/master-of-computer-applications/student-achievements', [PagesController::class, 'department_mca_student_achievements']);
 
 
 
