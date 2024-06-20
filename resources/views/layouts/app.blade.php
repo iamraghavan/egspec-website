@@ -164,6 +164,34 @@
         });
       </script>
 
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+<script src="{{ asset("/assets/js/fetfirebase.min.js") }}"></script>
+
+
+<style>
+    .skeleton {
+        width: 100%;
+        height: 0;
+        padding-bottom: 75%; /* Aspect ratio */
+        background: #e0e0e0;
+        animation: skeleton-loading 1.2s infinite;
+    }
+
+    @keyframes skeleton-loading {
+        0% {
+            background-color: #e0e0e0;
+        }
+        50% {
+            background-color: #f0f0f0;
+        }
+        100% {
+            background-color: #e0e0e0;
+        }
+    }
+</style>
+
+
 </body>
 
 </html>

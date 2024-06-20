@@ -56,28 +56,28 @@
                             <h6 class="heading-title">Department Quick Links</h6>
                             <div class="program-menu">
                                 <ul class="list-unstyled">
-                                    <li><a href="{{ url('/academics/departments/postgraduate/master-business-administration/about') }}"><span><i class="fa-light fa-arrow-right"></i></span>About</a></li>
-                                    <li><a href="{{ url('/academics/departments/postgraduate/master-business-administration/highlights') }}"><span><i class="fa-light fa-arrow-right"></i></span>Department Highlights</a></li>
-                                    <li><a href="{{ url('/academics/departments/postgraduate/master-business-administration/hods-desk') }}"><span><i class="fa-light fa-arrow-right"></i></span>Hod's Desk</a></li>
-                                    <li><a href="{{ url('/academics/departments/postgraduate/master-business-administration/faculty-details') }}"><span><i class="fa-light fa-arrow-right"></i></span>Faculty Details</a></li>
+                                    <li><a href="{{ url('/academics/departments/postgraduate/master-of-business-administration') }}"><span><i class="fa-light fa-arrow-right"></i></span>About</a></li>
+                                    <li><a href="{{ url('/academics/departments/postgraduate/master-of-business-administration/department-highlights') }}"><span><i class="fa-light fa-arrow-right"></i></span>Department Highlights</a></li>
+                                    <li><a href="{{ url('/academics/departments/postgraduate/master-of-business-administration/hods-desk') }}"><span><i class="fa-light fa-arrow-right"></i></span>Hod's Desk</a></li>
+                                    <li><a href="{{ url('/academics/departments/postgraduate/master-of-business-administration/faculty-details') }}"><span><i class="fa-light fa-arrow-right"></i></span>Faculty Details</a></li>
                                     <li><a href="https://coe.egspec.org/" target="_blank"><span><i class="fa-light fa-arrow-right"></i></span>Curriculum</a></li>
-                                    <li><a href="{{ url('/academics/departments/postgraduate/master-business-administration/research-publications') }}"><span><i class="fa-light fa-arrow-right"></i></span>Research & Publications</a></li>
-                                    <li><a href="{{ url('/academics/departments/postgraduate/master-business-administration/industry-collaboration') }}"><span><i class="fa-light fa-arrow-right"></i></span>Industry Collaboration</a></li>
-                                    <li><a href="{{ url('/academics/departments/postgraduate/master-business-administration/laboratories-and-facilities') }}"><span><i class="fa-light fa-arrow-right"></i></span>Laboratories and Facilities</a></li>
+                                    <li><a href="{{ url('/academics/departments/postgraduate/master-of-business-administration/research-publications') }}"><span><i class="fa-light fa-arrow-right"></i></span>Research & Publications</a></li>
+                                    <li><a href="{{ url('/academics/departments/postgraduate/master-of-business-administration/industry-collaboration') }}"><span><i class="fa-light fa-arrow-right"></i></span>Industry Collaboration</a></li>
+                                    <li><a href="{{ url('/academics/departments/postgraduate/master-of-business-administration/laboratories-and-facilities') }}"><span><i class="fa-light fa-arrow-right"></i></span>Laboratories and Facilities</a></li>
                                     <li><a href="{{ url('/placements/statistics') }}"><span><i class="fa-light fa-arrow-right"></i></span>Placements</a></li>
-                                    <li><a href="{{ url('/academics/departments/postgraduate/master-business-administration/student-achievements') }}"><span><i class="fa-light fa-arrow-right"></i></span>Student Achievements</a></li>
-                                    <li><a href="{{ url('/academics/departments/postgraduate/master-business-administration/program-outcomes') }}"><span><i class="fa-light fa-arrow-right"></i></span>Program Outcomes</a></li>
-                                    <li><a href="{{ url('/academics/departments/postgraduate/master-business-administration/programme-educational-objectives') }}"><span><i class="fa-light fa-arrow-right"></i></span>Programme Educational Objectives</a></li>
-                                    <li><a href="{{ url('/academics/departments/postgraduate/master-business-administration/programme-specific-outcomes') }}"><span><i class="fa-light fa-arrow-right"></i></span>Programme Specific Outcomes</a></li>
+                                    <li><a href="{{ url('/academics/departments/postgraduate/master-of-business-administration/student-achievements') }}"><span><i class="fa-light fa-arrow-right"></i></span>Student Achievements</a></li>
+                                    <li><a href="{{ url('/academics/departments/postgraduate/master-of-business-administration/program-outcomes') }}"><span><i class="fa-light fa-arrow-right"></i></span>Program Outcomes</a></li>
+                                    <li><a href="{{ url('/academics/departments/postgraduate/master-of-business-administration/programme-educational-objectives') }}"><span><i class="fa-light fa-arrow-right"></i></span>Programme Educational Objectives</a></li>
+                                    <li><a href="{{ url('/academics/departments/postgraduate/master-of-business-administration/programme-specific-outcomes') }}"><span><i class="fa-light fa-arrow-right"></i></span>Programme Specific Outcomes</a></li>
                                 </ul>
 
                             </div>
                         </div>
                         <!-- contact info -->
                         <x-dept-contact-info
-                        name="Dr. J. Vanitha"
-                        :phones="['+919443728519']"
-                        :emails="['vanitha@egspec.org']"/>
+                        name="Dr. R. Karthi"
+                        :phones="[' ']"
+                        :emails="[' ']"/>
                     </div>
                 </div>
             </div>

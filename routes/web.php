@@ -174,9 +174,13 @@ Route::get('/placements', [PagesController::class, 'placement'])->name('placemen
 
 // Department -> Undergraduate -> Mechnical Engineering
 Route::get('/academics/departments/undergraduate/mechanical-engineering', [PagesController::class, 'ug_mechnical_engineering']);
+Route::get('/academics/departments/undergraduate/mechanical-engineering/research-publications', [PagesController::class, 'ug_mechnical_engineering_research_publications']);
+Route::get('/academics/departments/undergraduate/mechanical-engineering/industry-collabration', [PagesController::class, 'ug_mechnical_engineering_industry_collabration']);
+Route::get('/academics/departments/undergraduate/mechanical-engineering/infrastructure', [PagesController::class, 'ug_mechnical_engineering_infrastructure']);
 
 
-// Department -> Undergraduate -> Mechnical Engineering
+
+// Department -> Undergraduate -> Information Technology
 Route::get('/academics/departments/undergraduate/information-technology', [PagesController::class, 'ug_information_technology']);
 Route::get('/academics/departments/undergraduate/information-technology/department-highlights', [PagesController::class, 'ug_information_technology_department_highlights']);
 Route::get('/academics/departments/undergraduate/information-technology/hods-desk', [PagesController::class, 'ug_information_technology_hods_desk']);
@@ -226,5 +230,17 @@ Route::get('/academics/departments/postgraduate/master-of-computer-applications/
 Route::get('/academics/departments/postgraduate/master-of-computer-applications/programme-educational-objectives', [PagesController::class, 'department_mca_programme_educational_objectives']);
 Route::get('/academics/departments/postgraduate/master-of-computer-applications/programme-specific-outcomes', [PagesController::class, 'department_mca_programme_specific_outcomes']);
 
+
+// Department -> Postgraduate -> Master of Business Administration
+
 Route::get('/academics/departments/postgraduate/master-of-business-administration', [PagesController::class, 'department_mba']);
+Route::get('/academics/departments/postgraduate/master-of-business-administration/department-highlights', [PagesController::class, 'department_mba_department_highlights']);
+// Route::get('/academics/departments/postgraduate/master-of-business-administration/hods-desk', [PagesController::class, 'department_mba_hods_desk']);
+Route::get('/academics/departments/postgraduate/master-of-business-administration/faculty-details', [PagesController::class, 'department_mba_faculty_details']);
+
+
+
+
+
+
 Route::get('/academics/departments/science-humanities', [PagesController::class, 'department_science_humanities']);

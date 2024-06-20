@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 
+use Illuminate\Support\Facades\Http;
 use App\Models\SliderImage;
 use App\Models\PostSlider;
 use App\Models\IndustryAcademicPartnering;
@@ -120,12 +121,6 @@ class PagesController extends Controller
         return view('pages.academics.masters', ['academics' => $courses]);
     }
 
-
-
-    public function department_mba()
-    {
-        return view('pages.academics.departments.mba');
-    }
 
     public function department_science_humanities()
     {
@@ -664,12 +659,6 @@ class PagesController extends Controller
     //     return view('pages.placement.placement-gallery');
     // }
 
-    // Department -> Undergraduate -> Mechnical Engineering
-
-    public function ug_mechnical_engineering()
-    {
-        return view('pages.academics.departments.undergraduate.mechanical-engineering.mechanical-engineering');
-    }
 
 
 
@@ -881,5 +870,47 @@ class PagesController extends Controller
     {
 
         return view('pages.academics.departments.postgraduate.master-of-computer-applications.programme-specific-outcomes');
+    }
+
+
+    // Department -> Postgraduate -> Masters of Business Administration
+
+    public function department_mba()
+    {
+        return view('pages.academics.departments.postgraduate.master-of-business-administration.mba');
+    }
+
+    public function department_mba_department_highlights()
+    {
+        return view('pages.academics.departments.postgraduate.master-of-business-administration.department-highlights');
+    }
+
+    public function department_mba_faculty_details()
+    {
+        return view('pages.academics.departments.postgraduate.master-of-business-administration.faculty-details');
+    }
+
+    // Department -> Undergraduate -> Mechnical Engineering
+
+    public function ug_mechnical_engineering()
+    {
+        return view('pages.academics.departments.undergraduate.mechanical-engineering.mechanical-engineering');
+    }
+
+    public function ug_mechnical_engineering_research_publications()
+    {
+        return view('pages.academics.departments.undergraduate.mechanical-engineering.research-publications');
+    }
+
+    public function ug_mechnical_engineering_industry_collabration()
+    {
+        return view('pages.academics.departments.undergraduate.mechanical-engineering.industry-collabration');
+    }
+
+    public function ug_mechnical_engineering_infrastructure()
+    {
+
+
+        return view('pages.academics.departments.undergraduate.mechanical-engineering.infrastructure');
     }
 }
