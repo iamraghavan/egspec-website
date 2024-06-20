@@ -221,8 +221,10 @@ Route::get('/academics/departments/postgraduate/master-of-computer-applications/
 Route::get('/academics/departments/postgraduate/master-of-computer-applications/research-publications', [PagesController::class, 'department_mca_research_publications']);
 Route::get('/academics/departments/postgraduate/master-of-computer-applications/industry-collabration', [PagesController::class, 'department_mca_industry_collabration']);
 Route::get('/academics/departments/postgraduate/master-of-computer-applications/student-achievements', [PagesController::class, 'department_mca_student_achievements']);
-
-
+Route::get('/academics/departments/postgraduate/master-of-computer-applications/laboratories-and-facilities', [PagesController::class, 'department_mca_laboratories_and_facilities']);
+Route::get('/academics/departments/postgraduate/master-of-computer-applications/program-outcomes', [PagesController::class, 'department_mca_program_outcomes']);
+Route::get('/academics/departments/postgraduate/master-of-computer-applications/programme-educational-objectives', [PagesController::class, 'department_mca_programme_educational_objectives']);
+Route::get('/academics/departments/postgraduate/master-of-computer-applications/programme-specific-outcomes', [PagesController::class, 'department_mca_programme_specific_outcomes']);
 
 Route::get('/academics/departments/postgraduate/master-of-business-administration', [PagesController::class, 'department_mba']);
 Route::get('/academics/departments/science-humanities', [PagesController::class, 'department_science_humanities']);

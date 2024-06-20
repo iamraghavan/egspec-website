@@ -854,9 +854,32 @@ class PagesController extends Controller
 
     public function department_mca_student_achievements()
     {
-        $st = Cache::remember('students_achivement', 120, function () {
+        $mcast14 = Cache::remember('students_achivement', 120, function () {
             return StudentAchievement::all();
         });
-        return view('pages.academics.departments.postgraduate.master-of-computer-applications.student-achievements', ['st' => $st]);
+        return view('pages.academics.departments.postgraduate.master-of-computer-applications.student-achievements', ['mcast14' => $mcast14]);
+    }
+
+    public function department_mca_laboratories_and_facilities()
+    {
+
+        return view('pages.academics.departments.postgraduate.master-of-computer-applications.laboratories-and-facilities');
+    }
+
+    public function department_mca_program_outcomes()
+    {
+        return view('pages.academics.departments.postgraduate.master-of-computer-applications.program-outcomes');
+    }
+
+    public function department_mca_programme_educational_objectives()
+    {
+
+        return view('pages.academics.departments.postgraduate.master-of-computer-applications.programme-educational-objectives');
+    }
+
+    public function department_mca_programme_specific_outcomes()
+    {
+
+        return view('pages.academics.departments.postgraduate.master-of-computer-applications.programme-specific-outcomes');
     }
 }

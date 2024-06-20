@@ -33,118 +33,122 @@
             </div>
             <div class="rts-fee-chart__content" id="nav-tabContent">
                 <div class="tab-pane fade active show" id="year-2014-2015" role="tabpanel" aria-labelledby="year-2014-2015-tab">
-                    <table class="table">
-                        <thead class="table-theme">
-                            <tr>
-                                <th>S.No</th>
-                                <th>Name of the Project</th>
-                                <th>Staff Name</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Travel Management System</td>
-                                <td>Mrs.J.Vanitha, Ms.K.LakshmiPriya</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>College Transport System</td>
-                                <td>Mrs.S.Visalatchy, Mr.S.Selvaganapathy</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Electrical Shop Management</td>
-                                <td>Mrs.C.Mallika, Mrs.A.Hema</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>Vinayaka Textiles Management</td>
-                                <td>Ms.N.Ilakkiya</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>Information distributed in dynamic message service</td>
-                                <td>Mrs.J.Vanitha, Mrs.S.Visalatchy, Ms.K.LakshmiPriya</td>
-                            </tr>
-                            <tr>
-                                <td>6</td>
-                                <td>Intra Mailing System</td>
-                                <td>Mrs.C.Mallika, Mrs.A.Hema, Mr.S.Selvaganapathy, Ms.N.Ilakkiya</td>
-                            </tr>
-                        </tbody>
-                    </table>
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered">
+                            <thead class="table-theme">
+                                <tr>
+                                    <td>S.No</td>
+                                    <td>Event Name</td>
+                                    <td>Name Of The Institution</td>
+                                    <td>Name Of The Student</td>
+                                    <td>Prize Won</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach($mcast14 as $index => $sts)
+                                    @if($sts->department == 'MCA' && $sts->year == '2014-2015')
+                                        <tr>
+                                            <td>{{ $index + 1 }}</td>
+                                            <td>{{ $sts->event_name }}</td>
+                                            <td>{{ $sts->institution_name }}</td>
+                                            <td>{{ $sts->student_name }}</td>
+                                            <td>{{ $sts->prize_won }}</td>
+                                        </tr>
+                                    @endif
+                                @endforeach
+                            </tbody>
+                        </table>
+
+                        <!-- Debugging: Check if any data is being rendered -->
+                        @if($mcast14->isEmpty())
+                            <p>No data available.</p>
+                        @endif
+                    </div>
+
+
                 </div>
                 <div class="tab-pane fade" id="year-2013-2014" role="tabpanel" aria-labelledby="year-2013-2014-tab">
-                    <table class="table">
-                        <thead class="table-theme">
-                            <tr>
-                                <th>S.No</th>
-                                <th>Name of the Project</th>
-                                <th>Staff Name</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Students Attendance Management System</td>
-                                <td>Mrs.J.Vanitha, Ms.K.LakshmiPriya</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>School Management System</td>
-                                <td>Mrs.S.Visalatchy, Mr.S.Selvaganapathy</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Ticket Reservation System</td>
-                                <td>Mrs.C.Mallika, Mrs.A.Hema</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>Application for Diagnostic Centre</td>
-                                <td>Mrs.J.Vanitha, Mrs.S.Visalatchy, Mr.S.Selvaganapathy</td>
-                            </tr>
-                        </tbody>
-                    </table>
+
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered">
+                            <thead class="table-theme">
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>Event Name</th>
+                                    <th>Name Of The Institution</th>
+                                    <th>Name Of The Student</th>
+                                    <th>Prize Won</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @php
+                                    $serialNumber = 1;
+                                @endphp
+                                @foreach($mcast14 as $sts)
+                                    @if($sts->department == 'MCA' && $sts->year == '2013-2014')
+                                        <tr>
+                                            <td>{{ $serialNumber }}</td>
+                                            <td>{{ $sts->event_name }}</td>
+                                            <td>{{ $sts->institution_name }}</td>
+                                            <td>{{ $sts->student_name }}</td>
+                                            <td>{{ $sts->prize_won }}</td>
+                                        </tr>
+                                        @php
+                                            $serialNumber++;
+                                        @endphp
+                                    @endif
+                                @endforeach
+                            </tbody>
+                        </table>
+
+                        <!-- Debugging: Check if any data is being rendered -->
+                        @if($mcast14->isEmpty())
+                            <p>No data available.</p>
+                        @endif
+                    </div>
+
+
                 </div>
                 <div class="tab-pane fade" id="year-2012-2013" role="tabpanel" aria-labelledby="year-2012-2013-tab">
-                    <table class="table">
-                        <thead class="table-theme">
-                            <tr>
-                                <th>S.No</th>
-                                <th>Name of the Project</th>
-                                <th>Staff Name</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>SMS alert for Employee Attendance</td>
-                                <td>Mrs.J.Vanitha, Ms.K.LakshmiPriya</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Online Application for Social welfare Association</td>
-                                <td>Mrs.S.Visalatchy, Mr.S.Selvaganapathy</td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>Managing the marriage hall reservation and accounting system with online facility</td>
-                                <td>Mrs.C.Mallika, Mrs.A.Hema</td>
-                            </tr>
-                            <tr>
-                                <td>4</td>
-                                <td>Secure mining of association rule in horizontally distributed database for Electricity department</td>
-                                <td>Mrs.J.Vanitha, Mrs.A.Hema, Ms.K.LakshmiPriya</td>
-                            </tr>
-                            <tr>
-                                <td>5</td>
-                                <td>LAN-Video Stream</td>
-                                <td>Mrs.C.Mallika, Mrs.S.Visalatchy, Mr.S.Selvaganapathy</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="table-responsive">
+                        <table class="table table-striped table-bordered">
+                            <thead class="table-theme">
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>Event Name</th>
+                                    <th>Name Of The Institution</th>
+                                    <th>Name Of The Student</th>
+                                    <th>Prize Won</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @php
+                                    $serialNumber = 1;
+                                @endphp
+                                @foreach($mcast14 as $sts)
+                                    @if($sts->department == 'MCA' && $sts->year == '2012-2013')
+                                        <tr>
+                                            <td>{{ $serialNumber }}</td>
+                                            <td>{{ $sts->event_name }}</td>
+                                            <td>{{ $sts->institution_name }}</td>
+                                            <td>{{ $sts->student_name }}</td>
+                                            <td>{{ $sts->prize_won }}</td>
+                                        </tr>
+                                        @php
+                                            $serialNumber++;
+                                        @endphp
+                                    @endif
+                                @endforeach
+                            </tbody>
+                        </table>
+
+                        <!-- Debugging: Check if any data is being rendered -->
+                        @if($mcast14->isEmpty())
+                            <p>No data available.</p>
+                        @endif
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -169,7 +173,7 @@
         <li><a href="https://coe.egspec.org/" target="_blank"><span><i class="fa-light fa-arrow-right"></i></span>Curriculum</a></li>
         <li><a href="{{ url('/academics/departments/postgraduate/master-of-computer-applications/research-publications') }}"><span><i class="fa-light fa-arrow-right"></i></span>Research & Publications</a></li>
         <li><a href="{{ url('/academics/departments/postgraduate/master-of-computer-applications/industry-collabration') }}"><span><i class="fa-light fa-arrow-right"></i></span>Industry Collaboration</a></li>
-        <li><a href="{{ url('/academics/departments/postgraduate/master-of-computer-applications/infrastructure') }}"><span><i class="fa-light fa-arrow-right"></i></span>Infrastructure</a></li>
+        <li><a href="{{ url('/academics/departments/postgraduate/master-of-computer-applications/laboratories-and-facilities') }}"><span><i class="fa-light fa-arrow-right"></i></span>Laboratories and Facilities</a></li>
         <li><a href="{{ url('/placements/statistics') }}"><span><i class="fa-light fa-arrow-right"></i></span>Placements</a></li>
         <li><a href="{{ url('/academics/departments/postgraduate/master-of-computer-applications/student-achievements') }}"><span><i class="fa-light fa-arrow-right"></i></span>Student Achievements</a></li>
         <li><a href="{{ url('/academics/departments/postgraduate/master-of-computer-applications/program-outcomes') }}"><span><i class="fa-light fa-arrow-right"></i></span>Program Outcomes</a></li>

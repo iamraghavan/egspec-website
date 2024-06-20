@@ -4,7 +4,7 @@
 @include('components.breadcrumb', ['value_1' => 'Academics',
 'value_2' => 'Departments',
 'value_3' => 'Master\'s of Computer Applications',
-'page_title' => 'Industry Collabration' ])
+'page_title' => 'Program Specific Outcomes' ])
 
 
 <div class="rts-program rts-section-padding">
@@ -15,51 +15,33 @@
                 <div class="col-lg-8">
 
 
-                    <div class="program-description-area">
-
-                        <div class="program-credit-area">
-                            <h3 class="rts-section-title animated fadeIn" >Industry Collaboration</h3>
-
-                            <div class="program-accordion my-5">
-                                <div class="accordion" id="rts-accordion">
-
-                                    <div class="accordion-item">
-
-                                        <div>
-                                            <div class="accordion-body-content">
-                                                <table class="table">
-
-                                                    <tbody>
-                                                        <tr>
-                                                            <td><a href="@blob('academics/departments/undergraduate/information-technology/industry-collaboration/industry-collabration.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'> Industry Collabration </a></td>
-                                                            <td><i class="fa fa-file-pdf"></i> / PDF File</td>
-                                                        </tr>
-
-                                                    </tbody>
-                                                </table>
-
-
-
-                                            </div>
-                                        </div>
-
-
-                                    </div>
-
-                                </div>
-
-                            </div>
+                    <div class="admission-content-top">
+                        <div class="application-deadline">
+                           <h5 class="rts-section-title animated fadeIn">Program Specific Outcomes (PSOs)</h5>
+                           <div class="application-deadline__content mt-5">
+                              <div class="application-deadline__content--table">
+                                 <table class="table table-striped table-hover table-bordered">
+                                    <thead class="table-theme">
+                                       <tr>
+                                          <td>##</td>
+                                          <td>Program Specific Outcomes</td>
+                                       </tr>
+                                    </thead>
+                                    <tbody>
+                                       <tr>
+                                          <td><strong>PSO1</strong></td>
+                                          <td>To design, develop and test software solutions for real world applications using modern computational tools and techniques.</td>
+                                       </tr>
+                                       <tr>
+                                          <td><strong>PSO2</strong></td>
+                                          <td>To manage and analyze huge volumes of data in real-world applications and analyze with the aid of modern computing platforms, techniques and tools.</td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </div>
                         </div>
-
-                    </div>
-
-                    <div class="iframe-div">
-                        <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=@blob('academics/departments/undergraduate/information-technology/industry-collaboration/industry-collabration.pdf')#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="
-                    height: 100rem !important;
-                "></iframe>
-                    </div>
-
-
+                     </div>
 
                 </div>
                 <!-- sidebar -->
