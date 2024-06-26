@@ -157,7 +157,7 @@ Route::get('/about/strategic-plan', [PagesController::class, 'strategic_plan']);
 Route::get('/about/strategic-plan-meeting-minutes', [PagesController::class, 'strategic_plan_meeting_minutes']);
 
 // Dean About Content
-Route::get('/about/dean',[PagesController::class, 'about_dean']);
+Route::get('/about/dean', [PagesController::class, 'about_dean']);
 
 
 
