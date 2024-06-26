@@ -603,6 +603,12 @@ class PagesController extends Controller
     }
 
 
+    public function about_dean()
+    {
+        return view('pages.about.dean');
+
+    }
+
     /* Placement */
 
 
