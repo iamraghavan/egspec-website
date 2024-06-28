@@ -15433,7 +15433,7 @@ nav ul li a {
 
 .main-nav-one ul li a.nav-link {
     color: #1f1f25;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 400
 }
 
@@ -15445,7 +15445,14 @@ nav ul li a {
 .main-nav-one ul li.has-dropdown a.nav-link {
     padding: 31px 15px;
     color: #af005f;
-    font-size: 15px;
+    font-size: 17px;
+    font-weight: 500
+}
+
+.main-nav-one ul li.dropdownss a.nav-link {
+    padding: 31px 15px;
+    color: #af005f;
+    font-size: 17px;
     font-weight: 500
 }
 
@@ -23820,4 +23827,89 @@ form {
     height: auto;
     overflow: hidden;
     position: relative
+}
+
+ /* Add the following styles */
+ .hide-on-mobile {
+    display: block;
+}
+
+@media (min-width: 769px) {
+    .header-one-wrapper {
+        margin: -1.5rem 0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .hide-on-mobile {
+        display: none;
+    }
+
+    .header-middle-wrapper {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .header-middle-wrapper .logo-area {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header-right-logos {
+        display: none;
+    }
+
+    .menu-bar {
+        display: block;
+        margin-left: auto;
+    }
+}
+
+.header-middle-wrapper {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.square-logo {
+    width: auto;
+    height: 60px;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .square-logo {
+        display: none;
+    }
+}
+
+.main-nav-one nav {
+    padding: 0;
+}
+
+/* Separator Line Styles */
+.header-separator {
+    display: none;
+}
+
+@media (min-width: 769px) {
+    .header-separator {
+        display: block;
+    }
+
+    .separator-line {
+        height: 1px;
+        background-color: #ccc; /* Adjust the color as needed */
+        margin: 0;
+    }
+
+    .nav-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-nav-one nav ul {
+        display: flex;
+        justify-content: center;
+    }
 }
