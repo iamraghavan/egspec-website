@@ -238,11 +238,12 @@ Route::get('/academics/departments/postgraduate/master-of-computer-applications/
 
 Route::get('/academics/departments/postgraduate/master-of-business-administration', [PagesController::class, 'department_mba']);
 Route::get('/academics/departments/postgraduate/master-of-business-administration/department-highlights', [PagesController::class, 'department_mba_department_highlights']);
-// Route::get('/academics/departments/postgraduate/master-of-business-administration/hods-desk', [PagesController::class, 'department_mba_hods_desk']);
+Route::get('/academics/departments/postgraduate/master-of-business-administration/hods-desk', [PagesController::class, 'department_mba_hods_desk']);
 Route::get('/academics/departments/postgraduate/master-of-business-administration/faculty-details', [PagesController::class, 'department_mba_faculty_details']);
-
-
-
+Route::get('/academics/departments/postgraduate/master-of-business-administration/research-publications', [PagesController::class, 'department_mba_research_publications']);
+Route::get('/academics/departments/postgraduate/master-of-business-administration/industry-collaboration', [PagesController::class, 'department_mba_industry_collabration']);
+// Route::get('/academics/departments/postgraduate/master-of-business-administration/laboratories-and-facilities',[PagesController::class,'department_mba_laboratories_and_facilities']);
+Route::get('/academics/departments/postgraduate/master-of-business-administration/student-achievements', [PagesController::class, 'department_mba_student_achievements']);
 
 
 

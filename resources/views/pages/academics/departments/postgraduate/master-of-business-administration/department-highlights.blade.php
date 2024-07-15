@@ -134,9 +134,10 @@
                         </div>
                         <!-- contact info -->
                         <x-dept-contact-info
-                        name="Dr. R. Karthi"
-                        :phones="[' ']"
-                        :emails="[' ']"/>
+    name="Dr. R. Karthi"
+    :phones="['+91 9842774807']"
+    :emails="['karthi@egspec.org']"/>
+
                     </div>
                 </div>
             </div>

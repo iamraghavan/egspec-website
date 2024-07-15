@@ -606,7 +606,6 @@ class PagesController extends Controller
     public function about_dean()
     {
         return view('pages.about.dean');
-
     }
 
     /* Placement */
@@ -849,9 +848,10 @@ class PagesController extends Controller
 
     public function department_mca_student_achievements()
     {
-        $mcast14 = Cache::remember('students_achivement', 120, function () {
-            return StudentAchievement::all();
+        $mcast14 = Cache::remember('students_achievement_mca', 120, function () {
+            return StudentAchievement::where('department', 'MCA')->get();
         });
+
         return view('pages.academics.departments.postgraduate.master-of-computer-applications.student-achievements', ['mcast14' => $mcast14]);
     }
 
@@ -879,6 +879,8 @@ class PagesController extends Controller
     }
 
 
+
+
     // Department -> Postgraduate -> Masters of Business Administration
 
     public function department_mba()
@@ -895,6 +897,37 @@ class PagesController extends Controller
     {
         return view('pages.academics.departments.postgraduate.master-of-business-administration.faculty-details');
     }
+
+    public function department_mba_hods_desk()
+    {
+        return view('pages.academics.departments.postgraduate.master-of-business-administration.hods-desk');
+    }
+
+    public function department_mba_research_publications()
+    {
+        return view('pages.academics.departments.postgraduate.master-of-business-administration.research-publications');
+    }
+
+    public function department_mba_industry_collabration()
+    {
+        return view('pages.academics.departments.postgraduate.master-of-business-administration.industry-collabration');
+    }
+
+    public function department_mba_student_achievements()
+    {
+        $mbaStudentsAchivements = Cache::remember('students_achievement_mba', 120, function () {
+            return StudentAchievement::where('department', 'MBA')->get();
+        });
+
+        return view('pages.academics.departments.postgraduate.master-of-business-administration.student-achievements', ['mbaStudentsAchivements' => $mbaStudentsAchivements]);
+    }
+
+
+
+
+
+
+
 
     // Department -> Undergraduate -> Mechnical Engineering
 
