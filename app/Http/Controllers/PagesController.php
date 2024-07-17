@@ -923,6 +923,49 @@ class PagesController extends Controller
     }
 
 
+    public function department_mba_program_outcomes()
+    {
+        return view('pages.academics.departments.postgraduate.master-of-business-administration.program-outcomes');
+    }
+
+
+    public function department_mba_programme_educational_objectives()
+    {
+        return view('pages.academics.departments.postgraduate.master-of-business-administration.programme-educational-objectives');
+    }
+
+
+    public function department_mba_programme_specific_outcomes()
+    {
+        return view('pages.academics.departments.postgraduate.master-of-business-administration.programme-specific-outcomes');
+    }
+
+
+
+    // Department -> Undergraduate -> Artificial Intelligence & Data Science
+
+    public function ug_artificial_intelligence_data_science()
+    {
+        return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.artificial-intelligence-data-science');
+    }
+
+    public function ug_artificial_intelligence_data_science_department_highlights()
+    {
+        return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.department-highlights');
+    }
+
+    public function ug_artificial_intelligence_data_science_hods_desk()
+    {
+        return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.hods-desk');
+    }
+
+    public function ug_artificial_intelligence_data_science_faculty_details()
+    {
+        return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.faculty-details');
+    }
+
+
+
 
 
 

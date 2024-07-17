@@ -8,10 +8,16 @@ use App\Http\Controllers\AdFormController;
 // Other Backend Operation Routes
 Route::post('/admission-submit-form', [AdFormController::class, 'adsubmitForm'])->name('adsubmitForm');
 
-
 Route::get('/', [PagesController::class, 'index']);
 Route::get('/right-to-information', [PagesController::class, 'rti']);
 Route::get('/mandatory-disclosure', [PagesController::class, 'md']);
+
+
+
+
+// Route::get('/', [PagesController::class, 'index']);
+// Route::get('/right-to-information', [PagesController::class, 'rti']);
+// Route::get('/mandatory-disclosure', [PagesController::class, 'md']);
 
 // Skill Development Center
 
@@ -219,6 +225,28 @@ Route::get('/academics/departments/undergraduate/electronics-and-communication-e
 
 
 
+// Department -> Undergraduate -> Artificial Intelligence & Data Science
+
+Route::get('/academics/departments/undergraduate/artificial-intelligence-and-data-science', [PagesController::class, 'ug_artificial_intelligence_data_science']);
+Route::get('/academics/departments/undergraduate/artificial-intelligence-and-data-science/department-highlights', [PagesController::class, 'ug_artificial_intelligence_data_science_department_highlights']);
+Route::get('/academics/departments/undergraduate/artificial-intelligence-and-data-science/hods-desk', [PagesController::class, 'ug_artificial_intelligence_data_science_hods_desk']);
+Route::get('/academics/departments/undergraduate/artificial-intelligence-and-data-science/faculty-details', [PagesController::class, 'ug_artificial_intelligence_data_science_faculty_details']);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Department -> Postgraduate -> Master of Computer Application
 
 Route::get('/academics/departments/postgraduate/master-of-computer-applications', [PagesController::class, 'department_mca']);
@@ -244,6 +272,13 @@ Route::get('/academics/departments/postgraduate/master-of-business-administratio
 Route::get('/academics/departments/postgraduate/master-of-business-administration/industry-collaboration', [PagesController::class, 'department_mba_industry_collabration']);
 // Route::get('/academics/departments/postgraduate/master-of-business-administration/laboratories-and-facilities',[PagesController::class,'department_mba_laboratories_and_facilities']);
 Route::get('/academics/departments/postgraduate/master-of-business-administration/student-achievements', [PagesController::class, 'department_mba_student_achievements']);
+Route::get('/academics/departments/postgraduate/master-of-business-administration/program-outcomes', [PagesController::class, 'department_mba_program_outcomes']);
+Route::get('/academics/departments/postgraduate/master-of-business-administration/programme-educational-objectives', [PagesController::class, 'department_mba_programme_educational_objectives']);
+Route::get('/academics/departments/postgraduate/master-of-business-administration/programme-specific-outcomes', [PagesController::class, 'department_mba_programme_specific_outcomes']);
+
+
+
+
 
 
 

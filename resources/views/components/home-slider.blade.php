@@ -10,10 +10,10 @@
         @endforeach
     </div>
     <!-- Add Pagination -->
-    <div class="swiper-pagination unique-desktop-swiper-pagination"></div>
+    {{-- <div class="swiper-pagination unique-desktop-swiper-pagination"></div> --}}
     <!-- Add Navigation -->
-    <div class="swiper-button-next unique-desktop-swiper-button-next"></div>
-    <div class="swiper-button-prev unique-desktop-swiper-button-prev"></div>
+    {{-- <div class="swiper-button-next unique-desktop-swiper-button-next"></div>
+    <div class="swiper-button-prev unique-desktop-swiper-button-prev"></div> --}}
 </div>
 
 <!-- Mobile Slider -->
@@ -28,10 +28,10 @@
         @endforeach
     </div>
     <!-- Add Pagination -->
-    <div class="swiper-pagination unique-mobile-swiper-pagination"></div>
+    {{-- <div class="swiper-pagination unique-mobile-swiper-pagination"></div> --}}
     <!-- Add Navigation -->
-    <div class="swiper-button-next unique-mobile-swiper-button-next"></div>
-    <div class="swiper-button-prev unique-mobile-swiper-button-prev"></div>
+    {{-- <div class="swiper-button-next unique-mobile-swiper-button-next"></div>
+    <div class="swiper-button-prev unique-mobile-swiper-button-prev"></div> --}}
 </div>
 <style>
     /* Unique CSS for Desktop Slider */
@@ -110,43 +110,46 @@
     var desktopSwiper = new Swiper('.unique-desktop-slider-container', {
         loop: true,
         autoplay: {
-            delay: 3000,
+            delay: 5000,
             disableOnInteraction: false,
         },
-        speed: 1000, // Speed of transition
+        speed: 3000, // Speed of transition
         effect: 'slide', // Use 'slide' effect for smooth animation
-        pagination: {
-            el: '.unique-desktop-swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.unique-desktop-swiper-button-next',
-            prevEl: '.unique-desktop-swiper-button-prev',
-        },
+
     });
 
     // Initialize Swiper for mobile slider
     var mobileSwiper = new Swiper('.unique-mobile-slider-container', {
         loop: true,
         autoplay: {
-            delay: 3000,
+            delay: 5000,
             disableOnInteraction: false,
         },
-        speed: 1000, // Speed of transition
+        speed: 3000, // Speed of transition
         effect: 'slide', // Use 'slide' effect for smooth animation
-        pagination: {
-            el: '.unique-mobile-swiper-pagination',
-            clickable: true,
-        },
-        navigation: {
-            nextEl: '.unique-mobile-swiper-button-next',
-            prevEl: '.unique-mobile-swiper-button-prev',
-        },
+
     });
 
     // Function to toggle slider visibility based on screen size
     function toggleSlider() {
-        var desktopSlider = document.querySelector('.unique-desktop-slider-container');
-        var mobileSlider = document.query
+            var desktopSlider = document.querySelector('.unique-desktop-slider-container');
+            var mobileSlider = document.querySelector('.unique-mobile-slider-container');
+            if (window.innerWidth >= 720) { // Desktop or tablet size
+                desktopSlider.style.display = 'block';
+                mobileSlider.style.display = 'none';
+            } else { // Mobile device size
+                desktopSlider.style.display = 'none';
+                mobileSlider.style.display = 'block';
+            }
+        }
+
+        // Initial toggle on page load
+        toggleSlider();
+
+        // Listen for window resize event and toggle sliders accordingly
+        window.addEventListener('resize', function() {
+            toggleSlider();
+        });
+    });
 
 </script>

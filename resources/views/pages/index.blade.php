@@ -61,12 +61,13 @@
                                 <div class="single-event-counter">
                                     <div class="count-number rt-clip-text"></div>
                                 </div>
+                                <a href="https://icrdicct-egspec.onrender.com/" target="_blank">
                                 <div class="single-event-content">
-                                    <h5 class="event-title">Sample Event 01</h5>
+                                    <h5 class="event-title">ICRDICCT '2025</h5>
                                     <div class="single-event-content-meta">
                                         <div class="event-date">
                                             <span><i class="fal fa-calendar"></i></span>
-                                            <span>November 28, 2023</span>
+                                            <span>April 4th & 5th, 2025</span>
                                         </div>
                                         <div class="event-time">
                                             <span><i class="fa-sharp fa-thin fa-clock"></i></span>
@@ -74,10 +75,11 @@
                                         </div>
                                         <div class="event-place">
                                             <span><i class="fa-sharp fa-thin fa-location-dot"></i></span>
-                                            <span>EGSPEC</span>
+                                            <span>E.G.S. Pillay Engineering College</span>
                                         </div>
                                     </div>
                                 </div>
+                            </a>
                             </li>
                             <li class="single-event">
                                 <div class="single-event-counter">

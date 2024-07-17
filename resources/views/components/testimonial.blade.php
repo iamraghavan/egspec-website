@@ -82,13 +82,13 @@ for students and teachers to acquire knowledge and a platform for success.",
                             </div>
                         </div>
                         <!-- rts dot -->
-                        <div
+                        {{-- <div
                             class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
                             <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
                                 role="button" aria-label="Go to slide 1" aria-current="true"></span><span
                                 class="swiper-pagination-bullet" tabindex="0" role="button"
                                 aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0"
-                                role="button" aria-label="Go to slide 3"></span></div>
+                                role="button" aria-label="Go to slide 3"></span></div> --}}
                     </div>
                 </div>
             </div>
@@ -97,3 +97,23 @@ for students and teachers to acquire knowledge and a platform for success.",
 </div>
 
 
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    // Initialize Swiper for testimonial section
+    var testimonialSwiper = new Swiper('.testimonial-swiper', {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        speed: 1000,
+        effect: 'slide',
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+});
+
+</script>
