@@ -965,7 +965,40 @@ class PagesController extends Controller
     }
 
 
+    public function ug_artificial_intelligence_data_science_research_publications()
+    {
+        return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.research-publications');
+    }
 
+    public function ug_artificial_intelligence_data_science_industry_collabration()
+    {
+        return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.industry-collabration');
+    }
+
+    public function ug_artificial_intelligence_data_science_infrastructure()
+    {
+        return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.infrastructure');
+    }
+
+    public function ug_artificial_intelligence_data_science_student_achievements()
+    {
+        return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.student-achievements');
+    }
+
+    public function ug_artificial_intelligence_data_science_program_outcomes()
+    {
+        return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.program-outcomes');
+    }
+
+    public function ug_artificial_intelligence_data_science_programme_educational_objectives()
+    {
+        return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.programme-educational-objectives');
+    }
+
+    public function ug_artificial_intelligence_data_science_programme_specific_outcomes()
+    {
+        return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.programme-specific-outcomes');
+    }
 
 
 

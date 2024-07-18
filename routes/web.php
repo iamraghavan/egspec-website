@@ -184,7 +184,7 @@ Route::get('/placements', [PagesController::class, 'placement'])->name('placemen
 // Department -> Undergraduate -> Mechnical Engineering
 Route::get('/academics/departments/undergraduate/mechanical-engineering', [PagesController::class, 'ug_mechnical_engineering']);
 Route::get('/academics/departments/undergraduate/mechanical-engineering/research-publications', [PagesController::class, 'ug_mechnical_engineering_research_publications']);
-Route::get('/academics/departments/undergraduate/mechanical-engineering/industry-collabration', [PagesController::class, 'ug_mechnical_engineering_industry_collabration']);
+Route::get('/academics/departments/undergraduate/mechanical-engineering/industry-collaboration', [PagesController::class, 'ug_mechnical_engineering_industry_collabration']);
 Route::get('/academics/departments/undergraduate/mechanical-engineering/infrastructure', [PagesController::class, 'ug_mechnical_engineering_infrastructure']);
 
 
@@ -195,7 +195,7 @@ Route::get('/academics/departments/undergraduate/information-technology/departme
 Route::get('/academics/departments/undergraduate/information-technology/hods-desk', [PagesController::class, 'ug_information_technology_hods_desk']);
 Route::get('/academics/departments/undergraduate/information-technology/faculty-details', [PagesController::class, 'ug_information_technology_faculty_details']);
 Route::get('/academics/departments/undergraduate/information-technology/research-publications', [PagesController::class, 'ug_information_technology_research_publications']);
-Route::get('/academics/departments/undergraduate/information-technology/industry-collabration', [PagesController::class, 'ug_information_technology_industry_collabration']);
+Route::get('/academics/departments/undergraduate/information-technology/industry-collaboration', [PagesController::class, 'ug_information_technology_industry_collabration']);
 Route::get('/academics/departments/undergraduate/information-technology/infrastructure', [PagesController::class, 'ug_information_technology_infrastructure']);
 Route::get('/academics/departments/undergraduate/information-technology/student-achievements', [PagesController::class, 'ug_information_technology_student_achievements']);
 Route::get('/academics/departments/undergraduate/information-technology/program-outcomes', [PagesController::class, 'ug_information_technology_program_outcomes']);
@@ -231,12 +231,13 @@ Route::get('/academics/departments/undergraduate/artificial-intelligence-and-dat
 Route::get('/academics/departments/undergraduate/artificial-intelligence-and-data-science/department-highlights', [PagesController::class, 'ug_artificial_intelligence_data_science_department_highlights']);
 Route::get('/academics/departments/undergraduate/artificial-intelligence-and-data-science/hods-desk', [PagesController::class, 'ug_artificial_intelligence_data_science_hods_desk']);
 Route::get('/academics/departments/undergraduate/artificial-intelligence-and-data-science/faculty-details', [PagesController::class, 'ug_artificial_intelligence_data_science_faculty_details']);
-
-
-
-
-
-
+Route::get('/academics/departments/undergraduate/artificial-intelligence-and-data-science/research-publications', [PagesController::class, 'ug_artificial_intelligence_data_science_research_publications']);
+Route::get('/academics/departments/undergraduate/artificial-intelligence-and-data-science/industry-collaboration', [PagesController::class, 'ug_artificial_intelligence_data_science_industry_collabration']);
+Route::get('/academics/departments/undergraduate/artificial-intelligence-and-data-science/infrastructure', [PagesController::class, 'ug_artificial_intelligence_data_science_infrastructure']);
+Route::get('/academics/departments/undergraduate/artificial-intelligence-and-data-science/student-achievements', [PagesController::class, 'ug_artificial_intelligence_data_science_student_achievements']);
+Route::get('/academics/departments/undergraduate/artificial-intelligence-and-data-science/program-outcomes', [PagesController::class, 'ug_artificial_intelligence_data_science_program_outcomes']);
+Route::get('/academics/departments/undergraduate/artificial-intelligence-and-data-science/programme-educational-objectives', [PagesController::class, 'ug_artificial_intelligence_data_science_programme_educational_objectives']);
+Route::get('/academics/departments/undergraduate/artificial-intelligence-and-data-science/programme-specific-outcomes', [PagesController::class, 'ug_artificial_intelligence_data_science_programme_specific_outcomes']);
 
 
 
@@ -254,7 +255,7 @@ Route::get('/academics/departments/postgraduate/master-of-computer-applications/
 Route::get('/academics/departments/postgraduate/master-of-computer-applications/hods-desk', [PagesController::class, 'department_mca_hods_desk']);
 Route::get('/academics/departments/postgraduate/master-of-computer-applications/faculty-details', [PagesController::class, 'department_mca_faculty_details']);
 Route::get('/academics/departments/postgraduate/master-of-computer-applications/research-publications', [PagesController::class, 'department_mca_research_publications']);
-Route::get('/academics/departments/postgraduate/master-of-computer-applications/industry-collabration', [PagesController::class, 'department_mca_industry_collabration']);
+Route::get('/academics/departments/postgraduate/master-of-computer-applications/industry-collaboration', [PagesController::class, 'department_mca_industry_collabration']);
 Route::get('/academics/departments/postgraduate/master-of-computer-applications/student-achievements', [PagesController::class, 'department_mca_student_achievements']);
 Route::get('/academics/departments/postgraduate/master-of-computer-applications/laboratories-and-facilities', [PagesController::class, 'department_mca_laboratories_and_facilities']);
 Route::get('/academics/departments/postgraduate/master-of-computer-applications/program-outcomes', [PagesController::class, 'department_mca_program_outcomes']);
