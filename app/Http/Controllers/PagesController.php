@@ -1028,4 +1028,9 @@ class PagesController extends Controller
 
         return view('pages.academics.departments.undergraduate.mechanical-engineering.infrastructure');
     }
+
+    public function ug_mechanical_engineering_student_achievements()
+    {
+        return view('pages.academics.departments.undergraduate.mechanical-engineering.student-achievements');
+    }
 }

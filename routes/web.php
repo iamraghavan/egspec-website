@@ -186,6 +186,21 @@ Route::get('/academics/departments/undergraduate/mechanical-engineering', [Pages
 Route::get('/academics/departments/undergraduate/mechanical-engineering/research-publications', [PagesController::class, 'ug_mechnical_engineering_research_publications']);
 Route::get('/academics/departments/undergraduate/mechanical-engineering/industry-collaboration', [PagesController::class, 'ug_mechnical_engineering_industry_collabration']);
 Route::get('/academics/departments/undergraduate/mechanical-engineering/infrastructure', [PagesController::class, 'ug_mechnical_engineering_infrastructure']);
+Route::get('/academics/departments/undergraduate/mechanical-engineering/student-achievements', [PagesController::class, 'ug_mechanical_engineering_student_achievements']);
+
+
+
+// Route::get('/academics/departments/undergraduate/mechanical-engineering', [PagesController::class, 'ug_mechanical_engineering']);
+// Route::get('/academics/departments/undergraduate/mechanical-engineering/department-highlights', [PagesController::class, 'ug_mechanical_engineering_department_highlights']);
+// Route::get('/academics/departments/undergraduate/mechanical-engineering/hods-desk', [PagesController::class, 'ug_mechanical_engineering_hods_desk']);
+// Route::get('/academics/departments/undergraduate/mechanical-engineering/faculty-details', [PagesController::class, 'ug_mechanical_engineering_faculty_details']);
+// Route::get('/academics/departments/undergraduate/mechanical-engineering/research-publications', [PagesController::class, 'ug_mechanical_engineering_research_publications']);
+// Route::get('/academics/departments/undergraduate/mechanical-engineering/industry-collaboration', [PagesController::class, 'ug_mechanical_engineering_industry_collabration']);
+// Route::get('/academics/departments/undergraduate/mechanical-engineering/infrastructure', [PagesController::class, 'ug_mechanical_engineering_infrastructure']);
+// Route::get('/academics/departments/undergraduate/mechanical-engineering/student-achievements', [PagesController::class, 'ug_mechanical_engineering_student_achievements']);
+// Route::get('/academics/departments/undergraduate/mechanical-engineering/program-outcomes', [PagesController::class, 'ug_mechanical_engineering_program_outcomes']);
+// Route::get('/academics/departments/undergraduate/mechanical-engineering/programme-educational-objectives', [PagesController::class, 'ug_mechanical_engineering_programme_educational_objectives']);
+// Route::get('/academics/departments/undergraduate/mechanical-engineering/programme-specific-outcomes', [PagesController::class, 'ug_mechanical_engineering_programme_specific_outcomes']);
 
 
 
