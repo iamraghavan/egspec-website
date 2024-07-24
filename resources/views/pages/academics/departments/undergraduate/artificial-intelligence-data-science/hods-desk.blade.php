@@ -21,8 +21,8 @@
                                 <div class="rts-section">
                                     <div class="col-lg-4 col-md-3 col-sm-12 text-center">
                                         <picture>
-                                            <source srcset="@blob('profile/dr-s-palani-murugan.webp')" type="image/webp">
-                                            <img src="@blob('profile/dr-s-palani-murugan.webp')" class="img-fluid rounded" alt="egspec_dr_s_palani_murugan" style="max-width: 200px;">
+                                            <source srcset="@blob('profile/dr_s_palani_murugan.webp')" type="image/webp">
+                                            <img src="@blob('profile/dr_s_palani_murugan.webp')" class="img-fluid rounded" alt="egspec_dr_s_palani_murugan" style="max-width: 200px;">
                                         </picture>
                                     </div>
                                     <div class="col-lg-8 col-md-9 col-sm-12">

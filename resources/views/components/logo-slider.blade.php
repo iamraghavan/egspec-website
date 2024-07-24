@@ -45,11 +45,13 @@
                     <div class="swiper-wrapper">
 
                      @foreach($sliderImages as $sliderImage)
-                    <div class="swiper-slide" style="width: 154.286px; margin-right: 30px;">
+                    <div class="swiper-slide" style="width: 110px; margin-right: 30px;">
                         <div class="single-brand-logo">
-                            <a href="#">
-                                <img src="{{ asset($sliderImage->image_url) }}" alt="{{ $sliderImage->alt_tag }} " loading="lazy" width="154" height="auto">
-                            </a>
+                            <picture>
+                                <!-- Define different image sources for different devices or resolutions -->
+                                <source srcset="{{ asset($sliderImage->image_url) }}" media="(min-width: 768px)">
+                                <img src="{{ asset($sliderImage->image_url) }}" alt="{{ $sliderImage->alt_tag }}" loading="lazy" width="110" height="auto">
+                            </picture>
                         </div>
                     </div>
                     @endforeach

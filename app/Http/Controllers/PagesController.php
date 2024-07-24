@@ -1029,8 +1029,46 @@ class PagesController extends Controller
         return view('pages.academics.departments.undergraduate.mechanical-engineering.infrastructure');
     }
 
+    public function ug_mechanical_engineering_department_highlights()
+    {
+        return view('pages.academics.departments.undergraduate.mechanical-engineering.department-highlights');
+    }
+
     public function ug_mechanical_engineering_student_achievements()
     {
         return view('pages.academics.departments.undergraduate.mechanical-engineering.student-achievements');
+    }
+
+    public function ug_mechanical_engineering_faculty_details()
+    {
+        return view('pages.academics.departments.undergraduate.mechanical-engineering.faculty-details');
+    }
+
+    public function ug_mechanical_engineering_program_outcomes()
+    {
+        return view('pages.academics.departments.undergraduate.mechanical-engineering.program-outcomes');
+    }
+
+    public function ug_mechanical_engineering_programme_educational_objectives()
+    {
+        return view('pages.academics.departments.undergraduate.mechanical-engineering.programme-educational-objectives');
+    }
+
+    public function ug_mechanical_engineering_programme_specific_outcomes()
+    {
+        return view('pages.academics.departments.undergraduate.mechanical-engineering.programme-specific-outcomes');
+    }
+
+
+    // Department -> Undergraduate -> Civil Engineering
+
+    public function ug_civil_engineering()
+    {
+        return view('pages.academics.departments.undergraduate.civil-engineering.civil-engineering');
+    }
+
+    public function ug_civil_engineering_faculty_details()
+    {
+        return view('pages.academics.departments.undergraduate.civil-engineering.faculty-details');
     }
 }

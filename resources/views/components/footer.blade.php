@@ -54,7 +54,12 @@ $footerLinks = [
                     <div class="col-md-6 col-sm-6 col-lg-4">
                         <div class="rts-footer-widget w-320">
                             <a href="index.html" class="d-block rts-footer-logo mb--40">
-                                <img src="{{ asset('/assets/images/logo-white.svg') }}" alt="EGSPEC">
+                                <picture>
+                                    <source srcset="{{ asset('/assets/images/logo-white.svg') }}" type="image/svg">
+                                    <img src="{{ asset('/assets/images/logo-white.svg') }}" alt="EGSPEC" class="img-fluid">
+                                </picture>
+
+                                {{-- <img src="{{ asset('/assets/images/logo-white.svg') }}" alt="EGSPEC"> --}}
                             </a>
 
                             <div class="rts-contact-link">

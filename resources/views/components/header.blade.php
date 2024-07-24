@@ -63,25 +63,47 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 d-flex align-items-center">
-                    <a href="{{ url("/") }}" class="logo-area">
-                        <img class="logo" src="{{ asset("/assets/images/logo_tran.svg") }}" alt="logo">
+                    <a href="{{ url('/') }}" class="logo-area">
+                        <picture>
+                            <source srcset="{{ asset('/assets/images/logo_tran.svg') }}" type="image/svg+xml">
+                            <img src="{{ asset('/assets/images/logo_tran.svg') }}" alt="logo" class="logo">
+                        </picture>
                     </a>
                     <div class="menu-bar ml-auto d-lg-none" id="menu-btn">
-                        <img src="{{ asset("/assets/images/icon/bar.svg") }}" alt="menu-bar">
+                        <picture>
+                            <source srcset="{{ asset('/assets/images/icon/bar.svg') }}" type="image/svg+xml">
+                            <img src="{{ asset('/assets/images/icon/bar.svg') }}" alt="menu-bar">
+                        </picture>
                     </div>
                 </div>
                 <div class="col-lg-6 text-right">
                     <div class="header-right-logos d-flex justify-content-end">
-                        <img src="https://www.citchennai.edu.in/wp-content/uploads/2019/01/ilp.png" alt="Logo 1" class="square-logo">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/All_India_Council_for_Technical_Education_logo.png" alt="Logo 1" class="square-logo">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/4/49/Anna_University_Logo.svg" alt="Logo 2" class="square-logo">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/1/1d/NAAC_LOGO.png" alt="Logo 3" class="square-logo">
-                        <img src="https://upload.wikimedia.org/wikipedia/en/5/52/National_Institutional_Ranking_Framework_logo.png" alt="Logo 4" class="square-logo">
+                        <picture>
+                            <source srcset="https://www.citchennai.edu.in/wp-content/uploads/2019/01/ilp.png" type="image/png">
+                            <img src="https://www.citchennai.edu.in/wp-content/uploads/2019/01/ilp.png" alt="Logo 1" class="square-logo">
+                        </picture>
+                        <picture>
+                            <source srcset="https://upload.wikimedia.org/wikipedia/en/e/eb/All_India_Council_for_Technical_Education_logo.png" type="image/png">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/All_India_Council_for_Technical_Education_logo.png" alt="Logo 1" class="square-logo">
+                        </picture>
+                        <picture>
+                            <source srcset="https://upload.wikimedia.org/wikipedia/en/4/49/Anna_University_Logo.svg" type="image/svg+xml">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/4/49/Anna_University_Logo.svg" alt="Logo 2" class="square-logo">
+                        </picture>
+                        <picture>
+                            <source srcset="https://upload.wikimedia.org/wikipedia/en/1/1d/NAAC_LOGO.png" type="image/png">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/1/1d/NAAC_LOGO.png" alt="Logo 3" class="square-logo">
+                        </picture>
+                        <picture>
+                            <source srcset="https://upload.wikimedia.org/wikipedia/en/5/52/National_Institutional_Ranking_Framework_logo.png" type="image/png">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/5/52/National_Institutional_Ranking_Framework_logo.png" alt="Logo 4" class="square-logo">
+                        </picture>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
 
     <!-- Separator Line -->
     <div class="header-separator">

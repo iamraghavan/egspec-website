@@ -13,7 +13,14 @@
         <div class="row">
           <!-- Poster (Right Side) -->
           <div class="col-lg-6">
-            <img src="{{ asset('images/egspec_model.webp') }}" class="img-fluid" alt="EGSPEC Admission {{ date('Y') }} - {{ date('Y') + 1 }}">
+            <picture>
+                <source srcset="{{ asset('images/egspec_model.webp') }}" media="(min-width: 1200px)">
+                <source srcset="{{ asset('images/egspec_model.webp') }}" media="(min-width: 768px)">
+                <source srcset="{{ asset('images/egspec_model.webp') }}" media="(max-width: 767px)">
+                <img src="{{ asset('images/egspec_model.webp') }}" class="img-fluid" alt="EGSPEC Admission {{ date('Y') }} - {{ date('Y') + 1 }}">
+            </picture>
+
+            {{-- <img src="{{ asset('images/egspec_model.webp') }}" class="img-fluid" alt="EGSPEC Admission {{ date('Y') }} - {{ date('Y') + 1 }}"> --}}
           </div>
           <!-- Input Form (Left Side) -->
           <div class="col-lg-6 mbo-temp">

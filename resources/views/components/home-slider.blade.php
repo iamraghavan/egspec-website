@@ -1,151 +1,140 @@
-<!-- Desktop Slider -->
-<div class="swiper-container unique-desktop-slider-container">
-    <div class="swiper-wrapper">
-        @foreach ($posterSlider as $slide)
-        <div class="swiper-slide">
-            <a href="{{ $slide->href_link }}" target="_blank" rel="noopener noreferrer">
-                <img  style="object-fit: cover; max-height: auto; width: 100%; aspect-ratio: auto; max-width: 100%;"
-    loading="eager"
-    fetchpriority="high"
-    sizes="(min-width: 1350px) 1350px, 100vw" src="{{ asset($slide->desktop_image_url) }}" alt="{{ $slide->alt_name }}" class="unique-desktop-slide-img">
-            </a>
-        </div>
-        @endforeach
+<!-- Desktop Carousel -->
+<div id="desktopCarousel" class="splide unique-desktop-carousel carousel-container">
+    <div class="splide__track">
+        <ul class="splide__list">
+            @foreach ($posterSlider as $slide)
+                <li class="splide__slide">
+                    <a href="{{ $slide->href_link }}" target="_blank" rel="noopener noreferrer">
+                        <picture>
+                            <source srcset="{{ asset(str_replace('.jpg', '.webp', $slide->desktop_image_url)) }}" type="image/webp">
+                            <img
+                                src="{{ asset($slide->desktop_image_url) }}"
+                                alt="{{ $slide->alt_name }}"
+                                class="d-block"
+                                style="object-fit: cover; width: 100%; height: auto;"
+                                loading="lazy"
+                                onerror="console.error('Image not found:', this.src)"
+                            >
+                        </picture>
+                    </a>
+                </li>
+            @endforeach
+        </ul>
     </div>
-    <!-- <div class="swiper-pagination unique-desktop-swiper-pagination"></div>
-    <div class="swiper-button-next unique-desktop-swiper-button-next"></div>
-    <div class="swiper-button-prev unique-desktop-swiper-button-prev"></div> -->
+    <div class="splide__progress">
+        <div class="splide__progress__bar"></div>
+    </div>
 </div>
 
-<!-- Mobile Slider -->
-<div class="swiper-container unique-mobile-slider-container">
-    <div class="swiper-wrapper">
-        @foreach ($posterSlider as $slide)
-        <div class="swiper-slide">
-            <a href="{{ $slide->href_link }}" target="_blank" rel="noopener noreferrer">
-                <img src="{{ $slide->mobile_image_url }}" alt="{{ $slide->alt_name }}" class="unique-mobile-slide-img">
-            </a>
-        </div>
-        @endforeach
+<!-- Mobile Carousel -->
+<div id="mobileCarousel" class="splide unique-mobile-carousel carousel-container">
+    <div class="splide__track">
+        <ul class="splide__list">
+            @foreach ($posterSlider as $slide)
+                <li class="splide__slide">
+                    <a href="{{ $slide->href_link }}" target="_blank" rel="noopener noreferrer">
+                        <picture>
+                            <source srcset="{{ asset(str_replace('.jpg', '.webp', $slide->mobile_image_url)) }}" type="image/webp">
+                            <img
+                                src="{{ asset($slide->mobile_image_url) }}"
+                                alt="{{ $slide->alt_name }}"
+                                class="d-block"
+                                style="object-fit: cover; width: 100%; height: auto;"
+                                loading="lazy"
+                                onerror="console.error('Image not found:', this.src)"
+                            >
+                        </picture>
+                    </a>
+                </li>
+            @endforeach
+        </ul>
     </div>
-    <!-- <div class="swiper-pagination unique-mobile-swiper-pagination"></div>
-    <div class="swiper-button-next unique-mobile-swiper-button-next"></div>
-    <div class="swiper-button-prev unique-mobile-swiper-button-prev"></div> -->
+    <div class="splide__progress">
+        <div class="splide__progress__bar"></div>
+    </div>
 </div>
 
 <style>
-    /* Ensure Swiper container fills its parent */
-.swiper-container {
-    width: 100%;
-    height: 100%;
-}
+    @import url('https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css');
 
-/* Adjust image size and fit */
-.swiper-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Hide mobile slider initially on larger screens */
-@media (min-width: 769px) {
-    .unique-mobile-slider-container {
-        display: none;
+    .carousel-container {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
     }
-}
 
+    .splide__list {
+        display: flex;
+    }
+
+    .splide__slide {
+        min-width: 100%;
+        box-sizing: border-box;
+    }
+
+    @media (min-width: 769px) {
+        .unique-mobile-carousel {
+            display: none;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .unique-desktop-carousel {
+            display: none;
+        }
+    }
 </style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/splidejs/4.1.4/js/splide.min.js" integrity="sha512-4TcjHXQMLM7Y6eqfiasrsnRCc8D/unDeY1UGKGgfwyLUCTsHYMxF7/UHayjItKQKIoP6TTQ6AMamb9w2GMAvNg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 
 <script>
     document.addEventListener("DOMContentLoaded", function () {
-        // Initialize Swiper for desktop slider
-        var desktopSwiper = new Swiper('.unique-desktop-slider-container', {
-    loop: true,
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
-    speed: 2000, 
-    effect: 'lide',     
-    navigation: {
-        nextEl: '.unique-desktop-swiper-button-next',
-        prevEl: '.unique-desktop-swiper-button-prev',
-    },
-    pagination: {
-        el: '.unique-desktop-swiper-pagination',
-        clickable: true,
-    },
-    on: {
-        slideChangeTransitionStart: function () {
-            // Add smooth transition effect on slide change
-            this.slides.forEach((slide) => {
-                slide.classList.add('swiper-slide-transitioning');
-            });
-        },
-        slideChangeTransitionEnd: function () {
-            // Remove smooth transition effect on slide change
-            this.slides.forEach((slide) => {
-                slide.classList.remove('swiper-slide-transitioning');
-            });
-        },
-    },
-});
+        let desktopCarousel;
+        let mobileCarousel;
 
-// Initialize Swiper for mobile slider
-var mobileSwiper = new Swiper('.unique-mobile-slider-container', {
-    loop: true,
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false,
-    },
-    speed: 2000, // Adjusted speed for smooth slow sliding
-    effect: 'lide', // Slide effect for smooth animation
-    direction: 'rtl', // Add this property to make the slider slide from right to left
-    navigation: {
-        nextEl: '.unique-mobile-swiper-button-next',
-        prevEl: '.unique-mobile-swiper-button-prev',
-    },
-    pagination: {
-        el: '.unique-mobile-swiper-pagination',
-        clickable: true,
-    },
-    on: {
-        slideChangeTransitionStart: function () {
-            // Add smooth transition effect on slide change
-            this.slides.forEach((slide) => {
-                slide.classList.add('swiper-slide-transitioning');
+        function initCarousel() {
+            desktopCarousel = new Splide('#desktopCarousel', {
+                type: 'loop',
+                perPage: 1,
+                autoplay: true,
+                interval: 5000,
+                pagination: true,
+                progress: true,
+                arrows: true,
             });
-        },
-        slideChangeTransitionEnd: function () {
-            // Remove smooth transition effect on slide change
-            this.slides.forEach((slide) => {
-                slide.classList.remove('swiper-slide-transitioning');
-            });
-        },
-    },
-});
 
-        // Function to toggle slider visibility based on screen size
-        function toggleSlider() {
-            var desktopSlider = document.querySelector('.unique-desktop-slider-container');
-            var mobileSlider = document.querySelector('.unique-mobile-slider-container');
-            if (window.innerWidth >= 769) { // Desktop or tablet size
-                desktopSwiper.update(); // Update swiper instance
-                desktopSlider.style.display = 'block';
-                mobileSlider.style.display = 'none';
-            } else { // Mobile device size
-                mobileSwiper.update(); // Update swiper instance
-                desktopSlider.style.display = 'none';
-                mobileSlider.style.display = 'block';
+            mobileCarousel = new Splide('#mobileCarousel', {
+                type: 'loop',
+                perPage: 1,
+                autoplay: true,
+                interval: 5000,
+                pagination: true,
+                progress: true,
+                arrows: false,
+            });
+
+            toggleCarousel();
+        }
+
+        function toggleCarousel() {
+            if (window.innerWidth >= 769) {
+                if (mobileCarousel && mobileCarousel.state.is(3)) {
+                    mobileCarousel.destroy();
+                }
+                if (!desktopCarousel.state.is(3)) {
+                    desktopCarousel.mount();
+                }
+            } else {
+                if (desktopCarousel && desktopCarousel.state.is(3)) {
+                    desktopCarousel.destroy();
+                }
+                if (!mobileCarousel.state.is(3)) {
+                    mobileCarousel.mount();
+                }
             }
         }
 
-        // Initial toggle on page load
-        toggleSlider();
-
-        // Listen for window resize event and toggle sliders accordingly
-        window.addEventListener('resize', function () {
-            toggleSlider();
-        });
+        initCarousel();
+        window.addEventListener('resize', toggleCarousel);
     });
 </script>
