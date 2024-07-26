@@ -1071,4 +1071,14 @@ class PagesController extends Controller
     {
         return view('pages.academics.departments.undergraduate.civil-engineering.faculty-details');
     }
+
+    public function ug_civil_engineering_research_publications()
+    {
+        return view('pages.academics.departments.undergraduate.civil-engineering.research-publications');
+    }
+
+    public function ug_civil_engineering_industry_collabration()
+    {
+        return view('pages.academics.departments.undergraduate.civil-engineering.industry-collabration');
+    }
 }

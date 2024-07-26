@@ -257,7 +257,8 @@ Route::get('/academics/departments/undergraduate/civil-engineering', [PagesContr
 // Route::get('/academics/departments/undergraduate/civil-engineering/department-highlights', [PagesController::class, 'ug_civil_engineering_department_highlights']);
 // Route::get('/academics/departments/undergraduate/civil-engineering/hods-desk', [PagesController::class, 'ug_civil_engineering_hods_desk']);
 Route::get('/academics/departments/undergraduate/civil-engineering/faculty-details', [PagesController::class, 'ug_civil_engineering_faculty_details']);
-
+Route::get('/academics/departments/undergraduate/civil-engineering/research-publications', [PagesController::class, 'ug_civil_engineering_research_publications']);
+Route::get('/academics/departments/undergraduate/civil-engineering/industry-collaboration', [PagesController::class, 'ug_civil_engineering_industry_collabration']);
 
 
 
