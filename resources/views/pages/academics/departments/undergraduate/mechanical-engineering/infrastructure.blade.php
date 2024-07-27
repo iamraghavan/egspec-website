@@ -15,10 +15,29 @@
       <div class="rts-program-description">
          <div class="row">
             {{-- <div class="col-lg-8"></div> --}}
-            <div class="col-lg-8 mx-auto" id="mechContainer"></div>
+            {{-- <div class="col-lg-8 mx-auto" id="mechContainer"></div> --}}
             <!-- sidebar -->
+            <div class="col-lg-8">
+                <div x-data="imageLoader()" x-init="fetchImages('/egspec-assets/mech-gallery', 'mechContainer')">
+                    <div id="mechContainer">
+                        <!-- Images will be injected here -->
+                        <template x-if="loading">
+                            <div class="row mx-0">
+                                <div class="col-md-6 mb-4" x-for="n in 6" :key="n">
+                                    <div class="skeleton"></div>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
 
 
+
+<style>
+#mechContainer img,.skeleton{width:100%;border-radius:4px}#mechContainer{display:flex;flex-wrap:wrap}#mechContainer .col-md-6{padding-left:.5rem;padding-right:.5rem}#mechContainer img{height:auto;object-fit:cover}.skeleton{background:#e0e0e0;height:200px;animation:1.5s ease-in-out infinite skeleton-loading}@keyframes skeleton-loading{0%{background-position:-100px 0}100%{background-position:100px 0}}
+
+</style>
 
             <div class="col-lg-4">
                 <div class="program-sidebar">

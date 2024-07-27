@@ -1099,6 +1099,6 @@ class PagesController extends Controller
 
     public function ug_civil_engineering_science_student_achievements()
     {
-        return view('pages.academics.departments.undergraduate.civil-engineering.science-student-achievements');
+        return view('pages.academics.departments.undergraduate.civil-engineering.student-achievements');
     }
 }
