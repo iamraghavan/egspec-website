@@ -613,7 +613,8 @@
                 </div>
 
             </div>
-            <!-- sidebar -->
+
+
             <div class="col-lg-4">
                 <div class="program-sidebar">
                     <!-- curriculum -->
@@ -630,17 +631,21 @@
                                 <li><a href="{{url('/academics/departments/undergraduate/civil-engineering/industry-collaboration')}}"><span><i class="fa-light fa-arrow-right"></i></span>Industry Collaboration</a></li>
                                 <li><a href="{{url('/academics/departments/undergraduate/civil-engineering/infrastructure')}}"><span><i class="fa-light fa-arrow-right"></i></span>Infrastructure</a></li>
                                 <li><a href="{{url('/placements/statistics')}}"><span><i class="fa-light fa-arrow-right"></i></span>Placements</a></li>
-                                <li><a href="{{url('/facilities')}}"><span><i class="fa-light fa-arrow-right"></i></span>Facilities</a></li>
-                                <li><a href="{{url('/co-curricular/student-achievements')}}"><span><i class="fa-light fa-arrow-right"></i></span>Students Achievements</a></li>
-                                <li><a href="{{url('/co-curricular')}}"><span><i class="fa-light fa-arrow-right"></i></span>Co-Curricular</a></li>
-                                <li><a href="{{url('/extra-curricular/sports')}}"><span><i class="fa-light fa-arrow-right"></i></span>Extra-Curricular</a></li>
+                                <li><a href="{{url('/academics/departments/undergraduate/civil-engineering/student-achievements')}}"><span><i class="fa-light fa-arrow-right"></i></span>Student Achievements</a></li>
+                                <li><a href="{{url('/academics/departments/undergraduate/civil-engineering/program-outcomes')}}"><span><i class="fa-light fa-arrow-right"></i></span>Program Outcomes</a></li>
+                                <li><a href="{{url('/academics/departments/undergraduate/civil-engineering/programme-educational-objectives')}}"><span><i class="fa-light fa-arrow-right"></i></span>Programme Educational Objectives</a></li>
+                                <li><a href="{{url('/academics/departments/undergraduate/civil-engineering/programme-specific-outcomes')}}"><span><i class="fa-light fa-arrow-right"></i></span>Programme Specific Outcomes</a></li>
                             </ul>
                         </div>
                     </div>
-                    <!-- curriculum end -->
+                    <!-- contact info -->
+                    <x-dept-contact-info
+                    name="Civil Engineering Department"
+                    :phones="['123-456-7890']"
+                    :emails="['civileng@university.edu']"/>
                 </div>
             </div>
-            <!-- sidebar end -->
+
          </div>
       </div>
    </div>

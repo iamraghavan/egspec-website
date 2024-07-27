@@ -259,6 +259,11 @@ Route::get('/academics/departments/undergraduate/civil-engineering', [PagesContr
 Route::get('/academics/departments/undergraduate/civil-engineering/faculty-details', [PagesController::class, 'ug_civil_engineering_faculty_details']);
 Route::get('/academics/departments/undergraduate/civil-engineering/research-publications', [PagesController::class, 'ug_civil_engineering_research_publications']);
 Route::get('/academics/departments/undergraduate/civil-engineering/industry-collaboration', [PagesController::class, 'ug_civil_engineering_industry_collabration']);
+Route::get('/academics/departments/undergraduate/civil-engineering/student-achievements', [PagesController::class, 'ug_civil_engineering_science_student_achievements']);
+// Route::get('/academics/departments/undergraduate/civil-engineering/infrastructure', [PagesController::class, 'ug_civil_engineering_infrastructure']);
+Route::get('/academics/departments/undergraduate/civil-engineering/program-outcomes', [PagesController::class, 'ug_civil_engineering_program_outcomes']);
+Route::get('/academics/departments/undergraduate/civil-engineering/programme-educational-objectives', [PagesController::class, 'ug_civil_engineering_programme_educational_objectives']);
+Route::get('/academics/departments/undergraduate/civil-engineering/programme-specific-outcomes', [PagesController::class, 'ug_civil_engineering_programme_specific_outcomes']);
 
 
 

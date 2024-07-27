@@ -1081,4 +1081,24 @@ class PagesController extends Controller
     {
         return view('pages.academics.departments.undergraduate.civil-engineering.industry-collabration');
     }
+
+    public function ug_civil_engineering_program_outcomes()
+    {
+        return view('pages.academics.departments.undergraduate.civil-engineering.program-outcomes');
+    }
+
+    public function ug_civil_engineering_programme_educational_objectives()
+    {
+        return view('pages.academics.departments.undergraduate.civil-engineering.programme-educational-objectives');
+    }
+
+    public function ug_civil_engineering_programme_specific_outcomes()
+    {
+        return view('pages.academics.departments.undergraduate.civil-engineering.programme-specific-outcomes');
+    }
+
+    public function ug_civil_engineering_science_student_achievements()
+    {
+        return view('pages.academics.departments.undergraduate.civil-engineering.science-student-achievements');
+    }
 }
