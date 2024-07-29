@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 use Illuminate\Support\Facades\Http;
 use App\Models\SliderImage;
@@ -20,7 +22,6 @@ use App\Models\Event;
 use App\Models\PlacementStatistic;
 use App\Models\StudentAchievement;
 use App\Models\WomenEmpowermentCellMember;
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Cache;
 
 
@@ -452,6 +453,53 @@ class PagesController extends Controller
 
 
     /* Research */
+
+
+    // Custom Research
+
+
+    public function showPublicationDetails(Request $request)
+    {
+        $department = $request->input('department');
+        $project = $request->input('project');
+
+        // Ensure parameters are sanitized to prevent directory traversal attacks
+        $department = preg_replace('/[^a-zA-Z0-9_-]/', '', $department);
+        $project = preg_replace('/[^a-zA-Z0-9_-]/', '', $project);
+
+        // Define the path to the JSON file based on department and project
+        $filePath = public_path("json/{$department}/{$project}.json");
+
+        // Check if the file exists
+        if (!file_exists($filePath)) {
+            abort(404, 'Data not found');
+        }
+
+        // Load and decode the JSON data
+        $jsonData = file_get_contents($filePath);
+        $data = json_decode($jsonData, true);
+
+        // Flatten the projects array
+        $projects = [];
+        foreach ($data['ConsultancyProjects'] as $academicYearData) {
+            foreach ($academicYearData['Projects'] as $project) {
+                $project['AcademicYear'] = $academicYearData['AcademicYear'];
+                $projects[] = $project;
+            }
+        }
+
+        // Pass the flattened projects array and department name to the view
+        return view('pages.research.publication-details-template', [
+            'ConsultancyProjects' => $projects,
+            'departmentName' => ucfirst($department)
+        ]);
+    }
+
+
+
+
+
+
 
     public function research_and_development()
     {

@@ -146,6 +146,10 @@ Route::get('/resources/projects/computer-science-and-engineering', [PagesControl
 Route::get('/resources/projects/information-technology', [PagesController::class, 'prj_information_technology']);
 Route::get('/resources/projects/electrical-and-electronics-engineering', [PagesController::class, 'prj_electrical_and_electronics_engineering']);
 
+Route::get('/research/publication-details/research-publications', [PagesController::class, 'showPublicationDetails']);
+
+
+
 // Route for About us
 
 Route::get('/about/our-focus', [PagesController::class, 'our_focus']);

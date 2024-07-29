@@ -15,68 +15,27 @@
       <div class="rts-program-description">
          <div class="row">
             <div class="col-lg-8">
-                <div class="program-description-area">
+                <div class="program-credit-area">
+                    <h3 class="rts-section-title animated fadeIn">Research &amp; Publications</h3>
+                    <div class="program-accordion my-5">
+                        <div class="accordion" id="rts-accordion">
+                            <div class="accordion-item">
+                                <div>
+                                    <div class="accordion-body-content">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td><a href="{{ url('/research/publication-details/research-publications?project=consultancy-projects&department=computer-science-and-engineering') }}">Consultancy Projects</a></td>
+                                                </tr>
+                                            </tbody>
 
-                    <div class="semister-fee">
+                                        </table>
 
-                        <div class="semister-fee__content">
-                            <h3 class="rts-section-title animated fadeIn " >Research &amp; Publications</h3>
-
-                            <br>
-
-                            @if(isset($consultancyProjects['ConsultancyProjects']) && count($consultancyProjects['ConsultancyProjects']) > 0)
-
-
-                            <div class="rts-fee-chart__tab">
-                                <nav>
-                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                        @foreach($consultancyProjects['ConsultancyProjects'] as $index => $academicYear)
-                                            <button class="nav-link {{ $index == 0 ? 'active' : '' }}" id="year-{{ $index }}-tab" data-bs-toggle="tab" data-bs-target="#year-{{ $index }}" type="button" role="tab" aria-controls="year-{{ $index }}" aria-selected="{{ $index == 0 ? 'true' : 'false' }}">
-                                                {{ $academicYear['AcademicYear'] }}
-                                            </button>
-                                        @endforeach
                                     </div>
-                                </nav>
-                                <div class="tab-content" id="nav-tabContent">
-                                    @foreach($consultancyProjects['ConsultancyProjects'] as $index => $academicYear)
-                                        <div class="tab-pane application-deadline__content--table fade {{ $index == 0 ? 'show active' : '' }}" id="year-{{ $index }}" role="tabpanel" aria-labelledby="year-{{ $index }}-tab">
-                                            @if(count($academicYear['Projects']) > 0)
-                                            <table class="table table-striped table-hover table-bordered mt-3">
-                                                <thead class="table-theme">
-                                                        <tr>
-                                                            <th>Project Title</th>
-                                                            <th>Company</th>
-                                                            <th>Duration/Period</th>
-                                                            <th>Budget (Rs)</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        @foreach($academicYear['Projects'] as $project)
-                                                            <tr>
-                                                                <td>{{ $project['ProjectTitle'] }}</td>
-                                                                <td>{{ $project['Company'] }}</td>
-                                                                <td>{{ $project['Duration'] ?? $project['Period'] }}</td>
-                                                                <td>{{ number_format($project['Budget'], 0) }}</td>
-                                                            </tr>
-                                                        @endforeach
-                                                    </tbody>
-                                                </table>
-                                            @else
-                                                <p>No consultancy projects available for this academic year.</p>
-                                            @endif
-                                        </div>
-                                    @endforeach
                                 </div>
                             </div>
-                        @else
-                            <p>No consultancy projects available.</p>
-                        @endif
                         </div>
-
-
-
                     </div>
-
                 </div>
 
 

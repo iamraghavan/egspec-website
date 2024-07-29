@@ -108,6 +108,8 @@
 <!-- Include jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+<script src="{{asset("/assets/js/raghavan/modal.js")}}"></script>
+
 
 <!-- Swiper JS -->
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -144,6 +146,9 @@
     <script src="{{ asset("/assets/js/plugins/nice-select.min.js") }}"></script>
     <!-- main Js -->
     <script src="{{ asset("/assets/js/main.js") }}"></script>
+
+    <link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
+    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
 
     <script>
         var swiper = new Swiper('.swiper-container', {
