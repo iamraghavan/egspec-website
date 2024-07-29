@@ -1101,4 +1101,67 @@ class PagesController extends Controller
     {
         return view('pages.academics.departments.undergraduate.civil-engineering.student-achievements');
     }
+
+    // Department -> Undergraduate -> Computer Science and Engineering
+
+    public function ug_computer_science_and_engineering()
+    {
+        return view('pages.academics.departments.undergraduate.computer-science-and-engineering.computer-science-and-engineering');
+    }
+
+    public function ug_computer_science_and_engineering_department_highlights()
+    {
+        return view('pages.academics.departments.undergraduate.computer-science-and-engineering.department-highlights');
+    }
+
+    public function ug_computer_science_and_engineering_hods_desk()
+    {
+        return view('pages.academics.departments.undergraduate.computer-science-and-engineering.hods-desk');
+    }
+
+    public function ug_computer_science_and_engineering_faculty_details()
+    {
+        return view('pages.academics.departments.undergraduate.computer-science-and-engineering.faculty-details');
+    }
+
+    public function ug_computer_science_and_engineering_research_publications()
+    {
+
+        $filePath = public_path('json/computer-science-and-engineering/consultancy-projects.json');
+
+        if (file_exists($filePath)) {
+
+            $jsonData = file_get_contents($filePath);
+
+
+            $consultancyProjects = json_decode($jsonData, true);
+
+            return view('pages.academics.departments.undergraduate.computer-science-and-engineering.research-publications', ['consultancyProjects' => $consultancyProjects]);
+        }
+    }
+
+    public function ug_computer_science_engineering_industry_collabration()
+    {
+        return view('pages.academics.departments.undergraduate.computer-science-and-engineering.industry-collabration');
+    }
+
+    public function ug_computer_science_engineering_program_outcomes()
+    {
+        return view('pages.academics.departments.undergraduate.computer-science-and-engineering.program-outcomes');
+    }
+
+    public function ug_computer_science_engineering_programme_educational_objectives()
+    {
+        return view('pages.academics.departments.undergraduate.computer-science-and-engineering.programme-educational-objectives');
+    }
+
+    public function ug_computer_science_engineering_programme_specific_outcomes()
+    {
+        return view('pages.academics.departments.undergraduate.computer-science-and-engineering.programme-specific-outcomes');
+    }
+
+    public function ug_computer_science_engineering_science_student_achievements()
+    {
+        return view('pages.academics.departments.undergraduate.computer-science-and-engineering.student-achievements');
+    }
 }

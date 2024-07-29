@@ -1,0 +1,84 @@
+{
+    "ConsultancyProjects": [
+        {
+            "AcademicYear": "2020-2021",
+            "Projects": [
+                {
+                    "ProjectTitle": "Medical Lab Data Management System",
+                    "Company": "Selvaa's Diagnostics and Healthcare Private Limited, Nagapattinam",
+                    "Duration": "1 year",
+                    "Budget": 80000
+                },
+                {
+                    "ProjectTitle": "Travel Booking system",
+                    "Company": "Sundaraman Travels, Nagapattinam",
+                    "Duration": "1.3 years",
+                    "Budget": 83000
+                },
+                {
+                    "ProjectTitle": "Employee Training Tracking System",
+                    "Company": "RIPE Consultancy Services, Chennai",
+                    "Duration": "1 year",
+                    "Budget": 108000
+                },
+                {
+                    "ProjectTitle": "Vision based Activity Monitoring for Surveillances Applications",
+                    "Company": "VI Technology, Chennai",
+                    "Duration": "8 months",
+                    "Budget": 85000
+                },
+                {
+                    "ProjectTitle": "Payroll Processing System",
+                    "Company": "St.Joseph Nursery & Primary School, Vaikaalvettu, Nagapattinam",
+                    "Duration": "1 year",
+                    "Budget": 50000
+                }
+            ]
+        },
+        {
+            "AcademicYear": "2019-2020",
+            "Projects": [
+                {
+                    "ProjectTitle": "Textile shop Billing System",
+                    "Company": "Rich Trends Men’s Wear, Poraiyar",
+                    "Period": "1 year",
+                    "Budget": 85000
+                },
+                {
+                    "ProjectTitle": "Attendance Monitoring System",
+                    "Company": "St.Joseph Nursery & Primary School, Vaikaalvettu, Nagapattinam",
+                    "Period": "1 year",
+                    "Budget": 92000
+                },
+                {
+                    "ProjectTitle": "Inventory Management system for Super market",
+                    "Company": "Sri Krishna Supermarket, Nagapattinam",
+                    "Period": "1.3 years",
+                    "Budget": 70600
+                },
+                {
+                    "ProjectTitle": "Hospital Management System",
+                    "Company": "Dr.Murugesan Private Hospital, Sikkal",
+                    "Period": "1 year",
+                    "Budget": 85000
+                },
+                {
+                    "ProjectTitle": "Mobile shop management System",
+                    "Company": "JVR Mobile Sales and Services, Kutthalam",
+                    "Period": "1 year",
+                    "Budget": 75000
+                },
+                {
+                    "ProjectTitle": "Fertilizer stock management System",
+                    "Company": "Amithran Traders, Orathanadu",
+                    "Period": "1.1 years",
+                    "Budget": 115000
+                }
+            ]
+        },
+        {
+            "AcademicYear": "2018-2019",
+            "Projects": []
+        }
+    ]
+}

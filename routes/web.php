@@ -267,6 +267,25 @@ Route::get('/academics/departments/undergraduate/civil-engineering/programme-spe
 
 
 
+// Department -> Undergraduate -> Department of Computer Science and Engineering
+
+
+Route::get('/academics/departments/undergraduate/computer-science-and-engineering', [PagesController::class, 'ug_computer_science_and_engineering']);
+Route::get('/academics/departments/undergraduate/computer-science-and-engineering/department-highlights', [PagesController::class, 'ug_computer_science_and_engineering_department_highlights']);
+Route::get('/academics/departments/undergraduate/computer-science-and-engineering/hods-desk', [PagesController::class, 'ug_computer_science_and_engineering_hods_desk']);
+Route::get('/academics/departments/undergraduate/computer-science-and-engineering/faculty-details', [PagesController::class, 'ug_computer_science_and_engineering_faculty_details']);
+Route::get('/academics/departments/undergraduate/computer-science-and-engineering/research-publications', [PagesController::class, 'ug_computer_science_and_engineering_research_publications']);
+Route::get('/academics/departments/undergraduate/computer-science-and-engineering/industry-collaboration', [PagesController::class, 'ug_computer_science_and_engineering_industry_collabration']);
+Route::get('/academics/departments/undergraduate/computer-science-and-engineering/student-achievements', [PagesController::class, 'ug_computer_science_and_engineering_student_achievements']);
+Route::get('/academics/departments/undergraduate/computer-science-and-engineering/infrastructure', [PagesController::class, 'ug_computer_science_and_engineering_infrastructure']);
+Route::get('/academics/departments/undergraduate/computer-science-and-engineering/program-outcomes', [PagesController::class, 'ug_computer_science_and_engineering_program_outcomes']);
+Route::get('/academics/departments/undergraduate/computer-science-and-engineering/programme-educational-objectives', [PagesController::class, 'ug_computer_science_and_engineering_programme_educational_objectives']);
+Route::get('/academics/departments/undergraduate/computer-science-and-engineering/programme-specific-outcomes', [PagesController::class, 'ug_computer_science_and_engineering_programme_specific_outcomes']);
+
+
+
+
+
 // Department -> Postgraduate -> Master of Computer Application
 
 Route::get('/academics/departments/postgraduate/master-of-computer-applications', [PagesController::class, 'department_mca']);
