@@ -29,7 +29,7 @@
                         exceptional infrastructure and academic excellence. Affiliated with Anna University since 2002, it empowers aspiring
                         engineers and managers through comprehensive programs and activities.
                     </p>
-                    <a href="about.html" class="about-btn rts-nbg-btn btn-arrow">EGSPEC Overview <span><i
+                    <a href="{{ url("/about/history") }}" class="about-btn rts-nbg-btn btn-arrow">EGSPEC Overview <span><i
                                 class="fa-sharp fa-regular fa-arrow-right"></i></span></a>
                     <div class="about-positioned-text ">
                         <h2 class="rt-clip-text">EST. 1995</h2>
@@ -166,7 +166,7 @@
                                             </div>
                                             <div class="notice-content">
                                                 <p>
-                                                    <a href="{{ url("notice-details.html") }}">
+                                                    <a href="{{ url("/") }}">
                                                         Notice Regarding Upcoming Campus Event: Spring Fling Carnival.
                                                     </a>
                                                 </p>

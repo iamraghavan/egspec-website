@@ -4,6 +4,7 @@ use App\Http\Controllers\ApiController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\AdFormController;
+use App\Http\Controllers\TemplateSearchReturn;
 
 // Other Backend Operation Routes
 Route::post('/admission-submit-form', [AdFormController::class, 'adsubmitForm'])->name('adsubmitForm');
@@ -146,8 +147,8 @@ Route::get('/resources/projects/computer-science-and-engineering', [PagesControl
 Route::get('/resources/projects/information-technology', [PagesController::class, 'prj_information_technology']);
 Route::get('/resources/projects/electrical-and-electronics-engineering', [PagesController::class, 'prj_electrical_and_electronics_engineering']);
 
-Route::get('/research/publication-details/research-publications', [PagesController::class, 'showPublicationDetails']);
-
+Route::get('/research/publication-details/consultancy', [TemplateSearchReturn::class, 'showConsultancyDetails']);
+Route::get('/research/publication-details/research', [TemplateSearchReturn::class, 'showResearchDetails']);
 
 
 // Route for About us

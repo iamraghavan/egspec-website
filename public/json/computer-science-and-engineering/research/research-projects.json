@@ -1,0 +1,45 @@
+{
+    "ResearchProjects": [
+        {
+            "Department": "Computer Science And Engineering"
+        },
+        {
+            "AcademicYear": "2020-2021",
+            "Projects": [
+                {
+                    "ProjectTitle": "Modelling and fabrication of controllable semiconductor quantum dots for optoelectronic applications",
+                    "FundingAgency": "RPS-AICTE",
+                    "Duration": "2 years",
+                    "Amount": 1507500.0
+                },
+                {
+                    "ProjectTitle": "hELLOLLO",
+                    "FundingAgency": "RPS-AICTE",
+                    "Duration": "2 years",
+                    "Amount": 1507500.0
+                },
+                {
+                    "ProjectTitle": "hELLOLLO 343",
+                    "FundingAgency": "RPS-AICTE",
+                    "Duration": "2 years",
+                    "Amount": 1507500.0
+                }
+            ]
+        },
+        {
+            "AcademicYear": "2019-2020",
+            "Projects": [
+                {
+                    "ProjectTitle": "hELLOLLO 343",
+                    "FundingAgency": "RPS-AICTE",
+                    "Duration": "2 years",
+                    "Amount": 1507500.0
+                }
+            ]
+        },
+        {
+            "AcademicYear": "2018-2019",
+            "Projects": []
+        }
+    ]
+}
