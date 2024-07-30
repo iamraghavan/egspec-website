@@ -5,17 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Publication Data</title>
     <link href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css" rel="stylesheet">
-    {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> --}}
-    {{-- <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet"> --}}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.2/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
 
 <!-- fontawesome 6.4.2 -->
 <link rel="stylesheet" href="{{ asset("/assets/css/plugins/fontawesome.min.css") }}">
-    <link rel="stylesheet" href="{{ asset('/assets/css/vendor/bootstrap.min.css') }}">
 
-    <link rel="stylesheet" href="{{ asset('/assets/css/style.css') }}">
     <style>
         /* Custom CSS */
         .container {
@@ -31,7 +29,7 @@
             border-bottom: 1px solid #dee2e6;
         }
         .header .logo {
-            height: 40px;
+            height: 50px;
         }
         .back-button {
             font-size: 1.125rem;
@@ -60,6 +58,8 @@
             width: 100%;
             height: auto;
         }
+
+
     </style>
 </head>
 <body class="bg-gray-100">
@@ -81,7 +81,7 @@
 
         <div class="admission-content-top">
             <div class="application-deadline">
-               <h5 class="rts-section-title animated fadeIn">Publication Details - {{ $departmentName }}</h5>
+                <h5 class="rts-section-title animated fadeIn">Publication Details - {{ $departmentName }}</h5>
                <div class="application-deadline__content mt-5">
                   <div class="application-deadline__content--table">
 

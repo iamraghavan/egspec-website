@@ -1,6 +1,9 @@
 {
     "ConsultancyProjects": [
         {
+            "Department": "Computer Science And Engineering"
+        },
+        {
             "AcademicYear": "2020-2021",
             "Projects": [
                 {

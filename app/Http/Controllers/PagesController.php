@@ -479,21 +479,27 @@ class PagesController extends Controller
         $jsonData = file_get_contents($filePath);
         $data = json_decode($jsonData, true);
 
+        // Extract the department name from the first element of ConsultancyProjects
+        $departmentName = $data['ConsultancyProjects'][0]['Department'] ?? 'Unknown';
+
         // Flatten the projects array
         $projects = [];
         foreach ($data['ConsultancyProjects'] as $academicYearData) {
-            foreach ($academicYearData['Projects'] as $project) {
-                $project['AcademicYear'] = $academicYearData['AcademicYear'];
-                $projects[] = $project;
+            if (isset($academicYearData['Projects']) && is_array($academicYearData['Projects'])) {
+                foreach ($academicYearData['Projects'] as $project) {
+                    $project['AcademicYear'] = $academicYearData['AcademicYear'];
+                    $projects[] = $project;
+                }
             }
         }
 
         // Pass the flattened projects array and department name to the view
         return view('pages.research.publication-details-template', [
             'ConsultancyProjects' => $projects,
-            'departmentName' => ucfirst($department)
+            'departmentName' => $departmentName
         ]);
     }
+
 
 
 
