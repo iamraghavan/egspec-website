@@ -105,7 +105,13 @@
                     </div>
 
 
+                    <x-accordion-links :links="[
+                        'Alumni Survey' => 'https://docs.google.com/forms/d/e/1FAIpQLSfLvoekGAfIMRKnuGyIRTsa-etkQLrESHN7xLEA1HmQ9e9G-Q/viewform',
+                        'Graduate Exit Survey' => 'https://forms.gle/nPnWvETD5r7ujxdz9',
+                        'Employer Survey' => 'https://drive.google.com/open?id=1HEiaH5PgHxLyVgnH7FSEORGARxRvA2iv2FL8gBpnU8Q',
+                        'Student Certificate Submission' => 'https://docs.google.com/forms/d/e/1FAIpQLSdN-uCdn1UesdQ72g8TWAqsJ9Jj2sW9ZDIBUqSxSX8NOUzL3A/viewform',
 
+                    ]"/>
 
                 </div>
                 <!-- sidebar -->

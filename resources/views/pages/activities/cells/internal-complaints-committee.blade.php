@@ -9,41 +9,12 @@
 
 
 
+{{-- @include('components.home-slider') --}}
 
 <section class="rts-about-university pt--100 pb--80">
 
-
-
-
    <div class="container">
-
-
-      <div class="carousel-frame">
-        <div class="carousel-slide">
-            @foreach ($icc_slider as $index => $slide)
-          <img src="{{ asset($slide->desktop_image_url) }}" alt="{{ $slide->alt_name }}" />
-          @endforeach
-        </div>
-        <i class="carousel-prev fas fa-chevron-left"></i>
-        <i class="carousel-next fas fa-chevron-right"></i>
-        <ol class="carousel-dots">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ol>
-      </div>
-
-
-
-
-
-
       <div class="row">
-
-
 
         <div class="program-description-area mt-4">
 

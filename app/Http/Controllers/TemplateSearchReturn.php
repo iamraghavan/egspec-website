@@ -92,4 +92,45 @@ class TemplateSearchReturn extends Controller
             'departmentName' => $departmentName
         ]);
     }
+
+    public function showStudentsDetails(Request $request)
+    {
+        $department = $request->input('department');
+        $project = $request->input('project'); // Changed from 'achievements' to 'project'
+
+        // Sanitize parameters
+        $department = preg_replace('/[^a-zA-Z0-9_-]/', '', $department);
+        $project = preg_replace('/[^a-zA-Z0-9_-]/', '', $project);
+
+        // Define the path to the JSON file
+        $filePath = public_path("json/{$department}/student-achievements/{$project}.json");
+
+        // Check if the file exists
+        if (!file_exists($filePath)) {
+            abort(404, 'Data not found');
+        }
+
+        // Load and decode the JSON data
+        $jsonData = file_get_contents($filePath);
+        $data = json_decode($jsonData, true);
+
+        // Extract the department name
+        $departmentName = $data['StudentAchievements'][0]['Department'] ?? 'Unknown';
+
+        // Flatten the students array
+        $students = [];
+        foreach ($data['StudentAchievements'] as $achievementData) {
+            if (isset($achievementData['Students']) && is_array($achievementData['Students'])) {
+                foreach ($achievementData['Students'] as $student) {
+                    $students[] = $student;
+                }
+            }
+        }
+
+        // Pass the flattened students array and department name to the view
+        return view('components.templates.student-achievements-templates', [
+            'StudentAchievements' => $students,
+            'departmentName' => $departmentName
+        ]);
+    }
 }

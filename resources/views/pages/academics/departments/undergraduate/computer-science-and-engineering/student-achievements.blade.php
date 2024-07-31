@@ -3,7 +3,7 @@
 @include('components.breadcrumb', ['value_1' => 'Academics',
 'value_2' => 'Departments',
 'value_3' => 'Computer Science and Engineering',
-'page_title' => 'Research and Publications' ])
+'page_title' => 'Students Achievements' ])
 
 
 
@@ -16,7 +16,7 @@
          <div class="row">
             <div class="col-lg-8">
                 <div class="program-credit-area">
-                    <h3 class="rts-section-title animated fadeIn">Research &amp; Publications</h3>
+                    <h3 class="rts-section-title animated fadeIn">Student Achievements</h3>
                     <div class="program-accordion my-5">
                         <div class="accordion" id="rts-accordion">
                             <div class="accordion-item">
@@ -25,22 +25,18 @@
                                         <table class="table">
                                             <tbody>
                                                 <tr>
-                                                    <td><a href="#"
-                                                        onclick="openMiniTab(event, '{{ url('/research/publication-details/consultancy?project=consultancy-projects&department=computer-science-and-engineering') }}')"
-                                                        title="Consultancy">
-                                                        Consultancy Projects
-                                                     </a></td>
-                                                    <td><i class="fa fa-external-link"></i> / Consultancy Link Source </td>
+                                                    <td>
+                                                        <a href="#"
+                                                           onclick="openMiniTab(event, '{{ url('/students-achievements?project=student-achievements&department=computer-science-and-engineering') }}')"
+                                                           title="Student Achievements">
+                                                           Student Achievements
+                                                        </a>
+                                                    </td>
+
+                                                    <td><i class="fa fa-external-link"></i> / Student Achievements Link Source </td>
                                                 </tr>
 
-                                                <tr>
-                                                    <td><a href="#"
-                                                        onclick="openMiniTab(event, '{{ url('/research/publication-details/research?project=research-projects&department=computer-science-and-engineering') }}')"
-                                                        title="Consultancy">
-                                                        Research Projects
-                                                     </a></td>
-                                                    <td><i class="fa fa-external-link"></i> / Research Link Source </td>
-                                                </tr>
+
                                             </tbody>
 
                                         </table>

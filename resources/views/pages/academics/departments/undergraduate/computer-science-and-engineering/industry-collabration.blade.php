@@ -14,65 +14,49 @@
         <div class="rts-program-description">
             <div class="row">
                 <div class="col-lg-8">
+                    <div class="program-description-area">
 
-                    <section class="rts-about-university pt--100 pb--80">
-                        <div class="container">
-                            <div class="row">
-                                <div class="rts-section">
-                                    <div class="col-lg-4 col-md-3 col-sm-12 text-center">
-                                        <picture>
-                                            <source srcset="@blob('profile/dr-t-ganesan.webp')" type="image/webp">
-                                            <img src="@blob('profile/dr-t-ganesan.webp')" class="img-fluid rounded" alt="Dr. T. Ganesan" style="max-width: 200px;">
-                                        </picture>
-                                    </div>
-                                    <div class="col-lg-8 col-md-9 col-sm-12">
-                                        <div class="rts-section-description">
-                                            <div class="profile-info">
-                                                <h5 class="profile-name">Dr. T. Ganesan</h5>
-                                                <p class="profile-role">Head of Department</p>
-                                                <p class="profile-contact">Department of Computer Science and Engineering</p>
-                                                <p class="profile-email">Email: <a href="mailto:hodcse@egspec.org">hodcse@egspec.org</a></p>
+                        <div class="program-credit-area">
+                            <h3 class="rts-section-title animated fadeIn" >Industry Collaboration</h3>
+
+                            <div class="program-accordion my-5">
+                                <div class="accordion" id="rts-accordion">
+
+                                    <div class="accordion-item">
+
+                                        <div>
+                                            <div class="accordion-body-content">
+                                                <table class="table">
+
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><a href="@blob('academics/departments/undergraduate/information-technology/industry-collaboration/industry-collabration.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'> Industry Collabration </a></td>
+                                                            <td><i class="fa fa-file-pdf"></i> / PDF File</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+
+
+
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="row">
-                                <div class="container">
-                                    <div class="row">
-                                        <p class="desc text-justify">
-                                            Welcome to the Department of Computer Science and Engineering (CSE). I believe that the field of computer science and engineering (CSE) has gained widespread recognition as a vital resource and methodology for enhancing human activities, both past and present. The Department's delivery of a top-notch education and preparation of students for global competency has significantly aided in the development of the nation. Our faculty members have a fantastic sense of teamwork to produce domain experts in technology for the industry and enable learners to deal with global concerns. As part of Industry Institute Collaboration, our department has already signed a Memorandum of Understanding (MOU) with various reputed industries, to provide a platform for the students to work with companies for internships and projects and build technology products that influence industry and society to enhance their employment skills. Entrepreneurial–minded students should use this opportunity to become successful entrepreneurs.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
 
-                            <div class="program-description-area">
-                                <div class="program-credit-area">
-                                    <div class="program-accordion">
-                                        <div class="accordion" id="rts-accordion">
-                                            <div class="accordion-item">
-                                                <div>
-                                                    <div class="accordion-body-content">
-                                                        <table class="table">
-                                                            <tbody>
-                                                                <tr>
-                                                                    <td><a href="https://www.linkedin.com/in/" target="_blank">LinkedIn Profile</a></td>
-                                                                    <td><i class="fab fa-linkedin-in"></i> / LinkedIn</td>
-                                                                </tr>
-
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
                                     </div>
+
                                 </div>
+
                             </div>
                         </div>
-                    </section>
+
+                    </div>
+
+                    <div class="iframe-div">
+                        <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=@blob('academics/departments/undergraduate/information-technology/industry-collaboration/industry-collabration.pdf')#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="
+                    height: 100rem !important;
+                "></iframe>
+                    </div>
 
                     <x-accordion-links :links="[
                         'Alumni Survey' => 'https://docs.google.com/forms/d/e/1FAIpQLSfLvoekGAfIMRKnuGyIRTsa-etkQLrESHN7xLEA1HmQ9e9G-Q/viewform',
@@ -81,6 +65,7 @@
                         'Student Certificate Submission' => 'https://docs.google.com/forms/d/e/1FAIpQLSdN-uCdn1UesdQ72g8TWAqsJ9Jj2sW9ZDIBUqSxSX8NOUzL3A/viewform',
 
                     ]"/>
+
                 </div>
                 <!-- sidebar -->
                 <div class="col-lg-4">

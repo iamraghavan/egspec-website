@@ -149,7 +149,7 @@ Route::get('/resources/projects/electrical-and-electronics-engineering', [PagesC
 
 Route::get('/research/publication-details/consultancy', [TemplateSearchReturn::class, 'showConsultancyDetails']);
 Route::get('/research/publication-details/research', [TemplateSearchReturn::class, 'showResearchDetails']);
-
+Route::get('/students-achievements', [TemplateSearchReturn::class, 'showStudentsDetails']);
 
 // Route for About us
 

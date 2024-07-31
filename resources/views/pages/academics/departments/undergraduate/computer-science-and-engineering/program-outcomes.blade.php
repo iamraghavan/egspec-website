@@ -2,8 +2,9 @@
 @section('content')
 @include('components.breadcrumb', ['value_1' => 'Academics',
 'value_2' => 'Departments',
-'value_3' => 'Information Technology',
+'value_3' => 'Computer Science and Engineering',
 'page_title' => 'Program Outcomes' ])
+
 
 
 
@@ -13,6 +14,8 @@
    <div class="container">
       <div class="rts-program-description">
          <div class="row">
+
+
             <div class="col-lg-8">
                 <div class="admission-content-top">
                     <div class="application-deadline">
@@ -90,44 +93,53 @@
                 ]"/>
             </div>
 
-            <!-- sidebar -->
+                <!-- sidebar -->
 
 
 
             <div class="col-lg-4">
-               <div class="program-sidebar">
-                  <!-- curriculum -->
-                  <div class="program-curriculum">
-                     <h6 class="heading-title">Department Quick Links</h6>
-                     <div class="program-menu">
-                        <ul class="list-unstyled">
-                           <li><a href="{{url('/academics/departments/undergraduate/information-technology')}}"><span><i class="fa-light fa-arrow-right"></i></span>About</a></li>
-                           <li><a href="{{url('/academics/departments/undergraduate/information-technology/department-highlights')}}"><span><i class="fa-light fa-arrow-right"></i></span>Department Highlights</a></li>
-                           <li><a href="{{url('/academics/departments/undergraduate/information-technology/hods-desk')}}"><span><i class="fa-light fa-arrow-right"></i></span>Hod's Desk</a></li>
-                           <li><a href="{{url('/academics/departments/undergraduate/information-technology/faculty-details')}}"><span><i class="fa-light fa-arrow-right"></i></span>Faculty Details</a></li>
-                           <li><a href="https://coe.egspec.org/" target="_blank"><span><i class="fa-light fa-arrow-right"></i></span>Curriculum</a></li>
-                           <li><a href="{{url('/academics/departments/undergraduate/information-technology/research-publications')}}"><span><i class="fa-light fa-arrow-right"></i></span>Research & Publications</a></li>
-                           <li><a href="{{url('/academics/departments/undergraduate/information-technology/industry-collaboration')}}"><span><i class="fa-light fa-arrow-right"></i></span>Industry Collabration</a></li>
-                           <li><a href="{{url('/academics/departments/undergraduate/information-technology/infrastructure')}}"><span><i class="fa-light fa-arrow-right"></i></span>Infrastructure</a></li>
-                            <li><a href="{{url('/placements/statistics')}}"><span><i class="fa-light fa-arrow-right"></i></span>Placements</a></li>
-                           <li><a href="{{url('/academics/departments/undergraduate/information-technology/student-achievements')}}"><span><i class="fa-light fa-arrow-right"></i></span>Student Achievements</a></li>
-                           <li><a href="{{url('/academics/departments/undergraduate/information-technology/program-outcomes')}}"><span><i class="fa-light fa-arrow-right"></i></span>Program Outcomes</a></li>
-                           <li><a href="{{url('/academics/departments/undergraduate/information-technology/programme-educational-objectives')}}"><span><i class="fa-light fa-arrow-right"></i></span>Programme Educational Objectives</a></li>
-                           <li><a href="{{url('/academics/departments/undergraduate/information-technology/programme-specific-outcomes')}}"><span><i class="fa-light fa-arrow-right"></i></span>Programme Specific Outcomes</a></li>
-                        </ul>
-                     </div>
-                  </div>
-                  <!-- contact info -->
-                  <x-dept-contact-info
-                     name="Dr. S. Manikandan, M.E., Ph.D"
-                     :phones="['+919047902685', '+919500707894']"
-                     :emails="['manikandan@egspec.org', 'profmaninvp@gmail.com']"
-                     />
-               </div>
+                <div class="program-sidebar">
+                    <!-- curriculum -->
+                    <div class="program-curriculum">
+                        <h6 class="heading-title">Department Quick Links</h6>
+                        <div class="program-menu">
+                            <ul class="list-unstyled">
+                                <li><a href="{{url('/academics/departments/undergraduate/computer-science-and-engineering')}}"><span><i class="fa-light fa-arrow-right"></i></span>About</a></li>
+                                <li><a href="{{url('/academics/departments/undergraduate/computer-science-and-engineering/department-highlights')}}"><span><i class="fa-light fa-arrow-right"></i></span>Department Highlights</a></li>
+                                <li><a href="{{url('/academics/departments/undergraduate/computer-science-and-engineering/hods-desk')}}"><span><i class="fa-light fa-arrow-right"></i></span>HoD's Desk</a></li>
+                                <li><a href="{{url('/academics/departments/undergraduate/computer-science-and-engineering/faculty-details')}}"><span><i class="fa-light fa-arrow-right"></i></span>Faculty Details</a></li>
+                                <li><a href="https://coe.egspec.org/" target="_blank"><span><i class="fa-light fa-arrow-right"></i></span>Curriculum</a></li>
+                                <li><a href="{{url('/academics/departments/undergraduate/computer-science-and-engineering/research-publications')}}"><span><i class="fa-light fa-arrow-right"></i></span>Research & Publications</a></li>
+                                <li><a href="{{url('/academics/departments/undergraduate/computer-science-and-engineering/industry-collaboration')}}"><span><i class="fa-light fa-arrow-right"></i></span>Industry Collaboration</a></li>
+                                <li><a href="{{url('/academics/departments/undergraduate/computer-science-and-engineering/infrastructure')}}"><span><i class="fa-light fa-arrow-right"></i></span>Infrastructure</a></li>
+                                <li><a href="{{url('/academics/departments/undergraduate/computer-science-and-engineering/student-achievements')}}"><span><i class="fa-light fa-arrow-right"></i></span>Student Achievements</a></li>
+                                <li><a href="{{url('/placements/statistics')}}"><span><i class="fa-light fa-arrow-right"></i></span>Placements</a></li>
+                                <li><a href="{{url('/academics/departments/undergraduate/computer-science-and-engineering/program-outcomes')}}"><span><i class="fa-light fa-arrow-right"></i></span>Program Outcomes</a></li>
+                                <li><a href="{{url('/academics/departments/undergraduate/computer-science-and-engineering/programme-educational-objectives')}}"><span><i class="fa-light fa-arrow-right"></i></span>Programme Educational Objectives</a></li>
+                                <li><a href="{{url('/academics/departments/undergraduate/computer-science-and-engineering/programme-specific-outcomes')}}"><span><i class="fa-light fa-arrow-right"></i></span>Programme Specific Outcomes</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- contact info -->
+                    <x-dept-contact-info
+                        name="Dr. T. Ganesan"
+                        :phones="['+91 99407 42877']"
+                        :emails="['Ganesan21@gmail.com']"
+                    />
+                </div>
             </div>
          </div>
       </div>
    </div>
 </div>
+
+<script>
+    function openMiniTab(event, url) {
+        event.preventDefault(); // Prevent the default behavior of the link
+        var features = "toolbar=no,menubar=no,resizable=yes,scrollbars=yes,status=no,width=1400,height=900";
+        window.open(url, "_blank", features);
+    }
+</script>
+
 @include('components.cta')
 @endsection
