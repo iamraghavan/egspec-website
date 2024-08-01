@@ -289,6 +289,23 @@ Route::get('/academics/departments/undergraduate/computer-science-and-engineerin
 
 
 
+// Department -> Undergraduate -> Department of Electrical and Electronics Engineering
+
+
+Route::get('/academics/departments/undergraduate/electrical-and-electronics-engineering', [PagesController::class, 'ug_electrical_and_electronics_engineering']);
+Route::get('/academics/departments/undergraduate/electrical-and-electronics-engineering/department-highlights', [PagesController::class, 'ug_electrical_and_electronics_engineering_department_highlights']);
+Route::get('/academics/departments/undergraduate/electrical-and-electronics-engineering/hods-desk', [PagesController::class, 'ug_electrical_and_electronics_engineering_hods_desk']);
+Route::get('/academics/departments/undergraduate/electrical-and-electronics-engineering/faculty-details', [PagesController::class, 'ug_electrical_and_electronics_engineering_faculty_details']);
+Route::get('/academics/departments/undergraduate/electrical-and-electronics-engineering/research-publications', [PagesController::class, 'ug_electrical_and_electronics_engineering_research_publications']);
+Route::get('/academics/departments/undergraduate/electrical-and-electronics-engineering/industry-collaboration', [PagesController::class, 'ug_electrical_and_electronics_engineering_industry_collabration']);
+Route::get('/academics/departments/undergraduate/electrical-and-electronics-engineering/student-achievements', [PagesController::class, 'ug_electrical_and_electronics_engineering_student_achievements']);
+Route::get('/academics/departments/undergraduate/electrical-and-electronics-engineering/infrastructure', [PagesController::class, 'ug_electrical_and_electronics_engineering_infrastructure']);
+Route::get('/academics/departments/undergraduate/electrical-and-electronics-engineering/program-outcomes', [PagesController::class, 'ug_electrical_and_electronics_engineering_program_outcomes']);
+Route::get('/academics/departments/undergraduate/electrical-and-electronics-engineering/programme-educational-objectives', [PagesController::class, 'ug_electrical_and_electronics_engineering_programme_educational_objectives']);
+Route::get('/academics/departments/undergraduate/electrical-and-electronics-engineering/programme-specific-outcomes', [PagesController::class, 'ug_electrical_and_electronics_engineering_programme_specific_outcomes']);
+
+
+
 
 
 // Department -> Postgraduate -> Master of Computer Application

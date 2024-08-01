@@ -1155,4 +1155,57 @@ class PagesController extends Controller
     {
         return view('pages.academics.departments.undergraduate.computer-science-and-engineering.student-achievements');
     }
+
+
+    // Department -> Undergraduate -> Department of Electrical and Electronics Engineering
+
+    public function ug_electrical_and_electronics_engineering()
+    {
+        return view('pages.academics.departments.undergraduate.electrical-and-electronics-engineering.electrical-and-electronics-engineering');
+    }
+
+    public function ug_electrical_and_electronics_engineering_department_highlights()
+    {
+        return view('pages.academics.departments.undergraduate.electrical-and-electronics-engineering.department-highlights');
+    }
+
+    public function ug_electrical_and_electronics_engineering_faculty_details()
+    {
+        return view('pages.academics.departments.undergraduate.electrical-and-electronics-engineering.faculty-details');
+    }
+
+    public function ug_electrical_and_electronics_engineering_research_publications()
+    {
+        return view('pages.academics.departments.undergraduate.electrical-and-electronics-engineering.research-publications');
+    }
+
+    public function ug_electrical_and_electronics_engineering_industry_collabration()
+    {
+        return view('pages.academics.departments.undergraduate.electrical-and-electronics-engineering.industry-collabration');
+    }
+
+    public function ug_electrical_and_electronics_engineering_hods_desk()
+    {
+        return view('pages.academics.departments.undergraduate.electrical-and-electronics-engineering.hods-desk');
+    }
+
+    public function ug_electrical_and_electronics_engineering_program_outcomes()
+    {
+        return view('pages.academics.departments.undergraduate.electrical-and-electronics-engineering.program-outcomes');
+    }
+
+    public function ug_electrical_and_electronics_engineering_programme_educational_objectives()
+    {
+        return view('pages.academics.departments.undergraduate.electrical-and-electronics-engineering.programme-educational-objectives');
+    }
+
+    public function ug_electrical_and_electronics_engineering_programme_specific_outcomes()
+    {
+        return view('pages.academics.departments.undergraduate.electrical-and-electronics-engineering.programme-specific-outcomes');
+    }
+
+    public function ug_electrical_and_electronics_engineering_student_achievements()
+    {
+        return view('pages.academics.departments.undergraduate.electrical-and-electronics-engineering.student-achievements');
+    }
 }

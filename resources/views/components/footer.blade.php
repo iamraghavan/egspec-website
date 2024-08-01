@@ -23,10 +23,7 @@ $footerLinks = [
 'Important Links' => [
 'AntiRagging' => url('/activities/anti-ragging-committee'),
 'EGSP Transport' => 'http://example.com/transport',
-'Privacy Policy' => 'http://example.com/privacy-policy',
-'Terms & Conditions' => 'http://example.com/terms-conditions',
 'Downloads' => 'http://example.com/downloads',
-'Sitemap' => 'http://example.com/sitemap',
 'Blog & Articles' => 'http://example.com/blog',
 'Alumni' => 'http://example.com/alumni',
 'Gallery & Media' => 'http://example.com/gallery-media',
@@ -58,6 +55,12 @@ $footerLinks = [
                                     <source srcset="{{ asset('/assets/images/logo-white.svg') }}" type="image/svg">
                                     <img src="{{ asset('/assets/images/logo-white.svg') }}" alt="EGSPEC" class="img-fluid">
                                 </picture>
+
+
+                                {{-- <picture>
+                                    <source srcset="{{ asset('/assets/images/egs-logo.webp') }}" type="image/svg">
+                                    <img src="{{ asset('/assets/images/egs-logo.webp') }}" alt="EGSPEC" class="img-fluid">
+                                </picture> --}}
 
                                 {{-- <img src="{{ asset('/assets/images/logo-white.svg') }}" alt="EGSPEC"> --}}
                             </a>
@@ -140,6 +143,29 @@ $footerLinks = [
 
 <div class="rts-footer-copy-right v_1">
     <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-md-6">
+                <p style="font-weight: 600;" class="--p-xs">Copyright © 2006 - {{ date('Y') }} All
+                    Rights Reserved by
+                    <a href="https://egspgroup.in/" target="_blank">EGS Pillay Group of Institutions</a> <br> Developed By
+                    <a href=""> Raghavan Jeeva </a>
+                </p>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <p style="font-weight: 600;" class="--p-xs">
+                    <a href="">Sitemap</a> |
+                    <a href="">Privacy Policy</a> |
+                    <a href="">Terms &amp; Conditions</a> |
+                    <a href="">Contact Web Admin</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+{{-- <div class="rts-footer-copy-right v_1">
+    <div class="container">
         <div class="row">
             <div class="rt-center">
                 <p style="font-weight: 600;" class="--p-xs">Copyright © 2006 - {{ date('Y') }} All
@@ -150,6 +176,8 @@ $footerLinks = [
             </div>
         </div>
     </div>
-</div>
+</div> --}}
+
+
 
 
