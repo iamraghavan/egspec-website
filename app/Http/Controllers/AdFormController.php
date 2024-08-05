@@ -12,6 +12,28 @@ use Illuminate\Support\Facades\Http;
 class AdFormController extends Controller
 {
 
+    public function submit(Request $request)
+    {
+        $request->validate([
+            'staff_id' => 'required|numeric',
+            'staff_name' => 'required|regex:/^[A-Za-z\s]+$/',
+            'staff_email' => 'required|email|regex:/^[a-zA-Z0-9._%+-]+@egspec\.org$/',
+            'staff_phone' => 'required|digits:10',
+            'department' => 'required',
+            'work_type' => 'required',
+            'data_update' => 'required',
+            'google_drive_urls.*' => 'required|url',
+            'confirmation' => 'accepted',
+        ]);
+
+        dd($request->all());
+
+
+
+
+        return redirect()->back()->with('success', 'Form submitted successfully!');
+    }
+
 
     public function adsubmitForm(Request $request)
     {
