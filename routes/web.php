@@ -4,6 +4,7 @@ use App\Http\Controllers\ApiController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\AdFormController;
+use App\Http\Controllers\InstitutionInternalPurpose;
 use App\Http\Controllers\TemplateSearchReturn;
 
 // Other Backend Operation Routes
@@ -305,6 +306,13 @@ Route::get('/academics/departments/undergraduate/electrical-and-electronics-engi
 Route::get('/academics/departments/undergraduate/electrical-and-electronics-engineering/programme-specific-outcomes', [PagesController::class, 'ug_electrical_and_electronics_engineering_programme_specific_outcomes']);
 
 
+// Department -> Undergraduate -> Department of Computer Science & Business Systems
+
+Route::get('/academics/departments/undergraduate/computer-science-and-business-systems', [PagesController::class, 'ug_computer_science_and_business_systems']);
+
+// Department -> Department of Science & Humanities
+
+Route::get('/academics/departments/science-humanities', [PagesController::class, 'department_science_humanities']);
 
 
 
@@ -339,8 +347,19 @@ Route::get('/academics/departments/postgraduate/master-of-business-administratio
 
 
 
-
-
-
-
 Route::get('/academics/departments/science-humanities', [PagesController::class, 'department_science_humanities']);
+Route::get('/academics/departments/science-humanities/department-highlights', [PagesController::class, 'department_science_humanities_department_highlights']);
+Route::get('/academics/departments/science-humanities/hods-desk', [PagesController::class, 'department_science_humanities_hods_desk']);
+Route::get('/academics/departments/science-humanities/faculty-details', [PagesController::class, 'department_science_humanities_faculty_details']);
+// Route::get('/academics/departments/science-humanities/research-publications', [PagesController::class, 'department_science_humanities_research_publications']);
+Route::get('/academics/departments/science-humanities/industry-collaboration', [PagesController::class, 'department_science_humanities_industry_collabration']);
+// Route::get('/academics/departments/science-humanities/student-achievements', [PagesController::class, 'department_science_humanities_student_achievements']);
+Route::get('/academics/departments/science-humanities/program-outcomes', [PagesController::class, 'department_science_humanities_program_outcomes']);
+Route::get('/academics/departments/science-humanities/programme-educational-objectives', [PagesController::class, 'department_science_humanities_programme_educational_objectives']);
+Route::get('/academics/departments/science-humanities/programme-specific-outcomes', [PagesController::class, 'department_science_humanities_programme_specific_outcomes']);
+
+
+
+
+// Contact Website Admin
+Route::get('/institution/internal/contact/website/admin', [InstitutionInternalPurpose::class, 'contact_website_admin']);

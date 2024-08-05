@@ -9,7 +9,7 @@
 
 
 
-<section class="rts-about-university pt--100 pb--80" id="placementTeam">
+<section class="rts-about-university pt--100 pb--80" id="">
     <div class="container">
         <div class="row">
             <div class="rts-section">
@@ -91,7 +91,7 @@
 
 
 
-                <div class="application-deadline mt-5">
+                <div class="application-deadline mt-5" id="placementTeam">
 
                         <h3 class="rts-section-title animated fadeIn">Placement Coordinators</h3>
 

@@ -123,11 +123,6 @@ class PagesController extends Controller
     }
 
 
-    public function department_science_humanities()
-    {
-        return view('pages.academics.departments.science-humanities');
-    }
-
     public function industry_academic_partnering()
     {
         $iap = Cache::remember('industry_academic_partnering', 120, function () {
@@ -1207,5 +1202,41 @@ class PagesController extends Controller
     public function ug_electrical_and_electronics_engineering_student_achievements()
     {
         return view('pages.academics.departments.undergraduate.electrical-and-electronics-engineering.student-achievements');
+    }
+
+
+    // Department -> Undergraduate -> Department of Computer Science & Business Systems
+
+    public function ug_computer_science_and_business_systems()
+    {
+        return view('pages.academics.departments.undergraduate.computer-science-business-systems.computer-science-business-systems');
+    }
+
+
+    // Department -> Department of Science & Humanities
+
+    public function department_science_humanities()
+    {
+        return view('pages.academics.departments.science-humanities.science-humanities');
+    }
+
+    public function department_science_humanities_department_highlights()
+    {
+        return view('pages.academics.departments.science-humanities.department-highlights');
+    }
+
+    public function department_science_humanities_faculty_details()
+    {
+        return view('pages.academics.departments.science-humanities.faculty-details');
+    }
+
+    public function department_science_humanities_hods_desk()
+    {
+        return view('pages.academics.departments.science-humanities.hods-desk');
+    }
+
+    public function department_science_humanities_industry_collabration()
+    {
+        return view('pages.academics.departments.science-humanities.industry-collabration');
     }
 }

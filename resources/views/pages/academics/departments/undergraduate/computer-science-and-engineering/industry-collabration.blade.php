@@ -5,7 +5,7 @@
     'value_1' => 'Academics',
     'value_2' => 'Departments',
     'value_3' => 'Computer Science and Engineering',
-    'page_title' => 'HoD’s Desk'
+    'page_title' => 'Industry Collabration'
 ])
 
 <div class="rts-program rts-section-padding">

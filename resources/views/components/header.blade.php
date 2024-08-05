@@ -296,21 +296,34 @@
                                    </ul>
                                 </li>
 
-                                <li class="dropdownss">
+                                <li class="has-dropdown">
                                    <a class="nav-link" href="{{ url("#") }}">Alumni</a>
+
+                                   <ul class="submenu">
+
+                                    <li><a href="{{ url("") }}">Alumni Interaction</a></li>
+                                    <li><a href="{{ url("") }}">Alumni Survey</a></li>
+                                    <li><a href="{{ url("") }}">Alumni Magazine</a></li>
+
+                                 </ul>
                                 </li>
                                 <li class="dropdownss">
                                    <a class="nav-link" href="{{ url("#") }}">Downloads</a>
                                 </li>
 
                                 <li class="has-dropdown">
-                                   <a class="nav-link" href="{{ url("#") }}">Circular</a>
-                                   <ul class="submenu">
-                                      <li><a href="{{ url("#") }}">Anna University Circular</a></li>
-                                      <li><a href="{{ url("#") }}">UGC Guidelines</a></li>
-                                      <li><a href="{{ url("#") }}">Fees Reminder for the Academic Year {{ date('Y') }} - {{ substr(date('Y') + 1, -2) }}</a></li>
-                                   </ul>
-                                </li>
+                                    <a class="nav-link" href="{{ url("#") }}">IQAC</a>
+
+                                    <ul class="submenu">
+
+                                        <li><a href="{{ url("/iqac/committe-members") }}">Members</a></li>
+                                        <li><a href="{{ url("/iqac/meeting-minutes") }}">IQAC Meeting Minutes</a></li>
+
+
+                                     </ul>
+                                 </li>
+
+
                              </ul>
                         </nav>
                     </div>

@@ -5,20 +5,24 @@ $footerLinks = [
 'Student Login' => '#',
 'Staff Login' => '#',
 'Contact Us' => '#',
-'ERP' => '#',
+'ERP' => 'http://edu.egspgroup.in/ERP',
 'Pay Fees Online' => '#',
 'IT Policy' => '#',
 'Careers' => '#',
-'FAQ' => '#',
+'FAQ' => url('/admissions/faq'),
 ],
+
+
+
+
 'Placement' => [
-'Industry Partnership' => '#',
-'MoU' => url('/placements/memorandum-of-understanding'),
-'Recruiters' => url('/placements/our-top-recruiters'),
+'Industry Partnership' => url('/academics/industry-training-programs'),
+'MoU' => url('/placements#memorandum-of-understanding'),
+'Recruiters' => url('/placements#our-top-recruiters'),
 'Training Cell' => '#',
-'Placement Gallery' => url('/placements/placement-gallery'),
-'Placement Team' => url('/placements/placement-team'),
-'Placement Statistics' => url('/placements/statistics'),
+'Placement Gallery' => url('/placements#placement-gallery'),
+'Placement Team' => url('/placements#placementTeam'),
+'Placement Statistics' => url('/placements#statistics'),
 ],
 'Important Links' => [
 'AntiRagging' => url('/activities/anti-ragging-committee'),
@@ -56,13 +60,6 @@ $footerLinks = [
                                     <img src="{{ asset('/assets/images/logo-white.svg') }}" alt="EGSPEC" class="img-fluid">
                                 </picture>
 
-
-                                {{-- <picture>
-                                    <source srcset="{{ asset('/assets/images/egs-logo.webp') }}" type="image/svg">
-                                    <img src="{{ asset('/assets/images/egs-logo.webp') }}" alt="EGSPEC" class="img-fluid">
-                                </picture> --}}
-
-                                {{-- <img src="{{ asset('/assets/images/logo-white.svg') }}" alt="EGSPEC"> --}}
                             </a>
 
                             <div class="rts-contact-link">
@@ -72,7 +69,7 @@ $footerLinks = [
 
                                 <div class="social-copyright">
                                     <ul>
-                                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="https://www.facebook.com/EGSPGOI/"><i class="fa-brands fa-facebook-f"></i></a></li>
                                         <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                                         <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
                                         <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
