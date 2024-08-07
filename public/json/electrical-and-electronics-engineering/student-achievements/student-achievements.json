@@ -1,0 +1,1065 @@
+{
+    "StudentAchievements": [
+        {
+            "Department": "Electrical And Electronics Engineering",
+            "Students": [
+                {
+                    "Name of the Students": "Arun kumar.R",
+                    "Event Name": "Physique competition ",
+                    "Event Category": "competition ",
+                    "Duration": "17.02.2024",
+                    "No of Days": 1,
+                    "Institution Name": "SASTRA University"
+                },
+                {
+                    "Name of the Students": "Arun kumar.R",
+                    "Event Name": "Inter zonal tournament",
+                    "Event Category": "competition ",
+                    "Duration": "7.01.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Paavai Engineering college"
+                },
+                {
+                    "Name of the Students": "Karvin raj.M",
+                    "Event Name": "District level tournament",
+                    "Event Category": "competition ",
+                    "Duration": "4.4.2024 to 6.4.2024",
+                    "No of Days": 3,
+                    "Institution Name": "Anna university-Thirukuvalai"
+                },
+                {
+                    "Name of the Students": "Karvin raj.M",
+                    "Event Name": "Inter zonal tournament",
+                    "Event Category": "competition ",
+                    "Duration": "06.10.2023 to 08.10.2023",
+                    "No of Days": 3,
+                    "Institution Name": "Anna university-Thirukuvalai"
+                },
+                {
+                    "Name of the Students": "P.Kalaiyarasan",
+                    "Event Name": "Zonal tournament",
+                    "Event Category": "competition ",
+                    "Duration": "06.10.2023 to 08.10.2023",
+                    "No of Days": 3,
+                    "Institution Name": "Anna University sports Board"
+                },
+                {
+                    "Name of the Students": "P.Parasuraman",
+                    "Event Name": "Dhruva-2023",
+                    "Event Category": "competition ",
+                    "Duration": "17.02.2023 to 18.02.2023",
+                    "No of Days": 2,
+                    "Institution Name": "Karpagam college of Engineering, Coimbatore"
+                },
+                {
+                    "Name of the Students": "C.Kuzhanthaivel",
+                    "Event Name": "Dhruva-2023",
+                    "Event Category": "competition ",
+                    "Duration": "17.02.2023 to 18.02.2023",
+                    "No of Days": 2,
+                    "Institution Name": "Karpagam college of Engineering, Coimbatore"
+                },
+                {
+                    "Name of the Students": "J.Jenisha",
+                    "Event Name": "Project training on operating modes of motor",
+                    "Event Category": "training",
+                    "Duration": "12.02.2024 to 20.02.2024",
+                    "No of Days": 8,
+                    "Institution Name": "ISRO Propulsion complex"
+                },
+                {
+                    "Name of the Students": "P.Parasuraman",
+                    "Event Name": "Project training on operating modes of motor",
+                    "Event Category": "training",
+                    "Duration": "12.02.2024 to 20.02.2024",
+                    "No of Days": 8,
+                    "Institution Name": "ISRO Propulsion complex"
+                },
+                {
+                    "Name of the Students": "S.Shalini",
+                    "Event Name": "Project training on operating modes of motor",
+                    "Event Category": "training",
+                    "Duration": "12.02.2024 to 20.02.2024",
+                    "No of Days": 8,
+                    "Institution Name": "ISRO Propulsion complex"
+                },
+                {
+                    "Name of the Students": "M.Govindharajan",
+                    "Event Name": "Project training on operating modes of motor",
+                    "Event Category": "training",
+                    "Duration": "12.02.2024 to 20.02.2024",
+                    "No of Days": 8,
+                    "Institution Name": "ISRO Propulsion complex"
+                },
+                {
+                    "Name of the Students": "Aakash S",
+                    "Event Name": "Training on assembly of cryogenic engine",
+                    "Event Category": "training",
+                    "Duration": "12.02.2024 to 20.02.2024",
+                    "No of Days": 8,
+                    "Institution Name": "ISRO Propulsion complex"
+                },
+                {
+                    "Name of the Students": "T.Vijay",
+                    "Event Name": "Training on assembly of cryogenic engine",
+                    "Event Category": "training",
+                    "Duration": "12.02.2024 to 20.02.2024",
+                    "No of Days": 8,
+                    "Institution Name": "ISRO Propulsion complex"
+                },
+                {
+                    "Name of the Students": "C.Kaviyarasan",
+                    "Event Name": "Hands-on training on embedded system",
+                    "Event Category": "training",
+                    "Duration": "22.03.2024 to 24.03.2024",
+                    "No of Days": 3,
+                    "Institution Name": "Madras Institute of technology"
+                },
+                {
+                    "Name of the Students": "R.Giri",
+                    "Event Name": "Hands-on training on embedded system",
+                    "Event Category": "training",
+                    "Duration": "22.03.2024 to 24.03.2024",
+                    "No of Days": 3,
+                    "Institution Name": "Madras Institute of technology"
+                },
+                {
+                    "Name of the Students": "P.Harsha",
+                    "Event Name": "Workshop on drone building by AI",
+                    "Event Category": "workshop",
+                    "Duration": "01.03.2024 &02.03.2024",
+                    "No of Days": 2,
+                    "Institution Name": "National Institute of tehnologyPuducherry"
+                },
+                {
+                    "Name of the Students": "S.Priyabala",
+                    "Event Name": "Workshop on drone building by AI",
+                    "Event Category": "workshop",
+                    "Duration": "01.03.2024 &02.03.2024",
+                    "No of Days": 2,
+                    "Institution Name": "National Institute of tehnologyPuducherry"
+                },
+                {
+                    "Name of the Students": "B.S.Lavanya",
+                    "Event Name": "Competition on PCB design",
+                    "Event Category": "competition ",
+                    "Duration": "01.03.2024 &02.03.2024",
+                    "No of Days": 2,
+                    "Institution Name": "National Institute of tehnologyPuducherry"
+                },
+                {
+                    "Name of the Students": "Avinash Baskaran",
+                    "Event Name": "Short term course on AI &ML",
+                    "Event Category": "training",
+                    "Duration": "26.02.2024 to 01.03.2024",
+                    "No of Days": 7,
+                    "Institution Name": "National Institute of tehnologyPuducherry"
+                },
+                {
+                    "Name of the Students": "Abitha Ganesh",
+                    "Event Name": "Short term course on AI &ML",
+                    "Event Category": "training",
+                    "Duration": "26.02.2024 to 01.03.2024",
+                    "No of Days": 7,
+                    "Institution Name": "National Institute of tehnologyPuducherry"
+                },
+                {
+                    "Name of the Students": "J.Shobana",
+                    "Event Name": "Short term course on AI &ML",
+                    "Event Category": "training",
+                    "Duration": "26.02.2024 to 01.03.2024",
+                    "No of Days": 7,
+                    "Institution Name": "National Institute of tehnologyPuducherry"
+                },
+                {
+                    "Name of the Students": "Srinithi Senthilkumar",
+                    "Event Name": "Short term course on AI &ML",
+                    "Event Category": "training",
+                    "Duration": "26.02.2024 to 01.03.2024",
+                    "No of Days": 7,
+                    "Institution Name": "National Institute of tehnologyPuducherry"
+                },
+                {
+                    "Name of the Students": "K.Gowri manohari",
+                    "Event Name": "Short term course on AI &ML",
+                    "Event Category": "training",
+                    "Duration": "26.02.2024 to 01.03.2024",
+                    "No of Days": 7,
+                    "Institution Name": "National Institute of tehnologyPuducherry"
+                },
+                {
+                    "Name of the Students": "S.Aathithyan",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "A.Sudharsan",
+                    "Event Name": "Ciruit debugging",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "A.Abdul ajis",
+                    "Event Name": "Ciruit debugging",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "M.Renganathan",
+                    "Event Name": "Paper presentation",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "S.Hari",
+                    "Event Name": "Paper presentation",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "S.Kirubakaran",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "R.Harish",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "S.Velusamy",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "M.R.Surya prakash",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "G.Rajeshwari",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "V.Dharaniya",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "V.Gayathri",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "J.Jenisha",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "S.Shalini",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "M.Mohamed riaskhan",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "S.Vignesh",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "P.Parasuraman",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "S.Rajesh",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "S.Nithish",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "R.Immanuel Ezhil Raj",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "S.Aathtithyan",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "M.Gowthaman",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "S.Kirubakaran",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "S.Naveen kumar",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "S.Vigneshwar",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "S.Muthukumaran",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "V.Ashok",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "K.Vigneshwaravelan",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "M.Tharun",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "V.Sriram",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "N.Bharanitharan",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college "
+                },
+                {
+                    "Name of the Students": "R.Akash",
+                    "Event Name": "Training  on PCB design",
+                    "Event Category": "training",
+                    "Duration": "6.5.2024 to 10.05.2024",
+                    "No of Days": 5,
+                    "Institution Name": "Hitakey tech solution Pvt Ltd"
+                },
+                {
+                    "Name of the Students": "E.Akash",
+                    "Event Name": "Training  on PCB design",
+                    "Event Category": "training",
+                    "Duration": "6.5.2024 to 10.05.2024",
+                    "No of Days": 5,
+                    "Institution Name": "Hitakey tech solution Pvt Ltd"
+                },
+                {
+                    "Name of the Students": "G.Abitha",
+                    "Event Name": "Training  on PCB design",
+                    "Event Category": "training",
+                    "Duration": "6.5.2024 to 10.05.2024",
+                    "No of Days": 5,
+                    "Institution Name": "Hitakey tech solution Pvt Ltd"
+                },
+                {
+                    "Name of the Students": "K.Abinash",
+                    "Event Name": "Training  on PCB design",
+                    "Event Category": "training",
+                    "Duration": "6.5.2024 to 10.05.2024",
+                    "No of Days": 5,
+                    "Institution Name": "Hitakey tech solution Pvt Ltd"
+                },
+                {
+                    "Name of the Students": "P.Amirthavarshan",
+                    "Event Name": "Training  on PCB design",
+                    "Event Category": "training",
+                    "Duration": "6.5.2024 to 10.05.2024",
+                    "No of Days": 5,
+                    "Institution Name": "Hitakey tech solution Pvt Ltd"
+                },
+                {
+                    "Name of the Students": "J.Rohith",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024 &18.04.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Rathinam technical campus"
+                },
+                {
+                    "Name of the Students": "C.Anbumani",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024 &18.04.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Rathinam technical campus"
+                },
+                {
+                    "Name of the Students": "R.Arunkumar",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024 &18.04.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Rathinam technical campus"
+                },
+                {
+                    "Name of the Students": "S.Muthukumaran",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024 &18.04.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Rathinam technical campus"
+                },
+                {
+                    "Name of the Students": "R.Pradeepkumar",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024 &18.04.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Rathinam technical campus"
+                },
+                {
+                    "Name of the Students": "P.Sriban",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024 &18.04.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Rathinam technical campus"
+                },
+                {
+                    "Name of the Students": "K.Subash",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024 &18.04.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Rathinam technical campus"
+                },
+                {
+                    "Name of the Students": "N.Tamilarasan",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024 &18.04.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Rathinam technical campus"
+                },
+                {
+                    "Name of the Students": "K.Yokeshwaran",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024 &18.04.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Rathinam technical campus"
+                },
+                {
+                    "Name of the Students": "G.Aathinathan",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024 &18.04.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Rathinam technical campus"
+                },
+                {
+                    "Name of the Students": "M.Mohamed Fazul Rahman",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024 &18.04.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Rathinam technical campus"
+                },
+                {
+                    "Name of the Students": "S.Sheikmohammed",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024 &18.04.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Rathinam technical campus"
+                },
+                {
+                    "Name of the Students": "N.Yeswanth",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024 &18.04.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Rathinam technical campus"
+                },
+                {
+                    "Name of the Students": "S.Muthukumaran",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024 &18.04.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Rathinam technical campus"
+                },
+                {
+                    "Name of the Students": "R.Pradeep kumar",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024 &18.04.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Rathinam technical campus"
+                },
+                {
+                    "Name of the Students": "J.Jayamurugan",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024 &18.04.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Rathinam technical campus"
+                },
+                {
+                    "Name of the Students": "T.Parthiban",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024 &18.04.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Rathinam technical campus"
+                },
+                {
+                    "Name of the Students": "M.Karvin raj",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024 &18.04.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Rathinam technical campus"
+                },
+                {
+                    "Name of the Students": "A.Pragadesh",
+                    "Event Name": "Project expo",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024 &18.04.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Rathinam technical campus"
+                },
+                {
+                    "Name of the Students": "P.Harsha",
+                    "Event Name": "Hands on training -IoT",
+                    "Event Category": "training",
+                    "Duration": "17.04.2024 &18.04.2024",
+                    "No of Days": 2,
+                    "Institution Name": "SASTRA University"
+                },
+                {
+                    "Name of the Students": "B.Karthi",
+                    "Event Name": "Hands on training -IoT",
+                    "Event Category": "training",
+                    "Duration": "30.03.2024",
+                    "No of Days": 1,
+                    "Institution Name": "SASTRA University"
+                },
+                {
+                    "Name of the Students": "R.Kaviraja",
+                    "Event Name": "Hands on training -IoT",
+                    "Event Category": "training",
+                    "Duration": "30.03.2024",
+                    "No of Days": 1,
+                    "Institution Name": "SASTRA University"
+                },
+                {
+                    "Name of the Students": "R.Vigneshwaran",
+                    "Event Name": "Hands on training -IoT",
+                    "Event Category": "training",
+                    "Duration": "30.03.2024",
+                    "No of Days": 1,
+                    "Institution Name": "SASTRA University"
+                },
+                {
+                    "Name of the Students": "S.Priyabala",
+                    "Event Name": "Hands on training -IoT",
+                    "Event Category": "training",
+                    "Duration": "30.03.2024",
+                    "No of Days": 1,
+                    "Institution Name": "SASTRA University"
+                },
+                {
+                    "Name of the Students": "B.S.Lavanya",
+                    "Event Name": "Hands on training -IoT",
+                    "Event Category": "training",
+                    "Duration": "30.03.2024",
+                    "No of Days": 1,
+                    "Institution Name": "SASTRA University"
+                },
+                {
+                    "Name of the Students": "J.Shobana",
+                    "Event Name": "Hands on training- IoT",
+                    "Event Category": "training",
+                    "Duration": "30.03.2024",
+                    "No of Days": 1,
+                    "Institution Name": "SASTRA University"
+                },
+                {
+                    "Name of the Students": "N.Bharanitharan",
+                    "Event Name": "Workshop on prompt engineering",
+                    "Event Category": "workshop",
+                    "Duration": "18.02.2024",
+                    "No of Days": 1,
+                    "Institution Name": "National skill development corporation"
+                },
+                {
+                    "Name of the Students": "M.Mohana roubhan",
+                    "Event Name": "Workshop on virtual instrumentation",
+                    "Event Category": "workshop",
+                    "Duration": "7.3.2024 to 8.3.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Kumaraguru college of technology"
+                },
+                {
+                    "Name of the Students": "K.Abinash",
+                    "Event Name": "Workshop on virtual instrumentation",
+                    "Event Category": "workshop",
+                    "Duration": "7.3.2024 to 8.3.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Kumaraguru college of technology"
+                },
+                {
+                    "Name of the Students": "S.Velmurugan",
+                    "Event Name": "Workshop on virtual instrumentation",
+                    "Event Category": "workshop",
+                    "Duration": "7.3.2024 to 8.3.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Kumaraguru college of technology"
+                },
+                {
+                    "Name of the Students": "R.Ezhilarasan",
+                    "Event Name": "Workshop on virtual instrumentation",
+                    "Event Category": "workshop",
+                    "Duration": "7.3.2024 to 8.3.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Kumaraguru college of technology"
+                },
+                {
+                    "Name of the Students": "R.Kaliyaperumal",
+                    "Event Name": "Workshop on virtual instrumentation",
+                    "Event Category": "workshop",
+                    "Duration": "7.3.2024 to 8.3.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Kumaraguru college of technology"
+                },
+                {
+                    "Name of the Students": "S.Krishna kumar",
+                    "Event Name": "Workshop on virtual instrumentation",
+                    "Event Category": "workshop",
+                    "Duration": "7.3.2024 to 8.3.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Kumaraguru college of technology"
+                },
+                {
+                    "Name of the Students": "M.Mohamed Musaraf",
+                    "Event Name": "Workshop on virtual instrumentation",
+                    "Event Category": "workshop",
+                    "Duration": "7.3.2024 to 8.3.2024",
+                    "No of Days": 2,
+                    "Institution Name": "Kumaraguru college of technology"
+                },
+                {
+                    "Name of the Students": "P.Kalaiyarasan",
+                    "Event Name": "Sports fest",
+                    "Event Category": "competition ",
+                    "Duration": "14.02.2024 to 18.02.2024",
+                    "No of Days": 5,
+                    "Institution Name": "Kumaraguru college of technology"
+                },
+                {
+                    "Name of the Students": "F.John gilbert",
+                    "Event Name": "Workshop on technical and economic ability",
+                    "Event Category": "workshop",
+                    "Duration": "23.02.2024",
+                    "No of Days": 1,
+                    "Institution Name": "SASTRA University"
+                },
+                {
+                    "Name of the Students": "R.Ragul",
+                    "Event Name": "Quiz competition",
+                    "Event Category": "competition ",
+                    "Duration": "15.02.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Shankar IAS Academy"
+                },
+                {
+                    "Name of the Students": "S.Prem",
+                    "Event Name": "Quiz competition",
+                    "Event Category": "competition ",
+                    "Duration": "15.02.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Shankar IAS Academy"
+                },
+                {
+                    "Name of the Students": "J.Farmanullah",
+                    "Event Name": "Quiz competition",
+                    "Event Category": "competition ",
+                    "Duration": "15.02.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Shankar IAS Academy"
+                },
+                {
+                    "Name of the Students": "T.Vijay",
+                    "Event Name": "Quiz competition",
+                    "Event Category": "competition ",
+                    "Duration": "15.02.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Shankar IAS Academy"
+                },
+                {
+                    "Name of the Students": "R.Mathavaraj",
+                    "Event Name": "Quiz competition",
+                    "Event Category": "competition ",
+                    "Duration": "15.02.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Shankar IAS Academy"
+                },
+                {
+                    "Name of the Students": "S.Rajesh",
+                    "Event Name": "Quiz competition",
+                    "Event Category": "competition ",
+                    "Duration": "15.02.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Shankar IAS Academy"
+                },
+                {
+                    "Name of the Students": "E.Akash",
+                    "Event Name": "Workshop on technical and economic ability",
+                    "Event Category": "workshop",
+                    "Duration": "23.02.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Karpagam college of engineering"
+                },
+                {
+                    "Name of the Students": "R.Akash",
+                    "Event Name": "Workshop on technical and economic ability",
+                    "Event Category": "workshop",
+                    "Duration": "23.02.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Karpagam college of engineering"
+                },
+                {
+                    "Name of the Students": "N.Bharanitharan",
+                    "Event Name": "Workshop on technical and economic ability",
+                    "Event Category": "workshop",
+                    "Duration": "23.02.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Karpagam college of engineering"
+                },
+                {
+                    "Name of the Students": "V.Bharathraj",
+                    "Event Name": "Workshop on technical and economic ability",
+                    "Event Category": "workshop",
+                    "Duration": "23.02.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Karpagam college of engineering"
+                },
+                {
+                    "Name of the Students": "K.Arthi",
+                    "Event Name": "NPTEL Course ",
+                    "Event Category": "course",
+                    "Duration": "January –March 2024",
+                    "No of Days": 0,
+                    "Institution Name": "Indian Institute of technology Roorkee"
+                },
+                {
+                    "Name of the Students": "K.Ajithkumar",
+                    "Event Name": "NPTEL Course",
+                    "Event Category": "course",
+                    "Duration": "January –March 2024",
+                    "No of Days": 0,
+                    "Institution Name": "Indian Institute of technology Kharagpur"
+                },
+                {
+                    "Name of the Students": "M.Devadharshini",
+                    "Event Name": "NPTEL Course",
+                    "Event Category": "course",
+                    "Duration": "January –March 2024",
+                    "No of Days": 0,
+                    "Institution Name": "Indian Institute of technology Kharagpur"
+                },
+                {
+                    "Name of the Students": "P.Harsha",
+                    "Event Name": "NPTEL Course",
+                    "Event Category": "course",
+                    "Duration": "January –March 2024",
+                    "No of Days": 0,
+                    "Institution Name": "Indian Institute of technology Kharagpur"
+                },
+                {
+                    "Name of the Students": "A.Priyadharshini",
+                    "Event Name": "NPTEL Course",
+                    "Event Category": "course",
+                    "Duration": "January –March 2024",
+                    "No of Days": 0,
+                    "Institution Name": "Indian Institute of technology Kharagpur"
+                },
+                {
+                    "Name of the Students": "S.Saranya",
+                    "Event Name": "NPTEL Course",
+                    "Event Category": "course",
+                    "Duration": "July-Sept 2023",
+                    "No of Days": 0,
+                    "Institution Name": "Indian Institute of technology Roorkee"
+                },
+                {
+                    "Name of the Students": "priyabala",
+                    "Event Name": "NPTEL Course",
+                    "Event Category": "course",
+                    "Duration": "January –March 2024",
+                    "No of Days": 0,
+                    "Institution Name": "Indian Institute of technology Kharagpur"
+                },
+                {
+                    "Name of the Students": "V.Dharaniya",
+                    "Event Name": "NPTEL Course",
+                    "Event Category": "course",
+                    "Duration": "July-Oct 2023",
+                    "No of Days": 0,
+                    "Institution Name": "Indian Institute of technology"
+                },
+                {
+                    "Name of the Students": "K.Yokeshwaran",
+                    "Event Name": "Open chess tournament",
+                    "Event Category": "competition ",
+                    "Duration": "1.10.2023",
+                    "No of Days": 1,
+                    "Institution Name": "DAN chess Tamilnadu "
+                },
+                {
+                    "Name of the Students": "R.Jasmine",
+                    "Event Name": "Online training on electrical design",
+                    "Event Category": "training",
+                    "Duration": "Aug-23",
+                    "No of Days": 0,
+                    "Institution Name": "Kathmandu Engineering college,Katmandu"
+                },
+                {
+                    "Name of the Students": "Aakash S",
+                    "Event Name": " WORKSHOP on electric vehicle",
+                    "Event Category": "workshop",
+                    "Duration": "15.10.2023",
+                    "No of Days": 1,
+                    "Institution Name": "Karpagam college of engineering"
+                },
+                {
+                    "Name of the Students": "Bharanidharan",
+                    "Event Name": " WORKSHOP on electric vehicle",
+                    "Event Category": "workshop",
+                    "Duration": "15.10.2023",
+                    "No of Days": 1,
+                    "Institution Name": "Karpagam college of engineering"
+                },
+                {
+                    "Name of the Students": "Aakash S",
+                    "Event Name": "Knowledge quiz series",
+                    "Event Category": "competition ",
+                    "Duration": "15.10.2023",
+                    "No of Days": 1,
+                    "Institution Name": "Karpagam college of engineering"
+                },
+                {
+                    "Name of the Students": "P.Kabilraj",
+                    "Event Name": "Paper presentation",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college"
+                },
+                {
+                    "Name of the Students": "J.S.Krishnakanth",
+                    "Event Name": "Paper presentation",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college"
+                },
+                {
+                    "Name of the Students": "R.Mathavaraj",
+                    "Event Name": "Paper presentation",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college"
+                },
+                {
+                    "Name of the Students": "B.Prakash",
+                    "Event Name": "Paper presentation",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college"
+                },
+                {
+                    "Name of the Students": "M.Ragul",
+                    "Event Name": "Paper presentation",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college"
+                },
+                {
+                    "Name of the Students": "S.Saranya",
+                    "Event Name": "Paper presentation",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college"
+                },
+                {
+                    "Name of the Students": "P.Sriram",
+                    "Event Name": "Paper presentation",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college"
+                },
+                {
+                    "Name of the Students": "R.Veeramani",
+                    "Event Name": "Paper presentation",
+                    "Event Category": "competition ",
+                    "Duration": "17.04.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college"
+                },
+                {
+                    "Name of the Students": "S.Senthamizhan",
+                    "Event Name": "Workshop",
+                    "Event Category": "workshop",
+                    "Duration": "17.06.2023",
+                    "No of Days": 1,
+                    "Institution Name": "Arasu Engineering college"
+                },
+                {
+                    "Name of the Students": "S.Senthamizhan",
+                    "Event Name": "Online course",
+                    "Event Category": "training",
+                    "Duration": "8.06.2023",
+                    "No of Days": 1,
+                    "Institution Name": "Learn Delta"
+                },
+                {
+                    "Name of the Students": "S.Senthamizhan",
+                    "Event Name": "Webinar ",
+                    "Event Category": "webinar",
+                    "Duration": "23.06.2023",
+                    "No of Days": 1,
+                    "Institution Name": "Infosys springboard"
+                },
+                {
+                    "Name of the Students": "J.Farmanullah",
+                    "Event Name": "Workshop ",
+                    "Event Category": "workshop",
+                    "Duration": "15.06.2023",
+                    "No of Days": 1,
+                    "Institution Name": "SRM Madurai college of engineering and technology"
+                },
+                {
+                    "Name of the Students": "J.Farmanullah",
+                    "Event Name": "Online training",
+                    "Event Category": "training",
+                    "Duration": "03.06.2023",
+                    "No of Days": 1,
+                    "Institution Name": "Nikistian Media Pvt  Ltd"
+                },
+                {
+                    "Name of the Students": "R.Jasmine",
+                    "Event Name": "Training on Designing with color theory",
+                    "Event Category": "training",
+                    "Duration": "07.02.2024",
+                    "No of Days": 1,
+                    "Institution Name": "Internshala trainings"
+                }
+            ]
+        }
+    ]
+}
