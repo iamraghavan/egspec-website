@@ -190,74 +190,60 @@
             el.textContent = '';
         });
 
-        // Validate Staff ID
-        var staffId = document.getElementById('staff_id');
-        var staffIdError = document.getElementById('staff_id_error');
-        if (!staffId.value.match(/^[A-Za-z0-9]+$/)) {
-            staffIdError.textContent = 'Please enter alphanumeric characters only.';
-            valid = false;
-        }
-
-        // Validate Staff Name
-        var staffName = document.getElementById('staff_name');
-        var staffNameError = document.getElementById('staff_name_error');
-        if (!staffName.value.match(/^[A-Za-z\s]+$/)) {
-            staffNameError.textContent = 'Please enter alphabets only.';
-            valid = false;
-        }
-
-        // Validate Staff Email
-        var staffEmail = document.getElementById('staff_email');
-        var staffEmailError = document.getElementById('staff_email_error');
-        if (!staffEmail.value.match(/^[a-zA-Z0-9._%+-]+@egspec\.org$/)) {
-            staffEmailError.textContent = 'Please enter a valid egspec.org email.';
-            valid = false;
-        }
-
-        // Validate Phone Number
-        var staffPhone = document.getElementById('staff_phone');
-        var staffPhoneError = document.getElementById('staff_phone_error');
-        if (!staffPhone.value.match(/^\d{3}-\d{3}-\d{4}$/)) {
-            staffPhoneError.textContent = 'Please enter a valid phone number format: 123-456-7890.';
-            valid = false;
-        }
-
-        // Validate Department
-        var department = document.getElementById('department');
-        var departmentError = document.getElementById('department_error');
-        if (department.value === '') {
-            departmentError.textContent = 'Please select a department.';
-            valid = false;
-        }
-
-        // Validate Work Type
-        var workType = document.getElementById('work_type');
-        var workTypeError = document.getElementById('work_type_error');
-        if (workType.value === '') {
-            workTypeError.textContent = 'Please select the type of work.';
-            valid = false;
-        }
-
-        // Validate Data Update
-        var dataUpdate = document.getElementById('data_update');
-        var dataUpdateError = document.getElementById('data_update_error');
-        if (dataUpdate.value.trim() === '') {
-            dataUpdateError.textContent = 'Please explain what data has been updated.';
-            valid = false;
-        }
-
-        // Validate Confirmation Checkbox
-        var confirmation = document.getElementById('confirmation');
-        var confirmationError = document.getElementById('confirmation_error');
-        if (!confirmation.checked) {
-            confirmationError.textContent = 'You must confirm that all information is accurate and complete.';
-            valid = false;
-        }
+        // Validate form fields
+        valid &= validateField('staff_id', /^[A-Za-z0-9]+$/, 'Please enter alphanumeric characters only.');
+        valid &= validateField('staff_name', /^[A-Za-z\s]+$/, 'Please enter alphabets only.');
+        valid &= validateField('staff_email', /^[a-zA-Z0-9._%+-]+@egspec\.org$/, 'Please enter a valid egspec.org email.');
+        valid &= validateField('staff_phone', /^\d{3}-\d{3}-\d{4}$/, 'Please enter a valid phone number format: 123-456-7890.');
+        valid &= validateSelect('department', 'Please select a department.');
+        valid &= validateSelect('work_type', 'Please select the type of work.');
+        valid &= validateTextArea('data_update', 'Please explain what data has been updated.');
+        valid &= validateCheckbox('confirmation', 'You must confirm that all information is accurate and complete.');
 
         if (!valid) {
-            event.preventDefault(); // Prevent form submission if validation fails
+            event.preventDefault();
         }
     });
+
+    function validateField(id, regex, errorMessage) {
+        var field = document.getElementById(id);
+        var error = document.getElementById(id + '_error');
+        if (!field.value.match(regex)) {
+            error.textContent = errorMessage;
+            return false;
+        }
+        return true;
+    }
+
+    function validateSelect(id, errorMessage) {
+        var field = document.getElementById(id);
+        var error = document.getElementById(id + '_error');
+        if (field.value === '') {
+            error.textContent = errorMessage;
+            return false;
+        }
+        return true;
+    }
+
+    function validateTextArea(id, errorMessage) {
+        var field = document.getElementById(id);
+        var error = document.getElementById(id + '_error');
+        if (field.value.trim() === '') {
+            error.textContent = errorMessage;
+            return false;
+        }
+        return true;
+    }
+
+    function validateCheckbox(id, errorMessage) {
+        var field = document.getElementById(id);
+        var error = document.getElementById(id + '_error');
+        if (!field.checked) {
+            error.textContent = errorMessage;
+            return false;
+        }
+        return true;
+    }
 
     // Add URL input fields dynamically
     document.getElementById('add_url').addEventListener('click', function () {
@@ -271,5 +257,6 @@
         element.parentElement.remove();
     }
 </script>
+
 
 @endsection

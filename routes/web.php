@@ -362,5 +362,5 @@ Route::get('/academics/departments/science-humanities/programme-specific-outcome
 
 
 // Contact Website Admin
-Route::get('/institution/internal/contact/website/admin', [InstitutionInternalPurpose::class, 'contact_website_admin']);
+Route::get('/institution/internal/contact/website/admin', [InstitutionInternalPurpose::class, 'contact_website_admin'])->name('contact_website_admin');
 Route::post('/form-submit', [AdFormController::class, 'submit'])->name('form.submit');
