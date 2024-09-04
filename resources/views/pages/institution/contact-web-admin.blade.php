@@ -19,7 +19,6 @@
                     <div class="rts-application-form">
 
 
-
                         <form id="contactForm" action="{{ route('form.submit') }}" method="POST" style="margin: 0px !important; width: 100% !important; border: none !important; max-width: 100%;">
                             @csrf
                             <div class="single-form-part">
@@ -28,25 +27,39 @@
                                     <div class="single-input-item">
                                         <label class="input-label" for="staff_id">Staff ERP ID</label>
                                         <input type="text" id="staff_id" name="staff_id" class="input-field" placeholder="Staff ID" required pattern="[A-Za-z0-9]+" title="Please enter alphanumeric characters only" value="{{ old('staff_id') }}">
-                                        <span class="error-message" id="staff_id_error"></span>
+                                        @error('staff_id')
+                                        <span class="error-message">{{ $message }}</span>
+                                        @enderror
                                     </div>
                                     <div class="single-input-item">
                                         <label class="input-label" for="staff_name">Staff Name</label>
-                                        <input type="text" id="staff_name" name="staff_name" class="input-field" placeholder="Staff Name" required pattern="[A-Za-z\s]+" title="Please enter alphabets only" value="{{ old('staff_name') }}">
-                                        <span class="error-message" id="staff_name_error"></span>
+                                        <input type="text" id="staff_name" name="staff_name" class="input-field" placeholder="Staff Name" required pattern="[A-Za-z\s]+" title="Please enter only letters and spaces" value="{{ old('staff_name') }}" oninput="this.value = this.value.toUpperCase()">
+                                        @error('staff_name')
+                                        <span class="error-message">{{ $message }}</span>
+                                        @enderror
                                     </div>
+
                                 </div>
                                 <div class="single-input">
                                     <div class="single-input-item">
                                         <label class="input-label" for="staff_email">Staff Institution Mail ID</label>
                                         <input type="email" id="staff_email" name="staff_email" class="input-field" placeholder="example@egspec.org" pattern="[a-zA-Z0-9._%+-]+@egspec\.org$" required title="Please enter a valid egspec.org email" value="{{ old('staff_email') }}">
-                                        <span class="error-message" id="staff_email_error"></span>
+                                        @error('staff_email')
+                                        <span class="error-message">{{ $message }}</span>
+                                        @enderror
                                     </div>
                                     <div class="single-input-item">
                                         <label class="input-label" for="staff_phone">Enter Phone Number</label>
-                                        <input type="tel" id="staff_phone" name="staff_phone" class="input-field" placeholder="123-456-7890" pattern="\d{3}[-]\d{3}[-]\d{4}" required title="Please enter a valid phone number format: 123-456-7890" value="{{ old('staff_phone') }}">
-                                        <span class="error-message" id="staff_phone_error"></span>
+                                        <input type="text" id="staff_phone" name="staff_phone" class="input-field" placeholder="1234 567 890"
+                                               pattern="\d{4} \d{3} \d{3}" required
+                                               title="Please enter a phone number in the format: 1234 567 890"
+                                               value="{{ old('staff_phone') }}" oninput="formatPhoneNumber(this)">
+                                        @error('staff_phone')
+                                        <span class="error-message">{{ $message }}</span>
+                                        @enderror
                                     </div>
+
+
                                 </div>
                             </div>
                             <div class="single-form-part">
@@ -60,19 +73,21 @@
                                         <label for="department">Department</label>
                                         <select name="department" id="department" required>
                                             <option value="">Select Department</option>
-                                            <option value="MECH">Mechanical Engineering</option>
-                                            <option value="CIVIL">Civil Engineering</option>
-                                            <option value="EEE">Electrical and Electronics Engineering</option>
-                                            <option value="ECE">Electronics and Communication Engineering</option>
-                                            <option value="CSE">Computer Science and Engineering</option>
-                                            <option value="IT">Information Technology</option>
-                                            <option value="BME">Biomedical Engineering</option>
-                                            <option value="CSBS">Computer Science & Business Systems Engineering</option>
-                                            <option value="AIDS">Artificial Intelligence and Data Science</option>
-                                            <option value="Placement">Placement</option>
-                                            <option value="Others">Others</option>
+                                            <option value="MECH" {{ old('department') == 'MECH' ? 'selected' : '' }}>Mechanical Engineering</option>
+                                            <option value="CIVIL" {{ old('department') == 'CIVIL' ? 'selected' : '' }}>Civil Engineering</option>
+                                            <option value="EEE" {{ old('department') == 'EEE' ? 'selected' : '' }}>Electrical and Electronics Engineering</option>
+                                            <option value="ECE" {{ old('department') == 'ECE' ? 'selected' : '' }}>Electronics and Communication Engineering</option>
+                                            <option value="CSE" {{ old('department') == 'CSE' ? 'selected' : '' }}>Computer Science and Engineering</option>
+                                            <option value="IT" {{ old('department') == 'IT' ? 'selected' : '' }}>Information Technology</option>
+                                            <option value="BME" {{ old('department') == 'BME' ? 'selected' : '' }}>Biomedical Engineering</option>
+                                            <option value="CSBS" {{ old('department') == 'CSBS' ? 'selected' : '' }}>Computer Science & Business Systems Engineering</option>
+                                            <option value="AIDS" {{ old('department') == 'AIDS' ? 'selected' : '' }}>Artificial Intelligence and Data Science</option>
+                                            <option value="Placement" {{ old('department') == 'Placement' ? 'selected' : '' }}>Placement</option>
+                                            <option value="Others" {{ old('department') == 'Others' ? 'selected' : '' }}>Others</option>
                                         </select>
-                                        <span class="error-message" id="department_error"></span>
+                                        @error('department')
+                                        <span class="error-message">{{ $message }}</span>
+                                        @enderror
                                     </div>
                                 </div>
                                 <div class="single-input">
@@ -80,12 +95,14 @@
                                         <label for="work_type">Type of Work</label>
                                         <select name="work_type" id="work_type" required>
                                             <option value="">Select Type of Work</option>
-                                            <option value="department_data_update">Department Data Update</option>
-                                            <option value="clubs_cells_data_update">Clubs & Cells Data Update</option>
-                                            <option value="activities">Activities</option>
-                                            <option value="placement">Placement</option>
+                                            <option value="department_data_update" {{ old('work_type') == 'department_data_update' ? 'selected' : '' }}>Department Data Update</option>
+                                            <option value="clubs_cells_data_update" {{ old('work_type') == 'clubs_cells_data_update' ? 'selected' : '' }}>Clubs & Cells Data Update</option>
+                                            <option value="activities" {{ old('work_type') == 'activities' ? 'selected' : '' }}>Activities</option>
+                                            <option value="placement" {{ old('work_type') == 'placement' ? 'selected' : '' }}>Placement</option>
                                         </select>
-                                        <span class="error-message" id="work_type_error"></span>
+                                        @error('work_type')
+                                        <span class="error-message">{{ $message }}</span>
+                                        @enderror
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +111,9 @@
                                     <div class="single-input-item">
                                         <label for="data_update">Explain about what data are updated into the website</label>
                                         <textarea id="data_update" name="data_update" placeholder="Explain the updates" required>{{ old('data_update') }}</textarea>
-                                        <span class="error-message" id="data_update_error"></span>
+                                        @error('data_update')
+                                        <span class="error-message">{{ $message }}</span>
+                                        @enderror
                                     </div>
                                 </div>
                             </div>
@@ -112,11 +131,30 @@
                                 <div class="d-flex align-items-center single-checkbox mt--20">
                                     <input type="checkbox" id="confirmation" name="confirmation" required>
                                     <label for="confirmation">By submitting this application, I confirm that all information provided is accurate and complete.</label>
-                                    <span class="error-message" id="confirmation_error"></span>
+                                    @error('confirmation')
+                                    <span class="error-message">{{ $message }}</span>
+                                    @enderror
                                 </div>
                             </div>
                             <button type="submit" class="rts-theme-btn primary with-arrow">Submit Application<span><i class="fa-thin fa-arrow-right"></i></span></button>
                         </form>
+
+                        <script>
+                            function removeUrlInput(element) {
+                                element.parentElement.remove();
+                            }
+
+                            document.getElementById('add_url').addEventListener('click', function () {
+                                var wrapper = document.createElement('div');
+                                wrapper.classList.add('url-input-wrapper');
+                                wrapper.innerHTML = '<input type="url" name="google_drive_urls[]" placeholder="Google Drive URL" required>' +
+                                                    '<span class="remove-url" onclick="removeUrlInput(this)">&times;</span>';
+                                document.getElementById('google_drive_urls').appendChild(wrapper);
+                            });
+                        </script>
+
+
+
 
 
 
@@ -182,9 +220,9 @@
 </style>
 
 <script>
-    document.getElementById('contactForm').addEventListener('submit', function (event) {
-        var valid = true;
+    document.getElementById('staff_name').addEventListener('input', function (e) {
 
+<<<<<<< HEAD
         // Clear previous error messages
         document.querySelectorAll('.error-message').forEach(function (el) {
             el.textContent = '';
@@ -252,11 +290,39 @@
         urlInputWrapper.innerHTML = '<input type="url" name="google_drive_urls[]" placeholder="Google Drive URL" required> <span class="remove-url" onclick="removeUrlInput(this)">&times;</span>';
         document.getElementById('google_drive_urls').appendChild(urlInputWrapper);
     });
+=======
+        e.target.value = e.target.value.replace(/[^A-Za-z\s]/g, '').toUpperCase();
+    });
 
-    function removeUrlInput(element) {
-        element.parentElement.remove();
+    function formatPhoneNumber(input) {
+    // Remove all non-digit characters
+    let value = input.value.replace(/\D/g, '');
+>>>>>>> d770c30b83356a26f9f74c1fe11e8254d5af2286
+
+    // Limit to 10 digits
+    if (value.length > 10) {
+        value = value.slice(0, 10);
     }
+
+    // Format as '1234 567 890'
+    if (value.length > 6) {
+        value = value.replace(/^(\d{4})(\d{3})(\d{0,3})$/, '$1 $2 $3');
+    } else if (value.length > 3) {
+        value = value.replace(/^(\d{4})(\d{0,3})$/, '$1 $2');
+    }
+
+    input.value = value;
+}
+
 </script>
 
+<<<<<<< HEAD
+=======
+@if (session('success'))
+    <script>
+        alert('{{ session('success') }}');
+    </script>
+@endif
+>>>>>>> d770c30b83356a26f9f74c1fe11e8254d5af2286
 
 @endsection

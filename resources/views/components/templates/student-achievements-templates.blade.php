@@ -90,10 +90,8 @@
             }
         }
     </style>
-
-
 </head>
-<body class="">
+<body>
     <!-- Header -->
     <header class="header">
         <picture>
@@ -106,11 +104,9 @@
     </header>
 
     <div class="container mt-6">
-
         <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/">Home</a></li>
-                {{-- <li class="breadcrumb-item"><a href="">Research</a></li> --}}
                 <li class="breadcrumb-item"><a href="{{ url()->previous() }}">Students Achievements</a></li>
                 <li class="breadcrumb-item active" aria-current="page">{{ ucfirst(str_replace('-', ' ', request()->input('department'))) }}</li>
             </ol>
@@ -122,58 +118,7 @@
                 <h5 class="rts-section-title animated fadeIn">Students Achivements - {{ $departmentName }}</h5>
                 <div class="application-deadline__content mt-5">
                     <div class="application-deadline__content--table">
-                        @if (!empty($StudentAchievements) && is_array($StudentAchievements))
-        <table id="studentsTable" class="table table-theme table-striped table-hover table-bordered">
-            <thead>
-                <tr>
-                    <th>Name of the Students</th>
-                    <th>Event Name</th>
-                    <th>Event Category</th>
-                    <th>Duration</th>
-                    <th>No of Days</th>
-                    <th>Institution Name</th>
-                </tr>
-            </thead>
-            <tfoot>
-                <tr>
-                    {{-- <th colspan="2"></th> --}}
-                    <th>
-                        <select id="eventNameFilter" class="form-select">
-                            <option value="">Event Name</option>
-                            @foreach (array_unique(array_column($StudentAchievements, 'Event Name')) as $eventName)
-                                <option value="{{ $eventName }}">{{ $eventName }}</option>
-                            @endforeach
-                        </select>
-                    </th>
-
-                    <th>
-                        <select id="institutionNameFilter" class="form-select">
-                            <option value="">Institution Name</option>
-                            @foreach (array_unique(array_column($StudentAchievements, 'Institution Name')) as $institutionName)
-                                <option value="{{ $institutionName }}">{{ $institutionName }}</option>
-                            @endforeach
-                        </select>
-                    </th>
-                     <!-- Add empty columns for alignment -->
-                </tr>
-            </tfoot>
-
-            <tbody>
-                @foreach ($StudentAchievements as $student)
-                    <tr>
-                        <td>{{ $student['Name of the Students'] }}</td>
-                        <td>{{ $student['Event Name'] }}</td>
-                        <td>{{ $student['Event Category'] }}</td>
-                        <td>{{ $student['Duration'] }}</td>
-                        <td>{{ $student['No of Days'] }}</td>
-                        <td>{{ $student['Institution Name'] }}</td>
-                    </tr>
-                @endforeach
-            </tbody>
-        </table>
-    @else
-        <p class="text-center mt-4">No data found.</p>
-    @endif
+                        @include('components.templates.student-achievements-table', ['StudentAchievements' => $StudentAchievements])
                     </div>
                 </div>
             </div>
@@ -188,12 +133,14 @@
     </footer>
 
     <!-- Include DataTables CSS and JS -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.13.4/js/dataTables.bootstrap5.min.js"></script>
     <script>
         $(document).ready(function() {
-            var table = $('#studentsTable').DataTable({
+            var table = initializeDataTable('#studentsTable');
+            setupCustomFilters(table);
+        });
+
+        function initializeDataTable(selector) {
+            return $(selector).DataTable({
                 "bAutoWidth": false,
                 "scrollX": true,
                 "paging": true, // Enables pagination
@@ -208,26 +155,24 @@
                     }
                 }
             });
+        }
 
-            // Custom filter for the Academic Year column
+        function setupCustomFilters(table) {
             $('#academicYearFilter').on('change', function() {
                 var selectedValue = $(this).val();
                 table.column(0).search(selectedValue ? '^' + selectedValue + '$' : '', true, false).draw();
             });
 
-            // Custom filter for the Event Name column
             $('#eventNameFilter').on('change', function() {
                 var selectedValue = $(this).val();
                 table.column(1).search(selectedValue ? '^' + selectedValue + '$' : '', true, false).draw();
             });
 
-            // Custom filter for the Institution Name column
             $('#institutionNameFilter').on('change', function() {
                 var selectedValue = $(this).val();
                 table.column(5).search(selectedValue ? '^' + selectedValue + '$' : '', true, false).draw();
             });
-        });
+        }
     </script>
-
 </body>
 </html>

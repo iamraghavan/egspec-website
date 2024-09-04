@@ -6,6 +6,20 @@ use App\Http\Controllers\PagesController;
 use App\Http\Controllers\AdFormController;
 use App\Http\Controllers\InstitutionInternalPurpose;
 use App\Http\Controllers\TemplateSearchReturn;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
+
+
+// web.php
+
+Route::get('/test-mail', function () {
+    Mail::raw('Hi, test mail message', function ($message) {
+        $message->from('letstalk@bumblebees.co.in', 'Web EGSPEC');
+        $message->to('web@egspec.org', 'Test Guru');
+        $message->subject('Test Mail');
+    });
+    return 'Test mail sent successfully!';
+});
 
 // Other Backend Operation Routes
 Route::post('/admission-submit-form', [AdFormController::class, 'adsubmitForm'])->name('adsubmitForm');
@@ -362,5 +376,16 @@ Route::get('/academics/departments/science-humanities/programme-specific-outcome
 
 
 // Contact Website Admin
+<<<<<<< HEAD
 Route::get('/institution/internal/contact/website/admin', [InstitutionInternalPurpose::class, 'contact_website_admin'])->name('contact_website_admin');
 Route::post('/form-submit', [AdFormController::class, 'submit'])->name('form.submit');
+=======
+Route::get('/institution/internal/contact/website/admin', [InstitutionInternalPurpose::class, 'contact_website_admin']);
+Route::post('/contact-web-admin/store/egspec', [InstitutionInternalPurpose::class, 'store'])->name('form.submit');
+Route::get('/institution/internal/contact/website/admin/confirmation', function (Request $request) {
+    return view('components.templates.confirmation', [
+        'ticket_id' => $request->query('ticket-id'),
+        'ticket_status' => session('ticket_status')
+    ]);
+})->name('confirmation');
+>>>>>>> d770c30b83356a26f9f74c1fe11e8254d5af2286
