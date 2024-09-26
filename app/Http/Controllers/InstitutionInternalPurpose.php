@@ -82,7 +82,7 @@ class InstitutionInternalPurpose extends Controller
 
         do {
             $randomNumber = rand(1000, 9999);
-            $ticketId = "#EGSPEC/{$currentYear}/{$currentMonth}/{$departmentCode}{$randomNumber}";
+            $ticketId = "EGSPEC/{$currentYear}/{$currentMonth}/{$departmentCode}{$randomNumber}";
 
             // Cache lookup to avoid repeated DB queries
             $exists = Cache::remember("ticket_id_{$ticketId}", 600, function () use ($ticketId) {
