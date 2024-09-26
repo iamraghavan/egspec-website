@@ -377,10 +377,10 @@ Route::get('/academics/departments/science-humanities/programme-specific-outcome
 
 // Contact Website Admin
 
-Route::get('/institution/internal/contact/website/admin', [InstitutionInternalPurpose::class, 'contact_website_admin'])->name('contact_website_admin');
-Route::post('/form-submit', [AdFormController::class, 'submit'])->name('form.submit');
+// Route::get('/institution/internal/contact/website/admin', [InstitutionInternalPurpose::class, 'contact_website_admin'])->name('contact_website_admin');
+// Route::post('/form-submit', [AdFormController::class, 'submit'])->name('form.submit');
 
-Route::get('/institution/internal/contact/website/admin', [InstitutionInternalPurpose::class, 'contact_website_admin']);
+Route::get('/institution/internal/contact/website/admin', [InstitutionInternalPurpose::class, 'contact_website_admin'])->name('contact_website_admin');
 Route::post('/contact-web-admin/store/egspec', [InstitutionInternalPurpose::class, 'store'])->name('form.submit');
 Route::get('/institution/internal/contact/website/admin/confirmation', function (Request $request) {
     return view('components.templates.confirmation', [

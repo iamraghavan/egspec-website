@@ -222,7 +222,7 @@
 <script>
     document.getElementById('staff_name').addEventListener('input', function (e) {
 
-<<<<<<< HEAD
+
         // Clear previous error messages
         document.querySelectorAll('.error-message').forEach(function (el) {
             el.textContent = '';
@@ -290,14 +290,7 @@
         urlInputWrapper.innerHTML = '<input type="url" name="google_drive_urls[]" placeholder="Google Drive URL" required> <span class="remove-url" onclick="removeUrlInput(this)">&times;</span>';
         document.getElementById('google_drive_urls').appendChild(urlInputWrapper);
     });
-=======
-        e.target.value = e.target.value.replace(/[^A-Za-z\s]/g, '').toUpperCase();
-    });
 
-    function formatPhoneNumber(input) {
-    // Remove all non-digit characters
-    let value = input.value.replace(/\D/g, '');
->>>>>>> d770c30b83356a26f9f74c1fe11e8254d5af2286
 
     // Limit to 10 digits
     if (value.length > 10) {
@@ -316,13 +309,10 @@
 
 </script>
 
-<<<<<<< HEAD
-=======
+
 @if (session('success'))
     <script>
         alert('{{ session('success') }}');
     </script>
 @endif
->>>>>>> d770c30b83356a26f9f74c1fe11e8254d5af2286
-
 @endsection

@@ -153,11 +153,8 @@ $footerLinks = [
                     <a href="">Sitemap</a> |
                     <a href="">Privacy Policy</a> |
                     <a href="">Terms &amp; Conditions</a> |
-<<<<<<< HEAD
                     <a href="{{route('contact_website_admin')}}">Contact Web Admin</a>
-=======
-                    <a href="{{url('/institution/internal/contact/website/admin')}}">Contact Web Admin</a>
->>>>>>> d770c30b83356a26f9f74c1fe11e8254d5af2286
+
                 </p>
             </div>
         </div>
