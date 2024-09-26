@@ -115,7 +115,7 @@
         <!-- Main Content -->
         <div class="admission-content-top">
             <div class="application-deadline">
-                <h5 class="rts-section-title animated fadeIn">Students Achivements - {{ $departmentName }}</h5>
+                <h5 class="rts-section-title animated fadeIn">Students Achivements</h5>
                 <div class="application-deadline__content mt-5">
                     <div class="application-deadline__content--table">
                         @include('components.templates.student-achievements-table', ['StudentAchievements' => $StudentAchievements])

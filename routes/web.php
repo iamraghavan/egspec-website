@@ -12,14 +12,6 @@ use Illuminate\Support\Facades\Mail;
 
 // web.php
 
-Route::get('/test-mail', function () {
-    Mail::raw('Hi, test mail message', function ($message) {
-        $message->from('letstalk@bumblebees.co.in', 'Web EGSPEC');
-        $message->to('web@egspec.org', 'Test Guru');
-        $message->subject('Test Mail');
-    });
-    return 'Test mail sent successfully!';
-});
 
 // Other Backend Operation Routes
 Route::post('/admission-submit-form', [AdFormController::class, 'adsubmitForm'])->name('adsubmitForm');
