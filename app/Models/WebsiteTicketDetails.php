@@ -4,10 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
 
 class WebsiteTicketDetails extends Model
 {
     use HasFactory;
+    use Notifiable;
 
     // Specify the table associated with the model
     protected $table = 'website_ticket_details';
@@ -29,4 +31,10 @@ class WebsiteTicketDetails extends Model
     {
         return $this->belongsTo(WebsiteUpdateEnquiry::class, 'ticket_id', 'ticket_id');
     }
+
+    public function routeNotificationForGoogleChat()
+{
+    return env('GOOGLECHAT_WEBHOOK_URL');
+}
+
 }

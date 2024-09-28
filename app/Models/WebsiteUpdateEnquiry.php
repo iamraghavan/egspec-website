@@ -4,10 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Notifications\Notifiable;
 
 class WebsiteUpdateEnquiry extends Model
 {
     use HasFactory;
+    use Notifiable;
 
     // Specify the table associated with the model
     protected $table = 'website_update_enquiry';
@@ -36,5 +38,15 @@ class WebsiteUpdateEnquiry extends Model
     public function ticketDetails()
     {
         return $this->hasOne(WebsiteTicketDetails::class, 'ticket_id', 'ticket_id');
+    }
+
+    public function routeNotificationForTelegram()
+    {
+        return 993344556;
+    }
+
+    public function routeNotificationForGoogleChat()
+    {
+        return env('GOOGLECHAT_WEBHOOK_URL');
     }
 }

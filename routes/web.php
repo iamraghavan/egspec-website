@@ -5,13 +5,67 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\AdFormController;
 use App\Http\Controllers\InstitutionInternalPurpose;
+use App\Http\Controllers\PushNotificationController;
 use App\Http\Controllers\TemplateSearchReturn;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
+use App\Models\WebsiteTicketDetails;
+use App\Notifications\TelegramNotification;
+use Illuminate\Support\Facades\Notification;
+use App\Notifications\GoogleChatNotification;
 
 
-// web.php
 
+Route::any('/send-google-chat', function () {
+    // Create or retrieve an enquiry instance with a ticket_id
+    $enquiry = new WebsiteTicketDetails(); // Or retrieve an existing instance
+    $enquiry->ticket_id = 'EGSPEC/2024/09/OTHE1724'; // Set a ticket ID for the example
+
+    // Send the notification
+    Notification::send($enquiry, new GoogleChatNotification($enquiry));
+
+    return response()->json(['message' => 'Notification sent successfully!']);
+});
+Route::any('/telegram', function () {
+    // Use the chat ID of the user who interacted with the bot
+    $recipientId = '2134630336'; // Replace with the valid chat ID
+
+    // Check the Laravel log file for errors
+    $logPath = storage_path('logs/laravel.log');
+    $logContents = file_get_contents($logPath);
+
+    // Extract lines that contain 'ERROR'
+    $lines = explode("\n", $logContents);
+    $errorMessages = [];
+
+    foreach ($lines as $line) {
+        if (strpos($line, 'ERROR') !== false) {
+            $errorMessages[] = $line;
+        }
+    }
+
+    // Prepare the message if there are any error messages
+    if (!empty($errorMessages)) {
+        // Limit to the last 5 error messages for brevity
+        $recentErrors = array_slice($errorMessages, -5);
+        $errorMessage = "Recent Errors:\n" . implode("\n", $recentErrors);
+
+        // Send the notification
+        Notification::route('telegram', $recipientId)
+            ->notify(new TelegramNotification($errorMessage));
+
+        return response()->json(['message' => 'Telegram notification sent with recent errors.']);
+    }
+
+    return response()->json(['message' => 'No errors found in the log.']);
+});
+
+
+
+
+Route::get('/error', function () {
+    throw new Exception('This is a test exception.');
+});
 
 // Other Backend Operation Routes
 Route::post('/admission-submit-form', [AdFormController::class, 'adsubmitForm'])->name('adsubmitForm');

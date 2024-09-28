@@ -11,6 +11,9 @@ use App\Mail\TicketSubmissionMail;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Cache;
+use App\Notifications\TelegramNotification;
+use Illuminate\Support\Facades\Notification;
+use App\Notifications\GoogleChatNotification;
 
 class InstitutionInternalPurpose extends Controller
 {
@@ -42,6 +45,11 @@ class InstitutionInternalPurpose extends Controller
 
             // Step 4: Send notification email
             $this->sendNotificationEmail($enquiry, $ticketDetails);
+            $this->sendTelegramNotification($ticketId, $enquiry, $ticketDetails);
+
+
+            Notification::send($enquiry, new GoogleChatNotification($enquiry));
+
 
             DB::commit(); // Commit the transaction if everything is successful
 
@@ -55,6 +63,19 @@ class InstitutionInternalPurpose extends Controller
 
             return redirect()->back()->with('error', 'An error occurred while processing your submission. Please try again later.');
         }
+    }
+
+    private function sendTelegramNotification($ticketId, $enquiry, $ticketDetails)
+    {
+        $message = "*New Ticket Submitted*\n" .
+            "Ticket ID: {$ticketId}\n" .
+            "Staff Name: {$enquiry->staff_name}\n" .
+            "Department: {$enquiry->department}\n" .
+            "Ticket Status: {$ticketDetails->ticket_status}";
+
+        // Send the notification
+        Notification::route('telegram', '2134630336') // Replace with actual chat ID
+            ->notify(new TelegramNotification($message));
     }
 
     // Step 1: Validate request data
