@@ -7,18 +7,18 @@ use App\Models\WebsiteTicketDetails;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
-use App\Mail\TicketSubmissionMail;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Cache;
 use App\Notifications\TelegramNotification;
 use Illuminate\Support\Facades\Notification;
 use App\Notifications\GoogleChatNotification;
+use App\Mail\TicketSubmissionMail;
 
 class InstitutionInternalPurpose extends Controller
 {
     // Display contact web admin page
-    public function contact_website_admin()
+    public function contactWebsiteAdmin()
     {
         return view('pages.institution.contact-web-admin');
     }
@@ -26,45 +26,42 @@ class InstitutionInternalPurpose extends Controller
     // Handle the form submission
     public function store(Request $request)
     {
-        // Step 1: Validate data
         $validatedData = $this->validateRequest($request);
 
-        if (!$validatedData) {
-            return redirect()->back()->with('error', 'Validation failed, please check your input.');
+        if ($validatedData->fails()) {
+            return redirect()->back()->withErrors($validatedData)->withInput();
         }
 
         try {
-            DB::beginTransaction();  // Start DB Transaction
+            DB::beginTransaction();
 
-            // Step 2: Generate unique ticket ID
             $ticketId = $this->generateUniqueTicketId($request->input('department'));
-
-            // Step 3: Save the data into the database
             $enquiry = $this->saveEnquiryData($request, $ticketId);
             $ticketDetails = $this->createTicketDetails($ticketId);
+            $this->sendNotifications($enquiry, $ticketDetails, $ticketId);
 
-            // Step 4: Send notification email
-            $this->sendNotificationEmail($enquiry, $ticketDetails);
-            $this->sendTelegramNotification($ticketId, $enquiry, $ticketDetails);
-
-
-            Notification::send($enquiry, new GoogleChatNotification($enquiry));
-
-
-            DB::commit(); // Commit the transaction if everything is successful
+            DB::commit();
 
             return redirect()->route('confirmation', ['ticket-id' => $ticketId])
                 ->with('success', 'Your submission has been received.')
                 ->with('ticket_status', $ticketDetails->ticket_status);
         } catch (\Exception $e) {
-            DB::rollBack();  // Rollback in case of error
-
+            DB::rollBack();
             Log::error('Error storing data: ' . $e->getMessage(), ['request' => $request->all()]);
 
-            return redirect()->back()->with('error', 'An error occurred while processing your submission. Please try again later.');
+            return redirect()->back()->with('error', 'An unexpected error occurred. Please try again later.');
         }
     }
 
+    // Send notifications
+    private function sendNotifications($enquiry, $ticketDetails, $ticketId)
+    {
+        $this->sendNotificationEmail($enquiry, $ticketDetails);
+        $this->sendTelegramNotification($ticketId, $enquiry, $ticketDetails);
+        Notification::send($enquiry, new GoogleChatNotification($enquiry));
+    }
+
+    // Send Telegram notification
     private function sendTelegramNotification($ticketId, $enquiry, $ticketDetails)
     {
         $message = "*New Ticket Submitted*\n" .
@@ -73,12 +70,11 @@ class InstitutionInternalPurpose extends Controller
             "Department: {$enquiry->department}\n" .
             "Ticket Status: {$ticketDetails->ticket_status}";
 
-        // Send the notification
         Notification::route('telegram', '2134630336') // Replace with actual chat ID
             ->notify(new TelegramNotification($message));
     }
 
-    // Step 1: Validate request data
+    // Validate request data
     private function validateRequest($request)
     {
         return Validator::make($request->all(), [
@@ -91,10 +87,10 @@ class InstitutionInternalPurpose extends Controller
             'data_update' => 'required',
             'google_drive_urls.*' => 'nullable|url',
             'confirmation' => 'required|accepted',
-        ])->validate();
+        ]);
     }
 
-    // Step 2: Generate unique ticket ID
+    // Generate unique ticket ID
     private function generateUniqueTicketId($department)
     {
         $currentYear = date('Y');
@@ -114,7 +110,7 @@ class InstitutionInternalPurpose extends Controller
         return $ticketId;
     }
 
-    // Step 3: Save enquiry data
+    // Save enquiry data
     private function saveEnquiryData($request, $ticketId)
     {
         return WebsiteUpdateEnquiry::create([
@@ -131,7 +127,7 @@ class InstitutionInternalPurpose extends Controller
         ]);
     }
 
-    // Step 4: Create ticket details
+    // Create ticket details
     private function createTicketDetails($ticketId)
     {
         return WebsiteTicketDetails::create([
@@ -142,12 +138,13 @@ class InstitutionInternalPurpose extends Controller
         ]);
     }
 
-    // Step 5: Send notification email
+    // Send notification email
     private function sendNotificationEmail($enquiry, $ticketDetails)
     {
         try {
             $ticketStatus = $ticketDetails->ticket_status;
-            Mail::to(['web@egspec.org', 'raghavan@egspec.org', 'noreply@egspec.org'])->send(new TicketSubmissionMail($enquiry, $ticketStatus));
+            Mail::to(['web@egspec.org', 'raghavan@egspec.org', 'noreply@egspec.org'])
+                ->send(new TicketSubmissionMail($enquiry, $ticketStatus));
         } catch (\Exception $e) {
             Log::error('Error sending email: ' . $e->getMessage());
         }

@@ -125,7 +125,14 @@ return [
     ],
 
     // 'providers' => [
-    //     TelegramNotifications\TelegramServiceProvider::class
+    //     Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
+    //     // ...
     // ],
+
+    'aliases' => [
+
+        'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
+        'Storage' => Illuminate\Support\Facades\Storage::class,
+    ],
 
 ];
