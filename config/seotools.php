@@ -53,7 +53,7 @@ return [
                 'Technical Education',
                 'India'
             ],
-            'canonical'    => url()->current(), // Set to null or 'full' to use Url::full()
+            'canonical'    => 'full', // Set to null or 'full' to use Url::full()
             'robots'       => 'index, follow', // Index and follow
         ],
         'webmaster_tags' => [
@@ -73,7 +73,7 @@ return [
         'defaults' => [
             'title'       => 'E.G.S. Pillay Engineering College',
             'description' => 'Join E.G.S. Pillay Engineering College to experience a transformative education in engineering and technology.',
-            'url'         => url()->current(), // Set to null for using Url::current()
+            'url'         => 'full', // Set to null for using Url::current()
             'type'        => 'website',
             'site_name'   => 'E.G.S. Pillay Engineering College',
             'images'      => ['https://egspec.blob.core.windows.net/egspec-assets/og_image.webp'], // Replace with actual image path
@@ -95,7 +95,7 @@ return [
         'defaults' => [
             'title'       => 'E.G.S. Pillay Engineering College',
             'description' => 'E.G.S. Pillay Engineering College provides quality education in engineering, nurturing future innovators.',
-            'url'         => url()->current(), // Set to null or 'full' to use Url::full()
+            'url'         => 'full', // Set to null or 'full' to use Url::full()
             'type'        => 'EducationalOrganization',
             'images'      => ['https://egspec.blob.core.windows.net/egspec-assets/og_image.webp'], // Replace with actual image path
         ],

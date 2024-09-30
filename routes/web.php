@@ -7,6 +7,7 @@ use App\Http\Controllers\AdFormController;
 use App\Http\Controllers\InstitutionInternalPurpose;
 use App\Http\Controllers\PushNotificationController;
 use App\Http\Controllers\TemplateSearchReturn;
+use App\Http\Middleware\RequestInformationMiddleware;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 use App\Models\WebsiteTicketDetails;
@@ -16,42 +17,43 @@ use App\Notifications\GoogleChatNotification;
 use Artesaos\SEOTools\Facades\SEOTools;
 use Illuminate\Support\Facades\Config;
 
-Route::any('/send-google-chat', function () {
-    // Create or retrieve an enquiry instance with a ticket_id
-    $enquiry = new WebsiteTicketDetails(); // Or retrieve an existing instance
-    $enquiry->ticket_id = 'EGSPEC/2024/09/OTHE1724'; // Set a ticket ID for the example
+// Route::any('/send-google-chat', function () {
+//     // Create or retrieve an enquiry instance with a ticket_id
+//     $enquiry = new WebsiteTicketDetails(); // Or retrieve an existing instance
+//     $enquiry->ticket_id = 'EGSPEC/2024/09/OTHE1724'; // Set a ticket ID for the example
 
-    // Send the notification
-    Notification::send($enquiry, new GoogleChatNotification($enquiry));
+//     // Send the notification
+//     Notification::send($enquiry, new GoogleChatNotification($enquiry));
 
-    return response()->json(['message' => 'Notification sent successfully!']);
-});
-Route::any('/telegram', function () {
-    // Use the chat ID of the user who interacted with the bot
-    $recipientId = '2134630336'; // Replace with the valid chat ID
+//     return response()->json(['message' => 'Notification sent successfully!']);
+// });
+// Route::any('/telegram', function () {
+//     // Use the chat ID of the user who interacted with the bot
+//     $recipientId = '2134630336'; // Replace with the valid chat ID
 
-    $enquiry = new WebsiteTicketDetails(); // Or retrieve an existing instance
-    $enquiry->ticket_id = 'EGSPEC/2024/09/OTHE1724'; // Set a ticket ID for the example
+//     $enquiry = new WebsiteTicketDetails(); // Or retrieve an existing instance
+//     $enquiry->ticket_id = 'EGSPEC/2024/09/OTHE1724'; // Set a ticket ID for the example
 
-    // Prepare the message if there are any error messages
+//     // Prepare the message if there are any error messages
 
-    Notification::route('telegram', $recipientId)
-        ->notify(new TelegramNotification($enquiry));
+//     Notification::route('telegram', $recipientId)
+//         ->notify(new TelegramNotification($enquiry));
 
-    return response()->json(['message' => 'Telegram notification sent with Message.']);
-});
-
-
+//     return response()->json(['message' => 'Telegram notification sent with Message.']);
+// });
 
 
-Route::get('/error', function () {
-    throw new Exception('This is a test exception.');
-});
+
+
+// Route::get('/error', function () {
+//     throw new Exception('This is a test exception.');
+// });
 
 // Other Backend Operation Routes
 Route::post('/admission-submit-form', [AdFormController::class, 'adsubmitForm'])->name('adsubmitForm');
-
-Route::get('/', [PagesController::class, 'index']);
+Route::middleware([RequestInformationMiddleware::class])->group(function () {
+    Route::get('/', [PagesController::class, 'index']);
+});
 Route::get('/right-to-information', [PagesController::class, 'rti']);
 Route::get('/mandatory-disclosure', [PagesController::class, 'md']);
 
@@ -218,11 +220,11 @@ Route::get('/about/dean', [PagesController::class, 'about_dean']);
 
 Route::get('/placements', [PagesController::class, 'placement'])->name('placements');
 
-// Route::get('/placements/memorandum-of-understanding', [PagesController::class, 'memorandum_of_understanding']);
-// Route::get('/placements/placement-team', [PagesController::class, 'placement_team']);
-// Route::get('/placements/statistics', [PagesController::class, 'placement_statistics']);
-// Route::get('/placement/our-top-recruiters', [PagesController::class, 'our_top_recruiters']);
-// Route::get('/placement/placement-gallery', [PagesController::class, 'placement_gallery']);
+Route::get('/placements/memorandum-of-understanding', [PagesController::class, 'memorandum_of_understanding']);
+Route::get('/placements/placement-team', [PagesController::class, 'placement_team']);
+Route::get('/placements/statistics', [PagesController::class, 'placement_statistics']);
+Route::get('/placement/our-top-recruiters', [PagesController::class, 'our_top_recruiters']);
+Route::get('/placement/placement-gallery', [PagesController::class, 'placement_gallery']);
 
 
 
@@ -418,7 +420,6 @@ Route::get('/institution/internal/contact/website/admin/confirmation', function 
     SEOTools::setDescription("Confirmation for ticket ID: $ticketId. View your ticket details and status.");
     SEOTools::opengraph()->setTitle("Ticket ID: $ticketId");
     SEOTools::opengraph()->setDescription("Confirmation for ticket ID: $ticketId. View your ticket details and status.");
-    SEOTools::opengraph()->setUrl(Url()->current());
     SEOTools::twitter()->setTitle("Ticket ID: $ticketId");
     SEOTools::twitter()->setDescription("Confirmation for ticket ID: $ticketId. View your ticket details and status.");
 
