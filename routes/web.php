@@ -14,7 +14,7 @@ use App\Notifications\TelegramNotification;
 use Illuminate\Support\Facades\Notification;
 use App\Notifications\GoogleChatNotification;
 
-
+use Illuminate\Support\Facades\Config;
 
 Route::any('/send-google-chat', function () {
     // Create or retrieve an enquiry instance with a ticket_id
@@ -30,34 +30,15 @@ Route::any('/telegram', function () {
     // Use the chat ID of the user who interacted with the bot
     $recipientId = '2134630336'; // Replace with the valid chat ID
 
-    // Check the Laravel log file for errors
-    $logPath = storage_path('logs/laravel.log');
-    $logContents = file_get_contents($logPath);
-
-    // Extract lines that contain 'ERROR'
-    $lines = explode("\n", $logContents);
-    $errorMessages = [];
-
-    foreach ($lines as $line) {
-        if (strpos($line, 'ERROR') !== false) {
-            $errorMessages[] = $line;
-        }
-    }
+    $enquiry = new WebsiteTicketDetails(); // Or retrieve an existing instance
+    $enquiry->ticket_id = 'EGSPEC/2024/09/OTHE1724'; // Set a ticket ID for the example
 
     // Prepare the message if there are any error messages
-    if (!empty($errorMessages)) {
-        // Limit to the last 5 error messages for brevity
-        $recentErrors = array_slice($errorMessages, -5);
-        $errorMessage = "Recent Errors:\n" . implode("\n", $recentErrors);
 
-        // Send the notification
-        Notification::route('telegram', $recipientId)
-            ->notify(new TelegramNotification($errorMessage));
+    Notification::route('telegram', $recipientId)
+        ->notify(new TelegramNotification($enquiry));
 
-        return response()->json(['message' => 'Telegram notification sent with recent errors.']);
-    }
-
-    return response()->json(['message' => 'No errors found in the log.']);
+    return response()->json(['message' => 'Telegram notification sent with Message.']);
 });
 
 
@@ -426,8 +407,8 @@ Route::get('/academics/departments/science-humanities/programme-specific-outcome
 // Route::get('/institution/internal/contact/website/admin', [InstitutionInternalPurpose::class, 'contact_website_admin'])->name('contact_website_admin');
 // Route::post('/form-submit', [AdFormController::class, 'submit'])->name('form.submit');
 
-Route::get('/institution/internal/contact/website/admin', [InstitutionInternalPurpose::class, 'contact_website_admin'])->name('contact_website_admin');
-Route::post('/contact-web-admin/store/egspec', [InstitutionInternalPurpose::class, 'store'])->name('form.submit');
+Route::get('/institution/internal/contact/website/admin', [InstitutionInternalPurpose::class, 'contactWebsiteAdmin'])->name('contact_website_admin');
+Route::post('/api/institution/store/egspec/', [InstitutionInternalPurpose::class, 'store'])->name('form.submit');
 Route::get('/institution/internal/contact/website/admin/confirmation', function (Request $request) {
     return view('components.templates.confirmation', [
         'ticket_id' => $request->query('ticket-id'),

@@ -6,6 +6,8 @@ use Illuminate\Bus\Queueable;
 use Illuminate\Notifications\Notification;
 use TelegramNotifications\TelegramChannel;
 use TelegramNotifications\Messages\TelegramMessage;
+use Illuminate\Support\Facades\Config;
+
 
 class TelegramNotification extends Notification
 {

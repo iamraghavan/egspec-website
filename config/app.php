@@ -129,10 +129,10 @@ return [
     //     // ...
     // ],
 
-    'aliases' => [
+    // 'aliases' => [
 
-        'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
-        'Storage' => Illuminate\Support\Facades\Storage::class,
-    ],
+    //     'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
+    //     'Storage' => Illuminate\Support\Facades\Storage::class,
+    // ],
 
 ];

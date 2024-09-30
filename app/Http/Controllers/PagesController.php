@@ -2167,85 +2167,214 @@ class PagesController extends Controller
 
     public function ug_biomedical_engineering()
     {
+        SEOTools::setTitle('Biomedical Engineering - Undergraduate Program');
+        SEOTools::setDescription('Explore the Biomedical Engineering undergraduate program. Discover faculty details, research publications, program outcomes, and more.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Biomedical Engineering - Undergraduate Program');
+        SEOTools::twitter()->setDescription('Explore the Biomedical Engineering undergraduate program. Discover faculty details, research publications, program outcomes, and more.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.biomedical-engineering.biomedical-engineering');
     }
 
     public function ug_biomedical_engineering_department_highlights()
     {
+        SEOTools::setTitle('Department Highlights - Biomedical Engineering');
+        SEOTools::setDescription('Learn about the highlights of the Biomedical Engineering department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Department Highlights - Biomedical Engineering');
+        SEOTools::twitter()->setDescription('Learn about the highlights of the Biomedical Engineering department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.biomedical-engineering.department-highlights');
     }
 
     public function ug_biomedical_engineering_hods_desk()
     {
+        SEOTools::setTitle('HOD\'s Desk - Biomedical Engineering');
+        SEOTools::setDescription('Read messages from the Head of the Department of Biomedical Engineering.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('HOD\'s Desk - Biomedical Engineering');
+        SEOTools::twitter()->setDescription('Read messages from the Head of the Department of Biomedical Engineering.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.biomedical-engineering.hods-desk');
     }
 
     public function ug_biomedical_engineering_faculty_details()
     {
+        SEOTools::setTitle('Faculty Details - Biomedical Engineering');
+        SEOTools::setDescription('Meet the esteemed faculty of the Biomedical Engineering department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Faculty Details - Biomedical Engineering');
+        SEOTools::twitter()->setDescription('Meet the esteemed faculty of the Biomedical Engineering department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.biomedical-engineering.faculty-details');
     }
 
     public function ug_biomedical_engineering_research_publications()
     {
+        SEOTools::setTitle('Research Publications - Biomedical Engineering');
+        SEOTools::setDescription('Explore the research publications from the Biomedical Engineering department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Research Publications - Biomedical Engineering');
+        SEOTools::twitter()->setDescription('Explore the research publications from the Biomedical Engineering department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.biomedical-engineering.research-publications');
     }
 
-
     public function ug_biomedical_engineering_program_outcomes()
     {
+        SEOTools::setTitle('Program Outcomes - Biomedical Engineering');
+        SEOTools::setDescription('Understand the program outcomes of the Biomedical Engineering undergraduate program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Program Outcomes - Biomedical Engineering');
+        SEOTools::twitter()->setDescription('Understand the program outcomes of the Biomedical Engineering undergraduate program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.biomedical-engineering.program-outcomes');
     }
 
     public function ug_biomedical_engineering_programme_educational_objectives()
     {
+        SEOTools::setTitle('Programme Educational Objectives - Biomedical Engineering');
+        SEOTools::setDescription('Learn about the educational objectives of the Biomedical Engineering program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Programme Educational Objectives - Biomedical Engineering');
+        SEOTools::twitter()->setDescription('Learn about the educational objectives of the Biomedical Engineering program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.biomedical-engineering.programme-educational-objectives');
     }
 
     public function ug_biomedical_engineering_programme_specific_outcomes()
     {
+        SEOTools::setTitle('Programme Specific Outcomes - Biomedical Engineering');
+        SEOTools::setDescription('Explore the specific outcomes of the Biomedical Engineering program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Programme Specific Outcomes - Biomedical Engineering');
+        SEOTools::twitter()->setDescription('Explore the specific outcomes of the Biomedical Engineering program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.biomedical-engineering.programme-specific-outcomes');
     }
+
+
 
 
     // Department -> Undergraduate -> Electronics and Communication Engineering
 
     public function ug_electronics_and_communication_engineering()
     {
+        SEOTools::setTitle('Electronics and Communication Engineering - Undergraduate Program');
+        SEOTools::setDescription('Explore the Electronics and Communication Engineering undergraduate program. Discover faculty details, research publications, program outcomes, and more.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Electronics and Communication Engineering - Undergraduate Program');
+        SEOTools::twitter()->setDescription('Explore the Electronics and Communication Engineering undergraduate program. Discover faculty details, research publications, program outcomes, and more.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.electronics-and-communication-engineering.electronics-and-communication-engineering');
     }
 
     public function ug_electronics_and_communication_engineering_department_highlights()
     {
+        SEOTools::setTitle('Department Highlights - Electronics and Communication Engineering');
+        SEOTools::setDescription('Learn about the highlights of the Electronics and Communication Engineering department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Department Highlights - Electronics and Communication Engineering');
+        SEOTools::twitter()->setDescription('Learn about the highlights of the Electronics and Communication Engineering department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.electronics-and-communication-engineering.department-highlights');
     }
 
     public function ug_electronics_and_communication_engineering_hods_desk()
     {
+        SEOTools::setTitle('HOD\'s Desk - Electronics and Communication Engineering');
+        SEOTools::setDescription('Read messages from the Head of the Department of Electronics and Communication Engineering.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('HOD\'s Desk - Electronics and Communication Engineering');
+        SEOTools::twitter()->setDescription('Read messages from the Head of the Department of Electronics and Communication Engineering.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.electronics-and-communication-engineering.hods-desk');
     }
 
     public function ug_electronics_and_communication_engineering_faculty_details()
     {
+        SEOTools::setTitle('Faculty Details - Electronics and Communication Engineering');
+        SEOTools::setDescription('Meet the esteemed faculty of the Electronics and Communication Engineering department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Faculty Details - Electronics and Communication Engineering');
+        SEOTools::twitter()->setDescription('Meet the esteemed faculty of the Electronics and Communication Engineering department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.electronics-and-communication-engineering.faculty-details');
     }
 
     public function ug_electronics_and_communication_engineering_research_publications()
     {
+        SEOTools::setTitle('Research Publications - Electronics and Communication Engineering');
+        SEOTools::setDescription('Explore the research publications from the Electronics and Communication Engineering department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Research Publications - Electronics and Communication Engineering');
+        SEOTools::twitter()->setDescription('Explore the research publications from the Electronics and Communication Engineering department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.electronics-and-communication-engineering.research-publications');
     }
 
     public function ug_electronics_and_communication_engineering_program_outcomes()
     {
+        SEOTools::setTitle('Program Outcomes - Electronics and Communication Engineering');
+        SEOTools::setDescription('Understand the program outcomes of the Electronics and Communication Engineering undergraduate program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Program Outcomes - Electronics and Communication Engineering');
+        SEOTools::twitter()->setDescription('Understand the program outcomes of the Electronics and Communication Engineering undergraduate program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.electronics-and-communication-engineering.program-outcomes');
     }
 
     public function ug_electronics_and_communication_engineering_programme_educational_objectives()
     {
+        SEOTools::setTitle('Programme Educational Objectives - Electronics and Communication Engineering');
+        SEOTools::setDescription('Learn about the educational objectives of the Electronics and Communication Engineering program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Programme Educational Objectives - Electronics and Communication Engineering');
+        SEOTools::twitter()->setDescription('Learn about the educational objectives of the Electronics and Communication Engineering program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.electronics-and-communication-engineering.programme-educational-objectives');
     }
 
     public function ug_electronics_and_communication_engineering_programme_specific_outcomes()
     {
+        SEOTools::setTitle('Programme Specific Outcomes - Electronics and Communication Engineering');
+        SEOTools::setDescription('Explore the specific outcomes of the Electronics and Communication Engineering program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Programme Specific Outcomes - Electronics and Communication Engineering');
+        SEOTools::twitter()->setDescription('Explore the specific outcomes of the Electronics and Communication Engineering program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.electronics-and-communication-engineering.programme-specific-outcomes');
     }
 
@@ -2321,31 +2450,79 @@ class PagesController extends Controller
 
     public function department_mba()
     {
+        SEOTools::setTitle('Master of Business Administration - MBA Program');
+        SEOTools::setDescription('Explore the Master of Business Administration (MBA) program. Learn about faculty details, research publications, and more.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Master of Business Administration - MBA Program');
+        SEOTools::twitter()->setDescription('Explore the Master of Business Administration (MBA) program. Learn about faculty details, research publications, and more.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.postgraduate.master-of-business-administration.mba');
     }
 
     public function department_mba_department_highlights()
     {
+        SEOTools::setTitle('Department Highlights - MBA');
+        SEOTools::setDescription('Discover the highlights of the MBA department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Department Highlights - MBA');
+        SEOTools::twitter()->setDescription('Discover the highlights of the MBA department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.postgraduate.master-of-business-administration.department-highlights');
     }
 
     public function department_mba_faculty_details()
     {
+        SEOTools::setTitle('Faculty Details - MBA');
+        SEOTools::setDescription('Meet the esteemed faculty of the MBA department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Faculty Details - MBA');
+        SEOTools::twitter()->setDescription('Meet the esteemed faculty of the MBA department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.postgraduate.master-of-business-administration.faculty-details');
     }
 
     public function department_mba_hods_desk()
     {
+        SEOTools::setTitle('HOD\'s Desk - MBA');
+        SEOTools::setDescription('Read messages from the Head of the MBA department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('HOD\'s Desk - MBA');
+        SEOTools::twitter()->setDescription('Read messages from the Head of the MBA department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.postgraduate.master-of-business-administration.hods-desk');
     }
 
     public function department_mba_research_publications()
     {
+        SEOTools::setTitle('Research Publications - MBA');
+        SEOTools::setDescription('Explore the research publications from the MBA department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Research Publications - MBA');
+        SEOTools::twitter()->setDescription('Explore the research publications from the MBA department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.postgraduate.master-of-business-administration.research-publications');
     }
 
     public function department_mba_industry_collabration()
     {
+        SEOTools::setTitle('Industry Collaboration - MBA');
+        SEOTools::setDescription('Learn about industry collaborations in the MBA department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Industry Collaboration - MBA');
+        SEOTools::twitter()->setDescription('Learn about industry collaborations in the MBA department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.postgraduate.master-of-business-administration.industry-collabration');
     }
 
@@ -2355,84 +2532,199 @@ class PagesController extends Controller
             return StudentAchievement::where('department', 'MBA')->get();
         });
 
+        SEOTools::setTitle('Student Achievements - MBA');
+        SEOTools::setDescription('Celebrate the achievements of MBA students.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Student Achievements - MBA');
+        SEOTools::twitter()->setDescription('Celebrate the achievements of MBA students.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.postgraduate.master-of-business-administration.student-achievements', ['mbaStudentsAchivements' => $mbaStudentsAchivements]);
     }
 
-
     public function department_mba_program_outcomes()
     {
+        SEOTools::setTitle('Program Outcomes - MBA');
+        SEOTools::setDescription('Understand the program outcomes of the MBA program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Program Outcomes - MBA');
+        SEOTools::twitter()->setDescription('Understand the program outcomes of the MBA program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.postgraduate.master-of-business-administration.program-outcomes');
     }
 
-
     public function department_mba_programme_educational_objectives()
     {
+        SEOTools::setTitle('Programme Educational Objectives - MBA');
+        SEOTools::setDescription('Learn about the educational objectives of the MBA program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Programme Educational Objectives - MBA');
+        SEOTools::twitter()->setDescription('Learn about the educational objectives of the MBA program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.postgraduate.master-of-business-administration.programme-educational-objectives');
     }
 
-
     public function department_mba_programme_specific_outcomes()
     {
+        SEOTools::setTitle('Programme Specific Outcomes - MBA');
+        SEOTools::setDescription('Explore the specific outcomes of the MBA program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Programme Specific Outcomes - MBA');
+        SEOTools::twitter()->setDescription('Explore the specific outcomes of the MBA program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.postgraduate.master-of-business-administration.programme-specific-outcomes');
     }
-
 
 
     // Department -> Undergraduate -> Artificial Intelligence & Data Science
 
     public function ug_artificial_intelligence_data_science()
     {
+        SEOTools::setTitle('Artificial Intelligence and Data Science - Undergraduate Program');
+        SEOTools::setDescription('Explore the Artificial Intelligence and Data Science undergraduate program. Discover faculty details, research publications, and more.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Artificial Intelligence and Data Science - Undergraduate Program');
+        SEOTools::twitter()->setDescription('Explore the Artificial Intelligence and Data Science undergraduate program. Discover faculty details, research publications, and more.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.artificial-intelligence-data-science');
     }
 
     public function ug_artificial_intelligence_data_science_department_highlights()
     {
+        SEOTools::setTitle('Department Highlights - AI & Data Science');
+        SEOTools::setDescription('Discover the highlights of the Artificial Intelligence and Data Science department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Department Highlights - AI & Data Science');
+        SEOTools::twitter()->setDescription('Discover the highlights of the Artificial Intelligence and Data Science department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.department-highlights');
     }
 
     public function ug_artificial_intelligence_data_science_hods_desk()
     {
+        SEOTools::setTitle('HOD\'s Desk - AI & Data Science');
+        SEOTools::setDescription('Read messages from the Head of the Artificial Intelligence and Data Science department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('HOD\'s Desk - AI & Data Science');
+        SEOTools::twitter()->setDescription('Read messages from the Head of the Artificial Intelligence and Data Science department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.hods-desk');
     }
 
     public function ug_artificial_intelligence_data_science_faculty_details()
     {
+        SEOTools::setTitle('Faculty Details - AI & Data Science');
+        SEOTools::setDescription('Meet the esteemed faculty of the Artificial Intelligence and Data Science department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Faculty Details - AI & Data Science');
+        SEOTools::twitter()->setDescription('Meet the esteemed faculty of the Artificial Intelligence and Data Science department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.faculty-details');
     }
 
-
     public function ug_artificial_intelligence_data_science_research_publications()
     {
+        SEOTools::setTitle('Research Publications - AI & Data Science');
+        SEOTools::setDescription('Explore the research publications from the Artificial Intelligence and Data Science department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Research Publications - AI & Data Science');
+        SEOTools::twitter()->setDescription('Explore the research publications from the Artificial Intelligence and Data Science department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.research-publications');
     }
 
     public function ug_artificial_intelligence_data_science_industry_collabration()
     {
+        SEOTools::setTitle('Industry Collaboration - AI & Data Science');
+        SEOTools::setDescription('Learn about industry collaborations in the Artificial Intelligence and Data Science department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Industry Collaboration - AI & Data Science');
+        SEOTools::twitter()->setDescription('Learn about industry collaborations in the Artificial Intelligence and Data Science department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.industry-collabration');
     }
 
     public function ug_artificial_intelligence_data_science_infrastructure()
     {
+        SEOTools::setTitle('Infrastructure - AI & Data Science');
+        SEOTools::setDescription('Explore the infrastructure available for the Artificial Intelligence and Data Science program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Infrastructure - AI & Data Science');
+        SEOTools::twitter()->setDescription('Explore the infrastructure available for the Artificial Intelligence and Data Science program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.infrastructure');
     }
 
     public function ug_artificial_intelligence_data_science_student_achievements()
     {
+        SEOTools::setTitle('Student Achievements - AI & Data Science');
+        SEOTools::setDescription('Celebrate the achievements of students in the Artificial Intelligence and Data Science program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Student Achievements - AI & Data Science');
+        SEOTools::twitter()->setDescription('Celebrate the achievements of students in the Artificial Intelligence and Data Science program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.student-achievements');
     }
 
     public function ug_artificial_intelligence_data_science_program_outcomes()
     {
+        SEOTools::setTitle('Program Outcomes - AI & Data Science');
+        SEOTools::setDescription('Understand the program outcomes of the Artificial Intelligence and Data Science program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Program Outcomes - AI & Data Science');
+        SEOTools::twitter()->setDescription('Understand the program outcomes of the Artificial Intelligence and Data Science program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.program-outcomes');
     }
 
     public function ug_artificial_intelligence_data_science_programme_educational_objectives()
     {
+        SEOTools::setTitle('Programme Educational Objectives - AI & Data Science');
+        SEOTools::setDescription('Learn about the educational objectives of the Artificial Intelligence and Data Science program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Programme Educational Objectives - AI & Data Science');
+        SEOTools::twitter()->setDescription('Learn about the educational objectives of the Artificial Intelligence and Data Science program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.programme-educational-objectives');
     }
 
     public function ug_artificial_intelligence_data_science_programme_specific_outcomes()
     {
+        SEOTools::setTitle('Programme Specific Outcomes - AI & Data Science');
+        SEOTools::setDescription('Explore the specific outcomes of the Artificial Intelligence and Data Science program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Programme Specific Outcomes - AI & Data Science');
+        SEOTools::twitter()->setDescription('Explore the specific outcomes of the Artificial Intelligence and Data Science program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.programme-specific-outcomes');
     }
 
@@ -2443,150 +2735,370 @@ class PagesController extends Controller
 
     // Department -> Undergraduate -> Mechnical Engineering
 
-    public function ug_mechnical_engineering()
+    public function ug_mechanical_engineering()
     {
+        SEOTools::setTitle('Mechanical Engineering - Undergraduate Program');
+        SEOTools::setDescription('Explore the Mechanical Engineering undergraduate program. Discover faculty details, research publications, and more.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Mechanical Engineering - Undergraduate Program');
+        SEOTools::twitter()->setDescription('Explore the Mechanical Engineering undergraduate program. Discover faculty details, research publications, and more.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.mechanical-engineering.mechanical-engineering');
     }
 
-    public function ug_mechnical_engineering_research_publications()
+    public function ug_mechanical_engineering_research_publications()
     {
+        SEOTools::setTitle('Research Publications - Mechanical Engineering');
+        SEOTools::setDescription('Explore research publications from the Mechanical Engineering department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Research Publications - Mechanical Engineering');
+        SEOTools::twitter()->setDescription('Explore research publications from the Mechanical Engineering department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.mechanical-engineering.research-publications');
     }
 
-    public function ug_mechnical_engineering_industry_collabration()
+    public function ug_mechanical_engineering_industry_collaboration()
     {
+        SEOTools::setTitle('Industry Collaboration - Mechanical Engineering');
+        SEOTools::setDescription('Learn about industry collaborations in the Mechanical Engineering department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Industry Collaboration - Mechanical Engineering');
+        SEOTools::twitter()->setDescription('Learn about industry collaborations in the Mechanical Engineering department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.mechanical-engineering.industry-collabration');
     }
 
-    public function ug_mechnical_engineering_infrastructure()
+    public function ug_mechanical_engineering_infrastructure()
     {
-
+        SEOTools::setTitle('Infrastructure - Mechanical Engineering');
+        SEOTools::setDescription('Explore the infrastructure available for the Mechanical Engineering program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Infrastructure - Mechanical Engineering');
+        SEOTools::twitter()->setDescription('Explore the infrastructure available for the Mechanical Engineering program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
 
         return view('pages.academics.departments.undergraduate.mechanical-engineering.infrastructure');
     }
 
     public function ug_mechanical_engineering_department_highlights()
     {
+        SEOTools::setTitle('Department Highlights - Mechanical Engineering');
+        SEOTools::setDescription('Discover the highlights of the Mechanical Engineering department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Department Highlights - Mechanical Engineering');
+        SEOTools::twitter()->setDescription('Discover the highlights of the Mechanical Engineering department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.mechanical-engineering.department-highlights');
     }
 
     public function ug_mechanical_engineering_student_achievements()
     {
+        SEOTools::setTitle('Student Achievements - Mechanical Engineering');
+        SEOTools::setDescription('Celebrate the achievements of students in the Mechanical Engineering program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Student Achievements - Mechanical Engineering');
+        SEOTools::twitter()->setDescription('Celebrate the achievements of students in the Mechanical Engineering program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.mechanical-engineering.student-achievements');
     }
 
     public function ug_mechanical_engineering_faculty_details()
     {
+        SEOTools::setTitle('Faculty Details - Mechanical Engineering');
+        SEOTools::setDescription('Meet the esteemed faculty of the Mechanical Engineering department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Faculty Details - Mechanical Engineering');
+        SEOTools::twitter()->setDescription('Meet the esteemed faculty of the Mechanical Engineering department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.mechanical-engineering.faculty-details');
     }
 
     public function ug_mechanical_engineering_program_outcomes()
     {
+        SEOTools::setTitle('Program Outcomes - Mechanical Engineering');
+        SEOTools::setDescription('Understand the program outcomes of the Mechanical Engineering program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Program Outcomes - Mechanical Engineering');
+        SEOTools::twitter()->setDescription('Understand the program outcomes of the Mechanical Engineering program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.mechanical-engineering.program-outcomes');
     }
 
     public function ug_mechanical_engineering_programme_educational_objectives()
     {
+        SEOTools::setTitle('Programme Educational Objectives - Mechanical Engineering');
+        SEOTools::setDescription('Learn about the educational objectives of the Mechanical Engineering program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Programme Educational Objectives - Mechanical Engineering');
+        SEOTools::twitter()->setDescription('Learn about the educational objectives of the Mechanical Engineering program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.mechanical-engineering.programme-educational-objectives');
     }
 
     public function ug_mechanical_engineering_programme_specific_outcomes()
     {
+        SEOTools::setTitle('Programme Specific Outcomes - Mechanical Engineering');
+        SEOTools::setDescription('Explore the specific outcomes of the Mechanical Engineering program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Programme Specific Outcomes - Mechanical Engineering');
+        SEOTools::twitter()->setDescription('Explore the specific outcomes of the Mechanical Engineering program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.mechanical-engineering.programme-specific-outcomes');
     }
 
-
-    // Department -> Undergraduate -> Civil Engineering
+    // Department -> undergraduate -> civil engineering
 
     public function ug_civil_engineering()
     {
+        SEOTools::setTitle('Civil Engineering - Undergraduate Program');
+        SEOTools::setDescription('Explore the Civil Engineering undergraduate program. Discover faculty details, research publications, and more.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Civil Engineering - Undergraduate Program');
+        SEOTools::twitter()->setDescription('Explore the Civil Engineering undergraduate program. Discover faculty details, research publications, and more.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.civil-engineering.civil-engineering');
     }
 
     public function ug_civil_engineering_faculty_details()
     {
+        SEOTools::setTitle('Faculty Details - Civil Engineering');
+        SEOTools::setDescription('Meet the esteemed faculty of the Civil Engineering department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Faculty Details - Civil Engineering');
+        SEOTools::twitter()->setDescription('Meet the esteemed faculty of the Civil Engineering department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.civil-engineering.faculty-details');
     }
 
     public function ug_civil_engineering_research_publications()
     {
+        SEOTools::setTitle('Research Publications - Civil Engineering');
+        SEOTools::setDescription('Explore research publications from the Civil Engineering department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Research Publications - Civil Engineering');
+        SEOTools::twitter()->setDescription('Explore research publications from the Civil Engineering department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.civil-engineering.research-publications');
     }
 
-    public function ug_civil_engineering_industry_collabration()
+    public function ug_civil_engineering_industry_collaboration()
     {
+        SEOTools::setTitle('Industry Collaboration - Civil Engineering');
+        SEOTools::setDescription('Learn about industry collaborations in the Civil Engineering department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Industry Collaboration - Civil Engineering');
+        SEOTools::twitter()->setDescription('Learn about industry collaborations in the Civil Engineering department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.civil-engineering.industry-collabration');
     }
 
     public function ug_civil_engineering_program_outcomes()
     {
+        SEOTools::setTitle('Program Outcomes - Civil Engineering');
+        SEOTools::setDescription('Understand the program outcomes of the Civil Engineering program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Program Outcomes - Civil Engineering');
+        SEOTools::twitter()->setDescription('Understand the program outcomes of the Civil Engineering program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.civil-engineering.program-outcomes');
     }
 
     public function ug_civil_engineering_programme_educational_objectives()
     {
+        SEOTools::setTitle('Programme Educational Objectives - Civil Engineering');
+        SEOTools::setDescription('Learn about the educational objectives of the Civil Engineering program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Programme Educational Objectives - Civil Engineering');
+        SEOTools::twitter()->setDescription('Learn about the educational objectives of the Civil Engineering program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.civil-engineering.programme-educational-objectives');
     }
 
     public function ug_civil_engineering_programme_specific_outcomes()
     {
+        SEOTools::setTitle('Programme Specific Outcomes - Civil Engineering');
+        SEOTools::setDescription('Explore the specific outcomes of the Civil Engineering program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Programme Specific Outcomes - Civil Engineering');
+        SEOTools::twitter()->setDescription('Explore the specific outcomes of the Civil Engineering program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.civil-engineering.programme-specific-outcomes');
     }
 
-    public function ug_civil_engineering_science_student_achievements()
+    public function ug_civil_engineering_student_achievements()
     {
+        SEOTools::setTitle('Student Achievements - Civil Engineering');
+        SEOTools::setDescription('Celebrate the achievements of students in the Civil Engineering program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Student Achievements - Civil Engineering');
+        SEOTools::twitter()->setDescription('Celebrate the achievements of students in the Civil Engineering program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.civil-engineering.student-achievements');
     }
-
     // Department -> Undergraduate -> Computer Science and Engineering
 
     public function ug_computer_science_and_engineering()
     {
+        SEOTools::setTitle('Computer Science and Engineering - Undergraduate Program');
+        SEOTools::setDescription('Explore the Computer Science and Engineering undergraduate program. Discover faculty details, research publications, and more.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Computer Science and Engineering - Undergraduate Program');
+        SEOTools::twitter()->setDescription('Explore the Computer Science and Engineering undergraduate program. Discover faculty details, research publications, and more.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.computer-science-and-engineering.computer-science-and-engineering');
     }
 
     public function ug_computer_science_and_engineering_department_highlights()
     {
+        SEOTools::setTitle('Department Highlights - Computer Science and Engineering');
+        SEOTools::setDescription('Discover the highlights of the Computer Science and Engineering department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Department Highlights - Computer Science and Engineering');
+        SEOTools::twitter()->setDescription('Discover the highlights of the Computer Science and Engineering department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.computer-science-and-engineering.department-highlights');
     }
 
     public function ug_computer_science_and_engineering_hods_desk()
     {
+        SEOTools::setTitle('HOD\'s Desk - Computer Science and Engineering');
+        SEOTools::setDescription('Read insights from the Head of Department of Computer Science and Engineering.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('HOD\'s Desk - Computer Science and Engineering');
+        SEOTools::twitter()->setDescription('Read insights from the Head of Department of Computer Science and Engineering.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.computer-science-and-engineering.hods-desk');
     }
 
     public function ug_computer_science_and_engineering_faculty_details()
     {
+        SEOTools::setTitle('Faculty Details - Computer Science and Engineering');
+        SEOTools::setDescription('Meet the esteemed faculty of the Computer Science and Engineering department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Faculty Details - Computer Science and Engineering');
+        SEOTools::twitter()->setDescription('Meet the esteemed faculty of the Computer Science and Engineering department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.computer-science-and-engineering.faculty-details');
     }
 
     public function ug_computer_science_and_engineering_research_publications()
     {
+        SEOTools::setTitle('Research Publications - Computer Science and Engineering');
+        SEOTools::setDescription('Explore research publications from the Computer Science and Engineering department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Research Publications - Computer Science and Engineering');
+        SEOTools::twitter()->setDescription('Explore research publications from the Computer Science and Engineering department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.computer-science-and-engineering.research-publications');
     }
 
     public function ug_computer_science_and_engineering_industry_collabration()
     {
+        SEOTools::setTitle('Industry Collaboration - Computer Science and Engineering');
+        SEOTools::setDescription('Learn about industry collaborations in the Computer Science and Engineering department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Industry Collaboration - Computer Science and Engineering');
+        SEOTools::twitter()->setDescription('Learn about industry collaborations in the Computer Science and Engineering department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.computer-science-and-engineering.industry-collabration');
     }
 
     public function ug_computer_science_and_engineering_program_outcomes()
     {
+        SEOTools::setTitle('Program Outcomes - Computer Science and Engineering');
+        SEOTools::setDescription('Understand the program outcomes of the Computer Science and Engineering program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Program Outcomes - Computer Science and Engineering');
+        SEOTools::twitter()->setDescription('Understand the program outcomes of the Computer Science and Engineering program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.computer-science-and-engineering.program-outcomes');
     }
 
     public function ug_computer_science_and_engineering_programme_educational_objectives()
     {
+        SEOTools::setTitle('Programme Educational Objectives - Computer Science and Engineering');
+        SEOTools::setDescription('Learn about the educational objectives of the Computer Science and Engineering program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Programme Educational Objectives - Computer Science and Engineering');
+        SEOTools::twitter()->setDescription('Learn about the educational objectives of the Computer Science and Engineering program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.computer-science-and-engineering.programme-educational-objectives');
     }
 
     public function ug_computer_science_and_engineering_programme_specific_outcomes()
     {
+        SEOTools::setTitle('Programme Specific Outcomes - Computer Science and Engineering');
+        SEOTools::setDescription('Explore the specific outcomes of the Computer Science and Engineering program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Programme Specific Outcomes - Computer Science and Engineering');
+        SEOTools::twitter()->setDescription('Explore the specific outcomes of the Computer Science and Engineering program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.computer-science-and-engineering.programme-specific-outcomes');
     }
 
     public function ug_computer_science_and_engineering_student_achievements()
     {
+        SEOTools::setTitle('Student Achievements - Computer Science and Engineering');
+        SEOTools::setDescription('Celebrate the achievements of students in the Computer Science and Engineering program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Student Achievements - Computer Science and Engineering');
+        SEOTools::twitter()->setDescription('Celebrate the achievements of students in the Computer Science and Engineering program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.computer-science-and-engineering.student-achievements');
     }
 
@@ -2595,51 +3107,131 @@ class PagesController extends Controller
 
     public function ug_electrical_and_electronics_engineering()
     {
+        SEOTools::setTitle('Electrical and Electronics Engineering - Undergraduate Program');
+        SEOTools::setDescription('Explore the Electrical and Electronics Engineering undergraduate program. Discover faculty details, research publications, and more.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Electrical and Electronics Engineering - Undergraduate Program');
+        SEOTools::twitter()->setDescription('Explore the Electrical and Electronics Engineering undergraduate program. Discover faculty details, research publications, and more.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.electrical-and-electronics-engineering.electrical-and-electronics-engineering');
     }
 
     public function ug_electrical_and_electronics_engineering_department_highlights()
     {
+        SEOTools::setTitle('Department Highlights - Electrical and Electronics Engineering');
+        SEOTools::setDescription('Discover the highlights of the Electrical and Electronics Engineering department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Department Highlights - Electrical and Electronics Engineering');
+        SEOTools::twitter()->setDescription('Discover the highlights of the Electrical and Electronics Engineering department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.electrical-and-electronics-engineering.department-highlights');
     }
 
     public function ug_electrical_and_electronics_engineering_faculty_details()
     {
+        SEOTools::setTitle('Faculty Details - Electrical and Electronics Engineering');
+        SEOTools::setDescription('Meet the esteemed faculty of the Electrical and Electronics Engineering department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Faculty Details - Electrical and Electronics Engineering');
+        SEOTools::twitter()->setDescription('Meet the esteemed faculty of the Electrical and Electronics Engineering department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.electrical-and-electronics-engineering.faculty-details');
     }
 
     public function ug_electrical_and_electronics_engineering_research_publications()
     {
+        SEOTools::setTitle('Research Publications - Electrical and Electronics Engineering');
+        SEOTools::setDescription('Explore research publications from the Electrical and Electronics Engineering department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Research Publications - Electrical and Electronics Engineering');
+        SEOTools::twitter()->setDescription('Explore research publications from the Electrical and Electronics Engineering department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.electrical-and-electronics-engineering.research-publications');
     }
 
     public function ug_electrical_and_electronics_engineering_industry_collabration()
     {
+        SEOTools::setTitle('Industry Collaboration - Electrical and Electronics Engineering');
+        SEOTools::setDescription('Learn about industry collaborations in the Electrical and Electronics Engineering department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Industry Collaboration - Electrical and Electronics Engineering');
+        SEOTools::twitter()->setDescription('Learn about industry collaborations in the Electrical and Electronics Engineering department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.electrical-and-electronics-engineering.industry-collabration');
     }
 
     public function ug_electrical_and_electronics_engineering_hods_desk()
     {
+        SEOTools::setTitle('HOD\'s Desk - Electrical and Electronics Engineering');
+        SEOTools::setDescription('Read insights from the Head of Department of Electrical and Electronics Engineering.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('HOD\'s Desk - Electrical and Electronics Engineering');
+        SEOTools::twitter()->setDescription('Read insights from the Head of Department of Electrical and Electronics Engineering.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.electrical-and-electronics-engineering.hods-desk');
     }
 
     public function ug_electrical_and_electronics_engineering_program_outcomes()
     {
+        SEOTools::setTitle('Program Outcomes - Electrical and Electronics Engineering');
+        SEOTools::setDescription('Understand the program outcomes of the Electrical and Electronics Engineering program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Program Outcomes - Electrical and Electronics Engineering');
+        SEOTools::twitter()->setDescription('Understand the program outcomes of the Electrical and Electronics Engineering program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.electrical-and-electronics-engineering.program-outcomes');
     }
 
     public function ug_electrical_and_electronics_engineering_programme_educational_objectives()
     {
+        SEOTools::setTitle('Programme Educational Objectives - Electrical and Electronics Engineering');
+        SEOTools::setDescription('Learn about the educational objectives of the Electrical and Electronics Engineering program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Programme Educational Objectives - Electrical and Electronics Engineering');
+        SEOTools::twitter()->setDescription('Learn about the educational objectives of the Electrical and Electronics Engineering program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.electrical-and-electronics-engineering.programme-educational-objectives');
     }
 
     public function ug_electrical_and_electronics_engineering_programme_specific_outcomes()
     {
+        SEOTools::setTitle('Programme Specific Outcomes - Electrical and Electronics Engineering');
+        SEOTools::setDescription('Explore the specific outcomes of the Electrical and Electronics Engineering program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Programme Specific Outcomes - Electrical and Electronics Engineering');
+        SEOTools::twitter()->setDescription('Explore the specific outcomes of the Electrical and Electronics Engineering program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.electrical-and-electronics-engineering.programme-specific-outcomes');
     }
 
     public function ug_electrical_and_electronics_engineering_student_achievements()
     {
+        SEOTools::setTitle('Student Achievements - Electrical and Electronics Engineering');
+        SEOTools::setDescription('Celebrate the achievements of students in the Electrical and Electronics Engineering program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Student Achievements - Electrical and Electronics Engineering');
+        SEOTools::twitter()->setDescription('Celebrate the achievements of students in the Electrical and Electronics Engineering program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.electrical-and-electronics-engineering.student-achievements');
     }
 
@@ -2648,6 +3240,14 @@ class PagesController extends Controller
 
     public function ug_computer_science_and_business_systems()
     {
+        SEOTools::setTitle('Computer Science and Business Systems - Undergraduate Program');
+        SEOTools::setDescription('Explore the Computer Science and Business Systems undergraduate program. Discover faculty details, research publications, and more.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Computer Science and Business Systems - Undergraduate Program');
+        SEOTools::twitter()->setDescription('Explore the Computer Science and Business Systems undergraduate program. Discover faculty details, research publications, and more.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.undergraduate.computer-science-business-systems.computer-science-business-systems');
     }
 
@@ -2656,26 +3256,66 @@ class PagesController extends Controller
 
     public function department_science_humanities()
     {
+        SEOTools::setTitle('Science and Humanities - Department Overview');
+        SEOTools::setDescription('Discover the Science and Humanities department, offering a range of programs and insights into various fields of study.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Science and Humanities - Department Overview');
+        SEOTools::twitter()->setDescription('Discover the Science and Humanities department, offering a range of programs and insights into various fields of study.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.science-humanities.science-humanities');
     }
 
     public function department_science_humanities_department_highlights()
     {
+        SEOTools::setTitle('Department Highlights - Science and Humanities');
+        SEOTools::setDescription('Explore the highlights of the Science and Humanities department, showcasing achievements and opportunities.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Department Highlights - Science and Humanities');
+        SEOTools::twitter()->setDescription('Explore the highlights of the Science and Humanities department, showcasing achievements and opportunities.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.science-humanities.department-highlights');
     }
 
     public function department_science_humanities_faculty_details()
     {
+        SEOTools::setTitle('Faculty Details - Science and Humanities');
+        SEOTools::setDescription('Meet the faculty of the Science and Humanities department, dedicated to academic excellence and student success.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Faculty Details - Science and Humanities');
+        SEOTools::twitter()->setDescription('Meet the faculty of the Science and Humanities department, dedicated to academic excellence and student success.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.science-humanities.faculty-details');
     }
 
     public function department_science_humanities_hods_desk()
     {
+        SEOTools::setTitle('HOD\'s Desk - Science and Humanities');
+        SEOTools::setDescription('A message from the Head of the Department of Science and Humanities.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('HOD\'s Desk - Science and Humanities');
+        SEOTools::twitter()->setDescription('A message from the Head of the Department of Science and Humanities.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.science-humanities.hods-desk');
     }
 
     public function department_science_humanities_industry_collabration()
     {
+        SEOTools::setTitle('Industry Collaboration - Science and Humanities');
+        SEOTools::setDescription('Learn about the industry collaborations that enhance the Science and Humanities department’s offerings.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Industry Collaboration - Science and Humanities');
+        SEOTools::twitter()->setDescription('Learn about the industry collaborations that enhance the Science and Humanities department’s offerings.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
         return view('pages.academics.departments.science-humanities.industry-collabration');
     }
 }
