@@ -19,23 +19,23 @@
     <div class="row g-5">
         <!-- single item -->
         @foreach ($academics as $course)
-            <div class="col-lg-4 col-md-4 col-sm-6">
-                <a href="{{url('')}}" target="_blank" rel="noopener noreferrer">
-                    <div class="single-cat-item">
-                        <div class="cat-thumb">
-                            <img src="{{asset($course->image_url)}}" alt="{{$course->course_name}}">
-                            <a href="{{url('')}}" class="cat-link-btn">{{$course->course_type}}</a>
-                        </div>
-                        <div class="cat-meta">
-                            <div class="cat-title">
-                                <a href="program-single.html">{{$course->course_name}}</a>
-                            </div>
+    <div class="col-lg-4 col-md-4 col-sm-6">
+        <a href="{{ url($course->course_url ?? '') }}" target="_blank" rel="noopener noreferrer">
+            <div class="single-cat-item">
+                <div class="cat-thumb">
+                    <img src="{{ asset($course->image_url) }}" alt="{{ $course->course_name }}">
+                    <a href="{{ url($course->course_url ?? '') }}" class="cat-link-btn">{{ $course->course_type }}</a>
+                </div>
+                <div class="cat-meta">
+                    <div class="cat-title">
+                        <a href="{{ url($course->course_url ?? '') }}">{{ $course->course_name }}</a>
+                    </div>
+                </div>
+            </div>
+        </a>
+    </div>
+@endforeach
 
-                        </div>
-                </a>
-            </div>
-            </div>
-        @endforeach
 
 
 

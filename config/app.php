@@ -54,6 +54,7 @@ return [
 
     'url' => env('APP_URL', 'http://localhost'),
 
+
     /*
     |--------------------------------------------------------------------------
     | Application Timezone
@@ -122,5 +123,16 @@ return [
         'driver' => env('APP_MAINTENANCE_DRIVER', 'file'),
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
+
+    // 'providers' => [
+    //     Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
+    //     // ...
+    // ],
+
+    // 'aliases' => [
+
+    //     'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
+    //     'Storage' => Illuminate\Support\Facades\Storage::class,
+    // ],
 
 ];

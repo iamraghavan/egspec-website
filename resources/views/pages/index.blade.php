@@ -4,6 +4,7 @@
 @include('components.home-slider')
 @include('components.logo-slider')
 
+{{-- <x-confetti /> --}}
 
 <section class="rts-about v__1 rt-relative rts-section-padding">
 
@@ -11,7 +12,7 @@
         <div class="row justify-content-md-center">
             <div class="col-lg-5 col-xl-5 col-md-10">
                 <div class="rts-about-image">
-                    <img src="{{asset('/assets/images/engineering_college.jpg')}}" alt="EGS Pillay Engineering College">
+                    <img src="@blob('engineering_college.webp')" alt="EGS Pillay Engineering College">
                 </div>
             </div>
             <div class="col-lg-7 col-xl-7 col-md-10">
@@ -28,7 +29,7 @@
                         exceptional infrastructure and academic excellence. Affiliated with Anna University since 2002, it empowers aspiring
                         engineers and managers through comprehensive programs and activities.
                     </p>
-                    <a href="about.html" class="about-btn rts-nbg-btn btn-arrow">EGSPEC Overview <span><i
+                    <a href="{{ url("/about/history") }}" class="about-btn rts-nbg-btn btn-arrow">EGSPEC Overview <span><i
                                 class="fa-sharp fa-regular fa-arrow-right"></i></span></a>
                     <div class="about-positioned-text ">
                         <h2 class="rt-clip-text">EST. 1995</h2>
@@ -60,12 +61,13 @@
                                 <div class="single-event-counter">
                                     <div class="count-number rt-clip-text"></div>
                                 </div>
+                                <a href="https://icrdicct-egspec.onrender.com/" target="_blank">
                                 <div class="single-event-content">
-                                    <h5 class="event-title">Sample Event 01</h5>
+                                    <h5 class="event-title">ICRDICCT '2025</h5>
                                     <div class="single-event-content-meta">
                                         <div class="event-date">
                                             <span><i class="fal fa-calendar"></i></span>
-                                            <span>November 28, 2023</span>
+                                            <span>April 4th & 5th, 2025</span>
                                         </div>
                                         <div class="event-time">
                                             <span><i class="fa-sharp fa-thin fa-clock"></i></span>
@@ -73,10 +75,11 @@
                                         </div>
                                         <div class="event-place">
                                             <span><i class="fa-sharp fa-thin fa-location-dot"></i></span>
-                                            <span>EGSPEC</span>
+                                            <span>E.G.S. Pillay Engineering College</span>
                                         </div>
                                     </div>
                                 </div>
+                            </a>
                             </li>
                             <li class="single-event">
                                 <div class="single-event-counter">
@@ -163,7 +166,7 @@
                                             </div>
                                             <div class="notice-content">
                                                 <p>
-                                                    <a href="{{ url("notice-details.html") }}">
+                                                    <a href="{{ url("/") }}">
                                                         Notice Regarding Upcoming Campus Event: Spring Fling Carnival.
                                                     </a>
                                                 </p>
@@ -417,6 +420,10 @@
 
 @include('components.testimonial')
 @include('components.cta')
+
+
+{{-- @include('components.admision-model') --}}
+
 
 
 @endsection

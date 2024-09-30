@@ -44,15 +44,16 @@
 
                     <div class="swiper-wrapper">
 
-                     @foreach($sliderImages as $sliderImage)
-                    <div class="swiper-slide" style="width: 154.286px; margin-right: 30px;">
-                        <div class="single-brand-logo">
-                            <a href="#">
-                                <img src="{{ asset($sliderImage->image_url) }}" alt="{{ $sliderImage->alt_tag }}">
-                            </a>
+
+                        @foreach($sliderImages as $sliderImage)
+                        <div class="swiper-slide" style="width: 154.286px; margin-right: 30px;">
+                            <div class="single-brand-logo">
+                                <a href="#">
+                                    <img src="{{ asset($sliderImage->image_url) }}" alt="{{ $sliderImage->alt_tag }}">
+                                </a>
+                            </div>
                         </div>
-                    </div>
-                    @endforeach
+                        @endforeach
 
                     </div>
                     <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>

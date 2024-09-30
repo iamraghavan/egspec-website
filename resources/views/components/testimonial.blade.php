@@ -5,7 +5,7 @@ $testimonials = [
 technical Education to the socio-economic background in Tamil Nadu. My appreciation
 to the Parents and Teachers for producing 31 Gold Medalists, 100% placement. Wish
 you all the Success.",
-'profile_img' => "assets/images/web/profile-1.png",
+'profile_img' => "assets/images/web/profile-1.webp",
 'author' => "Dr.Ganesan",
 'position' => "Registrar, Anna University"
 ],
@@ -13,7 +13,7 @@ you all the Success.",
 'quote' => "EGS Pillay Engineering College – Rural background college and produced
 students as highly talented and qualified in the social market. It is a talent pool
 for students and teachers to acquire knowledge and a platform for success.",
-'profile_img' => "assets/images/web/profile-2.png",
+'profile_img' => "assets/images/web/profile-2.webp",
 'author' => "Mr.M.Sivakumar",
 'position' => "CEO, ICTACT"
 ]
@@ -35,7 +35,7 @@ for students and teachers to acquire knowledge and a platform for success.",
                 <div class="rts-testimonial-box">
                     <div class="testimonial-item rt-flex">
                         <div class="testimonial-item-image">
-                            <img src="assets/images/web/1.jpg" alt="testimonial thumbnail">
+                            <img src="assets/images/web/1.webp" alt="testimonial thumbnail">
                             <a href="https://www.youtube.com/watch?v=FMcbgQWf52U" class="video-play popup-video">
                                 <img src="assets/images/icon/video-btn.svg" alt="video">
                             </a>
@@ -52,29 +52,28 @@ for students and teachers to acquire knowledge and a platform for success.",
 
 
                                     @foreach($testimonials as $testimonial)
-                                    <div class="swiper-slide" style="width: 630px;">
-                                        <div class="single-testimonial">
-                                            <div class="rt-between mb--50">
-                                                <div class="rt-icon">
-                                                    <img src="assets/images/testimonial/quote.svg" alt="quote icon">
-                                                </div>
-                                            </div>
-                                            <p class="testimonial-text">{{ $testimonial['quote'] }}</p>
-                                            <div class="rt-testimonial-author mt--50">
-                                                <div class="rt-author-meta rt-flex rt-gap-20">
-                                                    <div class="rt-author-img">
-                                                        <img src="{{ asset($testimonial['profile_img'])}}" alt="author">
-                                                    </div>
-                                                    <div class="rt-author-info">
-                                                        <h5 class="mb-1">{{ $testimonial['author'] }}</h5>
-                                                        <p>{{ $testimonial['position'] }}</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    @endforeach
-
+            <div class="swiper-slide">
+                <div class="single-testimonial">
+                    <div class="rt-between mb--50">
+                        <div class="rt-icon">
+                            <img src="@blob('quote.webp')" alt="quote icon">
+                        </div>
+                    </div>
+                    <p class="testimonial-text">{{ $testimonial['quote'] }}</p>
+                    <div class="rt-testimonial-author mt--50">
+                        <div class="rt-author-meta rt-flex rt-gap-20">
+                            <div class="rt-author-img">
+                                <img src="{{ asset($testimonial['profile_img']) }}" alt="author">
+                            </div>
+                            <div class="rt-author-info">
+                                <h5 class="mb-1">{{ $testimonial['author'] }}</h5>
+                                <p>{{ $testimonial['position'] }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @endforeach
 
 
 
@@ -83,13 +82,13 @@ for students and teachers to acquire knowledge and a platform for success.",
                             </div>
                         </div>
                         <!-- rts dot -->
-                        <div
+                        {{-- <div
                             class="swiper-pagination swiper-pagination-clickable swiper-pagination-bullets swiper-pagination-horizontal">
                             <span class="swiper-pagination-bullet swiper-pagination-bullet-active" tabindex="0"
                                 role="button" aria-label="Go to slide 1" aria-current="true"></span><span
                                 class="swiper-pagination-bullet" tabindex="0" role="button"
                                 aria-label="Go to slide 2"></span><span class="swiper-pagination-bullet" tabindex="0"
-                                role="button" aria-label="Go to slide 3"></span></div>
+                                role="button" aria-label="Go to slide 3"></span></div> --}}
                     </div>
                 </div>
             </div>
@@ -98,3 +97,23 @@ for students and teachers to acquire knowledge and a platform for success.",
 </div>
 
 
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    // Initialize Swiper for testimonial section
+    var testimonialSwiper = new Swiper('.testimonial-swiper', {
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        speed: 1000,
+        effect: 'slide',
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+});
+
+</script>

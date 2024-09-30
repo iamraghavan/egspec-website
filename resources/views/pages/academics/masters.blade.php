@@ -28,7 +28,7 @@
                             </div>
                             <div class="cat-meta">
                                 <div class="cat-title">
-                                    <a href="program-single.html">{{$course->course_name}}</a>
+                                    <a href="{{url('')}}">{{$course->course_name}}</a>
                                 </div>
 
                             </div>

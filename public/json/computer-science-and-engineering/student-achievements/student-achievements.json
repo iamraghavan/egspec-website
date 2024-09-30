@@ -1,0 +1,537 @@
+{
+    "StudentAchievements": [
+        {
+            "Department": "Computer Science And Engineering",
+            "Students": [
+                {
+                    "Name of the Students": "S.Reshma",
+                    "Event Name": "App Development",
+                    "Event Category": "Workshop",
+                    "Duration": "22/09/2023",
+                    "No of Days": 1,
+                    "Institution Name": "Arifa Institute of Technology, Keezhaiyur"
+                },
+                {
+                    "Name of the Students": "A.vasagi",
+                    "Event Name": "App Development",
+                    "Event Category": "Workshop",
+                    "Duration": "22/09/2023",
+                    "No of Days": 1,
+                    "Institution Name": "Arifa Institute of Technology, Keezhaiyur"
+                },
+                {
+                    "Name of the Students": "R.Priyadharshini",
+                    "Event Name": "App Development",
+                    "Event Category": "Workshop",
+                    "Duration": "22/09/2023",
+                    "No of Days": 1,
+                    "Institution Name": "Arifa Institute of Technology, Keezhaiyur"
+                },
+                {
+                    "Name of the Students": "M.Soniya",
+                    "Event Name": "App Development",
+                    "Event Category": "Workshop",
+                    "Duration": "22/09/2023",
+                    "No of Days": 1,
+                    "Institution Name": "Arifa Institute of Technology, Keezhaiyur"
+                },
+                {
+                    "Name of the Students": "S.Tharshika",
+                    "Event Name": "App Development",
+                    "Event Category": "Workshop",
+                    "Duration": "22/09/2023",
+                    "No of Days": 1,
+                    "Institution Name": "Arifa Institute of Technology, Keezhaiyur"
+                },
+                {
+                    "Name of the Students": "R.Kishorekumar",
+                    "Event Name": "ISRO-EXPO-2023",
+                    "Event Category": "EXPO",
+                    "Duration": "04-06/10/2023",
+                    "No of Days": 3,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "M.Nithies",
+                    "Event Name": "ISRO-EXPO-2023",
+                    "Event Category": "EXPO",
+                    "Duration": "04-06/10/2023",
+                    "No of Days": 3,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "R.Praveenkumar",
+                    "Event Name": "ISRO-EXPO-2023",
+                    "Event Category": "EXPO",
+                    "Duration": "04-06/10/2023",
+                    "No of Days": 3,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "R.P.Vishal Sahar",
+                    "Event Name": "ISRO-EXPO-2023",
+                    "Event Category": "EXPO",
+                    "Duration": "04-06/10/2023",
+                    "No of Days": 3,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "M.Sithik Asath",
+                    "Event Name": "ISRO-EXPO-2023",
+                    "Event Category": "EXPO",
+                    "Duration": "04-06/10/2023",
+                    "No of Days": 3,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "Syed Mohamed Yosuf Badurudeen",
+                    "Event Name": "ISRO-EXPO-2023",
+                    "Event Category": "EXPO",
+                    "Duration": "04-06/10/2023",
+                    "No of Days": 3,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "V.Vishal",
+                    "Event Name": "ISRO-EXPO-2023",
+                    "Event Category": "EXPO",
+                    "Duration": "04-06/10/2023",
+                    "No of Days": 3,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "Y.Mohamed Farvesh",
+                    "Event Name": "ISRO-EXPO-2023",
+                    "Event Category": "EXPO",
+                    "Duration": "04-06/10/2023",
+                    "No of Days": 3,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "M.Yasir Ebnu Ariff",
+                    "Event Name": "ISRO-EXPO-2023",
+                    "Event Category": "EXPO",
+                    "Duration": "04-06/10/2023",
+                    "No of Days": 3,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "R.krishnakumar",
+                    "Event Name": "ISRO-EXPO-2023",
+                    "Event Category": "EXPO",
+                    "Duration": "04-06/10/2023",
+                    "No of Days": 3,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "T.Shrivarshini",
+                    "Event Name": "Kubernets in Cloud Computing",
+                    "Event Category": "Workshop",
+                    "Duration": "13/10/2023",
+                    "No of Days": 1,
+                    "Institution Name": "KSK College of Engineering and Technology, Trichy"
+                },
+                {
+                    "Name of the Students": "C.Nivethithai",
+                    "Event Name": "Kubernets in Cloud Computing",
+                    "Event Category": "Workshop",
+                    "Duration": "13/10/2023",
+                    "No of Days": 1,
+                    "Institution Name": "KSK College of Engineering and Technology, Trichy"
+                },
+                {
+                    "Name of the Students": "K.Sowmiya",
+                    "Event Name": "Kubernets in Cloud Computing",
+                    "Event Category": "Workshop",
+                    "Duration": "13/10/2023",
+                    "No of Days": 1,
+                    "Institution Name": "KSK College of Engineering and Technology, Trichy"
+                },
+                {
+                    "Name of the Students": "V.Santhanalakshmi",
+                    "Event Name": "Kubernets in Cloud Computing",
+                    "Event Category": "Workshop",
+                    "Duration": "13/10/2023",
+                    "No of Days": 1,
+                    "Institution Name": "KSK College of Engineering and Technology, Trichy"
+                },
+                {
+                    "Name of the Students": "S.R.Reshma",
+                    "Event Name": "Kubernets in Cloud Computing",
+                    "Event Category": "Workshop",
+                    "Duration": "13/10/2023",
+                    "No of Days": 1,
+                    "Institution Name": "KSK College of Engineering and Technology, Trichy"
+                },
+                {
+                    "Name of the Students": "D.Shivarajadharshini",
+                    "Event Name": "Digital Strategy and Brand Marketing",
+                    "Event Category": "Workshop",
+                    "Duration": "20/09/2023",
+                    "No of Days": 1,
+                    "Institution Name": "Mindluster Tech"
+                },
+                {
+                    "Name of the Students": "R.Subashini",
+                    "Event Name": "App Development",
+                    "Event Category": "Workshop",
+                    "Duration": "22/09/2023",
+                    "No of Days": 1,
+                    "Institution Name": "Arifa Institute of Technology, Keezhaiyur"
+                },
+                {
+                    "Name of the Students": "S.Srimanjari",
+                    "Event Name": "App Development",
+                    "Event Category": "Workshop",
+                    "Duration": "22/09/2023",
+                    "No of Days": 1,
+                    "Institution Name": "Arifa Institute of Technology, Keezhaiyur"
+                },
+                {
+                    "Name of the Students": "D.Shivarajadharshini",
+                    "Event Name": "App Development",
+                    "Event Category": "Workshop",
+                    "Duration": "22/09/2023",
+                    "No of Days": 1,
+                    "Institution Name": "Arifa Institute of Technology, Keezhaiyur"
+                },
+                {
+                    "Name of the Students": "E.Kabilan",
+                    "Event Name": "ISRO-EXPO-2023",
+                    "Event Category": "EXPO",
+                    "Duration": "04-06/10/2023",
+                    "No of Days": 3,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "C.Elanchezhiyan",
+                    "Event Name": "ISRO-EXPO-2023",
+                    "Event Category": "EXPO",
+                    "Duration": "04-06/10/2023",
+                    "No of Days": 3,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "R.Manibharathi",
+                    "Event Name": "ISRO-EXPO-2023",
+                    "Event Category": "EXPO",
+                    "Duration": "04-06/10/2023",
+                    "No of Days": 3,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "R.Kishorekumar",
+                    "Event Name": "ISRO-EXPO-2023",
+                    "Event Category": "EXPO",
+                    "Duration": "04-06/10/2023",
+                    "No of Days": 3,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "S.Vijay",
+                    "Event Name": "ISRO-EXPO-2023",
+                    "Event Category": "EXPO",
+                    "Duration": "04-06/10/2023",
+                    "No of Days": 3,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "R.krishnakumar",
+                    "Event Name": "ISRO-EXPO-2023",
+                    "Event Category": "EXPO",
+                    "Duration": "04-06/10/2023",
+                    "No of Days": 3,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "R.Subashini",
+                    "Event Name": "Kubernets in Cloud Computing",
+                    "Event Category": "Workshop",
+                    "Duration": "13/10/2023",
+                    "No of Days": 1,
+                    "Institution Name": "KSK College of Engineering and Technology, Trichy"
+                },
+                {
+                    "Name of the Students": "D.Shivarajadharshini",
+                    "Event Name": "Kubernets in Cloud Computing",
+                    "Event Category": "Workshop",
+                    "Duration": "13/10/2023",
+                    "No of Days": 1,
+                    "Institution Name": "KSK College of Engineering and Technology, Trichy"
+                },
+                {
+                    "Name of the Students": "R.Vigneshkumar",
+                    "Event Name": "SQL and Relational Databases 101",
+                    "Event Category": "Course",
+                    "Duration": "25/07/2023",
+                    "No of Days": 1,
+                    "Institution Name": "IBM & Cognitive Class"
+                },
+                {
+                    "Name of the Students": "N.Iswarya",
+                    "Event Name": "Exploring Abroad Engineering Career Opportunities",
+                    "Event Category": "Webinar",
+                    "Duration": "08/09/2023",
+                    "No of Days": 1,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "M.Navina",
+                    "Event Name": "Exploring Abroad Engineering Career Opportunities",
+                    "Event Category": "Webinar",
+                    "Duration": "08/09/2023",
+                    "No of Days": 1,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "K.Priyadharshini",
+                    "Event Name": "Exploring Abroad Engineering Career Opportunities",
+                    "Event Category": "Webinar",
+                    "Duration": "08/09/2023",
+                    "No of Days": 1,
+                    "Institution Name": "E E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "M.vaishnavi",
+                    "Event Name": "Career Counselling",
+                    "Event Category": "Webinar",
+                    "Duration": "08/09/2023",
+                    "No of Days": 1,
+                    "Institution Name": "DevTown-Online"
+                },
+                {
+                    "Name of the Students": "N.Kalaidharani",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "S.Mohamed Yusuf",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "M.vaishnavi",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "R.Sowmiya",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "S.Kanmani",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "K.Nithishkumar",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "M.Navina",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "S.Mukesh Kanna",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "K.Vishva",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "G.Dinesh",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "B.Sivaranjani",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "S.Anilkumar",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "S.Jayaseela",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "R.Keerthika",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "S.Santhiya",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "H.Noorul Sathik",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "M.Iswarya",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "M.Dharani",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "R.Arthi",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "M.Mohamed Tharik",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "M.santhoshkumar",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "A.Subasri",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "K.Priyadharshini",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "P.Parwathy Priya",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "S.Vaishnavi",
+                    "Event Name": "Big Data Analytics Using R",
+                    "Event Category": "Workshop",
+                    "Duration": "21,22/09/2023",
+                    "No of Days": 2,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "N.Kanmani",
+                    "Event Name": "ISRO-EXPO-2023",
+                    "Event Category": "EXPO",
+                    "Duration": "04-06/10/2023",
+                    "No of Days": 3,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "S.Jayaseela",
+                    "Event Name": "ISRO-EXPO-2023",
+                    "Event Category": "EXPO",
+                    "Duration": "04-06/10/2023",
+                    "No of Days": 3,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "H.Thowfiq Aziz",
+                    "Event Name": "ISRO-EXPO-2023",
+                    "Event Category": "EXPO",
+                    "Duration": "04-06/10/2023",
+                    "No of Days": 3,
+                    "Institution Name": "E.G.S. Pillay Engineering College, Nagapattinam"
+                },
+                {
+                    "Name of the Students": "K.Priyadharshini",
+                    "Event Name": "Mastering Graphics in DSA",
+                    "Event Category": "Workshop",
+                    "Duration": "10/10/2023",
+                    "No of Days": 1,
+                    "Institution Name": "CODING NINJAS-Online"
+                }
+            ]
+        }
+    ]
+}

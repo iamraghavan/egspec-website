@@ -1,0 +1,158 @@
+@extends('layouts.app')
+@section('content')
+
+@include('components.breadcrumb', ['value_1' => 'Academics',
+'value_2' => 'Departments',
+'value_3' => 'Master\'s of Computer Applications',
+'page_title' => 'Highlights' ])
+
+
+<div class="rts-program rts-section-padding">
+    <div class="container">
+
+        <div class="rts-program-description">
+            <div class="row">
+                <div class="col-lg-8">
+
+
+                    <div class="admission-content-top">
+
+
+
+                        <div class="application-deadline">
+
+                            <div class="application-deadline__content">
+                                <div class="application-deadline__content--table">
+                                    <table class="table table-striped">
+                                        <thead class="table-theme">
+                                            <tr>
+                                                <td>Highlights</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Accredited by NBA (National Board of Accreditation) – Tier 1</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Autonomous System and Outcome-based Education – The curriculum is well defined to cater to the requirements of both industry deployment</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Last 5 years 100% admission</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Consistent Placement record of 85%</td>
+                                            </tr>
+                                            <tr>
+                                                <td>15:1 student-faculty ratio, faculty-student mentoring, peer mentoring, communicare facility</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Experienced and Industry trained faculty members</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Regular recruiters – Inforview, TCS, Wipro, ILM, Amazon, Soft Squre, Tech Mahindra, Zoho, Cognizant, Touchmark, Wahimi, DesiCrew, Ampisoft</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Industry Tie-up and Industry Supported Laboratories - Amazon Web Services, Dell EMC, VMware IT Academy, Oracle Academy, Sales force, Red Hat, UiPath, ICT Academy, CISCO, Palo Alto Academy, Linuxpert Systems</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Internship, Industrial Visit, and Credit-based Certification courses</td>
+                                            </tr>
+                                            <tr>
+                                                <td>AICTE Smart India Hackathon, Chatra Viswakarama Award winners</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ISTE and TNSCST Student Project winners</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Industry Award – VMWare IT Academy VTIA, Oracle Academy CoE, Dell EMC CoE, ICT Academy Student Engagement, Sales force Trail Head Learnathon, AWS Cloud Day, CISCO Year of Service</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Highest number of students participated in various extracurricular and co-curricular activities</td>
+                                            </tr>
+                                            <tr>
+                                                <td>In-house training for Placements, Higher studies, competitive examination, and Life skill courses</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Online and Self Learning practices- Google Class Rooms, GUVI, Skill rack, Ampisoft training, Internshela</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Students Clubs: Programmers Paradise Club, Designers Domain Club, Learners and Earners Club, App Development Club</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Association: Federal Association for Information Technology Honours (FAITH)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Active Alumni Association</td>
+                                            </tr>
+                                            <tr>
+                                                <td>ICT Enabled Classrooms and Laboratories</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Research and Development facility – 20 Student Project, 6 Patent, 15 Copyrights are filed</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Support for Publications, Conferences, and Consultancy works</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Grievance Redressal System, Mentor-Mentee Scheme, Women Empowerment Cell for student development</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <!-- sidebar -->
+                <div class="col-lg-4">
+                    <div class="program-sidebar">
+
+                        <div class="program-curriculum">
+                            <h6 class="heading-title">Department Quick Links</h6>
+<div class="program-menu">
+    <ul class="list-unstyled">
+        <li><a href="{{ url('/academics/departments/postgraduate/master-of-computer-applications') }}"><span><i class="fa-light fa-arrow-right"></i></span>About</a></li>
+        <li><a href="{{ url('/academics/departments/postgraduate/master-of-computer-applications/department-highlights') }}"><span><i class="fa-light fa-arrow-right"></i></span>Department Highlights</a></li>
+        <li><a href="{{ url('/academics/departments/postgraduate/master-of-computer-applications/hods-desk') }}"><span><i class="fa-light fa-arrow-right"></i></span>Hod's Desk</a></li>
+        <li><a href="{{ url('/academics/departments/postgraduate/master-of-computer-applications/faculty-details') }}"><span><i class="fa-light fa-arrow-right"></i></span>Faculty Details</a></li>
+        <li><a href="https://coe.egspec.org/" target="_blank"><span><i class="fa-light fa-arrow-right"></i></span>Curriculum</a></li>
+        <li><a href="{{ url('/academics/departments/postgraduate/master-of-computer-applications/research-publications') }}"><span><i class="fa-light fa-arrow-right"></i></span>Research & Publications</a></li>
+        <li><a href="{{ url('/academics/departments/postgraduate/master-of-computer-applications/industry-collaboration') }}"><span><i class="fa-light fa-arrow-right"></i></span>Industry Collaboration</a></li>
+        <li><a href="{{ url('/academics/departments/postgraduate/master-of-computer-applications/laboratories-and-facilities') }}"><span><i class="fa-light fa-arrow-right"></i></span>Laboratories and Facilities</a></li>
+        <li><a href="{{ url('/placements/statistics') }}"><span><i class="fa-light fa-arrow-right"></i></span>Placements</a></li>
+        <li><a href="{{ url('/academics/departments/postgraduate/master-of-computer-applications/student-achievements') }}"><span><i class="fa-light fa-arrow-right"></i></span>Student Achievements</a></li>
+        <li><a href="{{ url('/academics/departments/postgraduate/master-of-computer-applications/program-outcomes') }}"><span><i class="fa-light fa-arrow-right"></i></span>Program Outcomes</a></li>
+        <li><a href="{{ url('/academics/departments/postgraduate/master-of-computer-applications/programme-educational-objectives') }}"><span><i class="fa-light fa-arrow-right"></i></span>Programme Educational Objectives</a></li>
+        <li><a href="{{ url('/academics/departments/postgraduate/master-of-computer-applications/programme-specific-outcomes') }}"><span><i class="fa-light fa-arrow-right"></i></span>Programme Specific Outcomes</a></li>
+    </ul>
+</div>
+
+                        </div>
+                        <!-- contact info -->
+                        <x-dept-contact-info
+                        name="Dr. J. Vanitha"
+                        :phones="['+919443728519']"
+                        :emails="['vanitha@egspec.org']"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+@include('components.cta')
+
+
+
+
+
+@endsection

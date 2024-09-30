@@ -3,11 +3,15 @@
         <div class="row">
             <div class="col-12">
                 <div class="rts-newsletter-box rt-relative"
-                    style="background-image: url(assets/images/web/cat_img.jpg);">
+                    style="background-image: url(@blob('cat_img.webp'));">
                     <div class="rts-newsletter-box-content">
-                        <h4 class="newsletter-title rt-semi rt-white w-900 mb-0">Be part of our journey to empower aspiring engineers, scientists, and managers towards success!
+                        <h4 class="newsletter-title fs-25 rt-semi rt-white w-800 mb-0" style="
+    font-size: 2.5rem;
+    line-height: 4rem;
+    font-weight: 400;
+">Be part of our journey to empower aspiring engineers, scientists, and managers towards success!
                         </h4>
-                        <div class="newsletter-form w-530">
+                        <div class="newsletter-form w-630">
                             <form>
 
                                 <button type="submit" class="rts-nbg-btn btn-arrow">Apply Now <span><i
