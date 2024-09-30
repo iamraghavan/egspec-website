@@ -4,7 +4,7 @@
 @include('components.home-slider')
 @include('components.logo-slider')
 
-
+{{-- <x-confetti /> --}}
 
 <section class="rts-about v__1 rt-relative rts-section-padding">
 

@@ -8,7 +8,313 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Development</title>
+
+
+    {!! SEOMeta::generate() !!}
+    {!! OpenGraph::generate() !!}
+    {!! Twitter::generate() !!}
+    {!! JsonLd::generate() !!}
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Article",
+                "headline": "E.G.S. Pillay Engineering College",
+                "author": {
+                  "@type": "Person",
+                  "name": "Raghavan Jeeva"
+                },
+                "datePublished": "2023-09-29",
+                "image": "https://egspec.blob.core.windows.net/egspec-assets/og_image.webp",
+                "publisher": {
+                  "@type": "Organization",
+                  "name": "E.G.S. Pillay Engineering College",
+                  "logo": {
+                    "@type": "ImageObject",
+                    "url": "https://egspec.org/assets/images/logo_tran.svg"
+                  }
+                }
+              },
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://egspec.org/"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Principal Message",
+                    "item": "https://egspec.org/about/message-from-the-principal"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": "Undergraduate",
+                    "item": "https://egspec.org/academics/departments/bachelors"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 4,
+                    "name": "Postgraduate",
+                    "item": "https://egspec.org/academics/departments/masters"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 5,
+                    "name": "Master of Computer Applications",
+                    "item": "https://egspec.org/academics/departments/postgraduate/master-of-computer-applications"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 6,
+                    "name": "Master of Business Administration",
+                    "item": "https://egspec.org/academics/departments/postgraduate/master-of-business-administration"
+                  },
+                  {
+                    "@type": "ListItem",
+                    "position": 7,
+                    "name": "Training and Placement",
+                    "item": "https://egspec.org/placements"
+                  }
+                ]
+              },
+              {
+                "@type": "LocalBusiness",
+                "name": "E.G.S. Pillay Engineering College",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Old Nagore Road, Thethi Village Nagapattinam",
+                  "addressLocality": "Nagapattinam",
+                  "postalCode": "611002",
+                  "addressCountry": "India"
+                },
+                "telephone": "+91-436-525-1112",
+                "url": "https://egspec.org",
+                "logo": "https://egspec.org/assets/images/logo_tran.svg",
+                "image": "https://egspec.blob.core.windows.net/egspec-assets/og_image.webp",
+                "openingHours": "Mo-Fr 09:00-17:00"
+              },
+              {
+                "@type": "Organization",
+                "name": "E.G.S. Pillay Group of Institutions",
+                "url": "https://egspec.org",
+                "logo": "https://egspec.org/assets/images/logo_tran.svg",
+                "sameAs": [
+                  "https://www.facebook.com/EGSPGOI",
+                  "https://twitter.com/raghavanjeeva",
+                  "https://www.instagram.com/egspillay_group_of_institution"
+                ]
+              },
+              {
+                "@type": "Review",
+                "itemReviewed": {
+                  "@type": "EducationalOrganization",
+                  "name": "E.G.S. Pillay Engineering College"
+                },
+                "author": {
+                  "@type": "Person",
+                  "name": "Raghavan Jeeva"
+                },
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "4.5",
+                  "bestRating": "5"
+                },
+                "datePublished": "2023-09-29"
+              }
+            ]
+          }
+
+    </script>
+
+    <script type="application/ld+json">
+
+        {
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "Course",
+                "name": "Mechanical Engineering",
+                "description": "B.E. program focusing on the principles of mechanics, dynamics, and thermodynamics.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "E.G.S. Pillay Engineering College",
+                  "sameAs": "https://egspec.org/academics/departments/undergraduate/mechanical-engineering"
+                }
+              },
+              {
+                "@type": "Course",
+                "name": "Civil Engineering",
+                "description": "B.E. program specializing in the design, construction, and maintenance of infrastructure.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "E.G.S. Pillay Engineering College",
+                  "sameAs": "https://egspec.org/academics/departments/undergraduate/civil-engineering"
+                }
+              },
+              {
+                "@type": "Course",
+                "name": "Electrical and Electronics Engineering",
+                "description": "B.E. program that covers electrical systems, electronics, and related technologies.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "E.G.S. Pillay Engineering College",
+                  "sameAs": "https://egspec.org/academics/departments/undergraduate/electrical-and-electronics-engineering"
+                }
+              },
+              {
+                "@type": "Course",
+                "name": "Electronics and Communication Engineering",
+                "description": "B.E. program focusing on electronic systems and communication technologies.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "E.G.S. Pillay Engineering College",
+                  "sameAs": "https://egspec.org/academics/departments/undergraduate/electronics-and-communication-engineering"
+                }
+              },
+              {
+                "@type": "Course",
+                "name": "Computer Science and Engineering",
+                "description": "B.E. program covering fundamental concepts in computer science and software development.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "E.G.S. Pillay Engineering College",
+                  "sameAs": "https://egspec.org/academics/departments/undergraduate/computer-science-and-engineering"
+                }
+              },
+              {
+                "@type": "Course",
+                "name": "Information Technology",
+                "description": "B.E. program that focuses on computer systems, networking, and information management.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "E.G.S. Pillay Engineering College",
+                  "sameAs": "https://egspec.org/academics/departments/undergraduate/information-technology"
+                }
+              },
+              {
+                "@type": "Course",
+                "name": "Biomedical Engineering",
+                "description": "B.E. program combining engineering principles with medical and biological sciences.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "E.G.S. Pillay Engineering College",
+                  "sameAs": "https://egspec.org/academics/departments/undergraduate/biomedical-engineering"
+                }
+              },
+              {
+                "@type": "Course",
+                "name": "Computer Science & Business Systems Engineering",
+                "description": "B.E. program integrating computer science with business management concepts.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "E.G.S. Pillay Engineering College",
+                  "sameAs": "https://egspec.org/academics/departments/undergraduate/computer-science-business-systems-engineering"
+                }
+              },
+              {
+                "@type": "Course",
+                "name": "Artificial Intelligence and Data Science",
+                "description": "B.E. program focused on AI technologies and data analysis techniques.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "E.G.S. Pillay Engineering College",
+                  "sameAs": "https://egspec.org/academics/departments/undergraduate/artificial-intelligence-data-science"
+                }
+              },
+              {
+                "@type": "Course",
+                "name": "Master of Computer Applications (MCA)",
+                "description": "Postgraduate program focusing on computer applications and software development.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "E.G.S. Pillay Engineering College",
+                  "sameAs": "https://egspec.org/academics/departments/postgraduate/master-of-computer-applications"
+                }
+              },
+              {
+                "@type": "Course",
+                "name": "Master of Business Administration (MBA)",
+                "description": "Postgraduate program aimed at developing managerial skills and business acumen.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "E.G.S. Pillay Engineering College",
+                  "sameAs": "https://egspec.org/academics/departments/postgraduate/master-of-business-administration"
+                }
+              },
+              {
+                "@type": "Course",
+                "name": "Science and Humanity",
+                "description": "Program exploring the interconnections between scientific inquiry and human values.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "E.G.S. Pillay Engineering College",
+                  "sameAs": "https://egspec.org/academics/departments/undergraduate/science-and-humanity"
+                }
+              },
+              {
+                "@type": "Course",
+                "name": "Manufacturing Engineering",
+                "description": "M.E. program focusing on manufacturing processes and systems.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "E.G.S. Pillay Engineering College",
+                  "sameAs": "https://egspec.org/academics/departments/postgraduate/manufacturing-engineering"
+                }
+              },
+              {
+                "@type": "Course",
+                "name": "Computer Science and Engineering (M.E./M.Tech)",
+                "description": "Postgraduate program in advanced computer science concepts and applications.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "E.G.S. Pillay Engineering College",
+                  "sameAs": "https://egspec.org/academics/departments/postgraduate/computer-science-and-engineering"
+                }
+              },
+              {
+                "@type": "Course",
+                "name": "Power Electronics and Drives",
+                "description": "M.E. program focusing on power electronics systems and motor drives.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "E.G.S. Pillay Engineering College",
+                  "sameAs": "https://egspec.org/academics/departments/postgraduate/power-electronics-and-drives"
+                }
+              },
+              {
+                "@type": "Course",
+                "name": "Communication Systems",
+                "description": "M.E. program specializing in advanced communication technologies.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "E.G.S. Pillay Engineering College",
+                  "sameAs": "https://egspec.org/academics/departments/postgraduate/communication-systems"
+                }
+              },
+              {
+                "@type": "Course",
+                "name": "Environmental Engineering",
+                "description": "M.E. program focusing on sustainable environmental solutions.",
+                "provider": {
+                  "@type": "Organization",
+                  "name": "E.G.S. Pillay Engineering College",
+                  "sameAs": "https://egspec.org/academics/departments/postgraduate/environmental-engineering"
+                }
+              }
+            ]
+          }
+
+    </script>
+
+
+
     <!-- animate css -->
     <link rel="stylesheet" href="{{ asset("/assets/css/plugins/animate.min.css") }}">
     <!-- fontawesome 6.4.2 -->
@@ -98,10 +404,10 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></>
     <script src="https://cdn.jsdelivr.net/gh/iamraghavan/egsp-hrms@main/public/assets/js/sweet-alert/sweetalert.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/iamraghavan/egsp-hrms@main/public/assets/css/vendors/sweetalert2.css">
-
+    @turnstileScripts()
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 

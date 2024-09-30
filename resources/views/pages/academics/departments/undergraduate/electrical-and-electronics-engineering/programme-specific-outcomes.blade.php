@@ -70,9 +70,9 @@
                             </div>
                         </div>
                         <x-dept-contact-info
-                            name=""
-                            :phones="['']"
-                            :emails="['']"
+                            name="Dr. P. J. Suresh babu"
+                            :phones="['+91 9585 160 544']"
+                            :emails="['sureshbabu@egspec.org']"
                         />
                     </div>
                 </div>

@@ -124,4 +124,15 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
 
+    // 'providers' => [
+    //     Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
+    //     // ...
+    // ],
+
+    // 'aliases' => [
+
+    //     'SEO' => Artesaos\SEOTools\Facades\SEOTools::class,
+    //     'Storage' => Illuminate\Support\Facades\Storage::class,
+    // ],
+
 ];

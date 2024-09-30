@@ -79,8 +79,8 @@
                 <div class="col-lg-6 text-right">
                     <div class="header-right-logos d-flex justify-content-end">
                         <picture>
-                            <source srcset="https://www.citchennai.edu.in/wp-content/uploads/2019/01/ilp.png" type="image/png">
-                            <img src="https://www.citchennai.edu.in/wp-content/uploads/2019/01/ilp.png" alt="Logo 1" class="square-logo">
+                            <source srcset="https://www.citchennai.edu.in/wp-content/uploads/2023/12/nba-logo.svg" type="image/svg">
+                            <img src="https://www.citchennai.edu.in/wp-content/uploads/2023/12/nba-logo.svg" alt="Logo 1" class="square-logo">
                         </picture>
                         <picture>
                             <source srcset="https://upload.wikimedia.org/wikipedia/en/e/eb/All_India_Council_for_Technical_Education_logo.png" type="image/png">

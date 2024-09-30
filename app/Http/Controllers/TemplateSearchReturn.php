@@ -3,123 +3,120 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\File;
 
 class TemplateSearchReturn extends Controller
 {
+    // Main entry point for consultancy details
     public function showConsultancyDetails(Request $request)
     {
-        $department = $request->input('department');
-        $project = $request->input('project');
+        // Sanitize input
+        $department = $this->sanitizeInput($request->input('department'));
+        $project = $this->sanitizeInput($request->input('project'));
 
-        // Ensure parameters are sanitized to prevent directory traversal attacks
-        $department = preg_replace('/[^a-zA-Z0-9_-]/', '', $department);
-        $project = preg_replace('/[^a-zA-Z0-9_-]/', '', $project);
+        // Get consultancy data
+        $data = $this->loadJsonFile($department, 'consultancy', $project);
 
-        // Define the path to the JSON file based on department and project
-        $filePath = public_path("json/{$department}/consultancy/{$project}.json");
-
-        // Check if the file exists
-        if (!file_exists($filePath)) {
-            abort(404, 'Data not found');
+        if (!$data) {
+            return abort(404, 'Consultancy data not found.');
         }
 
-        // Load and decode the JSON data
-        $jsonData = file_get_contents($filePath);
-        $data = json_decode($jsonData, true);
+        // Flatten the consultancy projects
+        $projects = $this->flattenProjects($data['ConsultancyProjects']);
+        $departmentName = $projects[0]['Department'] ?? 'Unknown';
 
-        // Extract the department name from the first element of ConsultancyProjects
-        $departmentName = $data['ConsultancyProjects'][0]['Department'] ?? 'Unknown';
-
-        // Flatten the projects array
-        $projects = [];
-        foreach ($data['ConsultancyProjects'] as $academicYearData) {
-            if (isset($academicYearData['Projects']) && is_array($academicYearData['Projects'])) {
-                foreach ($academicYearData['Projects'] as $project) {
-                    $project['AcademicYear'] = $academicYearData['AcademicYear'];
-                    $projects[] = $project;
-                }
-            }
-        }
-
-        // Pass the flattened projects array and department name to the view
         return view('pages.research.consultancy-details-template', [
             'ConsultancyProjects' => $projects,
             'departmentName' => $departmentName
         ]);
     }
 
-
-
+    // Main entry point for research details
     public function showResearchDetails(Request $request)
     {
-        $department = $request->input('department');
-        $project = $request->input('project');
+        $department = $this->sanitizeInput($request->input('department'));
+        $project = $this->sanitizeInput($request->input('project'));
 
-        // Sanitize parameters
-        $department = preg_replace('/[^a-zA-Z0-9_-]/', '', $department);
-        $project = preg_replace('/[^a-zA-Z0-9_-]/', '', $project);
+        $data = $this->loadJsonFile($department, 'research', $project);
 
-        // Define the path to the JSON file
-        $filePath = public_path("json/{$department}/research/{$project}.json");
-
-        // Check if the file exists
-        if (!file_exists($filePath)) {
-            abort(404, 'Data not found');
+        if (!$data) {
+            return abort(404, 'Research data not found.');
         }
 
-        // Load and decode the JSON data
-        $jsonData = file_get_contents($filePath);
-        $data = json_decode($jsonData, true);
+        $projects = $this->flattenProjects($data['ResearchProjects']);
+        $departmentName = $projects[0]['Department'] ?? 'Unknown';
 
-        // Extract the department name
-        $departmentName = $data['ResearchProjects'][0]['Department'] ?? 'Unknown';
-
-        // Flatten the projects array
-        $projects = [];
-        foreach ($data['ResearchProjects'] as $academicYearData) {
-            if (isset($academicYearData['Projects']) && is_array($academicYearData['Projects'])) {
-                foreach ($academicYearData['Projects'] as $project) {
-                    // Add academic year to each project
-                    $project['AcademicYear'] = $academicYearData['AcademicYear'];
-                    $projects[] = $project;
-                }
-            }
-        }
-
-        // Pass the flattened projects array and department name to the view
         return view('pages.research.research-details-template', [
             'ResearchProjects' => $projects,
             'departmentName' => $departmentName
         ]);
     }
 
+    // Main entry point for student achievements
     public function showStudentsDetails(Request $request)
     {
-        $department = $request->input('department');
-        $project = $request->input('project'); // Changed from 'achievements' to 'project'
+        $department = $this->sanitizeInput($request->input('department'));
+        $project = $this->sanitizeInput($request->input('project'));
 
-        // Sanitize parameters
-        $department = preg_replace('/[^a-zA-Z0-9_-]/', '', $department);
-        $project = preg_replace('/[^a-zA-Z0-9_-]/', '', $project);
+        $data = $this->loadJsonFile($department, 'student-achievements', $project);
 
-        // Define the path to the JSON file
-        $filePath = public_path("json/{$department}/student-achievements/{$project}.json");
-
-        // Check if the file exists
-        if (!file_exists($filePath)) {
-            abort(404, 'Data not found');
+        if (!$data) {
+            return abort(404, 'Student achievements data not found.');
         }
 
-        // Load and decode the JSON data
+        $students = $this->flattenStudents($data['StudentAchievements']);
+        $departmentName = $students[0]['Department'] ?? 'Unknown';
+
+        return view('components.templates.student-achievements-templates', [
+            'StudentAchievements' => $students,
+            'departmentName' => $departmentName
+        ]);
+    }
+
+    // Helper function to sanitize input
+    private function sanitizeInput($input)
+    {
+        return preg_replace('/[^a-zA-Z0-9_-]/', '', $input);
+    }
+
+    // Helper function to load JSON file
+    private function loadJsonFile($department, $category, $project)
+    {
+        $filePath = public_path("json/{$department}/{$category}/{$project}.json");
+
+        if (!file_exists($filePath)) {
+            Log::error("File not found: {$filePath}");
+            return null;
+        }
+
         $jsonData = file_get_contents($filePath);
-        $data = json_decode($jsonData, true);
+        return json_decode($jsonData, true);
+    }
 
-        // Extract the department name
-        $departmentName = $data['StudentAchievements'][0]['Department'] ?? 'Unknown';
+    // Helper function to flatten consultancy/research projects
+    private function flattenProjects($projectArray)
+    {
+        $projects = [];
 
-        // Flatten the students array
+        foreach ($projectArray as $academicYearData) {
+            if (isset($academicYearData['Projects']) && is_array($academicYearData['Projects'])) {
+                foreach ($academicYearData['Projects'] as $project) {
+                    $project['AcademicYear'] = $academicYearData['AcademicYear'];
+                    $projects[] = $project;
+                }
+            }
+        }
+
+        return $projects;
+    }
+
+    // Helper function to flatten student achievements
+    private function flattenStudents($studentArray)
+    {
         $students = [];
-        foreach ($data['StudentAchievements'] as $achievementData) {
+
+        foreach ($studentArray as $achievementData) {
             if (isset($achievementData['Students']) && is_array($achievementData['Students'])) {
                 foreach ($achievementData['Students'] as $student) {
                     $students[] = $student;
@@ -127,10 +124,6 @@ class TemplateSearchReturn extends Controller
             }
         }
 
-        // Pass the flattened students array and department name to the view
-        return view('components.templates.student-achievements-templates', [
-            'StudentAchievements' => $students,
-            'departmentName' => $departmentName
-        ]);
+        return $students;
     }
 }
