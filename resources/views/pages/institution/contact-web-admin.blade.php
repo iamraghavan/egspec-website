@@ -50,9 +50,10 @@
                                     </div>
                                     <div class="single-input-item">
                                         <label class="input-label" for="staff_phone">Enter Phone Number</label>
-                                        <input type="text" id="staff_phone" name="staff_phone" class="input-field" placeholder="1234 567 890"
-                                               pattern="\d{4} \d{3} \d{3}" required
-                                               title="Please enter a phone number in the format: 1234 567 890"
+                                        <input type="text" id="staff_phone" name="staff_phone" class="input-field" placeholder="12345 09876"
+                                        pattern="\d{10}"
+                                        required
+                                               title="Please enter a phone number in the format: 12345 67890"
                                                value="{{ old('staff_phone') }}" oninput="formatPhoneNumber(this)">
                                         @error('staff_phone')
                                         <span class="error-message">{{ $message }}</span>
@@ -134,6 +135,14 @@
                                     @error('confirmation')
                                     <span class="error-message">{{ $message }}</span>
                                     @enderror
+                                </div>
+                            </div>
+                            <div class="single-form-part">
+                                <div class="single-input">
+                                    <div class="single-input-item">
+                                        <x-turnstile />
+
+                                    </div>
                                 </div>
                             </div>
                             <button type="submit" class="rts-theme-btn primary with-arrow">Submit Application<span><i class="fa-thin fa-arrow-right"></i></span></button>

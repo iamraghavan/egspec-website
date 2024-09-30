@@ -13,7 +13,7 @@ use App\Models\WebsiteTicketDetails;
 use App\Notifications\TelegramNotification;
 use Illuminate\Support\Facades\Notification;
 use App\Notifications\GoogleChatNotification;
-
+use Artesaos\SEOTools\Facades\SEOTools;
 use Illuminate\Support\Facades\Config;
 
 Route::any('/send-google-chat', function () {
@@ -410,8 +410,21 @@ Route::get('/academics/departments/science-humanities/programme-specific-outcome
 Route::get('/institution/internal/contact/website/admin', [InstitutionInternalPurpose::class, 'contactWebsiteAdmin'])->name('contact_website_admin');
 Route::post('/api/institution/store/egspec/', [InstitutionInternalPurpose::class, 'store'])->name('form.submit');
 Route::get('/institution/internal/contact/website/admin/confirmation', function (Request $request) {
+    $ticketId = $request->query('ticket-id');
+    $ticketDetails = WebsiteTicketDetails::where('ticket_id', $ticketId)->first();
+
+    // Set SEO title and description
+    SEOTools::setTitle("Ticket ID: $ticketId | Our team is working on this ticket. Kindly wait patiently.");
+    SEOTools::setDescription("Confirmation for ticket ID: $ticketId. View your ticket details and status.");
+    SEOTools::opengraph()->setTitle("Ticket ID: $ticketId");
+    SEOTools::opengraph()->setDescription("Confirmation for ticket ID: $ticketId. View your ticket details and status.");
+    SEOTools::opengraph()->setUrl(Url()->current());
+    SEOTools::twitter()->setTitle("Ticket ID: $ticketId");
+    SEOTools::twitter()->setDescription("Confirmation for ticket ID: $ticketId. View your ticket details and status.");
+
     return view('components.templates.confirmation', [
-        'ticket_id' => $request->query('ticket-id'),
-        'ticket_status' => session('ticket_status')
+        'ticket_id' => $ticketId,
+        'ticket_status' => session('ticket_status'),
+        'ticket_details' => $ticketDetails
     ]);
 })->name('confirmation');
