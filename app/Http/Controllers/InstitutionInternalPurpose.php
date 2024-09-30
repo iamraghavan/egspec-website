@@ -19,6 +19,9 @@ use App\Jobs\SendNotificationJob;
 use Artesaos\SEOTools\Facades\SEOTools;
 use Artesaos\SEOTools\Facades\JsonLd;
 use RyanChandler\LaravelCloudflareTurnstile\Rules\Turnstile;
+use GuzzleHttp\Client;
+
+use Illuminate\Support\Facades\Route;
 
 class InstitutionInternalPurpose extends Controller
 {
@@ -179,5 +182,65 @@ class InstitutionInternalPurpose extends Controller
         } catch (\Exception $e) {
             Log::error('Error sending email: ' . $e->getMessage());
         }
+    }
+
+    public function social_media()
+    {
+        // Initialize the Guzzle client
+        $client = new Client();
+
+        // Fetch Instagram posts
+        $instagramPosts = $this->fetchInstagramPosts($client);
+
+        // Fetch Facebook posts
+        $facebookPosts = $this->fetchFacebookPosts($client);
+
+        // Fetch LinkedIn posts (if applicable)
+        // $linkedinPosts = $this->fetchLinkedInPosts($client); // Uncomment if needed
+
+        return view('social_media.index', compact('instagramPosts', 'facebookPosts'));
+    }
+
+    private function fetchInstagramPosts($client)
+    {
+        // Replace with your Instagram API endpoint and access token
+        $accessToken = 'YOUR_INSTAGRAM_ACCESS_TOKEN'; // Use your long-lived token
+        $response = $client->get("https://graph.instagram.com/me/media?access_token={$accessToken}");
+        return json_decode($response->getBody(), true);
+    }
+
+    private function fetchFacebookPosts($client)
+    {
+        // Replace with your Facebook API endpoint and access token
+        $accessToken = 'YOUR_FACEBOOK_ACCESS_TOKEN'; // Use your long-lived token
+        $response = $client->get("https://graph.facebook.com/v12.0/me/feed?access_token={$accessToken}");
+        return json_decode($response->getBody(), true);
+    }
+
+    public function index()
+    {
+        // Get all routes
+        $routes = Route::getRoutes();
+
+        // Filter GET routes
+        $getRoutes = [];
+        foreach ($routes as $route) {
+            if (in_array('GET', $route->methods())) {
+                $getRoutes[] = $route->uri();
+            }
+        }
+
+        return view('pages.institution.sitemap', compact('getRoutes'));
+    }
+
+
+    public function privacy_policy()
+    {
+        return view('pages.institution.privacy-policy');
+    }
+
+    public function terms_conditions()
+    {
+        return view('pages.institution.terms-and-conditions');
     }
 }

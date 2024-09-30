@@ -11,7 +11,7 @@
         "php": "^8.2",
         "artesaos/seotools": "^1.3",
         "babenkoivan/telegram-notifications": "^1.1",
-        "guzzlehttp/guzzle": "^7.8",
+        "guzzlehttp/guzzle": "^7.9",
         "laravel-notification-channels/google-chat": "^3.2",
         "laravel/framework": "^11.0",
         "laravel/reverb": "@beta",
@@ -19,7 +19,9 @@
         "laravel/tinker": "^2.9",
         "laravel/ui": "^4.5",
         "matthewbdaly/laravel-azure-storage": "^2.0",
-        "ryangjchandler/laravel-cloudflare-turnstile": "*"
+        "microsoft/azure-storage-blob": "*",
+        "ryangjchandler/laravel-cloudflare-turnstile": "*",
+        "spatie/laravel-sitemap": "^7.2"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

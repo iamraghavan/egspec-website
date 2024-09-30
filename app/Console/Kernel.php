@@ -16,7 +16,9 @@ class Kernel extends ConsoleKernel
     {
         // Run the cleanup task daily at midnight
         $schedule->command('sessions:cleanup')->daily();
+        $schedule->command('sitemap:generate')->daily();
     }
+
 
     protected function commands()
     {

@@ -16,38 +16,9 @@ use Illuminate\Support\Facades\Notification;
 use App\Notifications\GoogleChatNotification;
 use Artesaos\SEOTools\Facades\SEOTools;
 use Illuminate\Support\Facades\Config;
-
-// Route::any('/send-google-chat', function () {
-//     // Create or retrieve an enquiry instance with a ticket_id
-//     $enquiry = new WebsiteTicketDetails(); // Or retrieve an existing instance
-//     $enquiry->ticket_id = 'EGSPEC/2024/09/OTHE1724'; // Set a ticket ID for the example
-
-//     // Send the notification
-//     Notification::send($enquiry, new GoogleChatNotification($enquiry));
-
-//     return response()->json(['message' => 'Notification sent successfully!']);
-// });
-// Route::any('/telegram', function () {
-//     // Use the chat ID of the user who interacted with the bot
-//     $recipientId = '2134630336'; // Replace with the valid chat ID
-
-//     $enquiry = new WebsiteTicketDetails(); // Or retrieve an existing instance
-//     $enquiry->ticket_id = 'EGSPEC/2024/09/OTHE1724'; // Set a ticket ID for the example
-
-//     // Prepare the message if there are any error messages
-
-//     Notification::route('telegram', $recipientId)
-//         ->notify(new TelegramNotification($enquiry));
-
-//     return response()->json(['message' => 'Telegram notification sent with Message.']);
-// });
+use Illuminate\Support\Facades\Response;
 
 
-
-
-// Route::get('/error', function () {
-//     throw new Exception('This is a test exception.');
-// });
 
 // Other Backend Operation Routes
 Route::post('/admission-submit-form', [AdFormController::class, 'adsubmitForm'])->name('adsubmitForm');
@@ -429,3 +400,10 @@ Route::get('/institution/internal/contact/website/admin/confirmation', function 
         'ticket_details' => $ticketDetails
     ]);
 })->name('confirmation');
+
+
+
+Route::get('/institution/social-media', [InstitutionInternalPurpose::class, 'social_meida'])->name('social_media');
+Route::get('/institution/sitemap', [InstitutionInternalPurpose::class, 'index'])->name('sitemap.index');
+Route::get('/legal/privacy-policy', [InstitutionInternalPurpose::class, 'privacy_policy'])->name('privacy_policy');
+Route::get('/legal/terms-and-conditions', [InstitutionInternalPurpose::class, 'terms_conditions'])->name('terms_conditions');

@@ -150,9 +150,9 @@ $footerLinks = [
             </div>
             <div class="col-md-6 text-md-end">
                 <p style="font-weight: 600;" class="--p-xs">
-                    <a href="">Sitemap</a> |
-                    <a href="">Privacy Policy</a> |
-                    <a href="">Terms &amp; Conditions</a> |
+                    <a href="{{route('sitemap.index')}}">Sitemap</a> |
+                    <a href="{{route('privacy_policy')}}">Privacy Policy</a> |
+                    <a href="{{route('terms_conditions')}}">Terms &amp; Conditions</a> |
                     <a href="{{route('contact_website_admin')}}">Contact Web Admin</a>
 
                 </p>

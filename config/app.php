@@ -124,7 +124,9 @@ return [
         'store' => env('APP_MAINTENANCE_STORE', 'database'),
     ],
     // 'providers' => [
-    //     Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
+    //     // Artesaos\SEOTools\Providers\SEOToolsServiceProvider::class,
+    //     // Spatie\Sitemap\SitemapServiceProvider::class,
+
     //     // ...
     // ],
 

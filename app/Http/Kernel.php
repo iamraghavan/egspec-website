@@ -50,6 +50,12 @@ class Kernel extends HttpKernel
             'throttle:api',
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
+
+    ];
+
+
+    protected $commands = [
+        \App\Console\Commands\GenerateSitemap::class,
     ];
 
     /**
