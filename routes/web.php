@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\ApiController;
+use App\Models\TicketConversations;
+use App\Models\WebsiteUpdateEnquiry;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\AdFormController;
@@ -17,7 +19,7 @@ use App\Notifications\GoogleChatNotification;
 use Artesaos\SEOTools\Facades\SEOTools;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Response;
-
+use Carbon\Carbon;
 
 
 // Other Backend Operation Routes
@@ -384,7 +386,16 @@ Route::get('/institution/internal/contact/website/admin', [InstitutionInternalPu
 Route::post('/api/institution/store/egspec/', [InstitutionInternalPurpose::class, 'store'])->name('form.submit');
 Route::get('/institution/internal/contact/website/admin/confirmation', function (Request $request) {
     $ticketId = $request->query('ticket-id');
+
+    // Fetch ticket details first
     $ticketDetails = WebsiteTicketDetails::where('ticket_id', $ticketId)->first();
+
+
+    $FirstTicketDetails = WebsiteUpdateEnquiry::where('ticket_id', $ticketId)->first();
+
+
+    // Fetch all conversations for the ticket
+    $conversations = TicketConversations::where('ticket_id', $ticketId)->orderBy('created_at', 'asc')->get();
 
     // Set SEO title and description
     SEOTools::setTitle("Ticket ID: $ticketId | Our team is working on this ticket. Kindly wait patiently.");
@@ -397,11 +408,43 @@ Route::get('/institution/internal/contact/website/admin/confirmation', function 
     return view('components.templates.confirmation', [
         'ticket_id' => $ticketId,
         'ticket_status' => session('ticket_status'),
-        'ticket_details' => $ticketDetails
+        'ticket_details' => $ticketDetails,
+        'conversations' => $conversations,
+        'first_ticket' => $FirstTicketDetails,
     ]);
 })->name('confirmation');
 
 
+
+Route::post('/institution/internal/contact/website/admin/send-message', function (Request $request) {
+    // Validate the incoming request data
+    $validated = $request->validate([
+        'ticket_id' => 'required|string',
+        'message' => 'required|string',
+        'sender_type' => 'required|in:ticket_creator,web_master',
+        'last_updated' => 'required|date_format:H:i:s', // Ensure last_updated is required
+    ]);
+
+    // Convert the last updated time into a Carbon instance
+    $validated['last_updated'] = Carbon::createFromFormat('H:i:s', $validated['last_updated'])->toTimeString();
+
+    // Create a new TicketConversation entry
+    TicketConversations::create($validated);
+
+    // Update the WebsiteTicketDetails table based on ticket_id
+    $ticket = WebsiteTicketDetails::where('ticket_id', $validated['ticket_id'])->first();
+
+    if ($ticket) {
+        $ticket->update([
+            'ticket_status' => 'open',
+            'ticket_work_description' => 'We are working on your ticket, please wait patiently.',
+            'appeal_data' => 'yes',
+        ]);
+    }
+
+    // Redirect to the confirmation route after storing the message
+    return redirect()->route('confirmation', ['ticket-id' => $validated['ticket_id']]);
+})->name('website-send-message');
 
 Route::get('/institution/social-media', [InstitutionInternalPurpose::class, 'social_meida'])->name('social_media');
 Route::get('/institution/sitemap', [InstitutionInternalPurpose::class, 'index'])->name('sitemap.index');

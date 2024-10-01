@@ -335,6 +335,7 @@
 
 
 
+
 <style>
     .text-justify{text-align:justify!important}.iap{max-width:100%!important;height:4rem;font-weight:200;margin:3rem}.iap-h3{text-align:center!important;font-size:18px!important;margin:20px 0!important;color:#333!important}html{scroll-behavior:smooth}
 </style>
@@ -404,7 +405,7 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="https://cdn.jsdelivr.net/gh/iamraghavan/egsp-hrms@main/public/assets/js/sweet-alert/sweetalert.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/iamraghavan/egsp-hrms@main/public/assets/css/vendors/sweetalert2.css">
     @turnstileScripts()
@@ -451,10 +452,15 @@
     {{-- <script src="{{ asset("/assets/js/plugins/contact.form.js") }}"></script> --}}
     <script src="{{ asset("/assets/js/plugins/nice-select.min.js") }}"></script>
     <!-- main Js -->
+
+
+
     <script src="{{ asset("/assets/js/main.js") }}"></script>
 
     <link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet">
     <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+
+
 
     <script>
         var swiper = new Swiper('.swiper-container', {

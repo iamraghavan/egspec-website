@@ -50,11 +50,10 @@
                                     </div>
                                     <div class="single-input-item">
                                         <label class="input-label" for="staff_phone">Enter Phone Number</label>
-                                        <input type="text" id="staff_phone" name="staff_phone" class="input-field" placeholder="12345 09876"
-                                        pattern="\d{10}"
-                                        required
-                                               title="Please enter a phone number in the format: 12345 67890"
-                                               value="{{ old('staff_phone') }}" oninput="formatPhoneNumber(this)">
+                                        <input type="text" id="staff_phone" name="staff_phone" class="input-field" placeholder="12345 67890"
+                                        pattern="\d{5}\s\d{5}" title="Please enter a phone number in the without Country Code (+91)"
+                                        required value="{{ old('staff_phone') }}" oninput="formatPhoneNumber(this)" maxlength="11">
+
                                         @error('staff_phone')
                                         <span class="error-message">{{ $message }}</span>
                                         @enderror
@@ -110,12 +109,15 @@
                             <div class="single-form-part">
                                 <div class="single-input">
                                     <div class="single-input-item">
-                                        <label for="data_update">Explain about what data are updated into the website</label>
-                                        <textarea id="data_update" name="data_update" placeholder="Explain the updates" required>{{ old('data_update') }}</textarea>
+                                        <label for="data_update">Explain what data are updated into the website</label>
+                                        <textarea id="data_update" name="data_update" required>{{ old('data_update') }}</textarea>
                                         @error('data_update')
                                         <span class="error-message">{{ $message }}</span>
                                         @enderror
                                     </div>
+
+
+
                                 </div>
                             </div>
                             <div class="single-form-part">
@@ -147,20 +149,6 @@
                             </div>
                             <button type="submit" class="rts-theme-btn primary with-arrow">Submit Application<span><i class="fa-thin fa-arrow-right"></i></span></button>
                         </form>
-
-                        <script>
-                            function removeUrlInput(element) {
-                                element.parentElement.remove();
-                            }
-
-                            document.getElementById('add_url').addEventListener('click', function () {
-                                var wrapper = document.createElement('div');
-                                wrapper.classList.add('url-input-wrapper');
-                                wrapper.innerHTML = '<input type="url" name="google_drive_urls[]" placeholder="Google Drive URL" required>' +
-                                                    '<span class="remove-url" onclick="removeUrlInput(this)">&times;</span>';
-                                document.getElementById('google_drive_urls').appendChild(wrapper);
-                            });
-                        </script>
 
 
 
@@ -228,34 +216,81 @@
 }
 </style>
 
+<!-- jQuery Library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+<!-- SunEditor CSS -->
+<link href="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/css/suneditor.min.css" rel="stylesheet">
+
+<!-- SunEditor JS -->
+<script src="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/suneditor.min.js"></script>
+
 <script>
-    document.getElementById('staff_name').addEventListener('input', function (e) {
+    // Function to add a new Google Drive URL input
+    function addUrlInput() {
+        const wrapper = document.createElement('div');
+        wrapper.classList.add('url-input-wrapper');
+        wrapper.innerHTML = `
+            <input type="url" name="google_drive_urls[]" placeholder="Google Drive URL" required>
+            <span class="remove-url" onclick="removeUrlInput(this)">&times;</span>
+        `;
+        document.getElementById('google_drive_urls').appendChild(wrapper);
+    }
+
+    // Function to remove a Google Drive URL input
+    function removeUrlInput(element) {
+        element.parentElement.remove();
+    }
+
+    // Define the formatPhoneNumber function before using it
+    function formatPhoneNumber(input) {
+    // Remove all non-digit characters
+    let cleaned = input.value.replace(/\D/g, '');
+
+    // If more than 10 digits, show an alert and stop processing
+    if (cleaned.length > 10) {
+        alert('Please enter only 10 digits in the format: 12345 67890');
+        cleaned = cleaned.substring(0, 10); // Restrict to 10 digits
+    }
+
+    // Format the input as '12345 67890' if 5 or more digits
+    if (cleaned.length > 5) {
+        input.value = cleaned.substring(0, 5) + ' ' + cleaned.substring(5, 10);
+    } else {
+        input.value = cleaned; // Just display as it is if less than 5 digits
+    }
+}
 
 
-        // Clear previous error messages
-        document.querySelectorAll('.error-message').forEach(function (el) {
-            el.textContent = '';
-        });
+    // Form validation functions
+    function validateForm(e) {
+        let valid = true;
+        clearErrorMessages();
 
-        // Validate form fields
         valid &= validateField('staff_id', /^[A-Za-z0-9]+$/, 'Please enter alphanumeric characters only.');
         valid &= validateField('staff_name', /^[A-Za-z\s]+$/, 'Please enter alphabets only.');
         valid &= validateField('staff_email', /^[a-zA-Z0-9._%+-]+@egspec\.org$/, 'Please enter a valid egspec.org email.');
-        valid &= validateField('staff_phone', /^\d{3}-\d{3}-\d{4}$/, 'Please enter a valid phone number format: 123-456-7890.');
+        valid &= validateField('staff_phone', /^\d{5}\s\d{5}$/, 'Please enter a valid phone number format: 12345 67890.');
         valid &= validateSelect('department', 'Please select a department.');
         valid &= validateSelect('work_type', 'Please select the type of work.');
         valid &= validateTextArea('data_update', 'Please explain what data has been updated.');
         valid &= validateCheckbox('confirmation', 'You must confirm that all information is accurate and complete.');
 
         if (!valid) {
-            event.preventDefault();
+            e.preventDefault();
         }
-    });
+    }
+
+    function clearErrorMessages() {
+        document.querySelectorAll('.error-message').forEach(function(el) {
+            el.textContent = '';
+        });
+    }
 
     function validateField(id, regex, errorMessage) {
-        var field = document.getElementById(id);
-        var error = document.getElementById(id + '_error');
-        if (!field.value.match(regex)) {
+        const field = document.getElementById(id);
+        const error = document.getElementById(`${id}_error`);
+        if (!regex.test(field.value)) {
             error.textContent = errorMessage;
             return false;
         }
@@ -263,8 +298,8 @@
     }
 
     function validateSelect(id, errorMessage) {
-        var field = document.getElementById(id);
-        var error = document.getElementById(id + '_error');
+        const field = document.getElementById(id);
+        const error = document.getElementById(`${id}_error`);
         if (field.value === '') {
             error.textContent = errorMessage;
             return false;
@@ -273,9 +308,10 @@
     }
 
     function validateTextArea(id, errorMessage) {
-        var field = document.getElementById(id);
-        var error = document.getElementById(id + '_error');
-        if (field.value.trim() === '') {
+        const field = document.getElementById(id);
+        const error = document.getElementById(`${id}_error`);
+        const content = SUNEDITOR.getInstanceById(id).getContents();
+        if (content.trim() === '') {
             error.textContent = errorMessage;
             return false;
         }
@@ -283,8 +319,8 @@
     }
 
     function validateCheckbox(id, errorMessage) {
-        var field = document.getElementById(id);
-        var error = document.getElementById(id + '_error');
+        const field = document.getElementById(id);
+        const error = document.getElementById(`${id}_error`);
         if (!field.checked) {
             error.textContent = errorMessage;
             return false;
@@ -292,32 +328,40 @@
         return true;
     }
 
-    // Add URL input fields dynamically
-    document.getElementById('add_url').addEventListener('click', function () {
-        var urlInputWrapper = document.createElement('div');
-        urlInputWrapper.classList.add('url-input-wrapper');
-        urlInputWrapper.innerHTML = '<input type="url" name="google_drive_urls[]" placeholder="Google Drive URL" required> <span class="remove-url" onclick="removeUrlInput(this)">&times;</span>';
-        document.getElementById('google_drive_urls').appendChild(urlInputWrapper);
+    // Initialize SunEditor and set up event listeners
+    document.addEventListener('DOMContentLoaded', function() {
+        const editor = SUNEDITOR.create('data_update', {
+            showPathLabel: false,
+            charCounter: true,
+            maxCharCount: 720,
+            width: 'auto',
+            maxWidth: '700px',
+            height: 400,
+            minHeight: '100px',
+            maxHeight: '250px',
+            buttonList: [
+                ['undo', 'redo', 'font', 'fontSize', 'formatBlock'],
+                ['bold', 'underline', 'italic', 'strike', 'subscript', 'superscript', 'removeFormat'],
+                '/', // Line break
+                ['fontColor', 'hiliteColor', 'outdent', 'indent', 'align', 'horizontalRule', 'list', 'table'],
+                ['link', 'image', 'video', 'fullScreen', 'preview', 'print', 'save']
+            ],
+            callBackSave: function(contents, isChanged) {
+                console.log(contents);
+            }
+        });
+
+        // Listen to input events on the editor
+        editor.onChange = function(contents, core) {
+            // Update the underlying textarea
+            editor.save();
+            console.log(document.getElementById("data_update").value);
+        };
+
+        // Attach form submission handler
+        document.getElementById('contactForm').addEventListener('submit', validateForm);
     });
-
-
-    // Limit to 10 digits
-    if (value.length > 10) {
-        value = value.slice(0, 10);
-    }
-
-    // Format as '1234 567 890'
-    if (value.length > 6) {
-        value = value.replace(/^(\d{4})(\d{3})(\d{0,3})$/, '$1 $2 $3');
-    } else if (value.length > 3) {
-        value = value.replace(/^(\d{4})(\d{0,3})$/, '$1 $2');
-    }
-
-    input.value = value;
-}
-
 </script>
-
 
 @if (session('success'))
     <script>

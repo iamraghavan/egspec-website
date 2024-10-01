@@ -26,6 +26,8 @@ class WebsiteUpdateEnquiry extends Model
         'data_update',
         'google_drive_urls',
         'confirmation',
+        'created_at',
+        'updated_at',
     ];
 
     // Convert JSON attributes to array when accessing
