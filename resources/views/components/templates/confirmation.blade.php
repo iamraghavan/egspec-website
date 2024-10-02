@@ -76,30 +76,39 @@
                 </div>
             </div>
             <div class="col-lg-5">
-
-                <h5 class="mb-0">Replying to Tickets</h5>
+                @if ($ticket_details->ticket_status === 'New' || $ticket_details->ticket_status === 'open')
+                <h5 class="mb-0" style="align-content: center; text-align: center; align-items: center;">Replying to Tickets</h5>
+                @else
+                <h5 class="mb-0" style="align-content: center; text-align: center; align-items: center;">Tickets Information</h5>
+                @endif
                 <!-- Insert the form here -->
 
                 <div class="program-sidebar">
-                    <div class="single-form-part">
-                        <div class="single-input">
-                            <div class="single-input-item">
-                                <form method="POST" id="contactForm" action="{{ route('website-send-message') }}">
-                                    @csrf
-                                    <input type="hidden" name="ticket_id" value="{{ $ticket_id }}">
-                                    <input type="hidden" name="sender_type" value="ticket_creator">
-                                    <input type="hidden" name="last_updated" value="{{ now()->format('H:i:s') }}" required>
+                    @if ($ticket_details->ticket_status === 'New' || $ticket_details->ticket_status === 'open')
+    <div class="single-form-part">
+        <div class="single-input">
+            <div class="single-input-item">
+                <form method="POST" id="contactForm" action="{{ route('website-send-message') }}">
+                    @csrf
+                    <input type="hidden" name="ticket_id" value="{{ $ticket_id }}">
+                    <input type="hidden" name="sender_type" value="ticket_creator">
+                    <input type="hidden" name="last_updated" value="{{ now()->format('H:i:s') }}" required>
 
-                                    <div class="form-group">
-                                        <textarea id="data_update" name="message" required></textarea> <!-- Updated name to 'message' -->
-                                    </div>
-
-                                    <button type="submit" class="btn btn-primary">Send Message</button>
-                                </form>
-
-                            </div>
-                        </div>
+                    <div class="form-group">
+                        <textarea id="data_update" name="message" required></textarea> <!-- Updated name to 'message' -->
                     </div>
+
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+@else
+    <div class="alert alert-primary" role="alert">
+        The Ticket was Closed <a href="#" class="alert-link">{{ $ticket_id }}</a>. Thank you.
+    </div>
+@endif
+
                     <table class="table table-bordered">
                         <tbody>
                             <tr>
@@ -118,9 +127,30 @@
                             <tr>
                                 <td><strong>Status/Priority</strong><br>{{$ticket_details->ticket_status}}</td>
                             </tr>
+
+                    <tr>
+                        <td><strong>Attachments</strong></td>
+
+
+                    </tr>
+
+                            @php
+                            $attachments = json_decode($first_ticket->google_drive_urls); // Decode the JSON string
+                        @endphp
+                        @if (!empty($attachments) && is_array($attachments))
+                            @foreach ($attachments as $index => $url)
+                            <tr>
+                                <td>
+                            <a href="{{ $url }}" target="_blank">Attachment {{ $index + 1 }}</a>
+                        </td>
+                    </tr>
+                            @endforeach
+                        @else
+                            No attachments available.
+                        @endif
+
                         </tbody>
                     </table>
-
 
                     <div class="program-info" style="background: var(--rt-secondary) !important;">
 
@@ -212,6 +242,21 @@ table tr:nth-child(even) td {
     background-color: #e9ecef;
 }
 
+
+#contactForm input,
+    #contactForm select,
+    #contactForm button {
+        width: 100%; /* Set width to 100% to ensure full width */
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc; /* You can add basic borders */
+    }
+
+    #contactForm button {
+        background-color: #007bff; /* Button background color */
+        color: white; /* Button text color */
+        cursor: pointer; /* Add a pointer cursor for buttons */
+    }
 
 
 </style>

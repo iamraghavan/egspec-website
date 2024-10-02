@@ -9,45 +9,14 @@
 ])
 
 <div class="container">
-    <div class="row">
-        <!-- Instagram Section -->
-        <div class="col-md-4">
-            <h5>Instagram</h5>
-            @foreach($instagramPosts['data'] as $post)
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h6 class="card-title">{{ $post['caption'] ?? 'Instagram Post' }}</h6>
-                        <p class="card-text">{{ $post['media_url'] ?? '' }}</p>
-                        <img src="{{ $post['media_url'] ?? '' }}" class="img-fluid" alt="Instagram Image">
-                    </div>
-                </div>
-            @endforeach
-        </div>
-
-        <!-- Facebook Section -->
-        <div class="col-md-4">
-            <h5>Facebook</h5>
-            @foreach($facebookPosts['data'] as $post)
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h6 class="card-title">{{ $post['message'] ?? 'Facebook Post' }}</h6>
-                    </div>
-                </div>
-            @endforeach
-        </div>
-
-        <!-- LinkedIn Section -->
-        <div class="col-md-4">
-            <h5>LinkedIn</h5>
-            @foreach($linkedinPosts['elements'] as $post)
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h6 class="card-title">{{ $post['specificContent']['com.linkedin.ugc.ShareContent']['shareCommentary']['text'] ?? 'LinkedIn Post' }}</h6>
-                    </div>
-                </div>
-            @endforeach
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="bg-warning p-5 m-4">
+                <h6 class="text-black text-center">
+                <strong>Notice!</strong> This page is currently under construction. Please check back later.
+            </h6>
+            </div>
         </div>
     </div>
 </div>
-
 @endsection

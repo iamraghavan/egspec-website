@@ -4,7 +4,7 @@ $footerLinks = [
 'EGSPEC Mail' => 'https://mail.google.com/a/egspec.org',
 'Student Login' => '#',
 'Staff Login' => '#',
-'Contact Us' => '#',
+'Contact Us' => url('/support/contact-us'),
 'ERP' => 'http://edu.egspgroup.in/ERP',
 'Pay Fees Online' => '#',
 'IT Policy' => '#',
@@ -31,7 +31,7 @@ $footerLinks = [
 'Blog & Articles' => 'http://example.com/blog',
 'Alumni' => 'http://example.com/alumni',
 'Gallery & Media' => 'http://example.com/gallery-media',
-'Social Media' => 'http://example.com/social-media',
+'Social Media' => url('/institution/social-media'),
 ],
 'Feedback' => [
 'Feedback on Curriculum' => 'http://example.com/feedback-curriculum',

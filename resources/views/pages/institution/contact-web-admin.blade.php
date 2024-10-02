@@ -160,6 +160,7 @@
                 </div>
             </div>
             <div class="col-lg-4">
+
                 <div class="program-sidebar">
 
                     <div class="program-info" style="background: var(--rt-secondary) !important;">
@@ -191,10 +192,26 @@
 
 
                 </div>
+<br>
+                <div class="program-sidebar">
+
+                    {{-- <div class="program-info" style="background: #ffffff !important;"> --}}
+                <!-- Button to Open Modal -->
+
+                        <x-web-ticket-modal/>
+
+
+                    {{-- </div> --}}
+                </div>
+
             </div>
         </div>
     </div>
 </div>
+
+
+
+
 {{-- New Brach Update --}}
 {{-- Hello New Branch --}}
 <style>

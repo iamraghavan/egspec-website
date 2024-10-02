@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\TicketConversations;
 use App\Models\WebsiteUpdateEnquiry;
 use App\Models\WebsiteTicketDetails;
 use Illuminate\Http\Request;
@@ -20,6 +21,8 @@ use Artesaos\SEOTools\Facades\SEOTools;
 use Artesaos\SEOTools\Facades\JsonLd;
 use RyanChandler\LaravelCloudflareTurnstile\Rules\Turnstile;
 use GuzzleHttp\Client;
+use App\Mail\ContactSubmissionMail; // Import the ContactSubmissionMail class
+use App\Mail\AcknowledgmentMail; // Import the AcknowledgmentMail class
 
 use Illuminate\Support\Facades\Route;
 
@@ -33,14 +36,22 @@ class InstitutionInternalPurpose extends Controller
         SEOTools::setDescription('Get in touch with Raghavan Jeeva, the Website Developer, for any inquiries regarding the website.');
 
         // Set Open Graph tags
-        SEOTools::opengraph()->setTitle('Contact Web Admin | Raghavan Jeeva - Website Developer');
+        SEOTools::opengraph()->setTitle('E.G.S. Pillay Engineering College - Website Admin');
         SEOTools::opengraph()->setDescription('Get in touch with Raghavan Jeeva, the Website Developer, for any inquiries regarding the website.');
-        SEOTools::opengraph()->setUrl(request()->fullUrl()); // Set the current URL
+        SEOTools::opengraph()->setUrl('https://egspec.org/institution/internal/contact/website/admin'); // Set the URL
+        SEOTools::opengraph()->addImage('https://egspec.org/assets/images/og_raghavan_banner.webp'); // Set the image
+
+        // Additional Open Graph profile properties
+        SEOTools::opengraph()->addProperty('type', 'profile');
+        SEOTools::opengraph()->addProperty('profile:first_name', 'Raghavan');
+        SEOTools::opengraph()->addProperty('profile:last_name', 'Jeeva');
+        SEOTools::opengraph()->addProperty('profile:username', 'iamraghavan');
 
         // Set Twitter tags
         SEOTools::twitter()->setTitle('Contact Web Admin | Raghavan Jeeva - Website Developer');
         SEOTools::twitter()->setDescription('Get in touch with Raghavan Jeeva, the Website Developer, for any inquiries regarding the website.');
 
+        // JSON-LD structured data
         JsonLd::addValue('@context', 'https://schema.org');
         JsonLd::addValue('@type', 'Person');
         JsonLd::addValue('name', 'Raghavan Jeeva');
@@ -63,11 +74,12 @@ class InstitutionInternalPurpose extends Controller
             'https://www.instagram.com/iamragahvan',
             'https://www.facebook.com/iam.raghavan',
             'https://twitter.com/jsraghavan',
-            'https://www.linkedin.com/in/raghavanjeeva',
+            'https://www.linkedin.com/in/raghvanjeva',
         ]);
 
         return view('pages.institution.contact-web-admin');
     }
+
 
     // Handle the form submission
     public function store(Request $request)
@@ -85,14 +97,21 @@ class InstitutionInternalPurpose extends Controller
         try {
             DB::beginTransaction();
 
+            // Generate unique ticket ID and save enquiry data
             $ticketId = $this->generateUniqueTicketId($request->input('department'));
             $enquiry = $this->saveEnquiryData($request, $ticketId);
             $ticketDetails = $this->createTicketDetails($ticketId);
+
+            // Create and store a new ticket conversation
+            $this->createTicketConversation($ticketId, $request->input('data_update'), $request->input('staff_email'));
 
             DB::commit();
 
             // Dispatch job for sending notifications
             SendNotificationJob::dispatch($enquiry, $ticketDetails, $ticketId);
+
+            // Send notification email
+            $this->sendNotificationEmail($enquiry, $ticketDetails, $request->input('staff_email'));
 
             return redirect()->route('confirmation', ['ticket-id' => $ticketId])
                 ->with('success', 'Your submission has been received.')
@@ -104,6 +123,32 @@ class InstitutionInternalPurpose extends Controller
             return redirect()->back()->with('error', 'An unexpected error occurred. Please try again later.');
         }
     }
+
+    // Create and store a new ticket conversation
+    private function createTicketConversation($ticketId, $message, $staffEmail)
+    {
+        return TicketConversations::create([
+            'ticket_id' => $ticketId,
+            'sender_type' => 'ticket_creator', // You can change this if needed
+            'message' => $message,
+            'cc_recipients' => json_encode([$staffEmail]), // Store the staff email in CC
+            'last_updated' => now()->format('H:i:s'),
+        ]);
+    }
+
+    // Send notification email
+    private function sendNotificationEmail($enquiry, $ticketDetails, $staffEmail)
+    {
+        try {
+            $ticketStatus = $ticketDetails->ticket_status;
+            Mail::to(['web@egspec.org', 'raghavan@egspec.org', 'noreply@egspec.org'])
+                ->cc($staffEmail) // CC the staff email
+                ->send(new TicketSubmissionMail($enquiry, $ticketStatus));
+        } catch (\Exception $e) {
+            Log::error('Error sending email: ' . $e->getMessage());
+        }
+    }
+
 
     // Send notifications
 
@@ -173,16 +218,7 @@ class InstitutionInternalPurpose extends Controller
     }
 
     // Send notification email
-    private function sendNotificationEmail($enquiry, $ticketDetails)
-    {
-        try {
-            $ticketStatus = $ticketDetails->ticket_status;
-            Mail::to(['web@egspec.org', 'raghavan@egspec.org', 'noreply@egspec.org'])
-                ->send(new TicketSubmissionMail($enquiry, $ticketStatus));
-        } catch (\Exception $e) {
-            Log::error('Error sending email: ' . $e->getMessage());
-        }
-    }
+
 
 
     public function index()
@@ -210,5 +246,115 @@ class InstitutionInternalPurpose extends Controller
     public function terms_conditions()
     {
         return view('pages.institution.terms-and-conditions');
+    }
+
+    public function social_meida()
+    {
+        return view('pages.institution.social-media');
+    }
+
+    public function contact_us()
+    {
+        SEOTools::setTitle('Contact Us - E.G.S. Pillay Engineering College');
+        SEOTools::setDescription('Get in touch with E.G.S. Pillay Engineering College. Contact us for admissions, inquiries, and support.');
+        SEOTools::setCanonical(url()->current());
+
+        // Set Open Graph data
+        SEOTools::opengraph()->setTitle('Contact Us - E.G.S. Pillay Engineering College');
+        SEOTools::opengraph()->setDescription('Reach out to us for any inquiries or support. We are here to help!');
+        SEOTools::opengraph()->setUrl(url()->current());
+        SEOTools::opengraph()->addProperty('type', 'website');
+        SEOTools::opengraph()->addImage('https://egspec.org/assets/images/og_raghavan_banner.webp');
+        // Set Twitter Card data
+        SEOTools::twitter()->setTitle('Contact Us - E.G.S. Pillay Engineering College');
+        SEOTools::twitter()->setDescription('Connect with us for admissions and other inquiries.');
+
+        // Set JSON-LD structured data
+        JsonLd::setType('ContactPage');
+        JsonLd::addValue('name', 'Contact Us');
+        JsonLd::addValue('description', 'Get in touch with E.G.S. Pillay Engineering College.');
+        JsonLd::addValue('url', url()->current());
+
+        return view('pages.institution.contact-us');
+    }
+
+    public function contact_submit(Request $request)
+    {
+        // Validate the request data
+        $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email',
+            'phone' => 'required|string|max:10',
+            'requirement' => 'required|string',
+            'department' => 'nullable|string',
+            'message' => 'required|string|max:500',
+        ]);
+
+        // Define email recipients based on requirement and department
+        $emails = [
+            'admission_enquiry' => 'raghavan@egspec.org',
+            'coe' => 'coe@egspec.org',
+            'head_office' => 'headoffice@egspec.org',
+            'placement' => 'placement@egspec.org',
+            'departments' => [
+                'MECH' => 'mech@egspec.org',
+                'CIVIL' => 'civil@egspec.org',
+                'EEE' => 'eee@egspec.org',
+                'ECE' => 'ece@egspec.org',
+                'CSE' => 'cse@egspec.org',
+                'IT' => 'it@egspec.org',
+                'BME' => 'bme@egspec.org',
+                'CSBS' => 'csbs@egspec.org',
+                'AIDS' => 'raghavan@egspec.org',
+            ],
+        ];
+
+        // Determine recipient email
+        $recipientEmail = null;
+        if ($request->requirement === 'departments' && !empty($request->department)) {
+            $recipientEmail = $emails['departments'][$request->department] ?? null;
+        } else {
+            $recipientEmail = $emails[$request->requirement] ?? null;
+        }
+
+        // Check if recipient email was found
+        if ($recipientEmail) {
+            // Clean and log the message content
+            $messageContent = trim($request->message);
+            Log::info('Contact Form Submission', [
+                'name' => $request->name,
+                'email' => $request->email,
+                'phone' => $request->phone,
+                'requirement' => $request->requirement,
+                'department' => $request->department,
+                'message' => $messageContent,
+            ]);
+
+            try {
+                $data = [
+                    'messages' => trim($request->message),
+                ];
+
+                // Send email to the recipient using Mailable
+                Mail::to($recipientEmail)->send(new ContactSubmissionMail(
+                    $request->name,
+                    $request->email,
+                    $request->phone,
+                    $data,
+                    $request->requirement
+                ));
+
+                // Send acknowledgment email to the user using Mailable
+                Mail::to($request->email)->send(new AcknowledgmentMail($request->name, $request->email));
+
+                session()->flash('success', 'Your message has been sent successfully!');
+                return back();
+            } catch (\Exception $e) {
+                Log::error('Error sending email', ['error' => $e->getMessage()]);
+                return response()->json(['message' => 'There was an error sending your message.'], 500);
+            }
+        }
+
+        return response()->json(['message' => 'Invalid requirement or department.'], 400);
     }
 }

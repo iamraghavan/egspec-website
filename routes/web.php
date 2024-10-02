@@ -450,3 +450,7 @@ Route::get('/institution/social-media', [InstitutionInternalPurpose::class, 'soc
 Route::get('/institution/sitemap', [InstitutionInternalPurpose::class, 'index'])->name('sitemap.index');
 Route::get('/legal/privacy-policy', [InstitutionInternalPurpose::class, 'privacy_policy'])->name('privacy_policy');
 Route::get('/legal/terms-and-conditions', [InstitutionInternalPurpose::class, 'terms_conditions'])->name('terms_conditions');
+
+
+Route::get('/support/contact-us', [InstitutionInternalPurpose::class, 'contact_us'])->name('contact_us'); // web.php
+Route::post('/support/contact-submit', [InstitutionInternalPurpose::class, 'contact_submit'])->name('contact.submit');
