@@ -49,7 +49,6 @@
                                 <div class="raw-html">
                                     {!! $conversation->message !!}
                                 </div>
-
                             </div>
                         </div>
                         @else
@@ -65,8 +64,8 @@
                             </div>
                         </div>
                         @endif
-
                     @endforeach
+
 
 
 

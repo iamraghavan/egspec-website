@@ -125,7 +125,7 @@
                                     <label for="sub">Share assets (Google Drive URLs):</label>
                                     <div id="google_drive_urls">
                                         <div class="url-input-wrapper">
-                                            <input type="url" name="google_drive_urls[]" placeholder="Google Drive URL" required>
+                                            <input type="url" name="google_drive_urls[]" placeholder="Google Drive URL">
                                             <span class="remove-url" onclick="removeUrlInput(this)">&times;</span>
                                         </div>
                                     </div>
@@ -210,7 +210,19 @@
 </div>
 
 
+<script>
+    function removeUrlInput(element) {
+        element.parentElement.remove();
+    }
 
+    document.getElementById('add_url').addEventListener('click', function () {
+        var wrapper = document.createElement('div');
+        wrapper.classList.add('url-input-wrapper');
+        wrapper.innerHTML = '<input type="url" name="google_drive_urls[]" placeholder="Google Drive URL" required>' +
+                            '<span class="remove-url" onclick="removeUrlInput(this)">&times;</span>';
+        document.getElementById('google_drive_urls').appendChild(wrapper);
+    });
+</script>
 
 {{-- New Brach Update --}}
 {{-- Hello New Branch --}}
@@ -357,11 +369,8 @@
             minHeight: '100px',
             maxHeight: '250px',
             buttonList: [
-                ['undo', 'redo', 'font', 'fontSize', 'formatBlock'],
-                ['bold', 'underline', 'italic', 'strike', 'subscript', 'superscript', 'removeFormat'],
-                '/', // Line break
-                ['fontColor', 'hiliteColor', 'outdent', 'indent', 'align', 'horizontalRule', 'list', 'table'],
-                ['link', 'image', 'video', 'fullScreen', 'preview', 'print', 'save']
+                ['undo', 'redo', 'font', 'fontSize', 'formatBlock','fontColor', 'hiliteColor', 'outdent', 'indent', 'align', 'horizontalRule', 'list', 'table','bold', 'underline', 'italic', 'strike', 'subscript', 'superscript', 'removeFormat','link',  'fullScreen', 'preview', 'print', 'save'],
+
             ],
             callBackSave: function(contents, isChanged) {
                 console.log(contents);
