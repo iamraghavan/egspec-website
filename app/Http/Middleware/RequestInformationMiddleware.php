@@ -7,8 +7,6 @@ use Closure;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
-use Illuminate\Support\Facades\Response;
-
 
 class RequestInformationMiddleware
 {
@@ -55,7 +53,7 @@ class RequestInformationMiddleware
             }
         } catch (\Exception $e) {
             Log::error('Error processing IP information: ' . $e->getMessage());
-            return Response::json(['error' => 'An error occurred while processing IP information.']);
+            return response('An error occurred while processing IP information.', 500);
         }
 
         return $next($request);
