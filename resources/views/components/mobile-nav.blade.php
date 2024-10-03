@@ -22,10 +22,10 @@
                     <div class="offcanvase__info--content--social">
                         <p class="title">Follow Us:</p>
                         <div class="social__links">
-                            <a href="{{ url("#") }}"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="{{ url("#") }}"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="{{ url("#") }}"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="{{ url("#") }}"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://www.facebook.com/EGSPGOI/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/egspillay_group_of_institution/"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/egspgoi/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.youtube.com/@E.G.S.PillayGroupofInstitution"><i class="fa-brands fa-youtube"></i></a>
                         </div>
                     </div>
                 </div>
