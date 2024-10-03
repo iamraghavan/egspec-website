@@ -53,7 +53,7 @@ class RequestInformationMiddleware
             }
         } catch (\Exception $e) {
             Log::error('Error processing IP information: ' . $e->getMessage());
-            return response('An error occurred while processing IP information.', 500);
+            return redirect()->route('index'); // Redirect to the route named 'index'
         }
 
         return $next($request);
