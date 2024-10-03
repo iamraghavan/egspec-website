@@ -24,9 +24,8 @@ use Carbon\Carbon;
 
 // Other Backend Operation Routes
 Route::post('/admission-submit-form', [AdFormController::class, 'adsubmitForm'])->name('adsubmitForm');
-Route::middleware([RequestInformationMiddleware::class])->group(function () {
-    Route::get('/', [PagesController::class, 'index'])->name('index');
-});
+Route::get('/', [PagesController::class, 'index'])->name('index');
+
 Route::get('/right-to-information', [PagesController::class, 'rti']);
 Route::get('/mandatory-disclosure', [PagesController::class, 'md']);
 
