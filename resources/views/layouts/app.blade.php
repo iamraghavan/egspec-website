@@ -9,11 +9,41 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
 
+    <link rel="apple-touch-icon" sizes="180x180" href="{{asset('/favicons/apple-touch-icon.png')}}">
+<link rel="icon" type="image/png" sizes="32x32" href="{{asset('/favicons/favicon-32x32.png')}}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{asset('/favicons/favicon-16x16.png')}}">
+<link rel="manifest" href="{{asset('/favicons/site.webmanifest')}}">
+<link rel="mask-icon" href="{{asset('/favicons/safari-pinned-tab.svg')}}" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="icon" type="image/x-icon" href="{{asset('favicons/favicon.ico')}}">
 
     {!! SEOMeta::generate() !!}
     {!! OpenGraph::generate() !!}
     {!! Twitter::generate() !!}
     {!! JsonLd::generate() !!}
+
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-5ZJXXK5Y1F"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-5ZJXXK5Y1F');
+</script>
+
+
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ocpp8v8uho");
+</script>
+
 
     <script type="application/ld+json">
         {
