@@ -37,15 +37,11 @@ class PagesController extends Controller
 {
     public function index()
     {
-        $sliderImages = Cache::remember('general_slider_images', 120, function () {
-            return SliderImage::where('department', 'general')->get();
-        });
+        $sliderImages = $this->getSliderImages();
+        $posterSlider = $this->getPosterSlider();
+        $messages = $this->getMarqueeMessages();
 
-        $posterSlider = Cache::remember('general_poster_slider', 120, function () {
-            return PostSlider::where('page_name', 'general')->get();
-        });
-
-        // SEOTools::setTitle('E.G.S. Pillay Engineering College');
+        // SEO configuration
         SEOTools::setDescription('Discover E.G.S. Pillay Engineering College, offering B.E. / B.Tech in Mechanical, Civil, Electrical and Electronics, Electronics and Communication, Computer Science, Information Technology, Biomedical Engineering, and AI & Data Science. Advance your career with MCA and MBA programs. Join us for a transformative education in engineering and humanities.');
         SEOTools::opengraph()->addProperty('type', 'website');
         SEOTools::opengraph()->addProperty('place:location:latitude', '10.803943701301094');
@@ -57,11 +53,40 @@ class PagesController extends Controller
         SEOTools::twitter()->setDescription('A premier engineering college in Nagapattinam, offering various undergraduate and postgraduate courses in engineering and technology.');
         SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
         SEOTools::twitter()->setSite('@raghavanjeeva'); // Replace with your Twitter handle
-        SEOTools::jsonLd()->addImage('');
+        SEOTools::jsonLd()->addImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
 
-
-        return view('pages.index', compact('sliderImages', 'posterSlider'));
+        // Return the view with the necessary data
+        return view('pages.index', compact('sliderImages', 'posterSlider', 'messages'));
     }
+
+    private function getSliderImages()
+    {
+        return Cache::remember('general_slider_images', 120, function () {
+            return SliderImage::where('department', 'general')->get();
+        });
+    }
+
+    private function getPosterSlider()
+    {
+        return Cache::remember('general_poster_slider', 120, function () {
+            return PostSlider::where('page_name', 'general')->get();
+        });
+    }
+
+    private function getMarqueeMessages()
+    {
+        // Fetch JSON data from the public directory
+        $jsonPath = public_path('data/messages.json');
+
+        // Check if the file exists to avoid errors
+        if (file_exists($jsonPath)) {
+            return json_decode(file_get_contents($jsonPath), true);
+        } else {
+            // Return empty array if the file doesn't exist
+            return [];
+        }
+    }
+
 
 
     public function rti()

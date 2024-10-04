@@ -2,7 +2,10 @@
 @section('content')
 
 @include('components.home-slider')
+<x-scrolling-marquee :messages="$messages" />
 @include('components.logo-slider')
+
+
 
 {{-- <x-confetti /> --}}
 
