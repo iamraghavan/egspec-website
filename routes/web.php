@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ApiController;
+use App\Mail\WelcomeMail;
 use App\Models\TicketConversations;
 use App\Models\WebsiteUpdateEnquiry;
 use Illuminate\Support\Facades\Route;
@@ -20,6 +21,26 @@ use Artesaos\SEOTools\Facades\SEOTools;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Response;
 use Carbon\Carbon;
+
+Route::post('/sent/mail', function () {
+    $recipients = ['all@egspec.org', 'raghavan@egspec.org'];
+    $errors = [];
+
+    foreach ($recipients as $recipient) {
+        try {
+            Mail::to($recipient)->send(new WelcomeMail());
+        } catch (\Exception $e) {
+            $errors[] = "Failed to send email to $recipient: " . $e->getMessage();
+        }
+    }
+
+    if (!empty($errors)) {
+        return response()->json(['message' => 'Some emails failed to send.', 'errors' => $errors], 500);
+    }
+
+    return response()->json(['message' => 'Emails sent successfully!']);
+});
+
 
 
 // Other Backend Operation Routes
