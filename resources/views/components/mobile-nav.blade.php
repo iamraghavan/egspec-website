@@ -195,7 +195,7 @@
                         <li><a class="mobile-menu-link" href="{{ url('#') }}">Training Cell</a></li> --}}
                         <li><a class="mobile-menu-link" href="{{ url('/placements#placementTeam') }}">Placement Team</a></li>
                         <li><a class="mobile-menu-link" href="{{ url('/placements#statistics') }}">Placement Statistics</a></li>
-                        <li><a class="mobile-menu-link" href="{{ url('/placements#our-top-recruiters') }}">Our Few Of Recruiters</a></li>
+                        <li><a class="mobile-menu-link" href="{{ url('/placements#our-top-recruiters') }}">Our Top Of Recruiters</a></li>
                     </ul>
                 </li>
 

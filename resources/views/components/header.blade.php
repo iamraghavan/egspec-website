@@ -6,7 +6,7 @@
                 <div class="col-lg-12">
                     <div class="header-top-one">
                         <div class="left-information">
-                            <a href="mailto:someone@example.com" class="email"><i class="fa-light fa-envelope"></i>enquires@egspec.org</a>
+                            <a href="mailto:enquires@egspec.org" class="email"><i class="fa-light fa-envelope"></i>enquires@egspec.org</a>
                             <a href="tel:04365251114" class="email"><i class="fa-light fa-phone"></i>04365 251 114</a>
                         </div>
                         <!-- right area -->
@@ -65,9 +65,12 @@
                 <div class="col-lg-6 d-flex align-items-center">
                     <a href="{{ url('/') }}" class="logo-area">
                         <picture>
-                            <source srcset="{{ asset('/assets/images/logo_tran.svg') }}" type="image/svg+xml">
+                            <!-- For desktop and big screens -->
+                            <source srcset="{{ asset('/assets/images/logo_tran_1.svg') }}" media="(min-width: 768px)" type="image/svg+xml">
+                            <!-- For mobile screens -->
                             <img src="{{ asset('/assets/images/logo_tran.svg') }}" alt="logo" class="logo">
                         </picture>
+
                     </a>
                     <div class="menu-bar ml-auto d-lg-none" id="menu-btn">
                         <picture>
@@ -269,7 +272,7 @@
                                       <li><a href="{{ url("#") }}">Recruiters</a></li>
                                       <li><a href="{{ url("#") }}">Training Cell</a></li>
                                       --}}
-                                      <li><a href="{{ url("/placements#our-top-recruiters") }}">Our Few Of Recruiters</a></li>
+                                      <li><a href="{{ url("/placements#our-top-recruiters") }}">Our Top Of Recruiters</a></li>
                                       <li><a href="{{ url("/placements#placement-gallery") }}">Placement Gallery</a></li>
                                    </ul>
                                 </li>

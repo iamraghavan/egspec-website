@@ -5,7 +5,7 @@
              <div class="col-lg-12">
                 <div class="header-top-one">
                    <div class="left-information">
-                      <a href="mailto:someone@example.com" class="email"><i
+                      <a href="mailto:enquires@egspec.org" class="email"><i
                          class="fa-light fa-envelope"></i>enquires@egspec.org</a>
                       <a href="tel:04365251114" class="email"><i class="fa-light fa-phone"></i>04365 251 114</a>
                    </div>
