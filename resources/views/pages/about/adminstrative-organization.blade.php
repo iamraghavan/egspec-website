@@ -149,216 +149,201 @@
                                    </tr>
                                 </thead>
                                 <tbody>
-                                   <tr>
-                                      <td>1.</td>
-                                      <td>Dr. V. Mohan</td>
-                                      <td>Director (Academics)</td>
-                                   </tr>
-                                   <tr>
-                                      <td>2.</td>
-                                      <td>Prof. J. Vanitha</td>
-                                      <td>Member - Academic Affairs Monitoring Council (AAMC)</td>
-                                   </tr>
-                                   <tr>
-                                      <td>2.</td>
-                                      <td>Prof. T. Ganesan</td>
-                                      <td>Member - Academic Affairs Monitoring Council (AAMC)</td>
-                                   </tr>
-                                   <tr>
-                                      <td>3.</td>
-                                      <td>Prof. K. Manikanda Kumaran</td>
-                                      <td>Member - Admission, DOTE</td>
-                                   </tr>
-                                   <tr>
-                                      <td>4.</td>
-                                      <td>Dr. M. Chinnadurai</td>
-                                      <td>Member - AU Affiliation & AICTE Approval</td>
-                                   </tr>
-                                   <tr>
-                                      <td>5.</td>
-                                      <td>Dr. R. Karthi</td>
-                                      <td>Member - ISO MR</td>
-                                   </tr>
-                                   <tr>
-                                      <td>6.</td>
-                                      <td>Prof. M. Chinnadurai</td>
-                                      <td>Member - NBA Accreditation & QIC Nodal Centre</td>
-                                   </tr>
-                                   <tr>
-                                      <td>7.</td>
-                                      <td>Dr. M. Chinnadurai</td>
-                                      <td>Member - Library Advisory Committee</td>
-                                   </tr>
-                                   <tr>
-                                      <td>8.</td>
-                                      <td>Prof. S. Krishnamohan</td>
-                                      <td>Member - Disciplinary Committee</td>
-                                   </tr>
-                                   <tr>
-                                      <td>9.</td>
-                                      <td>Dr. S. Ponsadai Lakshmi</td>
-                                      <td>Member - Students Grievance Redressal</td>
-                                   </tr>
-                                   <tr>
-                                      <td>10.</td>
-                                      <td>Dr. S.Appavu</td>
-                                      <td>Member - R&D</td>
-                                   </tr>
-                                   <tr>
-                                      <td>11.</td>
-                                      <td>Dr. R. Karthi</td>
-                                      <td>Member - Exam Cell</td>
-                                   </tr>
-                                   <tr>
-                                      <td>12.</td>
-                                      <td>Dr. M. Chinnadurai</td>
-                                      <td>Member - Press & Stationary Store</td>
-                                   </tr>
-                                   <tr>
-                                      <td>13.</td>
-                                      <td>Dr. R. Karthi</td>
-                                      <td>Member - Events Manager & NAAC</td>
-                                   </tr>
-                                   <tr>
-                                      <td>14.</td>
-                                      <td>Prof. K. Nandakumar</td>
-                                      <td>Member - Public Relations & Media Coordination</td>
-                                   </tr>
-                                   <tr>
-                                      <td>15.</td>
-                                      <td>Prof. Jim Hackinson</td>
-                                      <td>Member - Intercom/P.A. Systems/Projectors/OHPs</td>
-                                   </tr>
-                                   <tr>
-                                      <td>16.</td>
-                                      <td>Prof. R. Anandaraj</td>
-                                      <td>Member - Electrical Maintenance</td>
-                                   </tr>
-                                   <tr>
-                                      <td>17.</td>
-                                      <td>Prof. N. Murali</td>
-                                      <td>Member - Building Maintenance, Landscaping</td>
-                                   </tr>
-                                   <tr>
-                                      <td>18.</td>
-                                      <td>Prof S.Palani Murugan</td>
-                                      <td>Member - Website & Domain Mail</td>
-                                   </tr>
-                                   <tr>
-                                      <td>19.</td>
-                                      <td>Prof. K. Parthasarathi</td>
-                                      <td>Member - Transport Facilities</td>
-                                   </tr>
-                                   <tr>
-                                      <td>20.</td>
-                                      <td>Prof. S. Senthilkumar</td>
-                                      <td>Member - ISTE Staff & Student Chapters</td>
-                                   </tr>
-                                   <tr>
-                                      <td>21.</td>
-                                      <td>Prof. G. Ganesan</td>
-                                      <td>Member - IEEE Student's Chapter</td>
-                                   </tr>
-                                   <tr>
-                                      <td>22.</td>
-                                      <td>Prof. S. Manikandan</td>
-                                      <td>Member - CSI Student's Chapter</td>
-                                   </tr>
-                                   <tr>
-                                      <td>23.</td>
-                                      <td>Prof. S. Manikandan</td>
-                                      <td>Member - ICTACT Coordinator</td>
-                                   </tr>
-                                   <tr>
-                                      <td>24.</td>
-                                      <td>Prof. D. Devarajan</td>
-                                      <td>Member - IETE Student's Chapter</td>
-                                   </tr>
-                                   <tr>
-                                      <td>25.</td>
-                                      <td>Prof. G. Sundara Vadivel</td>
-                                      <td>Member - IE Student's Chapter</td>
-                                   </tr>
-                                   <tr>
-                                      <td>26.</td>
-                                      <td>Prof. P.J. Suresh Babu</td>
-                                      <td>Member - Renewable Energy Club</td>
-                                   </tr>
-                                   <tr>
-                                      <td>27.</td>
-                                      <td>Dr. S. Ponsadai Lakshmi</td>
-                                      <td>Member - Grievance & Redressal Cell</td>
-                                   </tr>
-                                   <tr>
-                                      <td>28.</td>
-                                      <td>Prof K.Manikanda Kumaran</td>
-                                      <td>Member - Programmers Paradise Club</td>
-                                   </tr>
-                                   <tr>
-                                      <td>29.</td>
-                                      <td>Prof S.Palani Murugan</td>
-                                      <td>Member - Designers Domain Club</td>
-                                   </tr>
-                                   <tr>
-                                      <td>30.</td>
-                                      <td>Prof. N. Karthika</td>
-                                      <td>Member - Ladies Hostel Deputy Warden</td>
-                                   </tr>
-                                   <tr>
-                                      <td>31.</td>
-                                      <td>Prof. S. Jim Hawkinson</td>
-                                      <td>Member - Gents Hostel Deputy Warden</td>
-                                   </tr>
-                                   <tr>
-                                      <td>32.</td>
-                                      <td>Prof.S. Palani Murugan</td>
-                                      <td>Member - EDC</td>
-                                   </tr>
-                                   <tr>
-                                      <td>33.</td>
-                                      <td>Prof.R.Mohankumar</td>
-                                      <td>Member - Training & Placement Cell</td>
-                                   </tr>
-                                   <tr>
-                                      <td>33.</td>
-                                      <td>Prof.P.Anandraj</td>
-                                      <td>Member - Training & Placement Cell</td>
-                                   </tr>
-                                   <tr>
-                                      <td>34.</td>
-                                      <td>Prof. K. Balasubramanian</td>
-                                      <td>Member - Alumni Association</td>
-                                   </tr>
-                                   <tr>
-                                      <td>35.</td>
-                                      <td>Mr. D. Velavan</td>
-                                      <td>Member - Sports/Athletics</td>
-                                   </tr>
-                                   <tr>
-                                      <td>36.</td>
-                                      <td>Prof. V. Sivaramakrishnan</td>
-                                      <td>Member - NSS Programme</td>
-                                   </tr>
-                                   <tr>
-                                      <td>37.</td>
-                                      <td>Prof. Naveen Antony</td>
-                                      <td>Member - Youth Red Cross Society</td>
-                                   </tr>
-                                   <tr>
-                                      <td>38.</td>
-                                      <td>Prof. V. Sivaramakrishnan</td>
-                                      <td>Member - Citizen Consumer Club</td>
-                                   </tr>
-                                   <tr>
-                                      <td>39.</td>
-                                      <td>Prof. V. Sivaramakrishnan</td>
-                                      <td>Member - Red Ribbon Club</td>
-                                   </tr>
-                                   <tr>
-                                      <td>40.</td>
-                                      <td>Prof. J. Vanitha</td>
-                                      <td>Member - Women Empowerment Cell</td>
-                                   </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Academic Affairs</td>
+                                        <td>Dr. V. Mohan, Director (Academics)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Admission, DOTE</td>
+                                        <td>Prof. G. Hari Nariyanan (Mech)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>AU Affiliation & AICTE Approval</td>
+                                        <td>Dr. M. Chinnadurai (CSE)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>ISO MR</td>
+                                        <td>Dr. R. Karthi (MBA)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>NBA Accreditation & QIC Nodal Centre</td>
+                                        <td>Dr. M. Chinnadurai (CSE)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Library Advisory Committee</td>
+                                        <td>Dr. B. Shanmugam (Lib)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Disciplinary Committee</td>
+                                        <td>Prof. A. Rajesh (CSBS) / Prof. V.R. Sugumaran</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Students Grievance Redressal</td>
+                                        <td>Dr. S. Ponsadai Lakshmi (S&H)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>R&D</td>
+                                        <td>Dr. S. Ramabalan (Principal)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Exam Cell</td>
+                                        <td>Dr. B. Shanmugam (Lib)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Press & Stationary Store</td>
+                                        <td>Dr. M. Chinnadurai (CSE)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Events Manager</td>
+                                        <td>Mr. V. Gokulakrishanan</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>Public Relations & Media Coordination</td>
+                                        <td>Dr. P. Anandraj (CSBS)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>Intercom/P.A. Systems/Projectors/OHPs</td>
+                                        <td>Mr. R. Ayyapa (ECE)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>Domain Mail</td>
+                                        <td>Dr. S.Palani Murugan (AIDS)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>Estate / Building Maintenance / Landscaping</td>
+                                        <td>Mr. V. Senthilkumar</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td>Website & Web Application</td>
+                                        <td>Dr. S. Praveen Kumar (CSE) & Mr. J.S Raghavan</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td>Transport Facilities</td>
+                                        <td>Mr. K. Venkatesh</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19</td>
+                                        <td>ISTE Staff & Student Chapters</td>
+                                        <td>Dr. S. Senthilkumar (ECE)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>IEEE Student’s Chapter</td>
+                                        <td>Prof. K. Gokulraj (EEE)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>21</td>
+                                        <td>CSI Student’s Chapter</td>
+                                        <td>Dr. K. Balasubramanian (CSE)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22</td>
+                                        <td>ICTACT Coordinator</td>
+                                        <td>Dr. S. Chandrasekar (CEO)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>23</td>
+                                        <td>IETE Student’s Chapter</td>
+                                        <td>Dr. D. Devarajan (ECE)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>24</td>
+                                        <td>IE Student’s Chapter</td>
+                                        <td>Dr. G. Sundaravadivel (Mech)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td>Renewable Energy Club</td>
+                                        <td>Dr. P.J. Suresh Babu (EEE)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>26</td>
+                                        <td>Grievance & Redressal Cell</td>
+                                        <td>Dr. S. Ponsadai Lakshmi (S&H)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>27</td>
+                                        <td>Programmers Paradise Club</td>
+                                        <td>Prof J. Noorul Ameen (CSE)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>28</td>
+                                        <td>Designers Domain Club</td>
+                                        <td>Prof G. Arulselvan (CSE)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>29</td>
+                                        <td>Ladies Hostel Deputy Warden</td>
+                                        <td>Ms. Sharmila Banu</td>
+                                    </tr>
+                                    <tr>
+                                        <td>30</td>
+                                        <td>Gents Hostel Deputy Warden</td>
+                                        <td>Mr. K. Kalaiselvan</td>
+                                    </tr>
+                                    <tr>
+                                        <td>31</td>
+                                        <td>EDC</td>
+                                        <td>Prof. S. Selvaganapathy (MCA)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>32</td>
+                                        <td>Training & Placement Cell</td>
+                                        <td>Dr. S. Chendrasekar (CEO)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>33</td>
+                                        <td>Alumni Association</td>
+                                        <td>Dr. V. Sivaramakrishan (MECH)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>34</td>
+                                        <td>Sports/Athletics</td>
+                                        <td>Mr. D. Velavan (PED)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>35</td>
+                                        <td>NSS Programme</td>
+                                        <td>Prof. V. Sivaramakrishnan (Mech)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>36</td>
+                                        <td>Youth Red Cross Society</td>
+                                        <td>Prof. Naveen Antony (EEE)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>37</td>
+                                        <td>Citizen Consumer Club</td>
+                                        <td>Dr. V. Sivaramakrishnan (Mech)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>38</td>
+                                        <td>Red Ribbon Club</td>
+                                        <td>Dr. V. Sivaramakrishnan (Mech)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>39</td>
+                                        <td>Women Empowerment Cell</td>
+                                        <td>Dr. A.R. Deepa (S&H)</td>
+                                    </tr>
                                 </tbody>
                              </table>
                         </div>
@@ -605,11 +590,11 @@
                                </tr>
                                <tr>
                                   <td>Name of the Internet Provider</td>
-                                  <td>RELIANCE JIO</td>
+                                  <td>Clapsy Networks - Fiber optic leased line 1:1</td>
                                </tr>
                                <tr>
                                   <td>Available bandwidth</td>
-                                  <td>100Mbps</td>
+                                  <td>1Gbps</td>
                                </tr>
                                <tr>
                                   <td>Access Speed</td>

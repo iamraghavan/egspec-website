@@ -129,7 +129,7 @@
                         <nav>
                             <ul>
                                 <li class="dropdownss">
-                                    <a class="nav-link" href="{{ url("#") }}">Home</a>
+                                    <a class="nav-link" href="{{route('index')}}">Home</a>
                                  </li>
                                 <li class="has-dropdown">
                                    <a class="nav-link" href="{{ url("#") }}">About</a>
