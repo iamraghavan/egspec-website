@@ -2,8 +2,8 @@
 @section('content')
 
 @include('components.breadcrumb', ['value_1' => 'About us',
-'value_2' => '',
-'value_3' => '',
+'value_2' => 'Dean - (Technical Affairs, Research and Branding)',
+'value_3' => 'E. G. S. Pillay Engineering College',
 'page_title' => 'Dean' ])
 
 
@@ -16,7 +16,11 @@
         <div class="row">
             <div class="rts-section">
                 <div class="col-lg-4 col-md-3 col-sm-12 text-center">
-                    <img src="@blob('')" alt="egspec secretary" class="img-fluid rounded-circle" style="max-width: 200px;">
+                    {{-- <img src="@blob('')" alt="egspec secretary" class="img-fluid rounded-circle" style="max-width: 200px;"> --}}
+                    <picture>
+                        <source srcset="@blob('profile/dr-s-manikandan.webp')" type="image/webp">
+                        <img src="@blob('profile/dr-s-manikandan.webp')" class="img-fluid rounded" alt="egspec_dr_s_manikandan" style="max-width: 200px;">
+                    </picture>
                 </div>
                 <div class="col-lg-8 col-md-9 col-sm-12">
                     <div class="rts-section-description">
@@ -37,7 +41,7 @@
         <div class="row">
             <div class="container">
                 <div class="row">
-                    <h3 class="rts-section-title animated fadeIn">Principal Message</h3>
+                    <h3 class="rts-section-title animated fadeIn">Dean Message</h3>
                     <p class="desc mt-5 text-justify">
                         I am  <span style="color: var(--rt-primary); font-weight:bold;"> Manikandan.S </span> as Dean (Technical Affairs, Research and Branding) & Associate Professor of Information Technology in E.G.S. Pillay Engineering College (Autonomous), Nagapattinam. I completed Ph.D from Anna University in the year of 2020, M.E(CSE) with University Rank Holder and Distinction from Annamalai University in the year of 2012 and B.Tech (IT) with Distinction from E.G.S. Pillay Engineering College in Nagapattinam in the year of 2010. Also member in IEEE, ACM, MIE, CSTA,IAENG, CSI and ISTE. Currently I am doing research in Artificial Intelligence, Deep Learning and Data Analytics. Recognized Supervisor (Ref. No.:4040100) from Anna University.
                     </p>

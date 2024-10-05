@@ -49,6 +49,7 @@
 <li><a class="mobile-menu-link" href="{{ url('/about/message-from-the-secretary') }}">Message From the Secretary</a></li>
 <li><a class="mobile-menu-link" href="{{ url('/about/message-from-the-principal') }}">Message From the Principal</a></li>
 <li><a class="mobile-menu-link" href="{{ url('/about/adminstrative-organization') }}">Administrative Organization</a></li>
+<li><a class="mobile-menu-link" href="{{ url("/about/dean") }}">Dean</a></li>
 <li><a class="mobile-menu-link" href="{{ url('/about/organizational-chart') }}">Organizational Chart</a></li>
 <li><a class="mobile-menu-link" href="{{ url('/about/milestones') }}">Milestones</a></li>
 <li><a class="mobile-menu-link" href="{{ url('/about/hr-policy') }}">HR Policy</a></li>
