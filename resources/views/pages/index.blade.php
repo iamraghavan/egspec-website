@@ -3,6 +3,66 @@
 
 @include('components.home-slider')
 <x-scrolling-marquee :messages="$messages" />
+<div class="rts-service v_2">
+    <div class="row">
+        <div class="single-service-content">
+
+            <div class="single-service">
+                <div class="content">
+                    <p class="service-title">Scopus Publications</p>
+                    <h5 class="counter text-white" style="font-size: 36px; color: #ffffff;" data-count="13000">0</h5>
+                </div>
+            </div>
+
+            <div class="single-service">
+                <div class="content">
+                    <p class="service-title">Web of Science Publications</p>
+                    <h5 class="counter text-white" style="font-size: 36px; color: #ffffff;" data-count="6500">0</h5>
+                </div>
+            </div>
+
+            <div class="single-service">
+                <div class="content">
+                    <p class="service-title">Patents Filed</p>
+                    <h5 class="counter text-white" style="font-size: 36px; color: #ffffff;" data-count="850">0</h5>
+                </div>
+            </div>
+
+            <div class="single-service">
+                <div class="content">
+                    <p class="service-title">Patents Published</p>
+                    <h5 class="counter text-white" style="font-size: 36px; color: #ffffff;" data-count="525">0</h5>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+<script>
+    // Number counter animation
+    document.addEventListener("DOMContentLoaded", function() {
+        const counters = document.querySelectorAll('.counter');
+
+        counters.forEach(counter => {
+            const updateCount = () => {
+                const target = +counter.getAttribute('data-count');
+                const count = +counter.innerText;
+
+                const increment = target / 200; // Adjust speed of counting
+                if (count < target) {
+                    counter.innerText = Math.ceil(count + increment);
+                    setTimeout(updateCount, 1);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            updateCount();
+        });
+    });
+</script>
+
 @include('components.logo-slider')
 
 
