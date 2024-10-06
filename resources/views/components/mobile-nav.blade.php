@@ -242,7 +242,7 @@
                     </ul>
                 </li>
                 <li class="has-droupdown">
-                    <a class="main" href="https://coe.egspec.org/" target="_blank" referrerpolicy="origin-when-cross-origin" rel="noopener noreferrer">Downloads</a>
+                    <a class="main" href="https://coe.egspec.org/" target="_blank" referrerpolicy="origin-when-cross-origin" rel="noopener noreferrer">COE</a>
                     {{-- <a class="main" href="{{ url("#") }}">Downloads</a> --}}
                 </li>
 

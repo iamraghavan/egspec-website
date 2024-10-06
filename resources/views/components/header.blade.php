@@ -312,7 +312,7 @@
                                  </ul>
                                 </li>
                                 <li class="dropdownss">
-                                   <a class="nav-link" href="https://coe.egspec.org/" target="_blank" referrerpolicy="origin-when-cross-origin" rel="noopener noreferrer">Downloads</a>
+                                   <a class="nav-link" href="https://coe.egspec.org/" target="_blank" referrerpolicy="origin-when-cross-origin" rel="noopener noreferrer">COE</a>
                                 </li>
 
                                 <li class="has-dropdown">
