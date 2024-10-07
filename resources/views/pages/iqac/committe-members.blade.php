@@ -19,7 +19,7 @@
                     <div class="program-description-area">
 
                         <div class="program-credit-area">
-                            {{-- <h3 class="rts-section-title animated fadeIn" >ISO Manual</h3> --}}
+                            {{-- <h3 class="rts-section-title animated fadeIn" >IQAC Memebers</h3> --}}
 
                             <div class="program-accordion my-5">
                                 <div class="accordion" id="rts-accordion">
@@ -32,7 +32,7 @@
 
                                                     <tbody>
                                                         <tr>
-                                                            <td><i class="fa fa-download"> </i><a href="@blob('iqac/committe-members/committe-members.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'>Committe Members</a></td>
+                                                            <td><i class="fa fa-download"> </i><a href="@blob('iqac/committe-members/2024/egspec-iqac-members-2024-2025.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'>Committe Members</a></td>
                                                             <td><i class="fa fa-file-pdf"></i> / PDF File</td>
                                                         </tr>
 
@@ -57,7 +57,7 @@
                     </div>
 
                     <div class="iframe-div">
-                        <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=@blob('iqac/committe-members/committe-members.pdf')#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="
+                        <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=@blob('iqac/committe-members/2024/egspec-iqac-members-2024-2025.pdf')#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="
                     height: 100rem !important;
                 "></iframe>
                     </div>
@@ -82,6 +82,25 @@
                             <div class="program-menu">
                                 <ul class="list-unstyled">
                                     <li><a href="{{url('/iqac/meeting-minutes')}}"><span><i class="fa-light fa-arrow-right"></i></span>Meeting Minutes</a></li>
+
+
+                                </ul>
+                            </div>
+
+                            <h6 class="heading-title">IQAC Functions</h6>
+                            <div class="program-menu">
+                                <ul class="list-unstyled">
+                                    <li><a href="@blob('iqac/committe-members/2024/egspec-iqac-functions.pdf')"><span><i class="fa-light fa-arrow-right"></i></span>IQAC Functions
+                                    </a></li>
+
+
+                                </ul>
+                            </div>
+
+                            <h6 class="heading-title">Works Plan & Implementation</h6>
+                            <div class="program-menu">
+                                <ul class="list-unstyled">
+                                    <li><a href="@blog('iqac/committe-members/2024/egspec-iqac-worksplan-for-implementation.pdf')"><span><i class="fa-light fa-arrow-right"></i></span>IQAC Works Plan & Implementation</a></li>
 
 
                                 </ul>

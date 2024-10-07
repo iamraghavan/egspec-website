@@ -1,8 +1,26 @@
 @extends('layouts.app')
 @section('content')
 
+<style>
+    .rts-about-content .about-positioned-text h2 {
+        color: var(--rt-theme) !important;
+    }
+    .single-service > .content > p {
+        font-size: 2.7rem !important;
+
+    }
+
+    .single-service > .content > div > p {
+        font-size: 2.7rem !important;
+
+    }
+</style>
+
 @include('components.home-slider')
 <x-scrolling-marquee :messages="$messages" />
+
+<x-home-page-counter/>
+
 
 
 @include('components.logo-slider')
