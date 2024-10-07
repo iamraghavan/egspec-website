@@ -135,6 +135,299 @@
                 </div>
             </div>
 
+            @php
+                $members = [
+    [
+        'designation' => 'Academic Affairs',
+        'name' => 'Dr. V. Mohan, Director (Academics)',
+        'phone' => '123-456-7890',
+        'email' => 'mohan@example.com',
+        'photo' => 'url_to_photo_mohan.jpg'
+    ],
+    [
+        'designation' => 'Admission, DOTE',
+        'name' => 'Prof. G. Hari Nariyanan (Mech)',
+        'phone' => '123-456-7891',
+        'email' => 'hari@example.com',
+        'photo' => 'url_to_photo_hari.jpg'
+    ],
+    [
+        'designation' => 'AU Affiliation & AICTE Approval',
+        'name' => 'Dr. M. Chinnadurai (CSE)',
+        'phone' => '123-456-7892',
+        'email' => 'chinnadurai@example.com',
+        'photo' => 'url_to_photo_chinnadurai.jpg'
+    ],
+    [
+        'designation' => 'ISO MR',
+        'name' => 'Dr. R. Karthi (MBA)',
+        'phone' => '123-456-7893',
+        'email' => 'karthi@example.com',
+        'photo' => 'url_to_photo_karthi.jpg'
+    ],
+    [
+        'designation' => 'NBA Accreditation & QIC Nodal Centre',
+        'name' => 'Dr. M. Chinnadurai (CSE)',
+        'phone' => '123-456-7894',
+        'email' => 'chinnadurai2@example.com',
+        'photo' => 'url_to_photo_chinnadurai2.jpg'
+    ],
+    [
+        'designation' => 'Library Advisory Committee',
+        'name' => 'Dr. B. Shanmugam (Lib)',
+        'phone' => '123-456-7895',
+        'email' => 'shanmugam@example.com',
+        'photo' => 'url_to_photo_shanmugam.jpg'
+    ],
+    [
+        'designation' => 'Disciplinary Committee',
+        'name' => 'Prof. A. Rajesh (CSBS) / Prof. V.R. Sugumaran',
+        'phone' => '123-456-7896',
+        'email' => 'rajesh@example.com',
+        'photo' => 'url_to_photo_rajesh.jpg'
+    ],
+    [
+        'designation' => 'Students Grievance Redressal',
+        'name' => 'Dr. S. Ponsadai Lakshmi (S&H)',
+        'phone' => '123-456-7897',
+        'email' => 'ponsadai@example.com',
+        'photo' => 'url_to_photo_ponsadai.jpg'
+    ],
+    [
+        'designation' => 'R&D',
+        'name' => 'Dr. S. Ramabalan (Principal)',
+        'phone' => '123-456-7898',
+        'email' => 'ramabalan@example.com',
+        'photo' => 'url_to_photo_ramabalan.jpg'
+    ],
+    [
+        'designation' => 'Exam Cell',
+        'name' => 'Dr. B. Shanmugam (Lib)',
+        'phone' => '123-456-7899',
+        'email' => 'shanmugam2@example.com',
+        'photo' => 'url_to_photo_shanmugam2.jpg'
+    ],
+    [
+        'designation' => 'Press & Stationary Store',
+        'name' => 'Dr. M. Chinnadurai (CSE)',
+        'phone' => '123-456-7900',
+        'email' => 'chinnadurai3@example.com',
+        'photo' => 'url_to_photo_chinnadurai3.jpg'
+    ],
+    [
+        'designation' => 'Events Manager',
+        'name' => 'Mr. V. Gokulakrishanan',
+        'phone' => '123-456-7901',
+        'email' => 'gokul@example.com',
+        'photo' => 'url_to_photo_gokul.jpg'
+    ],
+    [
+        'designation' => 'Public Relations & Media Coordination',
+        'name' => 'Dr. P. Anandraj (CSBS)',
+        'phone' => '123-456-7902',
+        'email' => 'anandraj@example.com',
+        'photo' => 'url_to_photo_anandraj.jpg'
+    ],
+    [
+        'designation' => 'Maintenance Division',
+        'name' => 'Mr. R. Ayyappan (ECE)',
+        'phone' => '123-456-7903',
+        'email' => 'ayyappan@example.com',
+        'photo' => 'url_to_photo_ayyappan.jpg'
+    ],
+    [
+        'designation' => 'Domain Mail',
+        'name' => 'Dr. S. Palani Murugan (AIDS)',
+        'phone' => '123-456-7904',
+        'email' => 'palani@example.com',
+        'photo' => 'url_to_photo_palani.jpg'
+    ],
+    [
+        'designation' => 'Estate / Landscaping Maintenance',
+        'name' => 'Mr. V. Senthilkumar',
+        'phone' => '123-456-7905',
+        'email' => 'senthilkumar@example.com',
+        'photo' => 'url_to_photo_senthilkumar.jpg'
+    ],
+    [
+        'designation' => 'Website & Web Application',
+        'name' => 'Dr. S. Praveen Kumar (CSE) & Mr. J.S Raghavan',
+        'phone' => '80988 99666',
+        'email' => 'web@egspec.org',
+        'photo' => 'https://firebasestorage.googleapis.com/v0/b/egsppc-ac-in.appspot.com/o/dr_s_praveen_kumar.webp?alt=media&token=562bcc59-d888-41ba-8921-c531c05dc90e'
+    ],
+    [
+        'designation' => 'System Administrator',
+        'name' => 'M. Mayakannan',
+        'phone' => '123-456-7929',
+        'email' => 'mayakannan@example.com',
+        'photo' => 'url_to_photo_mayakannan.jpg'
+    ],
+    [
+        'designation' => 'ERP Co-ordinator',
+        'name' => 'A. Amsaram',
+        'phone' => '97919 97191',
+        'email' => 'amsaram@example.com',
+        'photo' => 'https://firebasestorage.googleapis.com/v0/b/egsppc-ac-in.appspot.com/o/a_amsaram.webp?alt=media&token=ea6b7330-22e1-4a42-90ed-08076e4a1992'
+    ],
+    [
+        'designation' => 'Transport Facilities',
+        'name' => 'Mr. K. Venkatesh',
+        'phone' => '123-456-7907',
+        'email' => 'venkatesh@example.com',
+        'photo' => 'url_to_photo_venkatesh.jpg'
+    ],
+    [
+        'designation' => 'ISTE Staff & Student Chapters',
+        'name' => 'Dr. S. Senthilkumar (ECE)',
+        'phone' => '123-456-7908',
+        'email' => 'senthilkumar2@example.com',
+        'photo' => 'url_to_photo_senthilkumar2.jpg'
+    ],
+    [
+        'designation' => 'IEEE Student’s Chapter',
+        'name' => 'Prof. K. Gokulraj (EEE)',
+        'phone' => '123-456-7909',
+        'email' => 'gokulraj@example.com',
+        'photo' => 'url_to_photo_gokulraj.jpg'
+    ],
+    [
+        'designation' => 'CSI Student’s Chapter',
+        'name' => 'Dr. K. Balasubramanian (CSE)',
+        'phone' => '123-456-7910',
+        'email' => 'balasubramanian@example.com',
+        'photo' => 'url_to_photo_balasubramanian.jpg'
+    ],
+    [
+        'designation' => 'ICTACT Coordinator',
+        'name' => 'Dr. S. Chandrasekar (CEO)',
+        'phone' => '123-456-7911',
+        'email' => 'chandrasekar@example.com',
+        'photo' => 'url_to_photo_chandrasekar.jpg'
+    ],
+    [
+        'designation' => 'IETE Student’s Chapter',
+        'name' => 'Dr. D. Devarajan (ECE)',
+        'phone' => '123-456-7912',
+        'email' => 'devarajan@example.com',
+        'photo' => 'url_to_photo_devarajan.jpg'
+    ],
+    [
+        'designation' => 'IE Student’s Chapter',
+        'name' => 'Dr. G. Sundaravadivel (Mech)',
+        'phone' => '123-456-7913',
+        'email' => 'sundaravadivel@example.com',
+        'photo' => 'url_to_photo_sundaravadivel.jpg'
+    ],
+    [
+        'designation' => 'Renewable Energy Club',
+        'name' => 'Dr. P.J. Suresh Babu (EEE)',
+        'phone' => '123-456-7914',
+        'email' => 'sureshbabu@example.com',
+        'photo' => 'url_to_photo_sureshbabu.jpg'
+    ],
+    [
+        'designation' => 'Grievance & Redressal Cell',
+        'name' => 'Dr. S. Ponsadai Lakshmi (S&H)',
+        'phone' => '123-456-7915',
+        'email' => 'ponsadai2@example.com',
+        'photo' => 'url_to_photo_ponsadai2.jpg'
+    ],
+    [
+        'designation' => 'Programmers Paradise Club',
+        'name' => 'Prof J. Noorul Ameen (CSE)',
+        'phone' => '123-456-7916',
+        'email' => 'noorul@example.com',
+        'photo' => 'url_to_photo_noorul.jpg'
+    ],
+    [
+        'designation' => 'Designers Domain Club',
+        'name' => 'Prof G. Arulselvan (CSE)',
+        'phone' => '123-456-7917',
+        'email' => 'arulselvan@example.com',
+        'photo' => 'url_to_photo_arulselvan.jpg'
+    ],
+    [
+        'designation' => 'Ladies Hostel Deputy Warden',
+        'name' => 'Ms. Sharmila Banu',
+        'phone' => '123-456-7918',
+        'email' => 'sharmila@example.com',
+        'photo' => 'url_to_photo_sharmila.jpg'
+    ],
+    [
+        'designation' => 'Gents Hostel Deputy Warden',
+        'name' => 'Mr. K. Kalaiselvan',
+        'phone' => '123-456-7919',
+        'email' => 'kalaiselvan@example.com',
+        'photo' => 'url_to_photo_kalaiselvan.jpg'
+    ],
+    [
+        'designation' => 'EDC',
+        'name' => 'Prof. S. Selvaganapathy (MCA)',
+        'phone' => '123-456-7920',
+        'email' => 'selvaganapathy@example.com',
+        'photo' => 'url_to_photo_selvaganapathy.jpg'
+    ],
+    [
+        'designation' => 'Training & Placement Cell',
+        'name' => 'Dr. S. Chendrasekar (CEO)',
+        'phone' => '123-456-7921',
+        'email' => 'chendrasekar2@example.com',
+        'photo' => 'url_to_photo_chendrasekar2.jpg'
+    ],
+    [
+        'designation' => 'Alumni Association',
+        'name' => 'Dr. V. Sivaramakrishan (MECH)',
+        'phone' => '123-456-7922',
+        'email' => 'sivaramakrishan@example.com',
+        'photo' => 'url_to_photo_sivaramakrishan.jpg'
+    ],
+    [
+        'designation' => 'Sports/Athletics',
+        'name' => 'Mr. D. Velavan (PED)',
+        'phone' => '123-456-7923',
+        'email' => 'velavan@example.com',
+        'photo' => 'url_to_photo_velavan.jpg'
+    ],
+    [
+        'designation' => 'NSS Programme',
+        'name' => 'Prof. V. Sivaramakrishnan (Mech)',
+        'phone' => '123-456-7924',
+        'email' => 'sivaramakrishnan2@example.com',
+        'photo' => 'url_to_photo_sivaramakrishnan2.jpg'
+    ],
+    [
+        'designation' => 'Youth Red Cross Society',
+        'name' => 'Prof. Naveen Antony (EEE)',
+        'phone' => '123-456-7925',
+        'email' => 'naveen@example.com',
+        'photo' => 'url_to_photo_naveen.jpg'
+    ],
+    [
+        'designation' => 'Citizen Consumer Club',
+        'name' => 'Dr. V. Sivaramakrishnan (Mech)',
+        'phone' => '123-456-7926',
+        'email' => 'sivaramakrishnan3@example.com',
+        'photo' => 'url_to_photo_sivaramakrishnan3.jpg'
+    ],
+    [
+        'designation' => 'Red Ribbon Club',
+        'name' => 'Dr. V. Sivaramakrishnan (Mech)',
+        'phone' => '123-456-7927',
+        'email' => 'sivaramakrishnan4@example.com',
+        'photo' => 'url_to_photo_sivaramakrishnan4.jpg'
+    ],
+    [
+        'designation' => 'Women Empowerment Cell',
+        'name' => 'Dr. A.R. Deepa (S&H)',
+        'phone' => '123-456-7928',
+        'email' => 'deepa@example.com',
+        'photo' => 'url_to_photo_deepa.jpg'
+    ],
+
+];
+
+            @endphp
 
             <div class="semister-fee__content mt-5">
                 <h5 class="rts-section-title">Decentralization in working and grievance redressal mechanism</h5>
@@ -143,215 +436,29 @@
                 <div class="rts-fee-chart">
 
                     <div class="rts-fee-chart__content" id="nav-tabContent">
-                        <div class="tab-pane fade active show" id="undergrade-1" role="tabpanel" aria-labelledby="undergrade-1-tab">
+                        <div class="tab-pane fade active show" id="undergrade-1" role="tabpanel">
                             <table class="table">
                                 <thead class="table-theme">
-                                   <tr>
-                                      <td>S.No</td>
-                                      <td>Name of the Member</td>
-                                      <td>Designation</td>
-                                   </tr>
+                                    <tr>
+                                        <td>S.No</td>
+                                        <td>Designation</td>
+                                        <td>Name of the Member</td>
+                                        <td>Photo</td>
+                                    </tr>
                                 </thead>
                                 <tbody>
+                                    @php $sNo = 1; @endphp
+                                    @foreach($members as $member)
                                     <tr>
-                                        <td>1</td>
-                                        <td>Academic Affairs</td>
-                                        <td>Dr. V. Mohan, Director (Academics)</td>
+                                        <td>{{ $sNo++ }}</td>
+                                        <td>{{ $member['designation'] }}</td>
+                                        <td>{{ $member['name'] }}<br>{{ $member['phone']}} | {{ $member['email']}}</td>
+                                        <td style="text-align: center !important;"><img style="width: 50%" src="{{ $member['photo']}}" alt="{{ $member['name'] }}" srcset=""></td>
                                     </tr>
-                                    <tr>
-                                        <td>2</td>
-                                        <td>Admission, DOTE</td>
-                                        <td>Prof. G. Hari Nariyanan (Mech)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>3</td>
-                                        <td>AU Affiliation & AICTE Approval</td>
-                                        <td>Dr. M. Chinnadurai (CSE)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>4</td>
-                                        <td>ISO MR</td>
-                                        <td>Dr. R. Karthi (MBA)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>5</td>
-                                        <td>NBA Accreditation & QIC Nodal Centre</td>
-                                        <td>Dr. M. Chinnadurai (CSE)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>6</td>
-                                        <td>Library Advisory Committee</td>
-                                        <td>Dr. B. Shanmugam (Lib)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>7</td>
-                                        <td>Disciplinary Committee</td>
-                                        <td>Prof. A. Rajesh (CSBS) / Prof. V.R. Sugumaran</td>
-                                    </tr>
-                                    <tr>
-                                        <td>8</td>
-                                        <td>Students Grievance Redressal</td>
-                                        <td>Dr. S. Ponsadai Lakshmi (S&H)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>9</td>
-                                        <td>R&D</td>
-                                        <td>Dr. S. Ramabalan (Principal)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>10</td>
-                                        <td>Exam Cell</td>
-                                        <td>Dr. B. Shanmugam (Lib)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>11</td>
-                                        <td>Press & Stationary Store</td>
-                                        <td>Dr. M. Chinnadurai (CSE)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>12</td>
-                                        <td>Events Manager</td>
-                                        <td>Mr. V. Gokulakrishanan</td>
-                                    </tr>
-                                    <tr>
-                                        <td>13</td>
-                                        <td>Public Relations & Media Coordination</td>
-                                        <td>Dr. P. Anandraj (CSBS)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>14</td>
-                                        <td>Maintenance Division</td>
-                                        <td>Mr. R. Ayyappan (ECE)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>15</td>
-                                        <td>Domain Mail</td>
-                                        <td>Dr. S.Palani Murugan (AIDS)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>16</td>
-                                        <td>Estate / Landscaping Maintenance</td>
-                                        <td>Mr. V. Senthilkumar</td>
-                                    </tr>
-                                    <tr>
-                                        <td>17</td>
-                                        <td>Website & Web Application</td>
-                                        <td>Dr. S. Praveen Kumar (CSE) & Mr. J.S Raghavan</td>
-                                    </tr>
-                                    <tr>
-                                        <td>18</td>
-                                        <td>Transport Facilities</td>
-                                        <td>Mr. K. Venkatesh</td>
-                                    </tr>
-                                    <tr>
-                                        <td>19</td>
-                                        <td>ISTE Staff & Student Chapters</td>
-                                        <td>Dr. S. Senthilkumar (ECE)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>20</td>
-                                        <td>IEEE Student’s Chapter</td>
-                                        <td>Prof. K. Gokulraj (EEE)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>21</td>
-                                        <td>CSI Student’s Chapter</td>
-                                        <td>Dr. K. Balasubramanian (CSE)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>22</td>
-                                        <td>ICTACT Coordinator</td>
-                                        <td>Dr. S. Chandrasekar (CEO)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>23</td>
-                                        <td>IETE Student’s Chapter</td>
-                                        <td>Dr. D. Devarajan (ECE)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>24</td>
-                                        <td>IE Student’s Chapter</td>
-                                        <td>Dr. G. Sundaravadivel (Mech)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>25</td>
-                                        <td>Renewable Energy Club</td>
-                                        <td>Dr. P.J. Suresh Babu (EEE)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>26</td>
-                                        <td>Grievance & Redressal Cell</td>
-                                        <td>Dr. S. Ponsadai Lakshmi (S&H)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>27</td>
-                                        <td>Programmers Paradise Club</td>
-                                        <td>Prof J. Noorul Ameen (CSE)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>28</td>
-                                        <td>Designers Domain Club</td>
-                                        <td>Prof G. Arulselvan (CSE)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>29</td>
-                                        <td>Ladies Hostel Deputy Warden</td>
-                                        <td>Ms. Sharmila Banu</td>
-                                    </tr>
-                                    <tr>
-                                        <td>30</td>
-                                        <td>Gents Hostel Deputy Warden</td>
-                                        <td>Mr. K. Kalaiselvan</td>
-                                    </tr>
-                                    <tr>
-                                        <td>31</td>
-                                        <td>EDC</td>
-                                        <td>Prof. S. Selvaganapathy (MCA)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>32</td>
-                                        <td>Training & Placement Cell</td>
-                                        <td>Dr. S. Chendrasekar (CEO)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>33</td>
-                                        <td>Alumni Association</td>
-                                        <td>Dr. V. Sivaramakrishan (MECH)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>34</td>
-                                        <td>Sports/Athletics</td>
-                                        <td>Mr. D. Velavan (PED)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>35</td>
-                                        <td>NSS Programme</td>
-                                        <td>Prof. V. Sivaramakrishnan (Mech)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>36</td>
-                                        <td>Youth Red Cross Society</td>
-                                        <td>Prof. Naveen Antony (EEE)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>37</td>
-                                        <td>Citizen Consumer Club</td>
-                                        <td>Dr. V. Sivaramakrishnan (Mech)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>38</td>
-                                        <td>Red Ribbon Club</td>
-                                        <td>Dr. V. Sivaramakrishnan (Mech)</td>
-                                    </tr>
-                                    <tr>
-                                        <td>39</td>
-                                        <td>Women Empowerment Cell</td>
-                                        <td>Dr. A.R. Deepa (S&H)</td>
-                                    </tr>
+                                    @endforeach
                                 </tbody>
-                             </table>
+                            </table>
                         </div>
-
                     </div>
                 </div>
             </div>
