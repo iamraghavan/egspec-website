@@ -6,7 +6,11 @@
 'value_3' => '',
 'page_title' => 'Adminstrative Organization' ])
 
-
+<style>
+    .semister-fee .rts-fee-chart__content .table tbody tr td{
+        text-align: left;
+    }
+</style>
 
 <!--====================  About us / Our Focus  ====================-->
 

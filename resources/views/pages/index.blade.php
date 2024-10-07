@@ -1,9 +1,107 @@
 @extends('layouts.app')
 @section('content')
 
+<style>
+    .rts-about-content .about-positioned-text h2 {
+        color: var(--rt-theme) !important;
+    }
+    .single-service > .content > p {
+        font-size: 2rem;
+
+    }
+</style>
+
 @include('components.home-slider')
 <x-scrolling-marquee :messages="$messages" />
 
+
+<div class="rts-service v_2">
+    <div class="row">
+        <div class="single-service-content">
+
+            <div class="single-service">
+                <div class="icon">
+                    <img src="assets/images/icon/university.svg" alt="uni logo">
+                </div>
+                <div class="content">
+                    <h5 class="service-title">NAAC</h5>
+                    <p>A++</p>
+                </div>
+            </div>
+
+            <div class="single-service">
+                <div class="icon">
+                    <img src="assets/images/icon/e-cap-big.svg" alt="uni logo">
+                </div>
+                <div class="content">
+                    <h5 class="service-title">Placement</h5>
+                    <p>1,50,000 +</p>
+                </div>
+            </div>
+
+            <div class="single-service">
+                <div class="icon">
+                    <img src="assets/images/icon/e-cap-big.svg" alt="uni logo">
+                </div>
+                <div class="content">
+                    <h5 class="service-title">2023 - 2024 Placement</h5>
+                    <p>660+</p>
+                </div>
+            </div>
+
+            <div class="single-service">
+                <div class="icon">
+                    <img src="assets/images/icon/undergraduate.svg" alt="uni logo">
+                </div>
+                <div class="content">
+                    <h5 class="service-title">Happy Students </h5>
+                    <p>2,00,000 +</p>
+                </div>
+            </div>
+
+            <div class="single-service">
+                <div class="icon">
+                    <img src="assets/images/icon/globe.svg" alt="uni logo">
+                </div>
+                <div class="content">
+                    <h5 class="service-title">NBA </h5>
+                    <p>6 UG Programmes</p>
+                </div>
+            </div>
+
+
+            <div class="single-service">
+                <div class="icon">
+                    <img src="assets/images/icon/globe.svg" alt="uni logo">
+                </div>
+                <div class="content">
+                    <h5 class="service-title">Research Papers </h5>
+                    <p>1000+</p>
+                </div>
+            </div>
+
+            <div class="single-service">
+                <div class="icon">
+                    <img src="assets/images/icon/globe.svg" alt="uni logo">
+                </div>
+                <div class="content">
+                    <h5 class="service-title">NIRF Ranking </h5>
+                    <p>201-300</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <div class="icon">
+                    <img src="assets/images/icon/globe.svg" alt="uni logo">
+                </div>
+                <div class="content">
+                    <h5 class="service-title">No of Faculty</h5>
+                    <p>172+</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
 
 @include('components.logo-slider')
 
