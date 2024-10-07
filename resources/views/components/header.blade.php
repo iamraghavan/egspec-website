@@ -66,7 +66,7 @@
                     <a href="{{ url('/') }}" class="logo-area">
                         <picture>
                             <!-- For desktop and big screens -->
-                            <source srcset="{{ asset('/assets/images/logo_tran_1.webp') }}" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="{{ asset('/assets/images/egs_logo.png') }}" media="(min-width: 768px)" type="image/png">
                             <!-- For mobile screens -->
                             <img src="{{ asset('/assets/images/logo_tran.svg') }}" alt="logo" class="logo">
                         </picture>
