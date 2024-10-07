@@ -87,19 +87,20 @@
                                 </ul>
                             </div>
 
-                            <h6 class="heading-title">Works Plan & Implementation</h6>
+                            <h6 class="heading-title">IQAC Functions</h6>
                             <div class="program-menu">
                                 <ul class="list-unstyled">
-                                    <li><a href="@blob('iqac/committe-members/2024/egspec-iqac-functions.pdf')"><span><i class="fa-light fa-arrow-right"></i></span>Meeting Minutes</a></li>
+                                    <li><a href="@blob('iqac/committe-members/2024/egspec-iqac-functions.pdf')"><span><i class="fa-light fa-arrow-right"></i></span>IQAC Functions
+                                    </a></li>
 
 
                                 </ul>
                             </div>
 
-                            <h6 class="heading-title">IQAC Meeting Minutes</h6>
+                            <h6 class="heading-title">Works Plan & Implementation</h6>
                             <div class="program-menu">
                                 <ul class="list-unstyled">
-                                    <li><a href="@blog('iqac/committe-members/2024/egspec-iqac-worksplan-for-implementation.pdf')"><span><i class="fa-light fa-arrow-right"></i></span>Meeting Minutes</a></li>
+                                    <li><a href="@blog('iqac/committe-members/2024/egspec-iqac-worksplan-for-implementation.pdf')"><span><i class="fa-light fa-arrow-right"></i></span>IQAC Works Plan & Implementation</a></li>
 
 
                                 </ul>

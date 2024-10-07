@@ -220,8 +220,8 @@
                                     </tr>
                                     <tr>
                                         <td>14</td>
-                                        <td>Intercom/P.A. Systems/Projectors/OHPs</td>
-                                        <td>Mr. R. Ayyapa (ECE)</td>
+                                        <td>Maintenance Division</td>
+                                        <td>Mr. R. Ayyappan (ECE)</td>
                                     </tr>
                                     <tr>
                                         <td>15</td>
@@ -230,7 +230,7 @@
                                     </tr>
                                     <tr>
                                         <td>16</td>
-                                        <td>Estate / Building Maintenance / Landscaping</td>
+                                        <td>Estate / Landscaping Maintenance</td>
                                         <td>Mr. V. Senthilkumar</td>
                                     </tr>
                                     <tr>
