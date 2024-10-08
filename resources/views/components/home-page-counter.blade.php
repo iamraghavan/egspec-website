@@ -30,7 +30,7 @@
             <div class="single-service">
                 <div class="content">
                     <h5 class="service-title">NBA (6 UG Programs)</h5>
-                    <p style="font-size: 1rem; margin: 0.5rem 0; text-align: center; line-height: 1.4; max-width: 100%; padding: 0 1rem;">
+                    <p style="font-size: 1rem; line-height: 1.4; max-width: 100%; ">
                         Civil, CSE, ECE, EEE, Mech, IT
                     </p>
                 </div>
