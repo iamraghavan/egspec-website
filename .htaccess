@@ -4,40 +4,11 @@
     # Allow access to public directory
     RewriteRule ^$ public/ [L]
     RewriteRule (.*) public/$1 [L]
-
-    # Prevent access to sensitive files
-    RewriteRule ^\.htaccess - [F]
-    RewriteRule ^\.env - [F]
-    RewriteRule ^\.git - [F]
 </IfModule>
 
-# Security Headers
-<IfModule mod_headers.c>
-    Header set X-Content-Type-Options "nosniff"
-    Header set X-XSS-Protection "1; mode=block"
-    Header set X-Frame-Options "DENY"
-    Header set Content-Security-Policy "default-src 'self'"
-</IfModule>
-
-# Disable directory browsing
-Options -Indexes
-
-# Prevent hotlinking of images
-RewriteCond %{HTTP_REFERER} !^$
-RewriteCond %{HTTP_REFERER} !^https?://(www\.)?egspec.org [NC]
-RewriteRule \.(jpg|jpeg|png|gif)$ - [F]
-
+# php -- BEGIN cPanel-generated handler, do not edit
 # Set the “ea-php83” package as the default “PHP” programming language.
 <IfModule mime_module>
-    AddHandler application/x-httpd-ea-php83 .php .php8 .phtml
+  AddHandler application/x-httpd-ea-php83 .php .php8 .phtml
 </IfModule>
-
-# Disable server signature
-ServerSignature Off
-
-# Disable TRACE and TRACK methods
-RewriteEngine On
-RewriteCond %{REQUEST_METHOD} ^(TRACE|TRACK)
-RewriteRule .* - [F]
-
 # php -- END cPanel-generated handler, do not edit
