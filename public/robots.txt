@@ -1,2 +1,34 @@
+# Allow all user agents
 User-agent: *
+Disallow: /private/           # Block access to private directory
+Disallow: /tmp/               # Block access to temporary files
+Disallow: /cache/             # Block access to cached files
+Disallow: /wp-admin/          # Block access to WordPress admin (if applicable)
+Disallow: /login              # Block access to login page
+Disallow: /checkout           # Block access to checkout page (for e-commerce)
+Disallow: /*.php$             # Optionally block PHP files from being crawled (modify as needed)
+
+# Allow specific bots to crawl everything
+User-agent: Googlebot
 Disallow:
+
+User-agent: Bingbot
+Disallow:
+
+User-agent: Yahoo! Slurp
+Disallow:
+
+User-agent: Baiduspider
+Disallow:
+
+User-agent: Yandex
+Disallow:
+
+User-agent: DuckDuckGo
+Disallow:
+
+User-agent: ia_archiver
+Disallow:
+
+# Sitemap declaration
+Sitemap: https://www.egspec.org/sitemap.xml

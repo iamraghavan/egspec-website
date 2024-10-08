@@ -1,3 +1,20 @@
+<style>
+    @media (max-width: 768px) {
+
+/* Hide the side images and other elements on mobile screens */
+.header-side-image {
+    display: none !important;
+}
+
+.custom-footer-widget > s,
+.header-right-logos,
+.hide-on-mobile {
+    display: none !important;
+}
+}
+
+</style>
+
 <header id="rt-header" class="header-one header--sticky">
     <!-- Top Header -->
     <div class="header-top-one-wrapper rt-primary-bg hide-on-mobile">
@@ -60,9 +77,25 @@
 
     <!-- Middle Header -->
     <div class="header-middle-wrapper my-3 py-2">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 d-flex align-items-center">
+
+
+
+
+        <div class="container-fluid">
+            <div class="row align-items-center justify-content-between">
+
+                <div class="col-lg-2 d-flex align-items-center">
+                    <picture>
+                        <img style="
+                        width: 60%;
+                        margin-left: 5rem;
+                        height: auto;
+                    " src="https://images.squarespace-cdn.com/content/v1/585d2dd6f5e2319c203c74a4/1629428059428-YLV1OHRHU63TM3FQZQVJ/IMG-20210812-WA0016.jpg" alt="Left Image" class="header-side-image">
+                    </picture>
+                </div>
+
+
+                <div class="col-lg-4 d-flex align-items-center">
                     <a href="{{ url('/') }}" class="logo-area">
                         <picture>
                             <!-- For desktop and big screens -->
@@ -79,7 +112,13 @@
                         </picture>
                     </div>
                 </div>
-                <div class="col-lg-6 text-right">
+
+
+
+
+
+
+                <div class="col-lg-4 text-right">
                     <div class="header-right-logos d-flex justify-content-end">
                         <picture>
                             <source srcset="https://www.citchennai.edu.in/wp-content/uploads/2023/12/nba-logo.svg" type="image/svg">
@@ -98,14 +137,27 @@
                             <img src="https://upload.wikimedia.org/wikipedia/en/1/1d/NAAC_LOGO.png" alt="Logo 3" class="square-logo">
                         </picture>
                         <picture>
-                            <source srcset="https://upload.wikimedia.org/wikipedia/en/5/52/National_Institutional_Ranking_Framework_logo.png" type="image/png">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/5/52/National_Institutional_Ranking_Framework_logo.png" alt="Logo 4" class="square-logo">
+                            <source srcset="{{asset('assets/nirf.webp')}}" type="image/png">
+                            <img src="{{asset('assets/nirf.webp')}}" alt="Logo 4" class="square-logo">
+                        </picture>
+                    </div>
+                </div>
+                <div class="col-lg-2 text-right">
+                    <div class="header-right-logos d-flex justify-content-end">
+                        <picture>
+                            <img style="
+                            width: 60%;
+                            margin-right: 5rem;
+                            height: auto;
+                        " src="{{asset('assets/counselling_code.webp')}}" alt="Right Image" class="header-side-image">
                         </picture>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
+
 
 
     <!-- Separator Line -->
