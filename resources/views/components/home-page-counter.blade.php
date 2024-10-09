@@ -29,7 +29,7 @@
             </div>
             <div class="single-service">
                 <div class="content">
-                    <h5 class="service-title">NBA (6 UG Programs) Tire-I</h5>
+                    <h5 class="service-title">NBA (6 UG Programs) Tier-I</h5>
                     <p style="font-size: 1rem; line-height: 1.4; max-width: 100%; ">
                         Civil, CSE, ECE, EEE, Mech, IT
                     </p>
@@ -54,8 +54,8 @@
             </div>
             <div class="single-service">
                 <div class="content">
-                    <h5 class="service-title">No of Faculty</h5>
-                    <p class="counter" data-target="172">0</p>
+                    <h5 class="service-title">No of Industrial Relationship</h5>
+                    <p class="counter" data-target="150">0</p>
                 </div>
             </div>
         </div>
