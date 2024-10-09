@@ -70,6 +70,13 @@
                                                     </tr>
                                                 </thead>
                                                 <tbody>
+
+                                                    <tr>
+                                                        <td><a href="https://egspec.blob.core.windows.net/egspec-assets/advisory-board/2023-2024-budget-proposal.pdf" target="_blank" type="application/pdf" rel="alternate" media='print'>
+                                                            2023-2024 Budget Proposal
+                                                        </a></td>
+                                                        <td><i class="fa fa-file-pdf"></i> / PDF File</td>
+                                                    </tr>
                                                     <tr>
                                                         <td><a href="https://egspec.blob.core.windows.net/egspec-assets/advisory-board/2022-2023-budget-proposal.pdf" target="_blank" type="application/pdf" rel="alternate" media='print'>
                                                             2022-2023 Budget Proposal
@@ -94,6 +101,7 @@
                                                         </a></td>
                                                         <td><i class="fa fa-file-pdf"></i> / PDF File</td>
                                                     </tr>
+
                                                 </tbody>
                                             </table>
 

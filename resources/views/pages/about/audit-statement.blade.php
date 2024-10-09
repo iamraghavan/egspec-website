@@ -60,6 +60,16 @@
 
 
 
+                                            <tr>
+                                                <td><a href="@blob('/audit-statement/audit-statement-22-23.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'>FY 2022-2023</a></td>
+                                                <td><i class="fa fa-file-pdf"></i> / PDF File</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><a href="@blob('/audit-statement/audit-statement-23-24.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'>FY 2023-2024</a></td>
+                                                <td><i class="fa fa-file-pdf"></i> / PDF File</td>
+                                            </tr>
+
 
 
                                         </tbody>
