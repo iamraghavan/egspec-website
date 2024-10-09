@@ -23,8 +23,10 @@
                 <div class="col-lg-12">
                     <div class="header-top-one">
                         <div class="left-information">
+
                             <a href="mailto:principal@egspec.org" class="email"><i class="fa-light fa-envelope"></i>principal@egspec.org</a>
-                            <a href="tel:04365251114" class="email"><i class="fa-light fa-phone"></i>04365 251 114</a>
+                            <a href="tel:7373 067 032" class="email"><i class="fa-light fa-phone"></i>7373 067 032 | 8680 954 537</a>
+
                         </div>
                         <!-- right area -->
                         <div class="right-information">
