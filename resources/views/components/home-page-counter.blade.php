@@ -13,16 +13,19 @@
             </div>
             <div class="single-service">
                 <div class="content">
-                    <h5 class="service-title">Placement</h5>
-                    <p class="counter" data-target="25000">0</p>
+                    <h5 class="service-title">NAAC</h5>
+                    <p style="font-size: 1rem; line-height: 1.4; max-width: 100%; ">
+                        A++
+                    </p>
                 </div>
             </div>
             <div class="single-service">
                 <div class="content">
-                    <h5 class="service-title">Patent</h5>
-                    <p class="counter" data-target="45">0</p>
+                    <h5 class="service-title">Placement</h5>
+                    <p class="counter" data-target="25000">0</p>
                 </div>
             </div>
+
             <div class="single-service">
                 <div class="content">
                     <h5 class="service-title">Happy Students</h5>
