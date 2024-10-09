@@ -19,7 +19,7 @@
             </div>
             <div class="single-service">
                 <div class="content">
-                    <h5 class="service-title">Patient's</h5>
+                    <h5 class="service-title">Patent</h5>
                     <p class="counter" data-target="45">0</p>
                 </div>
             </div>
