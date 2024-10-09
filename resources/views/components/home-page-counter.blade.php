@@ -5,8 +5,10 @@
         <div class="single-service-content">
             <div class="single-service">
                 <div class="content">
-                    <h5 class="service-title">NAAC</h5>
-                    <p>A++</p>
+                    <h5 class="service-title">Programs</h5>
+                    <p style="font-size: 1rem; line-height: 1.4; max-width: 100%; ">
+                        UG - 09, PG - 07, Ph.D - 05
+                    </p>
                 </div>
             </div>
             <div class="single-service">
@@ -17,8 +19,8 @@
             </div>
             <div class="single-service">
                 <div class="content">
-                    <h5 class="service-title">2023 - 2024 Placement</h5>
-                    <p class="counter" data-target="660">0</p>
+                    <h5 class="service-title">Patient's</h5>
+                    <p class="counter" data-target="45">0</p>
                 </div>
             </div>
             <div class="single-service">
