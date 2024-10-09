@@ -32,7 +32,7 @@
 
                                         <tbody>
                                             <tr>
-                                                <td><a href="@blob('/hr-policy/hr-policy-c.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'>HR Policy HandBook</a></td>
+                                                <td><a href="@blob('/hr-policy/hr-policy_c.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'>HR Policy HandBook</a></td>
                                                 <td><i class="fa fa-file-pdf"></i> / PDF File</td>
                                             </tr>
 

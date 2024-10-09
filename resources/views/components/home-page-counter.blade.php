@@ -12,7 +12,7 @@
             <div class="single-service">
                 <div class="content">
                     <h5 class="service-title">Placement</h5>
-                    <p class="counter" data-target="150000">0</p>
+                    <p class="counter" data-target="25000">0</p>
                 </div>
             </div>
             <div class="single-service">
@@ -24,12 +24,12 @@
             <div class="single-service">
                 <div class="content">
                     <h5 class="service-title">Happy Students</h5>
-                    <p class="counter" data-target="200000">0</p>
+                    <p class="counter" data-target="50000">0</p>
                 </div>
             </div>
             <div class="single-service">
                 <div class="content">
-                    <h5 class="service-title">NBA (6 UG Programs)</h5>
+                    <h5 class="service-title">NBA (6 UG Programs) Tire-I</h5>
                     <p style="font-size: 1rem; line-height: 1.4; max-width: 100%; ">
                         Civil, CSE, ECE, EEE, Mech, IT
                     </p>
@@ -44,7 +44,7 @@
             </div>
             <div class="single-service">
                 <div class="content">
-                    <h5 class="service-title">NIRF Ranking</h5>
+                    <h5 class="service-title">NIRF Rank Band</h5>
                     <div style="display: inline-flex;">
                         <p class="counter" data-target="201">201 </p>
                         <p> - </p>
