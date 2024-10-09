@@ -4,7 +4,7 @@
 @include('components.breadcrumb', ['value_1' => 'Academics',
 'value_2' => 'Departments',
 'value_3' => 'Postgraduate',
-'page_title' => 'Master\'s of Business Administration' ])
+'page_title' => 'Master\'s of Computer Applications' ])
 
 
 
