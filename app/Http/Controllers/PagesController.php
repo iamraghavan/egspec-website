@@ -793,13 +793,7 @@ class PagesController extends Controller
         JsonLd::addValue('@context', 'https://schema.org');
         JsonLd::addValue('@type', 'SportsOrganization');
         JsonLd::addValue('url', Url()->current());
-        JsonLd::addValue('athletes', array_map(function ($athlete) {
-            return [
-                '@type' => 'Person',
-                'name' => $athlete->name,
-                'award' => $athlete->achievement,
-            ];
-        }, $A3->toArray()));
+
 
         return view('pages.activities.extra-curricular.sports', ['sportsData' => $sportsData, 'A3' => $A3]);
     }
