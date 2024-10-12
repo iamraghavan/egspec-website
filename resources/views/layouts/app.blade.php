@@ -444,7 +444,7 @@
 </script>
 
 
-
+<x-campus-weather/>
     @include('components.footer')
 
 
