@@ -154,6 +154,8 @@ $footerLinks = [
                     <a href="{{route('privacy_policy')}}">Privacy Policy</a> |
                     <a href="{{route('terms_conditions')}}">Terms &amp; Conditions</a> |
                     <a href="{{route('contact_website_admin')}}">Contact Web Admin</a>
+                    <br>
+                    <a href=""> Website last updated on: {{ getLastCommitDate() }} </a>
 
                 </p>
             </div>

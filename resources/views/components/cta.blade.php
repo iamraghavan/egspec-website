@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="rts-newsletter-box rt-relative"
-                    style="background-image: url(@blob('cat_img.webp'));">
+                    style="background-color: #262626 !important">
                     <div class="rts-newsletter-box-content">
                         <h4 class="newsletter-title fs-25 rt-semi rt-white w-800 mb-0" style="
     font-size: 2.5rem;
@@ -24,3 +24,9 @@
         </div>
     </div>
 </div>
+
+<style>
+    .rts-newsletter-box::before {
+        background: #262626 !important;
+    }
+</style>

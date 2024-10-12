@@ -56,6 +56,7 @@ return array(
     'App\\Providers\\AppServiceProvider' => $baseDir . '/app/Providers/AppServiceProvider.php',
     'App\\View\\Components\\AccordionLinks' => $baseDir . '/app/View/Components/AccordionLinks.php',
     'App\\View\\Components\\Breadcrumb' => $baseDir . '/app/View/Components/Breadcrumb.php',
+    'App\\View\\Components\\CampusWeather' => $baseDir . '/app/View/Components/CampusWeather.php',
     'App\\View\\Components\\Confetti' => $baseDir . '/app/View/Components/Confetti.php',
     'App\\View\\Components\\DeptContactInfo' => $baseDir . '/app/View/Components/DeptContactInfo.php',
     'App\\View\\Components\\HomePageCounter' => $baseDir . '/app/View/Components/HomePageCounter.php',

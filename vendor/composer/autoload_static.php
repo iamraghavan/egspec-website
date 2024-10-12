@@ -43,6 +43,7 @@ class ComposerStaticInita559c24ec90642188d6aabb8604f87a0
         'a1cfe24d14977df6878b9bf804af2d1c' => __DIR__ . '/..' . '/nunomaduro/collision/src/Adapters/Phpunit/Autoload.php',
         'ec07570ca5a812141189b1fa81503674' => __DIR__ . '/..' . '/phpunit/phpunit/src/Framework/Assert/Functions.php',
         '320163ac6b93aebe3dc25b60a0533d56' => __DIR__ . '/..' . '/spatie/laravel-ignition/src/helpers.php',
+        'b4e3f29b106af37a2bb239f73cdf68c7' => __DIR__ . '/../..' . '/app/helpers.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -756,6 +757,7 @@ class ComposerStaticInita559c24ec90642188d6aabb8604f87a0
         'App\\Providers\\AppServiceProvider' => __DIR__ . '/../..' . '/app/Providers/AppServiceProvider.php',
         'App\\View\\Components\\AccordionLinks' => __DIR__ . '/../..' . '/app/View/Components/AccordionLinks.php',
         'App\\View\\Components\\Breadcrumb' => __DIR__ . '/../..' . '/app/View/Components/Breadcrumb.php',
+        'App\\View\\Components\\CampusWeather' => __DIR__ . '/../..' . '/app/View/Components/CampusWeather.php',
         'App\\View\\Components\\Confetti' => __DIR__ . '/../..' . '/app/View/Components/Confetti.php',
         'App\\View\\Components\\DeptContactInfo' => __DIR__ . '/../..' . '/app/View/Components/DeptContactInfo.php',
         'App\\View\\Components\\HomePageCounter' => __DIR__ . '/../..' . '/app/View/Components/HomePageCounter.php',
