@@ -1,29 +1,32 @@
-
-
-<div class="rts-gallery section-bg rts-section-padding">
-    <div class="container all-program-category">
+<div class="rts-campus-section rts-section-padding">
+    <div class="container">
         <div class="row">
-            @foreach($cutouts as $cutout)
+            <div class="rts-section rt-center mb--35">
+                <h3 class="rts-section-title animated fadeIn">Latest News</h3>
+            </div>
+        </div>
+        <div class="row g-5">
+            <!-- Iterate over the latest 3 cutouts -->
+            @foreach($cutouts->take(3) as $cutout)
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="single-item">
+                        <div class="single-item__content">
+                            <div class="single-item__image">
 
-
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="single-cat-item">
-                        <div class="cat-thumb image-container">
-                            <img src="{{ $cutout->is_firebase ? $cutout->image_path : asset('assets/storage/' . $cutout->image_path) }}">
-                            <a href="{{ $cutout->is_firebase ? $cutout->image_path : asset('assets/storage/' . $cutout->image_path) }}" class="cat-link-btn">{{ $cutout->department }}</a>
-
-                        </div>
-
-                        <div class="cat-meta">
-                            <div class="cat-title">
-                                <a href="program-single.html">23/01/2004</a>
-                                <a href="program-single.html">Dinamalar</a>
+                                <img src="{{ $cutout->is_firebase ? $cutout->image_path : asset('assets/storage/' . $cutout->image_path) }}" alt="{{ $loop->iteration }} \ item-image">
                             </div>
-
+                            <div class="single-item__meta">
+                                <h5 class="item-title"><a href="{{ $cutout->is_firebase ? $cutout->image_path : asset('assets/storage/' . $cutout->image_path) }}">{{$cutout->newspaper_name}}</a></h5>
+                                <p class="item-description">{{$cutout->description}} </p>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- single item end -->
             @endforeach
+        </div>
+        <div class="rts-load-more-btn rt-center mt--60">
+            <a href="#" class="rts-theme-btn primary primary lh-100">View More</a>
         </div>
     </div>
 </div>

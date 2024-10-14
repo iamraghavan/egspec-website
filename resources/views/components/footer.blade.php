@@ -145,7 +145,7 @@ $footerLinks = [
                 <p style="font-weight: 600;" class="--p-xs">Copyright © 2006 - {{ date('Y') }} All
                     Rights Reserved by
                     <a href="https://egspgroup.in/" target="_blank">EGS Pillay Group of Institutions</a> <br> Developed By
-                    <a href=""> Raghavan Jeeva </a>
+                    <a href="https://jsraghavan.me/" target="_blank" @readonly(true) referrerpolicy="no-referrer"> Raghavan Jeeva </a>
                 </p>
             </div>
             <div class="col-md-6 text-md-end">
@@ -155,7 +155,7 @@ $footerLinks = [
                     <a href="{{route('terms_conditions')}}">Terms &amp; Conditions</a> |
                     <a href="{{route('contact_website_admin')}}">Contact Web Admin</a>
                     <br>
-                    <a href=""> Website last updated on: {{ getLastCommitDate() }} </a>
+                    <a href=""> Website last updated on: <span style="color: #a19f9d;"> {{ getLastCommitDate() }} </span></a>
 
                 </p>
             </div>

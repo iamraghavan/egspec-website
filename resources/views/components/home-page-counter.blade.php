@@ -6,30 +6,30 @@
             <div class="single-service">
                 <div class="content">
                     <h5 class="service-title">Programs</h5>
-                    <p style="font-size: 1rem; line-height: 1.4; max-width: 100%; ">
+                    {{-- <p style="font-size: 1rem; line-height: 1.4; max-width: 100%; ">
                         UG - 09, PG - 07, Ph.D - 05
-                    </p>
+                    </p> --}}
+                    <h5 class="title text-white"> UG - <span class="counter animated fadeInDownBig">09</span>, PG - <span class="counter animated fadeInDownBig"> 07</span>, Ph.D - <span class="counter animated fadeInDownBig">05</span> </h5>
                 </div>
             </div>
             <div class="single-service">
                 <div class="content">
                     <h5 class="service-title">NAAC</h5>
-                    <p style="font-size: 1rem; line-height: 1.4; max-width: 100%; ">
-                        A++
-                    </p>
+                    <h5 class="title text-white">A++ </h5>
                 </div>
             </div>
             <div class="single-service">
                 <div class="content">
                     <h5 class="service-title">Placement</h5>
-                    <p class="counter" data-target="25000">0</p>
+                    {{-- <p class="counter" data-target="25000">0</p> --}}
+                    <h5 class="title text-white"><span class="counter animated fadeInDownBig">25000</span> + </h5>
                 </div>
             </div>
 
             <div class="single-service">
                 <div class="content">
                     <h5 class="service-title">Happy Students</h5>
-                    <p class="counter" data-target="50000">0</p>
+                    <h5 class="title text-white"><span class="counter animated fadeInDownBig">50000</span> + </h5>
                 </div>
             </div>
             <div class="single-service">
@@ -44,57 +44,28 @@
             <div class="single-service">
                 <div class="content">
                     <h5 class="service-title">Research Papers</h5>
-                    <p class="counter" data-target="1000">0</p>
+                    <h5 class="title text-white"><span class="counter animated fadeInDownBig">1000</span> + </h5>
                 </div>
             </div>
             <div class="single-service">
                 <div class="content">
                     <h5 class="service-title">NIRF Rank Band</h5>
                     <div style="display: inline-flex;">
-                        <p class="counter" data-target="201">201 </p>
+                        {{-- <p class="counter" data-target="201">201 </p>
                         <p> - </p>
-                        <p class="counter" data-target="300"></p>
+                        <p class="counter" data-target="300"></p> --}}
+                        <h5 class="title text-white"><span class="counter animated fadeInDownBig">201</span> - <span class="counter animated fadeInDownBig">300</span></h5>
                     </div>
                 </div>
             </div>
             <div class="single-service">
                 <div class="content">
                     <h5 class="service-title">No of Industrial Relationship</h5>
-                    <p class="counter" data-target="150">0</p>
+                    <h5 class="title text-white"><span class="counter animated fadeInDownBig">150</span> + </h5>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const counters = document.querySelectorAll('.counter');
 
-        const updateCounter = (counter) => {
-            try {
-                const target = +counter.getAttribute('data-target');
-                let count = 0;
-                const speed = 1000; // Adjust speed as needed
-
-                const increment = Math.ceil(target / speed);
-
-                const updateCount = () => {
-                    count = Math.min(count + increment, target);
-                    counter.innerText = count;
-
-                    if (count < target) {
-                        setTimeout(updateCount, 1);
-                    }
-                };
-
-                updateCount();
-            } catch (error) {
-                console.error('Error updating counter:', error);
-                counter.innerText = 'Error loading data';
-            }
-        };
-
-        counters.forEach(counter => updateCounter(counter));
-    });
-</script>

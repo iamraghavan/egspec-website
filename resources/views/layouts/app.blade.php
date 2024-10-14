@@ -380,6 +380,8 @@
     <!-- custom style css -->
     <link rel="stylesheet" href="{{ asset("/assets/css/style.css") }}">
 
+    {{-- <link rel="stylesheet" href="https://html.themewant.com/studyhub/assets/css/style.css"> --}}
+
 
 
 

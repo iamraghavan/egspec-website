@@ -9,7 +9,14 @@ class NewspaperCutout extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['image_path', 'department', 'uploaded_by'];
+    protected $fillable = [
+        'image_path',
+        'department',
+        'uploaded_by',
+        'newspaper_name',
+        'description',
+        'date_of_publish'
+    ];
 
     // Define the relationship to the user who uploaded the cutout
     public function user()

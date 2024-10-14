@@ -84,32 +84,37 @@ class CampusWeather extends Component
     /**
      * Map the weather condition to a FontAwesome icon class.
      */
+    /**
+     * Map the weather condition to a FontAwesome icon class based on WeatherAPI codes.
+     */
     protected function getWeatherIconClass(string $condition, bool $isDaytime): string
     {
-        return match (strtolower($condition)) {
+        $condition = strtolower($condition);
+
+        return match ($condition) {
             'sunny', 'clear' => $isDaytime ? 'wi wi-day-sunny' : 'wi wi-night-clear',
-            'partly cloudy' => $isDaytime ? 'wi wi-day-cloudy' : 'wi wi-night-alt-cloudy',
+            'partly cloudy' => $isDaytime ? 'wi wi-day-cloudy' : 'wi wi-night-alt-partly-cloudy',
             'cloudy' => 'wi wi-cloudy',
             'overcast' => 'wi wi-cloud',
-            'patchy rain nearby' => $isDaytime ? 'wi wi-day-showers' : 'wi wi-night-alt-showers',
-            'mist', 'fog', 'freezing fog' => $isDaytime ? 'wi wi-day-fog' : 'wi wi-night-fog',
-            'patchy rain possible', 'light drizzle', 'patchy light drizzle' => $isDaytime ? 'wi wi-day-showers' : 'wi wi-night-alt-showers',
+            'patchy rain nearby', 'patchy rain possible', 'light rain shower', 'light showers' => $isDaytime ? 'wi wi-day-showers' : 'wi wi-night-alt-showers',
             'light rain', 'patchy light rain' => $isDaytime ? 'wi wi-day-rain' : 'wi wi-night-alt-rain',
             'moderate rain', 'moderate rain at times' => $isDaytime ? 'wi wi-day-rain-mix' : 'wi wi-night-alt-rain-mix',
-            'heavy rain', 'heavy rain at times' => $isDaytime ? 'wi wi-day-rain-wind' : 'wi wi-night-alt-rain-wind',
-            'thundery outbreaks possible', 'patchy light rain with thunder', 'moderate or heavy rain with thunder' => $isDaytime ? 'wi wi-day-thunderstorm' : 'wi wi-night-alt-thunderstorm',
-            'snow', 'patchy light snow', 'light snow', 'patchy moderate snow', 'moderate snow' => $isDaytime ? 'wi wi-day-snow' : 'wi wi-night-alt-snow',
-            'patchy heavy snow', 'heavy snow', 'blizzard' => $isDaytime ? 'wi wi-day-snow-wind' : 'wi wi-night-alt-snow-wind',
+            'heavy rain', 'heavy rain at times', 'torrential rain shower' => $isDaytime ? 'wi wi-day-rain-wind' : 'wi wi-night-alt-rain-wind',
+            'thunderstorm', 'thundery outbreaks possible', 'patchy light rain with thunder', 'moderate or heavy rain with thunder' => $isDaytime ? 'wi wi-day-thunderstorm' : 'wi wi-night-alt-thunderstorm',
+            'mist', 'fog', 'freezing fog' => $isDaytime ? 'wi wi-day-fog' : 'wi wi-night-fog',
+            'snow', 'light snow', 'patchy snow possible', 'moderate snow', 'patchy heavy snow' => $isDaytime ? 'wi wi-day-snow' : 'wi wi-night-alt-snow',
+            'blowing snow', 'blizzard' => $isDaytime ? 'wi wi-day-snow-wind' : 'wi wi-night-alt-snow-wind',
             'ice pellets', 'light showers of ice pellets', 'moderate or heavy showers of ice pellets' => $isDaytime ? 'wi wi-day-hail' : 'wi wi-night-alt-hail',
-            'light sleet', 'moderate or heavy sleet', 'light sleet showers', 'moderate or heavy sleet showers' => $isDaytime ? 'wi wi-day-sleet' : 'wi wi-night-alt-sleet',
-            'torrential rain shower' => $isDaytime ? 'wi wi-day-rain-wind' : 'wi wi-night-alt-rain-wind',
-            'light freezing rain', 'moderate or heavy freezing rain' => 'wi wi-rain-mix',
-            'light snow showers', 'moderate or heavy snow showers' => $isDaytime ? 'wi wi-day-snow-thunderstorm' : 'wi wi-night-alt-snow-thunderstorm',
-            'patchy snow possible' => $isDaytime ? 'wi wi-day-snow' : 'wi wi-night-alt-snow',
-            'blowing snow' => $isDaytime ? 'wi wi-day-snow-wind' : 'wi wi-night-alt-snow-wind',
-            default => 'wi wi-na',  // Default icon if no match is found
+            'sleet', 'light sleet', 'moderate or heavy sleet', 'light sleet showers' => $isDaytime ? 'wi wi-day-sleet' : 'wi wi-night-alt-sleet',
+            'haze' => $isDaytime ? 'wi wi-day-haze' : 'wi wi-night-fog',
+            'smoke' => 'wi wi-smoke',
+            'dust' => 'wi wi-dust',
+            'sandstorm' => 'wi wi-sandstorm',
+            default => 'wi wi-na', // Default icon if no match is found
         };
     }
+
+
 
     /**
      * Get the view / contents that represent the component.
