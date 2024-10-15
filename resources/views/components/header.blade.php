@@ -119,30 +119,31 @@
                     <div class="header-right-logos d-flex justify-content-end">
                         <picture>
                             <source srcset="https://www.citchennai.edu.in/wp-content/uploads/2023/12/nba-logo.svg" type="image/svg">
-                            <img src="https://www.citchennai.edu.in/wp-content/uploads/2023/12/nba-logo.svg" alt="Logo 1" class="square-logo">
+                            <img src="https://www.citchennai.edu.in/wp-content/uploads/2023/12/nba-logo.svg" alt="Logo 1" class="square-logo" loading="lazy">
                         </picture>
                         <picture>
                             <source srcset="https://upload.wikimedia.org/wikipedia/en/e/eb/All_India_Council_for_Technical_Education_logo.png" type="image/png">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/All_India_Council_for_Technical_Education_logo.png" alt="Logo 1" class="square-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/e/eb/All_India_Council_for_Technical_Education_logo.png" alt="Logo 2" class="square-logo" loading="lazy">
                         </picture>
                         <picture>
                             <source srcset="https://upload.wikimedia.org/wikipedia/en/4/49/Anna_University_Logo.svg" type="image/svg+xml">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/4/49/Anna_University_Logo.svg" alt="Logo 2" class="square-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/4/49/Anna_University_Logo.svg" alt="Logo 3" class="square-logo" loading="lazy">
                         </picture>
                         <picture>
                             <source srcset="https://upload.wikimedia.org/wikipedia/en/1/1d/NAAC_LOGO.png" type="image/png">
-                            <img src="https://upload.wikimedia.org/wikipedia/en/1/1d/NAAC_LOGO.png" alt="Logo 3" class="square-logo">
+                            <img src="https://upload.wikimedia.org/wikipedia/en/1/1d/NAAC_LOGO.png" alt="Logo 4" class="square-logo" loading="lazy">
                         </picture>
                         <picture>
-                            <source srcset="{{asset('assets/nirf.webp')}}" type="image/png">
-                            <img src="{{asset('assets/nirf.webp')}}" alt="Logo 4" class="square-logo">
+                            <source srcset="{{ asset('assets/nirf.webp') }}" type="image/png">
+                            <img src="{{ asset('assets/nirf.webp') }}" alt="Logo 5" class="square-logo" loading="lazy">
                         </picture>
                         <picture>
-                            <source srcset="{{asset('assets/images/counseling_code.gif')}}" type="image/gif">
-                            <img src="{{asset('assets/images/counseling_code.gif')}}" alt="Logo 5" class="square-logo">
+                            <source srcset="{{ asset('assets/images/counseling_code.gif') }}" type="image/gif">
+                            <img src="{{ asset('assets/images/counseling_code.gif') }}" alt="Logo 6" class="square-logo" loading="lazy">
                         </picture>
                     </div>
                 </div>
+
                 {{-- <div class="col-lg-1 text-right">
                     <div class="header-right-logos d-flex justify-content-end">
                         <picture>

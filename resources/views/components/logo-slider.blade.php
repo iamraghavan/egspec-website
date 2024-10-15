@@ -49,7 +49,11 @@
                         <div class="swiper-slide" style="width: 154.286px; margin-right: 30px;">
                             <div class="single-brand-logo">
                                 <a href="#">
-                                    <img src="{{ asset($sliderImage->image_url) }}" alt="{{ $sliderImage->alt_tag }}">
+                                    <picture>
+                                        <source srcset="{{ asset($sliderImage->image_url) }}?width=600" media="(min-width: 600px)">
+                                        <source srcset="{{ asset($sliderImage->image_url) }}?width=300" media="(max-width: 599px)">
+                                        <img src="{{ asset($sliderImage->image_url) }}" alt="{{ $sliderImage->alt_tag }}" loading="lazy" width="154.286" height="auto">
+                                    </picture>
                                 </a>
                             </div>
                         </div>
@@ -64,11 +68,33 @@
 </div>
 
 
+
 <style>
-/* Apply CSS only above tablet screens */
-@media (min-width: 768px) {
-.single-brand-logo > a > img {
-padding: 2rem !important;
-}
-}
-</style>
+    /* Ensure images are consistent in size and alignment */
+    .single-brand-logo {
+        display: flex;
+        justify-content: center; /* Center the image in its container */
+        align-items: center; /* Center the image vertically */
+    }
+
+    .single-brand-logo img {
+        width: 100%; /* Ensure the image fills the container */
+        height: auto; /* Maintain aspect ratio */
+        max-width: 200px; /* Set a maximum width */
+        padding: 1rem; /* Add some padding for spacing */
+    }
+
+    .swiper-slide {
+        display: flex; /* Ensure swiper slides are flex containers */
+        justify-content: center; /* Center content horizontally */
+        align-items: center; /* Center content vertically */
+    }
+
+    /* Apply CSS only above tablet screens */
+    @media (min-width: 768px) {
+        .single-brand-logo img {
+            padding: 2rem !important; /* Adjust padding for larger screens */
+        }
+    }
+    </style>
+
