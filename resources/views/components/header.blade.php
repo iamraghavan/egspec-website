@@ -227,13 +227,8 @@
                                 <li class="has-dropdown">
                                    <a class="nav-link" href="{{ url("#") }}">Admissions</a>
                                    <ul class="submenu">
-                                      <li class="sub-dropdown">
-                                         <a href="{{ url("#") }}">Information Brochure</a>
-                                         <ul class="submenu third-lvl base">
-                                            <li><a href="{{ url("#") }}">UG Broucher</a></li>
-                                            <li><a href="{{ url("#") }}">PG Broucher</a></li>
-                                         </ul>
-                                      </li>
+                                    <li><a href="{{ url("/admissions/course-intake") }}">Information Brochure</a></li>
+
                                       <li><a href="{{ url("/admissions/course-intake") }}">Courses & Intake</a></li>
                                       <li><a href="{{ url("/admissions/tnea") }}">TNEA {{ date('Y')}} - {{ date('Y') +1 }}</a></li>
                                       <li class="sub-dropdown">

@@ -84,18 +84,10 @@
                 </li>
 
                 <li class="has-droupdown">
-                    <a href="{{ url("#") }}" class="main">Academics</a>
+                    <a href="{{ url("#") }}" class="main">Admissions</a>
                     <ul class="submenu mm-collapse">
-                        <li class="has-droupdown sa">
-                            <a href="{{ url("#") }}">Information Brochure</a>
-                            <ul class="submenu mm-collapse s">
-                                <li><a class="mobile-menu-link" href="{{ url('#') }}">UG Brochure</a></li>
-                                <li><a class="mobile-menu-link" href="{{ url('#') }}">PG Brochure</a></li>
+                        <li><a class="mobile-menu-link" href="{{ url('#') }}">Information Brochure</a></li>
 
-                            </ul>
-
-
-                        </li>
    <li><a class="mobile-menu-link" href="{{ url('/admissions/course-intake') }}">Courses & Intake</a></li>
                         <li><a class="mobile-menu-link" href="{{ url('/admissions/tnea') }}">TNEA {{ date('Y') }} - {{ date('Y') + 1 }}</a></li>
 

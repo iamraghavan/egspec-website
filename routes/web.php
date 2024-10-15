@@ -22,6 +22,13 @@ use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Response;
 use Carbon\Carbon;
 
+// Match all departments under undergraduate specifically for hods-desk
+Route::get('/academics/departments/undergraduate/{department}/hods-desk', function ($department) {
+    return view('under-construction', ['department' => $department]);
+});
+
+
+
 Route::post('/sent/mail', function () {
     $recipients = ['all@egspec.org', 'raghavan@egspec.org'];
     $errors = [];
