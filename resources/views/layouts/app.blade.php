@@ -439,6 +439,10 @@
 <x-campus-weather />
 @include('components.footer')
 
+
+<!-- Include jQuery -->
+
+
    {{-- Script Files --}}
 
 <!-- SweetAlert2 -->

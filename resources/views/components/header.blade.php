@@ -12,6 +12,10 @@
     display: none !important;
 }
 }
+.dlogo{
+    max-width: 65%;
+    margin-left: 2rem;
+}
 
 </style>
 
@@ -84,21 +88,21 @@
         <div class="container-fluid">
             <div class="row align-items-center justify-content-between">
 
-                <div class="col-lg-1 d-flex align-items-center">
+                {{-- <div class="col-lg-1 d-flex align-items-center">
                     <picture>
                         <source srcset="{{ asset('/assets/images/29_years_of_excellance.webp') }}" type="image/webp">
                         <img style="" src="{{asset('assets/images/29_years_of_excellance.webp')}}" alt="Left Image" class="header-side-image">
                     </picture>
-                </div>
+                </div> --}}
 
 
-                <div class="col-lg-5 d-flex align-items-center">
+                <div class="col-lg-6 d-flex align-items-center">
                     <a href="{{ url('/') }}" class="logo-area">
                         <picture>
                             <!-- For desktop and big screens -->
-                            <source srcset="{{ asset('/assets/images/EGSLOGO.webp') }}" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="{{ asset('/assets/images/EGSLOGO_1.webp') }}" media="(min-width: 768px)" type="image/webp">
                             <!-- For mobile screens -->
-                            <img src="{{ asset('/assets/images/logo_tran.svg') }}" alt="logo" class="logo">
+                            <img src="{{ asset('/assets/images/logo_tran.svg') }}" alt="logo" class="logo dlogo">
                         </picture>
 
                     </a>
