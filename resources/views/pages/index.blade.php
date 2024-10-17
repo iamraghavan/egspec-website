@@ -17,13 +17,13 @@ https://cdn.jsdelivr.net/npm/hystmodal@1.0.1/dist/hystmodal.min.css
     }
 
     .hystmodal__window {
-        /* background-color: #fff; */
-        padding: 20px;
-        border-radius: 10px;
-        width: 90%;
-        max-width: 600px;
-        position: relative;
-        box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        padding: 2px;
+    border-radius: 10px;
+    margin-top: 15rem;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     }
 
     .hystmodal__close {
