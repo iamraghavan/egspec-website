@@ -20,7 +20,7 @@
         white-space: nowrap;
         overflow: hidden;
         display: inline-block;
-        animation: marquee 15s linear infinite;
+        animation: marquee 30s linear infinite;
     }
 
     .marquee div {
