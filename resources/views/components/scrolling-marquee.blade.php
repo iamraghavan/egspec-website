@@ -2,14 +2,8 @@
     <div class="marquee">
         @foreach($messages as $message)
         <div>
-
-                <span>{{ $message['message'] }}</span>
-
-        </div>
-        <div>
-
-            <span>{{ $message['message'] }}</span>
-
+            <span><a href="{{$message['link']}}"> {{ $message['message'] }} </a></span>
+            <span class="separator">|</span>
         </div>
         @endforeach
     </div>
@@ -20,15 +14,13 @@
         max-width: 100%;
         background-color: #fbf4c9;
         overflow: hidden;
-
     }
 
     .marquee {
         white-space: nowrap;
-
         overflow: hidden;
         display: inline-block;
-        animation: marquee 10s linear infinite;
+        animation: marquee 15s linear infinite;
     }
 
     .marquee div {
@@ -36,13 +28,27 @@
         display: inline-block;
     }
 
+    .marquee > div > span > a {
+        color: black;
+        font-size: 2rem;
+        font-weight: 600;
+        text-transform: uppercase;
+    }
+
+    .separator {
+        margin-left: 1rem;
+        margin-right: 1rem;
+        color: #333;
+        font-weight: bold;
+    }
+
     @keyframes marquee {
         0% {
-            transform: translate(0, 0);
+            transform: translate(100%, 0);
         }
 
         100% {
-            transform: translate(-60%, 0);
+            transform: translate(-100%, 0);
         }
     }
 </style>

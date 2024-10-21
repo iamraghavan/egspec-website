@@ -35,12 +35,12 @@
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td>Dr. R. VENKATESAN</td>
+                                        <td>Dr. S. CHITRA</td>
                                         <td>Assistant Professor</td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
-                                        <td>Mrs. S. CHITRA</td>
+                                        <td>Dr. R. VENKATESAN</td>
                                         <td>Assistant Professor</td>
                                     </tr>
                                     <tr>
