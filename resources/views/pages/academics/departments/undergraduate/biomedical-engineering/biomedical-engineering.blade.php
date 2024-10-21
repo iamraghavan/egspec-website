@@ -51,14 +51,14 @@
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="https://egspec.blob.core.windows.net/egspec-assets/engineering_college.webp" class="d-block" alt="Academic 1">
+                                    <img src="https://firebasestorage.googleapis.com/v0/b/egspec-symposium.appspot.com/o/two-days-fdp-on-revolutionizing-healthcare-the-intersection.webp?alt=media&token=750db4da-52b1-4153-8874-1679ce1e3ecd" class="d-block" alt="two-days-fdp-on-revolutionizing-healthcare-the-intersection">
                                 </div>
-                                <div class="swiper-slide">
+                                {{-- <div class="swiper-slide">
                                     <img src="https://egspec.blob.core.windows.net/egspec-assets/cat_img.webp" class="d-block" alt="Academic 2">
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="https://egspec.blob.core.windows.net/egspec-assets/engineering_college.webp" class="d-block" alt="Academic 3">
-                                </div>
+                                </div> --}}
                             </div>
                         </div>
                     </div>
