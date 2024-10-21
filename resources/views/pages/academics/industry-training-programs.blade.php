@@ -14,53 +14,50 @@
             <div class="col-12">
                 <div class="admission-content-top">
 
-                    <div class="requirement-deadline">
-                        <h3 class="rts-section-title animated fadeIn">Idea</h3>
-                        <div class="requirement-deadline__content">
-                            <ul>
-                                <li class="single-requirement">Companies offer a comprehensive portfolio of training and professional certification designed for individuals, companies, and public organizations to acquire, maintain, optimize and validate their IT skills.</li>
-                                <li class="single-requirement">Enhanced career advancement and opportunities</li>
-                                <li class="single-requirement">Certification is highly recognized in the industry</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="application-deadline">
-                        <h3 class="rts-section-title animated fadeIn">Industry Training</h3>
-                        <div class="application-deadline__content">
-                            <div class="application-deadline__content--table">
-                                <table class="table table-striped">
-                                    <thead class="table-theme">
-                                        <tr>
-                                            <td>S.No</td>
-                                            <td>Industry Certification</td>
+                    <div class="program-description-area">
 
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        @php
-                                        $index = 1;
-                                    @endphp
+                        <div class="program-credit-area">
+                            <h3 class="rts-section-title animated fadeIn">R &amp; D</h3>
 
-                                    @foreach($training as $training)
-                                        @if($training->page_section === 'training')
-                                            <tr>
-                                                <td>{{ $index++ }}</td>
-                                                <td>{{ $training->name }}</td>
-                                            </tr>
-                                        @endif
-                                    @endforeach
+                            <div class="program-accordion my-5">
+                                <div class="accordion" id="rts-accordion">
+
+                                    <div class="accordion-item">
+
+                                        <div>
+                                            <div class="accordion-body-content">
+                                                <table class="table">
+
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><i class="fa fa-download"> </i><a href="https://egspec.blob.core.windows.net/egspec-assets/industry-training-programs/industry-training-programs.pdf" target="_blank" type="application/pdf" rel="alternate" media="print"> Research and Development</a></td>
+                                                            <td><i class="fa fa-file-pdf"></i> / PDF File</td>
+                                                        </tr>
 
 
 
+                                                    </tbody>
+                                                </table>
 
-                                    </tbody>
-                                </table>
+
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                </div>
+
                             </div>
-                            <div class="loader">
-                                 <p> The content will be updated shortly. Thank you for your patience <span>...</span> </p>
-                              </div>
-
                         </div>
+
+                    </div>
+
+                    <div class="iframe-div">
+                        <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=https://egspec.blob.core.windows.net/egspec-assets/industry-training-programs/industry-training-programs.pdf#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="
+                    height: 100rem !important;
+                "></iframe>
                     </div>
                 </div>
             </div>
