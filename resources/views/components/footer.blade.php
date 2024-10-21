@@ -70,10 +70,10 @@ $footerLinks = [
                                 <div class="social-copyright">
                                     <ul>
                                         <li><a href="https://www.facebook.com/EGSPGOI/"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
-                                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                                        <li><a href="https://www.instagram.com/egspillay_group_of_institution/?hl=en"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="https://in.linkedin.com/company/egspgoi"><i class="fa-brands fa-linkedin"></i></a></li>
+                                        <li><a href="https://www.whatsapp.com/channel/0029VaoAlde2Jl8HS9im7X2G"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                        <li><a href="https://www.youtube.com/@E.G.S.PillayGroupofInstitution"><i class="fa-brands fa-youtube"></i></a></li>
                                     </ul>
                                 </div>
 

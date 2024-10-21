@@ -27,27 +27,27 @@
                 <div class="social__cardsright">
                     <ul class="social__lists">
                         <li>
-                            <a href="" target="_blank" title="Visit Our Facebook Page" class="social__icon">
+                            <a href="https://www.facebook.com/EGSPGOI/" target="_blank" title="Visit Our Facebook Page" class="social__icon">
                                 <i class="fab fa-facebook-f"></i><span class="sr-only">Facebook</span>
                             </a>
                         </li>
                         <li>
-                            <a href="" target="_blank" title="Visit Our LinkedIn Page" class="social__icon">
+                            <a href="https://in.linkedin.com/company/egspgoi" target="_blank" title="Visit Our LinkedIn Page" class="social__icon">
                                 <i class="fab fa-linkedin-in"></i><span class="sr-only">LinkedIn</span>
                             </a>
                         </li>
                         <li>
-                            <a href="" target="_blank" title="Visit Our Twitter Page" class="social__icon">
-                                <i class="fab fa-twitter"></i><span class="sr-only">Twitter</span>
+                            <a href="https://www.whatsapp.com/channel/0029VaoAlde2Jl8HS9im7X2G" target="_blank" title="Visit Our Twitter Page" class="social__icon">
+                                <i class="fab fa-whatsapp"></i><span class="sr-only">Twitter</span>
                             </a>
                         </li>
                         <li>
-                            <a href="" target="_blank" title="Visit Our Instagram Page" class="social__icon">
+                            <a href="https://www.instagram.com/egspillay_group_of_institution/?hl=en" target="_blank" title="Visit Our Instagram Page" class="social__icon">
                                 <i class="fab fa-instagram"></i><span class="sr-only">Instagram</span>
                             </a>
                         </li>
                         <li>
-                            <a href="" target="_blank" title="Visit Our YouTube Page" class="social__icon">
+                            <a href="https://www.youtube.com/@E.G.S.PillayGroupofInstitution" target="_blank" title="Visit Our YouTube Page" class="social__icon">
                                 <i class="fab fa-youtube"></i><span class="sr-only">YouTube</span>
                             </a>
                         </li>
