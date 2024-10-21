@@ -2,7 +2,7 @@
     <div class="marquee">
         @foreach($messages as $message)
         <div>
-            <span><a href="{{$message['link']}}"> {{ $message['message'] }} </a></span>
+            <span><a target="_blank" href="{{$message['link']}}"> {{ $message['message'] }} </a></span>
             <span class="separator">|</span>
         </div>
         @endforeach
