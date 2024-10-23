@@ -17,7 +17,7 @@
                     <div class="program-description-area">
 
                         <div class="program-credit-area">
-                            <h3 class="rts-section-title animated fadeIn">R &amp; D</h3>
+                            <h3 class="rts-section-title animated fadeIn">Industry Training Programs</h3>
 
                             <div class="program-accordion my-5">
                                 <div class="accordion" id="rts-accordion">
@@ -30,7 +30,7 @@
 
                                                     <tbody>
                                                         <tr>
-                                                            <td><i class="fa fa-download"> </i><a href="https://egspec.blob.core.windows.net/egspec-assets/industry-training-programs/industry-training-programs.pdf" target="_blank" type="application/pdf" rel="alternate" media="print"> Research and Development</a></td>
+                                                            <td><i class="fa fa-download"> </i><a href="https://egspec.blob.core.windows.net/egspec-assets/industry-training-programs/industry-training-programs.pdf" target="_blank" type="application/pdf" rel="alternate" media="print"> Industry Training Programs</a></td>
                                                             <td><i class="fa fa-file-pdf"></i> / PDF File</td>
                                                         </tr>
 
