@@ -3270,6 +3270,71 @@ class PagesController extends Controller
         return view('pages.academics.departments.undergraduate.computer-science-business-systems.computer-science-business-systems');
     }
 
+    public function ug_computer_science_and_business_systems_department_highlights()
+    {
+        SEOTools::setTitle('Department Highlights - Computer Science and Business Systems');
+        SEOTools::setDescription('Discover the department highlights of the Computer Science and Business Systems department, showcasing research, faculty, and other important information.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Department Highlights - Computer Science and Business Systems');
+        SEOTools::twitter()->setDescription('Discover the department highlights of the Computer Science and Business Systems department, showcasing research, faculty, and other important information.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
+        return view('pages.academics.departments.undergraduate.computer-science-business-systems.department-highlights');
+    }
+
+    public function ug_computer_science_and_business_systems_faculty_details()
+    {
+        SEOTools::setTitle('Faculty Details - Computer Science and Business Systems');
+        SEOTools::setDescription('Discover the faculty details of the Computer Science and Business Systems department, including their roles, teaching, and research expertise.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Faculty Details - Computer Science and Business Systems');
+        SEOTools::twitter()->setDescription('Discover the faculty details of the Computer Science and Business Systems department, including their roles, teaching, and research expertise.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
+        return view('pages.academics.departments.undergraduate.computer-science-business-systems.faculty-details');
+    }
+
+    public function ug_computer_science_and_business_systems_program_outcomes()
+    {
+        SEOTools::setTitle('Program Outcomes - Computer Science and Business Systems');
+        SEOTools::setDescription('Learn about the program outcomes of the Computer Science and Business Systems department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Program Outcomes - Computer Science and Business Systems');
+        SEOTools::twitter()->setDescription('Learn about the program outcomes of the Computer Science and Business Systems department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
+        return view('pages.academics.departments.undergraduate.computer-science-business-systems.program-outcomes');
+    }
+
+    public function ug_computer_science_and_business_systems_programme_educational_objectives()
+    {
+        SEOTools::setTitle('Program Educational Objectives - Computer Science and Business Systems');
+        SEOTools::setDescription('Explore the educational objectives of the Computer Science and Business Systems program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Program Educational Objectives - Computer Science and Business Systems');
+        SEOTools::twitter()->setDescription('Explore the educational objectives of the Computer Science and Business Systems program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
+        return view('pages.academics.departments.undergraduate.computer-science-business-systems.programme-educational-objectives');
+    }
+
+    public function ug_computer_science_and_business_systems_programme_specific_outcomes()
+    {
+        SEOTools::setTitle('Program Specific Outcomes - Computer Science and Business Systems');
+        SEOTools::setDescription('Learn about the specific outcomes of the Computer Science and Business Systems program.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Program Specific Outcomes - Computer Science and Business Systems');
+        SEOTools::twitter()->setDescription('Learn about the specific outcomes of the Computer Science and Business Systems program.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
+        return view('pages.academics.departments.undergraduate.computer-science-business-systems.programme-specific-outcomes');
+    }
+
 
     // Department -> Department of Science & Humanities
 
