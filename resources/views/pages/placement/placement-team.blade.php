@@ -440,37 +440,37 @@
 
 <div class="rts-event-speaker pt--10 pb--40 mt--40" element-id="358" id="placement-gallery">
     <div class="container" element-id="357">
-        <div class="row" element-id="356">
-            <div class="rts-section" element-id="355">
-                <h3 class="rts-section-title animated fadeIn" element-id="354">
-                    Placement Gallery
-                    </h3>
-            </div>
-        </div>
-        <!-- event speaker list -->
-        <div class="row g-5" element-id="353">
-            <!-- single speaker item -->
+
+        <div class="program-credit-area">
+            <h3 class="rts-section-title animated fadeIn">Placement Gallery</h3>
+            <div class="program-accordion my-5">
+                <div class="accordion" id="rts-accordion">
+                    <div class="accordion-item">
+                        <div>
+                            <div class="accordion-body-content">
+                                <table class="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <a href="{{route('placement_gallery')}}"
+                                                   title="Placement Gallery">
+                                                   Placement Gallery
+                                                </a>
+                                            </td>
+
+                                            <td><i class="fa fa-external-link"></i> / Placement Gallery Link Source </td>
+                                        </tr>
 
 
-            @foreach(range(1, 12) as $i)
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <div class="event-speaker">
-                        <div class="event-speaker__details">
-                            <div class="">
+                                    </tbody>
 
-                                <img class="iaps" src="{{ asset('/assets/images/placement/'.$i.'.webp') }}" alt="Placement {{ $i }}">
+                                </table>
 
                             </div>
                         </div>
                     </div>
                 </div>
-            @endforeach
-
-
-
-
-
-
+            </div>
         </div>
     </div>
 

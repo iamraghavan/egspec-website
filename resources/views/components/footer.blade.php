@@ -26,8 +26,8 @@ $footerLinks = [
 ],
 'Important Links' => [
 'AntiRagging' => url('/activities/anti-ragging-committee'),
-'EGSP Transport' => 'http://example.com/transport',
-'Downloads' => 'http://example.com/downloads',
+'EGSPGOI Transport' => ('/facilities/transport'),
+// 'Downloads' => 'http://example.com/downloads',
 'Blog & Articles' => 'http://example.com/blog',
 'Alumni' => 'http://example.com/alumni',
 'Gallery & Media' => 'http://example.com/gallery-media',
@@ -65,7 +65,7 @@ $footerLinks = [
                             <div class="rts-contact-link">
                                 <a href="mailto:principal@egspec.org"><i class="fa-sharp fa-light fa-envelope"></i>
                                     principal@egspec.org </a>
-                                <a href="callto:121"><i class="fa-thin fa-phone"></i> 04365 251112 | 04365 251114 </a>
+                                <a href="callto:8680954537"><i class="fa-thin fa-phone"></i> 7373 067 032 | 8680 954 537 </a>
 
                                 <div class="social-copyright">
                                     <ul>

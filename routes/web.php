@@ -27,7 +27,13 @@ Route::get('/academics/departments/undergraduate/{department}/hods-desk', functi
     return view('under-construction', ['department' => $department]);
 });
 
+Route::get('/academics/departments/postgraduate/{department}/hods-desk', function ($department) {
+    return view('under-construction', ['department' => $department]);
+});
 
+Route::get('/academics/departments/{department}/hods-desk', function ($department) {
+    return view('under-construction', ['department' => $department]);
+});
 
 Route::post('/sent/mail', function () {
     $recipients = ['all@egspec.org', 'raghavan@egspec.org'];
@@ -224,7 +230,7 @@ Route::get('/placements/memorandum-of-understanding', [PagesController::class, '
 Route::get('/placements/placement-team', [PagesController::class, 'placement_team']);
 Route::get('/placements/statistics', [PagesController::class, 'placement_statistics']);
 Route::get('/placement/our-top-recruiters', [PagesController::class, 'our_top_recruiters']);
-Route::get('/placement/placement-gallery', [PagesController::class, 'placement_gallery']);
+Route::get('/placement/placement-gallery', [PagesController::class, 'placement_gallery'])->name('placement_gallery');
 
 
 
