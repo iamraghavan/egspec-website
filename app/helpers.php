@@ -13,15 +13,41 @@ if (!function_exists('getLastCommitDate')) {
      */
     function getLastCommitDate($repository = 'iamraghavan/egspec-website', $tag = 'v2.5')
     {
+        // Validate repository and tag
+        if (!isValidRepository($repository) || !isValidTag($tag)) {
+            return 'Invalid repository or tag.';
+        }
+
         $url = buildCommitUrl($repository, $tag);
 
         try {
             $response = Http::get($url);
-
             return handleResponse($response);
         } catch (\Exception $e) {
             return handleError($e);
         }
+    }
+
+    /**
+     * Validates the repository format.
+     *
+     * @param string $repository
+     * @return bool
+     */
+    function isValidRepository($repository)
+    {
+        return preg_match('/^[\w.-]+\/[\w.-]+$/', $repository);
+    }
+
+    /**
+     * Validates the tag or branch format.
+     *
+     * @param string $tag
+     * @return bool
+     */
+    function isValidTag($tag)
+    {
+        return preg_match('/^[\w.-]+$/', $tag);
     }
 
     /**
@@ -33,7 +59,7 @@ if (!function_exists('getLastCommitDate')) {
      */
     function buildCommitUrl($repository, $tag)
     {
-        return "https://api.github.com/repos/{$repository}/commits/{$tag}";
+        return "https://api.github.com/repos/{$repository}/commits?sha={$tag}";
     }
 
     /**
@@ -46,7 +72,7 @@ if (!function_exists('getLastCommitDate')) {
     {
         if ($response->successful()) {
             $data = $response->json();
-            $commitDate = $data['commit']['committer']['date'] ?? null;
+            $commitDate = $data[0]['commit']['committer']['date'] ?? null; // Changed to access the first commit
 
             if ($commitDate) {
                 return formatCommitDate($commitDate);
