@@ -5,15 +5,15 @@
     'value_1' => 'Academics',
     'value_2' => 'Departments',
     'value_3' => 'Mechanical Engineering',
-    'page_title' => 'Highlights'
+    'page_title' => 'Department Highlights'
 ])
 
 <div class="rts-program rts-section-padding">
     <div class="container">
-
         <div class="rts-program-description">
             <div class="row">
                 <div class="col-lg-8">
+                    <h2>Department Highlights</h2>
                     <div class="admission-content-top">
                         <div class="application-deadline">
                             <div class="application-deadline__content">
@@ -29,13 +29,13 @@
                                                 <td>Accredited by NBA (National Board of Accreditation) – Tier 1</td>
                                             </tr>
                                             <tr>
-                                                <td>Autonomous System and Outcome Based Education – The curriculum is designed to meet industry standards</td>
+                                                <td>Autonomous System with Outcome-Based Education – Curriculum designed to meet industry standards</td>
                                             </tr>
                                             <tr>
                                                 <td>100% admission rate over the last 5 years</td>
                                             </tr>
                                             <tr>
-                                                <td>Consistent Placement record with an average of 85%</td>
+                                                <td>Consistent placement record with an average of 85%</td>
                                             </tr>
                                             <tr>
                                                 <td>15:1 student-faculty ratio, comprehensive mentoring programs, and state-of-the-art facilities</td>
@@ -47,7 +47,7 @@
                                                 <td>Regular recruiters include Inforview, TCS, Wipro, ILM, Amazon, and others</td>
                                             </tr>
                                             <tr>
-                                                <td>Industry Tie-ups and Supported Laboratories with AWS, Dell EMC, VMware, Oracle, and more</td>
+                                                <td>Industry tie-ups and supported laboratories with AWS, Dell EMC, VMware, Oracle, and more</td>
                                             </tr>
                                             <tr>
                                                 <td>Internships, industrial visits, and credit-based certification courses</td>
@@ -97,14 +97,11 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
 
-                <!-- sidebar -->
+                <!-- Sidebar -->
                 <div class="col-lg-4">
                     <div class="program-sidebar">
-                        <!-- curriculum -->
                         <div class="program-curriculum">
                             <h6 class="heading-title">Department Quick Links</h6>
                             <div class="program-menu">
@@ -113,7 +110,7 @@
                                     <li><a href="{{ url('/academics/departments/undergraduate/mechanical-engineering/department-highlights') }}"><span><i class="fa-light fa-arrow-right"></i></span>Department Highlights</a></li>
                                     <li><a href="{{ url('/academics/departments/undergraduate/mechanical-engineering/hods-desk') }}"><span><i class="fa-light fa-arrow-right"></i></span>Hod's Desk</a></li>
                                     <li><a href="{{ url('/academics/departments/undergraduate/mechanical-engineering/faculty-details') }}"><span><i class="fa-light fa-arrow-right"></i></span>Faculty Details</a></li>
-                                    <li><a href="https://coe.egspec.org/" target="_blank"><span><i class="fa-light fa-arrow-right"></i></span>Curriculum</a></li>
+                                    <li><a href="https://coe.egspec.org/" target="_blank" referrerpolicy="origin"><span><i class="fa-light fa-arrow-right"></i></span>Curriculum</a></li>
                                     <li><a href="{{ url('/academics/departments/undergraduate/mechanical-engineering/research-publications') }}"><span><i class="fa-light fa-arrow-right"></i></span>Research & Publications</a></li>
                                     <li><a href="{{ url('/academics/departments/undergraduate/mechanical-engineering/industry-collaboration') }}"><span><i class="fa-light fa-arrow-right"></i></span>Industry Collaboration</a></li>
                                     <li><a href="{{ url('/academics/departments/undergraduate/mechanical-engineering/infrastructure') }}"><span><i class="fa-light fa-arrow-right"></i></span>Infrastructure</a></li>
@@ -125,9 +122,9 @@
                                 </ul>
                             </div>
                         </div>
-                        <!-- contact info -->
+                        <!-- Contact info -->
                         <x-dept-contact-info
-                            name="x"
+                            name="Department of Mechanical Engineering"
                             :phones="['y']"
                             :emails="['z']"/>
                     </div>
