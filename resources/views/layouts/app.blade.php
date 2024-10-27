@@ -62,6 +62,80 @@
 </script>
 
 
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What courses are offered at EGS Pillay Engineering College?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "EGS Pillay Engineering College offers a variety of undergraduate and postgraduate programs in engineering fields such as Computer Science, Electrical, Mechanical, and Civil Engineering."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Who founded EGS Pillay Engineering College?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "EGS Pillay Engineering College was established by the EGS Pillay Group of Institutions, which was founded by philanthropist and educationist, Dr. E.G.S. Pillay."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Why should I choose EGS Pillay Engineering College?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "EGS Pillay Engineering College is known for its strong emphasis on academic excellence, state-of-the-art facilities, industry partnerships, and a supportive learning environment."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "When was EGS Pillay Engineering College established?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "EGS Pillay Engineering College was established in 1995, contributing to technical education in the region for many years."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Which accreditation does EGS Pillay Engineering College hold?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "EGS Pillay Engineering College is accredited by the National Board of Accreditation (NBA) and is affiliated with Anna University."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is EGS Pillay Engineering College located?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "EGS Pillay Engineering College is located in Nagapattinam, Tamil Nadu, India."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How can I apply for admission to EGS Pillay Engineering College?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "To apply for admission, you can visit the official website of EGS Pillay Engineering College and follow the application process outlined there, typically including entrance exam scores and documentation."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What facilities are available at EGS Pillay Engineering College?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The college offers modern facilities, including well-equipped laboratories, libraries, hostels, sports complexes, and a dedicated placement cell to assist students in securing jobs."
+          }
+        }
+      ]
+    }
+    </script>
+
+
     <script type="application/ld+json">
         {
             "@context":"https://schema.org",
@@ -612,6 +686,50 @@
          }
 
     </script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "WebSite",
+          "name": "EGS Pillay Engineering College",
+          "url": "https://egspec.org/",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://egspec.org/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+    </script>
+
+    <script type="application/ld+json">
+        {
+           "@context":"http://schema.org/",
+           "@type":"Person",
+           "name":"RAGHAVAN J S",
+           "image":"https://egspec.blob.core.windows.net/egspec-assets/raghaven.webp",
+           "url":"https://jsraghavan.me/",
+           "jobTitle":"Application Development Associate",
+           "worksFor":{
+              "@type":"Organization",
+              "name":"EGS Pillay Group of Institutions"
+           },
+           "address":{
+              "@type":"PostalAddress",
+              "streetAddress":"No : 183/2 DHERMER STREET",
+              "addressLocality":"NAGAPATTINAM",
+              "addressRegion":"Tamil Nadu",
+              "postalCode":"611003",
+              "addressCountry":"India"
+           },
+           "sameAs":[
+              "https://www.facebook.com/iamragahvan",
+              "https://www.instagram.com/iam.raghavan/",
+              "https://www.linkedin.com/in/jsraghavan/",
+              "https://twitter.com/raghavanjeeva"
+           ]
+        }
+        </script>
+
 
 
 <!-- Critical CSS -->
