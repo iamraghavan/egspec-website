@@ -8,6 +8,8 @@
     'page_title' => 'Gallery'
 ])
 
+{{-- opt --}}
+
 
 
     <h1>Photo Albums</h1>
