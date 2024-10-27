@@ -64,299 +64,552 @@
 
     <script type="application/ld+json">
         {
-            "@context": "https://schema.org",
-            "@graph": [
-              {
-                "@type": "Article",
-                "headline": "E.G.S. Pillay Engineering College",
-                "author": {
-                  "@type": "Person",
-                  "name": "Raghavan Jeeva"
-                },
-                "datePublished": "2023-09-29",
-                "image": "https://egspec.blob.core.windows.net/egspec-assets/og_image.webp",
-                "publisher": {
-                  "@type": "Organization",
-                  "name": "E.G.S. Pillay Engineering College",
-                  "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://egspec.org/assets/images/logo_tran.svg"
+            "@context":"https://schema.org",
+            "@graph":[
+               {
+                  "@type":"Article",
+                  "headline":"E.G.S. Pillay Engineering College",
+                  "author":{
+                     "@type":"Person",
+                     "name":"Raghavan Jeeva",
+                     "url":"https://egspec.org/"
+                  },
+                  "datePublished":"2023-09-29T00:00:00+05:30",
+                  "image":"https://egspec.blob.core.windows.net/egspec-assets/og_image.webp",
+                  "publisher":{
+                     "@type":"Organization",
+                     "name":"E.G.S. Pillay Engineering College",
+                     "logo":{
+                        "@type":"ImageObject",
+                        "url":"https://egspec.org/assets/images/logo_tran.svg"
+                     }
                   }
-                }
-              },
-              {
-                "@type": "BreadcrumbList",
-                "itemListElement": [
-                  {
-                    "@type": "ListItem",
-                    "position": 1,
-                    "name": "Home",
-                    "item": "https://egspec.org/"
+               },
+               {
+                  "@type":"LocalBusiness",
+                  "name":"E.G.S. Pillay Engineering College",
+                  "address":{
+                     "@type":"PostalAddress",
+                     "streetAddress":"Old Nagore Road, Thethi Village Nagapattinam",
+                     "addressLocality":"Nagapattinam",
+                     "postalCode":"611002",
+                     "addressCountry":"IN"
                   },
-                  {
-                    "@type": "ListItem",
-                    "position": 2,
-                    "name": "Principal Message",
-                    "item": "https://egspec.org/about/message-from-the-principal"
+                  "telephone":"+91-868-095-4537",
+                  "url":"https://egspec.org",
+                  "logo":"https://egspec.org/assets/images/logo_tran.svg",
+                  "image":"https://egspec.blob.core.windows.net/egspec-assets/og_image.webp",
+                  "openingHours":"Mo-Fr 09:00-17:00",
+                  "priceRange":"$$"
+               },
+               {
+                  "@type":"Organization",
+                  "name":"E.G.S. Pillay Group of Institutions",
+                  "url":"https://egspec.org",
+                  "logo":"https://egspec.org/assets/images/logo_tran.svg",
+                  "sameAs":[
+                     "https://www.facebook.com/EGSPGOI",
+                     "https://twitter.com/raghvanjeva",
+                     "https://www.instagram.com/egspillay_group_of_institution"
+                  ]
+               },
+               {
+                  "@type":"Review",
+                  "itemReviewed":{
+                     "@type":"EducationalOrganization",
+                     "name":"E.G.S. Pillay Engineering College"
                   },
-                  {
-                    "@type": "ListItem",
-                    "position": 3,
-                    "name": "Undergraduate",
-                    "item": "https://egspec.org/academics/departments/bachelors"
+                  "author":{
+                     "@type":"Person",
+                     "name":"Raghavan Jeeva"
                   },
-                  {
-                    "@type": "ListItem",
-                    "position": 4,
-                    "name": "Postgraduate",
-                    "item": "https://egspec.org/academics/departments/masters"
+                  "reviewRating":{
+                     "@type":"Rating",
+                     "ratingValue":"4.5",
+                     "bestRating":"5"
                   },
-                  {
-                    "@type": "ListItem",
-                    "position": 5,
-                    "name": "Master of Computer Applications",
-                    "item": "https://egspec.org/academics/departments/postgraduate/master-of-computer-applications"
+                  "datePublished":"2023-09-29"
+               },
+               {
+                  "@type":"Course",
+                  "name":"Master of Computer Applications (MCA)",
+                  "description":"Postgraduate program focusing on computer applications and software development.",
+                  "provider":{
+                     "@type":"Organization",
+                     "name":"E.G.S. Pillay Engineering College",
+                     "sameAs":"https://egspec.org/academics/departments/postgraduate/master-of-computer-applications"
                   },
-                  {
-                    "@type": "ListItem",
-                    "position": 6,
-                    "name": "Master of Business Administration",
-                    "item": "https://egspec.org/academics/departments/postgraduate/master-of-business-administration"
+                  "offers":{
+                     "@type":"Offer",
+                     "url":"https://egspec.org/academics/departments/postgraduate/master-of-computer-applications",
+                     "category":"Postgraduate Degree"
                   },
-                  {
-                    "@type": "ListItem",
-                    "position": 7,
-                    "name": "Training and Placement",
-                    "item": "https://egspec.org/placements"
+                  "hasCourseInstance":[
+                     {
+                        "@type":"CourseInstance",
+                        "name":"Master of Computer Applications",
+                        "description":"Master of Computer Applications program.",
+                        "startDate":"",
+                        "endDate":"",
+                        "courseMode":"full-time"
+                     },
+                     {
+                        "@type":"CourseInstance",
+                        "courseMode":"Onsite",
+                        "location":"E.G.S. Pillay Engineering College",
+                        "courseSchedule":{
+                           "@type":"Schedule",
+                           "duration":"PT5H",
+                           "repeatCount":2,
+                           "repeatFrequency":"Yearly",
+                           "startDate":"",
+                           "endDate":""
+                        },
+                        "instructor":[
+                           {
+                              "@type":"Person",
+                              "name":"Dr. J. Vanitha",
+                              "description":"Associate Professor & Head, Department of Computer Applications",
+                              "image":"https://egspec.blob.core.windows.net/egspec-assets/profile/dr-j-vanitha.webp"
+                           }
+                        ]
+                     }
+                  ]
+               },
+               {
+                  "@type":"Course",
+                  "name":"Artificial Intelligence and Data Science",
+                  "description":"B.E. program focused on AI technologies and data analysis techniques.",
+                  "provider":{
+                     "@type":"Organization",
+                     "name":"E.G.S. Pillay Engineering College",
+                     "sameAs":"https://egspec.org/academics/departments/undergraduate/artificial-intelligence-data-science"
+                  },
+                  "offers":{
+                     "@type":"Offer",
+                     "url":"https://egspec.org/academics/departments/undergraduate/artificial-intelligence-data-science",
+                     "category":"Undergraduate Degree"
+                  },
+                  "hasCourseInstance":{
+                     "@type":"CourseInstance",
+                     "courseMode":"Onsite",
+                     "location":"E.G.S. Pillay Engineering College",
+                     "courseSchedule":{
+                        "@type":"Schedule",
+                        "duration":"PT5H",
+                        "repeatCount":4,
+                        "repeatFrequency":"Yearly",
+                        "startDate":"",
+                        "endDate":""
+                     },
+                     "instructor":[
+                        {
+                           "@type":"Person",
+                           "name":"Dr. S. Palani Murugan",
+                           "description":"Associate Professor & Head, Department of Artificial Intelligence and Data Science",
+                           "image":"https://egspec.blob.core.windows.net/egspec-assets/profile/dr_s_palani_murugan.webp"
+                        }
+                     ]
                   }
-                ]
-              },
-              {
-                "@type": "LocalBusiness",
-                "name": "E.G.S. Pillay Engineering College",
-                "address": {
-                  "@type": "PostalAddress",
-                  "streetAddress": "Old Nagore Road, Thethi Village Nagapattinam",
-                  "addressLocality": "Nagapattinam",
-                  "postalCode": "611002",
-                  "addressCountry": "India"
-                },
-                "telephone": "+91-436-525-1112",
-                "url": "https://egspec.org",
-                "logo": "https://egspec.org/assets/images/logo_tran.svg",
-                "image": "https://egspec.blob.core.windows.net/egspec-assets/og_image.webp",
-                "openingHours": "Mo-Fr 09:00-17:00"
-              },
-              {
-                "@type": "Organization",
-                "name": "E.G.S. Pillay Group of Institutions",
-                "url": "https://egspec.org",
-                "logo": "https://egspec.org/assets/images/logo_tran.svg",
-                "sameAs": [
-                  "https://www.facebook.com/EGSPGOI",
-                  "https://twitter.com/raghavanjeeva",
-                  "https://www.instagram.com/egspillay_group_of_institution"
-                ]
-              },
-              {
-                "@type": "Review",
-                "itemReviewed": {
-                  "@type": "EducationalOrganization",
-                  "name": "E.G.S. Pillay Engineering College"
-                },
-                "author": {
-                  "@type": "Person",
-                  "name": "Raghavan Jeeva"
-                },
-                "reviewRating": {
-                  "@type": "Rating",
-                  "ratingValue": "4.5",
-                  "bestRating": "5"
-                },
-                "datePublished": "2023-09-29"
-              }
+               },
+               {
+                  "@type":"Course",
+                  "name":"Master of Business Administration (MBA)",
+                  "description":"Postgraduate program aimed at developing managerial skills and business acumen.",
+                  "provider":{
+                     "@type":"Organization",
+                     "name":"E.G.S. Pillay Engineering College",
+                     "sameAs":"https://egspec.org/academics/departments/postgraduate/master-of-business-administration"
+                  },
+                  "offers":{
+                     "@type":"Offer",
+                     "url":"https://egspec.org/academics/departments/postgraduate/master-of-business-administration",
+                     "category":"Postgraduate Degree"
+                  },
+                  "hasCourseInstance":{
+                     "@type":"CourseInstance",
+                     "courseMode":"Onsite",
+                     "location":"E.G.S. Pillay Engineering College",
+                     "courseSchedule":{
+                        "@type":"Schedule",
+                        "duration":"PT5H",
+                        "repeatCount":2,
+                        "repeatFrequency":"Yearly",
+                        "startDate":"",
+                        "endDate":""
+                     },
+                     "instructor":[
+                        {
+                           "@type":"Person",
+                           "name":"Dr. R. Karthi",
+                           "description":"Professor & Head, Department of Business Administration",
+                           "image":"https://egspec.org/favicons/apple-touch-icon.png"
+                        }
+                     ]
+                  }
+               },
+               {
+                  "@type":"Course",
+                  "name":"Mechanical Engineering",
+                  "description":"B.E. program focusing on the principles of mechanics, dynamics, and thermodynamics.",
+                  "provider":{
+                     "@type":"Organization",
+                     "name":"E.G.S. Pillay Engineering College",
+                     "sameAs":"https://egspec.org/academics/departments/undergraduate/mechanical-engineering"
+                  },
+                  "offers":{
+                     "@type":"Offer",
+                     "category":"Undergraduate Degree",
+                     "url":"https://egspec.org/academics/departments/undergraduate/mechanical-engineering"
+                  },
+                  "hasCourseInstance":{
+                     "@type":"CourseInstance",
+                     "courseMode":"Onsite",
+                     "location":"E.G.S. Pillay Engineering College",
+                     "courseSchedule":{
+                        "@type":"Schedule",
+                        "duration":"PT5H",
+                        "repeatCount":4,
+                        "repeatFrequency":"Yearly",
+                        "startDate":"",
+                        "endDate":""
+                     },
+                     "instructor":[
+                        {
+                           "@type":"Person",
+                           "name":"Dr. N. Ramanujam",
+                           "description":"Professor & Head, Department of Mechanical Engineering",
+                           "image":"https://egspec.org/favicons/apple-touch-icon.png"
+                        }
+                     ]
+                  }
+               },
+               {
+                  "@type":"Course",
+                  "name":"Civil Engineering",
+                  "description":"B.E. program specializing in the design, construction, and maintenance of infrastructure.",
+                  "provider":{
+                     "@type":"Organization",
+                     "name":"E.G.S. Pillay Engineering College",
+                     "sameAs":"https://egspec.org/academics/departments/undergraduate/civil-engineering"
+                  },
+                  "offers":{
+                     "@type":"Offer",
+                     "category":"Undergraduate Degree",
+                     "url":"https://egspec.org/academics/departments/undergraduate/civil-engineering"
+                  },
+                  "hasCourseInstance":{
+                     "@type":"CourseInstance",
+                     "courseMode":"Onsite",
+                     "location":"E.G.S. Pillay Engineering College",
+                     "courseSchedule":{
+                        "@type":"Schedule",
+                        "duration":"PT5H",
+                        "repeatCount":4,
+                        "repeatFrequency":"Yearly",
+                        "startDate":"",
+                        "endDate":""
+                     },
+                     "instructor":[
+                        {
+                           "@type":"Person",
+                           "name":"Dr. N.H. Agilandeswari",
+                           "description":"Assistant Professor & Head, Department of Civil Engineering",
+                           "image":"https://egspec.org/favicons/apple-touch-icon.png"
+                        }
+                     ]
+                  }
+               },
+               {
+                  "@type":"Course",
+                  "name":"Electrical and Electronics Engineering",
+                  "description":"B.E. program that covers electrical systems, electronics, and related technologies.",
+                  "provider":{
+                     "@type":"Organization",
+                     "name":"E.G.S. Pillay Engineering College",
+                     "sameAs":"https://egspec.org/academics/departments/undergraduate/electrical-and-electronics-engineering"
+                  },
+                  "offers":{
+                     "@type":"Offer",
+                     "category":"Undergraduate Degree",
+                     "url":"https://egspec.org/academics/departments/undergraduate/electrical-and-electronics-engineering"
+                  },
+                  "hasCourseInstance":{
+                     "@type":"CourseInstance",
+                     "courseMode":"Onsite",
+                     "location":"E.G.S. Pillay Engineering College",
+                     "courseSchedule":{
+                        "@type":"Schedule",
+                        "duration":"PT5H",
+                        "repeatCount":4,
+                        "repeatFrequency":"Yearly",
+                        "startDate":"",
+                        "endDate":""
+                     },
+                     "instructor":[
+                        {
+                           "@type":"Person",
+                           "name":"Dr. P. J. Suresh babu",
+                           "description":"Head of Department, Department of Electrical and Electronics Engineering",
+                           "image":"https://egspec.blob.core.windows.net/egspec-assets/profile/dr-p-j-suresh-babu.webp"
+                        }
+                     ]
+                  }
+               },
+               {
+                  "@type":"Course",
+                  "name":"Electronics and Communication Engineering",
+                  "description":"B.E. program focusing on electronic systems and communication technologies.",
+                  "provider":{
+                     "@type":"Organization",
+                     "name":"E.G.S. Pillay Engineering College",
+                     "sameAs":"https://egspec.org/academics/departments/undergraduate/electronics-and-communication-engineering"
+                  },
+                  "offers":{
+                     "@type":"Offer",
+                     "category":"Undergraduate Degree",
+                     "url":"https://egspec.org/academics/departments/undergraduate/electronics-and-communication-engineering"
+                  },
+                  "hasCourseInstance":{
+                     "@type":"CourseInstance",
+                     "courseMode":"Onsite",
+                     "location":"E.G.S. Pillay Engineering College",
+                     "courseSchedule":{
+                        "@type":"Schedule",
+                        "duration":"PT5H",
+                        "repeatCount":4,
+                        "repeatFrequency":"Yearly",
+                        "startDate":"",
+                        "endDate":""
+                     },
+                     "instructor":[
+                        {
+                           "@type":"Person",
+                           "name":"Dr. M. Malathi, M.E., Ph.D",
+                           "description":"Professor & Head, Department of Electronics and Communication Engineering",
+                           "image":"https://egspec.blob.core.windows.net/egspec-assets/profile/dr-m-malathi.webp"
+                        }
+                     ]
+                  }
+               },
+               {
+                  "@type":"Course",
+                  "name":"Computer Science and Engineering",
+                  "description":"B.E. program covering fundamental concepts in computer science and software development.",
+                  "provider":{
+                     "@type":"Organization",
+                     "name":"E.G.S. Pillay Engineering College",
+                     "sameAs":"https://egspec.org/academics/departments/undergraduate/computer-science-and-engineering"
+                  },
+                  "offers":{
+                     "@type":"Offer",
+                     "category":"Undergraduate Degree",
+                     "url":"https://egspec.org/academics/departments/undergraduate/computer-science-and-engineering"
+                  },
+                  "hasCourseInstance":{
+                     "@type":"CourseInstance",
+                     "courseMode":"Onsite",
+                     "location":"E.G.S. Pillay Engineering College",
+                     "courseSchedule":{
+                        "@type":"Schedule",
+                        "duration":"PT5H",
+                        "repeatCount":4,
+                        "repeatFrequency":"Yearly",
+                        "startDate":"",
+                        "endDate":""
+                     },
+                     "instructor":[
+                        {
+                           "@type":"Person",
+                           "name":"Dr. S. Praveen Kumar",
+                           "description":"Assistant Professor, Department of Computer Science and Engineering",
+                           "image":"https://firebasestorage.googleapis.com/v0/b/egsppc-ac-in.appspot.com/o/dr_s_praveen_kumar.webp?alt=media&token=562bcc59-d888-41ba-8921-c531c05dc90e"
+                        }
+                     ]
+                  }
+               },
+               {
+                  "@type":"Course",
+                  "name":"Information Technology",
+                  "description":"B.E. program that focuses on computer systems, networking, and information management.",
+                  "provider":{
+                     "@type":"Organization",
+                     "name":"E.G.S. Pillay Engineering College",
+                     "sameAs":"https://egspec.org/academics/departments/undergraduate/information-technology"
+                  },
+                  "offers":{
+                     "@type":"Offer",
+                     "category":"Undergraduate Degree",
+                     "url":"https://egspec.org/academics/departments/undergraduate/information-technology"
+                  },
+                  "hasCourseInstance":{
+                     "@type":"CourseInstance",
+                     "courseMode":"Onsite",
+                     "location":"E.G.S. Pillay Engineering College",
+                     "courseSchedule":{
+                        "@type":"Schedule",
+                        "duration":"PT5H",
+                        "repeatCount":4,
+                        "repeatFrequency":"Yearly",
+                        "startDate":"",
+                        "endDate":""
+                     },
+                     "instructor":[
+                        {
+                           "@type":"Person",
+                           "name":"Dr. S. Manikandan, M.E., Ph.D",
+                           "description":"Associate Professor & Head, Department of Information Technology",
+                           "image":"https://egspec.blob.core.windows.net/egspec-assets/profile/dr-s-manikandan.webp"
+                        }
+                     ]
+                  }
+               },
+               {
+                  "@type":"Course",
+                  "name":"Biomedical Engineering",
+                  "description":"B.E. program combining engineering principles with medical and biological sciences.",
+                  "provider":{
+                     "@type":"Organization",
+                     "name":"E.G.S. Pillay Engineering College",
+                     "sameAs":"https://egspec.org/academics/departments/undergraduate/biomedical-engineering"
+                  },
+                  "offers":{
+                     "@type":"Offer",
+                     "category":"Undergraduate Degree",
+                     "url":"https://egspec.org/academics/departments/undergraduate/biomedical-engineering"
+                  },
+                  "hasCourseInstance":{
+                     "@type":"CourseInstance",
+                     "courseMode":"Onsite",
+                     "location":"E.G.S. Pillay Engineering College",
+                     "courseSchedule":{
+                        "@type":"Schedule",
+                        "duration":"PT5H",
+                        "repeatCount":4,
+                        "repeatFrequency":"Yearly",
+                        "startDate":"",
+                        "endDate":""
+                     },
+                     "instructor":[
+                        {
+                           "@type":"Person",
+                           "name":"Dr. A. Sundar Raj",
+                           "description":"Head of the Department, Department of Biomedical Engineering",
+                           "image":"https://egspec.blob.core.windows.net/egspec-assets/profile/a-sundar-raj.webp"
+                        }
+                     ]
+                  }
+               },
+               {
+                  "@type":"Course",
+                  "name":"Power Electronics and Drives",
+                  "description":"M.E. program focusing on power electronics systems and motor drives.",
+                  "provider":{
+                     "@type":"Organization",
+                     "name":"E.G.S. Pillay Engineering College",
+                     "sameAs":"https://egspec.org/academics/departments/postgraduate/power-electronics-and-drives"
+                  },
+                  "offers":{
+                     "@type":"Offer",
+                     "url":"https://egspec.org/academics/departments/postgraduate/power-electronics-and-drives",
+                     "category":"Postgraduate Degree"
+                  },
+                  "hasCourseInstance":{
+                     "@type":"CourseInstance",
+                     "courseMode":"Onsite",
+                     "location":"E.G.S. Pillay Engineering College",
+                     "courseSchedule":{
+                        "@type":"Schedule",
+                        "duration":"PT5H",
+                        "repeatCount":2,
+                        "repeatFrequency":"Yearly",
+                        "startDate":"",
+                        "endDate":""
+                     },
+                     "instructor":[
+                        {
+                           "@type":"Person",
+                           "name":"Dr. S. Palani Murugan",
+                           "description":"Academic Director",
+                           "image":"https://egspec.blob.core.windows.net/egspec-assets/profile/dr_s_palani_murugan.webp"
+                        }
+                     ]
+                  }
+               },
+               {
+                  "@type":"Course",
+                  "name":"Communication Systems",
+                  "description":"M.E. program specializing in advanced communication technologies.",
+                  "provider":{
+                     "@type":"Organization",
+                     "name":"E.G.S. Pillay Engineering College",
+                     "sameAs":"https://egspec.org/academics/departments/postgraduate/communication-systems"
+                  },
+                  "offers":{
+                     "@type":"Offer",
+                     "url":"https://egspec.org/academics/departments/postgraduate/communication-systems",
+                     "category":"Postgraduate Degree"
+                  },
+                  "hasCourseInstance":{
+                     "@type":"CourseInstance",
+                     "courseMode":"Onsite",
+                     "location":"E.G.S. Pillay Engineering College",
+                     "courseSchedule":{
+                        "@type":"Schedule",
+                        "duration":"PT5H",
+                        "repeatCount":2,
+                        "repeatFrequency":"Yearly",
+                        "startDate":"",
+                        "endDate":""
+                     },
+                     "instructor":[
+                        {
+                           "@type":"Person",
+                           "name":"Dr. S. Palani Murugan",
+                           "description":"Academic Director",
+                           "image":"https://egspec.blob.core.windows.net/egspec-assets/profile/dr_s_palani_murugan.webp"
+                        }
+                     ]
+                  }
+               },
+               {
+                  "@type":"Course",
+                  "name":"Environmental Engineering",
+                  "description":"M.E. program focusing on sustainable environmental solutions.",
+                  "provider":{
+                     "@type":"Organization",
+                     "name":"E.G.S. Pillay Engineering College",
+                     "sameAs":"https://egspec.org/academics/departments/postgraduate/environmental-engineering"
+                  },
+                  "offers":{
+                     "@type":"Offer",
+                     "url":"https://egspec.org/academics/departments/postgraduate/environmental-engineering",
+                     "category":"Postgraduate Degree"
+                  },
+                  "hasCourseInstance":{
+                     "@type":"CourseInstance",
+                     "courseMode":"Onsite",
+                     "location":"E.G.S. Pillay Engineering College",
+                     "courseSchedule":{
+                        "@type":"Schedule",
+                        "duration":"PT5H",
+                        "repeatCount":2,
+                        "repeatFrequency":"Yearly",
+                        "startDate":"",
+                        "endDate":""
+                     },
+                     "instructor":[
+                        {
+                           "@type":"Person",
+                           "name":"Dr. S. Palani Murugan",
+                           "description":"Academic Director",
+                           "image":"https://egspec.blob.core.windows.net/egspec-assets/profile/dr_s_palani_murugan.webp"
+                        }
+                     ]
+                  }
+               }
             ]
-          }
-
-    </script>
-
-    <script type="application/ld+json">
-
-        {
-            "@context": "https://schema.org",
-            "@graph": [
-              {
-                "@type": "Course",
-                "name": "Mechanical Engineering",
-                "description": "B.E. program focusing on the principles of mechanics, dynamics, and thermodynamics.",
-                "provider": {
-                  "@type": "Organization",
-                  "name": "E.G.S. Pillay Engineering College",
-                  "sameAs": "https://egspec.org/academics/departments/undergraduate/mechanical-engineering"
-                }
-              },
-              {
-                "@type": "Course",
-                "name": "Civil Engineering",
-                "description": "B.E. program specializing in the design, construction, and maintenance of infrastructure.",
-                "provider": {
-                  "@type": "Organization",
-                  "name": "E.G.S. Pillay Engineering College",
-                  "sameAs": "https://egspec.org/academics/departments/undergraduate/civil-engineering"
-                }
-              },
-              {
-                "@type": "Course",
-                "name": "Electrical and Electronics Engineering",
-                "description": "B.E. program that covers electrical systems, electronics, and related technologies.",
-                "provider": {
-                  "@type": "Organization",
-                  "name": "E.G.S. Pillay Engineering College",
-                  "sameAs": "https://egspec.org/academics/departments/undergraduate/electrical-and-electronics-engineering"
-                }
-              },
-              {
-                "@type": "Course",
-                "name": "Electronics and Communication Engineering",
-                "description": "B.E. program focusing on electronic systems and communication technologies.",
-                "provider": {
-                  "@type": "Organization",
-                  "name": "E.G.S. Pillay Engineering College",
-                  "sameAs": "https://egspec.org/academics/departments/undergraduate/electronics-and-communication-engineering"
-                }
-              },
-              {
-                "@type": "Course",
-                "name": "Computer Science and Engineering",
-                "description": "B.E. program covering fundamental concepts in computer science and software development.",
-                "provider": {
-                  "@type": "Organization",
-                  "name": "E.G.S. Pillay Engineering College",
-                  "sameAs": "https://egspec.org/academics/departments/undergraduate/computer-science-and-engineering"
-                }
-              },
-              {
-                "@type": "Course",
-                "name": "Information Technology",
-                "description": "B.E. program that focuses on computer systems, networking, and information management.",
-                "provider": {
-                  "@type": "Organization",
-                  "name": "E.G.S. Pillay Engineering College",
-                  "sameAs": "https://egspec.org/academics/departments/undergraduate/information-technology"
-                }
-              },
-              {
-                "@type": "Course",
-                "name": "Biomedical Engineering",
-                "description": "B.E. program combining engineering principles with medical and biological sciences.",
-                "provider": {
-                  "@type": "Organization",
-                  "name": "E.G.S. Pillay Engineering College",
-                  "sameAs": "https://egspec.org/academics/departments/undergraduate/biomedical-engineering"
-                }
-              },
-              {
-                "@type": "Course",
-                "name": "Computer Science & Business Systems Engineering",
-                "description": "B.E. program integrating computer science with business management concepts.",
-                "provider": {
-                  "@type": "Organization",
-                  "name": "E.G.S. Pillay Engineering College",
-                  "sameAs": "https://egspec.org/academics/departments/undergraduate/computer-science-business-systems-engineering"
-                }
-              },
-              {
-                "@type": "Course",
-                "name": "Artificial Intelligence and Data Science",
-                "description": "B.E. program focused on AI technologies and data analysis techniques.",
-                "provider": {
-                  "@type": "Organization",
-                  "name": "E.G.S. Pillay Engineering College",
-                  "sameAs": "https://egspec.org/academics/departments/undergraduate/artificial-intelligence-data-science"
-                }
-              },
-              {
-                "@type": "Course",
-                "name": "Master of Computer Applications (MCA)",
-                "description": "Postgraduate program focusing on computer applications and software development.",
-                "provider": {
-                  "@type": "Organization",
-                  "name": "E.G.S. Pillay Engineering College",
-                  "sameAs": "https://egspec.org/academics/departments/postgraduate/master-of-computer-applications"
-                }
-              },
-              {
-                "@type": "Course",
-                "name": "Master of Business Administration (MBA)",
-                "description": "Postgraduate program aimed at developing managerial skills and business acumen.",
-                "provider": {
-                  "@type": "Organization",
-                  "name": "E.G.S. Pillay Engineering College",
-                  "sameAs": "https://egspec.org/academics/departments/postgraduate/master-of-business-administration"
-                }
-              },
-              {
-                "@type": "Course",
-                "name": "Science and Humanity",
-                "description": "Program exploring the interconnections between scientific inquiry and human values.",
-                "provider": {
-                  "@type": "Organization",
-                  "name": "E.G.S. Pillay Engineering College",
-                  "sameAs": "https://egspec.org/academics/departments/undergraduate/science-and-humanity"
-                }
-              },
-              {
-                "@type": "Course",
-                "name": "Manufacturing Engineering",
-                "description": "M.E. program focusing on manufacturing processes and systems.",
-                "provider": {
-                  "@type": "Organization",
-                  "name": "E.G.S. Pillay Engineering College",
-                  "sameAs": "https://egspec.org/academics/departments/postgraduate/manufacturing-engineering"
-                }
-              },
-              {
-                "@type": "Course",
-                "name": "Computer Science and Engineering (M.E./M.Tech)",
-                "description": "Postgraduate program in advanced computer science concepts and applications.",
-                "provider": {
-                  "@type": "Organization",
-                  "name": "E.G.S. Pillay Engineering College",
-                  "sameAs": "https://egspec.org/academics/departments/postgraduate/computer-science-and-engineering"
-                }
-              },
-              {
-                "@type": "Course",
-                "name": "Power Electronics and Drives",
-                "description": "M.E. program focusing on power electronics systems and motor drives.",
-                "provider": {
-                  "@type": "Organization",
-                  "name": "E.G.S. Pillay Engineering College",
-                  "sameAs": "https://egspec.org/academics/departments/postgraduate/power-electronics-and-drives"
-                }
-              },
-              {
-                "@type": "Course",
-                "name": "Communication Systems",
-                "description": "M.E. program specializing in advanced communication technologies.",
-                "provider": {
-                  "@type": "Organization",
-                  "name": "E.G.S. Pillay Engineering College",
-                  "sameAs": "https://egspec.org/academics/departments/postgraduate/communication-systems"
-                }
-              },
-              {
-                "@type": "Course",
-                "name": "Environmental Engineering",
-                "description": "M.E. program focusing on sustainable environmental solutions.",
-                "provider": {
-                  "@type": "Organization",
-                  "name": "E.G.S. Pillay Engineering College",
-                  "sameAs": "https://egspec.org/academics/departments/postgraduate/environmental-engineering"
-                }
-              }
-            ]
-          }
+         }
 
     </script>
 
