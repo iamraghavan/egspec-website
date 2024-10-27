@@ -23,7 +23,9 @@ use RyanChandler\LaravelCloudflareTurnstile\Rules\Turnstile;
 use GuzzleHttp\Client;
 use App\Mail\ContactSubmissionMail; // Import the ContactSubmissionMail class
 use App\Mail\AcknowledgmentMail; // Import the AcknowledgmentMail class
-
+use App\Models\Album;
+use App\Models\Course;
+use App\Models\Event;
 use Illuminate\Support\Facades\Route;
 
 class InstitutionInternalPurpose extends Controller
@@ -356,5 +358,45 @@ class InstitutionInternalPurpose extends Controller
         }
 
         return response()->json(['message' => 'Invalid requirement or department.'], 400);
+    }
+
+
+    public function searchq(Request $request)
+    {
+        $query = $request->input('q');
+
+        // Search for courses
+        $courseResults = Course::where('course_name', 'LIKE', '%' . $query . '%')
+            ->orWhere('description', 'LIKE', '%' . $query . '%')
+            ->get();
+
+        // Search for events
+        $eventResults = Event::where('event_name', 'LIKE', '%' . $query . '%')
+            ->orWhere('participant_details', 'LIKE', '%' . $query . '%')
+            ->get();
+
+        return view('pages.institution.search-results', compact('query', 'courseResults', 'eventResults'));
+    }
+
+
+    public function gallery_index()
+    {
+        $albums = Album::all();
+        return view('pages.institution.gallery', compact('albums'));
+    }
+
+    public function showAlbum(Request $request)
+    {
+        $albumId = $request->query('album');
+
+        // Check if the album ID is provided
+        if (!$albumId) {
+            return redirect()->route('gallery_index')->with('error', 'Album ID is required.');
+        }
+
+        // Retrieve the album with its photos
+        $album = Album::with('photos')->findOrFail($albumId);
+
+        return view('pages.institution.photo', compact('album'));
     }
 }

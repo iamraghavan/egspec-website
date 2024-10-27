@@ -35,6 +35,14 @@ Route::get('/academics/departments/{department}/hods-desk', function ($departmen
     return view('under-construction', ['department' => $department]);
 });
 
+
+Route::get('/search', [InstitutionInternalPurpose::class, 'searchq']);
+
+Route::get('/gallery', [InstitutionInternalPurpose::class, 'gallery_index'])->name('gallery_index');
+Route::get('/gallery_photo', [InstitutionInternalPurpose::class, 'showAlbum'])->name('showAlbum');
+
+
+
 Route::post('/sent/mail', function () {
     $recipients = ['all@egspec.org', 'raghavan@egspec.org'];
     $errors = [];
