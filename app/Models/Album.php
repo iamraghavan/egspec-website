@@ -15,4 +15,10 @@ class Album extends Model
     {
         return $this->hasMany(Photo::class);
     }
+
+    // Album.php (Model)
+    public function user()
+    {
+        return $this->belongsTo(User::class, 'created_by');
+    }
 }

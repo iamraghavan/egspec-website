@@ -246,7 +246,29 @@
 
                     </ul>
                 </li>
+                <li class="has-droupdown">
+                    <a class="main" href="{{route('gallery_index')}}">Gallery</a>
+                    {{-- <a class="main" href="{{ url("#") }}">Downloads</a> --}}
+                </li>
 
+                <li class="has-droupdown">
+                    <a href="{{ url("#") }}" class="main">Quick Links</a>
+                    <ul class="submenu mm-collapse">
+                        <li><a class="mobile-menu-link" href="{{url('/right-to-information')}}">RTI</a></li>
+                        <li><a class="mobile-menu-link" href="{{url('/iqac/committe-members')}}">IQAC</a></li>
+                        <li><a class="mobile-menu-link" href="{{url('/skill-development-center/pradhan-mantri-kaushal-kendra')}}">PMKK</a></li>
+                        <li><a class="mobile-menu-link" href="{{url('/skill-development-center/pradhan-mantri-kaushal-vikas-yojana')}}">PMKVY</a></li>
+                        <li><a class="mobile-menu-link" href="{{url('/affiliation/approved/aicte')}}">AICTE</a></li>
+                        <li><a class="mobile-menu-link" href="{{url('/mandatory-disclosure')}}">Mandatory Disclosure</a></li>
+                        <li><a class="mobile-menu-link" href="{{url('/national-institutional-ranking-framework')}}">NIRF Engineering Ranking</a></li>
+                        <li><a class="mobile-menu-link" href="{{url('/affiliation/approved/accreditation-status')}}">Accreditation Status</a></li>
+                        <li><a class="mobile-menu-link" href="{{url('/activities/cells/internal-complaints-committee')}}">Internal Complaints Committee</a></li>
+                        <li><a class="mobile-menu-link" href="https://firebasestorage.googleapis.com/v0/b/egspj-bumblebees.appspot.com/o/egspec-assets%2Fpdf%2FM_AiCTE_Approval.pdf?alt=media&token=20146981-a33f-4b95-bd49-3567ac5c207d" target="_blank" rel="noopener noreferrer">All AICTE Approval Documents</a></li>
+                        <li><a class="mobile-menu-link" href="{{url('/affiliation/aicte-egspec-video')}}">AICTE EGSPEC Video</a></li>
+                        <li><a class="mobile-menu-link" href="{{url('/meeting-minutes/governing-body')}}">Governing Body Meeting</a></li>
+
+                    </ul>
+                </li>
             </ul>
         </nav>
 

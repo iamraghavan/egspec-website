@@ -1,78 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-{{-- {{ asset('assets/images/1080x1080_nba_accredited_v1.webp') }} --}}
-<!-- Include HystModal CSS -->
-<link href="
-https://cdn.jsdelivr.net/npm/hystmodal@1.0.1/dist/hystmodal.min.css
-" rel="stylesheet">
-<style>
-    /* Custom styles for the HystModal */
-    .hystmodal__wrap {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 20px;
-        height: 100%;
-    }
 
-    .hystmodal__window {
-        padding: 2px;
-    border-radius: 10px;
-    margin-top: 15rem;
-    width: 90%;
-    max-width: 600px;
-    position: relative;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
-    }
-
-    .hystmodal__close {
-        position: absolute;
-        top: 10px;
-        right: 10px;
-        background: none;
-        border: none;
-        font-size: 16px;
-        cursor: pointer;
-    }
-
-    @media (max-width: 768px) {
-        #advertisement-modal {
-            display: none; /* Hide modal on mobile */
-        }
-    }
-</style>
-
-<!-- Modal Structure -->
-<div class="hystmodal" id="advertisement-modal" aria-hidden="true">
-    <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-            <button data-hystclose="" class="hystmodal__close">Close</button>
-            <img src="{{ asset('assets/images/1080x1080_nba_accredited_v1.webp') }}" alt="Advertisement" style="width: 100%; height: auto; border-radius: 10px;">
-        </div>
-    </div>
-</div>
-
-<!-- Include HystModal JS -->
-<script src="
-https://cdn.jsdelivr.net/npm/hystmodal@1.0.1/dist/hystmodal.min.js
-"></script>
-
-<script>
-    // Initialize HystModal
-    document.addEventListener('DOMContentLoaded', function () {
-        var modal = new HystModal({
-            linkAttributeName: "data-hystmodal",
-            closeOnEsc: true,
-            closeOnOverlayClick: true,
-        });
-
-        // Open the modal automatically on page load only for desktop devices
-        if (window.innerWidth >= 768) {
-            modal.open('#advertisement-modal');
-        }
-    });
-</script>
 
 
 <style>

@@ -124,8 +124,7 @@ $footerLinks = [
                                     <li><a href="https://firebasestorage.googleapis.com/v0/b/egspj-bumblebees.appspot.com/o/egspec-assets%2Fpdf%2FM_AiCTE_Approval.pdf?alt=media&token=20146981-a33f-4b95-bd49-3567ac5c207d" target="_blank" rel="noopener noreferrer">All AICTE Approval Documents</a></li>
                                     <li><a href="{{url('/affiliation/aicte-egspec-video')}}">AICTE EGSPEC Video</a></li>
                                     <li><a href="{{url('/meeting-minutes/governing-body')}}">Governing Body Meeting</a></li>
-                                    {{-- <li><a href="">Mandatory Disclosure</a></li>
-                                    <li><a href="">NIRF Engineering Ranking</a></li> --}}
+
 
                                 </ul>
                             </div>

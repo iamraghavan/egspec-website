@@ -379,11 +379,16 @@ class InstitutionInternalPurpose extends Controller
     }
 
 
-    public function gallery_index()
+    public function gallery_index(Request $request)
     {
-        $albums = Album::all();
+        // Get paginated albums
+        $albums = Album::with(['photos' => function ($query) {
+            $query->inRandomOrder()->limit(1); // Fetch a random image
+        }])->paginate(6); // Adjust the number of albums per page
+
         return view('pages.institution.gallery', compact('albums'));
     }
+
 
     public function showAlbum(Request $request)
     {
@@ -394,9 +399,10 @@ class InstitutionInternalPurpose extends Controller
             return redirect()->route('gallery_index')->with('error', 'Album ID is required.');
         }
 
-        // Retrieve the album with its photos
-        $album = Album::with('photos')->findOrFail($albumId);
+        // Retrieve the album with its photos, paginated
+        $album = Album::with('user')->findOrFail($albumId);
+        $photos = $album->photos()->paginate(5); // Adjust the number of photos per page as needed
 
-        return view('pages.institution.photo', compact('album'));
+        return view('pages.institution.photo', compact('album', 'photos'));
     }
 }
