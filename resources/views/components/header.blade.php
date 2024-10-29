@@ -96,11 +96,11 @@
                 </div> --}}
 
 
-                <div class="col-lg-6 d-flex align-items-center">
+                <div class="col-lg-7 d-flex align-items-center">
                     <a href="{{ url('/') }}" class="logo-area">
                         <picture>
                             <!-- For desktop and big screens -->
-                            <source srcset="{{ asset('/assets/images/EGSLOGO_1.webp') }}" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="{{ asset('/assets/images/EGSLOGO_2.webp') }}" media="(min-width: 768px)" type="image/webp">
                             <!-- For mobile screens -->
                             <img src="{{ asset('/assets/images/logo_tran.svg') }}" alt="logo" class="logo dlogo">
                         </picture>
@@ -115,11 +115,22 @@
                 </div>
 
 
+                {{-- <div class="col-lg-2 d-flex align-items-center">
+                    <a href="{{ url('/') }}" class="logo-area">
+                        <picture>
+                            <!-- For desktop and big screens -->
+                            <source srcset="{{ asset('/assets/op.webp') }}" media="(min-width: 768px)" type="image/webp">
+                            <!-- For mobile screens -->
+                            <img src="{{ asset('/assets/op.webp') }}" alt="logo" class="logo dlogo">
+                        </picture>
+
+                    </a>
+
+                </div> --}}
 
 
 
-
-                <div class="col-lg-6 text-right">
+                <div class="col-lg-5 text-right">
                     <div class="header-right-logos d-flex justify-content-end">
                         <picture>
                             <source srcset="https://www.citchennai.edu.in/wp-content/uploads/2023/12/nba-logo.svg" type="image/svg">
