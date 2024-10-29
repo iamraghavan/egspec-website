@@ -13,7 +13,7 @@ class ContentSecurityPolicy
         $csp = "default-src 'self'; "
             . "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://cdn.jsdelivr.net https://ajax.googleapis.com https://unpkg.com https://www.gstatic.com https://www.googletagmanager.com; "
             . "style-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net https://cdn.datatables.net https://unpkg.com https://fonts.googleapis.com; "
-            . "img-src 'self' data: https://trusted-images.example.com; "
+            . "img-src 'self' data: https://egspec.blob.core.windows.net;"
             . "font-src 'self' https://fonts.gstatic.com https://cdn.jsdelivr.net; "
             . "connect-src 'self' https://trusted-api.example.com; "
             . "frame-ancestors 'none'; "
