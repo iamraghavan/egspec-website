@@ -75,8 +75,8 @@
                             </ul>
                         </li>
 
-                        <li><a class="mobile-menu-link" href="{{ url('/academics/industry-academic-partnering') }}">Industry Academic Partners</a></li>
-<li><a class="mobile-menu-link" href="{{ url('/academics/industry-certification-programs') }}">Industry Certification Programmes</a></li>
+                        <li><a class="mobile-menu-link" href="{{ url('/academics/industry-academic-partnering') }}">Academic Partners</a></li>
+{{-- <li><a class="mobile-menu-link" href="{{ url('/academics/industry-certification-programs') }}">Industry Certification Programmes</a></li> --}}
 <li><a class="mobile-menu-link" href="{{ url('/academics/industry-training-programs') }}">Industry Training Programmes</a></li>
 <li><a class="mobile-menu-link" href="{{ url('/academics/advisory-board') }}">Advisory Board</a></li>
 

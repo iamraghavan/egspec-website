@@ -21,6 +21,44 @@
     </div>
 </div>
 
+<div class="rts-event-speaker mt--40" element-id="358">
+    <div class="container" element-id="357">
+        <div class="row" element-id="356">
+            <div class="rts-section" element-id="355">
+                <h3 class="rts-section-title animated fadeIn" element-id="354">
+                    Industrial Collaboration
+                    </h3>
+            </div>
+        </div>
+        <!-- event speaker list -->
+        <div class="row g-5" element-id="353">
+            <!-- single speaker item -->
+
+
+            @foreach($iap->where('categories_js', 'industrial collaboration') as $partner)
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="event-speaker">
+                    <div class="event-speaker__details">
+                        <div class="">
+                            @if(!empty($partner->logo_image_url))
+                                <img class="iap" src="{{ $partner->logo_image_url }}" alt="{{ $partner->alt_name }}">
+                            @else
+                                <h3 class="iap-h3">{{ $partner->alt_name }}</h3>
+                            @endif
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @endforeach
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
 
 <div class="rts-event-speaker mt--40" element-id="358">
     <div class="container" element-id="357">
@@ -36,21 +74,21 @@
             <!-- single speaker item -->
 
 
-                @foreach($iap as $partner)
-                <div class="col-lg-3 col-md-4 col-sm-6">
-                    <div class="event-speaker">
-                        <div class="event-speaker__details">
-                            <div class="">
-                                @if(!empty($partner->logo_image_url))
+            @foreach($iap->where('categories_js', 'industrial academic partners') as $partner)
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="event-speaker">
+                    <div class="event-speaker__details">
+                        <div class="">
+                            @if(!empty($partner->logo_image_url))
                                 <img class="iap" src="{{ $partner->logo_image_url }}" alt="{{ $partner->alt_name }}">
-                                @else
+                            @else
                                 <h3 class="iap-h3">{{ $partner->alt_name }}</h3>
-                                @endif
-                            </div>
+                            @endif
                         </div>
                     </div>
                 </div>
-                @endforeach
+            </div>
+        @endforeach
 
 
 
@@ -61,6 +99,46 @@
     </div>
 </div>
 
+
+
+<div class="rts-event-speaker mt--40" element-id="358">
+    <div class="container" element-id="357">
+        <div class="row" element-id="356">
+            <div class="rts-section" element-id="355">
+                <h3 class="rts-section-title animated fadeIn" element-id="354">
+                    Academic Training
+                    </h3>
+            </div>
+        </div>
+        <!-- event speaker list -->
+        <div class="row g-5" element-id="353">
+            <!-- single speaker item -->
+
+
+            @foreach($iap->where('categories_js', 'industrial academic training') as $partner)
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <div class="event-speaker">
+                    <div class="event-speaker__details">
+                        <div class="">
+                            @if(!empty($partner->logo_image_url))
+                                <img class="iap" src="{{ $partner->logo_image_url }}" alt="{{ $partner->alt_name }}">
+                            @else
+                                <h3 class="iap-h3">{{ $partner->alt_name }}</h3>
+                            @endif
+                        </div>
+                    </div>
+                </div>
+            </div>
+        @endforeach
+
+
+
+
+
+
+        </div>
+    </div>
+</div>
 
 <style>
     /* Style for the image */
