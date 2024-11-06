@@ -1,4 +1,5 @@
-<div class="rts-service v_2">
+<div class="rts-service v_2" style="background: rgb(175,0,95);
+background: linear-gradient(90deg, rgba(175,0,95,1) 0%, rgba(0,23,110,1) 100%);">
     <div class="row">
         <div class="single-service-content">
             <div class="single-service">
