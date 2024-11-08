@@ -259,8 +259,8 @@
     [
         'designation' => 'System Administrator',
         'name' => 'M. Mayakannan',
-        'phone' => '123-456-7929',
-        'email' => 'mayakannan@example.com',
+        'phone' => '894-603-7215',
+        'email' => 'mayakannan@egspec.org',
         'photo' => 'url_to_photo_mayakannan.jpg'
     ],
     [

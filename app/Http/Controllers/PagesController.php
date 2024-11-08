@@ -137,6 +137,38 @@ class PagesController extends Controller
         return view('pages.iqac.committe-members');
     }
 
+    public function iqac_directors_profile()
+    {
+        SEOTools::setTitle('IQAC Directors Profile');
+        SEOTools::setDescription('Learn about the IQAC Directors and their contributions to academic excellence at E.G.S. Pillay Engineering College.');
+        SEOTools::opengraph()->addProperty('type', 'website');
+        SEOTools::opengraph()->addProperty('url', Url()->current());
+        SEOTools::opengraph()->addProperty('title', 'IQAC Directors Profile | E.G.S. Pillay Engineering College');
+        SEOTools::opengraph()->addProperty('description', 'Learn about the IQAC Directors and their contributions to academic excellence at E.G.S. Pillay Engineering College.');
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('IQAC Directors Profile | E.G.S. Pillay Engineering College');
+        SEOTools::twitter()->setDescription('Learn about the IQAC Directors at E.G.S. Pillay Engineering College.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
+        return view('pages.iqac.directors-profile');
+    }
+
+    public function iqac_convener_profile()
+    {
+        SEOTools::setTitle('IQAC Convener Profile');
+        SEOTools::setDescription('Learn about the IQAC Convener and their role in the IQAC committee at E.G.S. Pillay Engineering College.');
+        SEOTools::opengraph()->addProperty('type', 'website');
+        SEOTools::opengraph()->addProperty('url', Url()->current());
+        SEOTools::opengraph()->addProperty('title', 'IQAC Convener Profile | E.G.S. Pillay Engineering College');
+        SEOTools::opengraph()->addProperty('description', 'Learn about the IQAC Convener and their role in the IQAC committee at E.G.S. Pillay Engineering College.');
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('IQAC Convener Profile | E.G.S. Pillay Engineering College');
+        SEOTools::twitter()->setDescription('Learn about the IQAC Convener at E.G.S.Pillay Engineering College.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
+        return view('pages.iqac.convener-profile');
+    }
+
     public function iqac_meeting_minutes()
     {
         SEOTools::setTitle('IQAC Meeting Minutes');

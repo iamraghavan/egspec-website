@@ -43,6 +43,9 @@ Route::get('/gallery_photo', [InstitutionInternalPurpose::class, 'showAlbum'])->
 
 
 
+
+
+
 Route::post('/sent/mail', function () {
     $recipients = ['all@egspec.org', 'raghavan@egspec.org'];
     $errors = [];
@@ -84,6 +87,8 @@ Route::get('/skill-development-center/pradhan-mantri-kaushal-kendra', [PagesCont
 Route::get('/skill-development-center/pradhan-mantri-kaushal-vikas-yojana', [PagesController::class, 'sdc_pmkvy']);
 
 // iqac
+Route::get('/iqac/directors-profile', [PagesController::class, 'iqac_directors_profile']);
+Route::get('/iqac/convener-profile', [PagesController::class, 'iqac_convener_profile']);
 Route::get('/iqac/committe-members', [PagesController::class, 'iqac_committe_members']);
 Route::get('/iqac/meeting-minutes', [PagesController::class, 'iqac_meeting_minutes']);
 
