@@ -27,7 +27,7 @@
                     <div class="member-info__details">
                         <div class="short-info">
                             <h4 class="rts-section-title mb--5">Dr. D.Devarajan,M.E.,Ph.D, </h4>
-                            <span class="designation">Director-IQAC</span>
+                            <span class="designation">Convener-IQAC</span>
                             <p class="description">
                                 Dr. D.Devarajan working as Associate professor in ECE having 12+ Years Experience in Teaching field .Published 12+ Journal Papers in reputed journals with Electronic circuits book. Currently Serving Reviewer in7 Journals.
                             </p>
