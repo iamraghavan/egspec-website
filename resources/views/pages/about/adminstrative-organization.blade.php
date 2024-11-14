@@ -308,9 +308,9 @@
     [
         'designation' => 'IETE Student’s Chapter',
         'name' => 'Dr. D. Devarajan (ECE)',
-        'phone' => '123-456-7912',
-        'email' => 'devarajan@example.com',
-        'photo' => 'url_to_photo_devarajan.jpg'
+        'phone' => '98940 55342',
+        'email' => 'devarajan@egspec.org ',
+        'photo' => 'https://lh7-rt.googleusercontent.com/docsz/AD_4nXcMAMxa8klqhoqmiAqEZPrBYtjOoEuUYtFCivQAee2eWmO5C4tspSssYYIq-gnyFBNrVaY0XBea6Iuko6-5DFL8O-O9Y04FUG571ANK7U-EhlXf7ZiuFGRrD3kBR9kn3Dq4i6-ek0gLaHcRUuCIzgmEem6bwt00qfZ3FgZt3WI6SYN1gQTNOA?key=jtZZgPH6aTTr32PpmQEN8Hnb'
     ],
     [
         'designation' => 'IE Student’s Chapter',
