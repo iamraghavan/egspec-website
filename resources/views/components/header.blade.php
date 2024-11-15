@@ -395,6 +395,9 @@
                                         <li><a href="{{ url("/iqac/convener-profile") }}">Convener Profile</a></li>
                                         <li><a href="{{ url("/iqac/committe-members") }}">Members</a></li>
                                         <li><a href="{{ url("/iqac/meeting-minutes") }}">IQAC Meeting Minutes</a></li>
+                                        <li><a href="{{ url("/iqac/works-plan-and-implementation") }}">Works Plan & Implementation</a></li>
+                                        <li><a href="{{ url("/iqac/iqac-function") }}">IQAC Functions</a></li>
+                                        <li><a href="{{ url("/iqac/iqac-events") }}">IQAC Events</a></li>
 
 
                                      </ul>
