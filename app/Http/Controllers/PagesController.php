@@ -1318,6 +1318,31 @@ class PagesController extends Controller
     }
 
 
+    public function newsletter()
+    {
+        // SEO Settings
+        SEOTools::setTitle('Newsletter | Stay Updated');
+        SEOTools::setDescription('Stay updated with the latest news and updates from EGSPEC.');
+        SEOTools::opengraph()->addProperty('url', Url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
+
+        // JSON-LD Structured Data
+        JsonLd::setTitle('Newsletter');
+        JsonLd::setDescription('Stay updated with the latest news and updates from EGSPEC.');
+        JsonLd::addValue('@context', 'https://schema.org');
+        JsonLd::addValue('@type', 'Organization');
+        JsonLd::addValue('url', Url()->current());
+        JsonLd::addValue('name', 'Newsletter');
+        JsonLd::addValue('description', 'Stay updated with the latest news and updates from EGSPEC.');
+        JsonLd::addValue('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        JsonLd::addValue('email', 'enquiry@egspec.com');
+
+        return view('pages.academics.newsletter');
+    }
+
+
 
 
     /* Research */

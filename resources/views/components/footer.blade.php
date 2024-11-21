@@ -26,6 +26,7 @@ $footerLinks = [
 ],
 'Important Links' => [
 'AntiRagging' => url('/activities/anti-ragging-committee'),
+'NewsLetter' => url('/academics/newsletter'),
 'EGSPGOI Transport' => ('/facilities/transport'),
 // 'Downloads' => 'http://example.com/downloads',
 'Blog & Articles' => 'http://example.com/blog',

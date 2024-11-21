@@ -119,6 +119,7 @@ Route::get('/academics/industry-academic-partnering', [PagesController::class, '
 Route::get('/academics/industry-certification-programs', [PagesController::class, 'industry_certification_programs']);
 Route::get('/academics/industry-training-programs', [PagesController::class, 'industry_training_programs']);
 Route::get('/academics/advisory-board', [PagesController::class, 'advisory_board']);
+Route::get('/academics/newsletter', [PagesController::class, 'newsletter']);
 
 
 
@@ -193,6 +194,8 @@ Route::get('/activities/professional-bodies/ictact', [PagesController::class, 'i
 Route::get('/activities/professional-bodies/csi', [PagesController::class, 'csi']);
 Route::get('/activities/professional-bodies/iete', [PagesController::class, 'iete']);
 Route::get('/activities/professional-bodies/iei', [PagesController::class, 'iei']);
+
+
 
 
 
