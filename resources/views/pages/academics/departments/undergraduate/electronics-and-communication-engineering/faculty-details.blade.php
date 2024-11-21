@@ -59,12 +59,7 @@
                                         <td>Ph.D</td>
                                         <td>Associate Professor</td>
                                     </tr>
-                                    <tr>
-                                        <td>6</td>
-                                        <td>Dr. N. Prathap</td>
-                                        <td>Ph.D</td>
-                                        <td>Associate Professor</td>
-                                    </tr>
+                                    
                                     <tr>
                                         <td>7</td>
                                         <td>Dr. M. Nuthal Srinivasan</td>

@@ -75,7 +75,7 @@
                                     <li><a href="@blob('iqac/annual-quality-assurance-report/aqar-2017-18.pdf')" target="_parent" rel="noopener noreferrer"><span><i class="fa-light fa-arrow-right"></i></span>AQAR 2017-2018</a></li>
                                     <li><a href="@blob('iqac/annual-quality-assurance-report/aqar-2018-19.pdf')" target="_parent" rel="noopener noreferrer"><span><i class="fa-light fa-arrow-right"></i></span>AQAR 2018-2019</a></li>
                                     <li><a href="@blob('iqac/annual-quality-assurance-report/aqar-2019-20.pdf')" target="_parent" rel="noopener noreferrer"><span><i class="fa-light fa-arrow-right"></i></span>AQAR 2019-2020</a></li>
-                                    <li><a href="@blob('iqac/annual-quality-assurance-report/aqar-2020-21.pdf')" target="_parent" rel="noopener noreferrer"><span><i class="fa-light fa-arrow-right"></i></span>AQAR 2021-2022</a></li>
+                                    <li><a href="@blob('iqac/annual-quality-assurance-report/aqar-2020-21.pdf')" target="_parent" rel="noopener noreferrer"><span><i class="fa-light fa-arrow-right"></i></span>AQAR 2020-2021</a></li>
 
                                 </ul>
                             </div>
@@ -91,7 +91,7 @@
                             <h6 class="heading-title">IQAC Functions</h6>
                             <div class="program-menu">
                                 <ul class="list-unstyled">
-                                    <li><a href="@blob('iqac/committe-members/2024/egspec-iqac-functions.pdf')"><span><i class="fa-light fa-arrow-right"></i></span>IQAC Functions
+                                    <li><a href="{{url('/iqac/iqac-function')}}"><span><i class="fa-light fa-arrow-right"></i></span>IQAC Functions
                                     </a></li>
 
 
@@ -119,7 +119,7 @@
                             <h6 class="heading-title">Works Plan & Implementation</h6>
                             <div class="program-menu">
                                 <ul class="list-unstyled">
-                                    <li><a href="@blob('iqac/committe-members/2024/egspec-iqac-worksplan-for-implementation.pdf')"><span><i class="fa-light fa-arrow-right"></i></span>IQAC Works Plan & Implementation</a></li>
+                                    <li><a href="{{url('/iqac/works-plan-and-implementation')}}"><span><i class="fa-light fa-arrow-right"></i></span>IQAC Works Plan & Implementation</a></li>
 
 
                                 </ul>

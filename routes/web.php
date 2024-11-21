@@ -91,6 +91,9 @@ Route::get('/iqac/directors-profile', [PagesController::class, 'iqac_directors_p
 Route::get('/iqac/convener-profile', [PagesController::class, 'iqac_convener_profile']);
 Route::get('/iqac/committe-members', [PagesController::class, 'iqac_committe_members']);
 Route::get('/iqac/meeting-minutes', [PagesController::class, 'iqac_meeting_minutes']);
+Route::get('/iqac/works-plan-and-implementation', [PagesController::class, 'iqac_works_plan_and_implementation']);
+Route::get('/iqac/iqac-function', [PagesController::class, 'iqac_function']);
+Route::get('/iqac/iqac-events', [PagesController::class, 'iqac_events']);
 
 // aicte
 Route::get('/affiliation/approved/aicte', [PagesController::class, 'aicte_approved']);

@@ -185,6 +185,61 @@ class PagesController extends Controller
         return view('pages.iqac.iqac-meeting-minutes');
     }
 
+
+    public function iqac_works_plan_and_implementation()
+    {
+        SEOTools::setTitle('IQAC Works Plan and Implementation');
+        SEOTools::setDescription('Learn about the IQAC works plan and implementation at E.G.S. Pillay Engineering College to enhance academic quality.');
+        SEOTools::opengraph()->addProperty('type', 'website');
+        SEOTools::opengraph()->addProperty('url', Url()->current());
+        SEOTools::opengraph()->addProperty('title', 'IQAC Works Plan and Implementation | E.G.S. Pillay Engineering College');
+        SEOTools::opengraph()->addProperty('description', 'Learn about the IQAC works plan and implementation at E.G.S. Pillay Engineering College to enhance academic quality.');
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('IQAC Works Plan and Implementation | E.G.S. Pillay Engineering College');
+        SEOTools::twitter()->setDescription('Learn about the IQAC works plan and implementation at E.G.S. Pillay Engineering College.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
+        return view('pages.iqac.works-plan-and-implementation');
+    }
+
+
+    public function iqac_function()
+    {
+        SEOTools::setTitle('IQAC Function');
+        SEOTools::setDescription('Learn about the IQAC function and its responsibilities at E.G.S. Pillay Engineering College.');
+        SEOTools::opengraph()->addProperty('type', 'website');
+        SEOTools::opengraph()->addProperty('url', Url()->current());
+        SEOTools::opengraph()->addProperty('title', 'IQAC Function | E.G.S. Pillay Engineering College');
+        SEOTools::opengraph()->addProperty('description', 'Learn about the IQAC function and its responsibilities at E.G.S. Pillay Engineering College.');
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('IQAC Function | E.G.S. Pillay Engineering College');
+        SEOTools::twitter()->setDescription('Learn about the IQAC function at E.G.S. Pillay Engineering College.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
+        return view('pages.iqac.function');
+    }
+
+
+    public function iqac_events()
+    {
+        SEOTools::setTitle('IQAC Events');
+        SEOTools::setDescription('Discover the IQAC events and activities organized to enhance academic quality at E.G.S. Pillay Engineering College.');
+        SEOTools::opengraph()->addProperty('type', 'website');
+        SEOTools::opengraph()->addProperty('url', Url()->current());
+        SEOTools::opengraph()->addProperty('title', 'IQAC Events | E.G.S. Pillay Engineering College');
+        SEOTools::opengraph()->addProperty('description', 'Discover the IQAC events and activities organized to enhance academic quality at E.G.S. Pillay Engineering College.');
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('IQAC Events | E.G.S. Pillay Engineering College');
+        SEOTools::twitter()->setDescription('Discover the IQAC events and activities at E.G.S. Pillay Engineering College.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
+        return view('pages.iqac.iqac-events');
+    }
+
+
+
+
+
     public function aicte_approved()
     {
         SEOTools::setTitle('AICTE Approved Programs');
