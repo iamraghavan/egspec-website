@@ -84,6 +84,7 @@
     </div>
 </div>
 
+{{-- resources/views/pages/academic/newsletter.blade.php --}}
 
 
 
