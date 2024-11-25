@@ -884,6 +884,24 @@
 
 <!-- Fancybox JS -->
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+/>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+    Fancybox.bind('.custom-fancybox', {
+        // Options for Fancybox customization
+        infinite: true,
+        toolbar: true,
+        buttons: ["zoom", "slideShow", "fullScreen", "download", "thumbs", "close"],
+    });
+});
+
+</script>
 
 <style>
     .skeleton {
