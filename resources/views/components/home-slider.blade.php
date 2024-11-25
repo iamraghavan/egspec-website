@@ -2,16 +2,21 @@
 <div id="desktopCarousel" class="splide unique-desktop-carousel carousel-container">
     <div class="splide__track">
         <ul class="splide__list">
-            @foreach ($posterSlider as $slide)
+            @foreach ($posterSlider->reverse() as $slide)
                 <li class="splide__slide">
                     <a href="{{ $slide->href_link }}" target="_blank" rel="noopener noreferrer">
                         <picture>
-                            <source srcset="{{ asset(str_replace('.jpg', '.webp', $slide->desktop_image_url)) }}" type="image/webp">
+                            <!-- WebP format with width and height defined -->
+                            <source
+                                srcset="{{ asset(str_replace('.jpg', '.webp', $slide->desktop_image_url)) }}"
+                                type="image/webp"
+                                width="1200" height="600"> <!-- Replace with actual dimensions -->
                             <img
                                 src="{{ asset($slide->desktop_image_url) }}"
                                 alt="{{ $slide->alt_name }}"
                                 class="d-block"
-                                style="object-fit: cover; width: 100%; height: auto;"
+                                width="1200" height="600"
+                                style="object-fit: cover;"
                                 loading="lazy"
                                 onerror="console.error('Image not found:', this.src)"
                             >
@@ -30,16 +35,21 @@
 <div id="mobileCarousel" class="splide unique-mobile-carousel carousel-container">
     <div class="splide__track">
         <ul class="splide__list">
-            @foreach ($posterSlider as $slide)
+            @foreach ($posterSlider->reverse() as $slide)
                 <li class="splide__slide">
                     <a href="{{ $slide->href_link }}" target="_blank" rel="noopener noreferrer">
                         <picture>
-                            <source srcset="{{ asset(str_replace('.jpg', '.webp', $slide->mobile_image_url)) }}" type="image/webp">
+                            <!-- WebP format with width and height defined -->
+                            <source
+                                srcset="{{ asset(str_replace('.jpg', '.webp', $slide->mobile_image_url)) }}"
+                                type="image/webp"
+                                width="600" height="300"> <!-- Replace with actual dimensions -->
                             <img
                                 src="{{ asset($slide->mobile_image_url) }}"
                                 alt="{{ $slide->alt_name }}"
                                 class="d-block"
-                                style="object-fit: cover; width: 100%; height: auto;"
+                                width="600" height="300"
+                                style="object-fit: cover;"
                                 loading="lazy"
                                 onerror="console.error('Image not found:', this.src)"
                             >
