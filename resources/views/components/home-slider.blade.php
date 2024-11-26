@@ -10,12 +10,11 @@
                             <source
                                 srcset="{{ asset(str_replace('.jpg', '.webp', $slide->desktop_image_url)) }}"
                                 type="image/webp"
-                                width="1200" height="600"> <!-- Replace with actual dimensions -->
+                                > <!-- Replace with actual dimensions -->
                             <img
                                 src="{{ asset($slide->desktop_image_url) }}"
                                 alt="{{ $slide->alt_name }}"
                                 class="d-block"
-                                width="1200" height="600"
                                 style="object-fit: cover;"
                                 loading="lazy"
                                 onerror="console.error('Image not found:', this.src)"
@@ -43,12 +42,11 @@
                             <source
                                 srcset="{{ asset(str_replace('.jpg', '.webp', $slide->mobile_image_url)) }}"
                                 type="image/webp"
-                                width="600" height="300"> <!-- Replace with actual dimensions -->
+                                > <!-- Replace with actual dimensions -->
                             <img
                                 src="{{ asset($slide->mobile_image_url) }}"
                                 alt="{{ $slide->alt_name }}"
                                 class="d-block"
-                                width="600" height="300"
                                 style="object-fit: cover;"
                                 loading="lazy"
                                 onerror="console.error('Image not found:', this.src)"
