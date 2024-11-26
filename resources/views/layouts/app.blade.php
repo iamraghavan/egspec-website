@@ -733,32 +733,32 @@
 
 
 <!-- Critical CSS -->
-<link rel="stylesheet" href="{{ asset('/assets/css/vendor/bootstrap.min.css') }}">
-<link rel="stylesheet" href="{{ asset('/assets/css/plugins/animate.min.css') }}">
+<link rel="preload" rel="stylesheet" href="{{ asset('/assets/css/vendor/bootstrap.min.css') }}">
+<link rel="preload" rel="stylesheet" href="{{ asset('/assets/css/plugins/animate.min.css') }}">
 <link rel="preload" rel="stylesheet" href="{{ asset('/assets/css/style.css') }}">
 
 <!-- Non-Critical CSS -->
-<link href="{{ asset('/assets/css/plugins/fontawesome.min.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link href="{{ asset('/assets/css/plugins/swiper.min.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link href="{{ asset('/assets/css/vendor/magnific-popup.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link href="{{ asset('/assets/css/vendor/metismenu.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link href="{{ asset('/assets/css/plugins/nice-select.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link href="{{ asset('/assets/css/plugins/jquery-ui.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-<link type="text/css" href="https://cdn.jsdelivr.net/gh/iamraghavan/egsp-hrms@main/public/assets/css/vendors/sweetalert2.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'" media="print">
-<link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'" media="print">
-<link href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'" media="print">
+<link rel="preload" href="{{ asset('/assets/css/plugins/fontawesome.min.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ asset('/assets/css/plugins/swiper.min.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ asset('/assets/css/vendor/magnific-popup.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ asset('/assets/css/vendor/metismenu.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ asset('/assets/css/plugins/nice-select.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="{{ asset('/assets/css/plugins/jquery-ui.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" type="text/css" href="https://cdn.jsdelivr.net/gh/iamraghavan/egsp-hrms@main/public/assets/css/vendors/sweetalert2.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'" media="print">
+<link rel="preload" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'" media="print">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'" media="print">
 
 <!-- Fallback for legacy browsers -->
 <noscript>
-    <link rel="stylesheet" href="{{ asset('/assets/css/plugins/fontawesome.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('/assets/css/plugins/swiper.min.css') }}">
-    <link rel="stylesheet" href="{{ asset('/assets/css/vendor/magnific-popup.css') }}">
-    <link rel="stylesheet" href="{{ asset('/assets/css/vendor/metismenu.css') }}">
-    <link rel="stylesheet" href="{{ asset('/assets/css/plugins/nice-select.css') }}">
-    <link rel="stylesheet" href="{{ asset('/assets/css/plugins/jquery-ui.css') }}">
-    <link rel="stylesheet"  type="text/css" href="https://cdn.jsdelivr.net/gh/iamraghavan/egsp-hrms@main/public/assets/css/vendors/sweetalert2.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'" media="print">
-<link href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'" media="print">
-<link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'" media="print">
+    <link rel="preload" rel="stylesheet" href="{{ asset('/assets/css/plugins/fontawesome.min.css') }}">
+    <link rel="preload" rel="stylesheet" href="{{ asset('/assets/css/plugins/swiper.min.css') }}">
+    <link rel="preload" rel="stylesheet" href="{{ asset('/assets/css/vendor/magnific-popup.css') }}">
+    <link rel="preload" rel="stylesheet" href="{{ asset('/assets/css/vendor/metismenu.css') }}">
+    <link rel="preload" rel="stylesheet" href="{{ asset('/assets/css/plugins/nice-select.css') }}">
+    <link rel="preload" rel="stylesheet" href="{{ asset('/assets/css/plugins/jquery-ui.css') }}">
+    <link rel="preload" rel="stylesheet"  type="text/css" href="https://cdn.jsdelivr.net/gh/iamraghavan/egsp-hrms@main/public/assets/css/vendors/sweetalert2.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'" media="print">
+<link rel="preload" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" rel="stylesheet" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'" media="print">
+<link rel="preload" rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'" media="print">
 
 </noscript>
 
