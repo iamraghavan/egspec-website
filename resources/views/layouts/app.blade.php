@@ -731,7 +731,6 @@
         </script>
 
 
-
 <!-- Critical CSS -->
 <link rel="preload" rel="stylesheet" href="{{ asset('/assets/css/vendor/bootstrap.min.css') }}">
 <link rel="preload" rel="stylesheet" href="{{ asset('/assets/css/plugins/animate.min.css') }}">
@@ -761,6 +760,7 @@
 <link rel="preload" rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet';this.media='all'" media="print">
 
 </noscript>
+
 
 <style>
     .text-justify { text-align: justify !important; }
