@@ -67,7 +67,7 @@
                                    </tr>
                                    <tr>
                                       <td>7</td>
-                                      <td>Dr. G. Sundaravadivel</td>
+                                      <td>Dr. G. Sundara Vadivel</td>
                                       <td>M.E., Ph.D</td>
                                       <td>Assistant Professor</td>
                                    </tr>
