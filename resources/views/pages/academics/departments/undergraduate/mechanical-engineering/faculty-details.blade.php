@@ -73,7 +73,7 @@
                                    </tr>
                                    <tr>
                                       <td>8</td>
-                                      <td>Dr. A. Arun Kumar</td>
+                                      <td>Dr. A. Arunkumar</td>
                                       <td>M.E., Ph.D</td>
                                       <td>Assistant Professor</td>
                                    </tr>
