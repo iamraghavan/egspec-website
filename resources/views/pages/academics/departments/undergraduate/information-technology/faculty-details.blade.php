@@ -19,86 +19,88 @@
                      <h5 class="rts-section-title animated fadeIn">Faculty</h5>
                      <div class="application-deadline__content mt-5">
                         <div class="application-deadline__content--table">
-                           <table class="table table-striped table-hover table-bordered">
-                              <thead class="table-theme">
-                                 <td>S.No</td>
-                                 <td>Name of the Faculty Member</td>
-                                 <td>Designation</td>
-                                 </tr>
-                              </thead>
-                              <tbody>
-                                 <tr>
-                                    <td>1</td>
-                                    <td>Dr. MANIKANDAN S</td>
-                                    <td>Associate Professor &amp; HoD</td>
-                                 </tr>
-                                 <tr>
-                                    <td>2</td>
-                                    <td>Dr. VIJAYALAKSHMI P</td>
-                                    <td>Professor</td>
-                                 </tr>
-                                 <tr>
-                                    <td>3</td>
-                                    <td>Dr. MANIKANDA KUMARAN K</td>
-                                    <td>Associate Professor</td>
-                                 </tr>
-                                 <tr>
-                                    <td>4</td>
-                                    <td>Dr. AMBIKA S</td>
-                                    <td>Associate Professor</td>
-                                 </tr>
-                                 <tr>
-                                    <td>5</td>
-                                    <td>Dr. RAJU K</td>
-                                    <td>Assistant Professor</td>
-                                 </tr>
-                                 <tr>
-                                    <td>6</td>
-                                    <td>Dr. LAVANYA R</td>
-                                    <td>Assistant Professor</td>
-                                 </tr>
-                                 <tr>
-                                    <td>7</td>
-                                    <td>Ms. NAGALAKSHMI K</td>
-                                    <td>Assistant Professor</td>
-                                 </tr>
-                                 <tr>
-                                    <td>8</td>
-                                    <td>Ms. GOKILA R G</td>
-                                    <td>Assistant Professor</td>
-                                 </tr>
-                                 <tr>
-                                    <td>9</td>
-                                    <td>Ms. PREETHI S</td>
-                                    <td>Assistant Professor</td>
-                                 </tr>
-                                 <tr>
-                                    <td>10</td>
-                                    <td>Mr. VIGNESH K</td>
-                                    <td>Assistant Professor</td>
-                                 </tr>
-                                 <tr>
-                                    <td>11</td>
-                                    <td>Ms. SURYA V</td>
-                                    <td>Assistant Professor</td>
-                                 </tr>
-                                 <tr>
-                                    <td>12</td>
-                                    <td>Ms. VIJAYAVANI E</td>
-                                    <td>Assistant Professor</td>
-                                 </tr>
-                                 <tr>
-                                    <td>13</td>
-                                    <td>Ms. SRILEKHA K</td>
-                                    <td>Assistant Professor</td>
-                                 </tr>
-                                 <tr>
-                                    <td>14</td>
-                                    <td>Mr. PRADEEPAN S</td>
-                                    <td>Assistant Professor</td>
-                                 </tr>
-                              </tbody>
-                           </table>
+                            <table class="table table-striped table-hover table-bordered">
+                                <thead class="table-theme">
+                                   <tr>
+                                      <td>S.No</td>
+                                      <td>Name of the Faculty Member</td>
+                                      <td>Designation</td>
+                                   </tr>
+                                </thead>
+                                <tbody>
+                                   <tr>
+                                      <td>1</td>
+                                      <td>Dr. N. Murali</td>
+                                      <td>Professor</td>
+                                   </tr>
+                                   <tr>
+                                      <td>2</td>
+                                      <td>Dr. S. Manikandan</td>
+                                      <td>Associate Professor</td>
+                                   </tr>
+                                   <tr>
+                                      <td>3</td>
+                                      <td>Dr. K. Manikanda Kumaran</td>
+                                      <td>Associate Professor</td>
+                                   </tr>
+                                   <tr>
+                                      <td>4</td>
+                                      <td>Dr. K. Raju</td>
+                                      <td>Associate Professor</td>
+                                   </tr>
+                                   <tr>
+                                      <td>5</td>
+                                      <td>Dr. G. Arul Selvan</td>
+                                      <td>Assistant Professor &amp; HOD</td>
+                                   </tr>
+                                   <tr>
+                                      <td>6</td>
+                                      <td>Ms. S. Preethi</td>
+                                      <td>Assistant Professor</td>
+                                   </tr>
+                                   <tr>
+                                      <td>7</td>
+                                      <td>Ms. V. Surya</td>
+                                      <td>Assistant Professor</td>
+                                   </tr>
+                                   <tr>
+                                      <td>8</td>
+                                      <td>Ms. S. Soundarya</td>
+                                      <td>Assistant Professor</td>
+                                   </tr>
+                                   <tr>
+                                      <td>9</td>
+                                      <td>Ms. S. Sangeetha</td>
+                                      <td>Assistant Professor</td>
+                                   </tr>
+                                   <tr>
+                                      <td>10</td>
+                                      <td>Ms. A. Hemalatha</td>
+                                      <td>Assistant Professor</td>
+                                   </tr>
+                                   <tr>
+                                      <td>11</td>
+                                      <td>Ms. S. Deepika</td>
+                                      <td>Assistant Professor</td>
+                                   </tr>
+                                   <tr>
+                                      <td>12</td>
+                                      <td>Ms. R. Hema</td>
+                                      <td>Assistant Professor</td>
+                                   </tr>
+                                   <tr>
+                                      <td>13</td>
+                                      <td>Mr. T. Duraimurugan</td>
+                                      <td>Assistant Professor</td>
+                                   </tr>
+                                   <tr>
+                                      <td>14</td>
+                                      <td>Ms. M. Kalaivani</td>
+                                      <td>Assistant Professor</td>
+                                   </tr>
+                                </tbody>
+                             </table>
+
                         </div>
                      </div>
                   </div>
