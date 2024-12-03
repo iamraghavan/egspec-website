@@ -415,9 +415,9 @@
                   </div>
                   <!-- contact info -->
                   <x-dept-contact-info
-                     name="Dr. S. Manikandan, M.E., Ph.D"
-                     :phones="['+919047902685', '+919500707894']"
-                     :emails="['manikandan@egspec.org', 'profmaninvp@gmail.com']"
+                     name="Dr. G. Arul Selvan"
+                     :phones="['+91 88706 41821']"
+                     :emails="['hodit@egspec.org']"
                      />
                </div>
             </div>
