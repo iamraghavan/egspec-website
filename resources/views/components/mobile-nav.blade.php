@@ -197,7 +197,7 @@
                     <ul class="submenu mm-collapse">
 
                         <li><a class="mobile-menu-link" href="{{ url('/research/research-and-development') }}">Team Members</a></li>
-                        <li><a class="mobile-menu-link" href="{{ url('/research/research-supervisor-and-scholar-details') }}">Research Supervisor and Details</a></li>
+                        <li><a class="mobile-menu-link" href="{{ url('/research/research-supervisor-and-scholar-details') }}">Research Supervisor Details</a></li>
                         <li><a class="mobile-menu-link" href="{{ url('/research/publication-details') }}">Publications</a></li>
 
                         <li><a class="mobile-menu-link" href="{{ url('/research/patent-details') }}">Industry Collaboration</a></li>
