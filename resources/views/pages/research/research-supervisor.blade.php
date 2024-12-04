@@ -15,7 +15,7 @@
        <div class="row">
          <div class="col-12">
             <div class="requirement-deadline">
-                <h4 class="animated fadeIn text-center"><u>Research Supervisor & Scholar Details</u></h4>
+                <h4 class="animated fadeIn text-center"><u>Research Supervisor Details</u></h4>
 
 
             </div>
