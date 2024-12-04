@@ -65,7 +65,7 @@
                                    </tr>
                                    <tr>
                                       <td>8</td>
-                                      <td>Ms. S. Soundarya</td>
+                                      <td>Ms. S. Soundharya</td>
                                       <td>Assistant Professor</td>
                                    </tr>
                                    <tr>
@@ -126,7 +126,7 @@
                                 </tr>
                                 <tr>
                                     <td>2</td>
-                                    <td>Ms.Anees Fathima</td>
+                                    <td>Ms.J. Akila Fairose</td>
                                     <td>Administrative Assistant</td>
                                 </tr>
                              </tbody>
