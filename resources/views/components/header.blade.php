@@ -353,7 +353,7 @@
                                    <a class="nav-link" href="{{ url("#") }}">Research</a>
                                    <ul class="submenu">
                                       <li><a href="{{ url("/research/research-and-development") }}">Team Members</a></li>
-                                      <li><a href="{{ url("/research/research-supervisor-and-scholar-details") }}">Research Supervisor and Scholar</a></li>
+                                      <li><a href="{{ url("/research/research-supervisor-and-scholar-details") }}">Research Supervisor and Details</a></li>
                                       <li><a href="{{ url("/research/publication-details") }}">Publications</a></li>
                                       <li class="sub-dropdown">
                                          <a href="{{ url("#") }}">Projects</a>

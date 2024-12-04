@@ -49,7 +49,7 @@
 
                                                 <tbody>
                                                     <tr>
-                                                        <td><i class="fa fa-download"> </i><a href="https://egspec.blob.core.windows.net/egspec-assets/research/research-supervisor-and-scholar-details.pdf" target="_blank" type="application/pdf" rel="alternate" media='print'> Recognized Research Supervisor List &amp; Scholar Details</a></td>
+                                                        <td><i class="fa fa-download"> </i><a href="https://firebasestorage.googleapis.com/v0/b/egspj-bumblebees.appspot.com/o/ACFrOgC8sUg0yPdWNWQk_EMwkgoB1XoqSVXMrAgNCcQ5ji3EC_g9EByFxt212V1KfTU59Cg7xYqG0vjho-QhxAm3tfXIQiKI251UeAVQNb9g0sNYO5dmQUk7agr3CzOmGXJ7PKVlvwg2INjLmv86.pdf?alt=media&token=79171063-19b8-4847-b2fe-6438e8ff514e" target="_blank" type="application/pdf" rel="alternate" media='print'> Recognized Research Supervisor List &amp; Scholar Details</a></td>
                                                         <td><i class="fa fa-file-pdf"></i> / PDF File</td>
                                                     </tr>
 
