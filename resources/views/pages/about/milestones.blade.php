@@ -31,6 +31,14 @@
                                        </tr>
                                     </thead>
                                     <tbody>
+                                        <tr>
+                                            <td>2024</td>
+                                            <td>NBA Accreditation [Tier 1] (Mech, EEE and Civil), NIRF Ranked Institute [250-300], Anna University Sports Zonal Winner</td>
+                                         </tr>
+                                         <tr>
+                                            <td>2023</td>
+                                            <td> Anna University Sports Zonal Winner, Accredited by NAAC with A++ Grade, Best NSS Unit Award </td>
+                                         </tr>
                                        <tr>
                                           <td>2022</td>
                                           <td>NIRF(251-300), B.Tech. - AI&DS, NBA-(CSE,ECE,IT) - 2022-2025, Educational Award</td>
