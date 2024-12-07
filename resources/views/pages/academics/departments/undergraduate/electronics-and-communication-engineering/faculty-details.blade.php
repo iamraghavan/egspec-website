@@ -6,7 +6,18 @@
 'page_title' => 'Faculty Details' ])
 
 
+@php
+    $teachingStaff = [
+            ['name' => 'Mr. K. Raju', 'qualification' => 'DECE', 'designation' => 'Service Engineer'],
+            ['name' => 'Mr. AR.Vignesh kumar', 'qualification' => 'BE', 'designation' => 'Lab Assistant'],
+            ['name' => 'Mrs. M. Jainambu Natchiyar', 'qualification' => 'BE', 'designation' => 'Lab Assistant'],
+            ['name' => 'Mrs. R. Ouma', 'qualification' => 'DECE', 'designation' => 'Lab Assistant'],
+            ['name' => 'Ms. B. Divya', 'qualification' => 'BE', 'designation' => 'Lab Assistant'],
+            ['name' => 'Mr. U. Abinash', 'qualification' => 'ME', 'designation' => 'Lab Assistant'],
+            ['name' => 'Mrs. M. R. Anitha', 'qualification' => 'B.COM', 'designation' => 'Office Assistant'],
+        ];
 
+@endphp
 
 
 <div class="rts-program rts-section-padding">
@@ -190,6 +201,38 @@
                         </div>
                     </div>
                 </div>
+
+
+                <!-- resources/views/teaching-staff/index.blade.php -->
+
+<div class="application-deadline">
+    <h5 class="rts-section-title animated fadeIn">Teaching Staff List</h5>
+    <div class="application-deadline__content mt-5">
+        <div class="application-deadline__content--table">
+            <table class="table table-striped table-hover table-bordered">
+                <thead class="table-theme">
+                    <tr>
+                        <td>S. No</td>
+                        <td>Name</td>
+                        <td>Qualification</td>
+                        <td>Designation</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach ($teachingStaff as $index => $staff)
+                        <tr>
+                            <td>{{ $index + 1 }}</td>
+                            <td>{{ $staff['name'] }}</td>
+                            <td>{{ $staff['qualification'] }}</td>
+                            <td>{{ $staff['designation'] }}</td>
+                        </tr>
+                    @endforeach
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
 
 
 
