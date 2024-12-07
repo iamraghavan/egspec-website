@@ -15,9 +15,9 @@
          <div class="row">
             <div class="col-lg-8">
                <div class="admission-content-top">
-                  <div class="application-deadline">
-                     <h5 class="rts-section-title animated fadeIn">Faculty</h5>
-                     <div class="application-deadline__content mt-5">
+                <div class="application-deadline">
+                    <h5 class="rts-section-title animated fadeIn">Faculty</h5>
+                    <div class="application-deadline__content mt-5">
                         <div class="application-deadline__content--table">
                             <table class="table table-striped table-hover table-bordered">
                                 <thead class="table-theme">
@@ -31,179 +31,165 @@
                                 <tbody>
                                     <tr>
                                         <td>1</td>
-                                        <td>Dr. M. Malathi</td>
-                                        <td>Ph.D</td>
-                                        <td>Professor/HOD</td>
+                                        <td>Dr. Malathi M</td>
+                                        <td>PhD</td>
+                                        <td>HOD/Professor</td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
-                                        <td>Dr. A. Rajaram</td>
-                                        <td>Ph.D</td>
+                                        <td>Dr. Rajaram A</td>
+                                        <td>PhD</td>
                                         <td>Professor</td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
-                                        <td>Dr. D. Devarajan</td>
-                                        <td>Ph.D</td>
+                                        <td>Dr. Sathiya V</td>
+                                        <td>PhD</td>
                                         <td>Associate Professor</td>
                                     </tr>
                                     <tr>
                                         <td>4</td>
-                                        <td>Dr. M. Irshad Ahamed</td>
-                                        <td>Ph.D</td>
+                                        <td>Dr. Irshad Ahamed M</td>
+                                        <td>PhD</td>
                                         <td>Associate Professor</td>
                                     </tr>
                                     <tr>
                                         <td>5</td>
-                                        <td>Dr. V. Sathiya</td>
-                                        <td>Ph.D</td>
+                                        <td>Dr. Devarajan D</td>
+                                        <td>PhD</td>
                                         <td>Associate Professor</td>
                                     </tr>
-                                    
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Dr. Parthasaradi V</td>
+                                        <td>PhD</td>
+                                        <td>Assistant Professor</td>
+                                    </tr>
                                     <tr>
                                         <td>7</td>
-                                        <td>Dr. M. Nuthal Srinivasan</td>
-                                        <td>Ph.D</td>
+                                        <td>Dr. Senthilkumar S</td>
+                                        <td>PhD</td>
                                         <td>Assistant Professor</td>
                                     </tr>
                                     <tr>
                                         <td>8</td>
-                                        <td>Dr. L. Ramachandran</td>
-                                        <td>Ph.D</td>
+                                        <td>Dr. Nuthal Srinivasan M</td>
+                                        <td>PhD</td>
                                         <td>Assistant Professor</td>
                                     </tr>
                                     <tr>
                                         <td>9</td>
-                                        <td>Dr. S. Senthilkumar</td>
-                                        <td>Ph.D</td>
+                                        <td>Dr. Ramachandran L</td>
+                                        <td>PhD</td>
                                         <td>Assistant Professor</td>
                                     </tr>
                                     <tr>
                                         <td>10</td>
-                                        <td>Dr. V. Parthasaradi</td>
-                                        <td>Ph.D</td>
+                                        <td>Dr. Mathuvanesan C</td>
+                                        <td>PhD</td>
                                         <td>Assistant Professor</td>
                                     </tr>
                                     <tr>
                                         <td>11</td>
-                                        <td>Dr. S. Rajasri</td>
-                                        <td>Ph.D</td>
+                                        <td>Dr. Koteeshwari R S</td>
+                                        <td>PhD</td>
                                         <td>Assistant Professor</td>
                                     </tr>
                                     <tr>
                                         <td>12</td>
-                                        <td>Dr. R. S. Koteeshwari</td>
-                                        <td>Ph.D</td>
+                                        <td>Mr. Parthasarathi K</td>
+                                        <td>M.E</td>
                                         <td>Assistant Professor</td>
                                     </tr>
                                     <tr>
                                         <td>13</td>
-                                        <td>Dr. C. Mathuvanesan</td>
-                                        <td>Ph.D</td>
+                                        <td>Mrs. Keerthika R</td>
+                                        <td>M.E</td>
                                         <td>Assistant Professor</td>
                                     </tr>
                                     <tr>
                                         <td>14</td>
-                                        <td>Mr. K. Parthasarathi</td>
-                                        <td>M.E</td>
+                                        <td>Mrs. Panchali P</td>
+                                        <td>M.Tech</td>
                                         <td>Assistant Professor</td>
                                     </tr>
                                     <tr>
                                         <td>15</td>
-                                        <td>Mrs. S. Aadhirai</td>
-                                        <td>M.E</td>
+                                        <td>Mr. Ayyappa R</td>
+                                        <td>M.Tech</td>
                                         <td>Assistant Professor</td>
                                     </tr>
                                     <tr>
                                         <td>16</td>
-                                        <td>Ms. R. Keerthika</td>
+                                        <td>Mrs. Selvasundhari M</td>
                                         <td>M.E</td>
                                         <td>Assistant Professor</td>
                                     </tr>
                                     <tr>
                                         <td>17</td>
-                                        <td>Mrs. P. Panchali</td>
-                                        <td>M.Tech</td>
+                                        <td>Ms. Prabhavathy B</td>
+                                        <td>M.E</td>
                                         <td>Assistant Professor</td>
                                     </tr>
                                     <tr>
                                         <td>18</td>
-                                        <td>New Faculty</td>
-                                        <td>M.E</td>
-                                        <td>Assistant Professor</td>
-                                    </tr>
-                                    <tr>
-                                        <td>19</td>
-                                        <td>Mrs. M. Selvasundhari</td>
-                                        <td>M.E</td>
-                                        <td>Assistant Professor</td>
-                                    </tr>
-                                    <tr>
-                                        <td>20</td>
-                                        <td>Ms. S. Sinthana</td>
-                                        <td>M.E</td>
-                                        <td>Assistant Professor</td>
-                                    </tr>
-                                    <tr>
-                                        <td>21</td>
-                                        <td>Mr. R. Ayyappa</td>
-                                        <td>M.Tech</td>
-                                        <td>Assistant Professor</td>
-                                    </tr>
-                                    <tr>
-                                        <td>22</td>
-                                        <td>Mrs. B. Prabhavathy</td>
-                                        <td>M.E</td>
-                                        <td>Assistant Professor</td>
-                                    </tr>
-                                    <tr>
-                                        <td>23</td>
-                                        <td>Mrs. S. Suganya</td>
-                                        <td>M.Tech</td>
-                                        <td>Assistant Professor</td>
-                                    </tr>
-                                    <tr>
-                                        <td>24</td>
                                         <td>Ms. V. Thilaga</td>
                                         <td>M.E</td>
                                         <td>Assistant Professor</td>
                                     </tr>
                                     <tr>
-                                        <td>25</td>
+                                        <td>19</td>
                                         <td>Mrs. S. Vetriselvi</td>
                                         <td>M.Tech</td>
                                         <td>Assistant Professor</td>
                                     </tr>
                                     <tr>
-                                        <td>26</td>
+                                        <td>20</td>
                                         <td>Mrs. M. Kavitha</td>
                                         <td>M.E</td>
                                         <td>Assistant Professor</td>
                                     </tr>
                                     <tr>
-                                        <td>27</td>
-                                        <td>Ms. V. Lakshmipraba</td>
+                                        <td>21</td>
+                                        <td>Ms. V. Lakshmi Praba</td>
                                         <td>M.E</td>
                                         <td>Assistant Professor</td>
                                     </tr>
                                     <tr>
-                                        <td>28</td>
+                                        <td>22</td>
                                         <td>Mrs. K. Vembarasi</td>
                                         <td>M.E</td>
                                         <td>Assistant Professor</td>
                                     </tr>
                                     <tr>
-                                        <td>29</td>
+                                        <td>23</td>
                                         <td>Mr. L. Anbazhagan</td>
+                                        <td>M.Tech</td>
+                                        <td>Assistant Professor</td>
+                                    </tr>
+                                    <tr>
+                                        <td>24</td>
+                                        <td>Ms. S. G. Praveena</td>
+                                        <td>M.E</td>
+                                        <td>Assistant Professor</td>
+                                    </tr>
+                                    <tr>
+                                        <td>25</td>
+                                        <td>Mrs. P. JananiDurga</td>
+                                        <td>M.E</td>
+                                        <td>Assistant Professor</td>
+                                    </tr>
+                                    <tr>
+                                        <td>26</td>
+                                        <td>Ms. M. VijayaDurga</td>
                                         <td>M.Tech</td>
                                         <td>Assistant Professor</td>
                                     </tr>
                                 </tbody>
                             </table>
-
                         </div>
-                     </div>
-                  </div>
+                    </div>
+                </div>
 
 
 
