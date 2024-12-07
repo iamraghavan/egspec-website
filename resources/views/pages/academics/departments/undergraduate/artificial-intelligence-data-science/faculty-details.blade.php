@@ -21,66 +21,61 @@
                      <h5 class="rts-section-title animated fadeIn">Faculty</h5>
                      <div class="application-deadline__content mt-5">
                         <div class="application-deadline__content--table">
-                            <table class="table table-striped table-hover table-bordered">
-                                <thead class="table-theme">
-                                   <tr>
-                                      <td>S.No</td>
-                                      <td>Name of the Faculty Member</td>
-                                      <td>Qualification</td>
-                                      <td>Designation</td>
-                                   </tr>
-                                </thead>
-                                <tbody>
-                                   <tr>
-                                      <td>1</td>
-                                      <td>Dr. S. Palani Murugan</td>
-                                      <td>M.E., Ph.D</td>
-                                      <td>Head/ Associate Professor</td>
-                                   </tr>
-                                   <tr>
-                                      <td>2</td>
-                                      <td>Dr. M. Priya</td>
-                                      <td>M.E., Ph.D</td>
-                                      <td>Professor</td>
-                                   </tr>
-                                   <tr>
-                                      <td>3</td>
-                                      <td>Dr. J. Amutha</td>
-                                      <td>M.E., Ph.D</td>
-                                      <td>Assistant Professor</td>
-                                   </tr>
-                                   <tr>
-                                      <td>4</td>
-                                      <td>Mrs. S. Akilandeswari</td>
-                                      <td>M.E</td>
-                                      <td>Assistant Professor</td>
-                                   </tr>
-                                   <tr>
-                                      <td>5</td>
-                                      <td>Mr. R. Gobinath</td>
-                                      <td>M.E</td>
-                                      <td>Assistant Professor</td>
-                                   </tr>
-                                   <tr>
-                                      <td>6</td>
-                                      <td>Mrs. R. Sairam Shalini</td>
-                                      <td>M.E</td>
-                                      <td>Assistant Professor</td>
-                                   </tr>
-                                   <tr>
-                                      <td>7</td>
-                                      <td>Ms. K. Raha Priya</td>
-                                      <td>M.E</td>
-                                      <td>Assistant Professor</td>
-                                   </tr>
-                                   <tr>
-                                      <td>8</td>
-                                      <td>Ms. R. Divya Bharathi</td>
-                                      <td>M.E</td>
-                                      <td>Assistant Professor</td>
-                                   </tr>
-                                </tbody>
-                             </table>
+                          <table class="table table-striped table-hover table-bordered">
+    <thead class="table-theme">
+        <tr>
+            <td>S.No</td>
+            <td>Name of the Faculty Member</td>
+            <td>Qualification</td>
+            <td>Designation</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Dr. S. Palani Murugan</td>
+            <td>M.E., Ph.D</td>
+            <td>Head/ Associate Professor</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Dr. M. Priya</td>
+            <td>M.E., Ph.D</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Dr. J. Amutha</td>
+            <td>M.Tech, Ph.D</td>
+            <td>Assistant Professor</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Mrs. S. Akilandeswari (Ph.D.)</td>
+            <td>M.E</td>
+            <td>Assistant Professor</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Mr. R. Gobinath (Ph.D.)</td>
+            <td>M.E</td>
+            <td>Assistant Professor</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Ms. K. Raha Priya</td>
+            <td>M.E</td>
+            <td>Assistant Professor</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Ms. R. Divya Bharathi</td>
+            <td>M.E</td>
+            <td>Assistant Professor</td>
+        </tr>
+    </tbody>
+</table>
+
                         </div>
                      </div>
                   </div>
