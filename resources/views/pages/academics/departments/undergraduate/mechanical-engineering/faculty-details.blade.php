@@ -19,7 +19,7 @@
                        <h5 class="rts-section-title animated fadeIn">Faculty</h5>
                        <div class="application-deadline__content mt-5">
                           <div class="application-deadline__content--table">
-                             <table class="table table-striped table-hover table-bordered">
+                            <table class="table table-striped table-hover table-bordered">
                                 <thead class="table-theme">
                                    <tr>
                                       <td>S.No</td>
@@ -37,7 +37,7 @@
                                    </tr>
                                    <tr>
                                       <td>2</td>
-                                      <td>Dr. S. Krishna Mohan</td>
+                                      <td>Dr. S. Krishnamohan</td>
                                       <td>M.E., Ph.D</td>
                                       <td>Professor</td>
                                    </tr>
@@ -61,62 +61,62 @@
                                    </tr>
                                    <tr>
                                       <td>6</td>
-                                      <td>Dr. V. Navaneethakrishnan</td>
-                                      <td>M.Tech, Ph.D</td>
-                                      <td>Associate Professor</td>
+                                      <td>Dr. S. Chockalingam</td>
+                                      <td>M.E., Ph.D</td>
+                                      <td>Assistant Professor</td>
                                    </tr>
                                    <tr>
                                       <td>7</td>
+                                      <td>Dr. V. Navaneethakrishnan</td>
+                                      <td>M.Tech., Ph.D</td>
+                                      <td>Associate Professor</td>
+                                   </tr>
+                                   <tr>
+                                      <td>8</td>
                                       <td>Dr. G. Sundara Vadivel</td>
                                       <td>M.E., Ph.D</td>
                                       <td>Assistant Professor</td>
                                    </tr>
                                    <tr>
-                                      <td>8</td>
+                                      <td>9</td>
                                       <td>Dr. A. Arunkumar</td>
                                       <td>M.E., Ph.D</td>
                                       <td>Assistant Professor</td>
                                    </tr>
                                    <tr>
-                                      <td>9</td>
-                                      <td>Dr. S. Nanda kumar</td>
+                                      <td>10</td>
+                                      <td>Dr. S. Nanda Kumar</td>
                                       <td>M.E., Ph.D</td>
                                       <td>Assistant Professor</td>
                                    </tr>
                                    <tr>
-                                      <td>10</td>
+                                      <td>11</td>
                                       <td>Mr. V. Manathuanai Nathan</td>
                                       <td>M.E., (Ph.D)</td>
                                       <td>Assistant Professor</td>
                                    </tr>
                                    <tr>
-                                      <td>11</td>
+                                      <td>12</td>
                                       <td>Mr. B. ManiKandan</td>
                                       <td>M.Tech., (Ph.D)</td>
                                       <td>Assistant Professor</td>
                                    </tr>
                                    <tr>
-                                      <td>12</td>
+                                      <td>13</td>
                                       <td>Mr. K. Senthil Nathan</td>
                                       <td>M.Tech., (Ph.D)</td>
                                       <td>Assistant Professor</td>
                                    </tr>
                                    <tr>
-                                      <td>13</td>
+                                      <td>14</td>
                                       <td>Mr. G. Hari Narayanan</td>
                                       <td>M.E., (Ph.D)</td>
                                       <td>Assistant Professor</td>
                                    </tr>
                                    <tr>
-                                      <td>14</td>
+                                      <td>15</td>
                                       <td>Mr. S. Harishkirthi</td>
                                       <td>M.E.</td>
-                                      <td>Assistant Professor</td>
-                                   </tr>
-                                   <tr>
-                                      <td>15</td>
-                                      <td>Mr. M. Subramaniyan</td>
-                                      <td>M.Tech.</td>
                                       <td>Assistant Professor</td>
                                    </tr>
                                    <tr>
@@ -139,72 +139,55 @@
                                    </tr>
                                    <tr>
                                       <td>19</td>
-                                      <td>Mr. S. Udhayamuthu</td>
-                                      <td>M.E.</td>
-                                      <td>Assistant Professor</td>
-                                   </tr>
-                                   <tr>
-                                      <td>20</td>
                                       <td>Mr. M. Thirunavukkarasu</td>
                                       <td>M.Tech</td>
                                       <td>Assistant Professor</td>
                                    </tr>
                                    <tr>
-                                      <td>21</td>
-                                      <td>Mr. S. Sarguna thamizhan</td>
+                                      <td>20</td>
+                                      <td>Mr. S. Sarguna Thamizhan</td>
                                       <td>M.E.</td>
                                       <td>Assistant Professor</td>
                                    </tr>
                                    <tr>
-                                      <td>22</td>
-                                      <td>Mr. R. Hemachandran</td>
-                                      <td>M.Tech</td>
-                                      <td>Assistant Professor</td>
-                                   </tr>
-                                   <tr>
-                                      <td>23</td>
+                                      <td>21</td>
                                       <td>Mrs. M.K. Chaanthini</td>
                                       <td>M.Tech</td>
                                       <td>Assistant Professor</td>
                                    </tr>
                                    <tr>
-                                      <td>24</td>
+                                      <td>22</td>
                                       <td>Mr. R. Chandra Mohan</td>
                                       <td>M.E.</td>
                                       <td>Assistant Professor</td>
                                    </tr>
                                    <tr>
-                                      <td>25</td>
+                                      <td>23</td>
                                       <td>Mr. S. Prakash</td>
                                       <td>M.E.</td>
                                       <td>Assistant Professor</td>
                                    </tr>
                                    <tr>
-                                      <td>26</td>
+                                      <td>24</td>
                                       <td>Mr. P. Rajkumar</td>
                                       <td>M.E.</td>
                                       <td>Assistant Professor</td>
                                    </tr>
                                    <tr>
-                                      <td>27</td>
-                                      <td>Mr. D. Vigneshwaran</td>
+                                      <td>25</td>
+                                      <td>Mr. M. Gogulakrishnan</td>
                                       <td>M.E.</td>
                                       <td>Assistant Professor</td>
                                    </tr>
                                    <tr>
-                                      <td>28</td>
-                                      <td>Mr. R. Siva</td>
-                                      <td>M.E.</td>
-                                      <td>Assistant Professor</td>
-                                   </tr>
-                                   <tr>
-                                      <td>29</td>
-                                      <td>Mr. A. Mahalingam</td>
+                                      <td>26</td>
+                                      <td>Mr. E. Varadharaja Perumal</td>
                                       <td>M.E.</td>
                                       <td>Assistant Professor</td>
                                    </tr>
                                 </tbody>
                              </table>
+
                           </div>
                        </div>
                     </div>
