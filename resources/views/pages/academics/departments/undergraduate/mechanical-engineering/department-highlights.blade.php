@@ -124,9 +124,9 @@
                         </div>
                         <!-- Contact info -->
                         <x-dept-contact-info
-                            name="Department of Mechanical Engineering"
-                            :phones="['y']"
-                            :emails="['z']"/>
+                    name="Department of Mechanical Engineering"
+                    :phones="['9865862541']"
+                    :emails="['hodmech@egspec.org']"/>
                     </div>
                 </div>
             </div>
