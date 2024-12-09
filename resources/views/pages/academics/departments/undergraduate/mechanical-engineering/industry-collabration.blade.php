@@ -92,9 +92,9 @@
                     </div>
                     <!-- contact info -->
                     <x-dept-contact-info
-                    name="x"
-                    :phones="['y']"
-                    :emails="['z']"/>
+                    name="Department of Mechanical Engineering"
+                    :phones="['9865862541']"
+                    :emails="['hodmech@egspec.org']"/>
 
 
                 </div>

@@ -19,122 +19,97 @@
                            <h5 class="rts-section-title animated fadeIn">Faculty</h5>
                            <div class="application-deadline__content mt-5">
                               <div class="application-deadline__content--table">
-                                 <table class="table table-striped table-hover table-bordered">
+                                <table class="table table-striped table-hover table-bordered">
                                     <thead class="table-theme">
-                                       <tr>
-                                          <td>S.No</td>
-                                          <td>Name of the Faculty Member</td>
-                                          <td>Designation</td>
-                                       </tr>
+                                        <tr>
+                                            <td>S.No</td>
+                                            <td>Name</td>
+                                            <td>Qualification</td>
+                                            <td>Designation</td>
+                                        </tr>
                                     </thead>
                                     <tbody>
-                                       <tr>
-                                          <td>1</td>
-                                          <td>Dr. S. Anand Kumar Varma</td>
-                                          <td>Professor</td>
-                                       </tr>
-                                       <tr>
-                                          <td>2</td>
-                                          <td>Dr. R. Sivakumar</td>
-                                          <td>Professor</td>
-                                       </tr>
-                                       <tr>
-                                          <td>3</td>
-                                          <td>Dr. N.H. Agilandeswari</td>
-                                          <td>Assistant Professor / Head</td>
-                                       </tr>
-                                       <tr>
-                                          <td>4</td>
-                                          <td>Dr. B. Vinodhkumar</td>
-                                          <td>Associate Professor</td>
-                                       </tr>
-                                       <tr>
-                                          <td>5</td>
-                                          <td>Mr. V. Balasubramani</td>
-                                          <td>Associate Professor</td>
-                                       </tr>
-                                       <tr>
-                                          <td>6</td>
-                                          <td>Mr. A. Arjunan</td>
-                                          <td>Associate Professor</td>
-                                       </tr>
-                                       <tr>
-                                          <td>7</td>
-                                          <td>Mr. G. Prakash</td>
-                                          <td>Assistant Professor</td>
-                                       </tr>
-                                       <tr>
-                                          <td>8</td>
-                                          <td>Mrs. M. Subita Deeneshwari</td>
-                                          <td>Assistant Professor</td>
-                                       </tr>
-                                       <tr>
-                                          <td>9</td>
-                                          <td>Ms. N. Karthika</td>
-                                          <td>Assistant Professor</td>
-                                       </tr>
-                                       <tr>
-                                          <td>10</td>
-                                          <td>Mrs. K. Kamalarani</td>
-                                          <td>Assistant Professor</td>
-                                       </tr>
-                                       <tr>
-                                          <td>11</td>
-                                          <td>Mr. S. Shyam Sundar</td>
-                                          <td>Assistant Professor</td>
-                                       </tr>
-                                       <tr>
-                                          <td>12</td>
-                                          <td>Mr. E. Venkatesan</td>
-                                          <td>Assistant Professor</td>
-                                       </tr>
-                                       <tr>
-                                          <td>13</td>
-                                          <td>Mr. K. Senthamil Maran</td>
-                                          <td>Assistant Professor</td>
-                                       </tr>
-                                       <tr>
-                                          <td>14</td>
-                                          <td>Mr. V. Srinivasan</td>
-                                          <td>Assistant Professor</td>
-                                       </tr>
-                                       <tr>
-                                          <td>15</td>
-                                          <td>Mr. A. Pirakasam</td>
-                                          <td>Assistant Professor</td>
-                                       </tr>
-                                       <tr>
-                                          <td>16</td>
-                                          <td>Mr. V. C. Keerthi</td>
-                                          <td>Assistant Professor</td>
-                                       </tr>
-                                       <tr>
-                                          <td>17</td>
-                                          <td>Ms. K. Shakila</td>
-                                          <td>Assistant Professor</td>
-                                       </tr>
-                                       <tr>
-                                          <td>18</td>
-                                          <td>Dr. B. Ashwini</td>
-                                          <td>Assistant Professor</td>
-                                       </tr>
-                                       <tr>
-                                          <td>19</td>
-                                          <td>Mr. Rajmohan R</td>
-                                          <td>Assistant Professor</td>
-                                       </tr>
-                                       <tr>
-                                          <td>20</td>
-                                          <td>Mr. P. S. Sreethalababu</td>
-                                          <td>Assistant Professor</td>
-                                       </tr>
-                                       <tr>
-                                          <td>21</td>
-                                          <td>Ms. S. Aarthika</td>
-                                          <td>Assistant Professor</td>
-                                       </tr>
+                                        <tr>
+                                            <td>1</td>
+                                            <td>Dr. R. Sivakumar</td>
+                                            <td>M.E., Ph.D.</td>
+                                            <td>Professor &amp; Head</td>
+                                        </tr>
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Mr. V. Balasubramani</td>
+                                            <td>M.E.</td>
+                                            <td>Associate Professor</td>
+                                        </tr>
+                                        <tr>
+                                            <td>3</td>
+                                            <td>Dr. B. Ashwini</td>
+                                            <td>M.E., Ph.D.</td>
+                                            <td>Associate Professor</td>
+                                        </tr>
+                                        <tr>
+                                            <td>4</td>
+                                            <td>Dr. N. H. Agilandeswari</td>
+                                            <td>M.Tech., Ph.D.</td>
+                                            <td>Assistant Professor</td>
+                                        </tr>
+                                        <tr>
+                                            <td>5</td>
+                                            <td>Ms. N. Karthika</td>
+                                            <td>M.E.</td>
+                                            <td>Assistant Professor</td>
+                                        </tr>
+                                        <tr>
+                                            <td>6</td>
+                                            <td>Mrs. K. Kamalarani</td>
+                                            <td>M.E.</td>
+                                            <td>Assistant Professor</td>
+                                        </tr>
+                                        <tr>
+                                            <td>7</td>
+                                            <td>Mr. S. Shyam Sundar</td>
+                                            <td>M.E.</td>
+                                            <td>Assistant Professor</td>
+                                        </tr>
+                                        <tr>
+                                            <td>8</td>
+                                            <td>Mr. E. Venkatesan</td>
+                                            <td>M.E.</td>
+                                            <td>Assistant Professor</td>
+                                        </tr>
+                                        <tr>
+                                            <td>9</td>
+                                            <td>Mr. A. Pirakasam</td>
+                                            <td>M.E.</td>
+                                            <td>Assistant Professor</td>
+                                        </tr>
+                                        <tr>
+                                            <td>10</td>
+                                            <td>Mr. R. Rajmohan</td>
+                                            <td>M.E.</td>
+                                            <td>Assistant Professor</td>
+                                        </tr>
+                                        <tr>
+                                            <td>11</td>
+                                            <td>Mr. P. S. Sreethalababu</td>
+                                            <td>M.Tech.</td>
+                                            <td>Assistant Professor</td>
+                                        </tr>
+                                        <tr>
+                                            <td>12</td>
+                                            <td>Ms. S. Aarthika</td>
+                                            <td>M.E.</td>
+                                            <td>Assistant Professor</td>
+                                        </tr>
+                                        <tr>
+                                            <td>13</td>
+                                            <td>Mrs. M. Jainab</td>
+                                            <td>M.E.</td>
+                                            <td>Assistant Professor</td>
+                                        </tr>
                                     </tbody>
-                                 </table>
+                                </table>
+
                               </div>
                            </div>
                         </div>
