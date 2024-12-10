@@ -94,6 +94,9 @@ Route::get('/iqac/meeting-minutes', [PagesController::class, 'iqac_meeting_minut
 Route::get('/iqac/works-plan-and-implementation', [PagesController::class, 'iqac_works_plan_and_implementation']);
 Route::get('/iqac/iqac-function', [PagesController::class, 'iqac_function']);
 Route::get('/iqac/iqac-events', [PagesController::class, 'iqac_events']);
+Route::get('/iqac/iqac-yearly-reports/department-files', [PagesController::class, 'iqac_yearly_reports_department_files']);
+Route::get('/iqac/iqac-yearly-reports/office-files', [PagesController::class, 'iqac_yearly_reports_office_files']);
+Route::get('/iqac/iqac-yearly-reports/general-files', [PagesController::class, 'iqac_yearly_reports_general_files']);
 
 // aicte
 Route::get('/affiliation/approved/aicte', [PagesController::class, 'aicte_approved']);

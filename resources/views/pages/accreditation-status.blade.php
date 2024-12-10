@@ -69,6 +69,15 @@
                                                     <td>Accreditation Certificate</td>
                                                     <td> <a href="https://firebasestorage.googleapis.com/v0/b/egspj-bumblebees.appspot.com/o/egspec-assets%2Fpdf%2FNBA%20Result%20CSE%20IT%20ECE%20%20Decem%202022.pdf?alt=media&token=eca3be82-d365-4363-b395-bbe4180327b9" target="_blank"> NBA Certificate </a></td>
                                                   </tr>
+
+                                                  <tr>
+                                                    <td>Accredited Programmes</td>
+                                                    <td>UG-B.E (Mech, Civil and EEE)</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>Accreditation Period</td>
+                                                    <td>Academic Year 2024-25, 2025-26 and 2026-27, i.e., upto 30/06/2027</td>
+                                                  </tr>
                                                 </tbody>
                                               </table>
 
