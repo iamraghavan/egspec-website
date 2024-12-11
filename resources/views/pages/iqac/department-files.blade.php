@@ -2,7 +2,7 @@
 @section('content')
 @include('components.breadcrumb', [
 'value_1' => 'IQAC',
-'value_2' => 'IQAC Yearly Reports',
+'value_2' => '',
 'value_3' => '',
 'page_title' => 'Department Files'
 ])

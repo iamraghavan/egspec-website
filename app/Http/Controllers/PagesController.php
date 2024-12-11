@@ -236,6 +236,22 @@ class PagesController extends Controller
         return view('pages.iqac.iqac-events');
     }
 
+    public function iqac_yearly_reports()
+    {
+        SEOTools::setTitle('IQAC Yearly Reports');
+        SEOTools::setDescription('Access the IQAC yearly reports at E.G.S. Pillay Engineering College.');
+        SEOTools::opengraph()->addProperty('type', 'website');
+        SEOTools::opengraph()->addProperty('url', Url()->current());
+        SEOTools::opengraph()->addProperty('title', 'IQAC Yearly Reports | E.G.S. Pillay Engineering College');
+        SEOTools::opengraph()->addProperty('description', 'Access the IQAC yearly reports at E.G.S. Pillay Engineering College.');
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('IQAC Yearly Reports | E.G.S. Pillay Engineering College');
+        SEOTools::twitter()->setDescription('Access the IQAC yearly reports at E.G.S. Pillay Engineering College.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
+        return view('pages.iqac.yearly-reports');
+    }
+
     public function iqac_yearly_reports_department_files()
     {
         SEOTools::setTitle('IQAC Yearly Reports - Department Files');

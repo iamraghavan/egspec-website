@@ -398,6 +398,16 @@
                                         <li><a href="{{ url("/iqac/works-plan-and-implementation") }}">Works Plan & Implementation</a></li>
                                         <li><a href="{{ url("/iqac/iqac-function") }}">IQAC Functions</a></li>
                                         <li><a href="{{ url("/iqac/iqac-events") }}">IQAC Events</a></li>
+                                        <li><a href="{{ url("/iqac/iqac-yearly-reports") }}">IQAC Yeraly Reports</a></li>
+                                        <li class="sub-dropdown">
+                                            <a href="{{ url("#") }}">IQAC Files</a>
+                                            <ul class="submenu third-lvl base">
+                                                <li><a href="{{ url("/iqac/iqac-files/department-files") }}">Department Files</a></li>
+                                             <li><a href="{{ url("/iqac/iqac-files-reports/office-files") }}">Office Files</a></li>
+                                             <li><a href="{{ url("/iqac/iqac-files-reports/general-files") }}">General Files</a></li>
+                                            </ul>
+                                         </li>
+
 
 
                                      </ul>
