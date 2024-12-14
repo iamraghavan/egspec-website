@@ -403,8 +403,8 @@
                                             <a href="{{ url("#") }}">IQAC Files</a>
                                             <ul class="submenu third-lvl base">
                                                 <li><a href="{{ url("/iqac/iqac-files/department-files") }}">Department Files</a></li>
-                                             <li><a href="{{ url("/iqac/iqac-files-reports/office-files") }}">Office Files</a></li>
-                                             <li><a href="{{ url("/iqac/iqac-files-reports/general-files") }}">General Files</a></li>
+                                             <li><a href="{{ url("/iqac/iqac-files/office-files") }}">Office Files</a></li>
+                                             <li><a href="{{ url("/iqac/iqac-files/general-files") }}">General Files</a></li>
                                             </ul>
                                          </li>
 
