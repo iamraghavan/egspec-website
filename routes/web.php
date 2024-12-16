@@ -23,9 +23,9 @@ use Illuminate\Support\Facades\Response;
 use Carbon\Carbon;
 
 // Match all departments under undergraduate specifically for hods-desk
-Route::get('/academics/departments/undergraduate/{department}/hods-desk', function ($department) {
-    return view('under-construction', ['department' => $department]);
-});
+// Route::get('/academics/departments/undergraduate/{department}/hods-desk', function ($department) {
+//     return view('under-construction', ['department' => $department]);
+// });
 
 Route::get('/academics/departments/postgraduate/{department}/hods-desk', function ($department) {
     return view('under-construction', ['department' => $department]);

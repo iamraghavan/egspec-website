@@ -51,25 +51,25 @@
         </tr>
         <tr>
             <td>4</td>
-            <td>Mrs. S. Akilandeswari (Ph.D.)</td>
-            <td>M.E</td>
+            <td>Mrs. S. Akilandeswari</td>
+            <td>M.E (Ph.D.)</td>
             <td>Assistant Professor</td>
         </tr>
         <tr>
             <td>5</td>
-            <td>Mr. R. Gobinath (Ph.D.)</td>
-            <td>M.E</td>
+            <td>Mr. R. Gobinath</td>
+            <td>M.E (Ph.D.)</td>
             <td>Assistant Professor</td>
         </tr>
         <tr>
             <td>6</td>
-            <td>Ms. K. Raha Priya</td>
+            <td>Ms. K. Rahapriya</td>
             <td>M.E</td>
             <td>Assistant Professor</td>
         </tr>
         <tr>
             <td>7</td>
-            <td>Ms. R. Divya Bharathi</td>
+            <td>Ms. R. Divyabharathi</td>
             <td>M.E</td>
             <td>Assistant Professor</td>
         </tr>
