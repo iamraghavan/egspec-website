@@ -27,13 +27,13 @@ use Carbon\Carbon;
 //     return view('under-construction', ['department' => $department]);
 // });
 
-Route::get('/academics/departments/postgraduate/{department}/hods-desk', function ($department) {
-    return view('under-construction', ['department' => $department]);
-});
+// Route::get('/academics/departments/postgraduate/{department}/hods-desk', function ($department) {
+//     return view('under-construction', ['department' => $department]);
+// });
 
-Route::get('/academics/departments/{department}/hods-desk', function ($department) {
-    return view('under-construction', ['department' => $department]);
-});
+// Route::get('/academics/departments/{department}/hods-desk', function ($department) {
+//     return view('under-construction', ['department' => $department]);
+// });
 
 
 Route::get('/search', [InstitutionInternalPurpose::class, 'searchq']);
