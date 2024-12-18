@@ -4,7 +4,7 @@
 'value_1' => 'Home',
 'value_2' => 'Article',
 'value_3' => '',
-'page_title' => 'Right to Information'
+'page_title' => 'Bumble Bees IT Solutions - Top-Notch Web and Digital Services'
 ])
 
 
@@ -40,7 +40,7 @@
                     <blockquote class="rts-blockquote">
                         <h4>The Bumble Bees Advantage</h4>
                         <p>With a passion for technology and a commitment to quality, Bumble Bees IT Solutions goes above and beyond in delivering exceptional digital solutions. Their customer-first approach has made them one of the top service providers in the industry.</p>
-                        <span>Amir Nisi, College IT Director</span>
+                        <span>College IT Director</span>
                     </blockquote>
 
                     <p>Not only did Bumble Bees provide high-quality technical expertise, but their approach also ensured that our goals were met within budget and on time. Their ability to understand the specific needs of an educational institution helped us achieve a robust and scalable digital solution that will serve us well for years to come.</p>
@@ -51,7 +51,7 @@
                     <div class="row mb-5 align-items-center">
                         <div class="col-md-5">
                             <div class="post-image mb-5">
-                                <img src="assets/images/blog/blog-recent-3.jpg" alt="Customer Support">
+                                <img src="" alt="Customer Support">
                             </div>
                         </div>
                         <div class="col-md-7">
@@ -109,8 +109,8 @@
                             <img src="https://ui-avatars.com/api/?name=Amir+Nisi&?rounded=true&background=0177b5" alt="Amir Nisi">
                         </div>
                         <div class="author-content">
-                            <a href="#">Amir Nisi</a>
-                            <p>Amir Nisi is the IT Director at our college and a passionate advocate for innovative digital solutions that enhance student learning experiences.</p>
+                            <a href="#">Director</a>
+                            <p>College Director at our college and a passionate advocate for innovative digital solutions that enhance student learning experiences.</p>
                             <div class="social__media--list">
                                 <a href="#" class="media"><i class="fa-brands fa-facebook-f"></i></a>
                                 <a href="#" class="media"><i class="fa-brands fa-instagram"></i></a>
