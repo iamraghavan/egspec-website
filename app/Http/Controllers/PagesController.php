@@ -3592,6 +3592,6 @@ class PagesController extends Controller
         SEOTools::twitter()->setDescription('Bumble Bees is a top-notch web and digital services agency, offering a range of services including web design, development, and digital marketing.');
         SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
 
-        return view('pages.bumble-bees');
+        return view('bumble-bees');
     }
 }
