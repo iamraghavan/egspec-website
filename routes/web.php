@@ -41,6 +41,7 @@ Route::get('/search', [InstitutionInternalPurpose::class, 'searchq']);
 Route::get('/gallery', [InstitutionInternalPurpose::class, 'gallery_index'])->name('gallery_index');
 Route::get('/gallery_photo', [InstitutionInternalPurpose::class, 'showAlbum'])->name('showAlbum');
 
+Route::get('/artical/bumble-bees-it-solutions-top-notch-web-and-digital-services', [PagesController::class, 'bumble_bees']);
 
 
 
