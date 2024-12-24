@@ -32,7 +32,7 @@
 
                                         <tbody>
                                             <tr>
-                                                <td><a href="@blob('/strategic-plan/strategic-plan.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'>Strategic Plan</a></td>
+                                                <td><a href="https://firebasestorage.googleapis.com/v0/b/egspj-bumblebees.appspot.com/o/egspec-assets%2FStrategic-firebase.pdf?alt=media&token=3abc2037-9792-4339-9a99-01ecf7d30938" target="_blank" type="application/pdf" rel="alternate" media='print'>Strategic Plan</a></td>
                                                 <td><i class="fa fa-file-pdf"></i> / PDF File</td>
                                             </tr>
 
