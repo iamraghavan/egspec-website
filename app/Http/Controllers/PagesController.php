@@ -3580,4 +3580,18 @@ class PagesController extends Controller
 
         return view('pages.academics.departments.science-humanities.industry-collabration');
     }
+
+
+    public function bumble_bees()
+    {
+        SEOTools::setTitle('Bumble Bees - Top-Notch Web and Digital Services');
+        SEOTools::setDescription('Bumble Bees is a top-notch web and digital services agency, offering a range of services including web design, development, and digital marketing.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Bumble Bees - Top-Notch Web and Digital Services');
+        SEOTools::twitter()->setDescription('Bumble Bees is a top-notch web and digital services agency, offering a range of services including web design, development, and digital marketing.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
+        return view('bumble-bees');
+    }
 }
