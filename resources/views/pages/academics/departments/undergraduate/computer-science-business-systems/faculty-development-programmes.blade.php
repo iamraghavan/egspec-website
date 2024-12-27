@@ -65,7 +65,7 @@
                             </div>
 
                             <div class="iframe-div">
-                                <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=https://firebasestorage.googleapis.com/v0/b/egspec-symposium.appspot.com/o/faculty-development-programme.pdf?alt=media&token=1d99b6d7-f8d2-43a5-9ec3-1be2aad2c7b5#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="
+                                <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fegspec-symposium.appspot.com%2Fo%2Ffaculty-development-programme.pdf%3Falt%3Dmedia%26token%3D1d99b6d7-f8d2-43a5-9ec3-1be2aad2c7b5#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="
                             height: 100rem !important;
                         "></iframe>
                             </div>
