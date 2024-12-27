@@ -212,6 +212,7 @@ Route::get('/research/publication-details', [PagesController::class, 'publicatio
 Route::get('/research/patent-details', [PagesController::class, 'patent_details']);
 Route::get('/research/copyrights', [PagesController::class, 'copyrights']);
 Route::get('/research/r-and-d-policy', [PagesController::class, 'r_and_d_policy']);
+Route::get('/research/r-and-d-circulars', [PagesController::class, 'r_and_d_circulars']);
 
 
 Route::get('/research/projects/mechanical-engineering', [PagesController::class, 'prj_mechanical_engineering']);

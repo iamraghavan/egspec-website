@@ -368,6 +368,7 @@
                                       </li>
                                       <li><a href="{{ url("/research/patent-details") }}">Industry Collabration</a></li>
                                       <li><a href="{{ url("/research/copyrights") }}">Copyrights</a></li>
+                                      <li><a href="{{ url("/research/r-and-d-circular") }}">R &amp; D Circular</a></li>
                                       <li><a href="{{ url("/research/r-and-d-policy") }}">R &amp; D Policy</a></li>
                                    </ul>
                                 </li>

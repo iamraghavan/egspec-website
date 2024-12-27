@@ -1534,6 +1534,28 @@ class PagesController extends Controller
         return view('pages.research.r-and-d-policy');
     }
 
+    public function r_and_d_circulars()
+    {
+        // SEO Settings
+        SEOTools::setTitle('R&D Circulars | Latest Research Updates');
+        SEOTools::setDescription('Stay updated with the latest research circulars and updates from our institution.');
+        SEOTools::opengraph()->addProperty('url', Url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
+
+        // JSON-LD Structured Data
+        JsonLd::setTitle('R&D Circulars');
+        JsonLd::setDescription('Latest research updates and circulars from our institution.');
+        JsonLd::addValue('@context', 'https://schema.org');
+        JsonLd::addValue('@type', 'NewsArticle');
+        JsonLd::addValue('url', Url()->current());
+        JsonLd::addValue('name', 'R&D Circulars');
+
+
+        return view('pages.research.r-and-d-circulars');
+    }
+
     public function prj_mechanical_engineering()
     {
         // SEO Settings

@@ -203,6 +203,7 @@
                         <li><a class="mobile-menu-link" href="{{ url('/research/patent-details') }}">Industry Collaboration</a></li>
                         <li><a class="mobile-menu-link" href="{{ url('/research/copyrights') }}">Copyrights</a></li>
                         <li><a class="mobile-menu-link" href="{{ url('/research/r-and-d-policy') }}">R &amp; D Policy</a></li>
+                        <li><a class="mobile-menu-link" href="{{ url('/research/r-and-d-circular') }}">R &amp; D Circular</a></li>
 
                         <li class="has-droupdown sa">
                             <a href="{{ url("#") }}">Projects</a>
