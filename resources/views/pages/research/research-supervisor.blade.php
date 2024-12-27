@@ -49,7 +49,7 @@
 
                                                 <tbody>
                                                     <tr>
-                                                        <td><i class="fa fa-download"> </i><a href="https://firebasestorage.googleapis.com/v0/b/egspj-bumblebees.appspot.com/o/ACFrOgC8sUg0yPdWNWQk_EMwkgoB1XoqSVXMrAgNCcQ5ji3EC_g9EByFxt212V1KfTU59Cg7xYqG0vjho-QhxAm3tfXIQiKI251UeAVQNb9g0sNYO5dmQUk7agr3CzOmGXJ7PKVlvwg2INjLmv86.pdf?alt=media&token=79171063-19b8-4847-b2fe-6438e8ff514e" target="_blank" type="application/pdf" rel="alternate" media='print'> Recognized Research Supervisor List &amp; Scholar Details</a></td>
+                                                        <td><i class="fa fa-download"> </i><a href="https://firebasestorage.googleapis.com/v0/b/egspec-symposium.appspot.com/o/ACFrOgBA8yXfvdE0cFrjDg_ZUCc3QcqYFuJd2GxPXhW9mlgFSojfGBOHXvpeb_gTnSQeK3tFRzIAxZmC_plHI4oNI1aEML3_qMJvUJMmywu-QrcPtbsoVRPb264yx6bhiF1soKiJ1E76shZlwOAI.pdf?alt=media&token=f935eff8-dc42-4a31-9605-d6f7d654c489" target="_blank" type="application/pdf" rel="alternate" media='print'> Recognized Research Supervisor List &amp; Scholar Details</a></td>
                                                         <td><i class="fa fa-file-pdf"></i> / PDF File</td>
                                                     </tr>
 
@@ -72,12 +72,258 @@
                     </div>
 
                 </div>
+<div class="semister-fee">
+    <div class="semister-fee__content">
 
-                <div class="iframe-div">
-                    <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=https://egspec.blob.core.windows.net/egspec-assets/research/research-supervisor-and-scholar-details.pdf#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="
-                height: 100rem !important;
-            "></iframe>
+
+        <div class="rts-fee-chart">
+            <div class="rts-fee-chart__tab">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="cse-tab" data-bs-toggle="tab" data-bs-target="#cse" type="button" role="tab" aria-controls="cse" aria-selected="true">Computer Science and Engineering</button>
+                        <button class="nav-link" id="it-tab" data-bs-toggle="tab" data-bs-target="#it" type="button" role="tab" aria-controls="it" aria-selected="false">Information Technology</button>
+                        <button class="nav-link" id="mech-tab" data-bs-toggle="tab" data-bs-target="#mech" type="button" role="tab" aria-controls="mech" aria-selected="false">Mechanical Engineering</button>
+                        <button class="nav-link" id="eee-tab" data-bs-toggle="tab" data-bs-target="#eee" type="button" role="tab" aria-controls="eee" aria-selected="false">Electrical and Electronics Engineering</button>
+                        <button class="nav-link" id="ece-tab" data-bs-toggle="tab" data-bs-target="#ece" type="button" role="tab" aria-controls="ece" aria-selected="false">Electronics and Communication Engineering</button>
+                        <button class="nav-link" id="civil-tab" data-bs-toggle="tab" data-bs-target="#civil" type="button" role="tab" aria-controls="civil" aria-selected="false">Civil Engineering</button>
+                        <button class="nav-link" id="physics-tab" data-bs-toggle="tab" data-bs-target="#physics" type="button" role="tab" aria-controls="physics" aria-selected="false">Physics</button>
+                    </div>
+                </nav>
+            </div>
+            <div class="rts-fee-chart__content" id="nav-tabContent">
+                <!-- Computer Science and Engineering -->
+                <div class="tab-pane fade active show" id="cse" role="tabpanel" aria-labelledby="cse-tab">
+                    <table class="table">
+                        <thead class="table-theme">
+                            <tr>
+                                <th>Name of the Faculty</th>
+                                <th>Reference Number</th>
+                                <th>Number of Scholars Produced</th>
+                                <th>Number of Scholars Pursuing</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dr. M. CHINNADURAI</td>
+                                <td>2840126</td>
+                                <td>15</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. K. BALASUBRAMANIAN</td>
+                                <td>4240018</td>
+                                <td>0</td>
+                                <td>5</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
+
+                <!-- Information Technology -->
+                <div class="tab-pane fade" id="it" role="tabpanel" aria-labelledby="it-tab">
+                    <table class="table">
+                        <thead class="table-theme">
+                            <tr>
+                                <th>Name of the Faculty</th>
+                                <th>Reference Number</th>
+                                <th>Number of Scholars Produced</th>
+                                <th>Number of Scholars Pursuing</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dr. S. MANIKANDAN</td>
+                                <td>4040100</td>
+                                <td>0</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. K. MANIKANDA KUMARAN</td>
+                                <td>4140007</td>
+                                <td>0</td>
+                                <td>5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Mechanical Engineering -->
+                <div class="tab-pane fade" id="mech" role="tabpanel" aria-labelledby="mech-tab">
+                    <table class="table">
+                        <thead class="table-theme">
+                            <tr>
+                                <th>Name of the Faculty</th>
+                                <th>Reference Number</th>
+                                <th>Number of Scholars Produced</th>
+                                <th>Number of Scholars Pursuing</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dr. S. RAMABALAN</td>
+                                <td>2520085</td>
+                                <td>10</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. S. KRISHNA MOHAN</td>
+                                <td>2920037</td>
+                                <td>3</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. V. NAVANEETHAKRISHNAN</td>
+                                <td>3320090</td>
+                                <td>0</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. G. SUNDARA VADIVEL</td>
+                                <td>4320006</td>
+                                <td>0</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Electrical and Electronics Engineering -->
+                <div class="tab-pane fade" id="eee" role="tabpanel" aria-labelledby="eee-tab">
+                    <table class="table">
+                        <thead class="table-theme">
+                            <tr>
+                                <th>Name of the Faculty</th>
+                                <th>Reference Number</th>
+                                <th>Number of Scholars Produced</th>
+                                <th>Number of Scholars Pursuing</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dr. V. MOHAN</td>
+                                <td>2830072</td>
+                                <td>5</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. T. SURESH PADMANABHAN</td>
+                                <td>2930027</td>
+                                <td>4</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. S. SIVAMANI</td>
+                                <td>4430006</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. K. KRISHNARAM</td>
+                                <td>4430017</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Electronics and Communication Engineering -->
+                <div class="tab-pane fade" id="ece" role="tabpanel" aria-labelledby="ece-tab">
+                    <table class="table">
+                        <thead class="table-theme">
+                            <tr>
+                                <th>Name of the Faculty</th>
+                                <th>Reference Number</th>
+                                <th>Number of Scholars Produced</th>
+                                <th>Number of Scholars Pursuing</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dr. A. RAJARAM</td>
+                                <td>2340070</td>
+                                <td>12</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. M. MALATHI</td>
+                                <td>4190004</td>
+                                <td>0</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. M. IRSHAD AHAMED</td>
+                                <td>3850002</td>
+                                <td>0</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. S. SENTHILKUMAR</td>
+                                <td>4190081</td>
+                                <td>0</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>Dr. L. RAMACHANDRAN</td>
+                                <td>4340034</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Civil Engineering -->
+                <div class="tab-pane fade" id="civil" role="tabpanel" aria-labelledby="civil-tab">
+                    <table class="table">
+                        <thead class="table-theme">
+                            <tr>
+                                <th>Name of the Faculty</th>
+                                <th>Reference Number</th>
+                                <th>Number of Scholars Produced</th>
+                                <th>Number of Scholars Pursuing</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dr. R. SIVAKUMAR</td>
+                                <td>2910018</td>
+                                <td>0</td>
+                                <td>3</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Physics -->
+                <div class="tab-pane fade" id="physics" role="tabpanel" aria-labelledby="physics-tab">
+                    <table class="table">
+                        <thead class="table-theme">
+                            <tr>
+                                <th>Name of the Faculty</th>
+                                <th>Reference Number</th>
+                                <th>Number of Scholars Produced</th>
+                                <th>Number of Scholars Pursuing</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Dr. E. EDWARD ANAND</td>
+                                <td>2670077</td>
+                                <td>0</td>
+                                <td>0</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
             </div>
 
 
