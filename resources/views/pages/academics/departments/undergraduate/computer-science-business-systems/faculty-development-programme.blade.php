@@ -5,46 +5,74 @@
     'value_1' => 'Academics',
     'value_2' => 'Departments',
     'value_3' => 'Computer Science & Business Systems',
-    'page_title' => 'Programme Educational Objectives'
+    'page_title' => 'Faculty Development Programme (FDP)'
 ])
+
+
+
+
+
+
+
 
 <div class="rts-program rts-section-padding">
     <div class="container">
         <div class="rts-program-description">
             <div class="row">
                 <div class="col-lg-8">
-                    <div class="admission-content-top">
-                       <div class="application-deadline">
-                          <h5 class="rts-section-title animated fadeIn">Program Education Objectives (PEOs)</h5>
-                          <div class="application-deadline__content mt-5">
-                             <div class="application-deadline__content--table">
-                                <table class="table table-striped table-hover table-bordered">
-                                    <thead class="table-theme">
-                                       <tr>
-                                          <td>##</td>
-                                          <td>Program Education Objectives</td>
-                                       </tr>
-                                    </thead>
-                                    <tbody>
-                                       <tr>
-                                          <td>1</td>
-                                          <td>Graduates will excel as engineering professionals and leaders in electrical engineering or becoming an entrepreneur or pursuing higher education.</td>
-                                       </tr>
-                                       <tr>
-                                          <td>2</td>
-                                          <td>Graduates will demonstrate core competence to adapt themselves to the constantly evolving technologies and stay in line with industry advancements.</td>
-                                       </tr>
-                                       <tr>
-                                          <td>3</td>
-                                          <td>Graduates will collaborate in multidisciplinary fields both as an individual and as a team member with a strong sense of professionalism and ethics.</td>
-                                       </tr>
-                                    </tbody>
-                                 </table>
+                    <div class="semister-fee__content">
+                        <h5 class="rts-section-title">Faculty Development Programme (FDP)</h5>
 
-                             </div>
-                          </div>
-                       </div>
+                        <div class="col-12 my-5">
+                            <div class="program-description-area">
+
+                                <div class="program-credit-area">
+
+
+                                    <div class="program-accordion my-5">
+                                        <div class="accordion" id="rts-accordion">
+
+                                            <div class="accordion-item">
+
+                                                <div>
+                                                    <div class="accordion-body-content">
+                                                        <table class="table">
+
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td><i class="fa fa-download"> </i><a href="https://firebasestorage.googleapis.com/v0/b/egspec-symposium.appspot.com/o/faculty-development-programme.pdf?alt=media&token=1d99b6d7-f8d2-43a5-9ec3-1be2aad2c7b5" target="_blank" type="application/pdf" rel="alternate" media='print'> Faculty Development Programme (FDP) </a></td>
+                                                                    <td><i class="fa fa-file-pdf"></i> / PDF File</td>
+                                                                </tr>
+
+
+
+                                                            </tbody>
+                                                        </table>
+
+
+
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="iframe-div">
+                                <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=https://firebasestorage.googleapis.com/v0/b/egspec-symposium.appspot.com/o/faculty-development-programme.pdf?alt=media&token=1d99b6d7-f8d2-43a5-9ec3-1be2aad2c7b5#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="
+                            height: 100rem !important;
+                        "></iframe>
+                            </div>
+                        </div>
+
                     </div>
+
                  </div>
 
 
@@ -60,7 +88,6 @@
                                     <li><a href="{{url('/academics/departments/undergraduate/computer-science-and-business-systems/hods-desk')}}"><span><i class="fa-light fa-arrow-right"></i></span>Hod's Desk</a></li>
                                     <li><a href="{{url('/academics/departments/undergraduate/computer-science-and-business-systems/faculty-details')}}"><span><i class="fa-light fa-arrow-right"></i></span>Faculty Details</a></li>
                                     <li><a href="https://coe.egspec.org/" target="_blank" referrerpolicy="origin"><span><i class="fa-light fa-arrow-right"></i></span>Curriculum</a></li>
-                                    <li><a href="{{url('/placements/statistics')}}"><span><i class="fa-light fa-arrow-right"></i></span>Placements</a></li>
                                     <li><a href="{{url('/academics/departments/undergraduate/computer-science-and-business-systems/faculty-development-programmes')}}"><span><i class="fa-light fa-arrow-right"></i></span>Faculty Development Programme (FDP)</a></li>
                                     <li><a href="{{url('/academics/departments/undergraduate/computer-science-and-business-systems/program-outcomes')}}"><span><i class="fa-light fa-arrow-right"></i></span>Program Outcomes</a></li>
                                     <li><a href="{{url('/academics/departments/undergraduate/computer-science-and-business-systems/programme-educational-objectives')}}"><span><i class="fa-light fa-arrow-right"></i></span>Programme Educational Objectives</a></li>
@@ -81,6 +108,7 @@
         </div>
     </div>
 </div>
+
 
 @include('components.cta')
 

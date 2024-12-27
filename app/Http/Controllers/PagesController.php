@@ -3509,6 +3509,19 @@ class PagesController extends Controller
         return view('pages.academics.departments.undergraduate.computer-science-business-systems.program-outcomes');
     }
 
+    public function ug_computer_science_and_business_systems_faculty_development_programmes()
+    {
+        SEOTools::setTitle('Faculty Development Programmes - Computer Science and Business Systems');
+        SEOTools::setDescription('Discover the faculty development programmes of the Computer Science and Business Systems department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Faculty Development Programmes - Computer Science and Business Systems');
+        SEOTools::twitter()->setDescription('Discover the faculty development programmes of the Computer Science and Business Systems department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
+        return view('pages.academics.departments.undergraduate.computer-science-business-systems.faculty-development-programmes');
+    }
+
     public function ug_computer_science_and_business_systems_programme_educational_objectives()
     {
         SEOTools::setTitle('Program Educational Objectives - Computer Science and Business Systems');

@@ -386,6 +386,7 @@ Route::get('/academics/departments/undergraduate/computer-science-and-business-s
 Route::get('/academics/departments/undergraduate/computer-science-and-business-systems/department-highlights', [PagesController::class, 'ug_computer_science_and_business_systems_department_highlights']);
 Route::get('/academics/departments/undergraduate/computer-science-and-business-systems/hods-desk', [PagesController::class, 'ug_computer_science_and_business_systems_hods_desk']);
 Route::get('/academics/departments/undergraduate/computer-science-and-business-systems/faculty-details', [PagesController::class, 'ug_computer_science_and_business_systems_faculty_details']);
+Route::get('/academics/departments/undergraduate/computer-science-and-business-systems/faculty-development-programmes', [PagesController::class, 'ug_computer_science_and_business_systems_faculty_development_programmes']);
 Route::get('/academics/departments/undergraduate/computer-science-and-business-systems/program-outcomes', [PagesController::class, 'ug_computer_science_and_business_systems_program_outcomes']);
 Route::get('/academics/departments/undergraduate/computer-science-and-business-systems/programme-educational-objectives', [PagesController::class, 'ug_computer_science_and_business_systems_programme_educational_objectives']);
 Route::get('/academics/departments/undergraduate/computer-science-and-business-systems/programme-specific-outcomes', [PagesController::class, 'ug_computer_science_and_business_systems_programme_specific_outcomes']);
