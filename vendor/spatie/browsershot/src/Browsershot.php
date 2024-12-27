@@ -257,8 +257,20 @@ class Browsershot
 
     public function setUrl(string $url): static
     {
-        if (str_starts_with(strtolower($url), 'file://') || str_starts_with(strtolower($url), 'file:/')) {
-            throw FileUrlNotAllowed::make();
+        $url = trim($url);
+
+        $unsupportedProtocols = [
+            'file://',
+            'file:/',
+            'file:\\',
+            'file:\\\\',
+            'view-source',
+        ];
+
+        foreach ($unsupportedProtocols as $unsupportedProtocol) {
+            if (str_starts_with(strtolower($url), $unsupportedProtocol)) {
+                throw FileUrlNotAllowed::make();
+            }
         }
 
         $this->url = $url;

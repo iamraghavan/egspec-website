@@ -44,40 +44,7 @@
 
             </div>
 
-            {{-- <div class="col-lg-4 col-md-10 col-sm-10">
 
-                <div class="program-sidebar">
-                    <!-- curriculum -->
-                    <div class="program-curriculum">
-
-                <h6 class="heading-title">IQAC Yearly Reports</h6>
-                <div class="program-menu">
-                    <ul class="list-unstyled">
-                        <li><a href="{{url('/iqac/iqac-yearly-reports/department-files')}}"><span><i class="fa-light fa-arrow-right"></i></span>Department Files</a></li>
-
-
-                    </ul>
-                </div>
-
-                <div class="program-menu">
-                    <ul class="list-unstyled">
-                        <li><a href="{{url('/iqac/iqac-yearly-reports/office-files')}}"><span><i class="fa-light fa-arrow-right"></i></span>Office Files</a></li>
-
-
-                    </ul>
-                </div>
-                <div class="program-menu">
-                    <ul class="list-unstyled">
-                        <li><a href="{{url('/iqac/iqac-yearly-reports/general-files')}}"><span><i class="fa-light fa-arrow-right"></i></span>General Files</a></li>
-
-
-                    </ul>
-                </div>
-
-
-            </div>
-                </div>
-            </div> --}}
 
         </div>
 

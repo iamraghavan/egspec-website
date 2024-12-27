@@ -107,14 +107,14 @@
                                 </ul>
                             </div>
 
-                            <h6 class="heading-title">IQAC Convener Profile</h6>
+                            {{-- <h6 class="heading-title">IQAC Convener Profile</h6>
                             <div class="program-menu">
                                 <ul class="list-unstyled">
                                     <li><a href="{{ url("/iqac/convener-profile") }}"><span><i class="fa-light fa-arrow-right"></i></span>Convener Profile</a></li>
 
 
                                 </ul>
-                            </div>
+                            </div> --}}
 
                             <h6 class="heading-title">Works Plan & Implementation</h6>
                             <div class="program-menu">

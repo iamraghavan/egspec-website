@@ -242,7 +242,7 @@
                     <a href="{{ url("#") }}" class="main">IQAC</a>
                     <ul class="submenu mm-collapse">
                         <li><a class="mobile-menu-link" href="{{ url("/iqac/directors-profile") }}">Director's Profile</a></li>
-                        <li><a class="mobile-menu-link" href="{{ url("/iqac/convener-profile") }}">Convener Profile</a></li>
+                        {{-- <li><a class="mobile-menu-link" href="{{ url("/iqac/convener-profile") }}">Convener Profile</a></li> --}}
                         <li><a class="mobile-menu-link" href="{{ url("/iqac/committe-members") }}">Members</a></li>
                         <li><a class="mobile-menu-link" href="{{ url("/iqac/meeting-minutes") }}">IQAC Meeting Minutes</a></li>
                         <li><a class="mobile-menu-link" href="{{ url("/iqac/works-plan-and-implementation") }}">Works Plan & Implementation</a></li>
