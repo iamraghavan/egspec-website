@@ -2957,7 +2957,7 @@ class PagesController extends Controller
         SEOTools::twitter()->setDescription('Discover the faculty development programmes of the Artificial Intelligence and Data Science department.');
         SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
 
-        return view('pages.academics.departments.undergraduate.artificial-intelligence-and-data-science.faculty-development-programmes');
+        return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.faculty-development-programmes');
     }
 
 
