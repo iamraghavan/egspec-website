@@ -2947,6 +2947,19 @@ class PagesController extends Controller
         return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.programme-specific-outcomes');
     }
 
+    public function ug_artificial_intelligence_data_science_faculty_development_programmes()
+    {
+        SEOTools::setTitle('Faculty Development Programmes - Artificial Intelligence and Data Science');
+        SEOTools::setDescription('Discover the faculty development programmes of the Artificial Intelligence and Data Science department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('Faculty Development Programmes - Artificial Intelligence and Data Science');
+        SEOTools::twitter()->setDescription('Discover the faculty development programmes of the Artificial Intelligence and Data Science department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
+        return view('pages.academics.departments.undergraduate.artificial-intelligence-and-data-science.faculty-development-programmes');
+    }
+
 
 
 

@@ -326,7 +326,7 @@ Route::get('/academics/departments/undergraduate/artificial-intelligence-and-dat
 Route::get('/academics/departments/undergraduate/artificial-intelligence-and-data-science/program-outcomes', [PagesController::class, 'ug_artificial_intelligence_data_science_program_outcomes']);
 Route::get('/academics/departments/undergraduate/artificial-intelligence-and-data-science/programme-educational-objectives', [PagesController::class, 'ug_artificial_intelligence_data_science_programme_educational_objectives']);
 Route::get('/academics/departments/undergraduate/artificial-intelligence-and-data-science/programme-specific-outcomes', [PagesController::class, 'ug_artificial_intelligence_data_science_programme_specific_outcomes']);
-
+Route::get('/academics/departments/undergraduate/artificial-intelligence-and-data-science/faculty-development-programmes,[PagesController::class],ug_artificial_intelligence_data_science_faculty_development_programmes');
 
 
 
