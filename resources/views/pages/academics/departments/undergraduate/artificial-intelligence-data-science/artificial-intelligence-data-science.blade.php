@@ -84,6 +84,7 @@
                                     <li><a href="{{url('/academics/departments/undergraduate/artificial-intelligence-and-data-science/program-outcomes')}}"><span><i class="fa-light fa-arrow-right"></i></span>Program Outcomes</a></li>
                                     <li><a href="{{url('/academics/departments/undergraduate/artificial-intelligence-and-data-science/programme-educational-objectives')}}"><span><i class="fa-light fa-arrow-right"></i></span>Programme Educational Objectives</a></li>
                                     <li><a href="{{url('/academics/departments/undergraduate/artificial-intelligence-and-data-science/programme-specific-outcomes')}}"><span><i class="fa-light fa-arrow-right"></i></span>Programme Specific Outcomes</a></li>
+                                    <li><a href="{{url('/academics/departments/undergraduate/artificial-intelligence-and-data-science/newsletter/query?d_id=2')}}<span><i class="fa-light fa-arrow-right"></i></span>Newsletters</a></li>
                                 </ul>
                             </div>
                         </div>
