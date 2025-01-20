@@ -21,16 +21,16 @@
                                 <div class="rts-section">
                                     <div class="col-lg-4 col-md-3 col-sm-12 text-center">
                                         <picture>
-                                            <source srcset="@blob('profile/')" type="image/webp">
-                                            <img src="@blob('profile/')" class="img-fluid img-thumbnail" alt="egspec_dr_r_karthi" style="max-width: 200px;">
+                                            <source srcset="@blob('profile/dr-r-karthi.webp')" type="image/webp">
+                                            <img src="@blob('profile/dr-r-karthi.webp')" class="img-fluid img-thumbnail" alt="egspec_dr_r_karthi" style="max-width: 200px;">
                                         </picture>
                                     </div>
                                     <div class="col-lg-8 col-md-9 col-sm-12">
                                         <div class="rts-section-description">
                                             <div class="profile-info">
-                                                <h5 class="profile-name">Dr. R. Karthi, MBA., M.Phil., Ph.D</h5>
+                                                <h5 class="profile-name"> <a href="https://firebasestorage.googleapis.com/v0/b/egspec-symposium.appspot.com/o/ACFrOgDxnEjBu85_UH_8esZA9xyx1l7OHwwy4TeHbCRusmqRuJDN8cFuK218SWbfU7tMCE6TGdnXB9pjUpYEQ74hBnjyRMz0j39CLS9SZ-A1dP9cjjP0IOnaC_RZ6f2-au1VViU2BExohuuO2wiq.pdf?alt=media&token=e1271ec7-b790-47ec-b514-c69211d3cf94" target="_blank" rel="noopener noreferrer"> Dr. R. Karthi, MBA., M.Phil., Ph.D </a></h5>
                                                 <p class="profile-role">Professor & Head</p>
-                                                <p class="profile-location">Department of Business Administration</p>
+                                                <p class="profile-location">Department of Management Studies</p>
                                                 <p class="profile-contact">Contact Number: 9842774807</p>
                                                 <p class="profile-contact">E-Mail: karthi@egspec.org</p>
                                             </div>
@@ -43,13 +43,9 @@
                             <div class="row">
                                 <div class="container">
                                     <div class="row">
-                                        {{-- <p class="desc text-justify">
-                                            The Department of Computer Applications warmly welcomes you to become a part of E.G.S. Pillay Engineering College. It is my pleasure to serve as the Head of the department. Our department is committed to delivering an enriched curriculum and employing effective teaching and learning practices that offer students opportunities to acquire knowledge, gain admissions to prestigious institutions, and engage in research and consultancy. We provide a platform for students to achieve their career goals. Additionally, the department takes the initiative to enhance students' soft skills, analytical capabilities, and verbal communications, preparing them to confidently face the competition in the corporate world.
-
-                                            Since its inception in 2001, we have welcomed scholars and enrolled students who are committed to a passionate pursuit of knowledge with a positive learning attitude. The department provides an outstanding academic environment complemented by excellent teaching faculty and state-of-the-art infrastructure. The comprehensive curriculum covers all topics related to computer science and its applications, with an emphasis on knowledge-based learning and practical exercises.
-
-                                            The Department provides various value-added training programs, activities, placement assistance, and drives to inculcate high technical skills, a culture of teamwork, and leadership qualities for achieving excellence and thereby increasing employability skills. The core values of the department help the students to develop their overall personality and make them worthy technocrats to compete and work at the global level.
-                                        </p> --}}
+                                        <p class="desc text-justify">
+                                            With 22 years of experience at E.G.S. Pillay Engineering College, Nagapattinam, as a Professor and HOD in the Department of Management Studies, I specialize in Organizational Behavior, Marketing Research, Human Resource Management, Strategic Management, and International Business. I hold multiple degrees, including a Ph.D., M.Phil, MBA, and more. I have received grants for various projects and published numerous research papers in international and national journals, along with contributing to several book chapters and authoring textbooks.
+                                        </p>
                                     </div>
                                 </div>
                             </div>

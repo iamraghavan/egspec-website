@@ -42,7 +42,7 @@ Route::get('/gallery', [InstitutionInternalPurpose::class, 'gallery_index'])->na
 Route::get('/gallery_photo', [InstitutionInternalPurpose::class, 'showAlbum'])->name('showAlbum');
 
 Route::get('/artical/bumble-bees-it-solutions-top-notch-web-and-digital-services', [PagesController::class, 'bumble_bees']);
-
+Route::get('/academics/newsletter/{id}/{slug}', [PagesController::class, 'newsletter_show'])->name('newsletter.show');
 
 
 
@@ -327,6 +327,7 @@ Route::get('/academics/departments/undergraduate/artificial-intelligence-and-dat
 Route::get('/academics/departments/undergraduate/artificial-intelligence-and-data-science/programme-educational-objectives', [PagesController::class, 'ug_artificial_intelligence_data_science_programme_educational_objectives']);
 Route::get('/academics/departments/undergraduate/artificial-intelligence-and-data-science/programme-specific-outcomes', [PagesController::class, 'ug_artificial_intelligence_data_science_programme_specific_outcomes']);
 Route::get('/academics/departments/undergraduate/artificial-intelligence-and-data-science/faculty-development-programmes', [PagesController::class, 'ug_artificial_intelligence_data_science_faculty_development_programmes']);
+Route::get('/academics/departments/undergraduate/artificial-intelligence-and-data-science/newsletter/query', [PagesController::class, 'ug_artificial_intelligence_data_science_newsletter']);
 
 
 

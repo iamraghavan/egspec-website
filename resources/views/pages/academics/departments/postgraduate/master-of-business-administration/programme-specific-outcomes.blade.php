@@ -27,15 +27,15 @@
                                        </tr>
                                     </thead>
                                     <tbody>
-                                       <tr>
-                                          <td><strong>PSO1</strong></td>
-                                          <td>To design, develop and test software solutions for real world applications using modern computational tools and techniques.</td>
-                                       </tr>
-                                       <tr>
-                                          <td><strong>PSO2</strong></td>
-                                          <td>To manage and analyze huge volumes of data in real-world applications and analyze with the aid of modern computing platforms, techniques and tools.</td>
-                                       </tr>
-                                    </tbody>
+                                        <tr>
+                                           <td><strong>PSO1</strong></td>
+                                           <td>Entrepreneurial Skill: Engage in lifelong learning in management-related areas to become a successful entrepreneur.</td>
+                                        </tr>
+                                        <tr>
+                                           <td><strong>PSO2</strong></td>
+                                           <td>Contribution to Society: Apply modern tools for completing projects successfully and delivering management services with a social benefit perspective.</td>
+                                        </tr>
+                                     </tbody>
                                  </table>
                               </div>
                            </div>

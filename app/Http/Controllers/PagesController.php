@@ -13,12 +13,14 @@ use App\Models\Course;
 use App\Models\Certification;
 use App\Models\CoursesAndIntakes;
 use App\Models\ComplaintCommittee;
+use App\Models\Department;
 use App\Models\Equipment;
 use App\Models\NssAndRRC;
 use App\Models\Route;
 use App\Models\SportAthletesAndAchievements;
 use App\Models\SportData;
 use App\Models\Event;
+use App\Models\Newsletter;
 use App\Models\PlacementStatistic;
 use App\Models\StudentAchievement;
 use App\Models\WomenEmpowermentCellMember;
@@ -58,6 +60,18 @@ class PagesController extends Controller
         // Return the view with the necessary data
         return view('pages.index', compact('sliderImages', 'posterSlider', 'messages'));
     }
+
+    public function newsletter_show($id, $slug)
+    {
+        // Fetch the newsletter by id and slug
+        $newsletter = Newsletter::where('id', $id)
+            ->where('slug', $slug)
+            ->firstOrFail();
+
+        // Return the view with the newsletter data
+        return view('pages.newsletter.newsletter', compact('newsletter'));
+    }
+
 
     private function getSliderImages()
     {
@@ -2959,6 +2973,33 @@ class PagesController extends Controller
 
         return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.faculty-development-programmes');
     }
+
+
+    public function ug_artificial_intelligence_data_science_newsletter(Request $request)
+    {
+        // Retrieve the department_id from the URL parameter
+        $departmentId = $request->query('d_id');
+
+
+
+        // Set SEO metadata
+        SEOTools::setTitle('AI & Data Science Newsletter');
+        SEOTools::setDescription('Stay informed about the latest updates and events in the Artificial Intelligence and Data Science department.');
+        SEOTools::opengraph()->addProperty('url', url()->current());
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('AI & Data Science Newsletter');
+        SEOTools::twitter()->setDescription('Stay informed about the latest updates and events in the Artificial Intelligence and Data Science department.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
+        // Get newsletters based on department ID from URL query parameter
+        $newsletters = Newsletter::where('department_id', $departmentId)
+            ->where('publish_status', 'published')
+            ->get();
+
+        // Pass the data to the view
+        return view('pages.academics.departments.undergraduate.artificial-intelligence-data-science.newsletter', ['newsletters' => $newsletters]);
+    }
+
 
 
 
