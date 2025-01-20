@@ -31,7 +31,7 @@
                                         </thead>
                                         <tbody>
                                             <tr>
-                                                <td>Accredited by NAAC with an 'A' grade</td>
+                                                <td>Accredited by NAAC with an “A++ grade”</td>
                                             </tr>
                                             <tr>
                                                 <td>Autonomous Institution with a focus on Outcome-based Education</td>

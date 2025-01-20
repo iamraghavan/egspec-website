@@ -46,17 +46,17 @@
                                             </tr>
                                             <tr>
                                                 <td>4</td>
-                                                <td>Dr. S. Sakthi Kamal Nathan</td>
+                                                <td>Mrs. A. Sowarnalakshmi</td>
                                                 <td>Assistant Professor</td>
                                             </tr>
                                             <tr>
                                                 <td>5</td>
-                                                <td>Mr. I. Arulprakash</td>
+                                                <td>Ms. R. Priyanka</td>
                                                 <td>Assistant Professor</td>
                                             </tr>
                                             <tr>
                                                 <td>6</td>
-                                                <td>Mr. S. Mohamed Naina Maricar</td>
+                                                <td>Ms. R. Madhumitha</td>
                                                 <td>Assistant Professor</td>
                                             </tr>
                                             <tr>

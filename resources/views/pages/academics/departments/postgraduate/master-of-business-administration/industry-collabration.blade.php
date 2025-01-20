@@ -31,7 +31,7 @@
 
                                                     <tbody>
                                                         <tr>
-                                                            <td><a href="@blob('academics/departments/undergraduate/information-technology/industry-collaboration/industry-collabration.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'> Industry Collabration </a></td>
+                                                            <td><a href="@blob('academics/departments/postgraduate/master-of-business-administration/industry-collaboration/industry-collabration.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'> Industry Collabration </a></td>
                                                             <td><i class="fa fa-file-pdf"></i> / PDF File</td>
                                                         </tr>
 

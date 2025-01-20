@@ -28,26 +28,26 @@
                 <div class="col-lg-8">
                     <div class="rts-scholarship-description">
                         <div class="repeating-content">
-                            <div class="single-information-box rt-theme-bg">
-                                <div class="single-info">
-                                    <h4 class="title">Vision</h4>
-                                    <p class="amount">To create a human resource pool empowered with comprehensive management knowledge, skills, and aptitudes.</p>
-                                </div>
-                            </div>
+                           <div class="single-information-box rt-theme-bg">
+                              <div class="single-info">
+                                 <h4 class="title">Vision</h4>
+                                 <p class="amount">To promote a centre of excellence by inspiring and cultivating socially responsible leaders, equipped with the management knowledge, skills, and confidence to shape a better future.</p>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                    <div class="rts-scholarship-description mt-5">
+                     </div>
+                     <div class="rts-scholarship-description mt-5">
                         <div class="repeating-content">
-                            <div class="single-information-box rt-secondary-bg">
-                                <div class="single-info">
-                                    <h4 class="title">Mission</h4>
-                                    <p class="amount">To foster an outstanding academic environment that promotes entrepreneurship, employment, and research and development in management-related fields.</p>
-                                    <p class="amount">To deliver high-quality education through skilled faculty members, shaping students into ethical leaders who contribute meaningfully to society.</p>
-                                    <p class="amount">To establish cutting-edge research facilities that enhance managerial knowledge and support consultancy and corporate endeavors.</p>
-                                </div>
-                            </div>
+                           <div class="single-information-box rt-secondary-bg">
+                              <div class="single-info">
+                                 <h4 class="title">Mission</h4>
+                                 <p class="amount">M1: To create a vibrant academic environment for better employment opportunities and entrepreneurship for students towards successful careers in management-related areas.</p>
+                                 <p class="amount">M2: To provide high-quality education to the students through efficient faculty members and make them social and ethical leaders for a transformative impact on society.</p>
+                                 <p class="amount">M3: To offer a research-oriented environment for enhancing the analytical skills, knowledge, and talents needed for the business world.</p>
+                              </div>
+                           </div>
                         </div>
-                    </div>
+                     </div>
                     <div class="academic-picture mt-5">
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
