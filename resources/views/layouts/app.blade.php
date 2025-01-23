@@ -769,6 +769,19 @@
     .iap-h3 { text-align: center !important; font-size: 18px !important; margin: 20px 0 !important; color: #333 !important; }
     html { scroll-behavior: smooth; }
 </style>
+
+<style>
+    @keyframes blink {
+        0% { color: #ff1493; } /* Deep Pink */
+        20% { color: #ff4500; } /* Orange Red */
+        40% { color: #32cd32; } /* Lime Green */
+        60% { color: #1e90ff; } /* Dodger Blue */
+        80% { color: #8a2be2; } /* Blue Violet */
+        100% { color: #ff6347; } /* Tomato */
+    }
+</style>
+
+
 </head>
 
 <body class="page">
