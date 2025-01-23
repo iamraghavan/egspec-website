@@ -438,7 +438,7 @@
                                   </ul>
                                  </li>
                                  <li>
-                                    <a class="nav-link" href="https://firebasestorage.googleapis.com/v0/b/egspj-bumblebees.appspot.com/o/scholarship_2025.pdf?alt=media&token=f6a53c87-0572-473e-9f5f-9802a457b410" target="_blank" style="animation: blink 1s infinite;">Scholarship Schemes</a>
+                                    <a class="nav-link" href="https://firebasestorage.googleapis.com/v0/b/egspj-bumblebees.appspot.com/o/scholarship_2025.pdf?alt=media&token=f6a53c87-0572-473e-9f5f-9802a457b410" target="_blank" style="animation: blink 1s infinite;">Scholarship Details 2025</a>
                                 </li>
                              </ul>
                         </nav>
