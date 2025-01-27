@@ -30,12 +30,12 @@
                                       <tr>
                                          <td>1</td>
                                          <td>Dr. Mohan . V</td>
-                                         <td>Professor / Head</td>
+                                         <td>Professor</td>
                                       </tr>
                                       <tr>
                                          <td>2</td>
                                          <td>Dr. Suresh Padmanabhan. T</td>
-                                         <td>Professor</td>
+                                         <td>Head / Assistant Professor</td>
                                       </tr>
                                       <tr>
                                          <td>3</td>
@@ -82,33 +82,29 @@
                                          <td>Mr. Senthilkumar. D</td>
                                          <td>Assistant Professor</td>
                                       </tr>
+
                                       <tr>
                                          <td>12</td>
-                                         <td>Mrs. Jayasri. J</td>
-                                         <td>Assistant Professor</td>
-                                      </tr>
-                                      <tr>
-                                         <td>13</td>
                                          <td>Mr. Gokul Raj. K</td>
                                          <td>Assistant Professor</td>
                                       </tr>
                                       <tr>
-                                         <td>14</td>
+                                         <td>13</td>
                                          <td>Mr. Jhagannath. K</td>
                                          <td>Assistant Professor</td>
                                       </tr>
                                       <tr>
-                                         <td>15</td>
-                                         <td>Mrs. Mithuna. C</td>
+                                         <td>14</td>
+                                         <td>Mr. P. G. Raghavendra</td>
                                          <td>Assistant Professor</td>
                                       </tr>
                                       <tr>
-                                         <td>16</td>
+                                         <td>15</td>
                                          <td>Mr. Ramanan. R</td>
                                          <td>Assistant Professor</td>
                                       </tr>
                                       <tr>
-                                         <td>17</td>
+                                         <td>16</td>
                                          <td>Ms. Keerthika. A</td>
                                          <td>Assistant Professor</td>
                                       </tr>
