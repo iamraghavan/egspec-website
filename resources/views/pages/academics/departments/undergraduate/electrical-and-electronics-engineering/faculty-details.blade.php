@@ -53,19 +53,23 @@
                                          <td>Assistant Professor</td>
                                       </tr>
                                       <tr>
-                                         <td>6</td>
-                                         <td>Mrs. Latha. S</td>
-                                         <td>Assistant Professor</td>
-                                      </tr>
+                                       <td>6</td>
+                                       <td>Dr. Krishnaram. K</td>
+                                       <td>Assistant Professor</td>
+                                    </tr>
+
                                       <tr>
+
                                          <td>7</td>
-                                         <td>Dr. Krishnaram. K</td>
+                                         <td>Dr. Nandakumar. K</td>
                                          <td>Assistant Professor</td>
                                       </tr>
+
                                       <tr>
                                          <td>8</td>
-                                         <td>Mr. Nandakumar. K</td>
+                                         <td>Mrs. Latha. S</td>
                                          <td>Assistant Professor</td>
+
                                       </tr>
                                       <tr>
                                          <td>9</td>
