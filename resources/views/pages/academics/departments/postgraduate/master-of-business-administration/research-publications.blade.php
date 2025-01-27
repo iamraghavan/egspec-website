@@ -17,9 +17,9 @@
 
                     <div class="page-content-top semister-fee">
                         <div class="semister-fee__content mt-5">
-                            <h5 class="rts-section-title">List of Consultancy Projects Undertaken</h5>
+                            <h5 class="rts-section-title">Research and Publications</h5>
                             <!-- tab item -->
-                            <div class="rts-fee-chart">
+                            {{-- <div class="rts-fee-chart">
                                 <div class="rts-fee-chart__tab">
                                     <nav>
                                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -171,7 +171,44 @@
                                         </div>
                                     </div>
                                 </div>
+                            </div> --}}
+
+                            <div class="program-accordion my-5">
+                                <div class="accordion" id="rts-accordion">
+
+                                    <div class="accordion-item">
+
+                                        <div>
+                                            <div class="accordion-body-content">
+                                                <table class="table">
+
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><a href="@blob('academics/departments/postgraduate/master-of-business-administration/research-publications.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'> Research &amp; Publications </a></td>
+                                                            <td><i class="fa fa-file-pdf"></i> / PDF File</td>
+                                                        </tr>
+
+                                                    </tbody>
+                                                </table>
+
+
+
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+
+                                    <div class="iframe-div">
+                                        <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=@blob('academics/departments/postgraduate/master-of-business-administration/research-publications.pdf')#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="
+                                    height: 100rem !important;
+                                "></iframe>
+                                    </div>
+
+                                </div>
+
                             </div>
+
                         </div>
                     </div>
 
