@@ -35,7 +35,7 @@
                                       <tr>
                                          <td>2</td>
                                          <td>Dr. Suresh Padmanabhan. T</td>
-                                         <td>Head / Assistant Professor</td>
+                                         <td>Professor</td>
                                       </tr>
                                       <tr>
                                          <td>3</td>
@@ -45,7 +45,7 @@
                                       <tr>
                                          <td>4</td>
                                          <td>Dr. Suresh Babu. P.J</td>
-                                         <td>Assistant Professor</td>
+                                         <td>Head / Assistant Professor</td>
                                       </tr>
                                       <tr>
                                          <td>5</td>
