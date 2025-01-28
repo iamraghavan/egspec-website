@@ -29,19 +29,20 @@
                                        </tr>
                                     </thead>
                                     <tbody>
-                                       <tr>
-                                          <td><strong>PEO1</strong></td>
-                                          <td>Graduate will apply the mathematical and computing fundamentals and techniques to develop software solutions.</td>
-                                       </tr>
-                                       <tr>
-                                          <td><strong>PEO2</strong></td>
-                                          <td>Graduate will apply the good computing breadth so as to comprehend, analyze, design and create computing solutions for the real-life problems and entrepreneurial skills with a rich set of communication, teamwork and leadership skills to excel in their profession.</td>
-                                       </tr>
-                                       <tr>
-                                          <td><strong>PEO3</strong></td>
-                                          <td>Graduate will show the continuous improvement in their professional career through life-long learning, understand the human values and ethics.</td>
-                                       </tr>
+                                        <tr>
+                                            <td><strong>PEO1</strong></td>
+                                            <td>Graduate will apply the mathematical and computing fundamentals and techniques to develop software solutions.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>PEO2</strong></td>
+                                            <td>Graduate will apply the good computing breadth so as to comprehend, analyze, design and create computing solutions for the real-life problems and entrepreneurial skills with a rich set of communication, teamwork and leadership skills to excel in their profession.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>PEO3</strong></td>
+                                            <td>Graduate will show the continuous improvement in their professional career through life-long learning, understand the human values and ethics.</td>
+                                        </tr>
                                     </tbody>
+
                                  </table>
                               </div>
                            </div>

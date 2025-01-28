@@ -30,8 +30,8 @@
                         <div class="repeating-content">
                             <div class="single-information-box rt-theme-bg">
                                 <div class="single-info">
-                                    <h4 class="title">Vision</h4>
-                                    <p class="amount">To create a human resource pool empowered with comprehensive management knowledge, skills, and aptitudes.</p>
+                                    <h4 class="title">Vision of the Department</h4>
+                                    <p class="amount">To produce software professionals with Academic Excellence in Computer Applications.</p>
                                 </div>
                             </div>
                         </div>
@@ -40,15 +40,18 @@
                         <div class="repeating-content">
                             <div class="single-information-box rt-secondary-bg">
                                 <div class="single-info">
-                                    <h4 class="title">Mission</h4>
-                                    <p class="amount">To foster an outstanding academic environment that promotes entrepreneurship, employment, and research and development in management-related fields.</p>
-                                    <p class="amount">To deliver high-quality education through skilled faculty members, shaping students into ethical leaders who contribute meaningfully to society.</p>
-                                    <p class="amount">To establish cutting-edge research facilities that enhance managerial knowledge and support consultancy and corporate endeavors.</p>
+                                    <h4 class="title">Mission of the Department</h4>
+                                    <p class="amount">Mission Mission Statements</p>
+                                    <p class="amount">M1 To make software professionals and entrepreneurs by imparting quality teaching and learning practice.</p>
+                                    <p class="amount">M2 To promote inter-disciplinary research among the faculty and the students to create state of art research facilities.</p>
+                                    <p class="amount">M3 To prepare the students to be professionally competent to face the challenges in the industry.</p>
+                                    <p class="amount">M4 To promote quality and ethics among the students.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
                 <!-- sidebar -->
                 <div class="col-lg-4">
                     <div class="program-sidebar">

@@ -27,55 +27,40 @@
                                        </tr>
                                     </thead>
                                     <tbody>
-                                       <tr>
-                                          <td><strong>PO1</strong></td>
-                                          <td>Computational Knowledge: Apply knowledge of computing fundamentals, computing specialization, mathematics, and domain knowledge appropriate for the computing specialization to the abstraction and conceptualization of computing models from defined problems and requirements.</td>
-                                       </tr>
-                                       <tr>
-                                          <td><strong>PO2</strong></td>
-                                          <td>Problem Analysis: Identify, formulate, research literature, and solve complex computing problems reaching substantiated conclusions using fundamental principles of mathematics, computing sciences, and relevant domain disciplines.</td>
-                                       </tr>
-                                       <tr>
-                                          <td><strong>PO3</strong></td>
-                                          <td>Design /Development of Solutions: Design and evaluate solutions for complex computing problems, and design and evaluate systems, components, or processes that meet specified needs with appropriate consideration for public health and safety, cultural, societal, and environmental considerations.</td>
-                                       </tr>
-                                       <tr>
-                                          <td><strong>PO4</strong></td>
-                                          <td>Conduct Investigations of Complex Computing Problems: Use research-based knowledge and research methods including design of experiments, analysis and interpretation of data, and synthesis of the information to provide valid conclusions.</td>
-                                       </tr>
-                                       <tr>
-                                          <td><strong>PO5</strong></td>
-                                          <td>Modern Tool Usage: Create, select, adapt and apply appropriate techniques, resources, and modern computing tools to complex computing activities, with an understanding of the limitations.</td>
-                                       </tr>
-                                       <tr>
-                                          <td><strong>PO6</strong></td>
-                                          <td>Professional Ethics: Understand and commit to professional ethics and cyber regulations, responsibilities, and norms of professional computing practice.</td>
-                                       </tr>
-                                       <tr>
-                                          <td><strong>PO7</strong></td>
-                                          <td>Life-long Learning: Recognize the need, and have the ability, to engage in independent learning for continual development as a computing professional.</td>
-                                       </tr>
-                                       <tr>
-                                          <td><strong>PO8</strong></td>
-                                          <td>Project management and finance: Demonstrate knowledge and understanding of the computing and management principles and apply these to one’s own work, as a member and leader in a team, to manage projects and in multidisciplinary environments.</td>
-                                       </tr>
-                                       <tr>
-                                          <td><strong>PO9</strong></td>
-                                          <td>Communication Efficacy: Communicate effectively with the computing community, and with society at large, about complex computing activities by being able to comprehend and write effective reports, design documentation, make effective presentations, and give and understand clear instructions.</td>
-                                       </tr>
-                                       <tr>
-                                          <td><strong>PO10</strong></td>
-                                          <td>Societal and Environmental Concern: Understand and assess societal, environmental, health, safety, legal, and cultural issues within local and global contexts, and the consequential responsibilities relevant to professional computing practice.</td>
-                                       </tr>
-                                       <tr>
-                                          <td><strong>PO11</strong></td>
-                                          <td>Individual and Team Work: Function effectively as an individual and as a member or leader in diverse teams and in multidisciplinary environments.</td>
-                                       </tr>
-                                       <tr>
-                                          <td><strong>PO12</strong></td>
-                                          <td>Innovation and Entrepreneurship: Identify a timely opportunity and using innovation to pursue that opportunity to create value and wealth for the betterment of the individual and society at large.</td>
-                                       </tr>
+                                        <tr>
+                                            <td><strong>PO1</strong></td>
+                                            <td>Foundation Knowledge: Apply knowledge of mathematics, programming logic and coding fundamentals for solution architecture and problem solving.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>PO2</strong></td>
+                                            <td>Problem Analysis: Identify, review, formulate and analyse problems for primarily focusing on customer requirements using critical thinking frameworks.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>PO3</strong></td>
+                                            <td>Development of Solutions: Design, develop and investigate problems with an innovative approach for solutions incorporating ESG/SDG goals.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>PO4</strong></td>
+                                            <td>Modern Tool Usage: Select, adapt and apply modern computational tools such as development of algorithms with an understanding of the limitations including human biases.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>PO5</strong></td>
+                                            <td>Individual and Teamwork: Function and communicate effectively as an individual or a team leader in diverse and multidisciplinary groups. Use methodologies such as agile.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>PO6</strong></td>
+                                            <td>Project Management and Finance: Use the principles of project management such as scheduling, work breakdown structure and be conversant with the principles of Finance for profitable project management.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>PO7</strong></td>
+                                            <td>Ethics: Commit to professional ethics in managing software projects with financial aspects. Learn to use new technologies for cyber security and insulate customers from malware.</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>PO8</strong></td>
+                                            <td>Life-long learning: Change management skills and the ability to learn, keep up with contemporary technologies and ways of working.</td>
+                                        </tr>
                                     </tbody>
+
                                  </table>
                               </div>
                            </div>
