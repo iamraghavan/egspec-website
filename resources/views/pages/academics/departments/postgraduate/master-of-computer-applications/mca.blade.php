@@ -49,17 +49,6 @@
                             </div>
                         </div>
                     </div>
-                    <div class="academic-picture mt-5">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <img src="https://firebasestorage.googleapis.com/v0/b/egspj-bumblebees.appspot.com/o/nipm-egsp-student-chapter-installation.webp?alt=media&token=e029f082-8083-4618-a3c0-f88c227aba3e" class="d-block" alt="NIPM EGSP Student Chapter Installation">
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
                 </div>
 
                 <!-- sidebar -->
