@@ -15,10 +15,9 @@
                 <div class="col-lg-12">
                     <h4 class="rts-section-title">About the Department</h4>
                     <p class="rts-section-description mt-5 text-justify">
-                        The Department of Management Studies, established in 2001, is dedicated to nurturing future business leaders. Our department boasts a team of highly qualified faculty members and a separate departmental library stocked with an extensive collection of textbooks, reference books, and national and international journals as prescribed in the university syllabus. The MBA department is equipped with a modern computer lab to support the technological needs of our students.
-                    </p>
-                    <p class="rts-section-description mt-5 text-justify">
-                        We regularly invite distinguished personalities from the corporate sector to share insights on the evolving business landscape. Our department consistently organizes guest lectures and workshops aimed at enhancing student knowledge and skills. We also offer smart classroom facilities and provide training sessions focused on aptitude and attitude development.
+                        The Department of Computer Applications offers a 3-year Full-time MCA course, initiated in 2001 and approved by Bharathidasan University and later by Anna University, Chennai. Since 2011, the intake has been 60 students per academic year. Currently, the institution is autonomous and regularly updates the curriculum to meet academic and industrial needs.
+
+
                     </p>
                 </div>
             </div>
