@@ -346,7 +346,7 @@
                                       <li><a href="{{ url("#") }}">Training Cell</a></li>
                                       --}}
                                       <li><a href="{{ url("/placements#our-top-recruiters") }}">Our Top Of Recruiters</a></li>
-                                      <li><a href="{{ url("/placements#placement-gallery") }}">Placement Gallery</a></li>
+                                      <li><a href="{{ url("/placement/placement-gallery") }}">Placement Gallery</a></li>
                                    </ul>
                                 </li>
                                 <li class="has-dropdown">
