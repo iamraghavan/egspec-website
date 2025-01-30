@@ -20,7 +20,7 @@
                     <div class="rts-section-description">
                         <div class="profile-info">
                             <h5 class="profile-name">Dr. S. Chandrasekar,</h5>
-                            <p class="profile-role"><b>Vice Principal & Chief Executive Officer</b>,</p>
+                            <p class="profile-role"><b>Chief Executive Officer</b>,</p>
                             <p class="profile-location">EGS Pillay Engineering College, Nagapattinam</p>
                             <p class="profile-contact"><b>Phone:</b> (+91) 989 470 7007 / (+91) 975 139 9077 | <b>Email:</b> placement@egspec.org</p>
                         </div>
