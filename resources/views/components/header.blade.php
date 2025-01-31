@@ -218,7 +218,7 @@
                                       <li><a href="{{ url("/about/message-from-the-secretary") }}">Message From the Secretary</a></li>
                                       <li><a href="{{ url("/about/message-from-the-principal") }}">Message From the Principal</a></li>
                                       <li><a href="{{ url("/about/adminstrative-organization") }}">Administrative Organization</a></li>
-                                      <li><a href="{{ url("/about/dean") }}">Dean</a></li>
+                                      {{-- <li><a href="{{ url("/about/dean") }}">Dean</a></li> --}}
                                       <li><a href="{{ url("/about/organizational-chart") }}">Organizational Chart</a></li>
                                       <li><a href="{{ url("/about/milestones") }}">Milestones</a></li>
                                       <li><a href="{{ url("/about/hr-policy") }}">HR Policy</a></li>
