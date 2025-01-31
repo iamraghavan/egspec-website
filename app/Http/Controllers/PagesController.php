@@ -26,6 +26,9 @@ use App\Models\StudentAchievement;
 use App\Models\WomenEmpowermentCellMember;
 use Illuminate\Support\Facades\Cache;
 
+use Illuminate\Pagination\LengthAwarePaginator;
+use Illuminate\Pagination\Paginator;
+
 // SEO
 use Artesaos\SEOTools\Facades\SEOTools;
 use Artesaos\SEOTools\Facades\SEOMeta;
@@ -34,6 +37,7 @@ use Artesaos\SEOTools\Facades\TwitterCard;
 use Artesaos\SEOTools\Facades\JsonLd;
 // OR with multi
 use Artesaos\SEOTools\Facades\JsonLdMulti;
+use Illuminate\Support\Facades\File;
 
 class PagesController extends Controller
 {
@@ -2114,8 +2118,33 @@ class PagesController extends Controller
         JsonLd::addValue('url', Url()->current());
         JsonLd::addValue('name', 'Placement Gallery');
 
-        return view('pages.placement.placement-gallery');
+        // Get all the files in the folder
+        $imageFiles = collect(File::files(public_path('assets/images/placement')))
+            ->filter(function ($file) {
+                return in_array($file->getExtension(), ['webp', 'jpg', 'jpeg', 'png']);
+            })
+            ->sortByDesc(function ($file) {
+                return $file->getCTime(); // Sort by creation time (latest first)
+            });
+
+        // Paginate the images (10 per page, adjust the number if needed)
+        $currentPage = Paginator::resolveCurrentPage(); // Get current page from query parameter
+        $perPage = 10; // Number of images per page
+        $currentItems = $imageFiles->slice(($currentPage - 1) * $perPage, $perPage)->values(); // Get the images for the current page
+
+        // Create a LengthAwarePaginator instance for pagination
+        $paginatedImages = new LengthAwarePaginator(
+            $currentItems,
+            $imageFiles->count(),
+            $perPage,
+            $currentPage,
+            ['path' => Paginator::resolveCurrentPath()]
+        );
+
+        // Pass the images to the view
+        return view('pages.placement.placement-gallery', compact('paginatedImages'));
     }
+
 
 
 
