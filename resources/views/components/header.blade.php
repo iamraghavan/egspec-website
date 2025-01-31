@@ -413,9 +413,7 @@
 
                                      </ul>
                                  </li>
-                                 <li class="dropdownss">
-                                    <a class="nav-link" href="{{route('gallery_index')}}">Gallery</a>
-                                 </li>
+
                                  <li class="has-dropdown">
                                     <a class="nav-link" href="{{ url("#") }}">Quick Links</a>
 
@@ -436,6 +434,12 @@
 
 
                                   </ul>
+                                 </li>
+                                 <li class="dropdownss">
+                                    <a class="nav-link" href="{{route('gallery_index')}}">Gallery</a>
+                                 </li>
+                                 <li class="dropdownss">
+                                    <a class="nav-link" style="animation: blink 1s infinite;" href="{{url('/placement/placement-gallery')}}">Placement Gallery</a>
                                  </li>
                                  <li>
                                     <a class="nav-link" href="https://firebasestorage.googleapis.com/v0/b/egspj-bumblebees.appspot.com/o/scholarship_2025.pdf?alt=media&token=f6a53c87-0572-473e-9f5f-9802a457b410" target="_blank" style="animation: blink 1s infinite;"><b>Scholarship Details 2025</b></a>
