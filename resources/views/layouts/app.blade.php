@@ -18,6 +18,7 @@
 <meta name="theme-color" content="#ffffff">
 
 <link rel="icon" type="image/x-icon" href="{{asset('favicons/favicon.ico')}}">
+    <script src="https://egspec.statuspage.io/embed/script.js"></script>
 
     {!! SEOMeta::generate() !!}
     {!! OpenGraph::generate() !!}
