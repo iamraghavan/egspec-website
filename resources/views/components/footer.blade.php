@@ -70,11 +70,12 @@ $footerLinks = [
 
                                 <div class="social-copyright">
                                     <ul>
-                                        <li><a href="https://www.facebook.com/EGSPGOI/"><i class="fa-brands fa-facebook-f"></i></a></li>
-                                        <li><a href="https://www.instagram.com/egspillay_group_of_institution/?hl=en"><i class="fa-brands fa-instagram"></i></a></li>
-                                        <li><a href="https://in.linkedin.com/company/egspgoi"><i class="fa-brands fa-linkedin"></i></a></li>
-                                        <li><a href="https://www.whatsapp.com/channel/0029VaoAlde2Jl8HS9im7X2G"><i class="fa-brands fa-whatsapp"></i></a></li>
-                                        <li><a href="https://www.youtube.com/@E.G.S.PillayGroupofInstitution"><i class="fa-brands fa-youtube"></i></a></li>
+                                        <li><a href="https://www.facebook.com/EGSPGOI/" aria-label="Facebook Page"><i class="fa-brands fa-facebook-f"></i></a></li>
+                                        <li><a href="https://www.instagram.com/egspillay_group_of_institution/?hl=en" aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a></li>
+                                        <li><a href="https://in.linkedin.com/company/egspgoi" aria-label="LinkedIn Page"><i class="fa-brands fa-linkedin"></i></a></li>
+                                        <li><a href="https://www.whatsapp.com/channel/0029VaoAlde2Jl8HS9im7X2G" aria-label="WhatsApp Channel"><i class="fa-brands fa-whatsapp"></i></a></li>
+                                        <li><a href="https://www.youtube.com/@E.G.S.PillayGroupofInstitution" aria-label="YouTube Channel"><i class="fa-brands fa-youtube"></i></a></li>
+
                                     </ul>
                                 </div>
 

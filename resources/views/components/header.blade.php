@@ -100,7 +100,7 @@
                     <a href="{{ url('/') }}" class="logo-area">
                         <picture>
                             <!-- For desktop and big screens -->
-                            <source srcset="{{ asset('/assets/images/EGSLOGO_2.webp') }}" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="{{ asset('/assets/images/logo_lable.png') }}" media="(min-width: 768px)" type="image/webp">
                             <!-- For mobile screens -->
                             <img src="{{ asset('/assets/images/logo_tran.svg') }}" alt="logo" class="logo dlogo">
                         </picture>
