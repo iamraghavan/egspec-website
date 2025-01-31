@@ -145,7 +145,7 @@ $footerLinks = [
                 <p style="font-weight: 600;" class="--p-xs">Copyright © 2006 - {{ date('Y') }} All
                     Rights Reserved by
                     <a href="https://egspgroup.in/" target="_blank">EGS Pillay Group of Institutions</a> <br> Developed By
-                    <a href="https://jsraghavan.me/" target="_blank" @readonly(true) referrerpolicy="no-referrer"> Raghavan Jeeva </a>
+                    <a href="https://jsraghavan.me/" target="_blank" @readonly(true) referrerpolicy="no-referrer"> Raghavan Jeeva </a> | <a href="https://egspec.statuspage.io/" target="_blank" @readonly(true) referrerpolicy="no-referrer">Status Page</a>
                 </p>
             </div>
             <div class="col-md-6 text-md-end">
