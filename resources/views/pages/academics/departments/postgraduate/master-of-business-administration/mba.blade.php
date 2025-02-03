@@ -51,16 +51,16 @@
                     <div class="academic-picture mt-5">
                         <div class="swiper-container">
                             <div class="swiper-wrapper">
-
+                                <div class="swiper-slide">
+                                    <img src="https://egspec.blob.core.windows.net/egspec-assets//assets/slider/egspec/mba__909394.webp" class="d-block" alt="Academic 2">
+                                </div>
                                 <div class="swiper-slide">
                                     <img src="https://firebasestorage.googleapis.com/v0/b/egspj-bumblebees.appspot.com/o/nipm-egsp-student-chapter-installation.webp?alt=media&token=e029f082-8083-4618-a3c0-f88c227aba3e" class="d-block" alt="NIPM EGSP Student Chapter Installation">
                                 </div>
                                 <div class="swiper-slide">
                                     <img src="https://firebasestorage.googleapis.com/v0/b/egspj-bumblebees.appspot.com/o/mba_img-1.webp?alt=media&token=63871770-c422-46ef-b44b-e22f05c01a9f" class="d-block" alt="Academic 1">
                                 </div>
-                                <div class="swiper-slide">
-                                    <img src="https://egspec.blob.core.windows.net/egspec-assets/cat_img.webp" class="d-block" alt="Academic 2">
-                                </div>
+
                                 <div class="swiper-slide">
                                     <img src="https://egspec.blob.core.windows.net/egspec-assets/engineering_college.webp" class="d-block" alt="Academic 3">
                                 </div>
