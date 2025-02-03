@@ -100,7 +100,7 @@
                     <a href="{{ url('/') }}" class="logo-area">
                         <picture>
                             <!-- For desktop and big screens -->
-                            <source srcset="{{ asset('/assets/images/EGSLOGO_2.webp') }}" media="(min-width: 768px)" type="image/webp">
+                            <source srcset="{{ asset('/assets/images/logo_lable.png') }}" media="(min-width: 768px)" type="image/webp">
                             <!-- For mobile screens -->
                             <img src="{{ asset('/assets/images/logo_tran.svg') }}" alt="logo" class="logo dlogo">
                         </picture>
@@ -218,7 +218,7 @@
                                       <li><a href="{{ url("/about/message-from-the-secretary") }}">Message From the Secretary</a></li>
                                       <li><a href="{{ url("/about/message-from-the-principal") }}">Message From the Principal</a></li>
                                       <li><a href="{{ url("/about/adminstrative-organization") }}">Administrative Organization</a></li>
-                                      <li><a href="{{ url("/about/dean") }}">Dean</a></li>
+                                      {{-- <li><a href="{{ url("/about/dean") }}">Dean</a></li> --}}
                                       <li><a href="{{ url("/about/organizational-chart") }}">Organizational Chart</a></li>
                                       <li><a href="{{ url("/about/milestones") }}">Milestones</a></li>
                                       <li><a href="{{ url("/about/hr-policy") }}">HR Policy</a></li>

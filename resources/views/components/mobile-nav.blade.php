@@ -1,5 +1,6 @@
 <div id="side-bar" class="side-bar">
-    <button class="close-icon-menu"><i class="far fa-times"></i></button>
+    <button class="close-icon-menu" aria-label="Close Menu"><i class="far fa-times"></i></button>
+
     <!-- inner menu area desktop start -->
     <div class="inner-main-wrapper-desk">
         <div class="thumbnail">
@@ -22,10 +23,11 @@
                     <div class="offcanvase__info--content--social">
                         <p class="title">Follow Us:</p>
                         <div class="social__links">
-                            <a href="https://www.facebook.com/EGSPGOI/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.instagram.com/egspillay_group_of_institution/"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/company/egspgoi/"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://www.youtube.com/@E.G.S.PillayGroupofInstitution"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="https://www.facebook.com/EGSPGOI/" target="_blank" aria-label="Facebook Page"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/egspillay_group_of_institution/" target="_blank" aria-label="Instagram Profile"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/company/egspgoi/" target="_blank" aria-label="LinkedIn Page"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.youtube.com/@E.G.S.PillayGroupofInstitution" target="_blank" aria-label="YouTube Channel"><i class="fa-brands fa-youtube"></i></a>
+
                         </div>
                     </div>
                 </div>

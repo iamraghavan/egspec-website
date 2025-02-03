@@ -9,7 +9,10 @@
                                 <span id="weather_state">On Campus</span>
                             </li>
                         </ul>
-                        <span class="wi {{ $weatherIcon }}" aria-label="{{ $weatherCondition }}" style="font-size: 40px;"></span>
+                        {{-- <i class="wi {{ $weatherIcon }}" aria-label="{{ $weatherCondition }}" style="font-size: 40px;"></i> --}}
+
+                        <span class="wi {{ $weatherIcon }}" role="img" aria-label="{{ $weatherCondition }}" style="font-size: 40px;"></span>
+
 
                         <ul class="inline-list">
                             <li class="font__fontrols__style">

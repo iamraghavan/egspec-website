@@ -36,7 +36,7 @@
                                    <tr>
                                       <td>2</td>
                                       <td>Dr. S. Manikandan</td>
-                                      <td>Associate Professor</td>
+                                      <td>Associate Professor / <a href="{{url('/about/dean')}}">Dean</a> </td>
                                    </tr>
                                    <tr>
                                       <td>3</td>
