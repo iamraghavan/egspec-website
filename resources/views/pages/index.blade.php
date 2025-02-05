@@ -24,6 +24,8 @@
 
 @include('components.home-slider')
 <x-scrolling-marquee :messages="$messages" />
+<x-admission-form :coursesByCategory="$coursesByCategory" />
+
 
 <x-home-page-counter/>
 

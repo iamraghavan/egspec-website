@@ -47,6 +47,8 @@ class PagesController extends Controller
         $posterSlider = $this->getPosterSlider();
         $messages = $this->getMarqueeMessages();
 
+        $coursesByCategory = Course::all()->groupBy('course_type');
+
         // SEO configuration
         SEOTools::setDescription('Discover E.G.S. Pillay Engineering College, offering B.E. / B.Tech in Mechanical, Civil, Electrical and Electronics, Electronics and Communication, Computer Science, Information Technology, Biomedical Engineering, and AI & Data Science. Advance your career with MCA and MBA programs. Join us for a transformative education in engineering and humanities.');
         SEOTools::opengraph()->addProperty('type', 'website');
@@ -62,7 +64,7 @@ class PagesController extends Controller
         SEOTools::jsonLd()->addImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
 
         // Return the view with the necessary data
-        return view('pages.index', compact('sliderImages', 'posterSlider', 'messages'));
+        return view('pages.index', compact('sliderImages', 'posterSlider', 'messages', 'coursesByCategory'));
     }
 
     public function newsletter_show($id, $slug)
