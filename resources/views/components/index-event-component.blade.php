@@ -9,9 +9,9 @@
             @foreach(array_slice($events, 0, 3) as $event) <!-- Get the latest three events -->
             <a href="{{$event['resource_link']}}" target="_blank" rel="noopener noreferrer">
             <li class="single-event">
-                <div class="single-event-counter">
+                {{-- <div class="single-event-counter">
                     <div class="count-number rt-clip-text"></div>
-                </div>
+                </div> --}}
                 <div class="single-event-content">
                     <h5 class="event-title">{{ $event['title'] }}</h5>
                     <div class="single-event-content-meta">
