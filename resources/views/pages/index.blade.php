@@ -79,24 +79,28 @@
 @php
 $events = [
     [
+        'title' => 'REVOLUTIONIZING THE NBA SEASON: EXPLORING NEW MODELS FOR COMPETITION',
+        'date' => '2025-02-08',
+        'time' => '09:30 AM',
+        'place' => 'BOARD ROOM, E.G.S. PILLAY ENGINEERING COLLEGE',
+        'resource_link' => 'https://firebasestorage.googleapis.com/v0/b/egspj-bumblebees.appspot.com/o/Civil_2025_Brochure.webp?alt=media&token=0ed0dceb-0751-4be0-bf86-94422766c8fd'
+    ],
+
+    [
         'title' => 'EGSPEC ISSH-T',
         'date' => '05/10/2024',
         'time' => '09:00 AM',
         'place' => 'EGSPEC',
+        'resource_link' => ''
     ],
 
 
-    [
-        'title' => 'ISRO',
-        'date' => '2024-10-04',
-        'time' => '09:00 AM',
-        'place' => 'EGSPEC',
-    ],
     [
         'title' => 'Chairman Amma Birthday Metrit Scholarship',
         'date' => '2024-02-06',
        'time' => '09:00 AM',
         'place' => 'EGSPEC',
+        'resource_link' => ''
     ],
 ];
 

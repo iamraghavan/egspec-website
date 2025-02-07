@@ -7,6 +7,7 @@
     <div class="rts-event-section-content">
         <ul class="list-unstyled rts-counter">
             @foreach(array_slice($events, 0, 3) as $event) <!-- Get the latest three events -->
+            <a href="{{$event['resource_link']}}" target="_blank" rel="noopener noreferrer">
             <li class="single-event">
                 <div class="single-event-counter">
                     <div class="count-number rt-clip-text"></div>
@@ -29,6 +30,7 @@
                     </div>
                 </div>
             </li>
+        </a>
             @endforeach
         </ul>
     </div>
