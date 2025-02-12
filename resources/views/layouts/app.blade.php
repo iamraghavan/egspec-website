@@ -3,6 +3,7 @@
 
 <head>
 
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -18,7 +19,7 @@
 <meta name="theme-color" content="#ffffff">
 
 <link rel="icon" type="image/x-icon" href="{{asset('favicons/favicon.ico')}}">
-    <script src="https://egspec.statuspage.io/embed/script.js"></script>
+
 
     {!! SEOMeta::generate() !!}
     {!! OpenGraph::generate() !!}
@@ -873,27 +874,6 @@
 
 
 <!-- JavaScript for Dynamic Course Selection -->
-<script>
-    function showCourses(category) {
-        if (category) {
-            document.getElementById('courses-section').style.display = 'block';
-            const coursesByCategory = @json($coursesByCategory);
-            const selectedCourses = coursesByCategory[category] || [];
-            const courseDropdown = document.getElementById('course');
-            courseDropdown.innerHTML = '<option value="" disabled selected>Select Course</option>';
-            selectedCourses.forEach(course => {
-                const option = document.createElement('option');
-                option.value = course.id;
-                option.textContent = course.course_name;
-                courseDropdown.appendChild(option);
-            });
-        } else {
-            document.getElementById('courses-section').style.display = 'none';
-        }
-    }
-
-    </script>
-
 
 
 <!-- Initialize Swiper -->
@@ -933,6 +913,8 @@
   rel="stylesheet"
   href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
 />
+
+
 
 
 <script>

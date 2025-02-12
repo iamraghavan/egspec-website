@@ -1,0 +1,131 @@
+/* General Modal Styling */
+.modal {
+    z-index: 1050 !important;
+}
+
+.modal.show {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Fix for body overflow when modal is open */
+body.modal-open {
+    overflow: hidden !important;
+}
+
+/* Fix modal background overlay issue */
+.modal-backdrop {
+    z-index: 1040 !important;
+}
+
+
+.raghavan_egspec_modal .modal-content {
+    background-color: #212529; /* Dark background */
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.raghavan_egspec_modal .modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    background: #343a40;
+    color: #fff;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.raghavan_egspec_modal .modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.raghavan_egspec_modal .btn-close {
+    filter: invert(1); /* Make close button white */
+}
+
+/* Modal Body */
+.raghavan_egspec_modal .modal-body {
+    padding: 20px;
+}
+
+/* Image Section */
+.raghavan_egspec_poster img {
+    border-radius: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Form Section */
+.raghavan_egspec_form {
+    background: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.raghavan_egspec_form .form-label {
+    font-weight: bold;
+    color: #343a40;
+}
+
+.raghavan_egspec_form .form-control {
+    border-radius: 8px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.raghavan_egspec_form .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Submit Button */
+.raghavan_egspec_btn_submit {
+    background: #007bff;
+    color: white;
+    padding: 12px;
+    border-radius: 8px;
+    width: 100%;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+}
+
+.raghavan_egspec_btn_submit:hover {
+    background: #0056b3;
+}
+
+/* Checkbox Styling */
+.raghavan_egspec_terms {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.raghavan_egspec_terms a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.raghavan_egspec_terms a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .raghavan_egspec_modal .modal-dialog {
+        max-width: 90%;
+    }
+
+    .raghavan_egspec_poster img {
+        margin-bottom: 15px;
+    }
+
+    .raghavan_egspec_form {
+        padding: 15px;
+    }
+}

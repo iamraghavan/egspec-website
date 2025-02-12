@@ -21,7 +21,8 @@
 </style>
 
 @include('components.home-slider')
-<x-admission-form :coursesByCategory="$coursesByCategory" />
+{{-- <x-admission-form :coursesByCategory="$coursesByCategory" /> --}}
+
 
 
 
@@ -147,8 +148,7 @@ $notices = [
 @include('components.testimonial')
 @include('components.cta')
 
-
-{{-- @include('components.admision-model') --}}
+@include('components.admision-model', ['coursesByCategory' => $coursesByCategory])
 
 
 

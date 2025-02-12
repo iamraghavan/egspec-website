@@ -14,7 +14,7 @@
                         <div class="newsletter-form w-630">
                             <form>
 
-                                <button type="submit" class="rts-nbg-btn btn-arrow">Apply Now <span><i
+                                <button id="myModalTrigger" data-bs-toggle="modal" data-bs-target="#exampleModal" class="rts-nbg-btn btn-arrow">Apply Now <span><i
                                             class="fa-sharp fa-regular fa-arrow-right"></i></span></button>
                             </form>
                         </div>
@@ -24,6 +24,9 @@
         </div>
     </div>
 </div>
+
+<!-- Button trigger modal -->
+{{-- <button type="button" class="d-none" id="myModalTrigger" data-bs-toggle="modal" data-bs-target="#exampleModal"></button> --}}
 
 <style>
     .rts-newsletter-box::before {
