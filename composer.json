@@ -13,6 +13,7 @@
         "babenkoivan/telegram-notifications": "^1.1",
         "guzzlehttp/guzzle": "^7.9",
         "laravel-notification-channels/google-chat": "^3.2",
+        "laravel-notification-channels/webpush": "^9.0",
         "laravel/framework": "^11.0",
         "laravel/reverb": "@beta",
         "laravel/sanctum": "^4.0",
