@@ -58,7 +58,7 @@
                                                     <tr>
                                                         <td>India Rankings 2024 ID</td>
                                                         <td>IR-E-C-24989</td>
-                                                        <td><i class="fa fa-download"> </i><a href="@blob('nirf/engineering-nirf-2024.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'> Full Report </a></td>
+                                                        <td><i class="fa fa-download"> </i><a href="@blob('nirf/engineering-nirf-2025.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'> Full Report </a></td>
                                                     </tr>
                                                     <tr>
                                                         <td>Discipline</td>

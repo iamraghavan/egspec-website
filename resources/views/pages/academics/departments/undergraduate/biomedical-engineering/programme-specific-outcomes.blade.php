@@ -30,17 +30,18 @@
                                     <tbody>
                                         <tr>
                                             <td><strong>PSO1</strong></td>
-                                            <td>An ability to apply advanced technology for measurement and interpretation of data acquired from biological systems addressing the problems associated with the interaction between living and non-living materials and systems.</td>
+                                            <td>Identify, analyze and solve the real-life problems by applying principles of Biomedical engineering with novelty.</td>
                                         </tr>
                                         <tr>
                                             <td><strong>PSO2</strong></td>
-                                            <td>An ability to use software tools, mathematics, science, and engineering for precise diagnosis and therapeutic applications.</td>
+                                            <td>Design, develop and specify the mathematical model to understand the inter-relation among various Physiological systems.</td>
                                         </tr>
                                         <tr>
                                             <td><strong>PSO3</strong></td>
-                                            <td>An ability to develop healthcare information systems for automation and remote access.</td>
+                                            <td>Investigate, implement and demonstrate various applications of the engineering and physiological subsystems in designing and developing human body systems.</td>
                                         </tr>
                                     </tbody>
+
                                 </table>
                             </div>
                         </div>
