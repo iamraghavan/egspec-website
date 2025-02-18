@@ -521,3 +521,10 @@ Route::get('/legal/terms-and-conditions', [InstitutionInternalPurpose::class, 't
 
 Route::get('/support/contact-us', [InstitutionInternalPurpose::class, 'contact_us'])->name('contact_us'); // web.php
 Route::post('/support/contact-submit', [InstitutionInternalPurpose::class, 'contact_submit'])->name('contact.submit');
+
+
+Route::get('/vapidPublicKey', function () {
+    return response()->json(['key' => env('VAPID_PUBLIC_KEY')]);
+});
+
+Route::post('/saveSubscription', 'InstitutionInternalPurpose@stores');

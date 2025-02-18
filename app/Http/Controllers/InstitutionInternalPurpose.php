@@ -27,6 +27,9 @@ use App\Models\Album;
 use App\Models\Course;
 use App\Models\Event;
 use Illuminate\Support\Facades\Route;
+use Minishlink\WebPush\WebPush;
+use Minishlink\WebPush\Subscription;
+use NotificationChannels\WebPush\PushSubscription;
 
 class InstitutionInternalPurpose extends Controller
 {
@@ -404,5 +407,17 @@ class InstitutionInternalPurpose extends Controller
         $photos = $album->photos()->paginate(5); // Adjust the number of photos per page as needed
 
         return view('pages.institution.photo', compact('album', 'photos'));
+    }
+
+    public function stores(Request $request)
+    {
+        $subscription = $request->input();
+        PushSubscription::create([
+            'endpoint' => $subscription['endpoint'],
+            'public_key' => $subscription['keys']['p256dh'],
+            'auth_token' => $subscription['keys']['auth'],
+        ]);
+
+        return response()->json(['success' => true], 200);
     }
 }
