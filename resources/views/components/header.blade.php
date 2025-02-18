@@ -149,8 +149,10 @@
                             <img src="https://upload.wikimedia.org/wikipedia/en/1/1d/NAAC_LOGO.png" alt="Logo 4" class="square-logo" loading="lazy">
                         </picture>
                         <picture>
+                            <a href="@blob('nirf/engineering-nirf-2025.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'>
                             <source srcset="{{ asset('assets/nirf.webp') }}" type="image/png">
                             <img src="{{ asset('assets/nirf.webp') }}" alt="Logo 5" class="square-logo" loading="lazy">
+                            </a>
                         </picture>
                         <picture>
                             <source srcset="{{ asset('assets/images/counseling_code.gif') }}" type="image/gif">
