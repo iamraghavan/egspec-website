@@ -473,11 +473,12 @@ class InstitutionInternalPurpose extends Controller
             'roll_number' => 'required_if:relationship,student|nullable|alpha_num',
             'category' => 'required|in:admission,hostel,department,examinations,scholarship',
             'description' => 'required|string',
-
         ]);
 
-        dd($validated);
-        // Process the form data here
+        $data = collect([$validated]);
+
+        // Send the email notification
+        Mail::to('raghavanofficials@gmail.com')->send(new \App\Mail\HelpdeskNotification($data));
 
         return redirect()->back()->with('success', 'Form submitted successfully!');
     }

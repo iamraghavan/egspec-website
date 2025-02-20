@@ -19,6 +19,7 @@
         "laravel/sanctum": "^4.0",
         "laravel/tinker": "^2.9",
         "laravel/ui": "^4.5",
+        "maatwebsite/excel": "^3.1",
         "matthewbdaly/laravel-azure-storage": "^2.0",
         "microsoft/azure-storage-blob": "*",
         "ryangjchandler/laravel-cloudflare-turnstile": "*",

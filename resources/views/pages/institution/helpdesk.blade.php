@@ -172,18 +172,7 @@
                             <div class="single-form-part">
                                 <div class="single-input">
                                     <div class="single-input-item">
-
-                <label class="input-label" for="captcha">Captcha</label>
-                <div class="captcha-container">
-                    <div class="refereshrecapcha">
-                        <!-- The refreshed captcha will be loaded here -->
-                    </div>
-                    <button type="button" onclick="refreshCaptcha()">Refresh Captcha</button>
-                </div>
-                @error('captcha')
-                    <span class="error-message">{{ $message }}</span>
-                @enderror
-                <input type="text" id="captcha" name="captcha" class="input-field" required>
+                                        <x-turnstile />
 
                                     </div>
                                 </div>
@@ -205,44 +194,23 @@
                 <div class="program-sidebar">
 
                     <div class="program-info" style="background: var(--rt-secondary) !important;">
-                        <h5>Website Admin Details</h5>
-                        <p class="text-white">Dr. S. Praveen Kumar</p>
-                        <p class="text-white">Website co-ordinator</p>
+                        <h5>Helpdesk Contact</h5>
+<div style='color:white;' >
+
+    <a href="">Prof. G. Hari Nariyanan</a>
 <br>
-                        <p class="text-white">J.S. Raghavan</p>
-                        <p class="text-white">Website Developer</p>
 
-
-                        <div class="contact-info">
-                            <h5>Contact:</h5>
-                            <a href="mailto:web@egspec.org">web@egspec.org</a>
-                            <a href="callto:+919942502245">+91 9942 - 502 - 245</a>
+    <a href="callto:+919942502245">+91 9942 - 502 - 245</a>
 <br>
-                            <a href="mailto:praveenkumar@egspec.org">praveenkumar@egspec.org</a>
-                            <a href="callto:+919942502245">+91 9942 - 502 - 245</a>
-                        </div>
-                        <div class="social-info">
-                            <h5>Contact Via Whatsapp:</h5>
-                            <div class="social-info-link">
+<br>
+    <a href="">Dr.S. Ponsadailakshmi</a>
+    <br>
+    <a href="callto:+919942502245">+91 9942 - 502 - 245</a>
 
-                                <a href="#"><i class="fa-brands fa-whatsapp"></i> Dr. S. Praveen Kumar </a>
+</div>
 
-                            </div>
-                        </div>
                     </div>
 
-
-                </div>
-<br>
-                <div class="program-sidebar">
-
-                    {{-- <div class="program-info" style="background: #ffffff !important;"> --}}
-                <!-- Button to Open Modal -->
-
-                        <x-web-ticket-modal/>
-
-
-                    {{-- </div> --}}
                 </div>
 
             </div>
@@ -256,29 +224,13 @@
 <!-- jQuery Library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<!-- SunEditor CSS -->
+<link href="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/css/suneditor.min.css" rel="stylesheet">
 
-
+<!-- SunEditor JS -->
+<script src="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/suneditor.min.js"></script>
 
 <script>
-function showMsgModel(title, message) {
-    alert(title + ": " + message); // Simple alert for demonstration. Customize as needed.
-}
-
-refreshCaptcha = function () {
-    axios.get('https://apply.tnpscexams.in/refereshcapcha') // Assuming this is the correct endpoint
-        .then(function(response) {
-            // Handle success
-            document.querySelector('.refereshrecapcha').innerHTML = response.data;
-        })
-        .catch(function(error) {
-            // Handle error
-            showMsgModel("Error", "Something went wrong! Try again");
-        });
-}
-
-
-
     // Phone number formatting function
     function formatPhoneNumber(input) {
         let cleaned = input.value.replace(/\D/g, '');
