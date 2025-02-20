@@ -99,6 +99,8 @@ Route::get('/iqac/iqac-yearly-reports', [PagesController::class, 'iqac_yearly_re
 Route::get('/iqac/iqac-files/department-files', [PagesController::class, 'iqac_yearly_reports_department_files']);
 Route::get('/iqac/iqac-files/office-files', [PagesController::class, 'iqac_yearly_reports_office_files']);
 Route::get('/iqac/iqac-files/general-files', [PagesController::class, 'iqac_yearly_reports_general_files']);
+Route::get('/iqac/academic-and-administrative-audit', [PagesController::class, 'iqac_academic_and_administrative_audit'])->name('iqac.academic-and-administrative-audit');
+Route::get('/iqac/iqac-activities', [PagesController::class, 'iqac_activities']);
 
 // aicte
 Route::get('/affiliation/approved/aicte', [PagesController::class, 'aicte_approved']);
@@ -528,3 +530,6 @@ Route::get('/vapidPublicKey', function () {
 });
 
 Route::post('/saveSubscription', 'InstitutionInternalPurpose@stores');
+
+Route::post('/helpdesk', [InstitutionInternalPurpose::class, 'helpdeskSubmit'])->name('contact.helpdesk.submit');
+Route::get('/helpdesk', [InstitutionInternalPurpose::class, 'getHelpdeskForm'])->name('contact.helpdesk');

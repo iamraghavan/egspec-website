@@ -26,7 +26,7 @@
                                 <div class="single-input">
                                     <div class="single-input-item">
                                         <label class="input-label" for="staff_id">Staff ERP ID</label>
-                                        <input type="text" id="staff_id" name="staff_id" class="input-field" placeholder="Staff ID" required pattern="[A-Za-z0-9]+" title="Please enter alphanumeric characters only" value="{{ old('staff_id') }}">
+                                        <input type="text" id="staff_id" name ="staff_id" class="input-field" placeholder="Staff ID" required pattern="[A-Za-z0-9]+" title="Please enter alphanumeric characters only" value="{{ old('staff_id') }}">
                                         @error('staff_id')
                                         <span class="error-message">{{ $message }}</span>
                                         @enderror

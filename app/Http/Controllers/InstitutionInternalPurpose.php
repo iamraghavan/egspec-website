@@ -420,4 +420,64 @@ class InstitutionInternalPurpose extends Controller
 
         return response()->json(['success' => true], 200);
     }
+
+    public function getHelpdeskForm()
+    {
+
+        SEOTools::setTitle('Helpdesk | E.G.S. Pillay Engineering College');
+        SEOTools::setDescription('Get in touch with the E.G.S. Pillay Engineering College help desk for any inquiries or assistance.');
+
+        SEOTools::opengraph()->setTitle('E.G.S. Pillay Engineering College - Help Desk');
+        SEOTools::opengraph()->setDescription('Get in touch with the E.G.S. Pillay Engineering College help desk for any inquiries or assistance.');
+        SEOTools::opengraph()->setUrl(url()->current()); // Set the URL
+        SEOTools::opengraph()->addImage('https://egspec.org/assets/images/helpdesk_banner.webp'); // Set the image
+
+        SEOTools::opengraph()->addProperty('type', 'website');
+
+        SEOTools::twitter()->setTitle('Helpdesk | E.G.S. Pillay Engineering College');
+        SEOTools::twitter()->setDescription('Get in touch with the E.G.S. Pillay Engineering College help desk for any inquiries or assistance.');
+
+        JsonLd::addValue('@context', 'https://schema.org');
+        JsonLd::addValue('@type', 'Organization');
+        JsonLd::addValue('name', 'E.G.S. Pillay Engineering College Help Desk');
+        JsonLd::addValue('image', 'https://egspec.blob.core.windows.net/egspec-assets/helpdesk.webp');
+        JsonLd::addValue('url', url()->current());
+        JsonLd::addValue('contactPoint', [
+            '@type' => 'ContactPoint',
+            'telephone' => '+91-12345-67890',
+            'contactType' => 'Customer Service',
+            'areaServed' => 'IN',
+            'availableLanguage' => ['English', 'Tamil'],
+        ]);
+        JsonLd::addValue('address', [
+            '@type' => 'PostalAddress',
+            'streetAddress' => 'No : 183/2 DHERMER STREET',
+            'addressLocality' => 'NAGAPATTINAM',
+            'addressRegion' => 'Tamil Nadu',
+            'postalCode' => '611003',
+            'addressCountry' => 'India',
+        ]);
+
+
+        return view('pages.institution.helpdesk');
+    }
+
+    public function helpdeskSubmit(Request $request)
+    {
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'phone' => 'required|regex:/^\d{5}\s\d{5}$/',
+            'email' => 'required|email',
+            'address' => 'required|string',
+            'relationship' => 'required|in:student,parent,public,alumni',
+            'roll_number' => 'required_if:relationship,student|nullable|alpha_num',
+            'category' => 'required|in:admission,hostel,department,examinations,scholarship',
+            'description' => 'required|string',
+            'cf-turnstile-response' => 'required|turnstile'
+        ]);
+
+        // Process the form data here
+
+        return redirect()->back()->with('success', 'Form submitted successfully!');
+    }
 }

@@ -51,6 +51,11 @@
                                                         <td><i class="fa fa-file-pdf"></i> / PDF File</td>
                                                     </tr>
 
+                                                    <tr>
+                                                        <td><a href="javascript:void(0);" onclick="loadPDF('https://firebasestorage.googleapis.com/v0/b/egspj-bumblebees.appspot.com/o/egspec-assets%2Fpdf%2Ffaculty-development-program-details-odd-sem-2024-2025.pdf?alt=media&token=3abc0724-0b8c-48ba-99aa-fb6633695e47')">Faculty Development Program details -Odd sem 2024-2025</a></td>
+                                                        <td><i class="fa fa-file-pdf"></i> / PDF File</td>
+                                                    </tr>
+
                                                 </tbody>
                                             </table>
                                         </div>

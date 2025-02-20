@@ -116,6 +116,15 @@
                                 </ul>
                             </div> --}}
 
+                            <h6 class="heading-title">IQAC Activities</h6>
+                            <div class="program-menu">
+                                <ul class="list-unstyled">
+                                    <li><a href="{{ url("/iqac/iqac-activities") }}"><span><i class="fa-light fa-arrow-right"></i></span>IQAC Activities</a></li>
+
+
+                                </ul>
+                            </div>
+
                             <h6 class="heading-title">Works Plan & Implementation</h6>
                             <div class="program-menu">
                                 <ul class="list-unstyled">

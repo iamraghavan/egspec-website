@@ -322,7 +322,37 @@ class PagesController extends Controller
         return view('pages.iqac.general-files');
     }
 
+    public function iqac_academic_and_administrative_audit()
+    {
+        SEOTools::setTitle('IQAC Academic and Administrative Audit');
+        SEOTools::setDescription('Learn about the IQAC academic and administrative audit at E.G.S. Pillay Engineering College to enhance academic quality.');
+        SEOTools::opengraph()->addProperty('type', 'website');
+        SEOTools::opengraph()->addProperty('url', Url()->current());
+        SEOTools::opengraph()->addProperty('title', 'IQAC Academic and Administrative Audit | E.G.S. Pillay Engineering College');
+        SEOTools::opengraph()->addProperty('description', 'Learn about the IQAC academic and administrative audit at E.G.S. Pillay Engineering College to enhance academic quality.');
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('IQAC Academic and Administrative Audit | E.G.S. Pillay Engineering College');
+        SEOTools::twitter()->setDescription('Learn about the IQAC academic and administrative audit at E.G.S. Pillay Engineering College.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
 
+        return view('pages.iqac.academic-and-administrative-audit');
+    }
+
+    public function iqac_activities()
+    {
+        SEOTools::setTitle('IQAC Activities');
+        SEOTools::setDescription('Discover the IQAC activities and initiatives at E.G.S. Pillay Engineering College to enhance academic quality and excellence.');
+        SEOTools::opengraph()->addProperty('type', 'website');
+        SEOTools::opengraph()->addProperty('url', Url()->current());
+        SEOTools::opengraph()->addProperty('title', 'IQAC Activities | E.G.S. Pillay Engineering College');
+        SEOTools::opengraph()->addProperty('description', 'Discover the IQAC activities and initiatives at E.G.S. Pillay Engineering College to enhance academic quality and excellence.');
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('IQAC Activities | E.G.S. Pillay Engineering College');
+        SEOTools::twitter()->setDescription('Discover the IQAC activities and initiatives at E.G.S. Pillay Engineering College.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
+        return view('pages.iqac.iqac-activities');
+    }
 
 
 
