@@ -473,9 +473,10 @@ class InstitutionInternalPurpose extends Controller
             'roll_number' => 'required_if:relationship,student|nullable|alpha_num',
             'category' => 'required|in:admission,hostel,department,examinations,scholarship',
             'description' => 'required|string',
-            'cf-turnstile-response' => 'required|turnstile'
+
         ]);
 
+        dd($validated);
         // Process the form data here
 
         return redirect()->back()->with('success', 'Form submitted successfully!');

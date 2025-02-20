@@ -4,8 +4,8 @@
 @include('components.breadcrumb', [
     'value_1' => 'Home',
     'value_2' => 'Contact',
-    'value_3' => 'Web Admin',
-    'page_title' => 'Contact Web Admin / Webmaster'
+    'value_3' => '',
+    'page_title' => 'Helpdesk'
 ])
 
 <style>
@@ -26,7 +26,7 @@
         <div class="row">
             <div class="col-lg-8">
                 <div class="rts-ap-section">
-                    <h3 class="rts-section-title mb--30 animated fadeIn">Application Details</h3>
+                    <h3 class="rts-section-title mb--30 animated fadeIn">Enquiry Details</h3>
                     <div class="rts-application-form">
 
 
@@ -34,7 +34,7 @@
 
 
 
-                        <form id="contactForm" action="{{ route('form.submit') }}" method="POST" style="margin: 0px !important; width: 100% !important; border: none !important; max-width: 100%;">
+                        <form id="contactForm" action="{{ route('contact.helpdesk.submit') }}" method="POST" style="margin: 0px !important; width: 100% !important; border: none !important; max-width: 100%;">
                             @csrf
                             <div class="single-form-part">
                                 <h5 class="form-title">Personal Information</h5>
@@ -172,7 +172,18 @@
                             <div class="single-form-part">
                                 <div class="single-input">
                                     <div class="single-input-item">
-                                        <x-turnstile />
+
+                <label class="input-label" for="captcha">Captcha</label>
+                <div class="captcha-container">
+                    <div class="refereshrecapcha">
+                        <!-- The refreshed captcha will be loaded here -->
+                    </div>
+                    <button type="button" onclick="refreshCaptcha()">Refresh Captcha</button>
+                </div>
+                @error('captcha')
+                    <span class="error-message">{{ $message }}</span>
+                @enderror
+                <input type="text" id="captcha" name="captcha" class="input-field" required>
 
                                     </div>
                                 </div>
@@ -245,13 +256,29 @@
 <!-- jQuery Library -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-<!-- SunEditor CSS -->
-<link href="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/css/suneditor.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-<!-- SunEditor JS -->
-<script src="https://cdn.jsdelivr.net/npm/suneditor@latest/dist/suneditor.min.js"></script>
+
 
 <script>
+function showMsgModel(title, message) {
+    alert(title + ": " + message); // Simple alert for demonstration. Customize as needed.
+}
+
+refreshCaptcha = function () {
+    axios.get('https://apply.tnpscexams.in/refereshcapcha') // Assuming this is the correct endpoint
+        .then(function(response) {
+            // Handle success
+            document.querySelector('.refereshrecapcha').innerHTML = response.data;
+        })
+        .catch(function(error) {
+            // Handle error
+            showMsgModel("Error", "Something went wrong! Try again");
+        });
+}
+
+
+
     // Phone number formatting function
     function formatPhoneNumber(input) {
         let cleaned = input.value.replace(/\D/g, '');
