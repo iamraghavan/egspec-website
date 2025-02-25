@@ -281,7 +281,7 @@ namespace App\Models {
      *
      * @property \Illuminate\Support\Carbon|null $updated_at
      * @property \Illuminate\Support\Carbon|null $created_at
-     * @property bigint(20) unsigned $created_by
+     * @property mixed $created_by
      * @property string|null $description
      * @property string $title
      * @property int $id
@@ -1360,7 +1360,7 @@ namespace App\Models {
      *
      * @property \Illuminate\Support\Carbon|null $updated_at
      * @property \Illuminate\Support\Carbon|null $created_at
-     * @property int(11) $intake
+     * @property mixed $intake
      * @property string $course_type
      * @property string $course_name
      * @property int $id
@@ -1889,7 +1889,7 @@ namespace App\Models {
      * @property \Illuminate\Support\Carbon|null $updated_at
      * @property \Illuminate\Support\Carbon|null $created_at
      * @property string $equipment_name
-     * @property bigint(20) unsigned $category_id
+     * @property mixed $category_id
      * @property int $equipment_id
      * @method static \Illuminate\Database\Eloquent\Builder|Equipment whereEquipmentId($value)
      * @method static \Illuminate\Database\Eloquent\Builder|Equipment whereCategoryId($value)
@@ -2155,7 +2155,7 @@ namespace App\Models {
      * @property string $organizer_details
      * @property string $venue
      * @property string $participant_details
-     * @property date $date
+     * @property string $date
      * @property string $event_name
      * @property int $id
      * @property-read \Illuminate\Database\Eloquent\Collection<int, \Illuminate\Notifications\DatabaseNotification> $notifications
@@ -2690,9 +2690,9 @@ namespace App\Models {
      *
      * @property \Illuminate\Support\Carbon|null $updated_at
      * @property \Illuminate\Support\Carbon|null $created_at
-     * @property bigint(20) unsigned $author_id
-     * @property enum('draft','unpublished','published') $publish_status
-     * @property bigint(20) unsigned $department_id
+     * @property mixed $author_id
+     * @property mixed $publish_status
+     * @property mixed $department_id
      * @property string|null $thumbnail
      * @property string|null $content
      * @property string|null $keywords
@@ -2968,10 +2968,10 @@ namespace App\Models {
      *
      * @property \Illuminate\Support\Carbon|null $updated_at
      * @property \Illuminate\Support\Carbon|null $created_at
-     * @property bigint(20) unsigned $uploaded_by
+     * @property mixed $uploaded_by
      * @property string $department
      * @property string $image_path
-     * @property date|null $date_of_publish
+     * @property string|null $date_of_publish
      * @property string|null $description
      * @property string|null $newspaper_name
      * @property int $id
@@ -3510,7 +3510,7 @@ namespace App\Models {
      * @property string|null $asn
      * @property string|null $city
      * @property string|null $timezone
-     * @property \Illuminate\Support\Carbon $request_timestamp
+     * @property string $request_timestamp
      * @property string $ip_address
      * @property int $id
      * @method static \Illuminate\Database\Eloquent\Builder|OtherSessionsInfo whereId($value)
@@ -3782,7 +3782,7 @@ namespace App\Models {
      * @property string|null $credits
      * @property string|null $caption
      * @property string $image_url
-     * @property bigint(20) unsigned $album_id
+     * @property mixed $album_id
      * @property int $id
      * @property-read \App\Models\Album $album
      * @method static \Illuminate\Database\Eloquent\Builder|Photo whereId($value)
@@ -4048,11 +4048,11 @@ namespace App\Models {
      *
      * @property \Illuminate\Support\Carbon|null $updated_at
      * @property \Illuminate\Support\Carbon|null $created_at
-     * @property int(11)|null $year_2023_24
-     * @property int(11)|null $year_2022_23
-     * @property int(11)|null $year_2021_22
-     * @property int(11)|null $year_2020_21
-     * @property int(11)|null $year_2019_20
+     * @property mixed $year_2023_24
+     * @property mixed $year_2022_23
+     * @property mixed $year_2021_22
+     * @property mixed $year_2020_21
+     * @property mixed $year_2019_20
      * @property string $department
      * @property int $id
      * @method static \Illuminate\Database\Eloquent\Builder|PlacementStatistic whereId($value)
@@ -4592,8 +4592,8 @@ namespace App\Models {
      *
      * @property \Illuminate\Support\Carbon|null $updated_at
      * @property \Illuminate\Support\Carbon|null $created_at
-     * @property int(11) $total_km
-     * @property time $starting_time
+     * @property mixed $total_km
+     * @property string $starting_time
      * @property string $operated_via
      * @property string $route
      * @property int $id
@@ -5665,7 +5665,7 @@ namespace App\Models {
      * @property string|null $prize_won
      * @property string $student_name
      * @property string $register_no
-     * @property date $event_date
+     * @property string $event_date
      * @property string $institution_name
      * @property string $event_name
      * @property int $id
@@ -5936,10 +5936,10 @@ namespace App\Models {
      *
      * @property \Illuminate\Support\Carbon|null $updated_at
      * @property \Illuminate\Support\Carbon|null $created_at
-     * @property time $last_updated
+     * @property string $last_updated
      * @property string|null $cc_recipients
      * @property string $message
-     * @property enum('ticket_creator','web_master') $sender_type
+     * @property mixed $sender_type
      * @property string $ticket_id
      * @property int $id
      * @property-read \App\Models\WebsiteTicketDetails $ticket
@@ -6208,7 +6208,7 @@ namespace App\Models {
      * @property \Illuminate\Support\Carbon|null $updated_at
      * @property \Illuminate\Support\Carbon|null $created_at
      * @property string|null $remember_token
-     * @property int(11) $role
+     * @property mixed $role
      * @property string $type
      * @property string $password
      * @property \Illuminate\Support\Carbon|null $email_verified_at
@@ -6752,7 +6752,7 @@ namespace App\Models {
      *
      * @property \Illuminate\Support\Carbon|null $updated_at
      * @property \Illuminate\Support\Carbon|null $created_at
-     * @property bool $confirmation
+     * @property boolean $confirmation
      * @property array|null $google_drive_urls
      * @property string $data_update
      * @property string $work_type
@@ -7300,7 +7300,7 @@ namespace App\Models {
      * @property \Illuminate\Support\Carbon|null $updated_at
      * @property \Illuminate\Support\Carbon|null $created_at
      * @property string|null $beneficiaries
-     * @property date|null $date
+     * @property string|null $date
      * @property string|null $program_name
      * @property string|null $department
      * @property string $role
