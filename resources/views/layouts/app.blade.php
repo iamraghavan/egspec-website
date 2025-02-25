@@ -770,6 +770,10 @@
     .iap { max-width: 100% !important; height: 4rem; font-weight: 200; margin: 3rem; }
     .iap-h3 { text-align: center !important; font-size: 18px !important; margin: 20px 0 !important; color: #333 !important; }
     html { scroll-behavior: smooth; }
+    #loader {
+            display: none;
+            text-align: center;
+        }
 </style>
 
 <style>
@@ -871,60 +875,6 @@
 <script src="{{ asset('/assets/js/main.js') }}" defer></script>
 <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js" defer></script>
 
-<script>
-    if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/service-worker.js')
-    .then(function(registration) {
-        return registration.pushManager.getSubscription()
-        .then(async function(subscription) {
-            if (subscription) {
-                return subscription;
-            }
-            const response = await fetch('/vapidPublicKey');
-            const vapidPublicKey = await response.text();
-            const convertedVapidKey = urlBase64ToUint8Array(vapidPublicKey);
-            return registration.pushManager.subscribe({
-                userVisibleOnly: true,
-                applicationServerKey: convertedVapidKey
-            });
-        });
-    }).then(function(subscription) {
-        fetch('/saveSubscription', {
-            method: 'POST',
-            body: JSON.stringify(subscription),
-            headers: {
-                'Content-Type': 'application/json'
-            }
-        });
-    }).catch(function(error) {
-        console.error('Service Worker registration or push subscription failed:', error);
-    });
-}
-
-function urlBase64ToUint8Array(base64String) {
-    const padding = '='.repeat((4 - base64String.length % 4) % 4);
-    const base64 = (base64String + padding).replace(/-/g, '+').replace(/_/g, '/');
-    const rawData = window.atob(base64);
-    const outputArray = new Uint8Array(rawData.length);
-    for (let i = 0; i < rawData.length; ++i) {
-        outputArray[i] = rawData.charCodeAt(i);
-    }
-    return outputArray;
-}
-
-Notification.requestPermission().then(permission => {
-    if (permission === 'granted') {
-        console.log('Notification permission granted.');
-    } else {
-        console.log('Notification permission denied.');
-    }
-}).catch(function(error) {
-    console.error('Notification permission request failed:', error);
-});
-
-
-
-    </script>
 
 
 <!-- Initialize Swiper -->

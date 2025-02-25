@@ -30,15 +30,15 @@
                                     <tbody>
                                         <tr>
                                             <td><strong>PEO1</strong></td>
-                                            <td>To enable graduates to work in integrative teams involving various engineering disciplines to identify, formulate and solve biomedical engineering problems.</td>
+                                            <td>Have successful professional career in Biomedical Engineering and its related disciplines or become an entrepreneur or pursue higher education.</td>
                                         </tr>
                                         <tr>
                                             <td><strong>PEO2</strong></td>
-                                            <td>To enable graduates to use their multidisciplinary background to foster communication across professional and disciplinary boundaries with the highest professional and ethical standards.</td>
+                                            <td>Apply the knowledge of Biomedical Engineering to find optimal solution to the real-world problems in medical research.</td>
                                         </tr>
                                         <tr>
                                             <td><strong>PEO3</strong></td>
-                                            <td>To enable graduates to recognize the limits of their knowledge and initiate self-directed learning opportunities, to identify and create professional opportunities in the field of biomedical engineering.</td>
+                                            <td>Exhibit communication skill, lifelong learning attitude, team work capability, ethical and moral values and out of box thinking in their professional career.</td>
                                         </tr>
                                     </tbody>
                                 </table>
