@@ -411,8 +411,16 @@
                                             </ul>
                                          </li>
                                          <li><a href="{{route('iqac.academic-and-administrative-audit')}}">
-                                            Academic & Administrative Audit - AAA</a></li>
+                                            Academic & Administrative Audit - AAA</a></li>\
+                                            <li><a href="{{url('/iqac/formats')}}">Formats</a></li>
 
+                                            <li><a href="{{url('/iqac/alumni-feedback-analysis-report-odd-sem-2024-2025')}}">
+                                            Alumni Feedback Analysis Report
+                                            </a></li>
+
+                                             <li><a href="{{url('/iqac/students-mentor-mentee-details')}}">
+                                            Students Mentor Mentee Details
+                                            </a></li>
 
 
                                      </ul>
