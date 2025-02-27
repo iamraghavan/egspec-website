@@ -66,6 +66,34 @@
                         </div>
                     </div>
 
+
+                    <div class="program-credit-area">
+                        <h3 class="rts-section-title animated fadeIn">Events conducted in Odd semester 2024 - 2025</h3>
+
+                        <div class="program-accordion my-5">
+                            <div class="accordion" id="rts-accordion">
+
+                                <div class="accordion-item">
+                                    <div>
+                                        <div class="accordion-body-content">
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td><a href='https://drive.google.com/drive/folders/1P77u8nMnW7MGUFM_Pg7fCrJrKpkUj4SZ?usp=sharing' target="_blank">Events conducted in Odd semester 2024 - 2025</a></td>
+                                                        <td><i class="fa fa-external-link"></i> / Open Link</td>
+                                                    </tr>
+
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
 

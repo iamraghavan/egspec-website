@@ -101,6 +101,9 @@ Route::get('/iqac/iqac-files/office-files', [PagesController::class, 'iqac_yearl
 Route::get('/iqac/iqac-files/general-files', [PagesController::class, 'iqac_yearly_reports_general_files']);
 Route::get('/iqac/academic-and-administrative-audit', [PagesController::class, 'iqac_academic_and_administrative_audit'])->name('iqac.academic-and-administrative-audit');
 Route::get('/iqac/iqac-activities', [PagesController::class, 'iqac_activities']);
+Route::get('/iqac/formats', [PagesController::class, 'iqac_formats']);
+Route::get('/iqac/alumni-feedback-analysis-report-odd-sem-2024-2025', [PagesController::class, 'iqac_alumni_feedback_analysis_report_odd_sem_2024_2025']);
+Route::get('/iqac/students-mentor-mentee-details', [PagesController::class, 'iqac_students_mentor_mentee_details']);
 
 // aicte
 Route::get('/affiliation/approved/aicte', [PagesController::class, 'aicte_approved']);

@@ -43,67 +43,68 @@
                                     <tr>
                                         <td>1</td>
                                         <td>Dr. Malathi M</td>
-                                        <td>PhD</td>
+                                        <td>Ph.D</td>
                                         <td>HOD/Professor</td>
                                     </tr>
                                     <tr>
                                         <td>2</td>
                                         <td>Dr. Rajaram A</td>
-                                        <td>PhD</td>
+                                        <td>Ph.D</td>
                                         <td>Professor</td>
                                     </tr>
                                     <tr>
                                         <td>3</td>
                                         <td>Dr. Sathiya V</td>
-                                        <td>PhD</td>
+                                        <td>Ph.D</td>
                                         <td>Associate Professor</td>
                                     </tr>
                                     <tr>
                                         <td>4</td>
                                         <td>Dr. Irshad Ahamed M</td>
-                                        <td>PhD</td>
+                                        <td>Ph.D</td>
                                         <td>Associate Professor</td>
                                     </tr>
                                     <tr>
                                         <td>5</td>
                                         <td>Dr. Devarajan D</td>
-                                        <td>PhD</td>
+                                        <td>Ph.D</td>
                                         <td>Associate Professor</td>
                                     </tr>
                                     <tr>
                                         <td>6</td>
-                                        <td>Dr. Parthasaradi V</td>
-                                        <td>PhD</td>
-                                        <td>Assistant Professor</td>
+                                        <td>Dr. Senthilkumar S</td>
+                                        <td>Ph.D</td>
+                                        <td>Associate Professor</td>
                                     </tr>
                                     <tr>
                                         <td>7</td>
-                                        <td>Dr. Senthilkumar S</td>
-                                        <td>PhD</td>
-                                        <td>Associate Professor</td>
+
+                                        <td>Dr. Parthasaradi V</td>
+                                        <td>Ph.D</td>
+                                        <td>Assistant Professor</td>
                                     </tr>
                                     <tr>
                                         <td>8</td>
                                         <td>Dr. Nuthal Srinivasan M</td>
-                                        <td>PhD</td>
+                                        <td>Ph.D</td>
                                         <td>Assistant Professor</td>
                                     </tr>
                                     <tr>
                                         <td>9</td>
                                         <td>Dr. Ramachandran L</td>
-                                        <td>PhD</td>
+                                        <td>Ph.D</td>
                                         <td>Assistant Professor</td>
                                     </tr>
                                     <tr>
                                         <td>10</td>
                                         <td>Dr. Mathuvanesan C</td>
-                                        <td>PhD</td>
+                                        <td>Ph.D</td>
                                         <td>Assistant Professor</td>
                                     </tr>
                                     <tr>
                                         <td>11</td>
                                         <td>Dr. Koteeshwari R S</td>
-                                        <td>PhD</td>
+                                        <td>Ph.D</td>
                                         <td>Assistant Professor</td>
                                     </tr>
                                     <tr>

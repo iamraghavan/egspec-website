@@ -4,7 +4,7 @@
 'value_1' => 'IQAC',
 'value_2' => '',
 'value_3' => '',
-'page_title' => 'Committe Members'
+'page_title' => 'Formats'
 ])
 
 
@@ -12,55 +12,43 @@
 
 <div class="rts-program rts-section-padding">
     <div class="container">
-        <h3 class="rts-section-title animated fadeIn">IQAC - Committe Members</h3>
+        <h3 class="rts-section-title animated fadeIn">Formats</h3>
         <div class="rts-program-description">
             <div class="row">
                 <div class="col-lg-8">
+                    <!-- Blade view (resources/views/files.blade.php) -->
                     <div class="program-description-area">
-
                         <div class="program-credit-area">
-                            {{-- <h3 class="rts-section-title animated fadeIn" >IQAC Memebers</h3> --}}
-
                             <div class="program-accordion my-5">
                                 <div class="accordion" id="rts-accordion">
-
                                     <div class="accordion-item">
-
                                         <div>
                                             <div class="accordion-body-content">
                                                 <table class="table">
-
                                                     <tbody>
-                                                        <tr>
-                                                            <td><i class="fa fa-download"> </i><a href="@blob('iqac/committe-members/2024/egspec-iqac-members-2024-2025.pdf')" target="_blank" type="application/pdf" rel="alternate" media='print'>Committe Members</a></td>
-                                                            <td><i class="fa fa-file-pdf"></i> / PDF File</td>
-                                                        </tr>
-
-
-
+                                                        @foreach ($files as $file)
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="fa fa-download"> </i>
+                                                                    <a href="{{ $file['url'] }}" target="_blank" type="application/pdf" rel="alternate" media="print">
+                                                                        {{ $file['title'] }}
+                                                                    </a>
+                                                                </td>
+                                                                <td><i class="fa fa-file-pdf"></i> / PDF File</td>
+                                                            </tr>
+                                                        @endforeach
                                                     </tbody>
                                                 </table>
-
-
-
                                             </div>
                                         </div>
-
-
                                     </div>
-
                                 </div>
-
                             </div>
                         </div>
-
                     </div>
 
-                    <div class="iframe-div">
-                        <iframe src="https://drive.google.com/viewerng/viewer?embedded=true&amp;url=@blob('iqac/committe-members/2024/egspec-iqac-members-2024-2025.pdf')#toolbar=0&amp;scrollbar=0" frameborder="0" scrolling="auto" height="100%" width="100%" style="
-                    height: 100rem !important;
-                "></iframe>
-                    </div>
+
+
 
                 </div>
                 <!-- sidebar -->

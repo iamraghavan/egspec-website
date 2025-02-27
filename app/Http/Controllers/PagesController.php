@@ -355,6 +355,147 @@ class PagesController extends Controller
     }
 
 
+    public function iqac_formats()
+    {
+        SEOTools::setTitle('IQAC Formats');
+        SEOTools::setDescription('Access the IQAC formats for various reports and documents at E.G.S. Pillay Engineering College to enhance academic quality and excellence.');
+        SEOTools::opengraph()->addProperty('type', 'website');
+        SEOTools::opengraph()->addProperty('url', Url()->current());
+        SEOTools::opengraph()->addProperty('title', 'IQAC Formats | E.G.S. Pillay Engineering College');
+        SEOTools::opengraph()->addProperty('description', 'Access the IQAC formats for various reports and documents at E.G.S. Pillay Engineering College to enhance academic quality and excellence.');
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('IQAC Formats | E.G.S. Pillay Engineering College');
+        SEOTools::twitter()->setDescription('Access the IQAC formats for various reports and documents at E.G.S. Pillay Engineering College.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
+
+        $files = [
+            [
+                'title' => 'Requisition to Management Letter',
+                'url' => 'https://firebasestorage.googleapis.com/v0/b/egspec-website.appspot.com/o/egspec%2Fiqac%2Fformats%2Frequisition-to-management-letter.pdf?alt=media&token=6d84a2ee-59a1-4ab6-a135-19f1bee23e6a',
+            ],
+            [
+                'title' => 'Project Proposal Form',
+                'url' => 'https://firebasestorage.googleapis.com/v0/b/egspec-website.appspot.com/o/egspec%2Fiqac%2Fformats%2Fproject-proposal-form.pdf?alt=media&token=eec854d5-544c-4089-a615-dd36d1fac138',
+            ],
+            [
+                'title' => 'Industrial visit In Plant & Technical Training checklist',
+                'url' => 'https://firebasestorage.googleapis.com/v0/b/egspec-website.appspot.com/o/egspec%2Fiqac%2Fformats%2Findustrial-visit-in-plant-and-technical-training-checklist.pdf?alt=media&token=6522412c-aa6b-44aa-beff-89c635594dc1',
+            ],
+            [
+                'title' => 'Events Checklist',
+                'url' => 'https://firebasestorage.googleapis.com/v0/b/egspec-website.appspot.com/o/egspec%2Fiqac%2Fformats%2Fevents-checklist.pdf?alt=media&token=90d515f3-0173-49e6-8d23-adac11709022',
+            ],
+            [
+                'title' => 'Event Conduction Requisition Letter',
+                'url' => 'https://firebasestorage.googleapis.com/v0/b/egspec-website.appspot.com/o/egspec%2Fiqac%2Fformats%2Fevent-conduction-requisition-letter.pdf?alt=media&token=e3bfa5a9-44ae-4609-b140-8ea6830e763e',
+            ],
+            [
+                'title' => 'Dept Meeting Format',
+                'url' => 'https://firebasestorage.googleapis.com/v0/b/egspec-website.appspot.com/o/egspec%2Fiqac%2Fformats%2Fdept-meeting-format.pdf?alt=media&token=71dca598-70b9-4570-86e1-3b0fa627b5fb',
+            ],
+            [
+                'title' => 'Alumni Events Checklist',
+                'url' => 'https://firebasestorage.googleapis.com/v0/b/egspec-website.appspot.com/o/egspec%2Fiqac%2Fformats%2Falumni-events-checklist.pdf?alt=media&token=c2bedef9-3af1-4a79-b3a1-d568a03b9f4e',
+            ],
+            [
+                'title' => 'Rules for Consultancy Work',
+                'url' => 'https://firebasestorage.googleapis.com/v0/b/egspec-website.appspot.com/o/egspec%2Fiqac%2Fformats%2Frules-for-consultancy-work.pdf?alt=media&token=240cc892-799c-4fea-94c6-098e09ed93e4',
+            ],
+        ];
+
+
+        return view('pages.iqac.formats', compact('files'));
+    }
+
+    public function iqac_alumni_feedback_analysis_report_odd_sem_2024_2025()
+    {
+        SEOTools::setTitle('IQAC Alumni Feedback Analysis Report Odd Sem 2024-2025');
+        SEOTools::setDescription('Access the IQAC Alumni Feedback Analysis Report for the Odd Semester 2024-2025 at E.G.S. Pillay Engineering College to enhance academic quality and excellence.');
+        SEOTools::opengraph()->addProperty('type', 'website');
+        SEOTools::opengraph()->addProperty('url', Url()->current());
+        SEOTools::opengraph()->addProperty('title', 'IQAC Alumni Feedback Analysis Report Odd Sem 2024-2025 | E.G.S. Pillay Engineering College');
+        SEOTools::opengraph()->addProperty('description', 'Access the IQAC Alumni Feedback Analysis Report for the Odd Semester 2024-2025 at E.G.S. Pillay Engineering College to enhance academic quality and excellence.');
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('IQAC Alumni Feedback Analysis Report Odd Sem 2024-2025 | E.G.S. Pillay Engineering College');
+        SEOTools::twitter()->setDescription('Access the IQAC Alumni Feedback Analysis Report for the Odd Semester 2024-2025 at E.G.S. Pillay Engineering College.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
+        $files = [
+            [
+                'title' => 'Alumni Feedback Analysis Report Odd semester 2024-2025',
+                'url' => 'https://firebasestorage.googleapis.com/v0/b/egspec-website.appspot.com/o/egspec%2Fiqac%2Falumni-feedback-analysis-report-odd-sem-2024-2025.pdf?alt=media&token=fbebd539-f656-4baf-bf3b-a4983ac88078',
+            ]
+        ];
+
+
+        return view('pages.iqac.alumni-feedback-analysis-report-odd-sem-2024-2025', compact('files'));
+    }
+
+    public function iqac_students_mentor_mentee_details()
+    {
+        SEOTools::setTitle('IQAC Students Mentor Mentee Details');
+        SEOTools::setDescription('Access the IQAC Students Mentor Mentee Details at E.G.S. Pillay Engineering College to enhance academic quality and excellence.');
+        SEOTools::opengraph()->addProperty('type', 'website');
+        SEOTools::opengraph()->addProperty('url', Url()->current());
+        SEOTools::opengraph()->addProperty('title', 'IQAC Students Mentor Mentee Details | E.G.S. Pillay Engineering College');
+        SEOTools::opengraph()->addProperty('description', 'Access the IQAC Students Mentor Mentee Details at E.G.S. Pillay Engineering College to enhance academic quality and excellence.');
+        SEOTools::opengraph()->addProperty('image', 'https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+        SEOTools::twitter()->setTitle('IQAC Students Mentor Mentee Details | E.G.S. Pillay Engineering College');
+        SEOTools::twitter()->setDescription('Access the IQAC Students Mentor Mentee Details at E.G.S. Pillay Engineering College.');
+        SEOTools::twitter()->setImage('https://egspec.blob.core.windows.net/egspec-assets/og_image.webp');
+
+        $files = [
+            [
+                'department' => 'Artificial Intelligence and Data Science',
+                'url' => 'https://firebasestorage.googleapis.com/v0/b/egspec-website.appspot.com/o/egspec%2Fiqac%2Fstudents-mentor-mentee-details%2F2024-2025%2Faids.pdf?alt=media&token=99e95478-c995-4d52-b6fe-7d22ee74d35e',
+            ],
+            [
+                'department' => 'Biomedical Engineering',
+                'url' => 'https://firebasestorage.googleapis.com/v0/b/egspec-website.appspot.com/o/egspec%2Fiqac%2Fstudents-mentor-mentee-details%2F2024-2025%2Fbme.pdf?alt=media&token=52c4278f-a92d-4db3-83c3-5459f94cb989',
+            ],
+            [
+                'department' => 'Civil Engineering',
+                'url' => 'https://firebasestorage.googleapis.com/v0/b/egspec-website.appspot.com/o/egspec%2Fiqac%2Fstudents-mentor-mentee-details%2F2024-2025%2Fcivil.pdf?alt=media&token=77a2d82c-0533-4a5e-b5a8-2dc8d69a898f',
+            ],
+            [
+                'department' => 'Computer Science and Business Systems',
+                'url' => 'https://firebasestorage.googleapis.com/v0/b/egspec-website.appspot.com/o/egspec%2Fiqac%2Fstudents-mentor-mentee-details%2F2024-2025%2Fcsbs.pdf?alt=media&token=1454e68d-94b0-4de8-aa06-c57fb9b6f93e',
+            ],
+            [
+                'department' => 'Computer Science and Engineering',
+                'url' => 'https://firebasestorage.googleapis.com/v0/b/egspec-website.appspot.com/o/egspec%2Fiqac%2Fstudents-mentor-mentee-details%2F2024-2025%2Fcse.pdf?alt=media&token=16af564f-a525-42e3-ad98-705a828800be',
+            ],
+            [
+                'department' => 'Electronics and Communication Engineering',
+                'url' => 'https://firebasestorage.googleapis.com/v0/b/egspec-website.appspot.com/o/egspec%2Fiqac%2Fstudents-mentor-mentee-details%2F2024-2025%2Fece.pdf?alt=media&token=71261aa0-49df-41d5-83c4-cf8b006c1c43',
+            ],
+            [
+                'department' => 'Electrical and Electronics Engineering',
+                'url' => 'https://firebasestorage.googleapis.com/v0/b/egspec-website.appspot.com/o/egspec%2Fiqac%2Fstudents-mentor-mentee-details%2F2024-2025%2Feee.pdf?alt=media&token=f543cdba-a700-4a01-ba12-a80944cd63bc',
+            ],
+            [
+                'department' => 'Master of Business Administration',
+                'url' => 'https://firebasestorage.googleapis.com/v0/b/egspec-website.appspot.com/o/egspec%2Fiqac%2Fstudents-mentor-mentee-details%2F2024-2025%2Fmba.pdf?alt=media&token=33379071-13ab-405f-a998-6ba579ef1c9f',
+            ],
+            [
+                'department' => 'Master of Computer Applications',
+                'url' => 'https://firebasestorage.googleapis.com/v0/b/egspec-website.appspot.com/o/egspec%2Fiqac%2Fstudents-mentor-mentee-details%2F2024-2025%2Fmca.pdf?alt=media&token=5d772c1b-305b-4591-9839-de2179262303',
+            ],
+            [
+                'department' => 'Mechanical Engineering',
+                'url' => 'https://firebasestorage.googleapis.com/v0/b/egspec-website.appspot.com/o/egspec%2Fiqac%2Fstudents-mentor-mentee-details%2F2024-2025%2Fmech.pdf?alt=media&token=42073f24-88d6-486c-8af4-4bcb860937e8',
+            ],
+            [
+                'department' => 'Information Technology',
+                'url' => 'https://firebasestorage.googleapis.com/v0/b/egspec-website.appspot.com/o/egspec%2Fiqac%2Fstudents-mentor-mentee-details%2F2024-2025%2Fit.pdf?alt=media&token=333a6ee4-344b-4eb8-a1bd-e43662f44bde',
+            ],
+        ];
+
+        return view('pages.iqac.students-mentor-mentee-details', compact('files'));
+    }
+
+
 
     public function aicte_approved()
     {
