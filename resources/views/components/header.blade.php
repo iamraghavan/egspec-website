@@ -411,7 +411,7 @@
                                             </ul>
                                          </li>
                                          <li><a href="{{route('iqac.academic-and-administrative-audit')}}">
-                                            Academic & Administrative Audit - AAA</a></li>\
+                                            Academic & Administrative Audit - AAA</a></li>
                                             <li><a href="{{url('/iqac/formats')}}">Formats</a></li>
 
                                             <li><a href="{{url('/iqac/alumni-feedback-analysis-report-odd-sem-2024-2025')}}">
@@ -421,6 +421,8 @@
                                              <li><a href="{{url('/iqac/students-mentor-mentee-details')}}">
                                             Students Mentor Mentee Details
                                             </a></li>
+
+                                            <li><a href="https://firebasestorage.googleapis.com/v0/b/egspec-website.appspot.com/o/egspec%2Fiqac%2Fiqac-code-of-conduct-for-students.pdf?alt=media&token=3a697e79-69ea-426d-aa25-8dd8f4a3c61c" target="_blank" rel="noopener noreferrer">IQAC Code of Conduct for Students</a></li>
 
 
                                      </ul>
