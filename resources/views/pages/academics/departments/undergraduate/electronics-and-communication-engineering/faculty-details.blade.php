@@ -80,7 +80,7 @@
                                         <td>7</td>
                                         <td>Dr. Senthilkumar S</td>
                                         <td>PhD</td>
-                                        <td>Assistant Professor</td>
+                                        <td>Associate Professor</td>
                                     </tr>
                                     <tr>
                                         <td>8</td>
