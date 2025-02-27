@@ -139,9 +139,9 @@
                 $members = [
     [
         'designation' => 'Academic Affairs',
-        'name' => 'Dr. V. Mohan, Director (Academics)',
+        'name' => 'Dr. S. Palani Murugan, Director (Academics)',
         'phone' => '123-456-7890',
-        'email' => 'mohan@example.com',
+        'email' => 'Palani@example.com',
         'photo' => 'url_to_photo_mohan.jpg'
     ],
     [
